@@ -1,0 +1,94 @@
+# baseURI: http://www.wurvoc.org/vocabularies/oqr/record-table/
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/ns/prov#
+# imports: http://www.wurvoc.org/vocabularies/om-1.8/
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rec: <http://www.wurvoc.org/vocabularies/oqr/record-table/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.wurvoc.org/vocabularies/om-1.8/Quantity>
+  rdfs:subClassOf rec:Observation ;
+.
+rec:
+  rdf:type owl:Ontology ;
+  dc:creator "Jan L. Top, Mari L.I. Wigham, Hajo Rijgersberg, and Don J.M. Willems"^^xsd:string ;
+  dc:description "De recordtabelontologie maakt een formele omschrijving van kwantitatieve data mogelijk. Deze data is vaak opgeslagen in tabellen."@nl ;
+  dc:description "The record table ontology enables the formal description of quantitative data, often stored in table format."@en ;
+  dc:title "Record Table Ontology"@en ;
+  dc:title "Recordtabelontologie"@nl ;
+  rdfs:label "record table ontology"@en ;
+  rdfs:label "recordtabelontologie"@nl ;
+  owl:imports dc: ;
+  owl:imports <http://purl.org/dc/terms/> ;
+  owl:imports prov: ;
+  owl:imports <http://www.wurvoc.org/vocabularies/om-1.8/> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+rec:Observation
+  rdf:type owl:Class ;
+  rdfs:comment ""^^xsd:string ;
+  rdfs:label "Observatie"@nl ;
+  rdfs:label "Observation"@en ;
+  rdfs:label "Waarneming"@nl ;
+  rdfs:subClassOf prov:Entity ;
+  skos:prefLabel "Observation"@en ;
+  skos:prefLabel "Waarneming"@nl ;
+.
+rec:RecordTable
+  rdf:type owl:Class ;
+  rdfs:label "record table"@en ;
+  rdfs:label "recordtabel"@nl ;
+  rdfs:subClassOf prov:Entity ;
+.
+rec:containsRecord
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain rec:RecordTable ;
+  rdfs:label "bevat record"@nl ;
+  rdfs:label "contains record"@en ;
+  rdfs:range rec:RecordTable ;
+.
+rec:emulates
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment ""^^xsd:string ;
+  rdfs:domain rec:Observation ;
+  rdfs:label "emulates"@en ;
+  rdfs:range rec:Observation ;
+  skos:prefLabel "emulates"@en ;
+.
+rec:hasLiteralValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment ""^^xsd:string ;
+  rdfs:domain rec:Observation ;
+  rdfs:label "has literal value"@en ;
+  skos:prefLabel "has literal value"@en ;
+.
+rec:hasMeasure
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain rec:RecordTable ;
+  rdfs:label "has measure"@en ;
+  rdfs:label "heeft meting"@nl ;
+  rdfs:range <http://www.wurvoc.org/vocabularies/om-1.8/Quantity> ;
+.
+rec:hasObserved
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment ""^^xsd:string ;
+  rdfs:domain rec:RecordTable ;
+  rdfs:label "has observed"@en ;
+  rdfs:label "heeft waargenomen"@nl ;
+  rdfs:range rec:Observation ;
+  skos:prefLabel "has observed"@en ;
+  skos:prefLabel "heeft waargenomen"@nl ;
+.
+rec:refersTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain rec:RecordTable ;
+  rdfs:label "refers to"@en ;
+  rdfs:label "verwijst naar"@nl ;
+.
