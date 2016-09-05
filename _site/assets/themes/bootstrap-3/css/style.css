@@ -22,14 +22,12 @@ h1, h2, h3, h4 {
 }
 
 div.ruler-top {
-	background: url(/images/ruler-top.png) left top;
 	width: 100%;
 	height: 101px;
 	margin: 0;
 }
 
 div.ruler-bottom {
-	background: url(/images/ruler-bottom.png) right top;
 	width: 100%;
 	border: 0px;
 	height: 46px;
