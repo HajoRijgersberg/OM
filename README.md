@@ -47,9 +47,9 @@ The following *application areas* are supported by OM:
 * Dynamics of texture and taste
 * Packaging
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology.
-
 ![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
+
+**Figure 1.** The UML diagram below shows the class structure of the OM ontology.
 
 To express, for instance, the temperature at [Alert, Canada](https://en.wikipedia.org/wiki/Alert,_Nunavut) on November 30th, 2016 at 11:28 AM, we have the following triples:
 	
@@ -64,6 +64,12 @@ To express, for instance, the temperature at [Alert, Canada](https://en.wikipedi
 		   gn:name "Alert" .
 	
 where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). 
+
+Below you can see a diagram of the RDF structure for this example.
+
+![Example: Alert Weather](images/OM-2.0-Example-Weather.png)
+
+**Figure 2.** An RDF diagram of the weather information at Alert, Canada.
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expresses as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used.
  
