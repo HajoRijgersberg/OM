@@ -37,7 +37,7 @@ The following *application areas* are supported by OM:
 
 **Figure 1.** The UML diagram below shows the class structure of the OM ontology.
 
-![The UML structure of the OM ontology](OM2.0-UML-diagram.png)
+![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
 
 To express, for instance the temperature at [Alert](https://en.wikipedia.org/wiki/Alert,_Nunavut) on November 30th, 2016 at 11:28 AM, we have following triples:
 	
