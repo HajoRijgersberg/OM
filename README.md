@@ -63,7 +63,7 @@ To express, for instance, the temperature at [Alert, Canada](https://en.wikipedi
 	<http://sws.geonames.org/6295922/> weather:hasWeather _:bn3 ;
 		   gn:name "Alert" .
 	
-where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). 
+where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). The reference to `weather:hasDate` in the instance of `Point` is beyond the scope of OM.
 
 Below you can see a diagram of the RDF structure for this example.
 
