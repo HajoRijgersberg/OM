@@ -93,6 +93,11 @@ Previous versions were published on the wurvoc platform.
 * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/)
 
 
+### <a name="acknowledgements"></a>Acknowledgements
+
+We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review).
+
+
 ### <a name="papers"></a>Papers on OM
    
 1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287.
