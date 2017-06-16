@@ -14,6 +14,7 @@ OM is modelled in [OWL 2 - Web Ontology Language](https://www.w3.org/TR/owl2-ove
 * [RecordTable ontology](#recordtable)
 * [Software](#software)
 * [Previous versions](#previous-versions)
+* [Acknowledgements](#acknowledgements)
 * [Papers on OM](#papers)
 
 
