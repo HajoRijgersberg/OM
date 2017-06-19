@@ -14,6 +14,7 @@ OM is modelled in [OWL 2 - Web Ontology Language](https://www.w3.org/TR/owl2-ove
 * [RecordTable ontology](#recordtable)
 * [Software](#software)
 * [Previous versions](#previous-versions)
+* [Acknowledgements](#acknowledgements)
 * [Papers on OM](#papers)
 
 
@@ -91,6 +92,11 @@ Several software packages support the use, or make use of, OM:
 Previous versions were published on the wurvoc platform.
 
 * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/)
+
+
+### <a name="acknowledgements"></a>Acknowledgements
+
+We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review)).
 
 
 ### <a name="papers"></a>Papers on OM
