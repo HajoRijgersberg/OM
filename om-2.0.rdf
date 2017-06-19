@@ -41,10 +41,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.3</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.4</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2017/06/15</dc:date>
+    <dc:date>2017/06/19</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -2226,8 +2226,8 @@
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
-  <om:Measure rdf:about="&om;_3.08567802e16Metre">
-    <om:hasNumericalValue>3.08567802e16</om:hasNumericalValue>
+  <om:Measure rdf:about="&om;_3.08567758149137e16Metre">
+    <om:hasNumericalValue>3.08567758149137e16</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
@@ -35513,14 +35513,14 @@
     
   <owl:Class rdf:about="&om;SecularAberration">
     <om:commonlyHasUnit rdf:resource="&om;degree"/>
-    <om:commonlyHasUnit rdf:resource="&om;seconde-Angle"/>
+    <om:commonlyHasUnit rdf:resource="&om;second-Anglee"/>
     <om:commonlyHasUnit rdf:resource="&om;millisecond-Angle"/>
     <om:commonlyHasUnit rdf:resource="&om;microsecond-Angle"/>
   </owl:Class>
     
   <owl:Class rdf:about="&om;AberrationInLongitude">
     <om:commonlyHasUnit rdf:resource="&om;degree"/>
-    <om:commonlyHasUnit rdf:resource="&om;seconde-Angle"/>
+    <om:commonlyHasUnit rdf:resource="&om;second-Anglee"/>
     <om:commonlyHasUnit rdf:resource="&om;millisecond-Angle"/>
     <om:commonlyHasUnit rdf:resource="&om;microsecond-Angle"/>
    </owl:Class>
