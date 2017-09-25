@@ -41,10 +41,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.4</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.5</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2017/06/19</dc:date>
+    <dc:date>2017/09/25</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -14814,6 +14814,8 @@
   <om:UnitDivision rdf:about="&om;gramPerHectogram">
     <rdfs:label xml:lang="en">gram per hectogram</rdfs:label>
     <rdfs:label xml:lang="nl">gram per hectogram</rdfs:label>
+    <om:alternativeLabel xml:lang="en">gram per 100 gram</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="nl">gram per 100 gram</om:alternativeLabel>
     <om:symbol>g/hg</om:symbol>
     <om:alternativeSymbol>g hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·hg-1</om:alternativeSymbol>
@@ -14836,6 +14838,8 @@
   <om:UnitDivision rdf:about="&om;milligramPerKilogram">
     <rdfs:label xml:lang="en">milligram per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">milligram per kilogram</rdfs:label>
+    <om:alternativeLabel xml:lang="en">milligram per 100 gram</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="nl">milligram per 100 gram</om:alternativeLabel>
     <om:symbol>mg/kg</om:symbol>
     <om:alternativeSymbol>mg kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>mg·kg-1</om:alternativeSymbol>
@@ -16363,6 +16367,9 @@
 
   <om:UnitDivision rdf:about="&om;litrePer100Kilometre">
     <rdfs:label xml:lang="en">litre per 100 kilometre</rdfs:label>
+    <rdfs:label xml:lang="nl">liter per 100 kilometer</rdfs:label>
+    <om:alternativeLabel xml:lang="en">litre per 100 kilometre</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="nl">liter per 100 kilometer</om:alternativeLabel>
     <om:symbol>l/100 km</om:symbol>
     <om:hasNumerator rdf:resource="&om;litre"/>
     <om:hasDenominator rdf:resource="&om;_100Kilometre"/>
