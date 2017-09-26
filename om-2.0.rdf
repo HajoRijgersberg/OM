@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Create Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -41,10 +41,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.5</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.6</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2017/09/25</dc:date>
+    <dc:date>2017/09/26</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -14838,8 +14838,6 @@
   <om:UnitDivision rdf:about="&om;milligramPerKilogram">
     <rdfs:label xml:lang="en">milligram per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">milligram per kilogram</rdfs:label>
-    <om:alternativeLabel xml:lang="en">milligram per 100 gram</om:alternativeLabel>
-    <om:alternativeLabel xml:lang="nl">milligram per 100 gram</om:alternativeLabel>
     <om:symbol>mg/kg</om:symbol>
     <om:alternativeSymbol>mg kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>mg·kg-1</om:alternativeSymbol>
@@ -14851,6 +14849,8 @@
   <om:UnitDivision rdf:about="&om;milligramPerHectogram">
     <rdfs:label xml:lang="en">milligram per hectogram</rdfs:label>
     <rdfs:label xml:lang="nl">milligram per hectogram</rdfs:label>
+    <om:alternativeLabel xml:lang="en">milligram per 100 gram</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="nl">milligram per 100 gram</om:alternativeLabel>
     <om:symbol>mg/hg</om:symbol>
     <om:alternativeSymbol>mg hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>mg·hg-1</om:alternativeSymbol>
