@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Xin-Ying Ren, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -41,15 +41,15 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.6</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.7</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2017/09/26</dc:date>
+    <dc:date>2017/12/28</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
-    <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Mari Wigham, Jan Top</dc:creator>
-    <dc:license xml:lang="en">This document is available under Create Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dc:license>
+    <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Xin-Ying Ren, Mari Wigham, Jan Top</dc:creator>
+    <dc:license xml:lang="en">This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dc:license>
     <ombibo:reference rdf:resource="http://www.openisbn.com/isbn/9789462280618/"/>
   </owl:Ontology>
   
@@ -1149,7 +1149,8 @@
   <owl:Class rdf:about="&om;Circumference">
     <rdfs:label xml:lang="en">circumference</rdfs:label>
     <rdfs:label xml:lang="nl">omtrek</rdfs:label>
-    <rdfs:label xml:lang="zh">圓周</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">圓周</rdfs:label> -->
+    <rdfs:label xml:lang="zh">圆周</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Length"/>
     <om:symbol>C</om:symbol>
   </owl:Class>
@@ -1185,7 +1186,8 @@
   <owl:Class rdf:about="&om;Angle">
     <rdfs:label xml:lang="en">angle</rdfs:label>
     <rdfs:label xml:lang="nl">hoek</rdfs:label>
-    <rdfs:label xml:lang="zh">角</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">角</rdfs:label> -->
+    <rdfs:label xml:lang="zh">角度</rdfs:label>
     <om:alternativeLabel xml:lang="en">plane angle</om:alternativeLabel>
     <rdfs:comment xml:lang="en">Angle is the ratio between an arc and its radius.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
@@ -1205,7 +1207,8 @@
   <owl:Class rdf:about="&om;SolidAngle">
     <rdfs:label xml:lang="en">solid angle</rdfs:label>
     <rdfs:label xml:lang="nl">ruimtehoek</rdfs:label>
-    <rdfs:label xml:lang="zh">立體角</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">立體角</rdfs:label> -->
+    <rdfs:label xml:lang="zh">立体角</rdfs:label>
     <rdfs:comment xml:lang="en">Solid angle is the ratio of the surface of a portion of a sphere enclosed by the conical surface that forms an angle to the square of the radius of the sphere.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>Ω</om:symbol> 
@@ -1260,7 +1263,7 @@
   <om:SIPrefix rdf:about="&om;femto">
     <rdfs:label xml:lang="en">femto</rdfs:label>
     <rdfs:label xml:lang="nl">femto</rdfs:label>
-    <rdfs:label xml:lang="zh">飛</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">飛</rdfs:label> -->
     <om:symbol>f</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-15</om:hasFactor>
   </om:SIPrefix>
@@ -1268,7 +1271,7 @@
   <om:SIPrefix rdf:about="&om;pico">
     <rdfs:label xml:lang="en">pico</rdfs:label>
     <rdfs:label xml:lang="nl">pico</rdfs:label>
-    <rdfs:label xml:lang="zh">皮</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">皮</rdfs:label> -->
     <om:symbol>p</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-12</om:hasFactor>
   </om:SIPrefix>
@@ -1276,7 +1279,7 @@
   <om:SIPrefix rdf:about="&om;nano">
     <rdfs:label xml:lang="en">nano</rdfs:label>
     <rdfs:label xml:lang="nl">nano</rdfs:label>
-    <rdfs:label xml:lang="zh">纳</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">纳</rdfs:label> -->
     <om:symbol>n</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-9</om:hasFactor>
   </om:SIPrefix>
@@ -1284,7 +1287,7 @@
   <om:SIPrefix rdf:about="&om;micro">
     <rdfs:label xml:lang="en">micro</rdfs:label>
     <rdfs:label xml:lang="nl">micro</rdfs:label>
-    <rdfs:label xml:lang="zh">微</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">微</rdfs:label> -->
     <om:symbol>μ</om:symbol>
     <om:alternativeSymbol>u</om:alternativeSymbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-6</om:hasFactor>
@@ -1293,7 +1296,7 @@
   <om:SIPrefix rdf:about="&om;milli">
     <rdfs:label xml:lang="en">milli</rdfs:label>
     <rdfs:label xml:lang="nl">milli</rdfs:label>
-    <rdfs:label xml:lang="zh">毫</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">毫</rdfs:label> -->
     <om:symbol>m</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-3</om:hasFactor>
   </om:SIPrefix>
@@ -1301,7 +1304,7 @@
   <om:SIPrefix rdf:about="&om;centi">
     <rdfs:label xml:lang="en">centi</rdfs:label>
     <rdfs:label xml:lang="nl">centi</rdfs:label>
-    <rdfs:label xml:lang="zh">厘</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">厘</rdfs:label> -->
     <om:symbol>c</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-2</om:hasFactor>
   </om:SIPrefix>
@@ -1309,7 +1312,7 @@
   <om:SIPrefix rdf:about="&om;deci">
     <rdfs:label xml:lang="en">deci</rdfs:label>
     <rdfs:label xml:lang="nl">deci</rdfs:label>
-    <rdfs:label xml:lang="zh">分</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">分</rdfs:label> -->
     <om:symbol>d</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e-1</om:hasFactor>
   </om:SIPrefix>
@@ -1332,7 +1335,7 @@
   <om:SIPrefix rdf:about="&om;kilo">
     <rdfs:label xml:lang="en">kilo</rdfs:label>
     <rdfs:label xml:lang="nl">kilo</rdfs:label>
-    <rdfs:label xml:lang="zh">千</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">千</rdfs:label> -->
     <om:symbol>k</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e3</om:hasFactor>
   </om:SIPrefix>
@@ -1340,7 +1343,7 @@
   <om:SIPrefix rdf:about="&om;mega">
     <rdfs:label xml:lang="en">mega</rdfs:label>
     <rdfs:label xml:lang="nl">mega</rdfs:label>
-    <rdfs:label xml:lang="zh">兆</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">兆</rdfs:label> -->
     <om:symbol>M</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e6</om:hasFactor>
   </om:SIPrefix>
@@ -1348,7 +1351,7 @@
   <om:SIPrefix rdf:about="&om;giga">
     <rdfs:label xml:lang="en">giga</rdfs:label>
     <rdfs:label xml:lang="nl">giga</rdfs:label>
-    <rdfs:label xml:lang="zh">吉</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">吉</rdfs:label> -->
     <om:symbol>G</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e9</om:hasFactor>
   </om:SIPrefix>
@@ -1356,7 +1359,7 @@
   <om:SIPrefix rdf:about="&om;tera">
     <rdfs:label xml:lang="en">tera</rdfs:label>
     <rdfs:label xml:lang="nl">tera</rdfs:label>
-    <rdfs:label xml:lang="zh">太</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">太</rdfs:label> -->
     <om:symbol>T</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e12</om:hasFactor>
   </om:SIPrefix>
@@ -1364,7 +1367,7 @@
   <om:SIPrefix rdf:about="&om;peta">
     <rdfs:label xml:lang="en">peta</rdfs:label>
     <rdfs:label xml:lang="nl">peta</rdfs:label>
-    <rdfs:label xml:lang="zh">拍</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">拍</rdfs:label> -->
     <om:symbol>P</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e15</om:hasFactor>
   </om:SIPrefix>
@@ -1372,7 +1375,7 @@
   <om:SIPrefix rdf:about="&om;exa">
     <rdfs:label xml:lang="en">exa</rdfs:label>
     <rdfs:label xml:lang="nl">exa</rdfs:label>
-    <rdfs:label xml:lang="zh">艾</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">艾</rdfs:label> -->
     <om:symbol>E</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e18</om:hasFactor>
   </om:SIPrefix>
@@ -1380,7 +1383,7 @@
   <om:SIPrefix rdf:about="&om;zetta">
     <rdfs:label xml:lang="en">zetta</rdfs:label>
     <rdfs:label xml:lang="nl">zetta</rdfs:label>
-    <rdfs:label xml:lang="zh">泽</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">泽</rdfs:label> -->
     <om:symbol>Z</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e21</om:hasFactor>
   </om:SIPrefix>
@@ -1388,7 +1391,7 @@
   <om:SIPrefix rdf:about="&om;yotta">
     <rdfs:label xml:lang="en">yotta</rdfs:label>
     <rdfs:label xml:lang="nl">yotta</rdfs:label>
-    <rdfs:label xml:lang="zh">尧</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">尧</rdfs:label> -->
     <om:symbol>Y</om:symbol>
     <om:hasFactor rdf:datatype="&xsd;float">1e24</om:hasFactor>
   </om:SIPrefix>
@@ -1582,7 +1585,8 @@
   <om:PrefixedUnit rdf:about="&om;femtometre">
     <rdfs:label xml:lang="en">femtometre</rdfs:label>
     <rdfs:label xml:lang="nl">femtometer</rdfs:label>
-    <rdfs:label xml:lang="zh">飛米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">飛米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">1/(10^15)米</rdfs:label>
     <rdfs:comment xml:lang="en">The femtometre is a unit of length defined as 1.0e-15 metre.</rdfs:comment>
     <om:symbol>fm</om:symbol>
     <om:hasPrefix rdf:resource="&om;femto"/>
@@ -1593,7 +1597,8 @@
   <om:PrefixedUnit rdf:about="&om;picometre">
     <rdfs:label xml:lang="en">picometre</rdfs:label>
     <rdfs:label xml:lang="nl">picometer</rdfs:label>
-    <rdfs:label xml:lang="zh">皮米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">皮米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">1/(10^12)米</rdfs:label>
     <rdfs:comment xml:lang="en">The picometre is a unit of length defined as 1.0e-12 metre.</rdfs:comment>
     <om:symbol>pm</om:symbol>
     <om:hasPrefix rdf:resource="&om;pico"/>
@@ -1604,7 +1609,7 @@
   <om:PrefixedUnit rdf:about="&om;nanometre">
     <rdfs:label xml:lang="en">nanometre</rdfs:label>
     <rdfs:label xml:lang="nl">nanometer</rdfs:label>
-    <rdfs:label xml:lang="zh">纳米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">纳米</rdfs:label> -->
     <rdfs:comment xml:lang="en">The nanometre is a unit of length defined as 1.0e-9 metre.</rdfs:comment>
     <om:symbol>nm</om:symbol>
     <om:hasPrefix rdf:resource="&om;nano"/>
@@ -1637,7 +1642,7 @@
   <om:PrefixedUnit rdf:about="&om;centimetre">
     <rdfs:label xml:lang="en">centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">centimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">厘米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">厘米</rdfs:label> -->
     <rdfs:comment xml:lang="en">The centimetre is a unit of length defined as 1.0e-2 metre.</rdfs:comment>
     <om:symbol>cm</om:symbol>
     <om:hasPrefix rdf:resource="&om;centi"/>
@@ -1648,7 +1653,7 @@
   <om:PrefixedUnit rdf:about="&om;decimetre">
     <rdfs:label xml:lang="en">decimetre</rdfs:label>
     <rdfs:label xml:lang="nl">decimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">分米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">分米</rdfs:label> -->
     <rdfs:comment xml:lang="en">The decimetre is a unit of length defined as 1.0e-1 metre.</rdfs:comment>
     <om:symbol>dm</om:symbol>
     <om:hasPrefix rdf:resource="&om;deci"/>
@@ -1679,7 +1684,8 @@
   <om:PrefixedUnit rdf:about="&om;kilometre">
     <rdfs:label xml:lang="en">kilometre</rdfs:label>
     <rdfs:label xml:lang="nl">kilometer</rdfs:label>
-    <rdfs:label xml:lang="zh">千米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">千米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">公里</rdfs:label>
     <rdfs:comment xml:lang="en">The kilometre is a unit of length defined as 1.0e3 metre.</rdfs:comment>
     <om:symbol>km</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
@@ -1690,7 +1696,8 @@
   <om:PrefixedUnit rdf:about="&om;megametre">
     <rdfs:label xml:lang="en">megametre</rdfs:label>
     <rdfs:label xml:lang="nl">megameter</rdfs:label>
-    <rdfs:label xml:lang="zh">兆米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">兆米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">百万米</rdfs:label>
     <rdfs:comment xml:lang="en">The megametre is a unit of length defined as 1.0e6 metre.</rdfs:comment>
     <om:symbol>Mm</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
@@ -1701,7 +1708,8 @@
   <om:PrefixedUnit rdf:about="&om;gigametre">
     <rdfs:label xml:lang="en">gigametre</rdfs:label>
     <rdfs:label xml:lang="nl">gigameter</rdfs:label>
-    <rdfs:label xml:lang="zh">吉米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">吉米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^9米</rdfs:label>
     <rdfs:comment xml:lang="en">The gigametre is a unit of length defined as 1.0e9 metre.</rdfs:comment>
     <om:symbol>Gm</om:symbol>
     <om:hasPrefix rdf:resource="&om;giga"/>
@@ -1712,7 +1720,8 @@
   <om:PrefixedUnit rdf:about="&om;terametre">
     <rdfs:label xml:lang="en">terametre</rdfs:label>
     <rdfs:label xml:lang="nl">terameter</rdfs:label>
-    <rdfs:label xml:lang="zh">太米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">太米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^12米</rdfs:label>
     <rdfs:comment xml:lang="en">The terametre is a unit of length defined as 1.0e12 metre.</rdfs:comment>
     <om:unofficialAbbreviation>10^9 km</om:unofficialAbbreviation>
     <om:symbol>Tm</om:symbol>
@@ -1724,7 +1733,8 @@
   <om:PrefixedUnit rdf:about="&om;petametre">
     <rdfs:label xml:lang="en">petametre</rdfs:label>
     <rdfs:label xml:lang="nl">petameter</rdfs:label>
-    <rdfs:label xml:lang="zh">拍米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">拍米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^15米</rdfs:label>
     <rdfs:comment xml:lang="en">The petametre is a unit of length defined as 1.0e15 metre.</rdfs:comment>
     <om:symbol>Pm</om:symbol>
     <om:hasPrefix rdf:resource="&om;peta"/>
@@ -1735,7 +1745,8 @@
   <om:PrefixedUnit rdf:about="&om;exametre">
     <rdfs:label xml:lang="en">exametre</rdfs:label>
     <rdfs:label xml:lang="nl">exameter</rdfs:label>
-    <rdfs:label xml:lang="zh">艾米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">艾米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">千兆兆米</rdfs:label>
     <rdfs:comment xml:lang="en">The exametre is a unit of length defined as 1.0e18 metre.</rdfs:comment>
     <om:symbol>Em</om:symbol>
     <om:hasPrefix rdf:resource="&om;exa"/>
@@ -1746,7 +1757,7 @@
   <om:PrefixedUnit rdf:about="&om;zettametre">
     <rdfs:label xml:lang="en">zettametre</rdfs:label>
     <rdfs:label xml:lang="nl">zettameter</rdfs:label>
-    <rdfs:label xml:lang="zh">泽米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">泽米</rdfs:label> -->
     <rdfs:comment xml:lang="en">The zettametre is a unit of length defined as 1.0e21 metre.</rdfs:comment>
     <om:symbol>Zm</om:symbol>
     <om:hasPrefix rdf:resource="&om;zetta"/>
@@ -1757,7 +1768,8 @@
   <om:PrefixedUnit rdf:about="&om;yottametre">
     <rdfs:label xml:lang="en">yottametre</rdfs:label>
     <rdfs:label xml:lang="nl">yottameter</rdfs:label>
-    <rdfs:label xml:lang="zh">尧米</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">尧米</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^24米</rdfs:label>
     <rdfs:comment xml:lang="en">The yottametre is a unit of length defined as 1.0e24 metre.</rdfs:comment>
     <om:symbol>Ym</om:symbol>
     <om:hasPrefix rdf:resource="&om;yotta"/>
@@ -2032,6 +2044,7 @@
     <rdfs:label xml:lang="en">foot (international)</rdfs:label>
     <om:alternativeLabel xml:lang="en">international foot</om:alternativeLabel>
     <!-- <rdfs:label xml:lang="zh">英尺</rdfs:label> -->
+    <rdfs:label xml:lang="zh">英尺（国际）</rdfs:label>
     <rdfs:comment xml:lang="en">The international foot is a unit of length defined as 3.048e-1 metre.</rdfs:comment>
     <om:symbol>ft</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -2064,6 +2077,7 @@
   <om:Unit rdf:about="&om;inch-International">
     <rdfs:label xml:lang="en">inch (international)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">英寸</rdfs:label> -->
+    <rdfs:label xml:lang="zh">英寸（国际）</rdfs:label>
     <om:alternativeLabel xml:lang="en">international inch</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international inch is a unit of length defined as 2.54e-2 metre.</rdfs:comment>
     <om:symbol>in</om:symbol>
@@ -2119,6 +2133,7 @@
     <rdfs:label xml:lang="en">nautical mile (international)</rdfs:label>
     <rdfs:label xml:lang="nl">zeemijl (internationaal)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">海里</rdfs:label> -->
+    <rdfs:label xml:lang="zh">海里（国际）</rdfs:label>
     <om:alternativeLabel xml:lang="en">international nautical mile</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international nautical mile is a unit of length defined as 1852 metre.</rdfs:comment>
     <om:symbol>nmi</om:symbol>
@@ -2147,6 +2162,7 @@
   <om:Unit rdf:about="&om;yard-International">
     <rdfs:label xml:lang="en">yard (international)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">碼</rdfs:label> -->
+    <rdfs:label xml:lang="zh">码（国际）</rdfs:label>
     <om:alternativeLabel xml:lang="en">international yard</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international yard is a unit of length defined as 9.144e-1 metre.</rdfs:comment>
     <om:symbol>yd</om:symbol>
@@ -2515,7 +2531,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareFemtometre">
     <rdfs:label xml:lang="en">square femtometre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante femtometer</rdfs:label>
-    <rdfs:label xml:lang="zh">平方飛米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方飛米</rdfs:label> -->
     <om:symbol>fm2</om:symbol>
     <om:hasBase rdf:resource="&om;femtometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2525,7 +2541,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squarePicometre">
     <rdfs:label xml:lang="en">square picometre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante picometer</rdfs:label>
-    <rdfs:label xml:lang="zh">平方皮米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方皮米</rdfs:label> -->
     <om:symbol>pm2</om:symbol>
     <om:hasBase rdf:resource="&om;picometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2535,7 +2551,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareNanometre">
     <rdfs:label xml:lang="en">square nanometre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante nanometer</rdfs:label>
-    <rdfs:label xml:lang="zh">平方纳米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方纳米</rdfs:label> -->
     <om:symbol>nm2</om:symbol>
     <om:hasBase rdf:resource="&om;nanometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2545,7 +2561,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareMicrometre">
     <rdfs:label xml:lang="en">square micrometre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante micrometer</rdfs:label>
-    <rdfs:label xml:lang="zh">平方微米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方微米</rdfs:label> -->
     <om:symbol>μm2</om:symbol>
     <om:hasBase rdf:resource="&om;micrometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2555,7 +2571,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareMillimetre">
     <rdfs:label xml:lang="en">square millimetre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante millimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方毫米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方毫米</rdfs:label> -->
     <om:symbol>mm2</om:symbol>
     <om:hasBase rdf:resource="&om;millimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2565,7 +2581,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareCentimetre">
     <rdfs:label xml:lang="en">square centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante centimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方厘米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方厘米</rdfs:label> -->
     <om:symbol>cm2</om:symbol>
     <om:hasBase rdf:resource="&om;centimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2575,7 +2591,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareDecimetre">
     <rdfs:label xml:lang="en">square decimetre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante decimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方分米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方分米</rdfs:label> -->
     <om:symbol>dm2</om:symbol>
     <om:hasBase rdf:resource="&om;decimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2603,7 +2619,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareKilometre">
     <rdfs:label xml:lang="en">square kilometre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante kilometer</rdfs:label>
-    <rdfs:label xml:lang="zh">平方千米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方千米</rdfs:label> -->
     <om:unofficialAbbreviation>10^6 m2</om:unofficialAbbreviation>
     <om:symbol>km2</om:symbol>
     <om:hasBase rdf:resource="&om;kilometre"/>
@@ -2614,7 +2630,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareMegametre">
     <rdfs:label xml:lang="en">square megametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante megameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方兆米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方兆米</rdfs:label> -->
     <om:symbol>Mm2</om:symbol>
     <om:hasBase rdf:resource="&om;megametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2624,7 +2640,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareGigametre">
     <rdfs:label xml:lang="en">square gigametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante gigameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方吉米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方吉米</rdfs:label> -->
     <om:symbol>Gm2</om:symbol>
     <om:hasBase rdf:resource="&om;gigametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2634,7 +2650,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareTerametre">
     <rdfs:label xml:lang="en">square terametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante terameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方太米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方太米</rdfs:label> -->
     <om:symbol>Tm2</om:symbol>
     <om:hasBase rdf:resource="&om;terametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2644,7 +2660,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squarePetametre">
     <rdfs:label xml:lang="en">square petametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante petameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方拍米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方拍米</rdfs:label> -->
     <om:symbol>Pm2</om:symbol>
     <om:hasBase rdf:resource="&om;petametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2654,7 +2670,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareExametre">
     <rdfs:label xml:lang="en">square exametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante exameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方艾米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方艾米</rdfs:label> -->
     <om:symbol>Em2</om:symbol>
     <om:hasBase rdf:resource="&om;exametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2664,7 +2680,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareZettametre">
     <rdfs:label xml:lang="en">square zettametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante zettameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方泽米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方泽米</rdfs:label> -->
     <om:symbol>Zm2</om:symbol>
     <om:hasBase rdf:resource="&om;zettametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2674,7 +2690,7 @@
   <om:SquarePrefixedMetre rdf:about="&om;squareYottametre">
     <rdfs:label xml:lang="en">square yottametre</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante yottameter</rdfs:label>
-    <rdfs:label xml:lang="zh">平方尧米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">平方尧米</rdfs:label> -->
     <om:symbol>Ym2</om:symbol>
     <om:hasBase rdf:resource="&om;yottametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -2764,7 +2780,7 @@
   <om:PrefixedUnit rdf:about="&om;hectare">
     <rdfs:label xml:lang="en">hectare</rdfs:label>
     <rdfs:label xml:lang="nl">hectare</rdfs:label>
-    <rdfs:label xml:lang="zh">公顷</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">公顷</rdfs:label> -->
     <rdfs:comment xml:lang="en">The hectare is a unit of area defined as 1.0e2 are.</rdfs:comment>
     <om:symbol>ha</om:symbol>
     <om:hasPrefix rdf:resource="&om;hecto"/>
@@ -2809,6 +2825,7 @@
   <om:Unit rdf:about="&om;acre-International">
     <rdfs:label xml:lang="en">acre (international)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">英亩</rdfs:label> -->
+    <rdfs:label xml:lang="zh">英亩（国际）</rdfs:label>
     <om:alternativeLabel xml:lang="en">international acre</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international acre is a unit of area defined as 4.0468564224e3 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -2821,6 +2838,7 @@
   <om:Unit rdf:about="&om;acre-USSurvey">
     <rdfs:label xml:lang="en">acre (US survey)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">英亩</rdfs:label> -->
+    <rdfs:label xml:lang="zh">英亩（美国调查）</rdfs:label>
     <om:alternativeLabel xml:lang="en">US survey acre</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US survey acre is a unit of area defined as 4.046872609874252e3 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -2881,7 +2899,7 @@
   <om:UnitExponentiation rdf:about="&om;cubicMetre">
     <rdfs:label xml:lang="en">cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke meter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方米</rdfs:label> -->
     <rdfs:comment xml:lang="en">Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre.</rdfs:comment>
     <om:longcomment>Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre. Cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m3</om:symbol>
@@ -2987,7 +3005,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicFemtometre">
     <rdfs:label xml:lang="en">cubic femtometre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke femtometer</rdfs:label>
-    <rdfs:label xml:lang="zh">立方飛米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方飛米</rdfs:label> -->
     <om:symbol>fm3</om:symbol>
     <om:hasBase rdf:resource="&om;femtometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -2997,7 +3015,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicPicometre">
     <rdfs:label xml:lang="en">cubic picometre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke picometer</rdfs:label>
-    <rdfs:label xml:lang="zh">立方皮米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方皮米</rdfs:label> -->
     <om:symbol>pm3</om:symbol>
     <om:hasBase rdf:resource="&om;picometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3007,7 +3025,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicNanometre">
     <rdfs:label xml:lang="en">cubic nanometre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke nanometer</rdfs:label>
-    <rdfs:label xml:lang="zh">立方纳米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方纳米</rdfs:label> -->
     <om:symbol>nm3</om:symbol>
     <om:hasBase rdf:resource="&om;nanometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3017,7 +3035,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicMicrometre">
     <rdfs:label xml:lang="en">cubic micrometre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke micrometer</rdfs:label>
-    <rdfs:label xml:lang="zh">立方微米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方微米</rdfs:label> -->
     <om:symbol>μm3</om:symbol>
     <om:hasBase rdf:resource="&om;micrometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3027,7 +3045,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicMillimetre">
     <rdfs:label xml:lang="en">cubic millimetre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke millimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方毫米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方毫米</rdfs:label> -->
     <om:symbol>mm3</om:symbol>
     <om:hasBase rdf:resource="&om;millimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3037,7 +3055,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicCentimetre">
     <rdfs:label xml:lang="en">cubic centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke centimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方厘米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方厘米</rdfs:label> -->
     <om:symbol>cm3</om:symbol>
     <om:hasBase rdf:resource="&om;centimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3047,7 +3065,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicDecimetre">
     <rdfs:label xml:lang="en">cubic decimetre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke decimeter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方分米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方分米</rdfs:label> -->
     <om:symbol>dm3</om:symbol>
     <om:hasBase rdf:resource="&om;decimetre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3075,7 +3093,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicKilometre">
     <rdfs:label xml:lang="en">cubic kilometre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke kilometer</rdfs:label>
-    <rdfs:label xml:lang="zh">立方千米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方千米</rdfs:label> -->
     <om:symbol>km3</om:symbol>
     <om:hasBase rdf:resource="&om;kilometre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3085,7 +3103,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicMegametre">
     <rdfs:label xml:lang="en">cubic megametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke megameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方兆米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方兆米</rdfs:label> -->
     <om:symbol>Mm3</om:symbol>
     <om:hasBase rdf:resource="&om;megametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3095,7 +3113,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicGigametre">
     <rdfs:label xml:lang="en">cubic gigametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke gigameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方吉米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方吉米</rdfs:label> -->
     <om:symbol>Gm3</om:symbol>
     <om:hasBase rdf:resource="&om;gigametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3105,7 +3123,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicTerametre">
     <rdfs:label xml:lang="en">cubic terametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke terameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方太米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方太米</rdfs:label> -->
     <om:symbol>Tm3</om:symbol>
     <om:hasBase rdf:resource="&om;terametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3115,7 +3133,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicPetametre">
     <rdfs:label xml:lang="en">cubic petametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke petameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方拍米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方拍米</rdfs:label> -->
     <om:symbol>Pm3</om:symbol>
     <om:hasBase rdf:resource="&om;petametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3125,7 +3143,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicExametre">
     <rdfs:label xml:lang="en">cubic exametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke exameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方艾米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方艾米</rdfs:label> -->
     <om:symbol>Em3</om:symbol>
     <om:hasBase rdf:resource="&om;exametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3135,7 +3153,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicZettametre">
     <rdfs:label xml:lang="en">cubic zettametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke zettameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方泽米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方泽米</rdfs:label> -->
     <om:symbol>Zm3</om:symbol>
     <om:hasBase rdf:resource="&om;zettametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3145,7 +3163,7 @@
   <om:CubicPrefixedMetre rdf:about="&om;cubicYottametre">
     <rdfs:label xml:lang="en">cubic yottametre</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke yottameter</rdfs:label>
-    <rdfs:label xml:lang="zh">立方尧米</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">立方尧米</rdfs:label> -->
     <om:symbol>Ym3</om:symbol>
     <om:hasBase rdf:resource="&om;yottametre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -3203,7 +3221,8 @@
   <om:Unit rdf:about="&om;litre">
     <rdfs:label xml:lang="en">litre</rdfs:label>
     <rdfs:label xml:lang="nl">liter</rdfs:label>
-    <rdfs:label xml:lang="zh">公升</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">公升</rdfs:label> -->
+    <rdfs:label xml:lang="zh">升</rdfs:label>
     <om:alternativeLabel xml:lang="en">liter</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The litre is a unit of volume defined as 1.0e-3 cubic metre.</rdfs:comment>
     <om:symbol>l</om:symbol>
@@ -4124,7 +4143,8 @@
   <om:Unit rdf:about="&om;minute-Angle">
     <rdfs:label xml:lang="en">minute (angle)</rdfs:label>
     <rdfs:label xml:lang="nl">minuut (hoek)</rdfs:label>
-    <rdfs:label xml:lang="zh">角分</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">角分</rdfs:label> -->
+    <rdfs:label xml:lang="zh">分钟（角）</rdfs:label>
     <om:alternativeLabel xml:lang="en">minute of arc</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">arcminute</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">arcminuut</om:alternativeLabel>
@@ -4149,7 +4169,8 @@
   <om:Unit rdf:about="&om;second-Angle">
     <rdfs:label xml:lang="en">second (angle)</rdfs:label>
     <rdfs:label xml:lang="nl">seconde (hoek)</rdfs:label>
-    <rdfs:label xml:lang="zh">角秒</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">角秒</rdfs:label> -->
+    <rdfs:label xml:lang="zh">秒（角度）</rdfs:label>
     <om:alternativeLabel xml:lang="en">second of arc</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">arcsecond</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">boogseconde</om:alternativeLabel>
@@ -6119,7 +6140,8 @@
   <owl:Class rdf:about="&om;Frequency">
     <rdfs:label xml:lang="en">frequency</rdfs:label>
     <rdfs:label xml:lang="nl">frequentie</rdfs:label>
-    <rdfs:label xml:lang="zh">頻率</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">頻率</rdfs:label> -->
+    <rdfs:label xml:lang="zh">频率</rdfs:label>
     <om:unofficialAbbreviation>freq</om:unofficialAbbreviation>
     <rdfs:comment xml:lang="en">Frequency is a measure of the number of occurrences of a repeating event per unit time.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
@@ -6180,7 +6202,8 @@
   <owl:Class rdf:about="&om;Speed">
     <rdfs:label xml:lang="en">speed</rdfs:label>
     <rdfs:label xml:lang="nl">snelheid (scalair)</rdfs:label>
-    <rdfs:label xml:lang="zh">速率</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">速率</rdfs:label> -->
+    <rdfs:label xml:lang="zh">速度</rdfs:label>
     <rdfs:comment xml:lang="en">Speed is the time rate of motion measured by the distance moved over in unit time.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>v</om:symbol> 
@@ -6248,7 +6271,8 @@
   <owl:Class rdf:about="&om;Pressure">
     <rdfs:label xml:lang="en">pressure</rdfs:label>
     <rdfs:label xml:lang="nl">druk</rdfs:label>
-    <rdfs:label xml:lang="zh">压强</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">压强</rdfs:label> -->
+    <rdfs:label xml:lang="zh">压力</rdfs:label>
     <rdfs:comment xml:lang="en">Pressure is the force applied to or distributed over a surface. It is a derived quantity in the International System of Units. Pressure is force divided by area.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>p</om:symbol> 
@@ -6305,7 +6329,8 @@
   <owl:Class rdf:about="&om;Work">
     <rdfs:label xml:lang="en">work</rdfs:label>
     <rdfs:label xml:lang="nl">arbeid</rdfs:label>
-    <rdfs:label xml:lang="zh">功</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">功</rdfs:label> -->
+    <rdfs:label xml:lang="zh">工作</rdfs:label>
     <rdfs:comment xml:lang="en">Work is the energy when a force acts against resistance to produce motion in a body.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Energy"/>
     <om:symbol>W</om:symbol> 
@@ -6317,7 +6342,8 @@
   <owl:Class rdf:about="&om;Torque">
     <rdfs:label xml:lang="en">torque</rdfs:label>
     <rdfs:label xml:lang="nl">koppel</rdfs:label>
-    <rdfs:label xml:lang="zh">力矩</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">力矩</rdfs:label> -->
+    <rdfs:label xml:lang="zh">扭矩</rdfs:label>
     <rdfs:comment xml:lang="en">Torque is the effectiveness of a force to produce rotation about an axis, measured by the product of the force and the perpendicular distance from the line of action of the force to the axis.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>T</om:symbol> 
@@ -7136,7 +7162,8 @@
   <om:Unit rdf:about="&om;day">
     <rdfs:label xml:lang="en">day</rdfs:label>
     <rdfs:label xml:lang="nl">dag</rdfs:label>
-    <rdfs:label xml:lang="zh">日</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">日</rdfs:label> -->
+    <rdfs:label xml:lang="zh">天</rdfs:label>
     <rdfs:comment xml:lang="en">The day is a unit of time defined as 86400 second.</rdfs:comment>
     <om:symbol>d</om:symbol>
     <om:LaTeXCommand>\dayUnit</om:LaTeXCommand>
@@ -7387,7 +7414,7 @@
   <om:PrefixedUnit rdf:about="&om;femtogram">
     <rdfs:label xml:lang="en">femtogram</rdfs:label>
     <rdfs:label xml:lang="nl">femtogram</rdfs:label>
-    <rdfs:label xml:lang="zh">飛克</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">飛克</rdfs:label> -->
     <rdfs:comment xml:lang="en">The femtogram is a unit of mass defined as 1.0e-15 gram.</rdfs:comment>
     <om:symbol>fg</om:symbol>
     <om:hasPrefix rdf:resource="&om;femto"/>
@@ -7398,7 +7425,7 @@
   <om:PrefixedUnit rdf:about="&om;picogram">
     <rdfs:label xml:lang="en">picogram</rdfs:label>
     <rdfs:label xml:lang="nl">picogram</rdfs:label>
-    <rdfs:label xml:lang="zh">皮克</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">皮克</rdfs:label> -->
     <rdfs:comment xml:lang="en">The picogram is a unit of mass defined as 1.0e-12 gram.</rdfs:comment>
     <om:symbol>pg</om:symbol>
     <om:hasPrefix rdf:resource="&om;pico"/>
@@ -7444,7 +7471,8 @@
   <om:PrefixedUnit rdf:about="&om;centigram">
     <rdfs:label xml:lang="en">centigram</rdfs:label>
     <rdfs:label xml:lang="nl">centigram</rdfs:label>
-    <rdfs:label xml:lang="zh">厘克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">厘克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">百分之一克</rdfs:label>
     <rdfs:comment xml:lang="en">The centigram is a unit of mass defined as 1.0e-2 gram.</rdfs:comment>
     <om:symbol>cg</om:symbol>
     <om:hasPrefix rdf:resource="&om;centi"/>
@@ -7455,7 +7483,8 @@
   <om:PrefixedUnit rdf:about="&om;decigram">
     <rdfs:label xml:lang="en">decigram</rdfs:label>
     <rdfs:label xml:lang="nl">decigram</rdfs:label>
-    <rdfs:label xml:lang="zh">分克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">分克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">十分之一克</rdfs:label>
     <rdfs:comment xml:lang="en">The decigram is a unit of mass defined as 1.0e-1 gram.</rdfs:comment>
     <om:symbol>dg</om:symbol>
     <om:hasPrefix rdf:resource="&om;deci"/>
@@ -7487,7 +7516,8 @@
   <om:PrefixedUnit rdf:about="&om;kilogram">
     <rdfs:label xml:lang="en">kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram</rdfs:label>
-    <rdfs:label xml:lang="zh">千克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">公斤</rdfs:label> -->
+    <rdfs:label xml:lang="zh">公斤</rdfs:label>
     <om:symbol>kg</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gram"/>
@@ -7512,7 +7542,7 @@
   <om:PrefixedUnit rdf:about="&om;megagram">
     <rdfs:label xml:lang="en">megagram</rdfs:label>
     <rdfs:label xml:lang="nl">megagram</rdfs:label>
-    <rdfs:label xml:lang="zh">兆克</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">兆克</rdfs:label> -->
     <rdfs:comment xml:lang="en">The megagram is a unit of mass defined as 1.0e6 gram.</rdfs:comment>
     <om:symbol>Mg</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
@@ -7523,7 +7553,7 @@
   <om:PrefixedUnit rdf:about="&om;gigagram">
     <rdfs:label xml:lang="en">gigagram</rdfs:label>
     <rdfs:label xml:lang="nl">gigagram</rdfs:label>
-    <rdfs:label xml:lang="zh">吉克</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">吉克</rdfs:label> -->
     <rdfs:comment xml:lang="en">The gigagram is a unit of mass defined as 1.0e9 gram.</rdfs:comment>
     <om:symbol>Gg</om:symbol>
     <om:hasPrefix rdf:resource="&om;giga"/>
@@ -7534,7 +7564,8 @@
   <om:PrefixedUnit rdf:about="&om;teragram">
     <rdfs:label xml:lang="en">teragram</rdfs:label>
     <rdfs:label xml:lang="nl">teragram</rdfs:label>
-    <rdfs:label xml:lang="zh">太克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">太克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^12克</rdfs:label>
     <rdfs:comment xml:lang="en">The teragram is a unit of mass defined as 1.0e12 gram.</rdfs:comment>
     <om:symbol>Tg</om:symbol>
     <om:hasPrefix rdf:resource="&om;tera"/>
@@ -7545,7 +7576,8 @@
   <om:PrefixedUnit rdf:about="&om;petagram">
     <rdfs:label xml:lang="en">petagram</rdfs:label>
     <rdfs:label xml:lang="nl">petagram</rdfs:label>
-    <rdfs:label xml:lang="zh">拍克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">拍克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^15克</rdfs:label>
     <rdfs:comment xml:lang="en">The petagram is a unit of mass defined as 1.0e15 gram.</rdfs:comment>
     <om:symbol>Pg</om:symbol>
     <om:hasPrefix rdf:resource="&om;peta"/>
@@ -7556,7 +7588,8 @@
   <om:PrefixedUnit rdf:about="&om;exagram">
     <rdfs:label xml:lang="en">exagram</rdfs:label>
     <rdfs:label xml:lang="nl">exagram</rdfs:label>
-    <rdfs:label xml:lang="zh">艾克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">艾克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">千兆兆克</rdfs:label>
     <rdfs:comment xml:lang="en">The exagram is a unit of mass defined as 1.0e18 gram.</rdfs:comment>
     <om:symbol>Eg</om:symbol>
     <om:hasPrefix rdf:resource="&om;exa"/>
@@ -7567,7 +7600,8 @@
   <om:PrefixedUnit rdf:about="&om;zettagram">
     <rdfs:label xml:lang="en">zettagram</rdfs:label>
     <rdfs:label xml:lang="nl">zettagram</rdfs:label>
-    <rdfs:label xml:lang="zh">泽克</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">泽克</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^21克</rdfs:label>
     <rdfs:comment xml:lang="en">The zettagram is a unit of mass defined as 1.0e21 gram.</rdfs:comment>
     <om:symbol>ZG</om:symbol>
     <om:hasPrefix rdf:resource="&om;zetta"/>
@@ -7578,7 +7612,7 @@
   <om:PrefixedUnit rdf:about="&om;yottagram">
     <rdfs:label xml:lang="en">yottagram</rdfs:label>
     <rdfs:label xml:lang="nl">yottagram</rdfs:label>
-    <rdfs:label xml:lang="zh">尧克</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">尧克</rdfs:label> -->
     <rdfs:comment xml:lang="en">The yottagram is a unit of mass defined as 1.0e24 gram.</rdfs:comment>
     <om:symbol>YG</om:symbol>
     <om:hasPrefix rdf:resource="&om;yotta"/>
@@ -7637,7 +7671,8 @@
   <om:Unit rdf:about="&om;tonne">
     <rdfs:label xml:lang="en">tonne</rdfs:label>
     <rdfs:label xml:lang="nl">ton</rdfs:label>
-    <rdfs:label xml:lang="zh">公噸</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">公噸</rdfs:label> -->
+    <rdfs:label xml:lang="zh">公吨</rdfs:label>
     <om:alternativeLabel xml:lang="en">metric ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The tonne is a unit of mass defined as 1000 kilogram.</rdfs:comment>
     <om:symbol>t</om:symbol>
@@ -7890,7 +7925,8 @@
 
   <om:Unit rdf:about="&om;slug">
     <rdfs:label xml:lang="en">slug</rdfs:label>
-    <rdfs:label xml:lang="zh">斯勒格</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">斯勒格</rdfs:label> -->
+    <rdfs:label xml:lang="zh">金属块</rdfs:label>
     <rdfs:comment xml:lang="en">The slug is a unit of mass defined as 1.459390e1 kilogram.</rdfs:comment>
     <om:symbol>slug</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -8324,7 +8360,8 @@
   <om:Unit rdf:about="&om;percent">
     <rdfs:label xml:lang="en">percent</rdfs:label>
     <rdfs:label xml:lang="nl">procent</rdfs:label>
-    <rdfs:label xml:lang="zh">百分比</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">百分比</rdfs:label> -->
+    <rdfs:label xml:lang="zh">百分</rdfs:label>
     <rdfs:comment xml:lang="en">The percent is a unit of dimension one defined as 1/100.</rdfs:comment>
     <om:symbol>%</om:symbol>
     <om:LaTeXSymbol>\%</om:LaTeXSymbol>
@@ -11154,6 +11191,7 @@
     <rdfs:label xml:lang="en">knot (international)</rdfs:label>
     <rdfs:label xml:lang="nl">knoop (internationaal)</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">節</rdfs:label> -->
+    <rdfs:label xml:lang="zh">海里/小时（国际）</rdfs:label>
     <om:alternativeLabel xml:lang="en">international knot</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international knot is a unit of speed defined as nautical mile per hour.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -11386,7 +11424,8 @@
   <om:Unit rdf:about="&om;newton">
     <rdfs:label xml:lang="en">newton</rdfs:label>
     <rdfs:label xml:lang="nl">newton</rdfs:label>
-    <rdfs:label xml:lang="zh">牛頓</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">牛頓</rdfs:label> -->
+    <rdfs:label xml:lang="zh">牛顿</rdfs:label>
     <rdfs:comment xml:lang="en">The newton is a unit of force defined as kilogram timesmetre divided by second squared.</rdfs:comment>
     <om:longcomment>The newton is a unit of force defined as kilogram times metre divided by second squared. The newton is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>N</om:symbol>
@@ -12197,7 +12236,8 @@
   <om:Unit rdf:about="&om;bar">
     <rdfs:label xml:lang="en">bar</rdfs:label>
     <rdfs:label xml:lang="nl">bar</rdfs:label>
-    <rdfs:label xml:lang="zh">巴</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">巴</rdfs:label> -->
+    <rdfs:label xml:lang="zh">巴（压力计量单位）</rdfs:label>
     <rdfs:comment xml:lang="en">The bar is a unit of pressure defined as 100 000 pascal.</rdfs:comment>
     <om:LaTeXCommand>\barUnit</om:LaTeXCommand>
     <om:symbol>bar</om:symbol>
@@ -12221,8 +12261,7 @@
   <om:PrefixedUnit rdf:about="&om;microbar">
     <rdfs:label xml:lang="en">microbar</rdfs:label>
     <rdfs:label xml:lang="nl">microbar</rdfs:label>
-    <rdfs:label xml:lang="zh">微
-毫巴</rdfs:label>
+    <rdfs:label xml:lang="zh">微巴</rdfs:label>
     <rdfs:comment xml:lang="en">The microbar is a unit of pressure defined as 1.0e-6 bar.</rdfs:comment>
     <om:symbol>μbar</om:symbol>
     <om:hasPrefix rdf:resource="&om;micro"/>
@@ -12233,7 +12272,7 @@
   <om:PrefixedUnit rdf:about="&om;millibar">
     <rdfs:label xml:lang="en">millibar</rdfs:label>
     <rdfs:label xml:lang="nl">millibar</rdfs:label>
-    <rdfs:label xml:lang="zh">毫巴</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">毫巴</rdfs:label> -->
     <rdfs:comment xml:lang="en">The millibar is a unit of pressure defined as 1.0e-3 bar.</rdfs:comment>
     <om:symbol>mbar</om:symbol>
     <om:hasPrefix rdf:resource="&om;milli"/>
@@ -12244,7 +12283,7 @@
   <om:PrefixedUnit rdf:about="&om;decibar">
     <rdfs:label xml:lang="en">decibar</rdfs:label>
     <rdfs:label xml:lang="nl">decibar</rdfs:label>
-    <rdfs:label xml:lang="zh">分巴</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">分巴</rdfs:label> -->
     <rdfs:comment xml:lang="en">The decibar is a unit of pressure defined as 1.0e-1 bar.</rdfs:comment>
     <om:symbol>dbar</om:symbol>
     <om:hasPrefix rdf:resource="&om;deci"/>
@@ -12962,7 +13001,8 @@
   <om:Unit rdf:about="&om;electronvolt">
     <rdfs:label xml:lang="en">electronvolt</rdfs:label>
     <rdfs:label xml:lang="nl">electronvolt</rdfs:label>
-    <rdfs:label xml:lang="zh">電子伏特</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">電子伏特</rdfs:label> -->
+    <rdfs:label xml:lang="zh">电子伏特</rdfs:label>
     <rdfs:comment xml:lang="en">The electronvolt is a unit of energy defined as 1.602177e-19 joule.</rdfs:comment>
     <om:symbol>eV</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -13177,7 +13217,8 @@
   <om:Unit rdf:about="&om;erg">
     <rdfs:label xml:lang="en">erg</rdfs:label>
     <rdfs:label xml:lang="nl">erg</rdfs:label>
-    <rdfs:label xml:lang="zh">爾格</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">爾格</rdfs:label> -->
+    <rdfs:label xml:lang="zh">尔格</rdfs:label>
     <rdfs:comment xml:lang="en">The erg is a unit of energy defined as 1.0e-7 joule.</rdfs:comment>
     <om:symbol>erg</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
@@ -13198,7 +13239,7 @@
 
   <om:UnitMultiplication rdf:about="&om;kilowattHour">
     <rdfs:label xml:lang="en">kilowatt hour</rdfs:label>
-    <rdfs:label xml:lang="zh">千瓦·時</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">千瓦·時</rdfs:label> -->
     <om:alternativeLabel xml:lang="en">kilowatt-hour</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">kilowatthour</om:alternativeLabel>
     <om:symbol>kW h</om:symbol>
@@ -14029,6 +14070,7 @@
   <om:UnitDivision rdf:about="&om;joulePerKilogram">
     <rdfs:label xml:lang="en">joule per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">joule per kilogram</rdfs:label>
+    <rdfs:label xml:lang="zh">焦耳每千克</rdfs:label>
     <om:symbol>J/kg</om:symbol>
     <om:alternativeSymbol>J kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>J·kg-1</om:alternativeSymbol>
@@ -17333,7 +17375,8 @@
   <owl:Class rdf:about="&om;Entropy">
     <rdfs:label xml:lang="en">entropy</rdfs:label>
     <rdfs:label xml:lang="nl">entropie</rdfs:label>
-    <rdfs:label xml:lang="zh">熵</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">熵</rdfs:label> -->
+    <rdfs:label xml:lang="zh">熵单位</rdfs:label>
     <rdfs:comment xml:lang="en">Entropy is a measure of the unavailability of a system’s energy to do work.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>S</om:symbol> 
@@ -17344,7 +17387,8 @@
   <owl:Class rdf:about="&om;HeatCapacity">
     <rdfs:label xml:lang="en">heat capacity</rdfs:label>
     <rdfs:label xml:lang="nl">warmtecapaciteit</rdfs:label>
-    <rdfs:label xml:lang="zh">熱容量</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">熱容量</rdfs:label> -->
+    <rdfs:label xml:lang="zh">热容量</rdfs:label>
     <rdfs:comment xml:lang="en">Heat capacity is the heat required to increase the temperature of a system or substance one unit temperature.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>C_p</om:symbol> 
@@ -17537,7 +17581,8 @@
   <om:Unit rdf:about="&om;kelvin">
     <rdfs:label xml:lang="en">kelvin</rdfs:label>
     <rdfs:label xml:lang="nl">kelvin</rdfs:label>
-    <rdfs:label xml:lang="zh">开尔文</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">开尔文</rdfs:label> -->
+    <rdfs:label xml:lang="zh">开</rdfs:label>
     <om:symbol>K</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
@@ -17876,7 +17921,8 @@
   <om:Unit rdf:about="&om;degreeCelsius">
     <rdfs:label xml:lang="en">degree Celsius</rdfs:label>
     <rdfs:label xml:lang="nl">graad Celsius</rdfs:label>
-    <rdfs:label xml:lang="zh">摄氏温标</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">摄氏温标</rdfs:label> -->
+    <rdfs:label xml:lang="zh">摄氏度</rdfs:label>
     <om:alternativeLabel xml:lang="en">centigrade</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The degree Celsius is a unit of temperature defined as 1 kelvin.</rdfs:comment>
     <om:longcomment>The degree Celsius is a unit of temperature defined as 1 kelvin. The degree Celsius is a derived unit in the International System of Units.</om:longcomment>
@@ -37857,7 +37903,8 @@
 
   <om:Unit rdf:about="&om;UnitedStatesDollar">
     <rdfs:label xml:lang="en">United States dollar</rdfs:label>
-    <rdfs:label xml:lang="zh">美元</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">美元</rdfs:label> -->
+    <rdfs:label xml:lang="zh">美国美元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
@@ -38162,7 +38209,8 @@
   <om:Unit rdf:about="&om;bit">
     <rdfs:label xml:lang="en">bit</rdfs:label>
     <rdfs:label xml:lang="nl">bit</rdfs:label>
-    <rdfs:label xml:lang="zh">位元</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">位元</rdfs:label> -->
+    <rdfs:label xml:lang="zh">指二进制中的一位</rdfs:label>
     <om:symbol>bit</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
@@ -38489,7 +38537,7 @@
   <om:PrefixedUnit rdf:about="&om;kilobyte">
     <rdfs:label xml:lang="en">kilobyte</rdfs:label>
     <rdfs:label xml:lang="nl">kilobyte</rdfs:label>
-    <rdfs:label xml:lang="zh">千字节</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">千字节</rdfs:label> -->
     <om:symbol>kB</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38498,7 +38546,8 @@
   <om:PrefixedUnit rdf:about="&om;megabyte">
     <rdfs:label xml:lang="en">megabyte</rdfs:label>
     <rdfs:label xml:lang="nl">megabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">兆字节</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">兆字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">百万字节</rdfs:label>
     <om:symbol>MB</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38507,7 +38556,7 @@
   <om:PrefixedUnit rdf:about="&om;gigabyte">
     <rdfs:label xml:lang="en">gigabyte</rdfs:label>
     <rdfs:label xml:lang="nl">gigabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">吉字节</rdfs:label>
+<!--    <rdfs:label xml:lang="zh">吉字节</rdfs:label> -->
     <om:symbol>GB</om:symbol>
     <om:hasPrefix rdf:resource="&om;giga"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38516,7 +38565,8 @@
   <om:PrefixedUnit rdf:about="&om;terabyte">
     <rdfs:label xml:lang="en">terabyte</rdfs:label>
     <rdfs:label xml:lang="nl">terabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">太字节</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">太字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^12字节</rdfs:label>
     <om:symbol>TB</om:symbol>
     <om:hasPrefix rdf:resource="&om;tera"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38525,7 +38575,8 @@
   <om:PrefixedUnit rdf:about="&om;petabyte">
     <rdfs:label xml:lang="en">petabyte</rdfs:label>
     <rdfs:label xml:lang="nl">petabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">拍字节</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">拍字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^15字节</rdfs:label>
     <om:symbol>PB</om:symbol>
     <om:hasPrefix rdf:resource="&om;peta"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38534,7 +38585,8 @@
   <om:PrefixedUnit rdf:about="&om;exabyte">
     <rdfs:label xml:lang="en">exabyte</rdfs:label>
     <rdfs:label xml:lang="nl">exabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">艾字节</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">艾字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">千兆兆字节</rdfs:label>
     <om:symbol>EB</om:symbol>
     <om:hasPrefix rdf:resource="&om;exa"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38543,7 +38595,8 @@
   <om:PrefixedUnit rdf:about="&om;zettabyte">
     <rdfs:label xml:lang="en">zettabyte</rdfs:label>
     <rdfs:label xml:lang="nl">zettabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">泽字节</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">泽字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^21字节</rdfs:label>
     <om:symbol>ZB</om:symbol>
     <om:hasPrefix rdf:resource="&om;zetta"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
@@ -38552,7 +38605,8 @@
   <om:PrefixedUnit rdf:about="&om;yottabyte">
     <rdfs:label xml:lang="en">yottabyte</rdfs:label>
     <rdfs:label xml:lang="nl">yottabyte</rdfs:label>
-    <rdfs:label xml:lang="zh">尧字节</rdfs:label>
+    <!-- <rdfs:label xml:lang="zh">尧字节</rdfs:label> -->
+    <rdfs:label xml:lang="zh">10^24字节</rdfs:label>
     <om:symbol>YB</om:symbol>
     <om:hasPrefix rdf:resource="&om;yotta"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;byte"/>
