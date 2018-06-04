@@ -4,13 +4,14 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Xin-Ying Ren, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Xin-Ying Ren, Mari Wigham, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
     <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc      "http://purl.org/dc/elements/1.1/">
+    <!ENTITY dct     "http://purl.org/dc/terms/">
     <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#"> 
     <!-- <!ENTITY om      "http://www.wurvoc.org/vocabularies/om-2.0/"> -->
     <!-- <!ENTITY om      "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/"> -->
@@ -27,6 +28,7 @@
     xmlns:rdf="&rdf;"
     xmlns:owl="&owl;"
     xmlns:dc="&dc;"
+    xmlns:dct="&dct;"
     xmlns:xsd="&xsd;"
     xmlns:wv="&wv;"  
     xmlns:rdfs="&rdfs;"
@@ -41,15 +43,16 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.7</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.8</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2017/12/28</dc:date>
+    <dc:date>2018/06/02</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
     <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Xin-Ying Ren, Mari Wigham, Jan Top</dc:creator>
-    <dc:license xml:lang="en">This document is available under Creative Common License. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dc:license>
+    <!-- <dc:license xml:lang="en">This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dc:license> -->
+    <dct:license rdf:resource="https://creativecommons.org/Licenses/by/4.0/"/>
     <ombibo:reference rdf:resource="http://www.openisbn.com/isbn/9789462280618/"/>
   </owl:Ontology>
   
@@ -4730,6 +4733,7 @@
   <SystemOfUnits rdf:about="&om;GaussianSystemOfUnits">
     <rdfs:label xml:lang="en">Gaussian system of units</rdfs:label>
     <rdfs:label xml:lang="nl">Gaussische eenhedenstelsel</rdfs:label>
+    <rdfs:label xml:lang="zh">高斯系统单位</rdfs:label>
     <alternativeLabel xml:lang="en">Gaussian CGS system of units</alternativeLabel>
     <alternativeLabel xml:lang="en">mixed CGS system of units</alternativeLabel>
     <alternativeLabel xml:lang="en">symmetrised CGS system of units</alternativeLabel>
@@ -4784,6 +4788,7 @@
   <SystemOfUnits rdf:about="&om;InternationalSystemOfUnits">
     <rdfs:label xml:lang="en">International System of Units</rdfs:label>
     <rdfs:label xml:lang="nl">Internationale Stelsel van Eenheden</rdfs:label>
+    <rdfs:label xml:lang="zh">国际单位制</rdfs:label>
     <om:abbreviation>SI</om:abbreviation>
     <hasBaseQuantity rdf:resource="&om;Length"/>
     <hasBaseQuantity rdf:resource="&om;Mass"/>
@@ -7850,6 +7855,7 @@
 
   <om:Unit rdf:about="&om;InternationalUnit">
     <rdfs:label xml:lang="en">International Unit</rdfs:label>
+    <rdfs:label xml:lang="zh">国际单位</rdfs:label>
     <om:symbol>IU</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
@@ -8454,9 +8460,10 @@
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
               <om:Unit rdf:about="&om;hertz"/>
+              <om:UnitExponentiation rdf:about="&om;reciprocalSecond-Time"/>
+              <om:UnitExponentiation rdf:about="&om;reciprocalMinute-Time"/>
               <om:UnitExponentiation rdf:about="&om;reciprocalHour"/>
               <om:UnitExponentiation rdf:about="&om;reciprocalDay"/>
-              <om:UnitExponentiation rdf:about="&om;reciprocalSecond-Time"/>
               <om:UnitExponentiation rdf:about="&om;reciprocalYear"/>
             </owl:oneOf>
           </owl:Class>
@@ -8750,6 +8757,15 @@
 
   <!-- Frequency Unit Ontology -->
 
+  <om:UnitExponentiation rdf:about="&om;reciprocalMinute-Time">
+    <rdfs:label xml:lang="en">reciprocal minute</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde minuut</rdfs:label>
+    <om:symbol>min-1</om:symbol>
+    <om:hasBase rdf:resource="&om;minute-Time"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-1</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;frequency-Dimension"/>
+  </om:UnitExponentiation>
+
   <om:UnitExponentiation rdf:about="&om;reciprocalHour">
     <rdfs:label xml:lang="en">reciprocal hour</rdfs:label>
     <rdfs:label xml:lang="nl">omgekeerd uur</rdfs:label>
@@ -8778,6 +8794,7 @@
   </om:UnitExponentiation>
 
   <owl:Class rdf:about="&om;Frequency">
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalMinute-Time"/>
     <om:commonlyHasUnit rdf:resource="&om;reciprocalHour"/>
     <om:commonlyHasUnit rdf:resource="&om;reciprocalDay"/>
     <om:commonlyHasUnit rdf:resource="&om;reciprocalYear"/>
@@ -13264,6 +13281,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-39F">
     <rdfs:label xml:lang="en">British thermal unit (39 &#x00B0;F)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（39°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">39 &#x00B0;F British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The 39 &#x00B0;F British thermal unit is a unit of energy defined as 1.05967e3 joule.</rdfs:comment>
     <om:LaTeXCommand>\BritishTermalUnitThirtyNineF</om:LaTeXCommand>
@@ -13276,6 +13294,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-59F">
     <rdfs:label xml:lang="en">British thermal unit (59 &#x00B0;F)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（59°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">59 &#x00B0;F British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The 59 &#x00B0;F British thermal unit is a unit of energy defined as 1.05480e3 joule.</rdfs:comment>
     <om:LaTeXCommand>\BritishTermalUnitFiftyNineF</om:LaTeXCommand>
@@ -13288,6 +13307,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-60F">
     <rdfs:label xml:lang="en">British thermal unit (60 &#x00B0;F)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（60°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">60 &#x00B0;F British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The 60 &#x00B0;F British thermal unit is a unit of energy defined as 1.05468e3 joule.</rdfs:comment>
     <om:LaTeXCommand>\BritishTermalUnitSixtyF</om:LaTeXCommand>
@@ -13300,6 +13320,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-InternationalTable">
     <rdfs:label xml:lang="en">British thermal unit (International Table)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（国际表）</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Table British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The International Table British thermal unit is a unit of energy defined as 1.055056e3 joule.</rdfs:comment>
     <om:symbol>Btu_IT</om:symbol>
@@ -13312,6 +13333,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-Mean">
     <rdfs:label xml:lang="en">British thermal unit (mean)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（平均）</rdfs:label>
     <om:alternativeLabel xml:lang="en">mean British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The mean British thermal unit is a unit of energy defined as 1.05587e3 joule.</rdfs:comment>
     <om:symbol>Btu</om:symbol>
@@ -13323,6 +13345,7 @@
 
   <om:Unit rdf:about="&om;BritishThermalUnit-Thermochemical">
     <rdfs:label xml:lang="en">British thermal unit (thermochemical)</rdfs:label>
+    <rdfs:label xml:lang="zh">英国热力单位（热力化学）</rdfs:label>
     <om:alternativeLabel xml:lang="en">thermochemical British thermal unit</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The thermochemical British thermal unit is a unit of energy defined as 1.054350e3 joule.</rdfs:comment>
     <om:symbol>Btu_th</om:symbol>
@@ -18792,6 +18815,7 @@
   <om:RatioScale rdf:about="&om;KelvinScale">
     <rdfs:label xml:lang="en">Kelvin scale</rdfs:label>
     <rdfs:label xml:lang="nl">Kelvinschaal</rdfs:label>
+    <rdfs:label xml:lang="zh">开氏温标</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Kelvin Temperature scale of 1990</om:alternativeLabel>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:RatioScale>
@@ -18981,12 +19005,14 @@
   <om:IntervalScale rdf:about="&om;CelsiusScale">
     <rdfs:label xml:lang="en">Celsius scale</rdfs:label>
     <rdfs:label xml:lang="nl">Celsiusschaal</rdfs:label>
+    <rdfs:label xml:lang="zh">摄氏温标</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Celsius Temperature scale of 1990</om:alternativeLabel>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:IntervalScale>
 
   <om:FixedPoint rdf:about="&om;_-270.15To-268.15OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-270.15 to -268.15 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-270.15至-268.15摄氏度</rdfs:label>
     <rdfs:comment xml:lang="en">One of the fixed points defining the Celsius scale</rdfs:comment>
     <om:hasNumericalValue>-270.15 to -268.15</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
@@ -18995,6 +19021,7 @@
 
   <om:FixedPoint rdf:about="&om;_-259.3467OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-259.3467 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-259.3467摄氏度</rdfs:label>
     <om:hasNumericalValue>-259.3467</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_13.8033OnTheKelvinScale"/>
@@ -19002,6 +19029,7 @@
 
   <om:FixedPoint rdf:about="&om;approximately-256.15OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-256.15 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">〜-256.15摄氏度</rdfs:label>
     <om:hasNumericalValue>~-256.15</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately17OnTheKelvinScale"/>
@@ -19009,6 +19037,7 @@
 
   <om:FixedPoint rdf:about="&om;approximately-252.85OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-252.85 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">〜-252.85摄氏度</rdfs:label>
     <om:hasNumericalValue>~-252.85</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately203OnTheKelvinScale"/>
@@ -19016,6 +19045,7 @@
 
   <om:FixedPoint rdf:about="&om;_-248.5939OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-248.5939 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-248.5939摄氏度</rdfs:label>
     <om:hasNumericalValue>-248.5939</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_24.5561OnTheKelvinScale"/>
@@ -19023,6 +19053,7 @@
 
   <om:FixedPoint rdf:about="&om;_-218.7916OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-218.7916 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-218.7916摄氏度</rdfs:label>
     <om:hasNumericalValue>-218.7916</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_54.3584OnTheKelvinScale"/>
@@ -19030,6 +19061,7 @@
 
   <om:FixedPoint rdf:about="&om;_-189.3442OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-189.3442 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-189.3442摄氏度</rdfs:label>
     <om:hasNumericalValue>-189.3442</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_83.8058OnTheKelvinScale"/>
@@ -19037,6 +19069,7 @@
 
   <om:FixedPoint rdf:about="&om;_-38.8344OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-38.8344 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">-38.8344摄氏度</rdfs:label>
     <om:hasNumericalValue>-38.8344</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_234.3156OnTheKelvinScale"/>
@@ -19044,6 +19077,7 @@
 
   <om:FixedPoint rdf:about="&om;_0.01OnTheCelsiusScale">
     <rdfs:label xml:lang="en">0.01 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">0.01摄氏度</rdfs:label>
     <om:hasNumericalValue>0.01</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_273.16OnTheKelvinScale"/>
@@ -19051,6 +19085,7 @@
 
   <om:FixedPoint rdf:about="&om;_29.7646OnTheCelsiusScale">
     <rdfs:label xml:lang="en">29.7646 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">29.7646摄氏度</rdfs:label>
     <om:hasNumericalValue>29.7646</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_302.9146OnTheKelvinScale"/>
@@ -19058,6 +19093,7 @@
 
   <om:FixedPoint rdf:about="&om;_156.5985OnTheCelsiusScale">
     <rdfs:label xml:lang="en">156.5985 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">156.5985摄氏度</rdfs:label>
     <om:hasNumericalValue>156.5985</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_429.7485OnTheKelvinScale"/>
@@ -19065,6 +19101,7 @@
 
   <om:FixedPoint rdf:about="&om;_231.928OnTheCelsiusScale">
     <rdfs:label xml:lang="en">231.928 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">231.928摄氏度</rdfs:label>
     <om:hasNumericalValue>231.928</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_505.078OnTheKelvinScale"/>
@@ -19072,6 +19109,7 @@
 
   <om:FixedPoint rdf:about="&om;_419.527OnTheCelsiusScale">
     <rdfs:label xml:lang="en">419.527 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">419.527摄氏度</rdfs:label>
     <om:hasNumericalValue>419.527</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_692.677OnTheKelvinScale"/>
@@ -19079,6 +19117,7 @@
 
   <om:FixedPoint rdf:about="&om;_660.323OnTheCelsiusScale">
     <rdfs:label xml:lang="en">660.323 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">660.323摄氏度</rdfs:label>
     <om:hasNumericalValue>660.323</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_933.473OnTheKelvinScale"/>
@@ -19086,6 +19125,7 @@
 
   <om:FixedPoint rdf:about="&om;_961.78OnTheCelsiusScale">
     <rdfs:label xml:lang="en">961.78 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">961.78摄氏度</rdfs:label>
     <om:hasNumericalValue>961.78</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1234.93OnTheKelvinScale"/>
@@ -19093,6 +19133,7 @@
 
   <om:FixedPoint rdf:about="&om;_1064.18OnTheCelsiusScale">
     <rdfs:label xml:lang="en">1064.18 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">1064.18摄氏度</rdfs:label>
     <om:hasNumericalValue>1064.18</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1337.33OnTheKelvinScale"/>
@@ -19100,6 +19141,7 @@
 
   <om:FixedPoint rdf:about="&om;_1084.62OnTheCelsiusScale">
     <rdfs:label xml:lang="en">1084.62 on the Celsius scale</rdfs:label>
+    <rdfs:label xml:lang="zh">1084.62摄氏度</rdfs:label>
     <om:hasNumericalValue>1084.62</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1357.77OnTheKelvinScale"/>
@@ -19170,6 +19212,7 @@
   <om:IntervalScale rdf:about="&om;FahrenheitScale">
     <rdfs:label xml:lang="en">Fahrenheit scale</rdfs:label>
     <rdfs:label xml:lang="nl">Fahrenheitschaal</rdfs:label>
+    <rdfs:label xml:lang="zh">华氏温标</rdfs:label>
     <om:hasFactor rdf:datatype="&xsd;float">1.8</om:hasFactor>
     <om:hasOff-Set rdf:datatype="&xsd;float">-459.67</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
@@ -19180,6 +19223,7 @@
   <om:RatioScale rdf:about="&om;RankineScale">
     <rdfs:label xml:lang="en">Rankine scale</rdfs:label>
     <rdfs:label xml:lang="nl">Rankineschaal</rdfs:label>
+    <rdfs:label xml:lang="zh">兰金规模</rdfs:label>
     <om:hasFactor rdf:datatype="&xsd;float">1.8</om:hasFactor>
     <om:hasOff-Set rdf:datatype="&xsd;float">0</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
@@ -19190,6 +19234,7 @@
   <om:IntervalScale rdf:about="&om;ReaumurScale">
     <rdfs:label xml:lang="en">Réaumur scale</rdfs:label>
     <rdfs:label xml:lang="nl">Réaumurschaal</rdfs:label>
+    <rdfs:label xml:lang="zh">列氏温标</rdfs:label>
     <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
     <om:hasOff-Set rdf:datatype="&xsd;float">-218.52</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
@@ -37910,6 +37955,7 @@
 
   <om:Unit rdf:about="&om;JapaneseYen">
     <rdfs:label xml:lang="en">Japanese yen</rdfs:label>
+    <rdfs:label xml:lang="zh">日元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
@@ -37921,81 +37967,97 @@
 
   <om:Unit rdf:about="&om;AustralianDollar">
     <rdfs:label xml:lang="en">Australian dollar</rdfs:label>
+    <rdfs:label xml:lang="zh">澳元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;SwissFranc">
     <rdfs:label xml:lang="en">Swiss franc</rdfs:label>
+    <rdfs:label xml:lang="zh">瑞士法郎</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;CanadianDollar">
     <rdfs:label xml:lang="en">Canadian dollar</rdfs:label>
+    <rdfs:label xml:lang="zh">加元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;MexicanPeso">
     <rdfs:label xml:lang="en">Mexican peso</rdfs:label>
+    <rdfs:label xml:lang="zh">墨西哥比索</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;ChineseYuan">
     <rdfs:label xml:lang="en">Chinese yuan</rdfs:label>
+    <rdfs:label xml:lang="zh">中国元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;NewZealandDollar">
     <rdfs:label xml:lang="en">New Zealand dollar</rdfs:label>
+    <rdfs:label xml:lang="zh">新西兰美元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;SwedishKrona">
     <rdfs:label xml:lang="en">Swedish krona</rdfs:label>
+    <rdfs:label xml:lang="zh">瑞典克朗</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;RussianRuble">
     <rdfs:label xml:lang="en">RussianRuble</rdfs:label>
+    <rdfs:label xml:lang="zh">俄罗斯卢布</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;HongKongDollar">
     <rdfs:label xml:lang="en">Hong Kong dollar</rdfs:label>
+    <rdfs:label xml:lang="zh">港元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;NorwegianKrone">
     <rdfs:label xml:lang="en">Norwegian krone</rdfs:label>
+    <rdfs:label xml:lang="zh">挪威克朗</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;SingaporeDollar">
     <rdfs:label xml:lang="en">Singapore dollar</rdfs:label>
+    <rdfs:label xml:lang="zh">新加坡元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;TurkishLira">
     <rdfs:label xml:lang="en">Turkish lira</rdfs:label>
+    <rdfs:label xml:lang="zh">土耳其里拉</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;SouthKoreanWon">
     <rdfs:label xml:lang="en">South Korean won</rdfs:label>
+    <rdfs:label xml:lang="zh">韩元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;SouthAfricanRand">
     <rdfs:label xml:lang="en">South African rand</rdfs:label>
+    <rdfs:label xml:lang="zh">南非兰特</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;BrazilianReal">
-    <rdfs:label xml:lang="en">BrazilianReal</rdfs:label>
+    <rdfs:label xml:lang="en">Brazilian real</rdfs:label>
+    <rdfs:label xml:lang="zh">巴西里拉</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;IndianRupee">
     <rdfs:label xml:lang="en">Indian rupee</rdfs:label>
+    <rdfs:label xml:lang="zh">印度卢比</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
