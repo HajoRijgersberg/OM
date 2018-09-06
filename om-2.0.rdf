@@ -43,10 +43,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.9</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.10</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2018/06/04</dc:date>
+    <dc:date>2018/09/06</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -6761,7 +6761,6 @@
   <!-- Square Metre Per Gram Ontology -->
   <!-- Megametre Per Kilojoule Ontology -->
   <!-- Megaeuro Per Petajoule Ontology -->
-  <!-- Megaeuro Per Megatonne Ontology -->
   <!-- Megaeuro Per Megawatt Ontology -->
   <!-- Gram Per Square Metre Metre Ontology -->
   <!-- Gram Per Square Metre Centimetre Ontology -->
@@ -15901,14 +15900,6 @@
     <rdfs:label xml:lang="en">megaeuro per petajoule</rdfs:label>
     <om:hasNumerator rdf:resource="&om;megaeuro"/>
     <om:hasDenominator rdf:resource="&om;petajoule"/>
-  </om:UnitDivision>
-
-  <!-- Megaeuro Per Megatonne Ontology -->
-
-  <om:UnitDivision rdf:about="&om;megaeuroPerMegatonne">
-    <rdfs:label xml:lang="en">megaeuro per megatonne</rdfs:label>
-    <om:hasNumerator rdf:resource="&om;megaeuro"/>
-    <om:hasDenominator rdf:resource="&om;megatonne"/>
   </om:UnitDivision>
 
   <!-- Megaeuro Per Megawatt Ontology -->
@@ -37827,6 +37818,7 @@
     <rdfs:label xml:lang="en">economics</rdfs:label>
     <rdfs:label xml:lang="nl">economie</rdfs:label>
     <om:usesQuantity rdf:resource="&om;AmountOfMoney"/>
+    <om:usesQuantity rdf:resource="&om;SpecificAmountOfMoney"/>
     <om:usesQuantity rdf:resource="&om;Cost"/>
     <om:usesUnit rdf:resource="&om;UnitedStatesDollar"/>
     <om:usesUnit rdf:resource="&om;euro"/>
@@ -37849,6 +37841,8 @@
     <om:usesUnit rdf:resource="&om;BrazilianReal"/>
     <om:usesUnit rdf:resource="&om;IndianRupee"/>
     <om:usesUnit rdf:resource="&om;megaeuro"/>
+    <om:usesUnit rdf:resource="&om;euroPerTonne"/>
+    <om:usesUnit rdf:resource="&om;megaeuroPerMegatonne"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -37856,6 +37850,7 @@
   <!-- Contents -->
 
   <!-- Amount Of Money Upper Ontology -->
+  <!-- Specific Amount Of Money Upper Ontology -->
 
   <!-- Amount Of Money Upper Ontology -->
 
@@ -37869,12 +37864,25 @@
     <rdfs:subClassOf rdf:resource="&om;AmountOfMoney"/>
   </owl:Class>
 
+  <!-- Specific Amount Of Money Upper Ontology -->
+
+  <owl:Class rdf:about="&om;SpecificAmountOfMoney">
+    <rdfs:label xml:lang="en">specific amount of money</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificCost">
+    <rdfs:label xml:lang="en">specific cost</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;SpecificAmountOfMoney"/>
+  </owl:Class>
+
   <!-- Unit of Measure Ontologies -->
 
   <!-- Contents -->
 
   <!-- Euro Ontology -->
   <!-- Amount of Money Unit Ontology -->
+  <!-- Euro Per Tonne Ontology -->
 
   <!-- Euro Ontology -->
 
@@ -38102,6 +38110,59 @@
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
               <owl:Class rdf:about="&om;AmountOfMoneyUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
+  <!-- Euro Per Tonne Ontology -->
+
+  <om:UnitDivision rdf:about="&om;euroPerTonne">
+    <rdfs:label xml:lang="en">euro per tonne</rdfs:label>
+    <om:hasNumerator rdf:resource="&om;euro"/>
+    <om:hasDenominator rdf:resource="&om;tonne"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;megaeuroPerMegatonne">
+    <rdfs:label xml:lang="en">megaeuro per megatonne</rdfs:label>
+    <om:hasNumerator rdf:resource="&om;megaeuro"/>
+    <om:hasDenominator rdf:resource="&om;megatonne"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;SpecificAmountOfMoney">
+    <om:commonlyHasUnit rdf:resource="&om;euroPerTonne"/>
+    <om:commonlyHasUnit rdf:resource="&om;megaeuroPerMegatonne"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificCost">
+    <om:commonlyHasUnit rdf:resource="&om;euroPerTonne"/>
+    <om:commonlyHasUnit rdf:resource="&om;megaeuroPerMegatonne"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificAmountOfMoneyUnit">
+    <rdfs:label xml:lang="en">specific amount of money unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;euroPerTonne"/>
+          <om:UnitDivision rdf:about="&om;megaeuroPerMegatonne"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;SpecificAmountOfMoney">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;SpecificAmountOfMoneyUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>	
         </owl:allValuesFrom>
