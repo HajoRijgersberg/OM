@@ -96,7 +96,7 @@ Previous versions were published on the wurvoc platform.
 
 ### <a name="acknowledgements"></a>Acknowledgements
 
-We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review).
+We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication] (http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
 
 ### <a name="papers"></a>Papers on OM
