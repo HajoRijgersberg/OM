@@ -1,10 +1,10 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
   <!-- Ontology of units of Measure (OM) -->
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2017 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2019 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -43,10 +43,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.11</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.12</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2018/11/21</dc:date>
+    <dc:date>2019/03/08</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -198,13 +198,7 @@
     <rdfs:label xml:lang="en">commonly has unit</rdfs:label>
     <om:alternativeLabel xml:lang="en">commonly has unit of measure</om:alternativeLabel>
     <rdfs:comment>This property indicates a commonly-used unit.</rdfs:comment>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;Quantity"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;Quantity"/>
     <rdfs:range rdf:resource="&om;Unit"/>
   </owl:ObjectProperty>
 
@@ -358,40 +352,28 @@
 
   <owl:ObjectProperty rdf:about="&om;hasTerm1">
     <rdfs:label xml:lang="en">has term 1</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitMultiplication"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitMultiplication"/>
     <rdfs:range>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
+    <!--   <owl:Class>                                -->
+    <!--     <owl:unionOf rdf:parseType="Collection"> -->
           <owl:Class rdf:about="&om;Unit"/>
-          <!-- <owl:Class rdf:about="&om;Measure"/> -->
-        </owl:unionOf>
-      </owl:Class>
+    <!--       <owl:Class rdf:about="&om;Measure"/>   -->
+    <!--     </owl:unionOf>                           -->
+    <!--   </owl:Class>                               -->
     </rdfs:range>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasTerm2">
     <rdfs:label xml:lang="en">has term 2</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitMultiplication"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitMultiplication"/>
     <rdfs:range>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
+    <!--   <owl:Class>                                -->
+    <!--     <owl:unionOf rdf:parseType="Collection"> -->
           <owl:Class rdf:about="&om;Unit"/>
-          <!-- <owl:Class rdf:about="&om;Measure"/> -->
-        </owl:unionOf>
-      </owl:Class>
+    <!--       <owl:Class rdf:about="&om;Measure"/>   -->
+    <!--     </owl:unionOf>                           -->
+    <!--   </owl:Class>                               -->
     </rdfs:range>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
@@ -420,33 +402,21 @@
 
   <owl:ObjectProperty rdf:about="&om;hasBase">
     <rdfs:label xml:lang="en">has base</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitExponentiation"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitExponentiation"/>
     <rdfs:range>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
+    <!--   <owl:Class>                                -->
+    <!--     <owl:unionOf rdf:parseType="Collection"> -->
           <owl:Class rdf:about="&om;Unit"/>
-          <!-- <owl:Class rdf:about="&om;Measure"/> -->
-        </owl:unionOf>
-      </owl:Class>
+    <!--       <owl:Class rdf:about="&om;Measure"/>   -->
+    <!--     </owl:unionOf>                           -->
+    <!--   </owl:Class>                               -->
     </rdfs:range>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:about="&om;hasExponent">
     <rdfs:label xml:lang="en">has exponent</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitExponentiation"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitExponentiation"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:DatatypeProperty>
@@ -475,40 +445,28 @@
 
   <owl:ObjectProperty rdf:about="&om;hasNumerator">
     <rdfs:label xml:lang="en">has numerator</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitDivision"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitDivision"/>
     <rdfs:range>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
+    <!--   <owl:Class>                                -->
+    <!--     <owl:unionOf rdf:parseType="Collection"> -->
           <owl:Class rdf:about="&om;Unit"/>
-          <!-- <owl:Class rdf:about="&om;Measure"/> -->
-        </owl:unionOf>
-      </owl:Class>
+    <!--       <owl:Class rdf:about="&om;Measure"/>   -->
+    <!--     </owl:unionOf>                           -->
+    <!--   </owl:Class>                               -->
     </rdfs:range>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasDenominator">
     <rdfs:label xml:lang="en">has denominator</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;UnitDivision"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+    <rdfs:domain rdf:resource="&om;UnitDivision"/>
     <rdfs:range>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
+    <!--   <owl:Class>                                -->
+    <!--     <owl:unionOf rdf:parseType="Collection"> -->
           <owl:Class rdf:about="&om;Unit"/>
-          <!-- <owl:Class rdf:about="&om;Measure"/> -->
-        </owl:unionOf>
-      </owl:Class>
+    <!--       <owl:Class rdf:about="&om;Measure"/>   -->
+    <!--     </owl:unionOf>                           -->
+    <!--   </owl:Class>                               -->
     </rdfs:range>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
