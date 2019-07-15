@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 
   <!-- Ontology of units of Measure (OM) -->
 
@@ -43,10 +43,10 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.12</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.13</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2019/03/08</dc:date>
+    <dc:date>2019/07/15</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
@@ -12588,6 +12588,7 @@
               <om:PrefixedUnit rdf:about="&om;gigaelectronvolt"/>
               <om:PrefixedUnit rdf:about="&om;kiloelectronvolt"/>
               <om:PrefixedUnit rdf:about="&om;megaelectronvolt"/>
+              <om:UnitMultiplication rdf:about="&om;wattHour"/>
               <om:UnitMultiplication rdf:about="&om;kilowattHour"/>
               <om:UnitMultiplication rdf:about="&om;terawattHour"/>
               <om:Unit rdf:about="&om;therm-EC"/>
@@ -13278,6 +13279,18 @@
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:PrefixedUnit>
 
+  <om:UnitMultiplication rdf:about="&om;wattHour">
+    <rdfs:label xml:lang="en">watt hour</rdfs:label>
+    <om:alternativeLabel xml:lang="en">watt-hour</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">watthour</om:alternativeLabel>
+    <om:symbol>W h</om:symbol>
+    <om:alternativeSymbol>W·h</om:alternativeSymbol>
+    <om:alternativeSymbol>Wh</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;watt"/>
+    <hasTerm2 rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;energy-Dimension"/>
+  </om:UnitMultiplication>
+
   <om:UnitMultiplication rdf:about="&om;kilowattHour">
     <rdfs:label xml:lang="en">kilowatt hour</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">千瓦·時</rdfs:label> -->
@@ -13587,6 +13600,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -13609,6 +13623,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -13631,6 +13646,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -13653,6 +13669,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -13675,6 +13692,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -17368,6 +17386,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -17390,6 +17409,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
@@ -32479,6 +32499,7 @@
     <om:commonlyHasUnit rdf:resource="&om;erg"/>
     <om:commonlyHasUnit rdf:resource="&om;footPoundal"/>
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
+    <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
