@@ -43,11 +43,13 @@
 
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
+    <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
     <owl:versionInfo xml:lang="en">2.0.13</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
     <dc:date>2019/07/15</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係を模型化する。OMは，単位・量・測定・次元に強い焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
     <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Jan Top</dc:creator>
@@ -102,32 +104,41 @@
 
   <owl:AnnotationProperty rdf:about="&om;alternativeLabel">
     <rdfs:label xml:lang="en">alternative label</rdfs:label>
+    <rdfs:label xml:lang="ja">標識の別名</rdfs:label>
     <!-- <om:alternativeLabel xml:lang="en">has alternative label</om:alternativeLabel> -->
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
   </owl:AnnotationProperty>
 
   <owl:AnnotationProperty rdf:about="&om;longcomment">
     <rdfs:label xml:lang="en">longcomment</rdfs:label>
+    <rdfs:label xml:lang="ja">詳細な注釈</rdfs:label>
     <om:alternativeLabel xml:lang="en">long comment</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">has longcomment</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">詳細な注釈がある</om:alternativeLabel>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
   </owl:AnnotationProperty>
 
   <owl:AnnotationProperty rdf:about="&om;symbol">
     <rdfs:label xml:lang="en">symbol</rdfs:label>
+    <rdfs:label xml:lang="ja">記号</rdfs:label>
     <om:alternativeLabel xml:lang="en">has symbol</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">記号を持つ</om:alternativeLabel>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
   </owl:AnnotationProperty>
 
   <owl:AnnotationProperty rdf:about="&om;alternativeSymbol">
     <rdfs:label xml:lang="en">alternative symbol</rdfs:label>
+    <rdfs:label xml:lang="ja">別の記号</rdfs:label>
     <om:alternativeLabel xml:lang="en">has alternative symbol</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">別の記号を持つ</om:alternativeLabel>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
   </owl:AnnotationProperty>
 
   <owl:AnnotationProperty rdf:about="&om;abbreviation">
     <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+    <rdfs:label xml:lang="ja">略記</rdfs:label>
     <om:alternativeLabel xml:lang="en">has abbreviation</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">略記がある</om:alternativeLabel>
     <!-- <rdfs:domain rdf:resource="&om;SystemOfUnits"/> -->
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
   </owl:AnnotationProperty>
@@ -136,7 +147,9 @@
 
   <owl:AnnotationProperty rdf:about="&om;unofficialLabel">
     <rdfs:label xml:lang="en">unofficial label</rdfs:label>
+    <rdfs:label xml:lang="ja">非公式な記号</rdfs:label>
     <om:alternativeLabel xml:lang="en">has unofficial label</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">非公式な記号を持つ</om:alternativeLabel>
     <rdfs:comment>Used to specify labels that are used in e.g. every day speech but are not defined in any standard.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="&skos;hiddenLabel"/>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
@@ -144,7 +157,9 @@
 
   <owl:AnnotationProperty rdf:about="&om;unofficialAbbreviation">
     <rdfs:label xml:lang="en">unofficial abbreviation</rdfs:label>
+    <rdfs:label xml:lang="ja">非公式な略記</rdfs:label>
     <om:alternativeLabel xml:lang="en">has unofficial abbreviation</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">非公式な略記がある</om:alternativeLabel>
     <rdfs:comment>Used to specify abbreviations that are used in e.g. every day speech but are not defined in any standard.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="&skos;hiddenLabel"/>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
@@ -164,25 +179,30 @@
 
   <owl:Class rdf:about="&om;Quantity">
     <rdfs:label xml:lang="en">quantity</rdfs:label>
+    <rdfs:label xml:lang="ja">量</rdfs:label>
     <rdfs:comment xml:lang="en">A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">量とは，或る現象（例: 星・分子・食品）の定量化できる（標準化された）性質（例: 長さ・質量・時間）の表現である。量は（暗黙の）計量的類似性に従って分離される。例: 机の長さ及び椅子の長さは双方とも長さに分類される。</rdfs:comment>
     <!-- <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> -->
     <!-- <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/> -->
   </owl:Class>
 
   <owl:ObjectProperty rdf:about="&om;hasPhenomenon">
     <rdfs:label xml:lang="en">has phenomenon</rdfs:label>
+    <rdfs:label xml:lang="ja">現象がある</rdfs:label>
     <rdfs:domain rdf:resource="&om;Quantity"/>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasContext">
     <rdfs:label xml:lang="en">has context</rdfs:label>
+    <rdfs:label xml:lang="ja">文脈を持つ</rdfs:label>
     <rdfs:domain rdf:resource="&om;Quantity"/>
     <!-- <rdf:type rdf:resource="&owl;FunctionalProperty"/> -->
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasValue">
     <rdfs:label xml:lang="en">has value</rdfs:label>
+    <rdfs:label xml:lang="ja">値を持つ</rdfs:label>
     <rdfs:domain rdf:resource="&om;Quantity"/>
     <rdfs:range>
       <owl:Class>
@@ -196,7 +216,9 @@
 
   <owl:ObjectProperty rdf:about="&om;commonlyHasUnit">
     <rdfs:label xml:lang="en">commonly has unit</rdfs:label>
+    <rdfs:label xml:lang="ja">通常は単位を持つ</rdfs:label>
     <om:alternativeLabel xml:lang="en">commonly has unit of measure</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">通常は測定単位を持つ</om:alternativeLabel>
     <rdfs:comment>This property indicates a commonly-used unit.</rdfs:comment>
     <rdfs:domain rdf:resource="&om;Quantity"/>
     <rdfs:range rdf:resource="&om;Unit"/>
@@ -204,52 +226,64 @@
 
   <owl:ObjectProperty rdf:about="&om;hasAggregateFunction">
     <rdfs:label xml:lang="en">has aggregate function</rdfs:label>
+    <rdfs:label xml:lang="ja">集計関数を持つ</rdfs:label>
     <rdfs:domain rdf:resource="&om;Quantity"/>
     <rdfs:range rdf:resource="&om;Function"/>
   </owl:ObjectProperty>
 
   <owl:Class rdf:about="&om;Function">
     <rdfs:label xml:lang="en">function</rdfs:label>
+    <rdfs:label xml:lang="ja">関数</rdfs:label>
   </owl:Class>
 
   <om:Function rdf:about="&om;first">
     <rdfs:label xml:lang="en">first</rdfs:label>
+    <rdfs:label xml:lang="ja">最初</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;last">
     <rdfs:label xml:lang="en">last</rdfs:label>
+    <rdfs:label xml:lang="ja">最後</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;minimum">
     <rdfs:label xml:lang="en">minimum</rdfs:label>
+    <rdfs:label xml:lang="ja">最小</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;maximum">
     <rdfs:label xml:lang="en">maximum</rdfs:label>
+    <rdfs:label xml:lang="ja">最大</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;sum">
     <rdfs:label xml:lang="en">sum</rdfs:label>
+    <rdfs:label xml:lang="ja">合計</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;average">
     <rdfs:label xml:lang="en">average</rdfs:label>
+    <rdfs:label xml:lang="ja">平均</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;count">
     <rdfs:label xml:lang="en">count</rdfs:label>
+    <rdfs:label xml:lang="ja">回数</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;standardDeviation">
     <rdfs:label xml:lang="en">standard deviation</rdfs:label>
+    <rdfs:label xml:lang="ja">標準偏差</rdfs:label>
   </om:Function>
 
   <om:Function rdf:about="&om;product">
     <rdfs:label xml:lang="en">product</rdfs:label>
+    <rdfs:label xml:lang="ja">積</rdfs:label>
   </om:Function>
 
   <owl:ObjectProperty rdf:about="&om;hasQuantity">
     <rdfs:label xml:lang="en">has quantity</rdfs:label>
+    <rdfs:label xml:lang="ja">量を持つ</rdfs:label>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -265,13 +299,18 @@
 
   <owl:Class rdf:about="&om;Unit">
     <rdfs:label xml:lang="en">unit</rdfs:label>
+    <rdfs:label xml:lang="ja">単位</rdfs:label>
     <om:alternativeLabel xml:lang="en">unit of measure</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">測定単位</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">unit of measurement</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="ja">測定の単位</om:alternativeLabel>
     <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called "metre".</rdfs:comment>
+    <rdfs:comment xml:lang="ja">測定単位は量の確定的な大きさであり，慣例又は取決めによって定義し採用されている。同じ量の測定の標準として用いられ，他の如何なる量の値も当該単位の単純な倍数として表わせる。例えば，長さも量である; メートルは長さの単位であり，確定的な所定の長さを表している。10メートル（又は10 m）とは，「メートル」と呼ばれる確定的な所定の長さの10倍を，実際に意味している。</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:about="&om;PrefixedUnit">
     <rdfs:label xml:lang="en">prefixed unit</rdfs:label>
+    <rdfs:label xml:lang="ja">補助単位</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -284,6 +323,7 @@
 
   <owl:ObjectProperty rdf:about="&om;hasUnit">
     <rdfs:label xml:lang="en">has unit</rdfs:label>
+    <rdfs:label xml:lang="ja">単位を持つ</rdfs:label>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -301,6 +341,7 @@
 
   <owl:ObjectProperty rdf:about="&om;hasPrefix">
     <rdfs:label xml:lang="en">has prefix</rdfs:label>                                    
+    <rdfs:label xml:lang="ja">補助単位を持つ</rdfs:label>                                    
     <rdfs:domain rdf:resource="&om;PrefixedUnit"/>
     <rdfs:range rdf:resource="&om;Prefix"/>
     <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -315,12 +356,14 @@
 
   <owl:Class rdf:about="&om;UnitMultiple">
     <rdfs:label xml:lang="en">unit multiple</rdfs:label>
+    <rdfs:label xml:lang="ja">単位倍量</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <!-- Cardinality of hasUnit property should be restricted to 0 or 1 -->
   </owl:Class>
 
   <owl:DatatypeProperty rdf:about="&om;hasFactor">
     <rdfs:label xml:lang="en">has factor</rdfs:label>
+    <rdfs:label xml:lang="ja">因子を持つ</rdfs:label>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -337,16 +380,19 @@
 
   <owl:Class rdf:about="&om;SingularUnit">
     <rdfs:label xml:lang="en">singular unit</rdfs:label>
+    <rdfs:label xml:lang="ja">単数単位</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;CompoundUnit">
     <rdfs:label xml:lang="en">compound unit</rdfs:label>
+    <rdfs:label xml:lang="ja">複合単位</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;UnitMultiplication">
     <rdfs:label xml:lang="en">unit multiplication</rdfs:label>
+    <rdfs:label xml:lang="ja">単位倍加</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;CompoundUnit"/>
   </owl:Class>
 
