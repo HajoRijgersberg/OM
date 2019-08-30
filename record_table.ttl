@@ -1,4 +1,4 @@
-# baseURI: http://www.wurvoc.org/vocabularies/oqr/record-table/
+﻿# baseURI: http://www.wurvoc.org/vocabularies/oqr/record-table/
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/ns/prov#
