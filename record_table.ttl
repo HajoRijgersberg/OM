@@ -39,11 +39,11 @@ rec:Observation
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Observatie"@nl ;
   rdfs:label "Observation"@en ;
-  rdfs:label "観測"@ja ;
+  rdfs:label "観測値"@ja ;
   rdfs:label "Waarneming"@nl ;
   rdfs:subClassOf prov:Entity ;
   skos:prefLabel "Observation"@en ;
-  skos:prefLabel "観測"@ja ;
+  skos:prefLabel "観測値"@ja ;
   skos:prefLabel "Waarneming"@nl ;
 .
 rec:RecordTable
