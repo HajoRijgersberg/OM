@@ -1,5 +1,8 @@
 # OM - 測定単位のオントロジー
 
+〔訳注: この文書は，[2019年8月30日時点のREADME](https://github.com/HajoRijgersberg/OM/blob/5e061da5fb1c78ff75d2b800361e42ca954834a4/README.md)の，技術的内容を変更しない日本語訳である。〕
+
+
 **測定単位のオントロジー (Ontology of units of Measure; OM) 2.0**は，科学技術にとって重要な概念及び関係を模型化する。OMは，単位・量・測定・次元に強い焦点を当てている。
 OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-overview/)に基づいている。
 
