@@ -63,7 +63,7 @@ _:bn2 om:hasValue _:bn1 .
 _:bn2 rdf:type om:ThermodynamicTemperature .
 _:bn2 om:hasPhenomenon _:bn3 .
 <http://sws.geonames.org/6295922/> weather:hasWeather _:bn3 ;
-	   gn:name "Alert" .
+	   gn:name "Alert" ;
 	   gn:alternateName "アラート"@ja .
 ```
 
