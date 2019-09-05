@@ -23,7 +23,7 @@ OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-o
 
 ### <a name="om"></a>測定単位のオントロジー
 
-OMオントロジーは，測定値及び単位の定義・利用の為の種々の概念を表す，クラス・実体・及びプロパティを提供する。OMは，例えばSI単位系のメートル (`om:metre`) やキログラム (`om:kilogram`) といった一般的な単位だけではなく，マイルや (`om:mile`) や〔国際〕海里 (`om:nauticalMile-International`) といった他の単位系由来の単位をも提供する。多くの応用分野に対しては，ハッブル常数の単位であるキロメートル毎秒毎パーセク (`om:kilometrePerSecond-TimePerMegaparsec`) や花瓶に生けられた花の寿命 (`om:VaseLife`) といったより具体的な単位と量が提供されている。
+OMオントロジーは，測定値及び単位の定義・利用の為の種々の概念を表す，クラス・実体・及びプロパティを提供する。OMは，例えば国際単位系のメートル (`om:metre`) やキログラム (`om:kilogram`) といった一般的な単位だけではなく，マイルや (`om:mile`) や〔国際〕海里 (`om:nauticalMile-International`) といった他の単位系由来の単位をも提供する。多くの応用分野に対しては，ハッブル常数の単位であるキロメートル毎秒毎パーセク (`om:kilometrePerSecond-TimePerMegaparsec`) や花瓶に生けられた花の寿命 (`om:VaseLife`) といったより具体的な単位と量が提供されている。
 
 OMは次の*応用分野*に対応している:
 
