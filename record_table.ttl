@@ -21,7 +21,7 @@ rec:
   dc:creator "Jan L. Top, Mari L.I. Wigham, Hajo Rijgersberg, and Don J.M. Willems"^^xsd:string ;
   dc:description "De recordtabelontologie maakt een formele omschrijving van kwantitatieve data mogelijk. Deze data is vaak opgeslagen in tabellen."@nl ;
   dc:description "The record table ontology enables the formal description of quantitative data, often stored in table format."@en ;
-  dc:description "記録表オントロジーにより，定量データ（表形式で保存される場合が多い）の形式的記述が可能になります。"@ja ;
+  dc:description "記録表オントロジーにより，表形式で保存されることが多くある定量データを，形式的に記述できるようになる。"@ja ;
   dc:title "Record Table Ontology"@en ;
   dc:title "記録表オントロジー"@ja ;
   dc:title "Recordtabelontologie"@nl ;
@@ -39,11 +39,11 @@ rec:Observation
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Observatie"@nl ;
   rdfs:label "Observation"@en ;
-  rdfs:label "観測"@ja ;
+  rdfs:label "観測値"@ja ;
   rdfs:label "Waarneming"@nl ;
   rdfs:subClassOf prov:Entity ;
   skos:prefLabel "Observation"@en ;
-  skos:prefLabel "観測"@ja ;
+  skos:prefLabel "観測値"@ja ;
   skos:prefLabel "Waarneming"@nl ;
 .
 rec:RecordTable
