@@ -3,7 +3,7 @@
 〔訳注: この文書は，[2019年8月30日時点のREADME](https://github.com/HajoRijgersberg/OM/blob/5e061da5fb1c78ff75d2b800361e42ca954834a4/README.md)の，技術的内容を変更しない日本語訳である。〕
 
 
-**測定単位のオントロジー (Ontology of units of Measure; OM) 2.0**は，科学技術にとって重要な概念及び関係を模型化する。OMは，単位・量・測定・次元に強い焦点を当てている。
+**測定単位のオントロジー (Ontology of units of Measure; OM) 2.0**は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。
 OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-overview/)に基づいている。
 
 **基底URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
@@ -23,7 +23,7 @@ OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-o
 
 ### <a name="om"></a>測定単位のオントロジー
 
-OMオントロジーは，測定値及び単位の定義・利用の為の種々の概念を表す，クラス・実体・及びプロパティを提供する。OMは，例えば国際単位系のメートル (`om:metre`) やキログラム (`om:kilogram`) といった一般的な単位だけではなく，マイルや (`om:mile`) や〔国際〕海里 (`om:nauticalMile-International`) といった他の単位系由来の単位をも提供する。多くの応用分野に対しては，ハッブル常数の単位であるキロメートル毎秒毎パーセク (`om:kilometrePerSecond-TimePerMegaparsec`) や花瓶に生けられた花の寿命 (`om:VaseLife`) といったより具体的な単位と量が提供されている。
+OMオントロジーは，測定値及び単位の定義・利用の為の種々の概念を表す，クラス・インスタンス・及びプロパティを提供する。OMは，例えば国際単位系のメートル (`om:metre`) やキログラム (`om:kilogram`) といった一般的な単位だけではなく，マイル (`om:mile`) や〔国際〕海里 (`om:nauticalMile-International`) といった他の単位から派生した単位をも提供する。多くの応用分野に対しては，ハッブル常数の単位であるキロメートル毎秒毎パーセク(km/s/Mpc) (`om:kilometrePerSecond-TimePerMegaparsec`) や花瓶に生けられた花の寿命 (`om:VaseLife`) といったより具体的な単位と量が提供されている。
 
 OMは次の*応用分野*に対応している:
 
@@ -44,18 +44,18 @@ OMは次の*応用分野*に対応している:
 * 微生物学
 * 経済学
 * 情報技術
-* 活版
+* 活版印刷
 * 運送
 * 食品工学
 * 収穫後技術
 * 味感・食感の力学
-* 梱包
+* 包装(梱包)
 
 ![OMのUML図](images/OM2.0-UML-diagram.png)
 
 **図1.** OMのクラス構造を表わすUML図
 
-例えば，2016年11月30日午前11時28分における[カナダ・アラート](https://ja.wikipedia.org/?curid=1642577)〔訳注: 最北端の定住地〕の気温は次のトリプルで表せる:
+例えば，2016年11月30日午前11時28分における[カナダ・アラート](https://ja.wikipedia.org/?curid=1642577)〔訳注: 最北端の定住地〕の気温は次のように記述される:
 
 ```turtle
 _:bn1 rdf:type om:Point ;
@@ -70,7 +70,7 @@ _:bn2 om:hasPhenomenon _:bn3 .
 	   gn:alternateName "アラート"@ja .
 ```
 
-ここで`weather`及び`gn`は他の名前空間の接頭辞である（`gn`は[geonames](http://www.geonames.org)名前空間）。`Point`の実体における`weather:hasDate`の参照はOMの範疇ではない。
+ここで`weather`及び`gn`は他の名前空間の接頭辞である（`gn`は[geonames](http://www.geonames.org)名前空間）。`Point`のインスタンスにおける`weather:hasDate`の参照はOMの範疇ではない。
 
 この例に対するRDF図式は次の通り。
 
@@ -78,14 +78,14 @@ _:bn2 om:hasPhenomenon _:bn3 .
 
 **図 2.** カナダ・アラートにおける気温情報のRDF図式
 
-> OMでは，温度尺度といった尺度は，対応する単位とは異なる方法で処理される。例えば，温度差は°CやKなどの単位を使用した目盛として表される（28 °C = 28 Kである）。一方で，28 °Cの絶対的温度は**摂氏目盛**と呼ばれ，301 Kと等しい。通常，〔絶対的量は使われず〕尺度が用いられる。
+> OMでは，温度などの尺度は，対応する単位とは異なる方法で処理される。例えば，温度差は°CやKなどの単位を使用した目盛として表される（28 °C = 28 Kである）。一方で，28 °Cの絶対的温度は**摂氏目盛**と呼ばれ，301 Kと等しい。通常，〔絶対的量は使われず〕尺度が用いられる。
  
 OMは，NIST発行の[国際単位系の使用の手引き](http://physics.nist.gov/cuu/pdf/sp811.pdf)といった幾つかの公文書標準に根差している。  
 〔訳注: 日本語訳においては，加えて[JIS Z 8000](https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Z8000)「量及び単位」系列の一連の規格を，主に訳語の参考に用いた。〕
 
 ### <a name="recordtable"></a>記録表オントロジー
 
-OMリポジトリは，既存のRDFデータ・キューブ標準の補足として，表形式データを意味的に模型化する為の[RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl)語彙を収録している。
+OMリポジトリは，既存のRDFデータ・キューブ標準の補足として，表形式データを意味的にモデル化する為の[RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl)語彙を収録している。
 RDF記録表は，自己記述的言及を含む記録の入れ子構造を持ち，又不規則な・欠落した・及び予期しないデータに対処できる。
 こうして，RDFデータ・キューブの制限を回避し，科学及び工学で生じるような複雑なデータを模型化できる。
 
@@ -105,7 +105,7 @@ OMの使用を補助する，又OMを利用するソフトウェアパッケー�
 
 ### <a name="acknowledgements"></a>謝辞
 
-シラー大学〔訳注: ドイツの公立大学〕のJan Martin Keil氏及びSirko Schindler氏にあたっては，OMの査読をして頂いた（[Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review)及びその[出版物](http://www.semantic-web-journal.net/system/files/swj1825.pdf)参照）。
+シラー大学〔訳注: ドイツの公立大学〕のJan Martin Keil氏及びSirko Schindler氏にあたっては，OMの査読をして頂いた（[Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review)及びその[文献](http://www.semantic-web-journal.net/system/files/swj1825.pdf)参照）。
 
 
 ### <a name="papers"></a>OMについての論文
