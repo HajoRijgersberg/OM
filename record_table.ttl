@@ -21,7 +21,7 @@ rec:
   dc:creator "Jan L. Top, Mari L.I. Wigham, Hajo Rijgersberg, and Don J.M. Willems"^^xsd:string ;
   dc:description "De recordtabelontologie maakt een formele omschrijving van kwantitatieve data mogelijk. Deze data is vaak opgeslagen in tabellen."@nl ;
   dc:description "The record table ontology enables the formal description of quantitative data, often stored in table format."@en ;
-  dc:description "記録表オントロジーにより，表形式で保存されることが多くある定量データを，形式的に記述できるようになる。"@ja ;
+  dc:description "記録表オントロジーにより，多くの場合に表形式で保存される定量データを，形式的に記述できるようになる。"@ja ;
   dc:title "Record Table Ontology"@en ;
   dc:title "記録表オントロジー"@ja ;
   dc:title "Recordtabelontologie"@nl ;
@@ -66,19 +66,19 @@ rec:emulates
   rdfs:comment ""^^xsd:string ;
   rdfs:domain rec:Observation ;
   rdfs:label "emulates"@en ;
-  rdfs:label "模倣する"@ja ;
+  rdfs:label "模倣（エミュレート）する"@ja ;
   rdfs:range rec:Observation ;
   skos:prefLabel "emulates"@en ;
-  skos:prefLabel "模倣する"@ja ;
+  skos:prefLabel "模倣（エミュレート）する"@ja ;
 .
 rec:hasLiteralValue
   rdf:type owl:DatatypeProperty ;
   rdfs:comment ""^^xsd:string ;
   rdfs:domain rec:Observation ;
   rdfs:label "has literal value"@en ;
-  rdfs:label "直値を持つ"@ja ;
+  rdfs:label "直値（リテラル値）を持つ"@ja ;
   skos:prefLabel "has literal value"@en ;
-  skos:prefLabel "直値を持つ"@ja ;
+  skos:prefLabel "直値（リテラル値）を持つ"@ja ;
 .
 rec:hasMeasure
   rdf:type owl:ObjectProperty ;
