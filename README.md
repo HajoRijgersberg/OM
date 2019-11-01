@@ -119,6 +119,6 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 
 
 ### <a name="references-to-om"></a>References to OM
-Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
+1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 
 *Under construction*
