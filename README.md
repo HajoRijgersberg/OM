@@ -100,11 +100,25 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 
 
 ### <a name="papers"></a>Papers on OM
-   
+
 1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287.
-2. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
-3. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13.
-4. Top, J., Wigham, M., Rijgersberg, H. Semantically Enriched Spreadsheet Tables in Science and Engineering. *SEMAPRO 2014*.
-5. Mari Wigham, Hajo Rijgersberg, Martine de Vos, Jan Top. Semantic Support for Tables using RDF Record Table. *International Journal On Advances in Intelligent Systems*, **8** (1 and 2), 2015, 128-144.
-6. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
-7. Jan Martin Keil, Sirko Schindler. Comparison and Evaluation of Ontologies for Units of Measurement. *Semantic Web*, **1**, 2018, pp. 1-19.
+2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13.
+3. Top, J., Wigham, M., Rijgersberg, H. Semantically Enriched Spreadsheet Tables in Science and Engineering. *SEMAPRO 2014*.
+4. Mari Wigham, Hajo Rijgersberg, Martine de Vos, Jan Top. Semantic Support for Tables using RDF Record Table. *International Journal On Advances in Intelligent Systems*, **8** (1 and 2), 2015, 128-144.
+5. Jan Martin Keil, Sirko Schindler. Comparison and Evaluation of Ontologies for Units of Measurement. *Semantic Web*, **1**, 2018, pp. 1-19.
+
+
+### <a name="uses-of-om"></a>References to uses of OM
+
+1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
+2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
+3. Bonsai, “BONSAI – Big Open Network for Sustainability Assessment Information.” 2019, https://bonsai.uno/.
+4. Thorben Iggena, Daniel Kümper, Ralf Tönjes, Martin Strohbach, Pavel Smirnov, Juan A. Martinez, Sahr Thomas Acton, Roonak Rezvani, Josiane Parreira, “IoTCrawler. D4.1 IoT Data Attributes and Quality of Information.” University of Applied Sciences Osnabrück, 2019, https://iotcrawler.eu/wp-content/uploads/2019/07/D4.1_final.pdf.
+
+*Under constuction*
+
+
+### <a name="references-to-om"></a>References to OM
+Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
+
+*Under construction*
