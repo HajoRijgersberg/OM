@@ -22,6 +22,6 @@ where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonam
 
 Below you can see a diagram of the RDF structure for this example.
 
-![Example: Alert Weather](/Users/wonco/Vocabularies/OM/images/OM-2.0-Example-Weather.png)
+![Example: Alert Weather](/images/OM-2.0-Example-Weather.png)
 
 **Figure 2.** An RDF diagram of the weather information at Alert, Canada.
