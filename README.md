@@ -52,29 +52,30 @@ The following *application areas* are supported by OM:
 
 **Figure 1.** The UML diagram below shows the class structure of the OM ontology.
 
-To express, for instance, the temperature at [Alert, Canada](https://en.wikipedia.org/wiki/Alert,_Nunavut) on November 30th, 2016 at 11:28 AM, we have the following triples:
-	
-	_:bn1 rdf:type om:Point ;
-		   om:hasScale om:CelsiusScale ;
-		   om:hasNumericalValue "-24.11"^^xsd:double ; 
-		   weather:hasDate "2016-11-30T11:27:59:000+01:00"^^xsd:dateTime .
-	_:bn2 om:hasValue _:bn1 .
-	_:bn2 rdf:type om:ThermodynamicTemperature .
-	_:bn2 om:hasPhenomenon _:bn3 .
-	<http://sws.geonames.org/6295922/> weather:hasWeather _:bn3 ;
-		   gn:name "Alert" .
-	
-where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). The reference to `weather:hasDate` in the instance of `Point` is beyond the scope of OM.
+The following triples express, for example, the diameter of an apple:
+	ex:_10Centimetre rdf:type om:Measure ;
+	  om:hasNumericalValue "10"^^xsd:double ;
+	  om:hasUnit om:centimeter .
+	ex:diameterOfApple1 om:hasValue ex:_10Centimetre ;
+	  a om:Diameter ;
+	  om:hasPhenomenon ex:apple1 .
+	ex:apple1 rfd:type ex:Apple .
 
-Below you can see a diagram of the RDF structure for this example.
+where `ex` is a prefixes for another namespace.
 
-![Example: Alert Weather](images/OM-2.0-Example-Weather.png)
+The RDF structure for this example shows as follows:
 
-**Figure 2.** An RDF diagram of the weather information at Alert, Canada.
+![Example: Apple size](images/OMAppleExample.png)
 
-> In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used.
- 
+**Figure 2.** An RDF diagram representing the size of an apple as 10 cm.
+
+Please not that:
+
+> In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
+
 OM is based on several official paper standards, such as: [The Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. 
+
+
 
 ### <a name="recordtable"></a>RecordTable Ontology
 
