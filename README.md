@@ -111,7 +111,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 6. Hajo Rijgersberg, Semantic support for quantitative research, PhD thesis, Vrije Universiteit Amsterdam, 2013.
 
 
-### <a name="uses-of-om"></a>References to uses of OM
+### <a name="uses-of-om"></a>References to uses of OM (not exhaustive and under construction)
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -122,11 +122,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 7. Mark S. Fox, A Foundation Ontology for Global City Indicators, University of Toronto, 2015.
 8. Megan Katsumi, The Ontology of Units of Measure, https://enterpriseintegrationlab.github.io/icity/OM/doc/index-en.html.
 
-*Under constuction*
 
-
-### <a name="references-to-om"></a>References to OM
+### <a name="references-to-om"></a>References to OM (not exhaustive and under construction)
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
-
-*Under construction*
