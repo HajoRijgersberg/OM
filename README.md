@@ -53,10 +53,11 @@ The following *application areas* are supported by OM:
 **Figure 1.** The UML diagram below shows the class structure of the OM ontology.
 
 The following triples express, for example, the diameter of an apple:
-	ex:_10Centimetre rdf:type om:Measure ;
+	
+	ex:_10Centimetres rdf:type om:Measure ;
 	  om:hasNumericalValue "10"^^xsd:double ;
 	  om:hasUnit om:centimeter .
-	ex:diameterOfApple1 om:hasValue ex:_10Centimetre ;
+	ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
 	  a om:Diameter ;
 	  om:hasPhenomenon ex:apple1 .
 	ex:apple1 rfd:type ex:Apple .
