@@ -133,3 +133,5 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
 3. Fredrik Heintz, Daniel de Leng, Semantic Information Integration with Transformations for Stream Reasoning.
 4. Georgios V. Gkoutos, Paul N. Schofield, Robert Hoehndorf, “The Units Ontology: a tool for integrating units of measurement in science”, Database, 2012.
+5. Gianluca Quercini, Chantal Reynaud, Entity Discovery and Annotation in Tables, EDBT/ICDT ’13, Genoa, Italy, 2013.
+6. Isabel F. Cruz, Venkat R. Ganesh, Seyed Iman Mirrezaei, Semantic extraction of geographic data from web tables for big data integration, Proceedings of the 7th Workshop on Geographic Information Retrieval, Orlando, Florida, 2013, pp. 19-26.
