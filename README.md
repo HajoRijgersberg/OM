@@ -109,6 +109,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 4. Mari Wigham, Hajo Rijgersberg, Martine de Vos, Jan Top. “Semantic Support for Tables using RDF Record Table.” *International Journal On Advances in Intelligent Systems*, **8** (1 and 2), 2015, 128-144.
 5. Jan Martin Keil, Sirko Schindler, “Comparison and Evaluation of Ontologies for Units of Measurement.” *Semantic Web*, **1**, 2018, pp. 1-19.
 6. Hajo Rijgersberg, Semantic support for quantitative research, PhD thesis, Vrije Universiteit Amsterdam, 2013.
+7. Do C., Pauwels E.J. (2013) Using MathML to Represent Units of Measurement for Improved Ontology Alignment. In: Carette J., Aspinall D., Lange C., Sojka P., Windsteiger W. (eds) Intelligent Computer Mathematics. CICM 2013. Lecture Notes in Computer Science, vol 7961. Springer, Berlin, Heidelberg.
 
 
 ### <a name="uses-of-om"></a>References to uses of OM (not exhaustive and under construction)
@@ -121,8 +122,14 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 6. Berrahou, S., Buche, P., Dibie-Barthelemy, J. , Roche, M., How to Extract Unit of Measure in Scientific Documents? In Proceedings of the International Conference on Knowledge Discovery and Information Retrieval and the International Conference on Knowledge Management and Information Sharing (SSTM-2013), 2013, pp. 249-256.
 7. Mark S. Fox, A Foundation Ontology for Global City Indicators, University of Toronto, 2015.
 8. Megan Katsumi, The Ontology of Units of Measure, https://enterpriseintegrationlab.github.io/icity/OM/doc/index-en.html.
+9. Do C., Pauwels E.J. (2013) Harnessing Mathematics for Improved Ontology Alignment. In: Augusto J.C., Wichert R., Collier R., Keyson D., Salah A.A., Tan AH. (eds) Ambient Intelligence. AmI 2013. Lecture Notes in Computer Science, vol 8309. Springer, Cham.
+10. Stocker M. et al. (2013) Acquisition and Representation of Knowledge for Atmospheric New Particle Formation. In: Hřebíček J., Schimak G., Kubásek M., Rizzoli A.E. (eds) Environmental Software Systems. Fostering Information Sharing. ISESS 2013. IFIP Advances in Information and Communication Technology, vol 413. Springer, Berlin, Heidelberg.
+11. Soroush Samadian, Constructing and applying semantic models of clinical phenotypes to support web-embedded clinical research, PhD thesis, University of British Columbia, 2013.
+12. Aurélie Thébaut, Thibault Scholash, Brigitte Charnomordic, Nadine Hilgert, Combining a sensor software with statistical analysis for modeling vine water deficit impact on grape quality, 2014.
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
+3. Fredrik Heintz, Daniel de Leng, Semantic Information Integration with Transformations for Stream Reasoning.
+4. Georgios V. Gkoutos, Paul N. Schofield, Robert Hoehndorf, “The Units Ontology: a tool for integrating units of measurement in science”, Database, 2012.
