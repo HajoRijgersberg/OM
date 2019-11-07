@@ -126,6 +126,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 10. Stocker M. et al. (2013) Acquisition and Representation of Knowledge for Atmospheric New Particle Formation. In: Hřebíček J., Schimak G., Kubásek M., Rizzoli A.E. (eds) Environmental Software Systems. Fostering Information Sharing. ISESS 2013. IFIP Advances in Information and Communication Technology, vol 413. Springer, Berlin, Heidelberg.
 11. Soroush Samadian, Constructing and applying semantic models of clinical phenotypes to support web-embedded clinical research, PhD thesis, University of British Columbia, 2013.
 12. Aurélie Thébaut, Thibault Scholash, Brigitte Charnomordic, Nadine Hilgert, Combining a sensor software with statistical analysis for modeling vine water deficit impact on grape quality, 2014.
+13. Valueflows, A vocabulary for the distributed economic networks of the next economy, https://valueflo.ws/.
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
