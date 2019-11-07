@@ -130,6 +130,10 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 13. Valueflows, A vocabulary for the distributed economic networks of the next economy, https://valueflo.ws/.
 14. Valentina Tamma, Mauro Dragoni, Rafael Gonçalves, Agnieszka Ławrynowicz (Eds.), Ontology Engineering: 12th International Experiences and Directions Workshop on OWL, OWLED 2015, co-located with ISWC 2015, Bethlehem, PA, USA, 2015.
 15. Soroush Samadian, Bruce McManus, Mark Wilkinson, Automatic detection and resolution of measurement-unit conflicts in aggregated data, BMC Med Genomics, 7 (Suppl 1), 2014. 
+16. Biodiversity Information Standards TDWG, https://terms.tdwg.org/wiki/Main_Page.
+17. Maxime Lefrançois, Assisting the Semanticization of data with Vocabularies, Languages, and Tools.
+18. Filip Radulovic, Raúl García-Castro, The Evaluation Result Ontology, 2015, http://vocab.linkeddata.es/eval/index.html.
+19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
@@ -142,3 +146,9 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 7. Damion M. Dooley, William W.L Hsiao, Emma Griffiths, “An OBI ontology Datum Proof Sheet. Toward a harmonized treatment of categorical and scalar data entities in user interfaces”.
 8. David Flater, Architecture for Software-Assisted Quantity Calculus, NIST Technical Note 1943, 2016.
 9. Alexei V. Samsonovich (Ed.), Biologically Inspired Cognitive Architectures 2019, Proceedings of the Tenth Annual Meeting of the BICA Society, 2019.
+10. Vladimir Cvjetkovic, Web physics ontology: Online interactive symbolic computation in physics, 2017 4th Experiment@International Conference (exp.at'17), 2017.
+11. Mauro Dragoni, María Poveda-Villalón, Ernesto Jimenez-Ruiz (Eds.), OWL: Experiences and Directions – Reasoner Evaluation: 13th International Workshop, OWLED 2016, and 5th Internation Workshop, ORE 2016, Bologna, Italy, 2016.
+12. Jacques Carette, David Aspinall, Christoph Lange, Petr Sojka, Wolfgang Windsteiger (Eds.), Intelligent Computer Mathematics: MKM, Calculemus, DML, and Systems and Projects 2013, Held as Part of CICM 2013, Bath, UK, 2013.
+13. Cvetana Krstev, Staša Vujičić Stanković, Duško Vitas, Approximate Measures in the Culinary Domain: Ontology and Lexical Resources, 9th Language Technologies Conference, Information Society, 2014.
+14. J.S. Schwarz, S. Lehnhoff, Ontology-Based Development of Smart Grid Co-Simulation Scenarios, EKAW, 2018.
+15. Marco Balduini, Emanuele Della Valle, FraPPE: a vocabulary to represent heterogeneous spatio-temporal data to support visual analytics, ISWC, 2015.
