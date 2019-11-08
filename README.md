@@ -134,6 +134,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 17. Maxime Lefrançois, Assisting the Semanticization of data with Vocabularies, Languages, and Tools.
 18. Filip Radulovic, Raúl García-Castro, The Evaluation Result Ontology, 2015, http://vocab.linkeddata.es/eval/index.html.
 19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
+20. Paola Espinoza-Arias, María Poveda-Villalón, Raúl García-Castro, Oscar Corcho, Ontological Representation of Smart City Data: From Devices to Cities, Appl. Sci. 9, 32, 2019.
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
