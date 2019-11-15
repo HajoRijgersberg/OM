@@ -140,6 +140,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
+
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
 3. Fredrik Heintz, Daniel de Leng, Semantic Information Integration with Transformations for Stream Reasoning.
