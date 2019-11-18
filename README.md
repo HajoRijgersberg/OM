@@ -84,7 +84,7 @@ Included in the OM repository is the [RecordTable](https://github.com/HajoRijger
 
 As an example, consider the following Table 1. and Figure 3.
 
-![RecordTable Example: Table](/Users/wonco/Vocabularies/OM/images/Table example.JPG)
+![RecordTable Example: Table](/Users/wonco/Vocabularies/OM/images/TableExample.jpg)
 
 **Table 1.** An example table, parts of which are depicted as a RecordTable graph in Figure 3. The highlighted cells are depicted in the graph.
 
