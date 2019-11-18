@@ -24,4 +24,4 @@ Below you can see a diagram of the RDF structure for this example.
 
 ![Example: Alert Weather](/images/OM-2.0-Example-Weather.png)
 
-**Figure 2.** An RDF diagram of the weather information at Alert, Canada.
+**Figure 1.** An RDF diagram of the weather information at Alert, Canada.
