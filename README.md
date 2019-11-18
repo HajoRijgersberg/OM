@@ -81,6 +81,10 @@ OM is based on several official paper standards, such as: [The Guide for the Use
 
 Included in the OM repository is the [RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl) vocabulary for semantically modelling tabular data, as a supplement to the existing RDF Data Cube standard. RDF Record Table has a nested structure of records that contain self-describing observations, and is able to cope with irregular, missing and unexpected data. This allows it to escape the constraints of RDF Data Cube and to model complex data, such as that occurring in science and engineering.
 
+![A RecordTable example](images/RecordTable-Graph.png)
+
+**Figure 3.** An RDF diagram representing an example using RecordTable.
+
 ### <a name="software"></a>Software
 
 Several software packages support the use, or make use of, OM:
