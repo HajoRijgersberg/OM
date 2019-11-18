@@ -92,9 +92,9 @@ As an example, consider the following Table 1. and Figure 3.
 
 **Figure 3.** An RDF diagram representing an example using RecordTable.
 
-### <a name="software"></a>Software
+### <a name="software"></a>Libs
 
-Several software packages support the use, or make use of, OM:
+Several libs support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
 
