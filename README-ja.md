@@ -1,6 +1,6 @@
 # OM - 測定単位のオントロジー
 
-〔訳注: この文書は，[2019年11月5日時点のREADME](https://github.com/HajoRijgersberg/OM/blob/11097b04a28fef7e0901f24f087b2ba27d6f1c90/README.md)の，技術的内容を変更しない日本語訳である。〕
+〔訳注: この文書は，[2019年11月19日時点のREADME](https://github.com/HajoRijgersberg/OM/blob/02331e8f335568e93f027dd1d4bb569bbd1f82b3/README.md)の，技術的内容を変更しない日本語訳である。〕
 
 
 **測定単位のオントロジー (Ontology of units of Measure; OM) 2.0**は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。
