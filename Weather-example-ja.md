@@ -1,12 +1,13 @@
 # 尺度 - 温度
 
-〔訳注: この文書は，[2019年9月6日時点の](https://github.com/HajoRijgersberg/OM/blob/11097b04a28fef7e0901f24f087b2ba27d6f1c90/Weather-example.md)文書の，技術的内容を変更しない日本語訳である。〕 
+〔訳注: この文書は，[2019年11月5日時点のWeather-example.md](https://github.com/HajoRijgersberg/OM/blob/11097b04a28fef7e0901f24f087b2ba27d6f1c90/Weather-example.md)の，技術的内容を変更しない日本語訳である。〕 
 
+OMを用いる際，温度が屡々<ruby>測度<rp>(</rp><rt>measure</rt><rp>)</rp></ruby>ではなく<ruby>尺度<rp>(</rp><rt>scale</rt><rp>)</rp></ruby>上の位置として表現されることを心得よ。
+一般に，温度が摂氏18度であり絶対温度に変更したいならば，273.15を加算して291.15 K（又は華氏64.4度）にする。
+今述べた数値は全て摂氏尺度，絶対温度尺度，そして華氏尺度という尺度であって，三者の原点（数値が零になる位置）は異なる。
+換言すれば，温度尺度については摂氏0度，絶対温度0度，華氏0度は相異なる。
 
-When using OM, you should keep in mind that temperature is often expressed as a point on a scale, not as a measure. Generally, if we say that the temperature is 18 °C and we want to convert to Kelvin, we add 273.15 and get 291.15 K, or 64.4 °F. These are all scales; the Celsius scale, the Kelvin scale, and the Fahrenheit scale and they have different origins (zero points). I.e. for temperature scales 0 °C ≠ 0 K ≠ 0 °F.
-OMを用いる際，温度が屡々測定値ではなく尺度として表現されることを心得よ。
-
-You can still use measures to express temperatures (where 0 °C = 0 K = 0 °F) but these would specify a temperature difference. For example: 10 °C = 10 K = 18 °F.
+温度の表現に測度を用いることは依然可能である（この場合0 °C = 0 K = 0 °F）が，しかしそれらが指し示すのは温度差である。具体例: 10 °C = 10 K = 18 °F。
 
 ## 例
 
