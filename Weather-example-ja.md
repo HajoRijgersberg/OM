@@ -27,7 +27,6 @@ _:bn2 om:hasPhenomenon _:bn3 .
 ```
 〔訳註: `gn:alternateName "アラート"@ja`は原文には存在しない〕
 
-where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). The reference to `weather:hasDate` in the instance of `Point` is beyond the scope of OM.
 ここで`weather`及び`gn`は他の名前空間の接頭辞である（`gn`は[geonames](http://www.geonames.org)名前空間）。`Point`のインスタンスにおける`weather:hasDate`の参照はOMの範疇ではない。
 
 この例に対するRDF図式は次の通り。
