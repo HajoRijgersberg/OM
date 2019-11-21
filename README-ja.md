@@ -15,10 +15,12 @@ OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-o
 
 * [測定単位のオントロジー](#om)
 * [記録表オントロジー](#recordtable)
-* [ソフトウェア](#software)
+* [ライブラリ](#software)
 * [旧版](#previous-versions)
 * [謝辞](#acknowledgements)
-* [OMについての論文](#papers)
+* [OMについての文献](#papers)
+* [OMの使用に言及している資料](#uses-of-om)
+* [OMに概して言及している資料](#references-to-om)
 
 
 ### <a name="om"></a>測定単位のオントロジー
@@ -88,9 +90,20 @@ OMリポジトリは，既存のRDFデータ・キューブ標準の補足とし
 RDF記録表は，自己記述的言及を含む記録の入れ子構造を持ち，又不規則な・欠落した・及び予期しないデータに対処できる。
 こうして，RDFデータ・キューブの制限を回避し，科学及び工学で生じるような複雑なデータを模型化できる。
 
-### <a name="software"></a>ソフトウェア
+例として，次掲の表1及び図3を考慮せよ。
 
-OMの使用を補助する，又OMを利用するソフトウェアパッケージが幾つかある。
+![記録表の例: 表](images/TableExample.jpg)
+
+**表1.** 例表であり，一部は図3にてRecordTableとして描かれている。グラフで描かれている升目を強調した。
+
+![記録表の一例](images/RecordTable-Graph.png)
+
+**図3.** RecordTableの使用例を示すRDF図式
+
+
+### <a name="software"></a>ライブラリ
+
+次に，OMの使用を補助する幾つかのライブラリを挙げる。
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): 単位間変換にOMを利用するJava製ソフトウェアライブラリ。
 
