@@ -53,14 +53,16 @@ The following *application areas* are supported by OM:
 **Figure 1.** The UML diagram below shows the class structure of the OM ontology.
 
 The following triples express, for example, the diameter of an apple:
-	
-	ex:_10Centimetres rdf:type om:Measure ;
-	  om:hasNumericalValue "10"^^xsd:double ;
-	  om:hasUnit om:centimeter .
-	ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
-	  a om:Diameter ;
-	  om:hasPhenomenon ex:apple1 .
-	ex:apple1 rfd:type ex:Apple .
+
+```turtle
+ex:_10Centimetres rdf:type om:Measure ;
+  om:hasNumericalValue "10"^^xsd:double ;
+  om:hasUnit om:centimeter .
+ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
+  a om:Diameter ;
+  om:hasPhenomenon ex:apple1 .
+ex:apple1 rfd:type ex:Apple .
+```
 
 where `ex` is a prefixes for another namespace.
 
@@ -148,6 +150,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
+
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
 3. Fredrik Heintz, Daniel de Leng, Semantic Information Integration with Transformations for Stream Reasoning.

@@ -8,15 +8,17 @@ You can still use measures to express temperatures (where 0 °C = 0 K = 0 °F) b
 
 To express, for instance, the temperature at [Alert, Canada](https://en.wikipedia.org/wiki/Alert,_Nunavut) on November 30th, 2016 at 11:28 AM, we have the following triples:
 
-	_:bn1 rdf:type om:Point ;
-		   om:hasScale om:CelsiusScale ;
-		   om:hasNumericalValue "-24.11"^^xsd:double ; 
-		   weather:hasDate "2016-11-30T11:27:59:000+01:00"^^xsd:dateTime .
-	_:bn2 om:hasValue _:bn1 .
-	_:bn2 rdf:type om:ThermodynamicTemperature .
-	_:bn2 om:hasPhenomenon _:bn3 .
-	<http://sws.geonames.org/6295922/> weather:hasWeather _:bn3 ;
-		   gn:name "Alert" .
+```turtle
+_:bn1 rdf:type om:Point ;
+  om:hasScale om:CelsiusScale ;
+  om:hasNumericalValue "-24.11"^^xsd:double ; 
+  weather:hasDate "2016-11-30T11:27:59:000+01:00"^^xsd:dateTime .
+_:bn2 om:hasValue _:bn1 .
+_:bn2 rdf:type om:ThermodynamicTemperature .
+_:bn2 om:hasPhenomenon _:bn3 .
+<http://sws.geonames.org/6295922/> weather:hasWeather _:bn3 ;
+  gn:name "Alert" .
+```
 
 where `weather` and `gn` are prefixes for other namespaces (`gn` for the [geonames](http://www.geonames.org) namespace). The reference to `weather:hasDate` in the instance of `Point` is beyond the scope of OM.
 
