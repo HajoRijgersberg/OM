@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.14</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.15</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2019/08/30</dc:date>
+    <dc:date>2019/12/12</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係を模型化する。OMは，単位・量・測定・次元に強い焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -13777,6 +13777,7 @@
               <om:Unit rdf:about="&om;horsepower-Electric"/>
               <om:Unit rdf:about="&om;horsepower-Metric"/>
               <om:Unit rdf:about="&om;horsepower-Water"/>
+              <om:Unit rdf:about="&om;kilocalorie-MeanPerDay"/>
               <om:Unit rdf:about="&om;solarLuminosity"/>
               <om:Unit rdf:about="&om;tonOfRefrigeration"/>
               <om:Unit rdf:about="&om;watt"/>
@@ -14122,6 +14123,16 @@
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
+
+  <om:UnitDivision rdf:about="&om;kilocalorie-MeanPerDay">
+    <rdfs:label xml:lang="en">kilocalorie (mean) per day</rdfs:label>
+    <om:symbol>kcal/d</om:symbol>
+    <om:alternativeSymbol>kcal d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kcal·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilocalorie-Mean"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
+  </om:UnitDivision>
 
   <om:Unit rdf:about="&om;tonOfRefrigeration">
     <rdfs:label xml:lang="en">ton of refrigeration</rdfs:label>
@@ -14970,6 +14981,7 @@
     <om:alternativeLabel xml:lang="en">gram per 100 gram</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">gram per 100 gram</om:alternativeLabel>
     <om:symbol>g/hg</om:symbol>
+    <om:alternativeSymbol>g/100 g</om:alternativeSymbol>
     <om:alternativeSymbol>g hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·hg-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;gram"/>
@@ -15382,6 +15394,28 @@
     <om:hasDimension rdf:resource="&om;massFlow-Dimension"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;gramPerDay">
+    <rdfs:label xml:lang="en">gram per day</rdfs:label>
+    <rdfs:label xml:lang="nl">gram per dag</rdfs:label>
+    <om:symbol>g/d</om:symbol>
+    <om:alternativeSymbol>g d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>g·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;gram"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+    <om:hasDimension rdf:resource="&om;massFlow-Dimension"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;milligramPerDay">
+    <rdfs:label xml:lang="en">milligram per day</rdfs:label>
+    <rdfs:label xml:lang="nl">milligram per dag</rdfs:label>
+    <om:symbol>mg/d</om:symbol>
+    <om:alternativeSymbol>mg d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mg·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;milligram"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+    <om:hasDimension rdf:resource="&om;massFlow-Dimension"/>
+  </om:UnitDivision>
+
   <owl:Class rdf:about="&om;MassFlow">
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerSecond-Time"/>
   </owl:Class>
@@ -15392,7 +15426,9 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;gramPerday"/>
           <om:UnitDivision rdf:about="&om;kilogramPerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;milligramPerday"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
