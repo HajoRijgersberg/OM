@@ -44,12 +44,12 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.15</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.16</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2019/12/12</dc:date>
+    <dc:date>2019/12/24</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
-    <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係を模型化する。OMは，単位・量・測定・次元に強い焦点を当てている。</rdfs:comment>
+    <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
     <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Jan Top</dc:creator>
@@ -181,7 +181,7 @@
     <rdfs:label xml:lang="en">quantity</rdfs:label>
     <rdfs:label xml:lang="ja">量</rdfs:label>
     <rdfs:comment xml:lang="en">A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.</rdfs:comment>
-    <rdfs:comment xml:lang="ja">量とは，或る現象（例: 星・分子・食品）の定量化できる（標準化された）性質（例: 長さ・質量・時間）の表現である。量は（暗黙の）計量的類似性に従って分離される。例: 机の長さ及び椅子の長さは双方とも長さに分類される。</rdfs:comment>
+    <rdfs:comment xml:lang="ja">量とは，ある現象（例: 星・分子・食品）の定量化できる（標準化された）性質（例: 長さ・質量・時間）の表現である。量は（暗黙の）計量的類似性に従って分離される。例: 机の長さ及び椅子の長さは双方とも長さに分類される。</rdfs:comment>
     <!-- <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> -->
     <!-- <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/> -->
   </owl:Class>
@@ -305,7 +305,7 @@
     <om:alternativeLabel xml:lang="en">unit of measurement</om:alternativeLabel>
     <om:alternativeLabel xml:lang="ja">測定の単位</om:alternativeLabel>
     <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called "metre".</rdfs:comment>
-    <rdfs:comment xml:lang="ja">測定単位は量の確定的な大きさであり，慣例又は取決めによって定義し採用されている。同じ量の測定の標準として用いられ，他の如何なる量の値も当該単位の単純な倍数として表わせる。例えば，長さも量である; メートルは長さの単位であり，確定的な所定の長さを表している。10メートル（又は10 m）とは，「メートル」と呼ばれる確定的な所定の長さの10倍を，実際に意味している。</rdfs:comment>
+    <rdfs:comment xml:lang="ja">測定単位とは，量の確定的な大きさであり，慣例又は法律によって定義し採用されている。同じ量の測定の標準として用いられ，他の如何なる量の値も当該単位の単純な倍数として表わせる。例えば，長さも量である; メートルは長さの単位であり，確定的な所定の長さを表している。10メートル（又は10 m）とは，「メートル」と呼ばれる確定的な所定の長さの10倍を，実際に意味している。</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:about="&om;PrefixedUnit">
@@ -392,7 +392,7 @@
 
   <owl:Class rdf:about="&om;UnitMultiplication">
     <rdfs:label xml:lang="en">unit multiplication</rdfs:label>
-    <rdfs:label xml:lang="ja">単位倍加</rdfs:label>
+    <rdfs:label xml:lang="ja">単位乗算</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;CompoundUnit"/>
   </owl:Class>
 
