@@ -76,9 +76,9 @@ rec:hasLiteralValue
   rdfs:comment ""^^xsd:string ;
   rdfs:domain rec:Observation ;
   rdfs:label "has literal value"@en ;
-  rdfs:label "直値（リテラル値）を持つ"@ja ;
+  rdfs:label "直値(リテラル値)を持つ"@ja ;
   skos:prefLabel "has literal value"@en ;
-  skos:prefLabel "直値（リテラル値）を持つ"@ja ;
+  skos:prefLabel "直値(リテラル値)を持つ"@ja ;
 .
 rec:hasMeasure
   rdf:type owl:ObjectProperty ;
