@@ -39,11 +39,11 @@ rec:Observation
   rdfs:comment ""^^xsd:string ;
   rdfs:label "Observatie"@nl ;
   rdfs:label "Observation"@en ;
-  rdfs:label "観測値"@ja ;
+  rdfs:label "観測"@ja ;
   rdfs:label "Waarneming"@nl ;
   rdfs:subClassOf prov:Entity ;
   skos:prefLabel "Observation"@en ;
-  skos:prefLabel "観測値"@ja ;
+  skos:prefLabel "観測"@ja ;
   skos:prefLabel "Waarneming"@nl ;
 .
 rec:RecordTable
@@ -66,10 +66,10 @@ rec:emulates
   rdfs:comment ""^^xsd:string ;
   rdfs:domain rec:Observation ;
   rdfs:label "emulates"@en ;
-  rdfs:label "模倣（エミュレート）する"@ja ;
+  rdfs:label "模倣する"@ja ;
   rdfs:range rec:Observation ;
   skos:prefLabel "emulates"@en ;
-  skos:prefLabel "模倣（エミュレート）する"@ja ;
+  skos:prefLabel "模倣する"@ja ;
 .
 rec:hasLiteralValue
   rdf:type owl:DatatypeProperty ;
