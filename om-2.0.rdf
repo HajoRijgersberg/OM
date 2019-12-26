@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.16</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.17</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2019/12/24</dc:date>
+    <dc:date>2019/12/26</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -279,6 +279,10 @@
   <om:Function rdf:about="&om;product">
     <rdfs:label xml:lang="en">product</rdfs:label>
     <rdfs:label xml:lang="ja">積</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;median">
+    <rdfs:label xml:lang="en">median</rdfs:label>
   </om:Function>
 
   <owl:ObjectProperty rdf:about="&om;hasQuantity">
