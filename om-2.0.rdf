@@ -44,7 +44,7 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.18</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.19</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
     <dc:date>2020/02/20</dc:date>
@@ -14209,8 +14209,10 @@
     <rdfs:label xml:lang="en">kilocalorie (mean) per hectogram</rdfs:label>
     <om:alternativeLabel xml:lang="en">kilocalorie per 100 gram</om:alternativeLabel>
     <om:symbol>kcal/hg</om:symbol>
+    <om:alternativeSymbol>kcal/100 g</om:alternativeSymbol>
     <om:alternativeSymbol>kcal hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>kcal·hg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kcal/100 g</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilocalorie-Mean"/>
     <om:hasDenominator rdf:resource="&om;hectogram"/>
     <om:hasDimension rdf:resource="&om;specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension"/>
