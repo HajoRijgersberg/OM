@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.19</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.20</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/02/20</dc:date>
+    <dc:date>2020/03/22</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -3748,6 +3748,101 @@
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.831658</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;bar-Food">
+    <rdfs:label xml:lang="en">bar (food)</rdfs:label>
+    <rdfs:label xml:lang="nl">reep</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;bottle">
+    <rdfs:label xml:lang="en">bottle</rdfs:label>
+    <rdfs:label xml:lang="nl">fles</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;bowl">
+    <rdfs:label xml:lang="en">bowl</rdfs:label>
+    <rdfs:label xml:lang="nl">schaaltje</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;cup">
+    <rdfs:label xml:lang="en">cup</rdfs:label>
+    <rdfs:label xml:lang="nl">kopje</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;dash">
+    <rdfs:label xml:lang="en">dash</rdfs:label>
+    <rdfs:label xml:lang="nl">scheutje</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;deepBowl">
+    <rdfs:label xml:lang="en">deep bowl</rdfs:label>
+    <rdfs:label xml:lang="nl">diep bord</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;drop">
+    <rdfs:label xml:lang="en">drop</rdfs:label>
+    <rdfs:label xml:lang="nl">druppel</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;fillet">
+    <rdfs:label xml:lang="en">fillet</rdfs:label>
+    <rdfs:label xml:lang="nl">filet</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;glass">
+    <rdfs:label xml:lang="en">glass</rdfs:label>
+    <rdfs:label xml:lang="nl">glas</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;handful">
+    <rdfs:label xml:lang="en">handful</rdfs:label>
+    <rdfs:label xml:lang="nl">handje</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;piece">
+    <rdfs:label xml:lang="en">piece</rdfs:label>
+    <rdfs:label xml:lang="nl">stuks</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;pinch">
+    <rdfs:label xml:lang="en">pinch</rdfs:label>
+    <rdfs:label xml:lang="nl">mespunt</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;portion">
+    <rdfs:label xml:lang="en">portion</rdfs:label>
+    <rdfs:label xml:lang="nl">portie</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;scoop">
+    <rdfs:label xml:lang="en">scoop</rdfs:label>
+    <rdfs:label xml:lang="nl">bolletje</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;servingSpoon">
+    <rdfs:label xml:lang="en">serving spoon</rdfs:label>
+    <rdfs:label xml:lang="nl">opscheplepel</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;slice">
+    <rdfs:label xml:lang="en">slice</rdfs:label>
+    <rdfs:label xml:lang="nl">snee</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;spread">
+    <rdfs:label xml:lang="en">spread</rdfs:label>
+    <rdfs:label xml:lang="nl">broodbelegging</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;wedge">
+    <rdfs:label xml:lang="en">wedge</rdfs:label>
+    <rdfs:label xml:lang="nl">punt</rdfs:label>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;wineGlass">
+    <rdfs:label xml:lang="en">wine glass</rdfs:label>
+    <rdfs:label xml:lang="nl">wijnglas</rdfs:label>
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-3CubicMetre">
