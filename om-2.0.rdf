@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.20</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.21</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/03/22</dc:date>
+    <dc:date>2020/04/17</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -40713,6 +40713,13 @@
   <om:Unit rdf:about="&om;_1-10">
     <rdfs:label xml:lang="en">1-10</rdfs:label>
     <rdfs:label xml:lang="nl">1-10</rdfs:label>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;_0-100">
+    <rdfs:label xml:lang="en">0-100</rdfs:label>
+    <rdfs:label xml:lang="nl">0-100</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
