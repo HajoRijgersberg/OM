@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.21</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.22</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/04/17</dc:date>
+    <dc:date>2020/06/06</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -8364,6 +8364,7 @@
           <om:UnitDivision rdf:about="&om;kilogramPerKilogram"/>
           <om:UnitDivision rdf:about="&om;milligramPerHectogram"/>
           <om:UnitDivision rdf:about="&om;milligramPerKilogram"/>
+          <om:UnitDivision rdf:about="&om;microgramPerHectogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -14307,7 +14308,6 @@
     <om:alternativeSymbol>kcal/100 g</om:alternativeSymbol>
     <om:alternativeSymbol>kcal hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>kcal·hg-1</om:alternativeSymbol>
-    <om:alternativeSymbol>kcal/100 g</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilocalorie-Mean"/>
     <om:hasDenominator rdf:resource="&om;hectogram"/>
     <om:hasDimension rdf:resource="&om;specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension"/>
@@ -14319,6 +14319,7 @@
     <om:alternativeLabel xml:lang="en">kilojoule per 100 gram</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">kilojoule per 100 gram</om:alternativeLabel>
     <om:symbol>kJ/hg</om:symbol>
+    <om:alternativeSymbol>kJ/100 g</om:alternativeSymbol>
     <om:alternativeSymbol>kJ hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>kJ·hg-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilojoule"/>
@@ -15131,9 +15132,24 @@
     <om:alternativeLabel xml:lang="en">milligram per 100 gram</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">milligram per 100 gram</om:alternativeLabel>
     <om:symbol>mg/hg</om:symbol>
+    <om:alternativeSymbol>mg/100 g</om:alternativeSymbol>
     <om:alternativeSymbol>mg hg-1</om:alternativeSymbol>
     <om:alternativeSymbol>mg·hg-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;milligram"/>
+    <om:hasDenominator rdf:resource="&om;hectogram"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;microgramPerHectogram">
+    <rdfs:label xml:lang="en">microgram per hectogram</rdfs:label>
+    <rdfs:label xml:lang="nl">microgram per hectogram</rdfs:label>
+    <om:alternativeLabel xml:lang="en">microgram per 100 gram</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="nl">microgram per 100 gram</om:alternativeLabel>
+    <om:symbol>μg/hg</om:symbol>
+    <om:alternativeSymbol>μg/100 g</om:alternativeSymbol>
+    <om:alternativeSymbol>μg hg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>μg·hg-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;hectogram"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:UnitDivision>
@@ -15144,6 +15160,7 @@
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerKilogram"/>
     <om:commonlyHasUnit rdf:resource="&om;milligramPerHectogram"/>
     <om:commonlyHasUnit rdf:resource="&om;milligramPerKilogram"/>
+    <om:commonlyHasUnit rdf:resource="&om;microgramPerHectogram"/>
   </owl:Class>
 
   <!-- Metre Kilogram Per Second Ontology -->
