@@ -127,7 +127,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 8. Markus D. Steinberg, Sirko Schindler, Jan Martin Keil, Use Cases and Suitability Metrics for Unit Ontologies.
 
 
-### <a name="uses-of-om"></a>References to uses of OM (not exhaustive and under construction)
+### <a name="uses-of-om"></a>Papers and references to uses and submissions of OM (not exhaustive and under construction)
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -149,6 +149,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 18. Filip Radulovic, Raúl García-Castro, The Evaluation Result Ontology, 2015, http://vocab.linkeddata.es/eval/index.html.
 19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
 20. Paola Espinoza-Arias, María Poveda-Villalón, Raúl García-Castro, Oscar Corcho, Ontological Representation of Smart City Data: From Devices to Cities, Appl. Sci. 9, 32, 2019.
+21. Bhoomin Pandya, Units of Measurement Ontology Added to LOV, 2020, https://medium.com/@conceptminers/units-of-measurement-of-ontology-added-to-lov-21c7efc92a62.
 
 
 ### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
