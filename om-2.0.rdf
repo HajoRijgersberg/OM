@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.22</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.23</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/06/06</dc:date>
+    <dc:date>2020/08/28</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -8024,6 +8024,7 @@
   </om:Unit>
 
   <om:Unit rdf:about="&om;poundApothecaries">
+    <!-- Should have been pound-Apothecaries (i.e., with a dash) -->
     <rdfs:label xml:lang="en">pound (apthecaries')</rdfs:label>
     <om:alternativeLabel xml:lang="en">apothecaries' pound</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">troy pound</om:alternativeLabel>
@@ -8037,6 +8038,7 @@
   </om:Unit>
 
   <om:Unit rdf:about="&om;poundAvoirdupois">
+    <!-- Should have been pound-Avoirdupois (i.e., with a dash) -->
     <rdfs:label xml:lang="en">pound (avoirdupois)</rdfs:label>
     <om:alternativeLabel xml:lang="en">avoirdupois pound</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The avoirdupois pound is a unit of mass defined as 4.535924e-1 kilogram.</rdfs:comment>
@@ -9077,7 +9079,7 @@
     <om:alternativeSymbol>m·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:UnitDivision>
 
   <owl:Class rdf:about="&om;Acceleration">
@@ -9135,7 +9137,7 @@
     <om:alternativeSymbol>ym·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;yoctometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;zeptometrePerSecond-TimeSquared">
@@ -9147,7 +9149,7 @@
     <om:alternativeSymbol>zm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;zeptometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;attometrePerSecond-TimeSquared">
@@ -9159,7 +9161,7 @@
     <om:alternativeSymbol>am·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;attometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;femtometrePerSecond-TimeSquared">
@@ -9171,7 +9173,7 @@
     <om:alternativeSymbol>fm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;femtometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;picometrePerSecond-TimeSquared">
@@ -9183,7 +9185,7 @@
     <om:alternativeSymbol>pm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;picometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;nanometrePerSecond-TimeSquared">
@@ -9195,7 +9197,7 @@
     <om:alternativeSymbol>nm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;nanometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;micrometrePerSecond-TimeSquared">
@@ -9207,7 +9209,7 @@
     <om:alternativeSymbol>μm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;micrometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;millimetrePerSecond-TimeSquared">
@@ -9219,7 +9221,7 @@
     <om:alternativeSymbol>mm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;millimetre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;centimetrePerSecond-TimeSquared">
@@ -9231,7 +9233,7 @@
     <om:alternativeSymbol>cm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;centimetre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;decimetrePerSecond-TimeSquared">
@@ -9243,7 +9245,7 @@
     <om:alternativeSymbol>dm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;decimetre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;decametrePerSecond-TimeSquared">
@@ -9255,7 +9257,7 @@
     <om:alternativeSymbol>dam·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;decametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;hectometrePerSecond-TimeSquared">
@@ -9267,7 +9269,7 @@
     <om:alternativeSymbol>hm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;hectometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;kilometrePerSecond-TimeSquared">
@@ -9279,7 +9281,7 @@
     <om:alternativeSymbol>km·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilometre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;megametrePerSecond-TimeSquared">
@@ -9291,7 +9293,7 @@
     <om:alternativeSymbol>Mm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;megametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;gigametrePerSecond-TimeSquared">
@@ -9303,7 +9305,7 @@
     <om:alternativeSymbol>Gm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;gigametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;terametrePerSecond-TimeSquared">
@@ -9315,7 +9317,7 @@
     <om:alternativeSymbol>Tm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;terametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;petametrePerSecond-TimeSquared">
@@ -9327,7 +9329,7 @@
     <om:alternativeSymbol>Pm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;petametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;exametrePerSecond-TimeSquared">
@@ -9339,7 +9341,7 @@
     <om:alternativeSymbol>Em·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;exametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;zettametrePerSecond-TimeSquared">
@@ -9351,7 +9353,7 @@
     <om:alternativeSymbol>Zm·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;zettametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:PrefixedMetrePerSecond-TimeSquared rdf:about="&om;yottametrePerSecond-TimeSquared">
@@ -9363,7 +9365,7 @@
     <om:alternativeSymbol>Ym·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;yottametre"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:PrefixedMetrePerSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerYoctosecond-TimeSquared">
@@ -9375,7 +9377,7 @@
     <om:alternativeSymbol>m·ys-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;yoctosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerZeptosecond-TimeSquared">
@@ -9387,7 +9389,7 @@
     <om:alternativeSymbol>m·zs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;zeptosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerAttosecond-TimeSquared">
@@ -9399,7 +9401,7 @@
     <om:alternativeSymbol>m·as-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;attosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerFemtosecond-TimeSquared">
@@ -9411,7 +9413,7 @@
     <om:alternativeSymbol>m·fs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;femtosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerPicosecond-TimeSquared">
@@ -9423,7 +9425,7 @@
     <om:alternativeSymbol>m·ps-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;picosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerNanosecond-TimeSquared">
@@ -9435,7 +9437,7 @@
     <om:alternativeSymbol>m·ns-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;nanosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerMicrosecond-TimeSquared">
@@ -9447,7 +9449,7 @@
     <om:alternativeSymbol>m·μs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;microsecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerMillisecond-TimeSquared">
@@ -9459,7 +9461,7 @@
     <om:alternativeSymbol>m·ms-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;millisecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerCentisecond-TimeSquared">
@@ -9471,7 +9473,7 @@
     <om:alternativeSymbol>m·cs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;centisecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerDecisecond-TimeSquared">
@@ -9483,7 +9485,7 @@
     <om:alternativeSymbol>m·ds-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;decisecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerDecasecond-TimeSquared">
@@ -9495,7 +9497,7 @@
     <om:alternativeSymbol>m·das-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;decasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerHectosecond-TimeSquared">
@@ -9507,7 +9509,7 @@
     <om:alternativeSymbol>m·hs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;hectosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerKilosecond-TimeSquared">
@@ -9519,7 +9521,7 @@
     <om:alternativeSymbol>m·ks-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;kilosecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerMegasecond-TimeSquared">
@@ -9531,7 +9533,7 @@
     <om:alternativeSymbol>m·Ms-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;megasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerGigasecond-TimeSquared">
@@ -9543,7 +9545,7 @@
     <om:alternativeSymbol>m·Gs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;gigasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerTerasecond-TimeSquared">
@@ -9555,7 +9557,7 @@
     <om:alternativeSymbol>m·Ts-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;terasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerPetasecond-TimeSquared">
@@ -9567,7 +9569,7 @@
     <om:alternativeSymbol>m·Ps-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;petasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerExasecond-TimeSquared">
@@ -9579,7 +9581,7 @@
     <om:alternativeSymbol>m·Es-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;exasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerZettasecond-TimeSquared">
@@ -9591,7 +9593,7 @@
     <om:alternativeSymbol>m·Zs-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;zettasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <om:MetrePerPrefixedSecond-TimeSquared rdf:about="&om;metrePerYottasecond-TimeSquared">
@@ -9603,7 +9605,7 @@
     <om:alternativeSymbol>m·Ys-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
     <om:hasDenominator rdf:resource="&om;yottasecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:MetrePerPrefixedSecond-TimeSquared>
 
   <owl:Class rdf:about="&om;PrefixedMetrePerSecond-TimeSquared">
@@ -9768,7 +9770,7 @@
     <om:symbol>Gal</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;centimetrePerSecond-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;acceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;acceleration-Dimension"/>
   </om:Unit>
 
   <owl:Class rdf:about="&om;Acceleration">
@@ -14439,7 +14441,7 @@
     <om:alternativeSymbol>rad·s-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;radian"/>
     <om:hasDenominator rdf:resource="&om;second-TimeSquared"/>
-    <om:hasDimension rdf:resource="&om;angularAcceleration-Dmension"/>
+    <om:hasDimension rdf:resource="&om;angularAcceleration-Dimension"/>
   </om:UnitDivision>
 
   <owl:Class rdf:about="&om;AngularAcceleration">
@@ -16870,7 +16872,7 @@
 
   <!-- Acceleration Dimension Ontology -->
 
-  <om:Dimension rdf:about="&om;acceleration-Dmension">
+  <om:Dimension rdf:about="&om;acceleration-Dimension">
     <rdfs:label xml:lang="en">acceleration dimension</rdfs:label>
     <rdfs:label xml:lang="nl">versnellingdimensie</rdfs:label>
     <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">1</om:hasSILengthDimensionExponent>
@@ -16886,7 +16888,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasDimension"/>
-        <owl:hasValue rdf:resource="&om;acceleration-Dmension"/>
+        <owl:hasValue rdf:resource="&om;acceleration-Dimension"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -17112,7 +17114,7 @@
 
   <!-- Angular Acceleration Dimension Ontology -->
 
-  <om:Dimension rdf:about="&om;angularAcceleration-Dmension">
+  <om:Dimension rdf:about="&om;angularAcceleration-Dimension">
     <rdfs:label xml:lang="en">angular acceleration dimension</rdfs:label>
     <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSILengthDimensionExponent>
     <om:hasSIMassDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIMassDimensionExponent>
@@ -17127,7 +17129,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasDimension"/>
-        <owl:hasValue rdf:resource="&om;angularAcceleration-Dmension"/>
+        <owl:hasValue rdf:resource="&om;angularAcceleration-Dimension"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
