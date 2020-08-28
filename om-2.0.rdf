@@ -44,7 +44,7 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.23</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.24</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
     <dc:date>2020/08/28</dc:date>
@@ -7986,6 +7986,7 @@
   </om:Unit>
 
   <om:Unit rdf:about="&om;ounceApothecaries">
+    <!-- Should have been ounce-Apothecaries (i.e., with a dash) -->
     <rdfs:label xml:lang="en">ounce (apothecaries')</rdfs:label>
     <om:alternativeLabel xml:lang="en">apothecaries' ounce</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">troy ounce</om:alternativeLabel>
@@ -8000,6 +8001,7 @@
   </om:Unit>
 
   <om:Unit rdf:about="&om;ounceAvoirdupois">
+    <!-- Should have been ounce-Avoirdupois (i.e., with a dash) -->
     <rdfs:label xml:lang="en">ounce (avoirdupois)</rdfs:label>
     <om:alternativeLabel xml:lang="en">avoirdupois ounce</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The avoirdupois ounce is a unit of mass defined as 2.834952e-2 kilogram.</rdfs:comment>
