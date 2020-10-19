@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.24</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.25</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/08/28</dc:date>
+    <dc:date>2020/10/18</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -77,6 +77,7 @@
   <!-- Earth Science Ontology -->
   <!-- Materials Science Ontology -->
   <!-- Microbiology Ontology -->
+  <!-- Acoustics Ontology -->
   <!-- Economics Ontology -->
   <!-- Information Technology Ontology -->
   <!-- Typography Ontology -->
@@ -961,6 +962,10 @@
     <om:usesUnit rdf:resource="&om;barn"/>
     <om:usesUnit rdf:resource="&om;centiare"/>
     <om:usesUnit rdf:resource="&om;circularMil"/>
+    <om:usesUnit rdf:resource="&om;squareInch-International"/>
+    <om:usesUnit rdf:resource="&om;squareFoot-International"/>
+    <om:usesUnit rdf:resource="&om;squareYard-International"/>
+    <om:usesUnit rdf:resource="&om;squareMile-International"/>
     <om:usesUnit rdf:resource="&om;hectare"/>
     <om:usesUnit rdf:resource="&om;squareCentimetre"/>
     <om:usesUnit rdf:resource="&om;squareDecametre"/>
@@ -2485,6 +2490,10 @@
               <om:Unit rdf:about="&om;barn"/>
               <om:Unit rdf:about="&om;circularMil"/>
               <om:UnitExponentiation rdf:about="&om;squareMetre"/>
+              <om:UnitExponentiation rdf:about="&om;squareInch-International"/>
+              <om:UnitExponentiation rdf:about="&om;squareFoot-International"/>
+              <om:UnitExponentiation rdf:about="&om;squareYard-International"/>
+              <om:UnitExponentiation rdf:about="&om;squareMile-International"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedAre"/>
@@ -2878,6 +2887,38 @@
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
 
+  <om:UnitExponentiation rdf:about="&om;squareInch-International">
+    <rdfs:label xml:lang="en">square inch (international)</rdfs:label>
+    <om:symbol>in2</om:symbol>
+    <om:hasBase rdf:resource="&om;inch-International"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;area-Dimension"/>
+  </om:UnitExponentiation>
+
+  <om:UnitExponentiation rdf:about="&om;squareFoot-International">
+    <rdfs:label xml:lang="en">square foot (international)</rdfs:label>
+    <om:symbol>ft2</om:symbol>
+    <om:hasBase rdf:resource="&om;foot-International"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;area-Dimension"/>
+  </om:UnitExponentiation>
+
+  <om:UnitExponentiation rdf:about="&om;squareYard-International">
+    <rdfs:label xml:lang="en">square yard (international)</rdfs:label>
+    <om:symbol>yd2</om:symbol>
+    <om:hasBase rdf:resource="&om;yard-International"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;area-Dimension"/>
+  </om:UnitExponentiation>
+
+  <om:UnitExponentiation rdf:about="&om;squareMile-Statute">
+    <rdfs:label xml:lang="en">square mile (statute)</rdfs:label>
+    <om:symbol>mi2</om:symbol>
+    <om:hasBase rdf:resource="&om;mile-International"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;area-Dimension"/>
+  </om:UnitExponentiation>
+
   <!-- <om:Measure rdf:about="&om;_1.0e-28SquareMetre">
     <om:hasNumericalValue>1.0e-28</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
@@ -2903,6 +2944,10 @@
     <om:commonlyHasUnit rdf:resource="&om;acre-USSurvey"/>
     <om:commonlyHasUnit rdf:resource="&om;barn"/>
     <om:commonlyHasUnit rdf:resource="&om;circularMil"/>
+    <om:commonlyHasUnit rdf:resource="&om;squareInch-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;squareFoot-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;squareYard-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;squareMile-International"/>
   </owl:Class>
 
   <!-- Cubic Metre Ontology -->
@@ -6854,6 +6899,7 @@
   <!-- Gram Per Cubic Metre Ontology -->
   <!-- Gram Per Cubic Centimetre Ontology -->
   <!-- Kilogram Per Hectare Ontology -->
+  <!-- Area Density Unit Ontology -->
   <!-- Hectare Day Ontology -->
   <!-- Kilogram Per Hectare Day Ontology -->
   <!-- Joule Per Square Metre Ontology -->
@@ -7464,8 +7510,8 @@
               <om:Unit rdf:about="&om;hundredweight-US"/>
               <om:Unit rdf:about="&om;InternationalUnit"/>
               <om:Unit rdf:about="&om;milligramRAE"/>
-              <om:Unit rdf:about="&om;ounceAvoirdupois"/>
               <om:Unit rdf:about="&om;ounceApothecaries"/>
+              <om:Unit rdf:about="&om;ounceAvoirdupois"/>
               <om:Unit rdf:about="&om;pennyweight-Troy"/>
               <om:Unit rdf:about="&om;poundApothecaries"/>
               <om:Unit rdf:about="&om;poundAvoirdupois"/>
@@ -8246,6 +8292,11 @@
           <om:Unit rdf:about="&om;one"/>
           <om:Unit rdf:about="&om;percent"/>
           <om:Unit rdf:about="&om;partsPerMillion"/>
+          <om:Unit rdf:about="&om;halfDozen"/>
+          <om:Unit rdf:about="&om;dozen"/>
+          <om:Unit rdf:about="&om;hundredCount"/>
+          <om:Unit rdf:about="&om;gross"/>
+          <om:Unit rdf:about="&om;thousandPiece"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -8274,6 +8325,11 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:Unit rdf:about="&om;one"/>
+          <om:Unit rdf:about="&om;halfDozen"/>
+          <om:Unit rdf:about="&om;dozen"/>
+          <om:Unit rdf:about="&om;hundredCount"/>
+          <om:Unit rdf:about="&om;gross"/>
+          <om:Unit rdf:about="&om;thousandPiece"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -8510,6 +8566,51 @@
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
 
+  <om:Unit rdf:about="&om;halfDozen">
+    <rdfs:label xml:lang="en">half dozen</rdfs:label>
+    <rdfs:comment xml:lang="en">Half dozen is a unit of dimension one defined as 6.</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;dozen">
+    <rdfs:label xml:lang="en">dozen</rdfs:label>
+    <rdfs:comment xml:lang="en">Dozen is a unit of dimension one defined as 12.</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;hundredCount">
+    <rdfs:label xml:lang="en">hundred count</rdfs:label>
+    <rdfs:comment xml:lang="en">Hundred count is a unit of dimension one defined as 100.</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">100</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;gross">
+    <rdfs:label xml:lang="en">gross</rdfs:label>
+    <rdfs:comment xml:lang="en">Gross is a unit of dimension one defined as 144.</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">144</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;thousandPiece">
+    <rdfs:label xml:lang="en">thousand piece</rdfs:label>
+    <rdfs:comment xml:lang="en">Thousand is a unit of dimension one defined as 1000.</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1000</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
   <!-- <om:Measure rdf:about="&om;_0.000001-One">
     <om:hasNumericalValue>0.000001</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;one"/>
@@ -8523,6 +8624,11 @@
   <owl:Class rdf:about="&om;QuantityOfDimensionOne">
     <om:commonlyHasUnit rdf:resource="&om;percent"/>
     <om:commonlyHasUnit rdf:resource="&om;partsPerMillion"/>
+    <om:commonlyHasUnit rdf:resource="&om;halfDozen"/>
+    <om:commonlyHasUnit rdf:resource="&om;dozen"/>
+    <om:commonlyHasUnit rdf:resource="&om;hundredCount"/>
+    <om:commonlyHasUnit rdf:resource="&om;gross"/>
+    <om:commonlyHasUnit rdf:resource="&om;thousandPiece"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;Ratio">
@@ -13454,6 +13560,30 @@
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:UnitMultiplication>
 
+  <om:UnitMultiplication rdf:about="&om;megawattHour">
+    <rdfs:label xml:lang="en">megawatt hour</rdfs:label>
+    <om:alternativeLabel xml:lang="en">megawatt-hour</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">megawatthour</om:alternativeLabel>
+    <om:symbol>MW h</om:symbol>
+    <om:alternativeSymbol>MW·h</om:alternativeSymbol>
+    <om:alternativeSymbol>MWh</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;megawatt"/>
+    <hasTerm2 rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;energy-Dimension"/>
+  </om:UnitMultiplication>
+
+  <om:UnitMultiplication rdf:about="&om;gigawattHour">
+    <rdfs:label xml:lang="en">gigawatt hour</rdfs:label>
+    <om:alternativeLabel xml:lang="en">gigawatt-hour</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">gigawatthour</om:alternativeLabel>
+    <om:symbol>GW h</om:symbol>
+    <om:alternativeSymbol>GW·h</om:alternativeSymbol>
+    <om:alternativeSymbol>GWh</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;gigawatt"/>
+    <hasTerm2 rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;energy-Dimension"/>
+  </om:UnitMultiplication>
+
   <om:UnitMultiplication rdf:about="&om;terawattHour">
     <rdfs:label xml:lang="en">terawatt hour</rdfs:label>
     <om:alternativeLabel xml:lang="en">terawatt-hour</om:alternativeLabel>
@@ -13752,6 +13882,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -13775,6 +13907,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -13798,6 +13932,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -13821,6 +13957,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -13844,6 +13982,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -15729,6 +15869,7 @@
               <om:UnitDivision rdf:about="&om;gramPerSquareMetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerSquareMetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerHectare"/>
+              <om:UnitDivision rdf:about="&om;ounceAvoirdupoisPerSquareYard-International"/>
             </owl:oneOf>
           </owl:Class>
         </owl:unionOf>
@@ -15786,6 +15927,23 @@
 
   <owl:Class rdf:about="&om;AreaDensity">
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerHectare"/>
+  </owl:Class>
+
+  <!-- Area Density Unit Ontology -->
+
+  <om:UnitDivision rdf:about="&om;ounceAvoirdupoisPerSquareYard-International">
+    <rdfs:label xml:lang="en">ounce (avoirdupois) per square yard (international)</rdfs:label>
+    <!-- <rdfs:comment xml:lang="en">Ounce (avoirdupois) per square yard (international) is a unit of .</rdfs:comment> -->
+    <!-- <om:longcomment>Ounce (avoirdupois) per square yard (international) is a unit of  defined as ounce (avoirdupois) divided by square yard.</om:longcomment> -->
+    <om:symbol>oz/yd2</om:symbol>
+    <om:alternativeSymbol>oz yd-2</om:alternativeSymbol>
+    <om:alternativeSymbol>oz·yd-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;ounceAvoirdupois"/>
+    <om:hasDenominator rdf:resource="&om;squareYard-International"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;AreaDensity">
+    <om:commonlyHasUnit rdf:resource="&om;ounceAvoirdupoisPerSquareYard-International"/>
   </owl:Class>
 
   <!-- Hectare Day Ontology -->
@@ -17605,6 +17763,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -17628,6 +17788,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -20940,6 +21102,8 @@
               <om:Unit rdf:about="&om;franklin"/>
               <om:Unit rdf:about="&om;statcoulomb"/>
               <om:UnitMultiplication rdf:about="&om;second-TimeAmpere"/>
+              <om:UnitMultiplication rdf:about="&om;ampereHour"/>
+              <om:UnitMultiplication rdf:about="&om;milliampereHour"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedCoulomb"/>
@@ -21274,6 +21438,32 @@
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
 
+  <om:UnitMultiplication rdf:about="&om;ampereHour">
+    <rdfs:label xml:lang="en">ampere hour</rdfs:label>
+    <rdfs:label xml:lang="nl">ampère-uur</rdfs:label>
+    <om:symbol>A h</om:symbol>
+    <om:alternativeSymbol>A·h</om:alternativeSymbol>
+    <om:alternativeSymbol>Ah</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;ampere"/>
+    <hasTerm2 rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
+  </om:UnitMultiplication>
+
+  <om:UnitMultiplication rdf:about="&om;milliampereHour">
+    <rdfs:label xml:lang="en">milliampere hour</rdfs:label>
+    <rdfs:label xml:lang="nl">milliampère-uur</rdfs:label>
+    <om:symbol>mA h</om:symbol>
+    <om:alternativeSymbol>mA·h</om:alternativeSymbol>
+    <om:alternativeSymbol>mAh</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;milliampere"/>
+    <hasTerm2 rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
+  </om:UnitMultiplication>
+
+  <owl:Class rdf:about="&om;ElectricCharge">
+    <om:commonlyHasUnit rdf:resource="&om;second-TimeAmpere"/>
+  </owl:Class>
+
   <!-- <om:Measure rdf:about="&om;_1.0e1Coulomb">
     <om:hasNumericalValue>1.0e1</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulomb"/>
@@ -21294,6 +21484,8 @@
     <om:commonlyHasUnit rdf:resource="&om;faraday"/>
     <om:commonlyHasUnit rdf:resource="&om;franklin"/>
     <om:commonlyHasUnit rdf:resource="&om;statcoulomb"/>
+    <om:commonlyHasUnit rdf:resource="&om;amperehour"/>
+    <om:commonlyHasUnit rdf:resource="&om;milliamperehour"/>
   </owl:Class>
 
   <!-- Watt Per Ampere Ontology -->
@@ -32718,6 +32910,8 @@
     <om:commonlyHasUnit rdf:resource="&om;quad"/>
     <om:commonlyHasUnit rdf:resource="&om;wattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;megawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;terawattHour"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-EC"/>
     <om:commonlyHasUnit rdf:resource="&om;therm-US"/>
@@ -37544,6 +37738,7 @@
   <!--   <rdfs:label xml:lang="en">microbiology</rdfs:label> -->
   <!--   <rdfs:label xml:lang="nl">microbiologie</rdfs:label> -->
          <!-- <om:uses_application_area rdf:resource="&om;space_and_time"/> -->
+  <!--   <om:usesQuantity rdf:resource="&om;ViableCount"/> -->
   <!--   <om:usesQuantity rdf:resource="&om;VolumetricViableCount"/> -->
   <!--   <om:usesQuantity rdf:resource="&om;VolumetricColiformBacterieCount"/> -->
   <!--   <om:usesQuantity rdf:resource="&om;VolumetricCorynebacteriumCount"/> -->
@@ -37588,10 +37783,18 @@
 
   <!-- Contents -->
 
+  <!-- Viable Count Upper Ontology -->
   <!-- Volumetric Viable Count Upper Ontology -->
   <!-- Volumetric Viable Count Subclass Upper Ontology -->
   <!-- Specific Viable Count Upper Ontology -->
   <!-- Specific Viable Count Subclass Upper Ontology -->
+
+  <!-- Viable Count Upper Ontology -->
+
+  <owl:Class rdf:about="&om;ViableCount">
+    <rdfs:label xml:lang="en">viable count</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
 
   <!-- Volumetric Viable Count Upper Ontology -->
 
@@ -37834,6 +38037,12 @@
     <om:hasDenominator rdf:resource="&om;millilitre"/>
   </om:UnitDivision>
 
+  <owl:Class rdf:about="&om;ViableCount">
+    <om:commonlyHasUnit rdf:resource="&om;colonyFormingUnit"/>
+    <!-- <om:commonlyHasUnit rdf:resource="&om;kilocolonyFormingUnit"/> -->
+    <om:commonlyHasUnit rdf:resource="&om;_1000ColonyFormingUnit"/>
+  </owl:Class>
+
   <owl:Class rdf:about="&om;VolumetricViableCount">
     <om:commonlyHasUnit rdf:resource="&om;colonyFormingUnitPerMillilitre"/>
     <om:commonlyHasUnit rdf:resource="&om;colonyFormingUnitPer25Millilitre"/>
@@ -37944,6 +38153,36 @@
     <om:commonlyHasUnit rdf:resource="&om;colonyFormingUnitPer25Millilitre"/>
     <!-- <om:commonlyHasUnit rdf:resource="&om;kilocolonyFormingUnitPerMillilitre"/> -->
     <om:commonlyHasUnit rdf:resource="&om;_1000ColonyFormingUnitPerMillilitre"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;ViableCountUnit">
+    <rdfs:label xml:lang="en">viable count unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;colonyFormingUnit"/>
+          <!-- <om:UnitDivision rdf:about="&om;kilocolonyFormingUnit"/> -->
+          <om:UnitDivision rdf:about="&om;_1000ColonyFormingUnit"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;ViableCount">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;ViableCountUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
   </owl:Class>
 
   <owl:Class rdf:about="&om;VolumetricViableCountUnit">
@@ -38069,6 +38308,36 @@
       </owl:Restriction>     
     </rdfs:subClassOf>     
   </owl:Class>
+
+  <!-- Acoustics Ontology -->
+
+  <!-- Contents -->
+
+  <!-- Unit of Measure Ontologies -->
+
+  <om:ApplicationArea rdf:about="&om;acoustics">
+    <rdfs:label xml:lang="en">acoustics</rdfs:label>
+    <rdfs:label xml:lang="nl">akoestiek</rdfs:label>
+    <om:usesUnit rdf:resource="&om;bel"/>
+    <om:usesUnit rdf:resource="&om;decibel"/>
+  </om:ApplicationArea>
+
+  <!-- Unit of Measure Ontologies -->
+
+  <om:Unit rdf:about="&om;bel">
+    <rdfs:label xml:lang="en">bel</rdfs:label>
+    <rdfs:label xml:lang="nl">bel</rdfs:label>
+    <om:symbol>B</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+  </om:Unit>
+
+  <om:PrefixedUnit rdf:about="&om;decibel">
+    <rdfs:label xml:lang="en">decibel</rdfs:label>
+    <rdfs:label xml:lang="nl">decibel</rdfs:label>
+    <om:symbol>dB</om:symbol>
+    <om:hasPrefix rdf:resource="&om;deci"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;bel"/>
+  </om:PrefixedUnit>
 
   <!-- Economics Ontology -->
 
@@ -38446,6 +38715,7 @@
     <rdfs:label xml:lang="nl">informatietechnologie</rdfs:label>
     <om:usesQuantity rdf:resource="&om;InformationCapacity"/>
     <om:usesQuantity rdf:resource="&om;SymbolRate"/>
+    <om:usesQuantity rdf:resource="&om;PixelCount"/>
     <om:usesUnit rdf:resource="&om;bit"/>
     <om:usesUnit rdf:resource="&om;byte"/>
     <om:usesUnit rdf:resource="&om;hartley"/>
@@ -38467,6 +38737,7 @@
     <om:usesUnit rdf:resource="&om;zettabit"/>
     <om:usesUnit rdf:resource="&om;yottabit"/>
     <om:usesUnit rdf:resource="&om;bitPerSecond-Time"/>
+    <om:usesUnit rdf:resource="&om;pixel"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -38475,6 +38746,7 @@
 
   <!-- Information Capacity Upper Ontology -->
   <!-- Symbol Rate Upper Ontology -->
+  <!-- Pixel Count Upper Ontology -->
 
   <!-- Information Capacity Upper Ontology -->
 
@@ -38491,6 +38763,13 @@
     <om:alternativeLabel xml:lang="en">baud rate</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">modulation rate</om:alternativeLabel>
     <rdfs:comment xml:lang="en">Symbol rate is the number of symbol changes (signalling events) made to the transmission medium per second using a digitally modulated signal or a line code.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
+  <!-- Pixel Count Upper Ontology -->
+
+  <owl:Class rdf:about="&om;PixelCount">
+    <rdfs:label xml:lang="en">pixel count</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
@@ -38589,6 +38868,7 @@
   <!-- Information Capacity Unit Ontology -->
   <!-- Baud Ontology -->
   <!-- Bit Per Second Ontology -->
+  <!-- Pixel Ontology -->
 
   <!-- Bit Ontology -->
 
@@ -39135,6 +39415,42 @@
     <om:hasNumerator rdf:resource="&om;bit"/>
     <om:hasDenominator rdf:resource="&om;second-Time"/>
   </om:UnitDivision>
+
+  <!-- Pixel Ontology -->
+
+  <om:Unit rdf:about="&om;pixel">
+    <rdfs:label xml:lang="en">pixel</rdfs:label>
+    <rdfs:label xml:lang="nl">pixel</rdfs:label>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+  </om:Unit>
+
+  <owl:Class rdf:about="&om;PixelCountUnit">
+    <rdfs:label xml:lang="en">pixel count unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:SingularUnit rdf:about="&om;pixel"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;PixelCount">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;PixelCountUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
 
   <!-- Typography Ontology -->
 
