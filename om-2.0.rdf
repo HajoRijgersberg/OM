@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.25</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.26</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/10/18</dc:date>
+    <dc:date>2020/12/09</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -3790,8 +3790,8 @@
     <om:alternativeLabel xml:lang="en">register ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The register ton is a unit of volume defined as 2.831658 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.831658</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">2.831658</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;cubicMetre"/> -->
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
 
@@ -21411,8 +21411,8 @@
     <rdfs:label xml:lang="nl">faraday</rdfs:label>
     <rdfs:comment xml:lang="en">The faraday is a unit of electric charge defined as 9.648531e4 coulomb.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.648531e4</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulomb"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">9.648531e4</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;coulomb"/> -->
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
 
