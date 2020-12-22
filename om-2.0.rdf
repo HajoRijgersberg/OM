@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.27</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.28</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/12/13</dc:date>
+    <dc:date>2020/12/22</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -2028,10 +2028,10 @@
 
   <om:Unit rdf:about="&om;chain">
     <rdfs:label xml:lang="en">chain</rdfs:label>
-    <rdfs:comment xml:lang="en">The chain is a unit of length defined as 2.011684e1 metre.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The chain is a unit of length defined as 20.1168 metre.</rdfs:comment>
     <om:symbol>ch</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.011684e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">20.1168</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -3788,9 +3788,9 @@
   <om:Unit rdf:about="&om;ton-Register">
     <rdfs:label xml:lang="en">ton (register)</rdfs:label>
     <om:alternativeLabel xml:lang="en">register ton</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The register ton is a unit of volume defined as 2.831658 cubic metre.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The register ton is a unit of volume defined as 100 cubic foot = 2.8316846592 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">2.831658</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">2.8316846592</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;cubicMetre"/> -->
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -7399,13 +7399,13 @@
   <om:Unit rdf:about="&om;year">
     <rdfs:label xml:lang="en">year</rdfs:label>
     <rdfs:label xml:lang="nl">jaar</rdfs:label>
-    <rdfs:comment xml:lang="en">The year is a unit of time defined as 3.1536e7 second.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The year is a unit of time defined as 31556952 second.</rdfs:comment>
     <om:LaTeXCommand>\yearUnit</om:LaTeXCommand>
     <om:symbol>a</om:symbol>
     <om:alternativeSymbol>y</om:alternativeSymbol>
     <om:alternativeSymbol>yr</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.1536e7</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">31556952</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -13600,12 +13600,12 @@
     <rdfs:label xml:lang="en">British thermal unit (39 &#x00B0;F)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（39°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">39 &#x00B0;F British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The 39 &#x00B0;F British thermal unit is a unit of energy defined as 1.05967e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The 39 &#x00B0;F British thermal unit is a unit of energy defined as 1.05967e3 joule.</rdfs:comment> -->
     <om:LaTeXCommand>\BritishTermalUnitThirtyNineF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.05967e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05967e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13613,12 +13613,12 @@
     <rdfs:label xml:lang="en">British thermal unit (59 &#x00B0;F)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（59°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">59 &#x00B0;F British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The 59 &#x00B0;F British thermal unit is a unit of energy defined as 1.05480e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The 59 &#x00B0;F British thermal unit is a unit of energy defined as 1.05480e3 joule.</rdfs:comment> -->
     <om:LaTeXCommand>\BritishTermalUnitFiftyNineF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.05480e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05480e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13626,12 +13626,12 @@
     <rdfs:label xml:lang="en">British thermal unit (60 &#x00B0;F)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（60°F）</rdfs:label>
     <om:alternativeLabel xml:lang="en">60 &#x00B0;F British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The 60 &#x00B0;F British thermal unit is a unit of energy defined as 1.05468e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The 60 &#x00B0;F British thermal unit is a unit of energy defined as 1.05468e3 joule.</rdfs:comment> -->
     <om:LaTeXCommand>\BritishTermalUnitSixtyF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.05468e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05468e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13639,12 +13639,12 @@
     <rdfs:label xml:lang="en">British thermal unit (International Table)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（国际表）</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Table British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The International Table British thermal unit is a unit of energy defined as 1.055056e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The International Table British thermal unit is a unit of energy defined as 1.055056e3 joule.</rdfs:comment> -->
     <om:symbol>Btu_IT</om:symbol>
     <om:LaTeXSymbol>Btu_{IT}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.055056e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.055056e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13652,11 +13652,11 @@
     <rdfs:label xml:lang="en">British thermal unit (mean)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（平均）</rdfs:label>
     <om:alternativeLabel xml:lang="en">mean British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The mean British thermal unit is a unit of energy defined as 1.05587e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The mean British thermal unit is a unit of energy defined as 1.05587e3 joule.</rdfs:comment> -->
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.05587e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05587e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13664,12 +13664,12 @@
     <rdfs:label xml:lang="en">British thermal unit (thermochemical)</rdfs:label>
     <rdfs:label xml:lang="zh">英国热力单位（热力化学）</rdfs:label>
     <om:alternativeLabel xml:lang="en">thermochemical British thermal unit</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The thermochemical British thermal unit is a unit of energy defined as 1.054350e3 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The thermochemical British thermal unit is a unit of energy defined as 1.054350e3 joule.</rdfs:comment> -->
     <om:symbol>Btu_th</om:symbol>
     <om:LaTeXSymbol>BTU_{th}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.054350e3</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.054350e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13678,12 +13678,12 @@
     <rdfs:label xml:lang="nl">calorie (15 &#x00B0;C)</rdfs:label>
     <om:alternativeLabel xml:lang="en">15 &#x00B0;C calorie</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">15 &#x00B0;C calorie</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The 15 &#x00B0;C calorie is a unit of energy defined as 4.18580 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The 15 &#x00B0;C calorie is a unit of energy defined as 4.18580 joule.</rdfs:comment> -->
     <om:symbol>cal_15</om:symbol>
     <om:LaTeXSymbol>cal_{15}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.18580</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.18580</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13692,13 +13692,13 @@
     <rdfs:label xml:lang="nl">calorie (20 &#x00B0;C)</rdfs:label>
     <om:alternativeLabel xml:lang="en">20 &#x00B0;C calorie</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">20 &#x00B0;C calorie</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The 20 &#x00B0;C calorie is a unit of energy defined as 4.18190 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The 20 &#x00B0;C calorie is a unit of energy defined as 4.18190 joule.</rdfs:comment> -->
     <om:LaTeXCommand>\calorieTwentyC</om:LaTeXCommand>
     <om:symbol>cal_20</om:symbol>
     <om:LaTeXSymbol>cal_{20}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.18190</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.18190</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
@@ -13707,24 +13707,24 @@
     <om:alternativeLabel xml:lang="en">calorie (International Steam Table)</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">International Table calorie</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">International Steam Table calorie</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The International Table calorie is a unit of energy defined as 4.1868 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The International Table calorie is a unit of energy defined as 4.1868 joule.</rdfs:comment> -->
     <om:symbol>cal_IT</om:symbol>
     <om:LaTeXSymbol>cal_{IT}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.1868</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.1868</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
   <om:Unit rdf:about="&om;calorie-Thermochemical">
     <rdfs:label xml:lang="en">calorie (thermochemical)</rdfs:label>
     <om:alternativeLabel xml:lang="en">thermochemical calorie</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">The thermochemical calorie is a unit of energy defined as 4.184 joule.</rdfs:comment>
+    <!-- <rdfs:comment xml:lang="en">The thermochemical calorie is a unit of energy defined as 4.184 joule.</rdfs:comment> -->
     <om:symbol>cal_th</om:symbol>
     <om:LaTeXSymbol>cal_{th}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.184</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.184</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
 
