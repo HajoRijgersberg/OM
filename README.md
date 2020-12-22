@@ -61,7 +61,7 @@ ex:_10Centimetres rdf:type om:Measure ;
 ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
   a om:Diameter ;
   om:hasPhenomenon ex:apple1 .
-ex:apple1 rfd:type ex:Apple .
+ex:apple1 rdf:type ex:Apple .
 ```
 
 where `ex` is a prefixes for another namespace.
