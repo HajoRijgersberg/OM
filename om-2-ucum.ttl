@@ -1,0 +1,3574 @@
+# baseURI: http://www.ontology-of-units-of-measure.org/resource/om-2-ucum
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.ontology-of-units-of-measure.org/resource/om-2/
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.ontology-of-units-of-measure.org/resource/om-2-ucum>
+  a owl:Ontology ;
+  dcterms:created "2021-01-14"^^xsd:date ;
+  dcterms:creator <https://orcid.org/0000-0002-3884-3420> ;
+  dcterms:description "Mapping OM-2 units to UCUM codes - mostly done" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports om: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+om:BritishThermalUnit-39F
+  skos:notation "[Btu_39]"^^qudt:UCUMcs ;
+.
+om:BritishThermalUnit-59F
+  skos:notation "[Btu_59]"^^qudt:UCUMcs ;
+.
+om:BritishThermalUnit-60F
+  skos:notation "[Btu_60]"^^qudt:UCUMcs ;
+.
+om:BritishThermalUnit-InternationalTable
+  skos:notation "[Btu_IT]"^^qudt:UCUMcs ;
+.
+om:BritishThermalUnit-Mean
+  skos:notation "[Btu_m]"^^qudt:UCUMcs ;
+.
+om:BritishThermalUnit-Thermochemical
+  skos:notation "[Btu_th]"^^qudt:UCUMcs ;
+.
+om:InternationalUnit
+  skos:notation "[iU]"^^qudt:UCUMcs ;
+.
+om:Unit
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom qudt:UCUMcs ;
+      owl:onProperty skos:notation ;
+    ] ;
+.
+om:abampere
+  skos:notation "Bi"^^qudt:UCUMcs ;
+.
+om:abcoulomb
+  skos:notation "daC"^^qudt:UCUMcs ;
+.
+om:abfarad
+  skos:notation "GF"^^qudt:UCUMcs ;
+.
+om:abhenry
+  skos:notation "nH"^^qudt:UCUMcs ;
+.
+om:abmho
+  skos:notation "GS"^^qudt:UCUMcs ;
+.
+om:abohm
+  skos:notation "nOhm"^^qudt:UCUMcs ;
+.
+om:abvolt
+  skos:notation "10.nV"^^qudt:UCUMcs ;
+.
+om:acre-International
+  skos:notation "[acr_br]"^^qudt:UCUMcs ;
+.
+om:acre-USSurvey
+  skos:notation "[acr_us]"^^qudt:UCUMcs ;
+.
+om:acreFoot
+  skos:notation "[acr_br].[ft_br]"^^qudt:UCUMcs ;
+.
+om:ampere
+  skos:notation "A"^^qudt:UCUMcs ;
+.
+om:angstrom
+  skos:notation "Ao"^^qudt:UCUMcs ;
+.
+om:are
+  skos:notation "ar"^^qudt:UCUMcs ;
+.
+om:astronomicalUnit
+  skos:notation "AU"^^qudt:UCUMcs ;
+.
+om:atmosphere-Standard
+  skos:notation "atm"^^qudt:UCUMcs ;
+.
+om:atmosphere-Technical
+  skos:notation "att"^^qudt:UCUMcs ;
+.
+om:attomolair
+  skos:notation "amol.L-1"^^qudt:UCUMcs ;
+.
+om:bar
+  skos:notation "bar"^^qudt:UCUMcs ;
+.
+om:barn
+  skos:notation "b"^^qudt:UCUMcs ;
+.
+om:barrel-US
+  skos:notation "[bbl_us]"^^qudt:UCUMcs ;
+.
+om:barye
+  skos:notation "dPa"^^qudt:UCUMcs ;
+.
+om:baud
+  skos:notation "Bd"^^qudt:UCUMcs ;
+.
+om:becquerel
+  skos:notation "Bq"^^qudt:UCUMcs ;
+.
+om:bel
+  skos:notation "B"^^qudt:UCUMcs ;
+.
+om:biot
+  skos:notation "Bi"^^qudt:UCUMcs ;
+.
+om:bit
+  skos:notation "bit"^^qudt:UCUMcs ;
+.
+om:bushel-US
+  skos:notation "[bu_us]"^^qudt:UCUMcs ;
+.
+om:byte
+  skos:notation "By"^^qudt:UCUMcs ;
+.
+om:calorie-15C
+  skos:notation "cal_[15]"^^qudt:UCUMcs ;
+.
+om:calorie-20C
+  skos:notation "cal_[20]"^^qudt:UCUMcs ;
+.
+om:calorie-InternationalTable
+  skos:notation "cal_IT"^^qudt:UCUMcs ;
+.
+om:calorie-Mean
+  skos:notation "cal_m"^^qudt:UCUMcs ;
+.
+om:calorie-Thermochemical
+  skos:notation "cal_th"^^qudt:UCUMcs ;
+.
+om:candela
+  skos:notation "cd"^^qudt:UCUMcs ;
+.
+om:carat-Mass
+  skos:notation "[car_m]"^^qudt:UCUMcs ;
+.
+om:centimolair
+  skos:notation "cmol.L-1"^^qudt:UCUMcs ;
+.
+om:chain
+  skos:notation "[ch_us]"^^qudt:UCUMcs ;
+.
+om:cicero
+  skos:notation "[cicero]"^^qudt:UCUMcs ;
+.
+om:circularMil
+  skos:notation "[cml_i]"^^qudt:UCUMcs ;
+.
+om:colonyFormingUnit
+  skos:notation "[CFU]"^^qudt:UCUMcs ;
+.
+om:cord
+  skos:notation "[cr_i]"^^qudt:UCUMcs ;
+.
+om:coulomb
+  skos:notation "C"^^qudt:UCUMcs ;
+.
+om:cubicMetreKelvin
+  skos:notation "m3.K"^^qudt:UCUMcs ;
+.
+om:cubicMetrePerCubicmetre
+  skos:notation "m3.m-3"^^qudt:UCUMcs ;
+.
+om:cubicMetrePerKilogram
+  skos:notation "m3.kg-1"^^qudt:UCUMcs ;
+.
+om:cubicMetrePerMole
+  skos:notation "m3.mol-1"^^qudt:UCUMcs ;
+.
+om:cubicMetrePerSecond-Time
+  skos:notation "m3.s-1"^^qudt:UCUMcs ;
+.
+om:cubicMetrePerYear
+  skos:notation "m3.a-1"^^qudt:UCUMcs ;
+.
+om:cubicMicrometre
+  skos:notation "um3"^^qudt:UCUMcs ;
+.
+om:cubicMillimetre
+  skos:notation "mm3"^^qudt:UCUMcs ;
+.
+om:cubicMillimetrePerCubicMillimetre
+  skos:notation "mm3.mm-3"^^qudt:UCUMcs ;
+.
+om:cubicNanometre
+  skos:notation "nm3"^^qudt:UCUMcs ;
+.
+om:cubicParsec
+  skos:notation "pc3"^^qudt:UCUMcs ;
+.
+om:cubicPetametre
+  skos:notation "Pm3"^^qudt:UCUMcs ;
+.
+om:cubicPicometre
+  skos:notation "pm3"^^qudt:UCUMcs ;
+.
+om:cubicTerametre
+  skos:notation "Tm3"^^qudt:UCUMcs ;
+.
+om:cubicYoctometre
+  skos:notation "ym3"^^qudt:UCUMcs ;
+.
+om:cubicYottametre
+  skos:notation "Ym3"^^qudt:UCUMcs ;
+.
+om:cubicZeptometre
+  skos:notation "zm3"^^qudt:UCUMcs ;
+.
+om:cubicZettametre
+  skos:notation "Zm3"^^qudt:UCUMcs ;
+.
+om:cup
+  skos:notation "[cup_m]"^^qudt:UCUMcs ;
+.
+om:cup-USCustomary
+  skos:notation "[cup_us]"^^qudt:UCUMcs ;
+.
+om:curie
+  skos:notation "Ci"^^qudt:UCUMcs ;
+.
+om:day
+  skos:notation "d"^^qudt:UCUMcs ;
+.
+om:decaampere
+  skos:notation "daA"^^qudt:UCUMcs ;
+.
+om:decabecquerel
+  skos:notation "daBq"^^qudt:UCUMcs ;
+.
+om:decacandela
+  skos:notation "dacd"^^qudt:UCUMcs ;
+.
+om:decacoulomb
+  skos:notation "daC"^^qudt:UCUMcs ;
+.
+om:decafarad
+  skos:notation "daF"^^qudt:UCUMcs ;
+.
+om:decagram
+  skos:notation "dag"^^qudt:UCUMcs ;
+.
+om:decagramPerLitre
+  skos:notation "dag.L-1"^^qudt:UCUMcs ;
+.
+om:decagray
+  skos:notation "daGy"^^qudt:UCUMcs ;
+.
+om:decahenry
+  skos:notation "daH"^^qudt:UCUMcs ;
+.
+om:decahertz
+  skos:notation "daHz"^^qudt:UCUMcs ;
+.
+om:decajoule
+  skos:notation "daJ"^^qudt:UCUMcs ;
+.
+om:decakatal
+  skos:notation "dakat"^^qudt:UCUMcs ;
+.
+om:decakelvin
+  skos:notation "daK"^^qudt:UCUMcs ;
+.
+om:decalitre
+  skos:notation "daL"^^qudt:UCUMcs ;
+.
+om:decalumen
+  skos:notation "dalm"^^qudt:UCUMcs ;
+.
+om:decalux
+  skos:notation "dalx"^^qudt:UCUMcs ;
+.
+om:decametre
+  skos:notation "dam"^^qudt:UCUMcs ;
+.
+om:decametrePerSecond-Time
+  skos:notation "dam.s-1"^^qudt:UCUMcs ;
+.
+om:decametrePerSecond-TimeSquared
+  skos:notation "dam.s-2"^^qudt:UCUMcs ;
+.
+om:decamolair
+  skos:notation "damol.L-1"^^qudt:UCUMcs ;
+.
+om:decamole
+  skos:notation "damol"^^qudt:UCUMcs ;
+.
+om:decamolePerLitre
+  skos:notation "damol.L-1"^^qudt:UCUMcs ;
+.
+om:decamolePerMetre
+  skos:notation "damol.m-1"^^qudt:UCUMcs ;
+.
+om:decanewton
+  skos:notation "daN"^^qudt:UCUMcs ;
+.
+om:decaohm
+  skos:notation "daOhm"^^qudt:UCUMcs ;
+.
+om:decapascal
+  skos:notation "daPa"^^qudt:UCUMcs ;
+.
+om:decasecond-Time
+  skos:notation "das"^^qudt:UCUMcs ;
+.
+om:decasecond-TimeSquared
+  skos:notation "das2"^^qudt:UCUMcs ;
+.
+om:decasiemens
+  skos:notation "daS"^^qudt:UCUMcs ;
+.
+om:decasievert
+  skos:notation "daSv"^^qudt:UCUMcs ;
+.
+om:decatesla
+  skos:notation "daT"^^qudt:UCUMcs ;
+.
+om:decavolt
+  skos:notation "daV"^^qudt:UCUMcs ;
+.
+om:decawatt
+  skos:notation "daW"^^qudt:UCUMcs ;
+.
+om:decaweber
+  skos:notation "daWb"^^qudt:UCUMcs ;
+.
+om:deciampere
+  skos:notation "dA"^^qudt:UCUMcs ;
+.
+om:decibar
+  skos:notation "dbar"^^qudt:UCUMcs ;
+.
+om:decibecquerel
+  skos:notation "dBq"^^qudt:UCUMcs ;
+.
+om:decibel
+  skos:notation "dB"^^qudt:UCUMcs ;
+.
+om:decicandela
+  skos:notation "dcd"^^qudt:UCUMcs ;
+.
+om:decicoulomb
+  skos:notation "dC"^^qudt:UCUMcs ;
+.
+om:decidegreeCelsius
+  skos:notation "dCel"^^qudt:UCUMcs ;
+.
+om:decifarad
+  skos:notation "dF"^^qudt:UCUMcs ;
+.
+om:decigram
+  skos:notation "dg"^^qudt:UCUMcs ;
+.
+om:decigramPerLitre
+  skos:notation "dg.L-1"^^qudt:UCUMcs ;
+.
+om:decigray
+  skos:notation "dGy"^^qudt:UCUMcs ;
+.
+om:decihenry
+  skos:notation "dH"^^qudt:UCUMcs ;
+.
+om:decihertz
+  skos:notation "dHz"^^qudt:UCUMcs ;
+.
+om:decijoule
+  skos:notation "dJ"^^qudt:UCUMcs ;
+.
+om:decikatal
+  skos:notation "dkat"^^qudt:UCUMcs ;
+.
+om:decikelvin
+  skos:notation "dK"^^qudt:UCUMcs ;
+.
+om:decilitre
+  skos:notation "dL"^^qudt:UCUMcs ;
+.
+om:decilumen
+  skos:notation "dlm"^^qudt:UCUMcs ;
+.
+om:decilux
+  skos:notation "dlx"^^qudt:UCUMcs ;
+.
+om:decimetre
+  skos:notation "dm"^^qudt:UCUMcs ;
+.
+om:decimetrePerSecond-Time
+  skos:notation "dm.s-1"^^qudt:UCUMcs ;
+.
+om:decimetrePerSecond-TimeSquared
+  skos:notation "dm.s-2"^^qudt:UCUMcs ;
+.
+om:decimolair
+  skos:notation "dmol.L-1"^^qudt:UCUMcs ;
+.
+om:decimole
+  skos:notation "dmol"^^qudt:UCUMcs ;
+.
+om:decimolePerLitre
+  skos:notation "dmol.L-1"^^qudt:UCUMcs ;
+.
+om:decimolePerMetre
+  skos:notation "dmol.m-1"^^qudt:UCUMcs ;
+.
+om:decinewton
+  skos:notation "dN"^^qudt:UCUMcs ;
+.
+om:deciohm
+  skos:notation "dOhm"^^qudt:UCUMcs ;
+.
+om:decipascal
+  skos:notation "dPa"^^qudt:UCUMcs ;
+.
+om:deciradian
+  skos:notation "drad"^^qudt:UCUMcs ;
+.
+om:decisecond-Time
+  skos:notation "ds"^^qudt:UCUMcs ;
+.
+om:decisecond-TimeSquared
+  skos:notation "ds2"^^qudt:UCUMcs ;
+.
+om:decisiemens
+  skos:notation "dS"^^qudt:UCUMcs ;
+.
+om:decisievert
+  skos:notation "dSv"^^qudt:UCUMcs ;
+.
+om:decisteradian
+  skos:notation "dsr"^^qudt:UCUMcs ;
+.
+om:decitesla
+  skos:notation "dT"^^qudt:UCUMcs ;
+.
+om:decivolt
+  skos:notation "dV"^^qudt:UCUMcs ;
+.
+om:deciwatt
+  skos:notation "dW"^^qudt:UCUMcs ;
+.
+om:deciweber
+  skos:notation "dWb"^^qudt:UCUMcs ;
+.
+om:degree
+  skos:notation "deg"^^qudt:UCUMcs ;
+.
+om:degreeCelsius
+  skos:notation "Cel"^^qudt:UCUMcs ;
+.
+om:degreeCelsiusDay
+  skos:notation "Cel.d"^^qudt:UCUMcs ;
+.
+om:degreeCelsiusPerHour
+  skos:notation "Cel.h-1"^^qudt:UCUMcs ;
+.
+om:degreeCelsiusPerMinute-Time
+  skos:notation "Cel.min-1"^^qudt:UCUMcs ;
+.
+om:degreeCelsiusPerSecond-Time
+  skos:notation "Cel.s-1"^^qudt:UCUMcs ;
+.
+om:degreeFahrenheit
+  skos:notation "[degF]"^^qudt:UCUMcs ;
+.
+om:degreeRankine
+  skos:notation "[degR]"^^qudt:UCUMcs ;
+.
+om:degreeReaumur
+  skos:notation "[degRe]"^^qudt:UCUMcs ;
+.
+om:degreeSquared
+  skos:notation "deg2"^^qudt:UCUMcs ;
+.
+om:drop
+  skos:notation "[drp]"^^qudt:UCUMcs ;
+.
+om:dryGallon-US
+  skos:notation "[gal_wi]"^^qudt:UCUMcs ;
+.
+om:dryPint-US
+  skos:notation "[dpt_us]"^^qudt:UCUMcs ;
+.
+om:dryQuart-US
+  skos:notation "[dqt_us]"^^qudt:UCUMcs ;
+.
+om:dyne
+  skos:notation "dyn"^^qudt:UCUMcs ;
+.
+om:electronvolt
+  skos:notation "eV"^^qudt:UCUMcs ;
+.
+om:erg
+  skos:notation "erg"^^qudt:UCUMcs ;
+.
+om:ergSecond-Time
+  skos:notation "erg.s"^^qudt:UCUMcs ;
+.
+om:exaampere
+  skos:notation "EA"^^qudt:UCUMcs ;
+.
+om:exabecquerel
+  skos:notation "EBq"^^qudt:UCUMcs ;
+.
+om:exabit
+  skos:notation "Ebit"^^qudt:UCUMcs ;
+.
+om:exabyte
+  skos:notation "EBy"^^qudt:UCUMcs ;
+.
+om:exacandela
+  skos:notation "Ecd"^^qudt:UCUMcs ;
+.
+om:exacoulomb
+  skos:notation "EC"^^qudt:UCUMcs ;
+.
+om:exafarad
+  skos:notation "EF"^^qudt:UCUMcs ;
+.
+om:exagram
+  skos:notation "Eg"^^qudt:UCUMcs ;
+.
+om:exagramPerLitre
+  skos:notation "Eg.L-1"^^qudt:UCUMcs ;
+.
+om:exagray
+  skos:notation "EGy"^^qudt:UCUMcs ;
+.
+om:exahenry
+  skos:notation "EH"^^qudt:UCUMcs ;
+.
+om:exahertz
+  skos:notation "EHz"^^qudt:UCUMcs ;
+.
+om:exajoule
+  skos:notation "EJ"^^qudt:UCUMcs ;
+.
+om:exakatal
+  skos:notation "Ekat"^^qudt:UCUMcs ;
+.
+om:exakelvin
+  skos:notation "EK"^^qudt:UCUMcs ;
+.
+om:exalitre
+  skos:notation "EL"^^qudt:UCUMcs ;
+.
+om:exalumen
+  skos:notation "Elm"^^qudt:UCUMcs ;
+.
+om:exalux
+  skos:notation "Elx"^^qudt:UCUMcs ;
+.
+om:exametre
+  skos:notation "Em"^^qudt:UCUMcs ;
+.
+om:exametrePerSecond-Time
+  skos:notation "Em.s-1"^^qudt:UCUMcs ;
+.
+om:exametrePerSecond-TimeSquared
+  skos:notation "Em.s-2"^^qudt:UCUMcs ;
+.
+om:examolair
+  skos:notation "Emol.L-1"^^qudt:UCUMcs ;
+.
+om:examole
+  skos:notation "Emol"^^qudt:UCUMcs ;
+.
+om:examolePerLitre
+  skos:notation "Emol-L-1"^^qudt:UCUMcs ;
+.
+om:examolePerMetre
+  skos:notation "Emol.m-1"^^qudt:UCUMcs ;
+.
+om:exanewton
+  skos:notation "EN"^^qudt:UCUMcs ;
+.
+om:exaohm
+  skos:notation "EOhm"^^qudt:UCUMcs ;
+.
+om:exapascal
+  skos:notation "EPa"^^qudt:UCUMcs ;
+.
+om:exasecond-Time
+  skos:notation "Es"^^qudt:UCUMcs ;
+.
+om:exasecond-TimeSquared
+  skos:notation "Es2"^^qudt:UCUMcs ;
+.
+om:exasiemens
+  skos:notation "ES"^^qudt:UCUMcs ;
+.
+om:exasievert
+  skos:notation "ESv"^^qudt:UCUMcs ;
+.
+om:exatesla
+  skos:notation "ET"^^qudt:UCUMcs ;
+.
+om:exavolt
+  skos:notation "EV"^^qudt:UCUMcs ;
+.
+om:exawatt
+  skos:notation "EW"^^qudt:UCUMcs ;
+.
+om:exaweber
+  skos:notation "EWb"^^qudt:UCUMcs ;
+.
+om:farad
+  skos:notation "F"^^qudt:UCUMcs ;
+.
+om:faradPerMetre
+  skos:notation "F.m-1"^^qudt:UCUMcs ;
+.
+om:fathom-USSurvey
+  skos:notation "[fth_us]"^^qudt:UCUMcs ;
+.
+om:femtoampere
+  skos:notation "fA"^^qudt:UCUMcs ;
+.
+om:femtobecquerel
+  skos:notation "fBq"^^qudt:UCUMcs ;
+.
+om:femtocandela
+  skos:notation "fcd"^^qudt:UCUMcs ;
+.
+om:femtocoulomb
+  skos:notation "fC"^^qudt:UCUMcs ;
+.
+om:femtodegreeCelsius
+  skos:notation "fCel"^^qudt:UCUMcs ;
+.
+om:femtofarad
+  skos:notation "fF"^^qudt:UCUMcs ;
+.
+om:femtogram
+  skos:notation "fg"^^qudt:UCUMcs ;
+.
+om:femtogramPerLitre
+  skos:notation "fg.L-1"^^qudt:UCUMcs ;
+.
+om:femtogray
+  skos:notation "fGy"^^qudt:UCUMcs ;
+.
+om:femtohenry
+  skos:notation "fH"^^qudt:UCUMcs ;
+.
+om:femtohertz
+  skos:notation "fHz"^^qudt:UCUMcs ;
+.
+om:femtojoule
+  skos:notation "fJ"^^qudt:UCUMcs ;
+.
+om:femtokatal
+  skos:notation "fkat"^^qudt:UCUMcs ;
+.
+om:femtokelvin
+  skos:notation "fK"^^qudt:UCUMcs ;
+.
+om:femtolitre
+  skos:notation "fL"^^qudt:UCUMcs ;
+.
+om:femtolumen
+  skos:notation "flm"^^qudt:UCUMcs ;
+.
+om:femtolux
+  skos:notation "flx"^^qudt:UCUMcs ;
+.
+om:femtometre
+  skos:notation "fm"^^qudt:UCUMcs ;
+.
+om:femtometrePerSecond-Time
+  skos:notation "fm.s-1"^^qudt:UCUMcs ;
+.
+om:femtometrePerSecond-TimeSquared
+  skos:notation "fm.s-2"^^qudt:UCUMcs ;
+.
+om:femtomolair
+  skos:notation "fmol.L-1"^^qudt:UCUMcs ;
+.
+om:femtomole
+  skos:notation "fmol"^^qudt:UCUMcs ;
+.
+om:femtomolePerLitre
+  skos:notation "fmol.L-1"^^qudt:UCUMcs ;
+.
+om:femtomolePerMetre
+  skos:notation "fmol.m-1"^^qudt:UCUMcs ;
+.
+om:femtonewton
+  skos:notation "fN"^^qudt:UCUMcs ;
+.
+om:femtoohm
+  skos:notation "fOhm"^^qudt:UCUMcs ;
+.
+om:femtopascal
+  skos:notation "fPa"^^qudt:UCUMcs ;
+.
+om:femtoradian
+  skos:notation "frad"^^qudt:UCUMcs ;
+.
+om:femtosecond-Time
+  skos:notation "fs"^^qudt:UCUMcs ;
+.
+om:femtosecond-TimeSquared
+  skos:notation "fs2"^^qudt:UCUMcs ;
+.
+om:femtosiemens
+  skos:notation "fS"^^qudt:UCUMcs ;
+.
+om:femtosievert
+  skos:notation "fSv"^^qudt:UCUMcs ;
+.
+om:femtosteradian
+  skos:notation "fsr"^^qudt:UCUMcs ;
+.
+om:femtotesla
+  skos:notation "fT"^^qudt:UCUMcs ;
+.
+om:femtovolt
+  skos:notation "fV"^^qudt:UCUMcs ;
+.
+om:femtowatt
+  skos:notation "fW"^^qudt:UCUMcs ;
+.
+om:femtoweber
+  skos:notation "fWb"^^qudt:UCUMcs ;
+.
+om:fermi
+  skos:notation "fm"^^qudt:UCUMcs ;
+.
+om:fluidOunce-Imperial
+  skos:notation "[foz_br]"^^qudt:UCUMcs ;
+.
+om:fluidOunce-US
+  skos:notation "[foz_us]"^^qudt:UCUMcs ;
+.
+om:foot-International
+  skos:notation "[ft_i]"^^qudt:UCUMcs ;
+.
+om:foot-USSurvey
+  skos:notation "[ft_us]"^^qudt:UCUMcs ;
+.
+om:furlong-International
+  skos:notation "[fur_i]"^^qudt:UCUMcs ;
+.
+om:gal
+  skos:notation "Gal"^^qudt:UCUMcs ;
+.
+om:gallon-Imperial
+  skos:notation "[gal_br]"^^qudt:UCUMcs ;
+.
+om:gallon-US
+  skos:notation "[gal_us]"^^qudt:UCUMcs ;
+.
+om:gauss
+  skos:notation "G"^^qudt:UCUMcs ;
+.
+om:gigaampere
+  skos:notation "GA"^^qudt:UCUMcs ;
+.
+om:gigabecquerel
+  skos:notation "GBq"^^qudt:UCUMcs ;
+.
+om:gigabit
+  skos:notation "Gbit"^^qudt:UCUMcs ;
+.
+om:gigabyte
+  skos:notation "GBy"^^qudt:UCUMcs ;
+.
+om:gigacandela
+  skos:notation "Gcd"^^qudt:UCUMcs ;
+.
+om:gigacoulomb
+  skos:notation "GC"^^qudt:UCUMcs ;
+.
+om:gigaelectronvolt
+  skos:notation "GeV"^^qudt:UCUMcs ;
+.
+om:gigafarad
+  skos:notation "GF"^^qudt:UCUMcs ;
+.
+om:gigagram
+  skos:notation "Gg"^^qudt:UCUMcs ;
+.
+om:gigagramPerLitre
+  skos:notation "Gg.L-1"^^qudt:UCUMcs ;
+.
+om:gigagray
+  skos:notation "GGy"^^qudt:UCUMcs ;
+.
+om:gigahenry
+  skos:notation "GH"^^qudt:UCUMcs ;
+.
+om:gigahertz
+  skos:notation "GHz"^^qudt:UCUMcs ;
+.
+om:gigajoule
+  skos:notation "GJ"^^qudt:UCUMcs ;
+.
+om:gigakatal
+  skos:notation "Gkat"^^qudt:UCUMcs ;
+.
+om:gigakelvin
+  skos:notation "GK"^^qudt:UCUMcs ;
+.
+om:gigalitre
+  skos:notation "GL"^^qudt:UCUMcs ;
+.
+om:gigalumen
+  skos:notation "Glm"^^qudt:UCUMcs ;
+.
+om:gigalux
+  skos:notation "Glx"^^qudt:UCUMcs ;
+.
+om:gigametre
+  skos:notation "Gm"^^qudt:UCUMcs ;
+.
+om:gigametrePerSecond-Time
+  skos:notation "Gm.s-1"^^qudt:UCUMcs ;
+.
+om:gigametrePerSecond-TimeSquared
+  skos:notation "Gm.s-2"^^qudt:UCUMcs ;
+.
+om:gigamolair
+  skos:notation "Gmol.L-1"^^qudt:UCUMcs ;
+.
+om:gigamole
+  skos:notation "Gmol"^^qudt:UCUMcs ;
+.
+om:gigamolePerLitre
+  skos:notation "Gmol.L-1"^^qudt:UCUMcs ;
+.
+om:gigamolePerMetre
+  skos:notation "Gmol.m-1"^^qudt:UCUMcs ;
+.
+om:giganewton
+  skos:notation "GN"^^qudt:UCUMcs ;
+.
+om:gigaohm
+  skos:notation "GOhm"^^qudt:UCUMcs ;
+.
+om:gigaparsec
+  skos:notation "Gpc"^^qudt:UCUMcs ;
+.
+om:gigapascal
+  skos:notation "GPa"^^qudt:UCUMcs ;
+.
+om:gigasecond-Time
+  skos:notation "Gs"^^qudt:UCUMcs ;
+.
+om:gigasecond-TimeSquared
+  skos:notation "Gs2"^^qudt:UCUMcs ;
+.
+om:gigasiemens
+  skos:notation "GS"^^qudt:UCUMcs ;
+.
+om:gigasievert
+  skos:notation "GSv"^^qudt:UCUMcs ;
+.
+om:gigatesla
+  skos:notation "GT"^^qudt:UCUMcs ;
+.
+om:gigavolt
+  skos:notation "GV"^^qudt:UCUMcs ;
+.
+om:gigawatt
+  skos:notation "GW"^^qudt:UCUMcs ;
+.
+om:gigawattHour
+  skos:notation "GW.h"^^qudt:UCUMcs ;
+.
+om:gigaweber
+  skos:notation "GWb"^^qudt:UCUMcs ;
+.
+om:gigayear
+  skos:notation "Ga"^^qudt:UCUMcs ;
+.
+om:gigayearCubicKiloparsec
+  skos:notation "Ga.kpc3"^^qudt:UCUMcs ;
+.
+om:gigayearCubicParsec
+  skos:notation "Ga.pc3"^^qudt:UCUMcs ;
+.
+om:gilbert
+  skos:notation "Gb"^^qudt:UCUMcs ;
+.
+om:gill-Imperial
+  skos:notation "[gil_br]"^^qudt:UCUMcs ;
+.
+om:gill-US
+  skos:notation "[gil_us]"^^qudt:UCUMcs ;
+.
+om:gon
+  skos:notation "gon"^^qudt:UCUMcs ;
+.
+om:grain
+  skos:notation "[gr]"^^qudt:UCUMcs ;
+.
+om:gram
+  skos:notation "g"^^qudt:UCUMcs ;
+.
+om:gramPerAttolitre
+  skos:notation "g.aL-1"^^qudt:UCUMcs ;
+.
+om:gramPerCentilitre
+  skos:notation "g.cL-1"^^qudt:UCUMcs ;
+.
+om:gramPerCubicCentimetre
+  skos:notation "g.cm-3"^^qudt:UCUMcs ;
+.
+om:gramPerCubicmetre
+  skos:notation "g.m-3"^^qudt:UCUMcs ;
+.
+om:gramPerDay
+  skos:notation "g.d-1"^^qudt:UCUMcs ;
+.
+om:gramPerDecalitre
+  skos:notation "g.daL-1"^^qudt:UCUMcs ;
+.
+om:gramPerDecilitre
+  skos:notation "g.dL-1"^^qudt:UCUMcs ;
+.
+om:gramPerExalitre
+  skos:notation "g.EL-1"^^qudt:UCUMcs ;
+.
+om:gramPerFemtolitre
+  skos:notation "g.fL-1"^^qudt:UCUMcs ;
+.
+om:gramPerGigalitre
+  skos:notation "g.GL-1"^^qudt:UCUMcs ;
+.
+om:gramPerGram
+  skos:notation "g.g-1"^^qudt:UCUMcs ;
+.
+om:gramPerHectogram
+  skos:notation "g.hg-1"^^qudt:UCUMcs ;
+.
+om:gramPerHectolitre
+  skos:notation "g.hL-1"^^qudt:UCUMcs ;
+.
+om:gramPerJoule
+  skos:notation "g.J-1"^^qudt:UCUMcs ;
+.
+om:gramPerKilogram
+  skos:notation "g.kg-1"^^qudt:UCUMcs ;
+.
+om:gramPerKilolitre
+  skos:notation "g.kL-1"^^qudt:UCUMcs ;
+.
+om:gramPerLitre
+  skos:notation "g.L-1"^^qudt:UCUMcs ;
+.
+om:gramPerMegajoule
+  skos:notation "g.MJ-1"^^qudt:UCUMcs ;
+.
+om:gramPerMegalitre
+  skos:notation "g.ML-1"^^qudt:UCUMcs ;
+.
+om:gramPerMetre
+  skos:notation "g.m-1"^^qudt:UCUMcs ;
+.
+om:gramPerMicrolitre
+  skos:notation "g.uL-1"^^qudt:UCUMcs ;
+.
+om:gramPerMillilitre
+  skos:notation "g.mL-1"^^qudt:UCUMcs ;
+.
+om:gramPerNanolitre
+  skos:notation "g.nL-1"^^qudt:UCUMcs ;
+.
+om:gramPerPetalitre
+  skos:notation "g.PL-1"^^qudt:UCUMcs ;
+.
+om:gramPerPicolitre
+  skos:notation "g.pL-1"^^qudt:UCUMcs ;
+.
+om:gramPerSquareMetre
+  skos:notation "g.m-2"^^qudt:UCUMcs ;
+.
+om:gramPerSquareMetreCentimetre
+  skos:notation "g.cm-2"^^qudt:UCUMcs ;
+.
+om:gramPerSquareMetreDay
+  skos:notation "g.m-2.d-1"^^qudt:UCUMcs ;
+.
+om:gramPerSquareMetreMetre
+  skos:notation "g.m-2.m-1"^^qudt:UCUMcs ;
+.
+om:gramPerSquareMetreSecond-Time
+  skos:notation "g.m-2.s-1"^^qudt:UCUMcs ;
+.
+om:gramPerTeralitre
+  skos:notation "g.TL-1"^^qudt:UCUMcs ;
+.
+om:gramPerYoctolitre
+  skos:notation "g.yL-1"^^qudt:UCUMcs ;
+.
+om:gramPerYottalitre
+  skos:notation "g.YL-1"^^qudt:UCUMcs ;
+.
+om:gramPerZeptolitre
+  skos:notation "g.zL-1"^^qudt:UCUMcs ;
+.
+om:gramPerZettalitre
+  skos:notation "g.ZL-1"^^qudt:UCUMcs ;
+.
+om:gramPerday
+  skos:notation "g.d-1"^^qudt:UCUMcs ;
+.
+om:gray
+  skos:notation "Gy"^^qudt:UCUMcs ;
+.
+om:grayPerSecond-Time
+  skos:notation "Gy.s-1"^^qudt:UCUMcs ;
+.
+om:hectare
+  skos:notation "har"^^qudt:UCUMcs ;
+.
+om:hectareDay
+  skos:notation "har.d"^^qudt:UCUMcs ;
+.
+om:hectoampere
+  skos:notation "hA"^^qudt:UCUMcs ;
+.
+om:hectobecquerel
+  skos:notation "hBq"^^qudt:UCUMcs ;
+.
+om:hectocandela
+  skos:notation "hcd"^^qudt:UCUMcs ;
+.
+om:hectocoulomb
+  skos:notation "hC"^^qudt:UCUMcs ;
+.
+om:hectofarad
+  skos:notation "hF"^^qudt:UCUMcs ;
+.
+om:hectogram
+  skos:notation "hg"^^qudt:UCUMcs ;
+.
+om:hectogramPerLitre
+  skos:notation "hg.L-1"^^qudt:UCUMcs ;
+.
+om:hectogray
+  skos:notation "hGy"^^qudt:UCUMcs ;
+.
+om:hectohenry
+  skos:notation "hH"^^qudt:UCUMcs ;
+.
+om:hectohertz
+  skos:notation "hHz"^^qudt:UCUMcs ;
+.
+om:hectojoule
+  skos:notation "hJ"^^qudt:UCUMcs ;
+.
+om:hectokatal
+  skos:notation "hkat"^^qudt:UCUMcs ;
+.
+om:hectokelvin
+  skos:notation "hK"^^qudt:UCUMcs ;
+.
+om:hectolitre
+  skos:notation "hL"^^qudt:UCUMcs ;
+.
+om:hectolumen
+  skos:notation "hlm"^^qudt:UCUMcs ;
+.
+om:hectolux
+  skos:notation "hlx"^^qudt:UCUMcs ;
+.
+om:hectometre
+  skos:notation "hm"^^qudt:UCUMcs ;
+.
+om:hectometrePerSecond-Time
+  skos:notation "hm.s-1"^^qudt:UCUMcs ;
+.
+om:hectometrePerSecond-TimeSquared
+  skos:notation "hm.s-2"^^qudt:UCUMcs ;
+.
+om:hectomolair
+  skos:notation "hmol.L-1"^^qudt:UCUMcs ;
+.
+om:hectomole
+  skos:notation "hmol"^^qudt:UCUMcs ;
+.
+om:hectomolePerLitre
+  skos:notation "hmol.L-1"^^qudt:UCUMcs ;
+.
+om:hectomolePerMetre
+  skos:notation "hmol.m-1"^^qudt:UCUMcs ;
+.
+om:hectonewton
+  skos:notation "hN"^^qudt:UCUMcs ;
+.
+om:hectoohm
+  skos:notation "hOhm"^^qudt:UCUMcs ;
+.
+om:hectopascal
+  skos:notation "hPa"^^qudt:UCUMcs ;
+.
+om:hectosecond-Time
+  skos:notation "hs"^^qudt:UCUMcs ;
+.
+om:hectosecond-TimeSquared
+  skos:notation "hs2"^^qudt:UCUMcs ;
+.
+om:hectosiemens
+  skos:notation "hS"^^qudt:UCUMcs ;
+.
+om:hectosievert
+  skos:notation "hSv"^^qudt:UCUMcs ;
+.
+om:hectotesla
+  skos:notation "hT"^^qudt:UCUMcs ;
+.
+om:hectovolt
+  skos:notation "hV"^^qudt:UCUMcs ;
+.
+om:hectowatt
+  skos:notation "hW"^^qudt:UCUMcs ;
+.
+om:hectoweber
+  skos:notation "hWb"^^qudt:UCUMcs ;
+.
+om:henry
+  skos:notation "hH"^^qudt:UCUMcs ;
+.
+om:henryPerMetre
+  skos:notation "H.m-1"^^qudt:UCUMcs ;
+.
+om:hertz
+  skos:notation "Hz"^^qudt:UCUMcs ;
+.
+om:horsepower-British
+  skos:notation "[HP]"^^qudt:UCUMcs ;
+.
+om:hour
+  skos:notation "h"^^qudt:UCUMcs ;
+.
+om:hundredCount
+  skos:notation "100"^^qudt:UCUMcs ;
+.
+om:hundredweight-British
+  skos:notation "[lcwt_av]"^^qudt:UCUMcs ;
+.
+om:hundredweight-US
+  skos:notation "[scwt_av]"^^qudt:UCUMcs ;
+.
+om:inch-International
+  skos:notation "[in_i]"^^qudt:UCUMcs ;
+.
+om:joule
+  skos:notation "J"^^qudt:UCUMcs ;
+.
+om:joulePerCubicMetreKelvin
+  skos:notation "J.m-3.K-1"^^qudt:UCUMcs ;
+.
+om:joulePerCubicmetre
+  skos:notation "J.m-3"^^qudt:UCUMcs ;
+.
+om:joulePerKelvin
+  skos:notation "J.K-1"^^qudt:UCUMcs ;
+.
+om:joulePerKelvinKilogram
+  skos:notation "J.K-1.kg-1"^^qudt:UCUMcs ;
+.
+om:joulePerKelvinMole
+  skos:notation "J.K-1.mol-1"^^qudt:UCUMcs ;
+.
+om:joulePerKilogram
+  skos:notation "J.kg-1"^^qudt:UCUMcs ;
+.
+om:joulePerMole
+  skos:notation "J.mol-1"^^qudt:UCUMcs ;
+.
+om:joulePerSecond-Time
+  skos:notation "J.s-1"^^qudt:UCUMcs ;
+.
+om:joulePerSquareMetre
+  skos:notation "J.m-2"^^qudt:UCUMcs ;
+.
+om:joulePerSquareMetreDay
+  skos:notation "J.m-2.d-1"^^qudt:UCUMcs ;
+.
+om:joulePerSquareMetreSecond-Time
+  skos:notation "J.m-2.s-1"^^qudt:UCUMcs ;
+.
+om:jouleSecond-Time
+  skos:notation "J.s"^^qudt:UCUMcs ;
+.
+om:katal
+  skos:notation "kat"^^qudt:UCUMcs ;
+.
+om:katalPerCubicmetre
+  skos:notation "kat.m-3"^^qudt:UCUMcs ;
+.
+om:kayser
+  skos:notation "Ky"^^qudt:UCUMcs ;
+.
+om:kelvin
+  skos:notation "K"^^qudt:UCUMcs ;
+.
+om:kelvinKilogram
+  skos:notation "K.kg"^^qudt:UCUMcs ;
+.
+om:kelvinMole
+  skos:notation "K.mol"^^qudt:UCUMcs ;
+.
+om:kelvinPerWatt
+  skos:notation "K.W-1"^^qudt:UCUMcs ;
+.
+om:kiloampere
+  skos:notation "kA"^^qudt:UCUMcs ;
+.
+om:kilobecquerel
+  skos:notation "kBq"^^qudt:UCUMcs ;
+.
+om:kilobit
+  skos:notation "kbit"^^qudt:UCUMcs ;
+.
+om:kilobyte
+  skos:notation "kBy"^^qudt:UCUMcs ;
+.
+om:kilocalorie-Mean
+  skos:notation "kcal_m"^^qudt:UCUMcs ;
+.
+om:kilocalorie-MeanPerDay
+  skos:notation "kcal_m.d-1"^^qudt:UCUMcs ;
+.
+om:kilocalorie-MeanPerHectogram
+  skos:notation "kcal_m.hg-1"^^qudt:UCUMcs ;
+.
+om:kilocandela
+  skos:notation "kcd"^^qudt:UCUMcs ;
+.
+om:kilocoulomb
+  skos:notation "kC"^^qudt:UCUMcs ;
+.
+om:kiloelectronvolt
+  skos:notation "keV"^^qudt:UCUMcs ;
+.
+om:kilofarad
+  skos:notation "kF"^^qudt:UCUMcs ;
+.
+om:kilogram
+  skos:notation "kg"^^qudt:UCUMcs ;
+.
+om:kilogramPerCubicDecimetre
+  skos:notation "kg.dm-3"^^qudt:UCUMcs ;
+.
+om:kilogramPerCubicmetre
+  skos:notation "kg.m-3"^^qudt:UCUMcs ;
+.
+om:kilogramPerGigajoule
+  skos:notation "kg.GJ-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerHectare
+  skos:notation "kg.har-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerHectareDay
+  skos:notation "kg.har-1.d-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerKilogram
+  skos:notation "kg.kg-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerLitre
+  skos:notation "kg.L-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerMole
+  skos:notation "kg.mol-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerPascalSecond-TimeSquareMetre
+  skos:notation "kg.Pa-1.s-1.m-2"^^qudt:UCUMcs ;
+.
+om:kilogramPerSecond-Time
+  skos:notation "kg.s-1"^^qudt:UCUMcs ;
+.
+om:kilogramPerSquareMetre
+  skos:notation "kg.m-2"^^qudt:UCUMcs ;
+.
+om:kilogramSecond-TimeToThePower-2
+  skos:notation "kg.s2"^^qudt:UCUMcs ;
+.
+om:kilogramSecond-TimeToThePower-2ReciprocalMetre
+  skos:notation "kg.s2.m-1"^^qudt:UCUMcs ;
+.
+om:kilogramSquareMetre
+  skos:notation "kg.m-2"^^qudt:UCUMcs ;
+.
+om:kilogray
+  skos:notation "kGy"^^qudt:UCUMcs ;
+.
+om:kilohenry
+  skos:notation "kH"^^qudt:UCUMcs ;
+.
+om:kilohertz
+  skos:notation "kHz"^^qudt:UCUMcs ;
+.
+om:kilohm
+  skos:notation "kOhm"^^qudt:UCUMcs ;
+.
+om:kilojoule
+  skos:notation "kJ"^^qudt:UCUMcs ;
+.
+om:kilojoulePerHectogram
+  skos:notation "kJ.hg-1"^^qudt:UCUMcs ;
+.
+om:kilojoulePerSquareMetreDay
+  skos:notation "kJ.m-2.d-1"^^qudt:UCUMcs ;
+.
+om:kilokatal
+  skos:notation "kkat"^^qudt:UCUMcs ;
+.
+om:kilokelvin
+  skos:notation "kK"^^qudt:UCUMcs ;
+.
+om:kilolitre
+  skos:notation "kL"^^qudt:UCUMcs ;
+.
+om:kilolumen
+  skos:notation "klm"^^qudt:UCUMcs ;
+.
+om:kilolux
+  skos:notation "klx"^^qudt:UCUMcs ;
+.
+om:kilometre
+  skos:notation "km"^^qudt:UCUMcs ;
+.
+om:kilometrePerHour
+  skos:notation "km.h-1"^^qudt:UCUMcs ;
+.
+om:kilometrePerSecond-Time
+  skos:notation "km.s-1"^^qudt:UCUMcs ;
+.
+om:kilometrePerSecond-TimePerMegaparsec
+  skos:notation "km.s-1.Mpc-1"^^qudt:UCUMcs ;
+.
+om:kilometrePerSecond-TimeSquared
+  skos:notation "km.s-2"^^qudt:UCUMcs ;
+.
+om:kilomolair
+  skos:notation "kmol.L-1"^^qudt:UCUMcs ;
+.
+om:kilomole
+  skos:notation "kmol"^^qudt:UCUMcs ;
+.
+om:kilomolePerLitre
+  skos:notation "kmol.L-1"^^qudt:UCUMcs ;
+.
+om:kilomolePerMetre
+  skos:notation "kmol.m-1"^^qudt:UCUMcs ;
+.
+om:kilonewton
+  skos:notation "kN"^^qudt:UCUMcs ;
+.
+om:kiloparsec
+  skos:notation "kpc"^^qudt:UCUMcs ;
+.
+om:kilopascal
+  skos:notation "kPa"^^qudt:UCUMcs ;
+.
+om:kilosecond-Time
+  skos:notation "ks"^^qudt:UCUMcs ;
+.
+om:kilosecond-TimeSquared
+  skos:notation "ks2"^^qudt:UCUMcs ;
+.
+om:kilosiemens
+  skos:notation "kS"^^qudt:UCUMcs ;
+.
+om:kilosievert
+  skos:notation "kSv"^^qudt:UCUMcs ;
+.
+om:kilotesla
+  skos:notation "kT"^^qudt:UCUMcs ;
+.
+om:kilotonne
+  skos:notation "kt"^^qudt:UCUMcs ;
+.
+om:kilovolt
+  skos:notation "kV"^^qudt:UCUMcs ;
+.
+om:kilowatt
+  skos:notation "kW"^^qudt:UCUMcs ;
+.
+om:kilowattHour
+  skos:notation "kW.h"^^qudt:UCUMcs ;
+.
+om:kiloweber
+  skos:notation "kWb"^^qudt:UCUMcs ;
+.
+om:knot-International
+  skos:notation "[kn_i]"^^qudt:UCUMcs ;
+.
+om:lambert
+  skos:notation "Lmb"^^qudt:UCUMcs ;
+.
+om:lightYear
+  skos:notation "[ly]"^^qudt:UCUMcs ;
+.
+om:liquidPint-US
+  skos:notation "[pt_us]"^^qudt:UCUMcs ;
+.
+om:liquidQuart-US
+  skos:notation "[qt_us]"^^qudt:UCUMcs ;
+.
+om:litre
+  skos:notation "L"^^qudt:UCUMcs ;
+.
+om:litrePer100Kilometre
+  skos:notation "L/(100.km)"^^qudt:UCUMcs ;
+.
+om:litrePerHour
+  skos:notation "l.h-1"^^qudt:UCUMcs ;
+.
+om:litrePerMole
+  skos:notation "l.mol-1"^^qudt:UCUMcs ;
+.
+om:lumen
+  skos:notation "lm"^^qudt:UCUMcs ;
+.
+om:lumenPerSquareMetre
+  skos:notation "lm.m-2"^^qudt:UCUMcs ;
+.
+om:lumenPerWatt
+  skos:notation "lm.W-1"^^qudt:UCUMcs ;
+.
+om:lumenSecond-Time
+  skos:notation "lm.s"^^qudt:UCUMcs ;
+.
+om:lux
+  skos:notation "lx"^^qudt:UCUMcs ;
+.
+om:luxSecond-Time
+  skos:notation "lx.s"^^qudt:UCUMcs ;
+.
+om:maxwell
+  skos:notation "Mx"^^qudt:UCUMcs ;
+.
+om:megaampere
+  skos:notation "MA"^^qudt:UCUMcs ;
+.
+om:megabecquerel
+  skos:notation "MBq"^^qudt:UCUMcs ;
+.
+om:megabit
+  skos:notation "Mbit"^^qudt:UCUMcs ;
+.
+om:megabyte
+  skos:notation "MBy"^^qudt:UCUMcs ;
+.
+om:megacandela
+  skos:notation "Mcd"^^qudt:UCUMcs ;
+.
+om:megacoulomb
+  skos:notation "MC"^^qudt:UCUMcs ;
+.
+om:megaelectronvolt
+  skos:notation "MeV"^^qudt:UCUMcs ;
+.
+om:megaerg
+  skos:notation "MErg"^^qudt:UCUMcs ;
+.
+om:megafarad
+  skos:notation "MF"^^qudt:UCUMcs ;
+.
+om:megagram
+  skos:notation "Mg"^^qudt:UCUMcs ;
+.
+om:megagramPerLitre
+  skos:notation "Mg.L-1"^^qudt:UCUMcs ;
+.
+om:megagray
+  skos:notation "MGy"^^qudt:UCUMcs ;
+.
+om:megahenry
+  skos:notation "MH"^^qudt:UCUMcs ;
+.
+om:megahertz
+  skos:notation "MHz"^^qudt:UCUMcs ;
+.
+om:megajoule
+  skos:notation "MJ"^^qudt:UCUMcs ;
+.
+om:megajoulePerSquareMetre
+  skos:notation "MJ.m-2"^^qudt:UCUMcs ;
+.
+om:megajoulePerSquareMetreDay
+  skos:notation "MJ.m-2.d-1"^^qudt:UCUMcs ;
+.
+om:megakatal
+  skos:notation "Mkat"^^qudt:UCUMcs ;
+.
+om:megakelvin
+  skos:notation "MK"^^qudt:UCUMcs ;
+.
+om:megalitre
+  skos:notation "ML"^^qudt:UCUMcs ;
+.
+om:megalumen
+  skos:notation "Mlm"^^qudt:UCUMcs ;
+.
+om:megalux
+  skos:notation "Mlx"^^qudt:UCUMcs ;
+.
+om:megametre
+  skos:notation "Mm"^^qudt:UCUMcs ;
+.
+om:megametrePerKilojoule
+  skos:notation "Mm.kJ-1"^^qudt:UCUMcs ;
+.
+om:megametrePerSecond-Time
+  skos:notation "Mm.s-1"^^qudt:UCUMcs ;
+.
+om:megametrePerSecond-TimeSquared
+  skos:notation "Mm.s-2"^^qudt:UCUMcs ;
+.
+om:megamolair
+  skos:notation "Mmol.L-1"^^qudt:UCUMcs ;
+.
+om:megamole
+  skos:notation "Mmol"^^qudt:UCUMcs ;
+.
+om:megamolePerLitre
+  skos:notation "Mmol.L-1"^^qudt:UCUMcs ;
+.
+om:megamolePerMetre
+  skos:notation "Mmol.m-1"^^qudt:UCUMcs ;
+.
+om:meganewton
+  skos:notation "MN"^^qudt:UCUMcs ;
+.
+om:megaparsec
+  skos:notation "Mpc"^^qudt:UCUMcs ;
+.
+om:megapascal
+  skos:notation "MPa"^^qudt:UCUMcs ;
+.
+om:megasecond-Time
+  skos:notation "Ms"^^qudt:UCUMcs ;
+.
+om:megasecond-TimeSquared
+  skos:notation "Ms2"^^qudt:UCUMcs ;
+.
+om:megasiemens
+  skos:notation "MS"^^qudt:UCUMcs ;
+.
+om:megasievert
+  skos:notation "MSv"^^qudt:UCUMcs ;
+.
+om:megatesla
+  skos:notation "MT"^^qudt:UCUMcs ;
+.
+om:megatonne
+  skos:notation "Mt"^^qudt:UCUMcs ;
+.
+om:megavolt
+  skos:notation "MV"^^qudt:UCUMcs ;
+.
+om:megawatt
+  skos:notation "MW"^^qudt:UCUMcs ;
+.
+om:megawattHour
+  skos:notation "MW.h"^^qudt:UCUMcs ;
+.
+om:megaweber
+  skos:notation "MWb"^^qudt:UCUMcs ;
+.
+om:megohm
+  skos:notation "MOhm"^^qudt:UCUMcs ;
+.
+om:metre
+  skos:notation "m"^^qudt:UCUMcs ;
+.
+om:metreKelvin
+  skos:notation "m.K"^^qudt:UCUMcs ;
+.
+om:metreKilogram
+  skos:notation "m.kg"^^qudt:UCUMcs ;
+.
+om:metreKilogramPerSecond-Time
+  skos:notation "m.kg.s-1"^^qudt:UCUMcs ;
+.
+om:metreKilogramPerSecond-TimeSquared
+  skos:notation "m.kg.s-2"^^qudt:UCUMcs ;
+.
+om:metreOfMercury
+  skos:notation "m[Hg]"^^qudt:UCUMcs ;
+.
+om:metrePerAttosecond-Time
+  skos:notation "m.as-1"^^qudt:UCUMcs ;
+.
+om:metrePerAttosecond-TimeSquared
+  skos:notation "m.as-2"^^qudt:UCUMcs ;
+.
+om:metrePerCentisecond-Time
+  skos:notation "m.cs-1"^^qudt:UCUMcs ;
+.
+om:metrePerCentisecond-TimeSquared
+  skos:notation "m.cs-2"^^qudt:UCUMcs ;
+.
+om:metrePerCubicMetre
+  skos:notation "m.m-3"^^qudt:UCUMcs ;
+.
+om:metrePerDay
+  skos:notation "m.d-1"^^qudt:UCUMcs ;
+.
+om:metrePerDecasecond-Time
+  skos:notation "m.das-1"^^qudt:UCUMcs ;
+.
+om:metrePerDecasecond-TimeSquared
+  skos:notation "m.das-2"^^qudt:UCUMcs ;
+.
+om:metrePerDecisecond-Time
+  skos:notation "m.ds-1"^^qudt:UCUMcs ;
+.
+om:metrePerDecisecond-TimeSquared
+  skos:notation "m.ds-2"^^qudt:UCUMcs ;
+.
+om:metrePerExasecond-Time
+  skos:notation "m.Es-1"^^qudt:UCUMcs ;
+.
+om:metrePerExasecond-TimeSquared
+  skos:notation "m.Es-2"^^qudt:UCUMcs ;
+.
+om:metrePerFemtosecond-Time
+  skos:notation "m.fs-1"^^qudt:UCUMcs ;
+.
+om:metrePerFemtosecond-TimeSquared
+  skos:notation "m.fs-2"^^qudt:UCUMcs ;
+.
+om:metrePerGigasecond-Time
+  skos:notation "m.Gs-1"^^qudt:UCUMcs ;
+.
+om:metrePerGigasecond-TimeSquared
+  skos:notation "m.Gs-2"^^qudt:UCUMcs ;
+.
+om:metrePerHectosecond-Time
+  skos:notation "m.hs-1"^^qudt:UCUMcs ;
+.
+om:metrePerHectosecond-TimeSquared
+  skos:notation "m.hs-2"^^qudt:UCUMcs ;
+.
+om:metrePerKilosecond-Time
+  skos:notation "m.ks-1"^^qudt:UCUMcs ;
+.
+om:metrePerKilosecond-TimeSquared
+  skos:notation "m.ks-2"^^qudt:UCUMcs ;
+.
+om:metrePerMegasecond-Time
+  skos:notation "m.Ms-1"^^qudt:UCUMcs ;
+.
+om:metrePerMegasecond-TimeSquared
+  skos:notation "m.Ms-2"^^qudt:UCUMcs ;
+.
+om:metrePerMetre
+  skos:notation "m.m-1"^^qudt:UCUMcs ;
+.
+om:metrePerMicrosecond-Time
+  skos:notation "m.us-1"^^qudt:UCUMcs ;
+.
+om:metrePerMicrosecond-TimeSquared
+  skos:notation "m.us-2"^^qudt:UCUMcs ;
+.
+om:metrePerMillisecond-Time
+  skos:notation "m.ms-1"^^qudt:UCUMcs ;
+.
+om:metrePerMillisecond-TimeSquared
+  skos:notation "m.ms-2"^^qudt:UCUMcs ;
+.
+om:metrePerNanosecond-Time
+  skos:notation "m.ns-1"^^qudt:UCUMcs ;
+.
+om:metrePerNanosecond-TimeSquared
+  skos:notation "m.ns-2"^^qudt:UCUMcs ;
+.
+om:metrePerPetasecond-Time
+  skos:notation "m.Ps-1"^^qudt:UCUMcs ;
+.
+om:metrePerPetasecond-TimeSquared
+  skos:notation "m.Ps-2"^^qudt:UCUMcs ;
+.
+om:metrePerPicosecond-Time
+  skos:notation "m.ps-1"^^qudt:UCUMcs ;
+.
+om:metrePerPicosecond-TimeSquared
+  skos:notation "m.ps-2"^^qudt:UCUMcs ;
+.
+om:metrePerSecond-Time
+  skos:notation "m.s-1"^^qudt:UCUMcs ;
+.
+om:metrePerSecond-TimePerMetre
+  skos:notation "m.s-1.m-1"^^qudt:UCUMcs ;
+.
+om:metrePerSecond-TimeSquared
+  skos:notation "m.s-2"^^qudt:UCUMcs ;
+.
+om:metrePerTerasecond-Time
+  skos:notation "m.Ts-1"^^qudt:UCUMcs ;
+.
+om:metrePerTerasecond-TimeSquared
+  skos:notation "m.Ts-2"^^qudt:UCUMcs ;
+.
+om:metrePerYoctosecond-Time
+  skos:notation "m.ys-1"^^qudt:UCUMcs ;
+.
+om:metrePerYoctosecond-TimeSquared
+  skos:notation "m.ys-2"^^qudt:UCUMcs ;
+.
+om:metrePerYottasecond-Time
+  skos:notation "m.Ys-1"^^qudt:UCUMcs ;
+.
+om:metrePerYottasecond-TimeSquared
+  skos:notation "m.Ys-2"^^qudt:UCUMcs ;
+.
+om:metrePerZeptosecond-Time
+  skos:notation "m.zs-1"^^qudt:UCUMcs ;
+.
+om:metrePerZeptosecond-TimeSquared
+  skos:notation "m.zs-2"^^qudt:UCUMcs ;
+.
+om:metrePerZettasecond-Time
+  skos:notation "m.Zs-1"^^qudt:UCUMcs ;
+.
+om:metrePerZettasecond-TimeSquared
+  skos:notation "m.Zs-2"^^qudt:UCUMcs ;
+.
+om:mho
+  skos:notation "mho"^^qudt:UCUMcs ;
+.
+om:microampere
+  skos:notation "uA"^^qudt:UCUMcs ;
+.
+om:microbar
+  skos:notation "ubar"^^qudt:UCUMcs ;
+.
+om:microbecquerel
+  skos:notation "uBq"^^qudt:UCUMcs ;
+.
+om:microcandela
+  skos:notation "ucd"^^qudt:UCUMcs ;
+.
+om:microcoulomb
+  skos:notation "uC"^^qudt:UCUMcs ;
+.
+om:microdegreeCelsius
+  skos:notation "uCel"^^qudt:UCUMcs ;
+.
+om:microfarad
+  skos:notation "uF"^^qudt:UCUMcs ;
+.
+om:microgram
+  skos:notation "ug"^^qudt:UCUMcs ;
+.
+om:microgramPerCubicCentimetre
+  skos:notation "ug.cm-3"^^qudt:UCUMcs ;
+.
+om:microgramPerHectogram
+  skos:notation "ug.hg-1"^^qudt:UCUMcs ;
+.
+om:microgramPerJoule
+  skos:notation "ug.J-1"^^qudt:UCUMcs ;
+.
+om:microgramPerLitre
+  skos:notation "ug.L-1"^^qudt:UCUMcs ;
+.
+om:microgramPerSquareMetreSecond-Time
+  skos:notation "ug.m-2.s-1"^^qudt:UCUMcs ;
+.
+om:microgray
+  skos:notation "uGy"^^qudt:UCUMcs ;
+.
+om:microhenry
+  skos:notation "uH"^^qudt:UCUMcs ;
+.
+om:microhertz
+  skos:notation "uHz"^^qudt:UCUMcs ;
+.
+om:microjoule
+  skos:notation "uJ"^^qudt:UCUMcs ;
+.
+om:microkatal
+  skos:notation "ukat"^^qudt:UCUMcs ;
+.
+om:microkelvin
+  skos:notation "uK"^^qudt:UCUMcs ;
+.
+om:microlitre
+  skos:notation "uL"^^qudt:UCUMcs ;
+.
+om:microlumen
+  skos:notation "ulm"^^qudt:UCUMcs ;
+.
+om:microlux
+  skos:notation "ulx"^^qudt:UCUMcs ;
+.
+om:micrometre
+  skos:notation "um"^^qudt:UCUMcs ;
+.
+om:micrometrePerSecond-Time
+  skos:notation "um.s-1"^^qudt:UCUMcs ;
+.
+om:micrometrePerSecond-TimeSquared
+  skos:notation "um.s-2"^^qudt:UCUMcs ;
+.
+om:micromolair
+  skos:notation "umol-L-1"^^qudt:UCUMcs ;
+.
+om:micromole
+  skos:notation "umol"^^qudt:UCUMcs ;
+.
+om:micromolePerLitre
+  skos:notation "umol.L-1"^^qudt:UCUMcs ;
+.
+om:micromolePerMetre
+  skos:notation "umol.m-1"^^qudt:UCUMcs ;
+.
+om:micromolePerMole
+  skos:notation "umol.mol-1"^^qudt:UCUMcs ;
+.
+om:micromolePerSecond-Time
+  skos:notation "umol.s-1"^^qudt:UCUMcs ;
+.
+om:micromolePerSecond-TimeGram
+  skos:notation "umol.s-1.g-1"^^qudt:UCUMcs ;
+.
+om:micron
+  skos:notation "um"^^qudt:UCUMcs ;
+.
+om:micronewton
+  skos:notation "uN"^^qudt:UCUMcs ;
+.
+om:micronewtonMetre
+  skos:notation "uN.m"^^qudt:UCUMcs ;
+.
+om:microohm
+  skos:notation "uOhm"^^qudt:UCUMcs ;
+.
+om:micropascal
+  skos:notation "uPa"^^qudt:UCUMcs ;
+.
+om:microradian
+  skos:notation "urad"^^qudt:UCUMcs ;
+.
+om:microsecond-Angle
+  skos:notation "u''"^^qudt:UCUMcs ;
+.
+om:microsecond-Time
+  skos:notation "us"^^qudt:UCUMcs ;
+.
+om:microsecond-TimeSquared
+  skos:notation "us2"^^qudt:UCUMcs ;
+.
+om:microsiemens
+  skos:notation "uS"^^qudt:UCUMcs ;
+.
+om:microsievert
+  skos:notation "uSv"^^qudt:UCUMcs ;
+.
+om:microsteradian
+  skos:notation "usr"^^qudt:UCUMcs ;
+.
+om:microtesla
+  skos:notation "uT"^^qudt:UCUMcs ;
+.
+om:microvolt
+  skos:notation "uV"^^qudt:UCUMcs ;
+.
+om:microwatt
+  skos:notation "uW"^^qudt:UCUMcs ;
+.
+om:microweber
+  skos:notation "uWb"^^qudt:UCUMcs ;
+.
+om:mil-Angle
+  skos:notation "[cml_i]"^^qudt:UCUMcs ;
+.
+om:mil-Length
+  skos:notation "[mil_i]"^^qudt:UCUMcs ;
+.
+om:mile-Statute
+  skos:notation "[mi_i]"^^qudt:UCUMcs ;
+.
+om:mile-StatutePerHour
+  skos:notation "[mi_br].h-1"^^qudt:UCUMcs ;
+.
+om:mile-USSurvey
+  skos:notation "[mi_us]"^^qudt:UCUMcs ;
+.
+om:milliampere
+  skos:notation "mA"^^qudt:UCUMcs ;
+.
+om:milliampereHour
+  skos:notation "mA.h"^^qudt:UCUMcs ;
+.
+om:millibar
+  skos:notation "mbar"^^qudt:UCUMcs ;
+.
+om:millibecquerel
+  skos:notation "mBq"^^qudt:UCUMcs ;
+.
+om:millicandela
+  skos:notation "mcd"^^qudt:UCUMcs ;
+.
+om:millicoulomb
+  skos:notation "mC"^^qudt:UCUMcs ;
+.
+om:millidegreeCelsius
+  skos:notation "mCel"^^qudt:UCUMcs ;
+.
+om:millifarad
+  skos:notation "mF"^^qudt:UCUMcs ;
+.
+om:milligauss
+  skos:notation "mG"^^qudt:UCUMcs ;
+.
+om:milligram
+  skos:notation "mg"^^qudt:UCUMcs ;
+.
+om:milligramPerCubicmetre
+  skos:notation "mg.cm-3"^^qudt:UCUMcs ;
+.
+om:milligramPerDay
+  skos:notation "mg.d-1"^^qudt:UCUMcs ;
+.
+om:milligramPerHectogram
+  skos:notation "mg.hg-1"^^qudt:UCUMcs ;
+.
+om:milligramPerKilogram
+  skos:notation "mg.kg-1"^^qudt:UCUMcs ;
+.
+om:milligramPerKilometre
+  skos:notation "mg.km-1"^^qudt:UCUMcs ;
+.
+om:milligramPerLitre
+  skos:notation "mg.L-1"^^qudt:UCUMcs ;
+.
+om:milligramPerday
+  skos:notation "mg.d-1"^^qudt:UCUMcs ;
+.
+om:milligray
+  skos:notation "mGy"^^qudt:UCUMcs ;
+.
+om:millihenry
+  skos:notation "mH"^^qudt:UCUMcs ;
+.
+om:millihertz
+  skos:notation "mHz"^^qudt:UCUMcs ;
+.
+om:millijoule
+  skos:notation "mJ"^^qudt:UCUMcs ;
+.
+om:millikatal
+  skos:notation "mkat"^^qudt:UCUMcs ;
+.
+om:millikelvin
+  skos:notation "mK"^^qudt:UCUMcs ;
+.
+om:millilitre
+  skos:notation "mL"^^qudt:UCUMcs ;
+.
+om:millilumen
+  skos:notation "mlm"^^qudt:UCUMcs ;
+.
+om:millilux
+  skos:notation "mlx"^^qudt:UCUMcs ;
+.
+om:millimetre
+  skos:notation "mm"^^qudt:UCUMcs ;
+.
+om:millimetreOfMercury
+  skos:notation "mm[Hg]"^^qudt:UCUMcs ;
+.
+om:millimetrePerDay
+  skos:notation "mm.d-1"^^qudt:UCUMcs ;
+.
+om:millimetrePerHour
+  skos:notation "mm.h-1"^^qudt:UCUMcs ;
+.
+om:millimetrePerSecond-Time
+  skos:notation "mm.s-1"^^qudt:UCUMcs ;
+.
+om:millimetrePerSecond-TimeSquared
+  skos:notation "mm.s-2"^^qudt:UCUMcs ;
+.
+om:millimolair
+  skos:notation "mmol.L-1"^^qudt:UCUMcs ;
+.
+om:millimole
+  skos:notation "mmol"^^qudt:UCUMcs ;
+.
+om:millimolePerLitre
+  skos:notation "mmol.L-1"^^qudt:UCUMcs ;
+.
+om:millimolePerMetre
+  skos:notation "mmol.m-1"^^qudt:UCUMcs ;
+.
+om:millinewton
+  skos:notation "mN"^^qudt:UCUMcs ;
+.
+om:millinewtonMetre
+  skos:notation "mN.m"^^qudt:UCUMcs ;
+.
+om:milliohm
+  skos:notation "mOhm"^^qudt:UCUMcs ;
+.
+om:millipascal
+  skos:notation "mPa"^^qudt:UCUMcs ;
+.
+om:milliradian
+  skos:notation "mrad"^^qudt:UCUMcs ;
+.
+om:millisecond-Angle
+  skos:notation "m''"^^qudt:UCUMcs ;
+.
+om:millisecond-AnglePerYear
+  skos:notation "m''.a-1"^^qudt:UCUMcs ;
+.
+om:millisecond-Time
+  skos:notation "ms"^^qudt:UCUMcs ;
+.
+om:millisecond-TimeSquared
+  skos:notation "ms2"^^qudt:UCUMcs ;
+.
+om:millisiemens
+  skos:notation "mS"^^qudt:UCUMcs ;
+.
+om:millisievert
+  skos:notation "mSv"^^qudt:UCUMcs ;
+.
+om:millisteradian
+  skos:notation "msr"^^qudt:UCUMcs ;
+.
+om:millitesla
+  skos:notation "mT"^^qudt:UCUMcs ;
+.
+om:millivolt
+  skos:notation "mV"^^qudt:UCUMcs ;
+.
+om:milliwatt
+  skos:notation "mW"^^qudt:UCUMcs ;
+.
+om:milliweber
+  skos:notation "mWb"^^qudt:UCUMcs ;
+.
+om:minute-Angle
+  skos:notation "'"^^qudt:UCUMcs ;
+.
+om:minute-Time
+  skos:notation "min"^^qudt:UCUMcs ;
+.
+om:molair
+  skos:notation "mol.L-1"^^qudt:UCUMcs ;
+.
+om:mole
+  skos:notation "mol"^^qudt:UCUMcs ;
+.
+om:moleMicrometre
+  skos:notation "mol.um"^^qudt:UCUMcs ;
+.
+om:moleMicrometreReciprocalSquareCentimetre
+  skos:notation "mol.um.cm-2"^^qudt:UCUMcs ;
+.
+om:moleMicrometreReciprocalSquareCentimetreReciprocalSecond-Time
+  skos:notation "mol.um.cm-2.s-1"^^qudt:UCUMcs ;
+.
+om:molePerAttolitre
+  skos:notation "mol.aL-1"^^qudt:UCUMcs ;
+.
+om:molePerAttometre
+  skos:notation "mol.am-1"^^qudt:UCUMcs ;
+.
+om:molePerCentilitre
+  skos:notation "mol.cL-1"^^qudt:UCUMcs ;
+.
+om:molePerCentimetre
+  skos:notation "mol.cm-1"^^qudt:UCUMcs ;
+.
+om:molePerCubicmetre
+  skos:notation "mol.m-3"^^qudt:UCUMcs ;
+.
+om:molePerDecalitre
+  skos:notation "mol.daL-1"^^qudt:UCUMcs ;
+.
+om:molePerDecametre
+  skos:notation "mol.dam-1"^^qudt:UCUMcs ;
+.
+om:molePerDecilitre
+  skos:notation "mol.dL-1"^^qudt:UCUMcs ;
+.
+om:molePerDecimetre
+  skos:notation "mol.dm-1"^^qudt:UCUMcs ;
+.
+om:molePerExalitre
+  skos:notation "mol.EL-1"^^qudt:UCUMcs ;
+.
+om:molePerExametre
+  skos:notation "mol.Em-1"^^qudt:UCUMcs ;
+.
+om:molePerFemtolitre
+  skos:notation "mol.fL-1"^^qudt:UCUMcs ;
+.
+om:molePerFemtometre
+  skos:notation "mol.fm-1"^^qudt:UCUMcs ;
+.
+om:molePerGigalitre
+  skos:notation "mol.GL-1"^^qudt:UCUMcs ;
+.
+om:molePerGigametre
+  skos:notation "mol.Gm-1"^^qudt:UCUMcs ;
+.
+om:molePerHectolitre
+  skos:notation "mol.hL-1"^^qudt:UCUMcs ;
+.
+om:molePerHectometre
+  skos:notation "mol.hm-1"^^qudt:UCUMcs ;
+.
+om:molePerKilogram
+  skos:notation "mol.kg-1"^^qudt:UCUMcs ;
+.
+om:molePerKilolitre
+  skos:notation "mol.kL-1"^^qudt:UCUMcs ;
+.
+om:molePerKilometre
+  skos:notation "mol.km-1"^^qudt:UCUMcs ;
+.
+om:molePerLitre
+  skos:notation "mol.L-1"^^qudt:UCUMcs ;
+.
+om:molePerMegalitre
+  skos:notation "mol.ML-1"^^qudt:UCUMcs ;
+.
+om:molePerMetre
+  skos:notation "mol.m-1"^^qudt:UCUMcs ;
+.
+om:molePerMicrolitre
+  skos:notation "mol.uL-1"^^qudt:UCUMcs ;
+.
+om:molePerMicrometre
+  skos:notation "mol.um-1"^^qudt:UCUMcs ;
+.
+om:molePerMillilitre
+  skos:notation "mol.mL-1"^^qudt:UCUMcs ;
+.
+om:molePerMillimetre
+  skos:notation "mol.mm-1"^^qudt:UCUMcs ;
+.
+om:molePerMole
+  skos:notation "mol.mol-1"^^qudt:UCUMcs ;
+.
+om:molePerNanolitre
+  skos:notation "mol.nL-1"^^qudt:UCUMcs ;
+.
+om:molePerNanometre
+  skos:notation "mol.nm-1"^^qudt:UCUMcs ;
+.
+om:molePerPetalitre
+  skos:notation "mol.PL-1"^^qudt:UCUMcs ;
+.
+om:molePerPetametre
+  skos:notation "mol.Pm-1"^^qudt:UCUMcs ;
+.
+om:molePerPicolitre
+  skos:notation "mol.pL-1"^^qudt:UCUMcs ;
+.
+om:molePerPicometre
+  skos:notation "mol.pm-1"^^qudt:UCUMcs ;
+.
+om:molePerSecond-Time
+  skos:notation "mol.s-1"^^qudt:UCUMcs ;
+.
+om:molePerTeralitre
+  skos:notation "mol.TL-1"^^qudt:UCUMcs ;
+.
+om:molePerTerametre
+  skos:notation "mol.Tm-1"^^qudt:UCUMcs ;
+.
+om:molePerYoctolitre
+  skos:notation "mol.yL-1"^^qudt:UCUMcs ;
+.
+om:molePerYoctometre
+  skos:notation "mol.ym-1"^^qudt:UCUMcs ;
+.
+om:molePerYottalitre
+  skos:notation "mol.YL-1"^^qudt:UCUMcs ;
+.
+om:molePerYottametre
+  skos:notation "mol.Ym-1"^^qudt:UCUMcs ;
+.
+om:molePerZeptolitre
+  skos:notation "mol.zL-1"^^qudt:UCUMcs ;
+.
+om:molePerZeptometre
+  skos:notation "mol.zm-1"^^qudt:UCUMcs ;
+.
+om:molePerZettalitre
+  skos:notation "mol.ZL-1"^^qudt:UCUMcs ;
+.
+om:molePerZettametre
+  skos:notation "mol.Zm-1"^^qudt:UCUMcs ;
+.
+om:molePermegametre
+  skos:notation "mol.Mm-1"^^qudt:UCUMcs ;
+.
+om:month
+  skos:notation "mo"^^qudt:UCUMcs ;
+.
+om:nanoampere
+  skos:notation "nA"^^qudt:UCUMcs ;
+.
+om:nanobecquerel
+  skos:notation "nBq"^^qudt:UCUMcs ;
+.
+om:nanocandela
+  skos:notation "ncd"^^qudt:UCUMcs ;
+.
+om:nanocoulomb
+  skos:notation "nC"^^qudt:UCUMcs ;
+.
+om:nanodegreeCelsius
+  skos:notation "cCel"^^qudt:UCUMcs ;
+.
+om:nanofarad
+  skos:notation "nF"^^qudt:UCUMcs ;
+.
+om:nanogram
+  skos:notation "ng"^^qudt:UCUMcs ;
+.
+om:nanogramPerLitre
+  skos:notation "ng.L-1"^^qudt:UCUMcs ;
+.
+om:nanogray
+  skos:notation "nGy"^^qudt:UCUMcs ;
+.
+om:nanohenry
+  skos:notation "nH"^^qudt:UCUMcs ;
+.
+om:nanohertz
+  skos:notation "nHz"^^qudt:UCUMcs ;
+.
+om:nanojoule
+  skos:notation "nJ"^^qudt:UCUMcs ;
+.
+om:nanokatal
+  skos:notation "nkat"^^qudt:UCUMcs ;
+.
+om:nanokatalPerMilligram
+  skos:notation "nkat.mg-1"^^qudt:UCUMcs ;
+.
+om:nanokelvin
+  skos:notation "nK"^^qudt:UCUMcs ;
+.
+om:nanolitre
+  skos:notation "nL"^^qudt:UCUMcs ;
+.
+om:nanolumen
+  skos:notation "nlm"^^qudt:UCUMcs ;
+.
+om:nanolux
+  skos:notation "nlx"^^qudt:UCUMcs ;
+.
+om:nanometre
+  skos:notation "nm"^^qudt:UCUMcs ;
+.
+om:nanometrePerSecond-Time
+  skos:notation "nm.s-1"^^qudt:UCUMcs ;
+.
+om:nanometrePerSecond-TimeSquared
+  skos:notation "nm.s-2"^^qudt:UCUMcs ;
+.
+om:nanomolair
+  skos:notation "nmol.L-1"^^qudt:UCUMcs ;
+.
+om:nanomole
+  skos:notation "nmol"^^qudt:UCUMcs ;
+.
+om:nanomolePerLitre
+  skos:notation "nmol.L-1"^^qudt:UCUMcs ;
+.
+om:nanomolePerMetre
+  skos:notation "nmol.m-1"^^qudt:UCUMcs ;
+.
+om:nanonewton
+  skos:notation "nN"^^qudt:UCUMcs ;
+.
+om:nanoohm
+  skos:notation "nOhm"^^qudt:UCUMcs ;
+.
+om:nanopascal
+  skos:notation "nPa"^^qudt:UCUMcs ;
+.
+om:nanoradian
+  skos:notation "nrad"^^qudt:UCUMcs ;
+.
+om:nanosecond-Time
+  skos:notation "ns"^^qudt:UCUMcs ;
+.
+om:nanosecond-TimeSquared
+  skos:notation "ns2"^^qudt:UCUMcs ;
+.
+om:nanosiemens
+  skos:notation "nS"^^qudt:UCUMcs ;
+.
+om:nanosievert
+  skos:notation "nSv"^^qudt:UCUMcs ;
+.
+om:nanosteradian
+  skos:notation "nsr"^^qudt:UCUMcs ;
+.
+om:nanotesla
+  skos:notation "nT"^^qudt:UCUMcs ;
+.
+om:nanounifiedAtomicMassUnit
+  skos:notation "nu"^^qudt:UCUMcs ;
+.
+om:nanovolt
+  skos:notation "nV"^^qudt:UCUMcs ;
+.
+om:nanowatt
+  skos:notation "nW"^^qudt:UCUMcs ;
+.
+om:nanoweber
+  skos:notation "nWb"^^qudt:UCUMcs ;
+.
+om:nauticalMile-International
+  skos:notation "[nmi_i]"^^qudt:UCUMcs ;
+.
+om:nauticalMile-InternationalPerHour
+  skos:notation "[nmi_i].h-1"^^qudt:UCUMcs ;
+.
+om:newton
+  skos:notation "N"^^qudt:UCUMcs ;
+.
+om:newtonMetre
+  skos:notation "N.m"^^qudt:UCUMcs ;
+.
+om:newtonPerCoulomb
+  skos:notation "N.C-1"^^qudt:UCUMcs ;
+.
+om:newtonPerMetre
+  skos:notation "N.m-1"^^qudt:UCUMcs ;
+.
+om:newtonPerSquareMetre
+  skos:notation "N.m-2"^^qudt:UCUMcs ;
+.
+om:oersted
+  skos:notation "Oe"^^qudt:UCUMcs ;
+.
+om:ohm
+  skos:notation "Ohm"^^qudt:UCUMcs ;
+.
+om:ohmMetre
+  skos:notation "Ohm.m"^^qudt:UCUMcs ;
+.
+om:one
+  skos:notation "1"^^qudt:UCUMcs ;
+.
+om:ounceApothecaries
+  skos:notation "[oz_ap]"^^qudt:UCUMcs ;
+.
+om:ounceAvoirdupois
+  skos:notation "[oz_av]"^^qudt:UCUMcs ;
+.
+om:ounceAvoirdupoisPerSquareYard-International
+  skos:notation "[oz_av].[yd_i]-2"^^qudt:UCUMcs ;
+.
+om:parsec
+  skos:notation "pc"^^qudt:UCUMcs ;
+.
+om:partsPerMillion
+  skos:notation "[ppm]"^^qudt:UCUMcs ;
+.
+om:partsPerMillionPerYear
+  skos:notation "[ppm].a-1"^^qudt:UCUMcs ;
+.
+om:pascal
+  skos:notation "Pa"^^qudt:UCUMcs ;
+.
+om:pascalSecond-Time
+  skos:notation "Pa.s"^^qudt:UCUMcs ;
+.
+om:pascalSecond-TimeSquareMetre
+  skos:notation "Pa.s.m2"^^qudt:UCUMcs ;
+.
+om:peck-US
+  skos:notation "[pk_us]"^^qudt:UCUMcs ;
+.
+om:pennyweight-Troy
+  skos:notation "[pwt_tr]"^^qudt:UCUMcs ;
+.
+om:percent
+  skos:notation "%"^^qudt:UCUMcs ;
+.
+om:petaampere
+  skos:notation "PA"^^qudt:UCUMcs ;
+.
+om:petabecquerel
+  skos:notation "PBq"^^qudt:UCUMcs ;
+.
+om:petabit
+  skos:notation "Pbit"^^qudt:UCUMcs ;
+.
+om:petabyte
+  skos:notation "PBy"^^qudt:UCUMcs ;
+.
+om:petacandela
+  skos:notation "Pcd"^^qudt:UCUMcs ;
+.
+om:petacoulomb
+  skos:notation "PC"^^qudt:UCUMcs ;
+.
+om:petafarad
+  skos:notation "PF"^^qudt:UCUMcs ;
+.
+om:petagram
+  skos:notation "Pg"^^qudt:UCUMcs ;
+.
+om:petagramPerLitre
+  skos:notation "Pg.L-1"^^qudt:UCUMcs ;
+.
+om:petagray
+  skos:notation "PGy"^^qudt:UCUMcs ;
+.
+om:petahenry
+  skos:notation "PH"^^qudt:UCUMcs ;
+.
+om:petahertz
+  skos:notation "PHz"^^qudt:UCUMcs ;
+.
+om:petajoule
+  skos:notation "PJ"^^qudt:UCUMcs ;
+.
+om:petakatal
+  skos:notation "Pkat"^^qudt:UCUMcs ;
+.
+om:petakelvin
+  skos:notation "PK"^^qudt:UCUMcs ;
+.
+om:petalitre
+  skos:notation "PL"^^qudt:UCUMcs ;
+.
+om:petalumen
+  skos:notation "Plm"^^qudt:UCUMcs ;
+.
+om:petalux
+  skos:notation "Plx"^^qudt:UCUMcs ;
+.
+om:petametre
+  skos:notation "Pm"^^qudt:UCUMcs ;
+.
+om:petametrePerSecond-Time
+  skos:notation "Pm.s-1"^^qudt:UCUMcs ;
+.
+om:petametrePerSecond-TimeSquared
+  skos:notation "Pm.s-2"^^qudt:UCUMcs ;
+.
+om:petamolair
+  skos:notation "Pmol.L-1"^^qudt:UCUMcs ;
+.
+om:petamole
+  skos:notation "Pmol"^^qudt:UCUMcs ;
+.
+om:petamolePerLitre
+  skos:notation "Pmol.L-1"^^qudt:UCUMcs ;
+.
+om:petamolePerMetre
+  skos:notation "Pmol.m-1"^^qudt:UCUMcs ;
+.
+om:petanewton
+  skos:notation "PN"^^qudt:UCUMcs ;
+.
+om:petaohm
+  skos:notation "POhm"^^qudt:UCUMcs ;
+.
+om:petapascal
+  skos:notation "PPa"^^qudt:UCUMcs ;
+.
+om:petasecond-Time
+  skos:notation "Ps"^^qudt:UCUMcs ;
+.
+om:petasecond-TimeSquared
+  skos:notation "Ps2"^^qudt:UCUMcs ;
+.
+om:petasiemens
+  skos:notation "PS"^^qudt:UCUMcs ;
+.
+om:petasievert
+  skos:notation "PSv"^^qudt:UCUMcs ;
+.
+om:petatesla
+  skos:notation "PT"^^qudt:UCUMcs ;
+.
+om:petavolt
+  skos:notation "PV"^^qudt:UCUMcs ;
+.
+om:petawatt
+  skos:notation "PW"^^qudt:UCUMcs ;
+.
+om:petaweber
+  skos:notation "PWb"^^qudt:UCUMcs ;
+.
+om:phot
+  skos:notation "ph"^^qudt:UCUMcs ;
+.
+om:pica-ATA
+  skos:notation "[pca]"^^qudt:UCUMcs ;
+.
+om:picoampere
+  skos:notation "pA"^^qudt:UCUMcs ;
+.
+om:picobecquerel
+  skos:notation "pBq"^^qudt:UCUMcs ;
+.
+om:picocandela
+  skos:notation "pcd"^^qudt:UCUMcs ;
+.
+om:picocoulomb
+  skos:notation "pC"^^qudt:UCUMcs ;
+.
+om:picodegreeCelsius
+  skos:notation "pCel"^^qudt:UCUMcs ;
+.
+om:picofarad
+  skos:notation "pF"^^qudt:UCUMcs ;
+.
+om:picogram
+  skos:notation "pg"^^qudt:UCUMcs ;
+.
+om:picogramPerLitre
+  skos:notation "pg.L-1"^^qudt:UCUMcs ;
+.
+om:picogray
+  skos:notation "pGy"^^qudt:UCUMcs ;
+.
+om:picohenry
+  skos:notation "pH"^^qudt:UCUMcs ;
+.
+om:picohertz
+  skos:notation "pHz"^^qudt:UCUMcs ;
+.
+om:picojoule
+  skos:notation "pJ"^^qudt:UCUMcs ;
+.
+om:picokatal
+  skos:notation "pkat"^^qudt:UCUMcs ;
+.
+om:picokelvin
+  skos:notation "pK"^^qudt:UCUMcs ;
+.
+om:picolitre
+  skos:notation "pL"^^qudt:UCUMcs ;
+.
+om:picolumen
+  skos:notation "plm"^^qudt:UCUMcs ;
+.
+om:picolux
+  skos:notation "plx"^^qudt:UCUMcs ;
+.
+om:picometre
+  skos:notation "pm"^^qudt:UCUMcs ;
+.
+om:picometrePerSecond-Time
+  skos:notation "pm.s-1"^^qudt:UCUMcs ;
+.
+om:picometrePerSecond-TimeSquared
+  skos:notation "pm.s-2"^^qudt:UCUMcs ;
+.
+om:picomolair
+  skos:notation "pmol.L-1"^^qudt:UCUMcs ;
+.
+om:picomole
+  skos:notation "pmol"^^qudt:UCUMcs ;
+.
+om:picomolePerLitre
+  skos:notation "pmol.L-1"^^qudt:UCUMcs ;
+.
+om:picomolePerMetre
+  skos:notation "pmol.m-1"^^qudt:UCUMcs ;
+.
+om:piconewton
+  skos:notation "pN"^^qudt:UCUMcs ;
+.
+om:picoohm
+  skos:notation "pOhm"^^qudt:UCUMcs ;
+.
+om:picopascal
+  skos:notation "pPa"^^qudt:UCUMcs ;
+.
+om:picoradian
+  skos:notation "prad"^^qudt:UCUMcs ;
+.
+om:picosecond-Time
+  skos:notation "ps"^^qudt:UCUMcs ;
+.
+om:picosecond-TimeSquared
+  skos:notation "ps2"^^qudt:UCUMcs ;
+.
+om:picosiemens
+  skos:notation "pS"^^qudt:UCUMcs ;
+.
+om:picosievert
+  skos:notation "pSv"^^qudt:UCUMcs ;
+.
+om:picosteradian
+  skos:notation "psr"^^qudt:UCUMcs ;
+.
+om:picotesla
+  skos:notation "pT"^^qudt:UCUMcs ;
+.
+om:picovolt
+  skos:notation "pV"^^qudt:UCUMcs ;
+.
+om:picowatt
+  skos:notation "pW"^^qudt:UCUMcs ;
+.
+om:picoweber
+  skos:notation "pWb"^^qudt:UCUMcs ;
+.
+om:pint-Imperial
+  skos:notation "[pt_br]"^^qudt:UCUMcs ;
+.
+om:point-ATA
+  skos:notation "[pnt]"^^qudt:UCUMcs ;
+.
+om:point-Didot
+  skos:notation "[didot]"^^qudt:UCUMcs ;
+.
+om:point-Postscript
+  skos:notation "[pnt_pr]"^^qudt:UCUMcs ;
+.
+om:poise
+  skos:notation "P"^^qudt:UCUMcs ;
+.
+om:pound-Force
+  skos:notation "[lbf_av]"^^qudt:UCUMcs ;
+.
+om:poundApothecaries
+  skos:notation "[lb_ap]"^^qudt:UCUMcs ;
+.
+om:poundAvoirdupois
+  skos:notation "[lb_av]"^^qudt:UCUMcs ;
+.
+om:quart-Imperial
+  skos:notation "[qt_br]"^^qudt:UCUMcs ;
+.
+om:rad
+  skos:notation "RAD"^^qudt:UCUMcs ;
+.
+om:radian
+  skos:notation "rad"^^qudt:UCUMcs ;
+.
+om:radianPerSecond-Time
+  skos:notation "rad.s-1"^^qudt:UCUMcs ;
+.
+om:radianPerSecond-TimeSquared
+  skos:notation "rad.s-2"^^qudt:UCUMcs ;
+.
+om:reciprocalAtmosphere-Standard
+  skos:notation "atm-1"^^qudt:UCUMcs ;
+.
+om:reciprocalCubicCentimetre
+  skos:notation "cm-3"^^qudt:UCUMcs ;
+.
+om:reciprocalCubicMetre
+  skos:notation "m-3"^^qudt:UCUMcs ;
+.
+om:reciprocalCubicParsec
+  skos:notation "pc-3"^^qudt:UCUMcs ;
+.
+om:reciprocalDay
+  skos:notation "d-1"^^qudt:UCUMcs ;
+.
+om:reciprocalDegreeCelsius
+  skos:notation "Cel-1"^^qudt:UCUMcs ;
+.
+om:reciprocalDegreeCelsiusDay
+  skos:notation "Cel-1.d-1"^^qudt:UCUMcs ;
+.
+om:reciprocalGram
+  skos:notation "g-1"^^qudt:UCUMcs ;
+.
+om:reciprocalHenry
+  skos:notation "H-1"^^qudt:UCUMcs ;
+.
+om:reciprocalHour
+  skos:notation "h-1"^^qudt:UCUMcs ;
+.
+om:reciprocalKelvin
+  skos:notation "K-1"^^qudt:UCUMcs ;
+.
+om:reciprocalMetre
+  skos:notation "m-1"^^qudt:UCUMcs ;
+.
+om:reciprocalMinute-Time
+  skos:notation "min-1"^^qudt:UCUMcs ;
+.
+om:reciprocalPartsPerMillionPerYear
+  skos:notation "[ppm]-1.a-1"^^qudt:UCUMcs ;
+.
+om:reciprocalPascalSecond-Time
+  skos:notation "Pa-1.s-1"^^qudt:UCUMcs ;
+.
+om:reciprocalSecond-Time
+  skos:notation "s-1"^^qudt:UCUMcs ;
+.
+om:reciprocalSquareCentimetre
+  skos:notation "cm-2"^^qudt:UCUMcs ;
+.
+om:reciprocalSquareMetre
+  skos:notation "m-2"^^qudt:UCUMcs ;
+.
+om:reciprocalSquareMetreReciprocalGram
+  skos:notation "m-2.g-1"^^qudt:UCUMcs ;
+.
+om:reciprocalSquareMetreReciprocalMetre
+  skos:notation "m-2.m-1"^^qudt:UCUMcs ;
+.
+om:reciprocalWatt
+  skos:notation "W-1"^^qudt:UCUMcs ;
+.
+om:reciprocalYear
+  skos:notation "a-1"^^qudt:UCUMcs ;
+.
+om:rem
+  skos:notation "REM"^^qudt:UCUMcs ;
+.
+om:rod-US
+  skos:notation "[rd_us]"^^qudt:UCUMcs ;
+.
+om:röntgen
+  skos:notation "R"^^qudt:UCUMcs ;
+.
+om:second-Angle
+  skos:notation "''"^^qudt:UCUMcs ;
+.
+om:second-AngleSquared
+  skos:notation "''2"^^qudt:UCUMcs ;
+.
+om:second-Time
+  skos:notation "s"^^qudt:UCUMcs ;
+.
+om:second-TimeAmpere
+  skos:notation "s.A"^^qudt:UCUMcs ;
+.
+om:second-TimePerDay
+  skos:notation "s.d-1"^^qudt:UCUMcs ;
+.
+om:second-TimePerSquareMetre
+  skos:notation "s.m-2"^^qudt:UCUMcs ;
+.
+om:second-TimeSquared
+  skos:notation "s2"^^qudt:UCUMcs ;
+.
+om:second-TimeToThePower-2
+  skos:notation "s2"^^qudt:UCUMcs ;
+.
+om:siemens
+  skos:notation "S"^^qudt:UCUMcs ;
+.
+om:siemensPerMetre
+  skos:notation "S.m-1"^^qudt:UCUMcs ;
+.
+om:sievert
+  skos:notation "Sv"^^qudt:UCUMcs ;
+.
+om:squareAttometre
+  skos:notation "am2"^^qudt:UCUMcs ;
+.
+om:squareCentimetre
+  skos:notation "cm2"^^qudt:UCUMcs ;
+.
+om:squareDecametre
+  skos:notation "dam2"^^qudt:UCUMcs ;
+.
+om:squareDecimetre
+  skos:notation "dm2"^^qudt:UCUMcs ;
+.
+om:squareExametre
+  skos:notation "Em2"^^qudt:UCUMcs ;
+.
+om:squareFemtometre
+  skos:notation "fm2"^^qudt:UCUMcs ;
+.
+om:squareFoot-International
+  skos:notation "[ft_i]2"^^qudt:UCUMcs ;
+.
+om:squareGigametre
+  skos:notation "Gm2"^^qudt:UCUMcs ;
+.
+om:squareHectometre
+  skos:notation "hm2"^^qudt:UCUMcs ;
+.
+om:squareInch-International
+  skos:notation "[in_i]2"^^qudt:UCUMcs ;
+.
+om:squareKilometre
+  skos:notation "km2"^^qudt:UCUMcs ;
+.
+om:squareMegametre
+  skos:notation "Mm2"^^qudt:UCUMcs ;
+.
+om:squareMetre
+  skos:notation "m2"^^qudt:UCUMcs ;
+.
+om:squareMetreDay
+  skos:notation "m2.d"^^qudt:UCUMcs ;
+.
+om:squareMetreHertz
+  skos:notation "m2.Hz"^^qudt:UCUMcs ;
+.
+om:squareMetreKelvin
+  skos:notation "m2.K"^^qudt:UCUMcs ;
+.
+om:squareMetreKelvinPerWatt
+  skos:notation "m2.K.W-1"^^qudt:UCUMcs ;
+.
+om:squareMetreNanometre
+  skos:notation "m2.nm"^^qudt:UCUMcs ;
+.
+om:squareMetrePerGram
+  skos:notation "m2.g-1"^^qudt:UCUMcs ;
+.
+om:squareMetrePerSecond-Time
+  skos:notation "m2.s-1"^^qudt:UCUMcs ;
+.
+om:squareMetrePerSquareMetre
+  skos:notation "m2.m-2"^^qudt:UCUMcs ;
+.
+om:squareMetrePerSquareMetreDay
+  skos:notation "m2.m-2.d-1"^^qudt:UCUMcs ;
+.
+om:squareMetreSecond-Time
+  skos:notation "m2.s"^^qudt:UCUMcs ;
+.
+om:squareMetreSteradian
+  skos:notation "m2.sr"^^qudt:UCUMcs ;
+.
+om:squareMicrometre
+  skos:notation "um2"^^qudt:UCUMcs ;
+.
+om:squareMile-International
+  skos:notation "[mi_i]2"^^qudt:UCUMcs ;
+.
+om:squareMile-Statute
+  skos:notation "[mi_br]2"^^qudt:UCUMcs ;
+.
+om:squareMillimetre
+  skos:notation "mm2"^^qudt:UCUMcs ;
+.
+om:squareNanometre
+  skos:notation "nm2"^^qudt:UCUMcs ;
+.
+om:squarePetametre
+  skos:notation "Pm2"^^qudt:UCUMcs ;
+.
+om:squarePicometre
+  skos:notation "pm2"^^qudt:UCUMcs ;
+.
+om:squareTerametre
+  skos:notation "Tm2"^^qudt:UCUMcs ;
+.
+om:squareYard-International
+  skos:notation "[yd_i]2"^^qudt:UCUMcs ;
+.
+om:squareYoctometre
+  skos:notation "ym2"^^qudt:UCUMcs ;
+.
+om:squareYottametre
+  skos:notation "Ym2"^^qudt:UCUMcs ;
+.
+om:squareZeptometre
+  skos:notation "zm2"^^qudt:UCUMcs ;
+.
+om:squareZettametre
+  skos:notation "Zm2"^^qudt:UCUMcs ;
+.
+om:steradian
+  skos:notation "sr"^^qudt:UCUMcs ;
+.
+om:steradianSquareMetre
+  skos:notation "sr.m2"^^qudt:UCUMcs ;
+.
+om:steradianSquareMetreHertz
+  skos:notation "sr.m2.Hz"^^qudt:UCUMcs ;
+.
+om:stere
+  skos:notation "st"^^qudt:UCUMcs ;
+.
+om:stilb
+  skos:notation "sb"^^qudt:UCUMcs ;
+.
+om:stokes
+  skos:notation "St"^^qudt:UCUMcs ;
+.
+om:tablespoon-US
+  skos:notation "[tbs_us]"^^qudt:UCUMcs ;
+.
+om:teaspoon-US
+  skos:notation "[tsp_us]"^^qudt:UCUMcs ;
+.
+om:teraampere
+  skos:notation "TA"^^qudt:UCUMcs ;
+.
+om:terabecquerel
+  skos:notation "TBq"^^qudt:UCUMcs ;
+.
+om:terabit
+  skos:notation "Tbit"^^qudt:UCUMcs ;
+.
+om:terabyte
+  skos:notation "TBy"^^qudt:UCUMcs ;
+.
+om:teracandela
+  skos:notation "Tcd"^^qudt:UCUMcs ;
+.
+om:teracoulomb
+  skos:notation "TC"^^qudt:UCUMcs ;
+.
+om:terafarad
+  skos:notation "TF"^^qudt:UCUMcs ;
+.
+om:teragram
+  skos:notation "Tg"^^qudt:UCUMcs ;
+.
+om:teragramPerLitre
+  skos:notation "Tg.L-1"^^qudt:UCUMcs ;
+.
+om:teragray
+  skos:notation "TGy"^^qudt:UCUMcs ;
+.
+om:terahenry
+  skos:notation "TH"^^qudt:UCUMcs ;
+.
+om:terahertz
+  skos:notation "THz"^^qudt:UCUMcs ;
+.
+om:terajoule
+  skos:notation "TJ"^^qudt:UCUMcs ;
+.
+om:terakatal
+  skos:notation "Tkat"^^qudt:UCUMcs ;
+.
+om:terakelvin
+  skos:notation "TK"^^qudt:UCUMcs ;
+.
+om:teralitre
+  skos:notation "TL"^^qudt:UCUMcs ;
+.
+om:teralumen
+  skos:notation "Tlm"^^qudt:UCUMcs ;
+.
+om:teralux
+  skos:notation "Tlx"^^qudt:UCUMcs ;
+.
+om:terametre
+  skos:notation "Tm"^^qudt:UCUMcs ;
+.
+om:terametrePerSecond-Time
+  skos:notation "Tm.s-1"^^qudt:UCUMcs ;
+.
+om:terametrePerSecond-TimeSquared
+  skos:notation "Tm.s-2"^^qudt:UCUMcs ;
+.
+om:teramolair
+  skos:notation "Tmol.L-1"^^qudt:UCUMcs ;
+.
+om:teramole
+  skos:notation "Tmol"^^qudt:UCUMcs ;
+.
+om:teramolePerLitre
+  skos:notation "Tmol.L-1"^^qudt:UCUMcs ;
+.
+om:teramolePerMetre
+  skos:notation "Tmol.m-1"^^qudt:UCUMcs ;
+.
+om:teranewton
+  skos:notation "TN"^^qudt:UCUMcs ;
+.
+om:teraohm
+  skos:notation "Tohm"^^qudt:UCUMcs ;
+.
+om:terapascal
+  skos:notation "TPa"^^qudt:UCUMcs ;
+.
+om:terasecond-Time
+  skos:notation "Ts"^^qudt:UCUMcs ;
+.
+om:terasecond-TimeSquared
+  skos:notation "Ts2"^^qudt:UCUMcs ;
+.
+om:terasiemens
+  skos:notation "TS"^^qudt:UCUMcs ;
+.
+om:terasievert
+  skos:notation "TSv"^^qudt:UCUMcs ;
+.
+om:teratesla
+  skos:notation "TT"^^qudt:UCUMcs ;
+.
+om:teravolt
+  skos:notation "TV"^^qudt:UCUMcs ;
+.
+om:terawatt
+  skos:notation "TW"^^qudt:UCUMcs ;
+.
+om:terawattHour
+  skos:notation "TW.h"^^qudt:UCUMcs ;
+.
+om:teraweber
+  skos:notation "TWb"^^qudt:UCUMcs ;
+.
+om:tesla
+  skos:notation "T"^^qudt:UCUMcs ;
+.
+om:thousandPiece
+  skos:notation "1000"^^qudt:UCUMcs ;
+.
+om:ton-Long
+  skos:notation "[lton_av]"^^qudt:UCUMcs ;
+.
+om:ton-Short
+  skos:notation "[ston_av]"^^qudt:UCUMcs ;
+.
+om:tonne
+  skos:notation "t"^^qudt:UCUMcs ;
+.
+om:tonnePerCubicmetre
+  skos:notation "t.m-3"^^qudt:UCUMcs ;
+.
+om:tonnePerHectare
+  skos:notation "t.har-1"^^qudt:UCUMcs ;
+.
+om:unifiedAtomicMassUnit
+  skos:notation "u"^^qudt:UCUMcs ;
+.
+om:volt
+  skos:notation "V"^^qudt:UCUMcs ;
+.
+om:voltPerAmpere
+  skos:notation "V.A-1"^^qudt:UCUMcs ;
+.
+om:voltPerMetre
+  skos:notation "V.m-1"^^qudt:UCUMcs ;
+.
+om:voltPerWatt
+  skos:notation "V.W-1"^^qudt:UCUMcs ;
+.
+om:voltSecond-Time
+  skos:notation "Vs"^^qudt:UCUMcs ;
+.
+om:watt
+  skos:notation "W"^^qudt:UCUMcs ;
+.
+om:wattHour
+  skos:notation "W.h"^^qudt:UCUMcs ;
+.
+om:wattPerAmpere
+  skos:notation "W.A-1"^^qudt:UCUMcs ;
+.
+om:wattPerCubicmetre
+  skos:notation "W.m-3"^^qudt:UCUMcs ;
+.
+om:wattPerHertz
+  skos:notation "W.Hz-1"^^qudt:UCUMcs ;
+.
+om:wattPerMetreKelvin
+  skos:notation "W.m-1.K-1"^^qudt:UCUMcs ;
+.
+om:wattPerNanometre
+  skos:notation "W.nm-1"^^qudt:UCUMcs ;
+.
+om:wattPerSecond-AngleSquared
+  skos:notation "W.''-2"^^qudt:UCUMcs ;
+.
+om:wattPerSquareMetre
+  skos:notation "W.m-2"^^qudt:UCUMcs ;
+.
+om:wattPerSquareMetreHertz
+  skos:notation "W.m-2.Hz-1"^^qudt:UCUMcs ;
+.
+om:wattPerSquareMetreKelvin
+  skos:notation "W.m-2.K-1"^^qudt:UCUMcs ;
+.
+om:wattPerSquareMetreNanometre
+  skos:notation "W.m-2.nm-1"^^qudt:UCUMcs ;
+.
+om:wattPerSquareMetreSteradian
+  skos:notation "W.m-2.sr-1"^^qudt:UCUMcs ;
+.
+om:wattPerSteradian
+  skos:notation "W.sr-1"^^qudt:UCUMcs ;
+.
+om:wattPerSteradianSquareMetre
+  skos:notation "W.sr-1.m-2"^^qudt:UCUMcs ;
+.
+om:wattPerSteradianSquareMetreHertz
+  skos:notation "W.sr-1.m-2.Hz-1"^^qudt:UCUMcs ;
+.
+om:wattSquareMetre
+  skos:notation "W.m2"^^qudt:UCUMcs ;
+.
+om:weber
+  skos:notation "Wb"^^qudt:UCUMcs ;
+.
+om:weberPerAmpere
+  skos:notation "Wb.A-1"^^qudt:UCUMcs ;
+.
+om:weberPerSquareMetre
+  skos:notation "Wb.m-2"^^qudt:UCUMcs ;
+.
+om:week
+  skos:notation "wk"^^qudt:UCUMcs ;
+.
+om:yard-International
+  skos:notation "[yd_i]"^^qudt:UCUMcs ;
+.
+om:year
+  skos:notation "a"^^qudt:UCUMcs ;
+.
+om:yoctoampere
+  skos:notation "yA"^^qudt:UCUMcs ;
+.
+om:yoctobecquerel
+  skos:notation "yBq"^^qudt:UCUMcs ;
+.
+om:yoctocandela
+  skos:notation "ycd"^^qudt:UCUMcs ;
+.
+om:yoctocoulomb
+  skos:notation "yC"^^qudt:UCUMcs ;
+.
+om:yoctodegreeCelsius
+  skos:notation "yCel"^^qudt:UCUMcs ;
+.
+om:yoctofarad
+  skos:notation "yF"^^qudt:UCUMcs ;
+.
+om:yoctogram
+  skos:notation "yg"^^qudt:UCUMcs ;
+.
+om:yoctogramPerLitre
+  skos:notation "yg.L-1"^^qudt:UCUMcs ;
+.
+om:yoctogray
+  skos:notation "yGy"^^qudt:UCUMcs ;
+.
+om:yoctohenry
+  skos:notation "yH"^^qudt:UCUMcs ;
+.
+om:yoctohertz
+  skos:notation "yHz"^^qudt:UCUMcs ;
+.
+om:yoctojoule
+  skos:notation "yJ"^^qudt:UCUMcs ;
+.
+om:yoctokatal
+  skos:notation "ykat"^^qudt:UCUMcs ;
+.
+om:yoctokelvin
+  skos:notation "yK"^^qudt:UCUMcs ;
+.
+om:yoctolitre
+  skos:notation "yL"^^qudt:UCUMcs ;
+.
+om:yoctolumen
+  skos:notation "ylm"^^qudt:UCUMcs ;
+.
+om:yoctolux
+  skos:notation "ylx"^^qudt:UCUMcs ;
+.
+om:yoctometre
+  skos:notation "ym"^^qudt:UCUMcs ;
+.
+om:yoctometrePerSecond-Time
+  skos:notation "ym.s-1"^^qudt:UCUMcs ;
+.
+om:yoctometrePerSecond-TimeSquared
+  skos:notation "ym.s-2"^^qudt:UCUMcs ;
+.
+om:yoctomolair
+  skos:notation "ymol.L-1"^^qudt:UCUMcs ;
+.
+om:yoctomole
+  skos:notation "ymol"^^qudt:UCUMcs ;
+.
+om:yoctomolePerLitre
+  skos:notation "ymol.L-1"^^qudt:UCUMcs ;
+.
+om:yoctomolePerMetre
+  skos:notation "ymol.m-1"^^qudt:UCUMcs ;
+.
+om:yoctonewton
+  skos:notation "yN"^^qudt:UCUMcs ;
+.
+om:yoctoohm
+  skos:notation "yOhm"^^qudt:UCUMcs ;
+.
+om:yoctopascal
+  skos:notation "yPa"^^qudt:UCUMcs ;
+.
+om:yoctoradian
+  skos:notation "yrad"^^qudt:UCUMcs ;
+.
+om:yoctosecond-Time
+  skos:notation "ys"^^qudt:UCUMcs ;
+.
+om:yoctosecond-TimeSquared
+  skos:notation "ys2"^^qudt:UCUMcs ;
+.
+om:yoctosiemens
+  skos:notation "yS"^^qudt:UCUMcs ;
+.
+om:yoctosievert
+  skos:notation "ySv"^^qudt:UCUMcs ;
+.
+om:yoctosteradian
+  skos:notation "ysr"^^qudt:UCUMcs ;
+.
+om:yoctotesla
+  skos:notation "yT"^^qudt:UCUMcs ;
+.
+om:yoctovolt
+  skos:notation "yV"^^qudt:UCUMcs ;
+.
+om:yoctowatt
+  skos:notation "yW"^^qudt:UCUMcs ;
+.
+om:yoctoweber
+  skos:notation "yWb"^^qudt:UCUMcs ;
+.
+om:yottaampere
+  skos:notation "YA"^^qudt:UCUMcs ;
+.
+om:yottabecquerel
+  skos:notation "YBq"^^qudt:UCUMcs ;
+.
+om:yottabit
+  skos:notation "Ybit"^^qudt:UCUMcs ;
+.
+om:yottabyte
+  skos:notation "YBy"^^qudt:UCUMcs ;
+.
+om:yottacandela
+  skos:notation "Ycd"^^qudt:UCUMcs ;
+.
+om:yottacoulomb
+  skos:notation "YC"^^qudt:UCUMcs ;
+.
+om:yottafarad
+  skos:notation "YF"^^qudt:UCUMcs ;
+.
+om:yottagram
+  skos:notation "Yg"^^qudt:UCUMcs ;
+.
+om:yottagramPerLitre
+  skos:notation "Yg.L-1"^^qudt:UCUMcs ;
+.
+om:yottagray
+  skos:notation "YGy"^^qudt:UCUMcs ;
+.
+om:yottahenry
+  skos:notation "YH"^^qudt:UCUMcs ;
+.
+om:yottahertz
+  skos:notation "YHz"^^qudt:UCUMcs ;
+.
+om:yottajoule
+  skos:notation "YJ"^^qudt:UCUMcs ;
+.
+om:yottakatal
+  skos:notation "Ykat"^^qudt:UCUMcs ;
+.
+om:yottakelvin
+  skos:notation "YK"^^qudt:UCUMcs ;
+.
+om:yottalitre
+  skos:notation "YL"^^qudt:UCUMcs ;
+.
+om:yottalumen
+  skos:notation "Ylm"^^qudt:UCUMcs ;
+.
+om:yottalux
+  skos:notation "Ylx"^^qudt:UCUMcs ;
+.
+om:yottametre
+  skos:notation "Ym"^^qudt:UCUMcs ;
+.
+om:yottametrePerSecond-Time
+  skos:notation "Ym.s-1"^^qudt:UCUMcs ;
+.
+om:yottametrePerSecond-TimeSquared
+  skos:notation "Ym.s-2"^^qudt:UCUMcs ;
+.
+om:yottamolair
+  skos:notation "Ymol.L-1"^^qudt:UCUMcs ;
+.
+om:yottamole
+  skos:notation "Ymol"^^qudt:UCUMcs ;
+.
+om:yottamolePerLitre
+  skos:notation "Ymol.L-1"^^qudt:UCUMcs ;
+.
+om:yottamolePerMetre
+  skos:notation "Ymol.m-1"^^qudt:UCUMcs ;
+.
+om:yottanewton
+  skos:notation "YN"^^qudt:UCUMcs ;
+.
+om:yottaohm
+  skos:notation "YOhm"^^qudt:UCUMcs ;
+.
+om:yottapascal
+  skos:notation "YPa"^^qudt:UCUMcs ;
+.
+om:yottasecond-Time
+  skos:notation "Ys"^^qudt:UCUMcs ;
+.
+om:yottasecond-TimeSquared
+  skos:notation "Ys2"^^qudt:UCUMcs ;
+.
+om:yottasiemens
+  skos:notation "YS"^^qudt:UCUMcs ;
+.
+om:yottasievert
+  skos:notation "YSv"^^qudt:UCUMcs ;
+.
+om:yottatesla
+  skos:notation "YT"^^qudt:UCUMcs ;
+.
+om:yottavolt
+  skos:notation "YV"^^qudt:UCUMcs ;
+.
+om:yottawatt
+  skos:notation "YW"^^qudt:UCUMcs ;
+.
+om:yottaweber
+  skos:notation "YWb"^^qudt:UCUMcs ;
+.
+om:zeptoampere
+  skos:notation "zA"^^qudt:UCUMcs ;
+.
+om:zeptobecquerel
+  skos:notation "zBq"^^qudt:UCUMcs ;
+.
+om:zeptocandela
+  skos:notation "zcd"^^qudt:UCUMcs ;
+.
+om:zeptocoulomb
+  skos:notation "zC"^^qudt:UCUMcs ;
+.
+om:zeptodegreeCelsius
+  skos:notation "zCel"^^qudt:UCUMcs ;
+.
+om:zeptofarad
+  skos:notation "zF"^^qudt:UCUMcs ;
+.
+om:zeptogram
+  skos:notation "zg"^^qudt:UCUMcs ;
+.
+om:zeptogramPerLitre
+  skos:notation "zg.L-1"^^qudt:UCUMcs ;
+.
+om:zeptogray
+  skos:notation "zGy"^^qudt:UCUMcs ;
+.
+om:zeptohenry
+  skos:notation "zH"^^qudt:UCUMcs ;
+.
+om:zeptohertz
+  skos:notation "zHz"^^qudt:UCUMcs ;
+.
+om:zeptojoule
+  skos:notation "zJ"^^qudt:UCUMcs ;
+.
+om:zeptokatal
+  skos:notation "zkat"^^qudt:UCUMcs ;
+.
+om:zeptokelvin
+  skos:notation "zK"^^qudt:UCUMcs ;
+.
+om:zeptolitre
+  skos:notation "zL"^^qudt:UCUMcs ;
+.
+om:zeptolumen
+  skos:notation "zlm"^^qudt:UCUMcs ;
+.
+om:zeptolux
+  skos:notation "zlx"^^qudt:UCUMcs ;
+.
+om:zeptometre
+  skos:notation "zm"^^qudt:UCUMcs ;
+.
+om:zeptometrePerSecond-Time
+  skos:notation "zm.s-1"^^qudt:UCUMcs ;
+.
+om:zeptometrePerSecond-TimeSquared
+  skos:notation "zm.s-2"^^qudt:UCUMcs ;
+.
+om:zeptomolair
+  skos:notation "zmol.L-1"^^qudt:UCUMcs ;
+.
+om:zeptomole
+  skos:notation "zmol"^^qudt:UCUMcs ;
+.
+om:zeptomolePerLitre
+  skos:notation "zmol.L-1"^^qudt:UCUMcs ;
+.
+om:zeptomolePerMetre
+  skos:notation "zmol.m-1"^^qudt:UCUMcs ;
+.
+om:zeptonewton
+  skos:notation "zN"^^qudt:UCUMcs ;
+.
+om:zeptoohm
+  skos:notation "zOhm"^^qudt:UCUMcs ;
+.
+om:zeptopascal
+  skos:notation "zPa"^^qudt:UCUMcs ;
+.
+om:zeptoradian
+  skos:notation "zrad"^^qudt:UCUMcs ;
+.
+om:zeptosecond-Time
+  skos:notation "zs"^^qudt:UCUMcs ;
+.
+om:zeptosecond-TimeSquared
+  skos:notation "zs2"^^qudt:UCUMcs ;
+.
+om:zeptosiemens
+  skos:notation "zS"^^qudt:UCUMcs ;
+.
+om:zeptosievert
+  skos:notation "zSv"^^qudt:UCUMcs ;
+.
+om:zeptosteradian
+  skos:notation "zsr"^^qudt:UCUMcs ;
+.
+om:zeptotesla
+  skos:notation "zT"^^qudt:UCUMcs ;
+.
+om:zeptovolt
+  skos:notation "zV"^^qudt:UCUMcs ;
+.
+om:zeptowatt
+  skos:notation "zW"^^qudt:UCUMcs ;
+.
+om:zeptoweber
+  skos:notation "zWb"^^qudt:UCUMcs ;
+.
+om:zettaampere
+  skos:notation "ZA"^^qudt:UCUMcs ;
+.
+om:zettabecquerel
+  skos:notation "ZBq"^^qudt:UCUMcs ;
+.
+om:zettabit
+  skos:notation "Zbit"^^qudt:UCUMcs ;
+.
+om:zettabyte
+  skos:notation "ZBy"^^qudt:UCUMcs ;
+.
+om:zettacandela
+  skos:notation "Zcd"^^qudt:UCUMcs ;
+.
+om:zettacoulomb
+  skos:notation "ZC"^^qudt:UCUMcs ;
+.
+om:zettafarad
+  skos:notation "ZF"^^qudt:UCUMcs ;
+.
+om:zettagram
+  skos:notation "Zg"^^qudt:UCUMcs ;
+.
+om:zettagramPerLitre
+  skos:notation "Zg.L-1"^^qudt:UCUMcs ;
+.
+om:zettagray
+  skos:notation "ZGy"^^qudt:UCUMcs ;
+.
+om:zettahenry
+  skos:notation "ZH"^^qudt:UCUMcs ;
+.
+om:zettahertz
+  skos:notation "ZHz"^^qudt:UCUMcs ;
+.
+om:zettajoule
+  skos:notation "ZJ"^^qudt:UCUMcs ;
+.
+om:zettakatal
+  skos:notation "Zkat"^^qudt:UCUMcs ;
+.
+om:zettakelvin
+  skos:notation "ZK"^^qudt:UCUMcs ;
+.
+om:zettalitre
+  skos:notation "ZL"^^qudt:UCUMcs ;
+.
+om:zettalumen
+  skos:notation "Zlm"^^qudt:UCUMcs ;
+.
+om:zettalux
+  skos:notation "Zlx"^^qudt:UCUMcs ;
+.
+om:zettametre
+  skos:notation "Zm"^^qudt:UCUMcs ;
+.
+om:zettametrePerSecond-Time
+  skos:notation "Zm.s-1"^^qudt:UCUMcs ;
+.
+om:zettametrePerSecond-TimeSquared
+  skos:notation "Zm.s-2"^^qudt:UCUMcs ;
+.
+om:zettamolair
+  skos:notation "Zmol.L-1"^^qudt:UCUMcs ;
+.
+om:zettamole
+  skos:notation "Zmol"^^qudt:UCUMcs ;
+.
+om:zettamolePerLitre
+  skos:notation "Zmol.L-1"^^qudt:UCUMcs ;
+.
+om:zettamolePerMetre
+  skos:notation "Zmol.m-1"^^qudt:UCUMcs ;
+.
+om:zettanewton
+  skos:notation "ZN"^^qudt:UCUMcs ;
+.
+om:zettaohm
+  skos:notation "ZOhm"^^qudt:UCUMcs ;
+.
+om:zettapascal
+  skos:notation "ZPa"^^qudt:UCUMcs ;
+.
+om:zettasecond-Time
+  skos:notation "Zs"^^qudt:UCUMcs ;
+.
+om:zettasecond-TimeSquared
+  skos:notation "Zs2"^^qudt:UCUMcs ;
+.
+om:zettasiemens
+  skos:notation "ZS"^^qudt:UCUMcs ;
+.
+om:zettasievert
+  skos:notation "ZSv"^^qudt:UCUMcs ;
+.
+om:zettatesla
+  skos:notation "ZT"^^qudt:UCUMcs ;
+.
+om:zettavolt
+  skos:notation "ZV"^^qudt:UCUMcs ;
+.
+om:zettawatt
+  skos:notation "ZW"^^qudt:UCUMcs ;
+.
+om:zettaweber
+  skos:notation "ZWb"^^qudt:UCUMcs ;
+.
