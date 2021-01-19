@@ -62,6 +62,7 @@ om:_1000ColonyFormingUnit
 .
 om:_1000ColonyFormingUnitPerMillilitre
   skos:notation "1000.[CFU].mL-1"^^qudt:UCUMcs ;
+  skos:notation "1000.[CFU]/mL"^^qudt:UCUMcs ;
 .
 om:_100Kilometre
   skos:notation "100.km"^^qudt:UCUMcs ;
@@ -107,15 +108,19 @@ om:ampereHour
 .
 om:amperePerMetre
   skos:notation "A.m-1"^^qudt:UCUMcs ;
+  skos:notation "A/m"^^qudt:UCUMcs ;
 .
 om:amperePerSquareMetre
   skos:notation "A.m-2"^^qudt:UCUMcs ;
+  skos:notation "A/m2"^^qudt:UCUMcs ;
 .
 om:amperePerVolt
   skos:notation "A.V-1"^^qudt:UCUMcs ;
+  skos:notation "A/V"^^qudt:UCUMcs ;
 .
 om:amperePerWatt
   skos:notation "A.W-1"^^qudt:UCUMcs ;
+  skos:notation "A/W"^^qudt:UCUMcs ;
 .
 om:angstrom
   skos:notation "Ao"^^qudt:UCUMcs ;
