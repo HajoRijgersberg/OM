@@ -41,7 +41,7 @@
     xml:base="&om;"
   >
 
-  <owl:Ontology rdf:about="">
+  <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
     <owl:versionInfo xml:lang="en">2.0.29</owl:versionInfo>
