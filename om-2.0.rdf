@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2020 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2021 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -41,13 +41,13 @@
     xml:base="&om;"
   >
 
-  <owl:Ontology rdf:about="">
+  <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.28</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.30</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2020/12/22</dc:date>
+    <dc:date>2021/03/15</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -27703,14 +27703,14 @@
     <om:usesUnit rdf:resource="&om;molePerPetalitre"/>
     <om:usesUnit rdf:resource="&om;molePerPicolitre"/>
     <om:usesUnit rdf:resource="&om;molePerTeralitre"/>
-    <om:usesUnit rdf:resource="&om;molair"/>
-    <om:usesUnit rdf:resource="&om;attomolair"/>
-    <om:usesUnit rdf:resource="&om;femtomolair"/>
-    <om:usesUnit rdf:resource="&om;megamolair"/>
-    <om:usesUnit rdf:resource="&om;micromolair"/>
-    <om:usesUnit rdf:resource="&om;millimolair"/>
-    <om:usesUnit rdf:resource="&om;nanomolair"/>
-    <om:usesUnit rdf:resource="&om;picomolair"/>
+    <om:usesUnit rdf:resource="&om;molar"/>
+    <om:usesUnit rdf:resource="&om;attomolar"/>
+    <om:usesUnit rdf:resource="&om;femtomolar"/>
+    <om:usesUnit rdf:resource="&om;megamolar"/>
+    <om:usesUnit rdf:resource="&om;micromolar"/>
+    <om:usesUnit rdf:resource="&om;millimolar"/>
+    <om:usesUnit rdf:resource="&om;nanomolar"/>
+    <om:usesUnit rdf:resource="&om;picomolar"/>
     <om:usesUnit rdf:resource="&om;molePerMole"/>
     <om:usesUnit rdf:resource="&om;micromolePerMole"/>
     <om:usesUnit rdf:resource="&om;joulePerMole"/>
@@ -27932,8 +27932,8 @@
   <!-- Mole Per Cubic Metre Ontology -->
   <!-- Mole Per Litre Ontology -->
   <!-- Mole Per Litre Multiples and Submultiples Ontology -->
-  <!-- Molair Ontology -->
-  <!-- Molair Multiples and Submultiples Ontology -->
+  <!-- Molar Ontology -->
+  <!-- Molar Multiples and Submultiples Ontology -->
   <!-- Mole Per Mole Ontology -->
   <!-- Joule Per Mole Ontology -->
   <!-- Joule Per Kelvin Mole Ontology -->
@@ -28267,12 +28267,12 @@
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
-              <om:Unit rdf:about="&om;molair"/>
+              <om:Unit rdf:about="&om;molar"/>
               <om:UnitDivision rdf:about="&om;molePerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;molePerLitre"/>
             </owl:oneOf>
           </owl:Class>
-          <owl:Class rdf:about="&om;PrefixedMolair"/>
+          <owl:Class rdf:about="&om;PrefixedMolar"/>
           <owl:Class rdf:about="&om;PrefixedMolePerLitre"/>
           <owl:Class rdf:about="&om;MolePerPrefixedLitre"/>
           <owl:Class rdf:about="&om;PrefixedMolePerPrefixedLitre"/>
@@ -28914,12 +28914,12 @@
     <om:commonlyHasUnit rdf:resource="&om;molePerTeralitre"/>
   </owl:Class>
 
-  <!-- Molair Ontology -->
+  <!-- Molar Ontology -->
 
-  <om:Unit rdf:about="&om;molair">
-    <rdfs:label xml:lang="en">molair</rdfs:label>
+  <om:Unit rdf:about="&om;molar">
+    <rdfs:label xml:lang="en">molar</rdfs:label>
     <rdfs:label xml:lang="nl">molair</rdfs:label>
-    <rdfs:comment xml:lang="en">Molair is a unit of amount of substance concentration defined as 1 mole per litre.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Molar is a unit of amount of substance concentration defined as 1 mole per litre.</rdfs:comment>
     <om:symbol>M</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;molePerLitre"/>
@@ -28927,220 +28927,220 @@
   </om:Unit>
 
   <owl:Class rdf:about="&om;AmountOfSubstanceConcentration">
-    <om:commonlyHasUnit rdf:resource="&om;molair"/>
+    <om:commonlyHasUnit rdf:resource="&om;molar"/>
   </owl:Class>
 
-  <!-- Molair Multiples and Submultiples Ontology -->
+  <!-- Molar Multiples and Submultiples Ontology -->
 
-  <om:PrefixedUnit rdf:about="&om;yoctomolair">
-    <rdfs:label xml:lang="en">yoctomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;yoctomolar">
+    <rdfs:label xml:lang="en">yoctomolar</rdfs:label>
     <rdfs:label xml:lang="nl">yoctomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The yoctomolair is a unit of amount of substance concentration defined as 1.0e-24 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The yoctomolar is a unit of amount of substance concentration defined as 1.0e-24 molar.</rdfs:comment>
     <om:symbol>yM</om:symbol>
     <om:hasPrefix rdf:resource="&om;yocto"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;zeptomolair">
-    <rdfs:label xml:lang="en">zeptomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;zeptomolar">
+    <rdfs:label xml:lang="en">zeptomolar</rdfs:label>
     <rdfs:label xml:lang="nl">zeptomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptmolair is a unit of amount of substance concentration defined as 1.0e-21 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptmolar is a unit of amount of substance concentration defined as 1.0e-21 molar.</rdfs:comment>
     <om:symbol>zM</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;attomolair">
-    <rdfs:label xml:lang="en">attomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;attomolar">
+    <rdfs:label xml:lang="en">attomolar</rdfs:label>
     <rdfs:label xml:lang="nl">attomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The attomolair is a unit of amount of substance concentration defined as 1.0e-18 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The attomolar is a unit of amount of substance concentration defined as 1.0e-18 molar.</rdfs:comment>
     <om:symbol>aM</om:symbol>
     <om:hasPrefix rdf:resource="&om;atto"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;femtomolair">
-    <rdfs:label xml:lang="en">femtomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;femtomolar">
+    <rdfs:label xml:lang="en">femtomolar</rdfs:label>
     <rdfs:label xml:lang="nl">femtomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The femtomolair is a unit of amount of substance concentration defined as 1.0e-15 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The femtomolar is a unit of amount of substance concentration defined as 1.0e-15 molar.</rdfs:comment>
     <om:symbol>fM</om:symbol>
     <om:hasPrefix rdf:resource="&om;femto"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;picomolair">
-    <rdfs:label xml:lang="en">picomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;picomolar">
+    <rdfs:label xml:lang="en">picomolar</rdfs:label>
     <rdfs:label xml:lang="nl">picomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The picomolair is a unit of amount of substance concentration defined as 1.0e-12 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The picomolar is a unit of amount of substance concentration defined as 1.0e-12 molar.</rdfs:comment>
     <om:symbol>pM</om:symbol>
     <om:hasPrefix rdf:resource="&om;pico"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;nanomolair">
-    <rdfs:label xml:lang="en">nanomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;nanomolar">
+    <rdfs:label xml:lang="en">nanomolar</rdfs:label>
     <rdfs:label xml:lang="nl">nanomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The nanomolair is a unit of amount of substance concentration defined as 1.0e-9 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The nanomolar is a unit of amount of substance concentration defined as 1.0e-9 molar.</rdfs:comment>
     <om:symbol>nM</om:symbol>
     <om:hasPrefix rdf:resource="&om;nano"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;micromolair">
-    <rdfs:label xml:lang="en">micromolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;micromolar">
+    <rdfs:label xml:lang="en">micromolar</rdfs:label>
     <rdfs:label xml:lang="nl">micromolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The micromolair is a unit of amount of substance concentration defined as 1.0e-6 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The micromolar is a unit of amount of substance concentration defined as 1.0e-6 molar.</rdfs:comment>
     <om:symbol>μM</om:symbol>
     <om:hasPrefix rdf:resource="&om;micro"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;millimolair">
-    <rdfs:label xml:lang="en">millimolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;millimolar">
+    <rdfs:label xml:lang="en">millimolar</rdfs:label>
     <rdfs:label xml:lang="nl">millimolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The millimolair is a unit of amount of substance concentration defined as 1.0e-3 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The millimolar is a unit of amount of substance concentration defined as 1.0e-3 molar.</rdfs:comment>
     <om:symbol>mM</om:symbol>
     <om:hasPrefix rdf:resource="&om;milli"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;centimolair">
-    <rdfs:label xml:lang="en">centimolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;centimolar">
+    <rdfs:label xml:lang="en">centimolar</rdfs:label>
     <rdfs:label xml:lang="nl">centimolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The centimolair is a unit of amount of substance concentration defined as 1.0e-2 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The centimolar is a unit of amount of substance concentration defined as 1.0e-2 molar.</rdfs:comment>
     <om:symbol>cM</om:symbol>
     <om:hasPrefix rdf:resource="&om;centi"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;decimolair">
-    <rdfs:label xml:lang="en">decimolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;decimolar">
+    <rdfs:label xml:lang="en">decimolar</rdfs:label>
     <rdfs:label xml:lang="nl">decimolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The decimolair is a unit of amount of substance concentration defined as 1.0e-1 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The decimolar is a unit of amount of substance concentration defined as 1.0e-1 molar.</rdfs:comment>
     <om:symbol>dM</om:symbol>
     <om:hasPrefix rdf:resource="&om;deci"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;decamolair">
-    <rdfs:label xml:lang="en">decamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;decamolar">
+    <rdfs:label xml:lang="en">decamolar</rdfs:label>
     <rdfs:label xml:lang="nl">decamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The decamolair is a unit of amount of substance concentration defined as 1.0e1 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The decamolar is a unit of amount of substance concentration defined as 1.0e1 molar.</rdfs:comment>
     <om:symbol>daM</om:symbol>
     <om:hasPrefix rdf:resource="&om;deca"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;hectomolair">
-    <rdfs:label xml:lang="en">hectomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;hectomolar">
+    <rdfs:label xml:lang="en">hectomolar</rdfs:label>
     <rdfs:label xml:lang="nl">hectomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The hectomolair is a unit of amount of substance concentration defined as 1.0e2 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The hectomolar is a unit of amount of substance concentration defined as 1.0e2 molar.</rdfs:comment>
     <om:symbol>hM</om:symbol>
     <om:hasPrefix rdf:resource="&om;hecto"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;kilomolair">
-    <rdfs:label xml:lang="en">kilomolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;kilomolar">
+    <rdfs:label xml:lang="en">kilomolar</rdfs:label>
     <rdfs:label xml:lang="nl">kilomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The kilomolair is a unit of amount of substance concentration defined as 1.0e3 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The kilomolar is a unit of amount of substance concentration defined as 1.0e3 molar.</rdfs:comment>
     <om:symbol>kM</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;megamolair">
-    <rdfs:label xml:lang="en">megamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;megamolar">
+    <rdfs:label xml:lang="en">megamolar</rdfs:label>
     <rdfs:label xml:lang="nl">megamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The megamolair is a unit of amount of substance concentration defined as 1.0e6 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The megamolar is a unit of amount of substance concentration defined as 1.0e6 molar.</rdfs:comment>
     <om:symbol>MM</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;gigamolair">
-    <rdfs:label xml:lang="en">gigamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;gigamolar">
+    <rdfs:label xml:lang="en">gigamolar</rdfs:label>
     <rdfs:label xml:lang="nl">gigamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The gigamolair is a unit of amount of substance concentration defined as 1.0e9 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The gigamolar is a unit of amount of substance concentration defined as 1.0e9 molar.</rdfs:comment>
     <om:symbol>GM</om:symbol>
     <om:hasPrefix rdf:resource="&om;giga"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;teramolair">
-    <rdfs:label xml:lang="en">teramolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;teramolar">
+    <rdfs:label xml:lang="en">teramolar</rdfs:label>
     <rdfs:label xml:lang="nl">teramolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The teramolair is a unit of amount of substance concentration defined as 1.0e12 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The teramolar is a unit of amount of substance concentration defined as 1.0e12 molar.</rdfs:comment>
     <om:symbol>TM</om:symbol>
     <om:hasPrefix rdf:resource="&om;tera"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;petamolair">
-    <rdfs:label xml:lang="en">petamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;petamolar">
+    <rdfs:label xml:lang="en">petamolar</rdfs:label>
     <rdfs:label xml:lang="nl">petamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The petamolair is a unit of amount of substance concentration defined as 1.0e15 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The petamolar is a unit of amount of substance concentration defined as 1.0e15 molar.</rdfs:comment>
     <om:symbol>PM</om:symbol>
     <om:hasPrefix rdf:resource="&om;peta"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;examolair">
-    <rdfs:label xml:lang="en">examolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;examolar">
+    <rdfs:label xml:lang="en">examolar</rdfs:label>
     <rdfs:label xml:lang="nl">examolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The examolair is a unit of amount of substance concentration defined as 1.0e18 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The examolar is a unit of amount of substance concentration defined as 1.0e18 molar.</rdfs:comment>
     <om:symbol>EM</om:symbol>
     <om:hasPrefix rdf:resource="&om;exa"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;zettamolair">
-    <rdfs:label xml:lang="en">zettamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;zettamolar">
+    <rdfs:label xml:lang="en">zettamolar</rdfs:label>
     <rdfs:label xml:lang="nl">zettamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The zettamolair is a unit of amount of substance concentration defined as 1.0e21 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zettamolar is a unit of amount of substance concentration defined as 1.0e21 molar.</rdfs:comment>
     <om:symbol>ZM</om:symbol>
     <om:hasPrefix rdf:resource="&om;zetta"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <om:PrefixedUnit rdf:about="&om;yottamolair">
-    <rdfs:label xml:lang="en">yottamolair</rdfs:label>
+  <om:PrefixedUnit rdf:about="&om;yottamolar">
+    <rdfs:label xml:lang="en">yottamolar</rdfs:label>
     <rdfs:label xml:lang="nl">yottamolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The yottamolair is a unit of amount of substance concentration defined as 1.0e24 molair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The yottamolar is a unit of amount of substance concentration defined as 1.0e24 molar.</rdfs:comment>
     <om:symbol>YM</om:symbol>
     <om:hasPrefix rdf:resource="&om;yotta"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molair"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
   </om:PrefixedUnit>
 
-  <owl:Class rdf:about="&om;PrefixedMolair">
-    <rdfs:label xml:lang="en">prefixed molair</rdfs:label>
+  <owl:Class rdf:about="&om;PrefixedMolar">
+    <rdfs:label xml:lang="en">prefixed molar</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;PrefixedUnit"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
             <owl:onProperty rdf:resource="&om;hasUnit"/> <!-- hasSingularUnit -->
-            <owl:hasValue rdf:resource="&om;molair"/>
+            <owl:hasValue rdf:resource="&om;molar"/>
           </owl:Restriction>
           <owl:Restriction>
            <owl:onProperty rdf:resource="&om;hasUnit"/> <!-- hasSingularUnit -->
@@ -29160,13 +29160,13 @@
   </owl:Class>  
 
   <owl:Class rdf:about="&om;AmountOfSubstanceConcentration">
-    <om:commonlyHasUnit rdf:resource="&om;attomolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;femtomolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;megamolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;micromolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;millimolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;nanomolair"/>
-    <om:commonlyHasUnit rdf:resource="&om;picomolair"/>
+    <om:commonlyHasUnit rdf:resource="&om;attomolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;femtomolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;megamolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;micromolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;nanomolar"/>
+    <om:commonlyHasUnit rdf:resource="&om;picomolar"/>
   </owl:Class>
 
   <!-- Mole Per Mole Ontology -->
