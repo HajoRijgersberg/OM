@@ -11634,6 +11634,18 @@
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:UnitDivision>
 
+  <!-- Kilogram Per Year Ontology -->
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/kilogram_per_year">
+    <rdfs:label xml:lang="en">kilogram per year</rdfs:label>
+    <om:symbol>kg/yr</om:symbol>
+    <om:alternativeSymbol>kg yr-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilogram"/>
+    <om:hasDenominator rdf:resource="&om;year"/>
+    <om:hasDimension rdf:resource="&om;massFlow-Dimension"/>
+  </om:UnitDivision>
+
+
   <!-- <owl:Class rdf:about="&om;PrefixedMetrePrefixedGramPerPrefixedSecond-TimeSquared"> -->
   <!--   <rdfs:subClassOf rdf:resource="&om;UnitDivision"/> -->
   <!--   <owl:equivalentClass> -->
@@ -38517,6 +38529,31 @@
     <rdfs:label xml:lang="zh">英镑</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/kilogram_per_pound_sterling">
+     <rdfs:label xml:lang="en">kilogram per pound sterling</rdfs:label>
+     <om:symbol>kg/(£)</om:symbol>
+     <om:alternativeSymbol>kg £-1</om:alternativeSymbol>
+     <om:alternativeSymbol>kg/£</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;kilogram"/>
+     <om:hasDenominator rdf:resource="&om;poundSterling"/>
+   </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/pound_per_megawattHour">
+     <rdfs:label xml:lang="en">pound per megawatt hour</rdfs:label>
+     <om:symbol>£/MWh</om:symbol>
+     <om:alternativeSymbol>£ MWh-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;poundSterling"/>
+     <om:hasDenominator rdf:resource="&om;megawattHour"/>
+   </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/pound_sterling_per_year">
+     <rdfs:label xml:lang="en">pound sterling per year</rdfs:label>
+     <om:symbol>£/yr</om:symbol>
+     <om:alternativeSymbol>£ yr-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;poundSterling"/>
+     <om:hasDenominator rdf:resource="&om;year"/>
+   </om:UnitDivision>
 
   <om:Unit rdf:about="&om;AustralianDollar">
     <rdfs:label xml:lang="en">Australian dollar</rdfs:label>
