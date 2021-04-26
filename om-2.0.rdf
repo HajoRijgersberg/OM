@@ -16059,6 +16059,7 @@
     <om:alternativeSymbol>MJ/kg</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;megajoule"/>
     <om:hasDenominator rdf:resource="&om;kilogram"/>
+    <om:hasDimension rdf:resource="&om;specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension"/>
   </om:UnitDivision>
 
   <!-- Joule Per Square Metre Second Ontology -->
