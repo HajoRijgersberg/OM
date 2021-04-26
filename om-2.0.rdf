@@ -21,7 +21,6 @@
     <!ENTITY bibo    "http://purl.org/ontology/bibo/">
     <!ENTITY foaf    "http://xmlns.com/foaf/0.1/">
     <!-- <!ENTITY ombibo  "http://www.wurvoc.org/bibliography/om-2.0/"> -->
-    <!ENTITY cares   "
     <!ENTITY ombibo  "http://www.wurvoc.org/bibliography/om-2/">
   ]>
 
