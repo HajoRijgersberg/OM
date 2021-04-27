@@ -3880,7 +3880,7 @@ om:wattPerSteradianSquareMetre
 .
 om:wattPerSteradianSquareMetreHertz
   skos:notation "W.sr-1.m-2.Hz-1"^^qudt:UCUMcs ;
-  skos:notation "W/sr/m/Hz"^^qudt:UCUMcs ;
+  skos:notation "W/sr/m2/Hz"^^qudt:UCUMcs ;
 .
 om:wattSquareMetre
   skos:notation "W.m2"^^qudt:UCUMcs ;
