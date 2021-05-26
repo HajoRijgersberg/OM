@@ -11636,7 +11636,7 @@
 
   <!-- Kilogram Per Year Ontology -->
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/kilogram_per_year">
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_year">
     <rdfs:label xml:lang="en">kilogram per year</rdfs:label>
     <om:symbol>kg/yr</om:symbol>
     <om:alternativeSymbol>kg yr-1</om:alternativeSymbol>
@@ -16051,7 +16051,7 @@
 
 <!-- Megajoule per Kilogram Ontology -->
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/megajoule_per_kilogram">
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/megajoule_per_kilogram">
     <rdfs:label xml:lang="en">megajoule per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">megajoule par kilogramme</rdfs:label>
     <om:symbol>MJ/(kg)</om:symbol>
@@ -38531,7 +38531,7 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/kilogram_per_pound_sterling">
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_pound_sterling">
      <rdfs:label xml:lang="en">kilogram per pound sterling</rdfs:label>
      <om:symbol>kg/(£)</om:symbol>
      <om:alternativeSymbol>kg £-1</om:alternativeSymbol>
@@ -38540,7 +38540,7 @@
      <om:hasDenominator rdf:resource="&om;poundSterling"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/pound_per_megawattHour">
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_per_megawattHour">
      <rdfs:label xml:lang="en">pound per megawatt hour</rdfs:label>
      <om:symbol>£/MWh</om:symbol>
      <om:alternativeSymbol>£ MWh-1</om:alternativeSymbol>
@@ -38548,7 +38548,7 @@
      <om:hasDenominator rdf:resource="&om;megawattHour"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/ontouom/pound_sterling_per_year">
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_year">
      <rdfs:label xml:lang="en">pound sterling per year</rdfs:label>
      <om:symbol>£/yr</om:symbol>
      <om:alternativeSymbol>£ yr-1</om:alternativeSymbol>
