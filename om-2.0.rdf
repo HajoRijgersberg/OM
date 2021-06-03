@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.30</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.31</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/03/15</dc:date>
+    <dc:date>2021/06/03</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -912,6 +912,8 @@
     <om:usesQuantity rdf:resource="&om;Volume"/>
     <om:usesQuantity rdf:resource="&om;Angle"/>
     <om:usesQuantity rdf:resource="&om;SolidAngle"/>
+    <om:usesQuantity rdf:resource="&om;LengthFraction"/>
+    <om:usesQuantity rdf:resource="&om;Slope"/>
     <om:usesUnit rdf:resource="&om;chain"/>
     <om:usesUnit rdf:resource="&om;cicero"/>
     <om:usesUnit rdf:resource="&om;fathom-USSurvey"/>
@@ -1072,6 +1074,8 @@
     <om:usesUnit rdf:resource="&om;femtosteradian"/>
     <om:usesUnit rdf:resource="&om;picosteradian"/>
     <om:usesUnit rdf:resource="&om;nanosteradian"/>
+    <om:usesUnit rdf:resource="&om;metrePerMetre"/>
+    <om:usesUnit rdf:resource="&om;millimetrePerMetre"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -1085,6 +1089,8 @@
   <!-- Angle Upper Ontology -->
   <!-- Solid Angle Upper Ontology -->
   <!-- Solid Angle Subclass Upper Ontology -->
+  <!-- Length Fraction Upper Ontology -->
+  <!-- Length Fraction Subclass Upper Ontology -->
 
   <!-- Length Upper Ontology -->
 
@@ -1240,6 +1246,30 @@
   <owl:Class rdf:about="&om;AngularSize">
     <rdfs:label xml:lang="en">angular size</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;SolidAngle"/>
+  </owl:Class>
+
+  <!-- Length Fraction Upper Ontology -->
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <rdfs:label xml:lang="en">length fraction</rdfs:label>
+    <rdfs:label xml:lang="nl">lengtefractie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasDimension"/>
+        <owl:hasValue rdf:resource="&om;dimensionOne"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- Length Fraction Subclass Upper Ontology -->
+
+  <owl:Class rdf:about="&om;Slope">
+    <rdfs:label xml:lang="en">slope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;LengthFraction"/>
   </owl:Class>
 
   <!-- Prefix Ontologies -->
@@ -1435,6 +1465,8 @@
   <!-- Steradian Ontology -->
   <!-- Steradian Multiples and Submultiples Ontology -->
   <!-- Solid Angle Unit Ontology -->
+  <!-- Metre Per Metre Ontology -->
+  <!-- Metre Per Metre Multiples and Submultiples Ontology -->
 
   <!-- Metre Ontology -->
 
@@ -4584,6 +4616,40 @@
     <om:commonlyHasUnit rdf:resource="&om;second-AngleSquared"/>
   </owl:Class>
 
+  <!-- Metre Per Metre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;metrePerMetre">
+    <rdfs:label xml:lang="en">metre per metre</rdfs:label>
+    <rdfs:label xml:lang="nl">meter per meter</rdfs:label>
+    <om:symbol>m/m</om:symbol>
+    <om:alternativeSymbol>m m-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m·m-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;metre"/>
+    <om:hasDenominator rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMetre"/>
+  </owl:Class>
+
+  <!-- Metre Per Metre Multiples and Submultiples Ontology -->
+
+  <om:UnitDivision rdf:about="&om;millimetrePerMetre">
+    <rdfs:label xml:lang="en">millimetre per metre</rdfs:label>
+    <rdfs:label xml:lang="nl">millimeter per meter</rdfs:label>
+    <om:symbol>mm/m</om:symbol>
+    <om:alternativeSymbol>mm m-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mm·m-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;millimetre"/>
+    <om:hasDenominator rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMetre"/>
+  </owl:Class>
+
   <!-- Dimension Ontologies -->
 
   <!-- Contents -->
@@ -5019,6 +5085,7 @@
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;cubicMetrePerKilogram"/>
+    <om:hasDerivedUnit rdf:resource="&om;litrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;amperePerSquareMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;amperePerMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;molePerCubicmetre"/>
@@ -10668,6 +10735,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;cubicMetrePerKilogram"/>
+          <om:UnitDivision rdf:about="&om;litrePerKilogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -10687,6 +10755,25 @@
         </owl:allValuesFrom>
       </owl:Restriction>     
     </rdfs:subClassOf>     
+  </owl:Class>
+
+  <!-- Litre Per Kilogram Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerKilogram">
+    <rdfs:label xml:lang="en">litre per kilogram</rdfs:label>
+    <rdfs:label xml:lang="nl">liter per kilogram</rdfs:label>
+    <rdfs:comment xml:lang="en">Litre per kilogram is a unit of specific volume defined as litre divided by kilogram.</rdfs:comment>
+    <om:longcomment>Litre per kilogram is a unit of specific volume defined as litre divided by kilogram. Litre per kilogram is a derived unit in the International System of Units.</om:longcomment>
+    <om:symbol>l/kg</om:symbol>
+    <om:alternativeSymbol>l kg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·kg-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;kilogram"/>
+    <om:hasDimension rdf:resource="&om;specificVolume-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;SpecificVolume">
+    <om:commonlyHasUnit rdf:resource="&om;litrePerKilogram"/>
   </owl:Class>
 
   <!-- Metre Per Second Ontology -->
