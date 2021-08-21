@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.31</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.32</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/06/03</dc:date>
+    <dc:date>2021/08/21</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -323,7 +323,6 @@
         <owl:allValuesFrom rdf:resource="&om;SingularUnit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <!-- Cardinality of hasUnit property should be restricted to 0 or 1 -->
   </owl:Class>
 
   <owl:ObjectProperty rdf:about="&om;hasUnit">
@@ -342,6 +341,7 @@
       </owl:Class>
     </rdfs:domain>
     <rdfs:range rdf:resource="&om;Unit"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasPrefix">
@@ -363,7 +363,6 @@
     <rdfs:label xml:lang="en">unit multiple</rdfs:label>
     <rdfs:label xml:lang="ja">単位倍量</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
-    <!-- Cardinality of hasUnit property should be restricted to 0 or 1 -->
   </owl:Class>
 
   <owl:DatatypeProperty rdf:about="&om;hasFactor">
@@ -585,6 +584,7 @@
       </owl:Class>
     </rdfs:domain>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:DatatypeProperty>
 
   <!-- Measurement Scale Upper Ontology -->
