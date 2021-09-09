@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.32</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.33</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/08/21</dc:date>
+    <dc:date>2021/09/09</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -15788,9 +15788,9 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:UnitDivision rdf:about="&om;gramPerday"/>
+          <om:UnitDivision rdf:about="&om;gramPerDay"/>
           <om:UnitDivision rdf:about="&om;kilogramPerSecond-Time"/>
-          <om:UnitDivision rdf:about="&om;milligramPerday"/>
+          <om:UnitDivision rdf:about="&om;milligramPerDay"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -15888,7 +15888,7 @@
   <!-- Kilogram Per Gigajoule Ontology -->
 
   <om:UnitDivision rdf:about="&om;kilogramPerGigajoule">
-    <rdfs:label xml:lang="en">kikogram per gigajoule</rdfs:label>
+    <rdfs:label xml:lang="en">kilogram per gigajoule</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per gigajoule</rdfs:label>
     <rdfs:comment xml:lang="en">Kilogram per gigajoule is a unit of energy consumption.</rdfs:comment>
     <om:longcomment>Kilogram per gigajoule is a unit of energy consumption defined as kilogram divided by gigajoule. Kilogram per gigajoule is a derived unit in the International System of Units.</om:longcomment>
