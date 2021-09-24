@@ -1,58 +1,63 @@
-# OM - Ontology of units of Measure
+# OM - 測定単位のオントロジー
 
-The **Ontology of units of Measure (OM) 2.0** models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.
-OM is modelled in [OWL 2 - Web Ontology Language](https://www.w3.org/TR/owl2-overview/).
-
-**Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
-
-**Namespace Prefix:** `om`
+〔訳注: この文書は，[2019年11月19日時点のREADME](https://github.com/HajoRijgersberg/OM/blob/02331e8f335568e93f027dd1d4bb569bbd1f82b3/README.md)の，技術的内容を変更しない日本語訳である。〕
 
 
-#### Overview
+**測定単位のオントロジー (Ontology of units of Measure; OM) 2.0**は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。
+OMは[OWL 2 - ウェブ・オントロジー言語](https://www.w3.org/TR/owl2-overview/)に基づいている。
 
-* [Ontology of units of Measure](#om)
-* [RecordTable ontology](#recordtable)
-* [Software](#software)
-* [Previous versions](#previous-versions)
-* [Acknowledgements](#acknowledgements)
-* [Papers on OM](#papers)
+**基底URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
+
+**名前空間接頭辞:** `om`
 
 
-### <a name="om"></a>Ontology of units of Measure
+#### 概要
 
-The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using measures and units. It includes, for instance, common units such as the SI units metre (`om:metre`) and kilogram (`om:kilogram`), but also units from other systems of units such as the mile (`om:mile`) or nautical mile (`om:nauticalMile-International`). For many application areas it includes more specific units and quantities, such as the unit of the Hubble constant: km/s/Mpc `om:kilometrePerSecond-TimePerMegaparsec`, or the quantity vaselife `om:VaseLife`.
+* [測定単位のオントロジー](#om)
+* [記録表オントロジー](#recordtable)
+* [ライブラリ](#software)
+* [旧版](#previous-versions)
+* [謝辞](#acknowledgements)
+* [OMについての文献](#papers)
+* [OMの使用に言及している資料](#uses-of-om)
+* [OMに概して言及している資料](#references-to-om)
 
-The following *application areas* are supported by OM:
 
-* Geometry
-* Mechanics
-* Thermodynamics
-* Electromagnetism
-* Fluid mechanics
-* Chemical physics
-* Photometry
-* Radiometry and Radiobiology
-* Nuclear physics
-* Astronomy and Astrophysics
-* Cosmology
-* Earth science
-* Meteorology
-* Material science
-* Microbiology
-* Economics
-* Information technology
-* Typography
-* Shipping
-* Food engineering
-* Post-harvest technology
-* Dynamics of texture and taste
-* Packaging
+### <a name="om"></a>測定単位のオントロジー
 
-![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
+OMオントロジーは，測定値及び単位の定義・利用の為の種々の概念を表す，クラス・インスタンス・及びプロパティを提供する。OMは，例えば国際単位系のメートル (`om:metre`) やキログラム (`om:kilogram`) といった一般的な単位だけではなく，マイル (`om:mile`) や〔国際〕海里 (`om:nauticalMile-International`) といった他の単位から派生した単位をも提供する。多くの応用分野に対しては，ハッブル常数の単位であるキロメートル毎秒毎パーセク(km/s/Mpc) (`om:kilometrePerSecond-TimePerMegaparsec`) や花瓶に生けられた花の寿命 (`om:VaseLife`) といったより具体的な単位と量が提供されている。
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology.
+OMは次の*応用分野*に対応している:
 
-The following triples express, for example, the diameter of an apple:
+* 幾何学
+* 力学
+* 熱力学
+* 電磁気学
+* 流体力学
+* 化学物理学
+* 測光
+* 放射測定及び放射線生物学
+* 核物理学
+* 天文学及び天体物理学
+* 宇宙論
+* 地球科学
+* 気象学
+* 材料科学
+* 微生物学
+* 経済学
+* 情報技術
+* 活版印刷
+* 運送
+* 食品工学
+* 収穫後技術
+* 味感・食感の力学
+* 包装(梱包)
+
+![OMのUML図](images/OM2.0-UML-diagram.png)
+
+**図1.** OMのクラス構造を表わすUML図
+
+例えば，林檎の径を表わすのは次のトリプルの如くなる。
 
 ```turtle
 ex:_10Centimetres rdf:type om:Measure ;
@@ -61,61 +66,61 @@ ex:_10Centimetres rdf:type om:Measure ;
 ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
   a om:Diameter ;
   om:hasPhenomenon ex:apple1 .
-ex:apple1 rdf:type ex:Apple .
+ex:apple1 rfd:type ex:Apple .
 ```
 
-where `ex` is a prefixes for another namespace.
+ここで`ex`は他の名前空間の接頭辞である。
 
-The RDF structure for this example shows as follows:
+この例に対するRDF図式は次の通り。
 
-![Example: Apple size](images/OMAppleExample.png)
+![例: 林檎の大きさ](images/OMAppleExample.png)
 
-**Figure 2.** An RDF diagram representing the size of an apple as 10 cm.
+**図 2.** 林檎の大きさが10cmであることを示すRDF図式。
 
-Please not that:
+次のことに注意せよ。
 
-> In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
+> OMでは，温度などの尺度は，対応する単位とは異なる方法で処理される。例えば，温度差は°CやKなどの単位を使用した目盛として表される（28 °C = 28 Kである）。一方で，28 °Cの絶対的温度は**摂氏目盛**と呼ばれ，301 Kと等しい。通常，〔絶対的量は使われず〕尺度が用いられる。[温度尺度を用いる例はこちら。](Weather-example-ja.md)
+ 
+OMは，NIST発行の[国際単位系の使用の手引き](http://physics.nist.gov/cuu/pdf/sp811.pdf)といった幾つかの公文書標準に根差している。  
+〔訳注: 日本語訳においては，加えて[JIS Z 8000](https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Z8000)「量及び単位」系列の一連の規格を，主に訳語の参考に用いた。〕
 
-OM is based on several official paper standards, such as: [The Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. 
+### <a name="recordtable"></a>記録表オントロジー
 
+OMリポジトリは，既存のRDFデータ・キューブ標準の補足として，表形式データを意味的にモデル化する為の[RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl)語彙を収録している。
+RDF記録表は，自己記述的言及を含む記録の入れ子構造を持ち，又不規則な・欠落した・及び予期しないデータに対処できる。
+こうして，RDFデータ・キューブの制限を回避し，科学及び工学で生じるような複雑なデータを模型化できる。
 
+例として，次掲の表1及び図3を考慮せよ。
 
-### <a name="recordtable"></a>RecordTable Ontology
+![記録表の例: 表](images/TableExample.jpg)
 
-Included in the OM repository is the [RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl) vocabulary for semantically modelling tabular data, as a supplement to the existing RDF Data Cube standard. RDF Record Table has a nested structure of records that contain self-describing observations, and is able to cope with irregular, missing and unexpected data. This allows it to escape the constraints of RDF Data Cube and to model complex data, such as that occurring in science and engineering.
+**表1.** 例表であり，一部は図3にてRecordTableとして描かれている。グラフで描かれている升目を強調した。
 
-As an example, consider the following Table 1. and Figure 3.
+![記録表の一例](images/RecordTable-Graph.png)
 
-![RecordTable Example: Table](images/TableExample.jpg)
-
-**Table 1.** An example table, parts of which are depicted as a RecordTable graph in Figure 3. The highlighted cells are depicted in the graph.
-
-![A RecordTable example](images/RecordTable-Graph.png)
-
-**Figure 3.** An RDF diagram representing an example using RecordTable.
-
-### <a name="software"></a>Libs
-
-Several libs support the use of OM:
-
-* [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
-* [`om-phyton-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Phyton.
+**図3.** RecordTableの使用例を示すRDF図式
 
 
+### <a name="software"></a>ライブラリ
 
-### <a name="previous-versions"></a>Previous versions
+次に，OMの使用を補助する幾つかのライブラリを挙げる。
 
-Previous versions were published on the wurvoc platform.
+* [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): 単位間変換にOMを利用するJava製ソフトウェアライブラリ。
+
+
+### <a name="previous-versions"></a>旧版
+
+旧版はwurvocプラットフォームで配布されている。
 
 * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/)
 
 
-### <a name="acknowledgements"></a>Acknowledgements
+### <a name="acknowledgements"></a>謝辞
 
-We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
+シラー大学〔訳注: ドイツの公立大学〕のJan Martin Keil氏及びSirko Schindler氏にあたっては，OMの査読をして頂いた（[Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review)及びその[文献](http://www.semantic-web-journal.net/system/files/swj1825.pdf)参照）。
 
 
-### <a name="papers"></a>Papers on OM
+### <a name="papers"></a>OMについての文献
 
 1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287.
 2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13.
@@ -125,10 +130,9 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 6. Hajo Rijgersberg, Semantic support for quantitative research, PhD thesis, Vrije Universiteit Amsterdam, 2013.
 7. Do C., Pauwels E.J. (2013) Using MathML to Represent Units of Measurement for Improved Ontology Alignment. In: Carette J., Aspinall D., Lange C., Sojka P., Windsteiger W. (eds) Intelligent Computer Mathematics. CICM 2013. Lecture Notes in Computer Science, vol 7961. Springer, Berlin, Heidelberg.
 8. Markus D. Steinberg, Sirko Schindler, Jan Martin Keil, Use Cases and Suitability Metrics for Unit Ontologies.
-9. Keil, Jan Martin (2020). ABECTO: An ABox Evaluation and Comparison Tool for Ontologies. In: ESWC 2020 Satellite Events: Posters and Demos. DOI:10.1007/978-3-030-62327-2_24.
 
 
-### <a name="uses-of-om"></a>Papers and references to uses and submissions of OM (not exhaustive and under construction)
+### <a name="uses-of-om"></a>OMの使用に言及している資料（網羅せず，目下作成中）
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -150,10 +154,9 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 18. Filip Radulovic, Raúl García-Castro, The Evaluation Result Ontology, 2015, http://vocab.linkeddata.es/eval/index.html.
 19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
 20. Paola Espinoza-Arias, María Poveda-Villalón, Raúl García-Castro, Oscar Corcho, Ontological Representation of Smart City Data: From Devices to Cities, Appl. Sci. 9, 32, 2019.
-21. Bhoomin Pandya, Units of Measurement Ontology Added to LOV, 2020, https://medium.com/@conceptminers/units-of-measurement-of-ontology-added-to-lov-21c7efc92a62.
 
 
-### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
+### <a name="references-to-om"></a>OMに概して言及している資料（網羅せず，目下作成中）
 
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
