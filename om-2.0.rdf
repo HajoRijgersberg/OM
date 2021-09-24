@@ -38556,6 +38556,22 @@
      <om:hasDenominator rdf:resource="&om;year"/>
    </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_litre">
+     <rdfs:label xml:lang="en">pound sterling per litre</rdfs:label>
+     <om:symbol>£/L</om:symbol>
+     <om:alternativeSymbol>£ L-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;poundSterling"/>
+     <om:hasDenominator rdf:resource="&om;litre"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_litre_per_minute">
+     <rdfs:label xml:lang="en">kilogram per litre per minute</rdfs:label>
+     <om:symbol>kg/L/min</om:symbol>
+     <om:alternativeSymbol>kg L-1 min-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;kilogramPerLitre"/>
+     <om:hasDenominator rdf:resource="&om;minute-Time"/>
+  </om:UnitDivision>
+
   <om:Unit rdf:about="&om;AustralianDollar">
     <rdfs:label xml:lang="en">Australian dollar</rdfs:label>
     <rdfs:label xml:lang="zh">澳元</rdfs:label>
