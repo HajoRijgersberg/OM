@@ -99,7 +99,7 @@ As an example, consider the following Table 1. and Figure 3.
 Several libs support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
-* [`om-phyton-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Phyton.
+* [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
 
 
 
