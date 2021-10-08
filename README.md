@@ -50,7 +50,7 @@ The following *application areas* are supported by OM:
 
 ![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology.
+**Figure 1.** The UML diagram below shows the class structure of the OM ontology. **Correction:** the range of om:hasNumericalValue is not xsd:float, as indicated in the figure, but is left open to accomodate any datatype required in one's application of OM.
 
 The following triples express, for example, the diameter of an apple:
 
