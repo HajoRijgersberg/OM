@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
   <!-- Ontology of units of Measure (OM) -->
 
@@ -57,6 +57,40 @@
     <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <ombibo:reference rdf:resource="http://www.openisbn.com/isbn/9789462280618/"/>
   </owl:Ontology>
+
+  <!-- Annotations used here -->
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isPartOf"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/authorList"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/chapter"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/degree"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/edition"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn10"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn13"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/issuer"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageEnd"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageStart"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/shortTitle"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/uri"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/volume"/>
+  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+  <!-- classes used in annotations -->
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Chapter"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Journal"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Standard"/>
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Thesis"/>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
   
   <!-- Contents -->
 
