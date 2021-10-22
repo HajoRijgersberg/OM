@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
   <!-- Ontology of units of Measure (OM) -->
 
@@ -19471,7 +19471,11 @@
     <rdfs:label xml:lang="en">thermodynamic temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:RatioScale rdf:about="&om;KelvinScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:RatioScale rdf:about="&om;KelvinScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19678,7 +19682,11 @@
     <rdfs:label xml:lang="en">Celsius temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;CelsiusScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;CelsiusScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19763,7 +19771,11 @@
     <rdfs:label xml:lang="en">Fahrenheit temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19771,15 +19783,23 @@
     <rdfs:label xml:lang="en">Rankine temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:RatioScale rdf:about="&om;RankineScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:RatioScale rdf:about="&om;RankineScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
-
+  
   <owl:Class rdf:about="&om;ReaumurTemperatureScale">
     <rdfs:label xml:lang="en">Réaumur temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;ReaumurScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;ReaumurScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
