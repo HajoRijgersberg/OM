@@ -37069,6 +37069,23 @@
     <hasTerm2 rdf:resource="&om;cubicKiloparsec"/>
   </om:UnitMultiplication>
 
+  <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit">
+    <rdfs:label xml:lang="en">milli absorbance unit</rdfs:label>
+    <rdfs:comment xml:lang="en">The mAU is the milli-absorbance unit, or 0.001 absorbance units (AU), used to measure absorbance. [https://en.wikipedia.org/wiki/MAU]</rdfs:comment>
+    <om:symbol>mAU</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:UnitMultiplication rdf:about="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit_multiplies_minute">
+    <rdfs:label xml:lang="en">milli absorbance unit multiplies minute</rdfs:label>
+    <rdfs:comment xml:lang="en">The peak area indicating a potential chemical species from a chromatogram reading. As it is a product, it has the unit of milli absorbance unit multiplies minute.</rdfs:comment>
+    <om:symbol>mAU min</om:symbol>
+    <om:alternativeSymbol>mAU·min</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit"/>
+    <hasTerm2 rdf:resource="&om;minute-Time"/>
+  </om:UnitMultiplication>
+
   <!-- Solar Mass Per Gigayear Cubic Parsec Ontology -->
 
   <om:UnitDivision rdf:about="&om;solarMassPerGigayearCubicParsec">
