@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.34</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.35</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/10/27</dc:date>
+    <dc:date>2021/12/16</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -1545,12 +1545,14 @@
             <owl:oneOf rdf:parseType="Collection">
               <om:Unit rdf:about="&om;angstrom"/>
               <om:Unit rdf:about="&om;astronomicalUnit"/>
+              <om:Unit rdf:about="&om;BirminghamGauge"/>
               <om:Unit rdf:about="&om;chain"/>
               <om:Unit rdf:about="&om;cicero"/>
               <om:Unit rdf:about="&om;fathom-USSurvey"/>
               <om:Unit rdf:about="&om;fermi"/>
               <om:Unit rdf:about="&om;foot-International"/>
               <om:Unit rdf:about="&om;foot-USSurvey"/>
+              <om:Unit rdf:about="&om;FrenchGauge"/>
               <om:Unit rdf:about="&om;furlong-International"/>
               <om:Unit rdf:about="&om;inch-International"/>
               <om:Unit rdf:about="&om;lightYear"/>
@@ -2058,6 +2060,15 @@
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
+  <om:Unit rdf:about="&om;BirminghamGauge">
+    <rdfs:label xml:lang="en">Birmingham gauge</rdfs:label>
+<!--    <om:alternativeLabel xml:lang="en">gauge</om:alternativeLabel> -->
+    <om:symbol>G</om:symbol>
+    <om:alternativeSymbol>GA</om:alternativeSymbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
   <om:Unit rdf:about="&om;chain">
     <rdfs:label xml:lang="en">chain</rdfs:label>
     <rdfs:comment xml:lang="en">The chain is a unit of length defined as 20.1168 metre.</rdfs:comment>
@@ -2109,6 +2120,18 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.048006e-1</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;FrenchGauge">
+    <rdfs:label xml:lang="en">French gauge</rdfs:label>
+    <om:symbol>Fr</om:symbol>
+    <om:alternativeSymbol>Fg</om:alternativeSymbol>
+    <om:alternativeSymbol>FR</om:alternativeSymbol>
+    <om:alternativeSymbol>F</om:alternativeSymbol>
+    <om:alternativeSymbol>CH</om:alternativeSymbol>
+    <om:alternativeSymbol>Ch</om:alternativeSymbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
@@ -6882,7 +6905,8 @@
   <!-- Hertz Multiples and Submultiples Ontology -->
   <!-- Frequency Unit Ontology -->
   <!-- Reciprocal Cubic Metre Ontology -->
-  <!-- Reciprocal Cubic Centimetre Ontology -->
+  <!-- Reciprocal Cubic Metre Multiples and Submultiples Ontology -->
+  <!-- Reciprocal Litre Ontology -->
   <!-- Reciprocal Metre Ontology -->
   <!-- Wavenumber Unit Ontology -->
   <!-- Metre Per Metre Ontology -->
@@ -9118,6 +9142,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicCentimetre"/>
+          <om:UnitExponentiation rdf:about="&om;reciprocalLitre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicMetre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicParsec"/>
         </owl:oneOf>
@@ -9141,7 +9166,7 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
-  <!-- Reciprocal Cubic Centimetre Ontology -->
+  <!-- Reciprocal Cubic Metre Multiples and Submultiples Ontology -->
 
   <om:UnitExponentiation rdf:about="&om;reciprocalCubicCentimetre">
     <rdfs:label xml:lang="en">reciprocal cubic centimetre</rdfs:label>
@@ -9154,6 +9179,21 @@
 
   <owl:Class rdf:about="&om;NumberDensity">
     <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicCentimetre"/>
+  </owl:Class>
+
+  <!-- Reciprocal Litre Ontology -->
+
+  <om:UnitExponentiation rdf:about="&om;reciprocalLitre">
+    <rdfs:label xml:lang="en">reciprocal litre</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde liter</rdfs:label>
+    <om:symbol>l-1</om:symbol>
+    <om:hasBase rdf:resource="&om;litre"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-1</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
+  <owl:Class rdf:about="&om;NumberDensity">
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalLitre"/>
   </owl:Class>
 
   <!-- Reciprocal Metre Ontology -->
@@ -28056,6 +28096,7 @@
   <!-- Mole Per Metre Multiples and Submultiples Ontology -->
   <!-- Kelvin Mole Ontology -->
   <!-- Micromole Per Second Gram Ontology -->
+  <!-- Nanomole Per Hour Millilitre Ontology -->
 
   <!-- Mole Ontology -->
 
@@ -30193,6 +30234,27 @@
     <om:alternativeSymbol>μmol·s-1·g-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;micromolePerSecond-Time"/>
     <om:hasDenominator rdf:resource="&om;gram"/>
+  </om:UnitDivision>
+  <!-- Micromole Per Second Gram Ontology -->
+
+  <!-- Nanomole Per Hour Millilitre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;nanomolePerHour">
+    <rdfs:label xml:lang="en">nanomole per hour</rdfs:label>
+    <om:symbol>nmol/h</om:symbol>
+    <om:alternativeSymbol>nmol h-1</om:alternativeSymbol>
+    <om:alternativeSymbol>nmol·h-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;nanomole"/>
+    <om:hasDenominator rdf:resource="&om;hour"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;nanomolePerHourMillilitre">
+    <rdfs:label xml:lang="en">nanomole per hour millilitre</rdfs:label>
+    <om:symbol>nmol/(h ml)</om:symbol>
+    <om:alternativeSymbol>nmol h-1 ml-1</om:alternativeSymbol>
+    <om:alternativeSymbol>nmol·h-1·ml-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;nanomolePerHour"/>
+    <om:hasDenominator rdf:resource="&om;millilitre"/>
   </om:UnitDivision>
 
   <!-- Dimension Ontologies -->
