@@ -152,7 +152,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
 20. Paola Espinoza-Arias, María Poveda-Villalón, Raúl García-Castro, Oscar Corcho, Ontological Representation of Smart City Data: From Devices to Cities, Appl. Sci. 9, 32, 2019.
 21. Bhoomin Pandya, Units of Measurement Ontology Added to LOV, 2020, https://medium.com/@conceptminers/units-of-measurement-of-ontology-added-to-lov-21c7efc92a62.
-22. A. P. Vedurmudi, M. Gruber, S. Eichstädt and A. Paschke, "Semantics in Sensor Networks: An Ontology for Dynamic Transfer Behavior in Calibrated Sensors," 2021 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2021, pp. 358-363, doi: 10.1109/MetroInd4.0IoT51437.2021.9488554.
+22. A. P. Vedurmudi, M. Gruber, S. Eichstädt and A. Paschke, "Semantics in Sensor Networks: An Ontology for Dynamic Transfer Behavior in Calibrated Sensors," 2021 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2021, pp. 358-363, doi: 10.1109/MetroInd4.0IoT51437.2021.9488554. https://ieeexplore.ieee.org/document/9488554.
 23. B. D. Hall, M. Kuster, Representing quantities and units in digital systems, submitted to Measurement: Sensors, 2022.
 
 
