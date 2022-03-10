@@ -1523,6 +1523,10 @@
               <om:Unit rdf:about="&om;inch-International"/>
               <om:Unit rdf:about="&om;lightYear"/>
               <om:Unit rdf:about="&om;metre"/>
+              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreUnspecified"/>
+              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreASD"/>
+              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreAOD"/>
+              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreBDAT"/>              
               <om:Unit rdf:about="&om;micron"/>
               <om:Unit rdf:about="&om;mil-Length"/>
               <om:Unit rdf:about="&om;mile-Statute"/>
@@ -15512,6 +15516,8 @@
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
+          <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
+          <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerDay"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -27795,6 +27801,7 @@
   <!-- Amount of Substance Upper Ontology -->
   <!-- Amount of Substance Concentration Upper Ontology -->
   <!-- Amount of Substance Fraction Upper Ontology -->
+  <!-- Mass of Substance Concentration Upper Ontology -->
   <!-- Molar Energy Upper Ontology -->
   <!-- Molar Energy Subclass Upper Ontology -->
   <!-- Molar Entropy Upper Ontology -->
@@ -27854,6 +27861,19 @@
         <owl:hasValue rdf:resource="&om;dimensionOne"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+  </owl:Class>
+
+    <!-- Mass of Substance Concentration Upper Ontology -->
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+    <rdfs:label xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:label>
+    <om:alternativeLabel xml:lang="en">mass concentration</om:alternativeLabel>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>C</om:symbol> 
+  </owl:Class>
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+    <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/microgramPerCubicMetre"/>
   </owl:Class>
 
   <!-- Molar Energy Upper Ontology -->
@@ -27954,6 +27974,7 @@
   <!-- Mole Multiples and Submultiples Ontology -->
   <!-- One Ontology -->
   <!-- Quantity of Dimension One Unit Ontology -->
+  <!-- Mass of Substance Concentration Unit Ontology -->
   <!-- Mole Per Cubic Metre Ontology -->
   <!-- Mole Per Litre Ontology -->
   <!-- Mole Per Litre Multiples and Submultiples Ontology -->
@@ -28265,6 +28286,50 @@
     <om:commonlyHasUnit rdf:resource="&om;teramole"/>
   </owl:Class>
 
+  <!-- Mass of Substance Concentration Unit Ontology -->
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentrationUnit">
+    <rdfs:label xml:lang="en">mass of substance concentration unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:oneOf rdf:parseType="Collection">
+              <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/microgramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;milligramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerLitre"/>
+            </owl:oneOf>
+          </owl:Class>
+          <owl:Class rdf:about="&om;PrefixedMolePerLitre"/>
+          <owl:Class rdf:about="&om;MolePerPrefixedLitre"/>
+          <owl:Class rdf:about="&om;PrefixedMolePerPrefixedLitre"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentrationUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
   <!-- Mole Per Cubic Metre Ontology -->
 
   <om:UnitDivision rdf:about="&om;molePerCubicmetre">
@@ -30164,6 +30229,28 @@
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasDimension"/>
         <owl:hasValue rdf:resource="&om;amountOfSubstanceConcentration-Dimension"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+    <!-- Mass of Substance Concentration Dimension Upper Ontology -->
+
+  <om:Dimension rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration-Dimension">
+    <rdfs:label xml:lang="en">mass of substance concentration dimension</rdfs:label>
+    <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">-3</om:hasSILengthDimensionExponent>
+    <om:hasSIMassDimensionExponent rdf:datatype="&xsd;integer">1</om:hasSIMassDimensionExponent>
+    <om:hasSITimeDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSITimeDimensionExponent>
+    <om:hasSIElectricCurrentDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIElectricCurrentDimensionExponent>
+    <om:hasSIThermodynamicTemperatureDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIThermodynamicTemperatureDimensionExponent>
+    <om:hasSIAmountOfSubstanceDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIAmountOfSubstanceDimensionExponent>
+    <om:hasSILuminousIntensityDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSILuminousIntensityDimensionExponent>
+  </om:Dimension>
+
+    <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasDimension"/>
+        <owl:hasValue rdf:resource="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration-Dimension"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
