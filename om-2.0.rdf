@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2021 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2022 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.35</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.36</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/12/16</dc:date>
+    <dc:date>2022/06/11</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -5156,6 +5156,7 @@
     <om:hasDerivedUnit rdf:resource="&om;joulePerKelvinMole"/>
     <om:hasDerivedUnit rdf:resource="&om;coulombPerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:hasDerivedUnit rdf:resource="&om;milligrayPerSecond-Time"/>
     <om:hasDerivedUnit rdf:resource="&om;yoctometre"/>
     <om:hasDerivedUnit rdf:resource="&om;zeptometre"/>
     <om:hasDerivedUnit rdf:resource="&om;attometre"/>
@@ -32745,6 +32746,7 @@
     <om:usesUnit rdf:resource="&om;coulombPerKilogram"/>
     <om:usesUnit rdf:resource="&om;röntgen"/>
     <om:usesUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:usesUnit rdf:resource="&om;milligrayPerSecond-Time"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -34261,8 +34263,20 @@
     <om:hasDimension rdf:resource="&om;absorbedDoseRate-Dimension"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;milligrayPerSecond-Time">
+    <rdfs:label xml:lang="en">milligray per second</rdfs:label>
+    <rdfs:label xml:lang="nl">milligray per seconde</rdfs:label>
+    <om:symbol>mGy/s</om:symbol>
+    <om:alternativeSymbol>mGy s-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mGy·s-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;milligray"/>
+    <om:hasDenominator rdf:resource="&om;second-Time"/>
+    <om:hasDimension rdf:resource="&om;absorbedDoseRate-Dimension"/>
+  </om:UnitDivision>
+
   <owl:Class rdf:about="&om;AbsorbedDoseRate">
     <om:commonlyHasUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;milligrayPerSecond-Time"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;AbsorbedDoseRateUnit">
@@ -34272,6 +34286,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;grayPerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;milligrayPerSecond-Time"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
