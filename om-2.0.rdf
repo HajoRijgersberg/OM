@@ -44,7 +44,7 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.36</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.37</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
     <dc:date>2022/06/11</dc:date>
@@ -284,6 +284,47 @@
 
   <om:Function rdf:about="&om;median">
     <rdfs:label xml:lang="en">median</rdfs:label>
+    <om:alternativeLabel xml:lang="en">50th percentile</om:alternativeLabel>
+  </om:Function>
+
+  <om:Function rdf:about="&om;10thPercentile">
+    <rdfs:label xml:lang="en">10th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;20thPercentile">
+    <rdfs:label xml:lang="en">20th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;25thPercentile">
+    <rdfs:label xml:lang="en">25th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;30thPercentile">
+    <rdfs:label xml:lang="en">30th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;40thPercentile">
+    <rdfs:label xml:lang="en">40th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;60thPercentile">
+    <rdfs:label xml:lang="en">60th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;70thPercentile">
+    <rdfs:label xml:lang="en">70th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;75thPercentile">
+    <rdfs:label xml:lang="en">th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;80thPercentile">
+    <rdfs:label xml:lang="en">80th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;90thPercentile">
+    <rdfs:label xml:lang="en">90th percentile</rdfs:label>
   </om:Function>
 
   <owl:ObjectProperty rdf:about="&om;hasQuantity">
