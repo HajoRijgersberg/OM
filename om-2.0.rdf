@@ -38523,6 +38523,13 @@
     <rdfs:subClassOf rdf:resource="&om;SpecificAmountOfMoney"/>
   </owl:Class>
 
+  <!-- Amount Of Money Per Area Upper Ontology -->
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
+    <rdfs:label xml:lang="en">Specific amount of money per area, e.g. cost or value per sqm of land</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
   <!-- Unit of Measure Ontologies -->
 
   <!-- Contents -->
@@ -38601,6 +38608,10 @@
     <om:commonlyHasUnit rdf:resource="&om;IndianRupee"/>
   </owl:Class>
 
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
+    <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm"/>
+  </owl:Class>
+
   <om:Unit rdf:about="&om;UnitedStatesDollar">
     <rdfs:label xml:lang="en">United States dollar</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">美元</rdfs:label> -->
@@ -38651,6 +38662,14 @@
      <om:alternativeSymbol>£ L-1</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;poundSterling"/>
      <om:hasDenominator rdf:resource="&om;litre"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm">
+     <rdfs:label xml:lang="en">pound sterling per square metre</rdfs:label>
+     <om:symbol>£/m2</om:symbol>
+     <om:alternativeSymbol>£ m-2</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;poundSterling"/>
+     <om:hasDenominator rdf:resource="&om;squareMetre"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_litre_per_minute">
@@ -38798,6 +38817,34 @@
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
               <owl:Class rdf:about="&om;AmountOfMoneyUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerAreaUnit">
+    <rdfs:label xml:lang="en">amount of money per area unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerAreaUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>	
         </owl:allValuesFrom>
