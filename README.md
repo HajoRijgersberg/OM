@@ -115,7 +115,7 @@ Previous versions were published on the wurvoc platform.
 We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
 
-### <a name="papers"></a>Papers on OM
+### <a name="papers"></a>Literature
 
 1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287, https://doi.org/10.1016/j.aei.2010.07.008.
 2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13, https://doi.org/10.3233/SW-2012-0069.
@@ -129,7 +129,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 10. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
 
 
-### <a name="uses-of-om"></a>Papers and references to uses and submissions of OM (not exhaustive and under construction)
+### <a name="uses-of-om"></a>Best practices (not exhaustive and under construction) 
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -154,9 +154,10 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 21. Bhoomin Pandya, Units of Measurement Ontology Added to LOV, 2020, https://medium.com/@conceptminers/units-of-measurement-of-ontology-added-to-lov-21c7efc92a62.
 22. A. P. Vedurmudi, M. Gruber, S. Eichstädt and A. Paschke, "Semantics in Sensor Networks: An Ontology for Dynamic Transfer Behavior in Calibrated Sensors," 2021 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2021, pp. 358-363, doi: 10.1109/MetroInd4.0IoT51437.2021.9488554. https://ieeexplore.ieee.org/document/9488554.
 23. B. D. Hall, M. Kuster, Representing quantities and units in digital systems, submitted to Measurement: Sensors, 2022.
+24. Agneta Ghose, Matteo Lissandrini, Emil Riis Hansen, Bo Pedersen Weidema, A core ontology for modeling life cycle sustainability assessment on the Semantic Web, Journal of Industrial Ecology, 26, 2022, 731–747.
 
 
-### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
+### <a name="references-to-om"></a>Discussing OM in general (not exhaustive and under construction)
 
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
