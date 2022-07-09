@@ -129,7 +129,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 10. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
 
 
-### <a name="uses-of-om"></a>Best practices (not exhaustive and under construction) 
+### <a name="uses-of-om"></a>Best practices of OM (not exhaustive and under construction) 
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
