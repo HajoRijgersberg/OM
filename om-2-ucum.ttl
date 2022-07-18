@@ -1617,7 +1617,7 @@ om:hectoweber
   skos:notation "hWb"^^qudt:UCUMcs ;
 .
 om:henry
-  skos:notation "hH"^^qudt:UCUMcs ;
+  skos:notation "H"^^qudt:UCUMcs ;
 .
 om:henryPerMetre
   skos:notation "H.m-1"^^qudt:UCUMcs ;
@@ -1803,15 +1803,14 @@ om:kilogramPerSquareMetre
   skos:notation "kg/m2"^^qudt:UCUMcs ;
 .
 om:kilogramSecond-TimeToThePower-2
-  skos:notation "kg.s2"^^qudt:UCUMcs ;
+  skos:notation "kg.s-2"^^qudt:UCUMcs ;
 .
 om:kilogramSecond-TimeToThePower-2ReciprocalMetre
-  skos:notation "kg.s2.m-1"^^qudt:UCUMcs ;
-  skos:notation "kg.s2/m"^^qudt:UCUMcs ;
+  skos:notation "kg.s-2.m-1"^^qudt:UCUMcs ;
+  skos:notation "kg.s-2/m"^^qudt:UCUMcs ;
 .
 om:kilogramSquareMetre
-  skos:notation "kg.m-2"^^qudt:UCUMcs ;
-  skos:notation "kg/m2"^^qudt:UCUMcs ;
+  skos:notation "kg.m2"^^qudt:UCUMcs ;
 .
 om:kilogray
   skos:notation "kGy"^^qudt:UCUMcs ;
@@ -2904,7 +2903,7 @@ om:nanocoulomb
   skos:notation "nC"^^qudt:UCUMcs ;
 .
 om:nanodegreeCelsius
-  skos:notation "cCel"^^qudt:UCUMcs ;
+  skos:notation "nCel"^^qudt:UCUMcs ;
 .
 om:nanofarad
   skos:notation "nF"^^qudt:UCUMcs ;
@@ -3498,7 +3497,7 @@ om:second-TimeSquared
   skos:notation "s2"^^qudt:UCUMcs ;
 .
 om:second-TimeToThePower-2
-  skos:notation "s2"^^qudt:UCUMcs ;
+  skos:notation "s-2"^^qudt:UCUMcs ;
 .
 om:shake
   skos:notation "10.ns"^^qudt:UCUMcs ;
@@ -4205,7 +4204,7 @@ om:zeptometrePerSecond-Time
 .
 om:zeptometrePerSecond-TimeSquared
   skos:notation "zm.s-2"^^qudt:UCUMcs ;
-  skos:notation "zm/s"^^qudt:UCUMcs ;
+  skos:notation "zm/s2"^^qudt:UCUMcs ;
 .
 om:zeptomolar
   skos:notation "zmol/L"^^qudt:UCUMcs ;
