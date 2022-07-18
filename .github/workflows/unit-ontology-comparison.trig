@@ -1,6 +1,8 @@
-@base                     <https://raw.githubusercontent.com/HajoRijgersberg/OM/master/.github/workflows/unit-ontology-comparison.trig> .
+@base                     <https://raw.githubusercontent.com/HajoRijgersberg/OM/master/.github/workflows/unit-ontology-comparison.trig#> .
 @prefix abecto:           <java:de.uni_jena.cs.fusion.abecto.processor.> .
 @prefix av:               <http://w3id.org/abecto/vocabulary#> .
+@prefix dqv:              <http://www.w3.org/ns/dqv#> .
+@prefix oa:               <http://www.w3.org/ns/oa#> .
 @prefix om:               <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix pplan:            <http://purl.org/net/p-plan#> .
 @prefix qudt:             <http://qudt.org/schema/qudt/> .
@@ -608,11 +610,32 @@ GRAPH <manualCorrespondences>
     qudtUnit:DEG_F av:correspondsToResource sorepsu:degreeF .
     sorepsu:MYA av:correspondsToResource sorepsu:millenium .
 
+    om:attomolar av:correspondsNotToResource om:attomolePerLitre .
+    om:barye av:correspondsNotToResource om:decipascal .
+    om:centimolar av:correspondsNotToResource om:centimolePerLitre .
+    om:decamolar av:correspondsNotToResource om:decamolePerLitre .
+    om:decimolar av:correspondsNotToResource om:decimolePerLitre .
+    om:femtomolar av:correspondsNotToResource om:femtomolePerLitre .
+    om:gigamolar av:correspondsNotToResource om:gigamolePerLitre .
     om:gray av:correspondsNotToResource om:microgray .
+    om:hectomolar av:correspondsNotToResource om:hectomolePerLitre .
     om:kilofarad av:correspondsNotToResource om:kiloweber .
+    om:kilomolar av:correspondsNotToResource om:kilomolePerLitre .
+    om:megamolar av:correspondsNotToResource om:megamolePerLitre .
     om:metreKilogram av:correspondsNotToResource om:reciprocalGram .
     om:micrometre av:correspondsNotToResource om:micron .
+    om:micromolar av:correspondsNotToResource om:micromolePerLitre .
     om:microsievert av:correspondsNotToResource om:sievert .
+    om:millimolar av:correspondsNotToResource om:millimolePerLitre .
+    om:molar av:correspondsNotToResource om:molePerLitre .
+    om:nanomolar av:correspondsNotToResource om:nanomolePerLitre .
+    om:petamolar av:correspondsNotToResource om:petamolePerLitre .
+    om:picomolar av:correspondsNotToResource om:picomolePerLitre .
+    om:teramolar av:correspondsNotToResource om:teramolePerLitre .
+    om:yoctomolar av:correspondsNotToResource om:yoctomolePerLitre .
+    om:yottamolar av:correspondsNotToResource om:yottamolePerLitre .
+    om:zeptomolar av:correspondsNotToResource om:zeptomolePerLitre .
+    om:zettamolar av:correspondsNotToResource om:zettamolePerLitre .
 
     om:acre-International av:correspondsNotToResource qudtUnit:MI .
     om:ampere av:correspondsNotToResource qudtUnit:A_Ab .
@@ -678,15 +701,17 @@ GRAPH <manualCorrespondences>
     qudtUnit:MicroIN av:correspondsNotToResource sorepsu:micron .
     qudtUnit:PER-SEC-SR av:correspondsNotToResource sorepsu:perSecondSquared .
     qudtUnit:PER-SEC-M2 av:correspondsNotToResource sorepsu:perSecondSquared .
+
     sorepsu:hertz av:correspondsNotToResource sorepsu:perSecond .
     sorepsu:micrometer av:correspondsNotToResource sorepsu:micron .
     sorepsu:million_km2 av:correspondsNotToResource sorepsu:million_km3 .
 
     <aspectUnit> av:relevantResource
-        om:acre-International, om:ampere, om:centiare, om:centinewton, om:decinewton, om:decisiemens, om:decitesla, om:dryPint-US, om:dryQuart-US, om:exaampere, om:fluidOunce-US, om:gray, om:gray, om:horsepower-Water, om:kilofarad, om:kilofarad, om:kilogramPerHectare, om:kilotonne, om:kiloweber, om:kiloweber, om:megafarad, om:megagramPerLitre, om:metreKilogram, om:microgray, om:micrometre, om:micrometre, om:micron, om:micron, om:micron, om:microsievert, om:one, om:peck-US, om:reciprocalGram, om:reciprocalPascalSecond-Time, om:reciprocalSecond-Time, om:second-TimePerSquareMetre, om:second-TimePerSquareMetre, om:sievert, om:sievert, om:sievert, om:tonne, om:wattSquareMetre, qudtUnit:A_Ab, qudtUnit:A_Ab, qudtUnit:CAL_IT, qudtUnit:CAL_IT-PER-GM, qudtUnit:CAL_TH, qudtUnit:CAL_TH-PER-GM, qudtUnit:C_Ab, qudtUnit:CentiBAR, qudtUnit:CentiN-M, qudtUnit:DEG_C, qudtUnit:DEG_F, qudtUnit:DWT, qudtUnit:DeciB, qudtUnit:DeciN-M, qudtUnit:DeciS-PER-M, qudtUnit:GAL_UK, qudtUnit:GAL_US, qudtUnit:GON, qudtUnit:GR, qudtUnit:GRAY, qudtUnit:HP_Brake, qudtUnit:HZ, qudtUnit:HZ, qudtUnit:K-PER-MIN, qudtUnit:K-PER-W, qudtUnit:KiloBAR, qudtUnit:KiloBAR, qudtUnit:KiloGM-M-PER-SEC, qudtUnit:KiloGM-PER-M, qudtUnit:KiloGM-PER-SEC, qudtUnit:KiloP, qudtUnit:M-K, qudtUnit:M-PER-K, qudtUnit:M3-PER-DAY, qudtUnit:M3-PER-HR, qudtUnit:MHO_Stat, qudtUnit:MI, qudtUnit:MI2, qudtUnit:MegaA, qudtUnit:MegaBAR, qudtUnit:MegaGM-PER-M3, qudtUnit:MicroGRAY, qudtUnit:MicroGRAY, qudtUnit:MicroIN, qudtUnit:MicroIN, qudtUnit:MicroIN, qudtUnit:MicroIN, qudtUnit:MicroM, qudtUnit:MicroM, qudtUnit:MicroSV, qudtUnit:MicroSV, qudtUnit:MicroSV-PER-HR, qudtUnit:MicroSV-PER-HR, qudtUnit:MilliM2, qudtUnit:OZ-FT, qudtUnit:OZ-IN, qudtUnit:OZ_VOL_UK, qudtUnit:OZ_VOL_UK, qudtUnit:OZ_VOL_US, qudtUnit:OZ_VOL_US-PER-DAY, qudtUnit:PER-FT3, qudtUnit:PER-L, qudtUnit:PER-M, qudtUnit:PER-M3, qudtUnit:PER-MIN, qudtUnit:PER-MO, qudtUnit:PER-MilliM3, qudtUnit:PER-SEC, qudtUnit:PER-SEC-M2, qudtUnit:PER-SEC-M2, qudtUnit:PER-SEC-SR, qudtUnit:PER-WK, qudtUnit:PINT_UK, qudtUnit:PINT_UK, qudtUnit:PINT_US, qudtUnit:PINT_US-PER-DAY, qudtUnit:PINT_US_DRY, qudtUnit:PK_UK, qudtUnit:PK_UK, qudtUnit:PK_US_DRY, qudtUnit:QT_UK, qudtUnit:QT_UK, qudtUnit:QT_US, qudtUnit:QT_US-PER-DAY, qudtUnit:QT_US_DRY, qudtUnit:SV, qudtUnit:S_Stat, qudtUnit:TON_Metric, qudtUnit:UNITLESS, qudtUnit:W-M2, qudtUnit:W-M2, qudtUnit:W-PER-FT2, sorepsu:MYA, sorepsu:ampere, sorepsu:coulomb, sorepsu:degreeC, sorepsu:degreeF, sorepsu:dimensionlessUnit, sorepsu:hertz, sorepsu:micrometer, sorepsu:micron, sorepsu:micron, sorepsu:millenium, sorepsu:million_km2, sorepsu:million_km3, sorepsu:perPascal, sorepsu:perSecond, sorepsu:perSecondSquared, sorepsu:perSecondSquared, sorepsu:perSecondSquared .
+        om:acre-International, om:ampere, om:attomolar, om:attomolePerLitre, om:barye, om:centiare, om:centimolar, om:centimolePerLitre, om:centinewton, om:decamolar, om:decamolePerLitre, om:decimolar, om:decimolePerLitre, om:decinewton, om:decipascal, om:decisiemens, om:decitesla, om:dryPint-US, om:dryQuart-US, om:exaampere, om:femtomolar, om:femtomolePerLitre, om:fluidOunce-US, om:gigamolar, om:gigamolePerLitre, om:gray, om:gray, om:gray, om:hectomolar, om:hectomolePerLitre, om:horsepower-Water, om:kilofarad, om:kilogramPerHectare, om:kilomolar, om:kilomolePerLitre, om:kilotonne, om:kiloweber, om:megafarad, om:megagramPerLitre, om:megamolar, om:megamolePerLitre, om:metreKilogram, om:microgray, om:micrometre, om:micromolar, om:micromolePerLitre, om:micron, om:microsievert, om:millimolar, om:millimolePerLitre, om:molar, om:molePerLitre, om:nanomolar, om:nanomolePerLitre, om:one, om:peck-US, om:petamolar, om:petamolePerLitre, om:picomolar, om:picomolePerLitre, om:reciprocalGram, om:reciprocalPascalSecond-Time, om:reciprocalSecond-Time, om:second-TimePerSquareMetre, om:sievert, om:teramolar, om:teramolePerLitre, om:tonne, om:wattSquareMetre, om:yoctomolar, om:yoctomolePerLitre, om:yottamolar, om:yottamolePerLitre, om:zeptomolar, om:zeptomolePerLitre, om:zettamolar, om:zettamolePerLitre, qudtUnit:A_Ab, qudtUnit:CAL_IT, qudtUnit:CAL_IT-PER-GM, qudtUnit:CAL_TH, qudtUnit:CAL_TH-PER-GM, qudtUnit:C_Ab, qudtUnit:CentiBAR, qudtUnit:CentiN-M, qudtUnit:DEG_C, qudtUnit:DEG_F, qudtUnit:DWT, qudtUnit:DeciB, qudtUnit:DeciN-M, qudtUnit:DeciS-PER-M, qudtUnit:GAL_UK, qudtUnit:GAL_US, qudtUnit:GON, qudtUnit:GR, qudtUnit:GRAY, qudtUnit:HP_Brake, qudtUnit:HZ, qudtUnit:HZ, qudtUnit:K-PER-MIN, qudtUnit:K-PER-W, qudtUnit:KiloBAR, qudtUnit:KiloGM-M-PER-SEC, qudtUnit:KiloGM-PER-M, qudtUnit:KiloGM-PER-SEC, qudtUnit:KiloP, qudtUnit:M-K, qudtUnit:M-PER-K, qudtUnit:M3-PER-DAY, qudtUnit:M3-PER-HR, qudtUnit:MHO_Stat, qudtUnit:MI, qudtUnit:MI2, qudtUnit:MegaA, qudtUnit:MegaBAR, qudtUnit:MegaGM-PER-M3, qudtUnit:MicroGRAY, qudtUnit:MicroIN, qudtUnit:MicroM, qudtUnit:MicroSV, qudtUnit:MicroSV-PER-HR, qudtUnit:MilliM2, qudtUnit:OZ-FT, qudtUnit:OZ-IN, qudtUnit:OZ_VOL_UK, qudtUnit:OZ_VOL_US, qudtUnit:OZ_VOL_US-PER-DAY, qudtUnit:PER-FT3, qudtUnit:PER-L, qudtUnit:PER-M, qudtUnit:PER-M3, qudtUnit:PER-MIN, qudtUnit:PER-MO, qudtUnit:PER-MilliM3, qudtUnit:PER-SEC, qudtUnit:PER-SEC-M2, qudtUnit:PER-SEC-SR, qudtUnit:PER-WK, qudtUnit:PINT_UK, qudtUnit:PINT_US, qudtUnit:PINT_US-PER-DAY, qudtUnit:PINT_US_DRY, qudtUnit:PK_UK, qudtUnit:PK_US_DRY, qudtUnit:QT_UK, qudtUnit:QT_US, qudtUnit:QT_US-PER-DAY, qudtUnit:QT_US_DRY, qudtUnit:SV, qudtUnit:S_Stat, qudtUnit:TON_Metric, qudtUnit:UNITLESS, qudtUnit:W-M2, qudtUnit:W-M2, qudtUnit:W-PER-FT2, sorepsu:MYA, sorepsu:ampere, sorepsu:coulomb, sorepsu:degreeC, sorepsu:degreeF, sorepsu:dimensionlessUnit, sorepsu:hertz, sorepsu:micrometer, sorepsu:micron, sorepsu:micron, sorepsu:millenium, sorepsu:million_km2, sorepsu:million_km3, sorepsu:perPascal, sorepsu:perSecond, sorepsu:perSecondSquared .
 
     om:ThermalConductivity av:correspondsToResource qudtQuantityKind:ThermalConductivity .
 
+    om:Reluctance av:correspondsNotToResource qudtQuantityKind:Reflectance .
     om:ThermalConductivity av:correspondsNotToResource qudtQuantityKind:ThermalConductance .
     om:VolumeFraction av:correspondsNotToResource qudtQuantityKind:VolumeFlowRate .
 
@@ -723,7 +748,7 @@ GRAPH <manualCorrespondences>
     wd:Q7964839 av:correspondsNotToResource qudtQuantityKind:Action .
 
     <aspectQuantityKind> av:relevantResource
-        om:CurvatureConstant, om:DensityParameter, om:MagneticField, om:ThermalConductivity, om:VolumeFraction, qudtQuantityKind:AbsorbedDose, qudtQuantityKind:Action, qudtQuantityKind:AmountOfSubstanceFractionOfB, qudtQuantityKind:ElectricFieldStrength, qudtQuantityKind:LinearVelocity, qudtQuantityKind:MagneticField, qudtQuantityKind:NumberOfParticles, qudtQuantityKind:RadiantFluence, qudtQuantityKind:SoundPressureLevel, qudtQuantityKind:SoundVolumeVelocity, qudtQuantityKind:ThermalConductance, qudtQuantityKind:ThermalConductivity, qudtQuantityKind:VolumeFlowRate, wd:Q104946, wd:Q105404651, wd:Q1068172, wd:Q108147201, wd:Q109198760, wd:Q109222374, wd:Q1134348, wd:Q11376, wd:Q1253356, wd:Q14515278, wd:Q164399, wd:Q181155, wd:Q192027, wd:Q204570, wd:Q20989, wd:Q214881, wd:Q2199864, wd:Q317949, wd:Q36253, wd:Q39297, wd:Q41273, wd:Q423220, wd:Q45003, wd:Q48103, wd:Q501267, wd:Q5380792, wd:Q549389, wd:Q56298294, wd:Q622324, wd:Q7964839, wd:Q83947659, wd:Q899249 .
+        om:CurvatureConstant, om:DensityParameter, om:MagneticField, om:Reluctance, om:ThermalConductivity, om:VolumeFraction, qudtQuantityKind:AbsorbedDose, qudtQuantityKind:Action, qudtQuantityKind:AmountOfSubstanceFractionOfB, qudtQuantityKind:ElectricFieldStrength, qudtQuantityKind:LinearVelocity, qudtQuantityKind:MagneticField, qudtQuantityKind:NumberOfParticles, qudtQuantityKind:RadiantFluence, qudtQuantityKind:Reflectance, qudtQuantityKind:SoundPressureLevel, qudtQuantityKind:SoundVolumeVelocity, qudtQuantityKind:ThermalConductance, qudtQuantityKind:ThermalConductivity, qudtQuantityKind:VolumeFlowRate, wd:Q104946, wd:Q105404651, wd:Q1068172, wd:Q108147201, wd:Q109198760, wd:Q109222374, wd:Q1134348, wd:Q11376, wd:Q1253356, wd:Q14515278, wd:Q164399, wd:Q181155, wd:Q192027, wd:Q204570, wd:Q20989, wd:Q214881, wd:Q2199864, wd:Q317949, wd:Q36253, wd:Q39297, wd:Q41273, wd:Q423220, wd:Q45003, wd:Q48103, wd:Q501267, wd:Q5380792, wd:Q549389, wd:Q56298294, wd:Q622324, wd:Q7964839, wd:Q83947659, wd:Q899249 .
 }
 
 <presentCorrespondences> a av:Step ;
@@ -752,6 +777,7 @@ GRAPH <manualCorrespondences>
     pplan:isStepOfPlan <plan> ;
     av:processorClass abecto:LiteralValueComparisonProcessor ;
     pplan:isPrecededBy <unitMappingUcum> ;
+    av:predefinedMetaDataGraph <qudtKnownErrors>, <sweetKnownErrors>, <wikidataKnownErrors> ;
     av:hasParameter
         [av:key "aspect" ; av:value <aspectUnit> ] ,
         [av:key "languageFilterPatterns" ; av:value "", "en" ] ,
@@ -776,6 +802,7 @@ GRAPH <manualCorrespondences>
     pplan:isStepOfPlan <plan> ;
     av:processorClass abecto:LiteralValueComparisonProcessor ;
     pplan:isPrecededBy <quantityKindMappingLabel> ;
+    av:predefinedMetaDataGraph <qudtKnownErrors>, <sweetKnownErrors>, <wikidataKnownErrors> ;
     av:hasParameter
         [av:key "aspect" ; av:value <aspectQuantityKind> ] ,
         [av:key "languageFilterPatterns" ; av:value "", "en" ] ,
@@ -791,3 +818,23 @@ GRAPH <manualCorrespondences>
     av:hasParameter
         [av:key "aspects" ; av:value <aspectUnit>, <aspectQuantityKind> ] ;
     .
+
+<qudtKnownErrors> rdf:type av:MetaDataGraph ; dqv:computedOn <http://qudt.org/> .
+GRAPH <qudtKnownErrors>
+{
+    [ rdf:type dqv:QualityAnnotation ; oa:hasBody [ rdf:type av:WrongValue ; av:affectedAspect <aspectQuantityKind> ; av:affectedVariableName "lengthDimensionExponent" ; av:affectedValue "2"^^<http://www.w3.org/2001/XMLSchema#integer> ; ] ; oa:hasTarget <http://qudt.org/vocab/quantitykind/LuminousFlux> ] .
+    [ rdf:type dqv:QualityAnnotation ; oa:hasBody [ rdf:type av:WrongValue ; av:affectedAspect <aspectQuantityKind> ; av:affectedVariableName "luminousIntensityDimensionExponent" ; av:affectedValue "0"^^<http://www.w3.org/2001/XMLSchema#integer> ; ] ; oa:hasTarget <http://qudt.org/vocab/quantitykind/LuminousFlux> ] .
+    [ rdf:type dqv:QualityAnnotation ; oa:hasBody [ rdf:type av:WrongValue ; av:affectedAspect <aspectQuantityKind> ; av:affectedVariableName "massDimensionExponent" ; av:affectedValue "1"^^<http://www.w3.org/2001/XMLSchema#integer> ; ] ; oa:hasTarget <http://qudt.org/vocab/quantitykind/LuminousFlux> ] .
+    [ rdf:type dqv:QualityAnnotation ; oa:hasBody [ rdf:type av:WrongValue ; av:affectedAspect <aspectQuantityKind> ; av:affectedVariableName "timeDimensionExponent" ; av:affectedValue "-3"^^<http://www.w3.org/2001/XMLSchema#integer> ; ] ; oa:hasTarget <http://qudt.org/vocab/quantitykind/LuminousFlux> ] .
+}
+
+<sweetKnownErrors> rdf:type av:MetaDataGraph ; dqv:computedOn <http://sweetontology.net/> .
+GRAPH <sweetKnownErrors>
+{
+    [ rdf:type dqv:QualityAnnotation ; oa:hasBody [ rdf:type av:WrongValue ; av:affectedAspect <aspectUnit> ; av:affectedVariableName "symbol" ; av:affectedValue "C"^^<http://www.w3.org/2001/XMLSchema#string> ; ] ; oa:hasTarget <http://sweetontology.net/reprSciUnits/degreeC> ] .
+}
+
+<wikidataKnownErrors> rdf:type av:MetaDataGraph ; dqv:computedOn <http://www.wikidata.org/> .
+GRAPH <wikidataKnownErrors>
+{
+}
