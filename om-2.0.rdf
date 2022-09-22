@@ -15490,6 +15490,17 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- millilitre Per Minute Ontology -->
+  <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time">
+    <rdfs:label xml:lang="en">millilitre per minute</rdfs:label>
+    <om:symbol>ml/min</om:symbol>
+    <om:alternativeSymbol>ml min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>ml·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;millilitre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+    <om:hasDimension rdf:resource="&om;volumetricFlowRate-Dimension"/>
+  </om:UnitDivision>
+
   <!-- Cubic Metre Per Second Ontology -->
 
   <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time">
@@ -15505,6 +15516,7 @@
 
   <owl:Class rdf:about="&om;VolumetricFlowRate">
     <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerSecond-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;millilitrePerMinute-Time"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;VolumetricFlowRateUnit">
@@ -15516,6 +15528,7 @@
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
+          <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerDay"/>
         </owl:oneOf>
