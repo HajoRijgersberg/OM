@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2021 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2022 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.30</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.38</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2021/03/15</dc:date>
+    <dc:date>2022/08/04</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -78,6 +78,7 @@
   <!-- Materials Science Ontology -->
   <!-- Microbiology Ontology -->
   <!-- Acoustics Ontology -->
+  <!-- Sustainability Ontology -->
   <!-- Economics Ontology -->
   <!-- Information Technology Ontology -->
   <!-- Typography Ontology -->
@@ -284,6 +285,47 @@
 
   <om:Function rdf:about="&om;median">
     <rdfs:label xml:lang="en">median</rdfs:label>
+    <om:alternativeLabel xml:lang="en">50th percentile</om:alternativeLabel>
+  </om:Function>
+
+  <om:Function rdf:about="&om;10thPercentile">
+    <rdfs:label xml:lang="en">10th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;20thPercentile">
+    <rdfs:label xml:lang="en">20th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;25thPercentile">
+    <rdfs:label xml:lang="en">25th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;30thPercentile">
+    <rdfs:label xml:lang="en">30th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;40thPercentile">
+    <rdfs:label xml:lang="en">40th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;60thPercentile">
+    <rdfs:label xml:lang="en">60th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;70thPercentile">
+    <rdfs:label xml:lang="en">70th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;75thPercentile">
+    <rdfs:label xml:lang="en">th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;80thPercentile">
+    <rdfs:label xml:lang="en">80th percentile</rdfs:label>
+  </om:Function>
+
+  <om:Function rdf:about="&om;90thPercentile">
+    <rdfs:label xml:lang="en">90th percentile</rdfs:label>
   </om:Function>
 
   <owl:ObjectProperty rdf:about="&om;hasQuantity">
@@ -323,7 +365,6 @@
         <owl:allValuesFrom rdf:resource="&om;SingularUnit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <!-- Cardinality of hasUnit property should be restricted to 0 or 1 -->
   </owl:Class>
 
   <owl:ObjectProperty rdf:about="&om;hasUnit">
@@ -342,6 +383,7 @@
       </owl:Class>
     </rdfs:domain>
     <rdfs:range rdf:resource="&om;Unit"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasPrefix">
@@ -363,7 +405,6 @@
     <rdfs:label xml:lang="en">unit multiple</rdfs:label>
     <rdfs:label xml:lang="ja">単位倍量</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
-    <!-- Cardinality of hasUnit property should be restricted to 0 or 1 -->
   </owl:Class>
 
   <owl:DatatypeProperty rdf:about="&om;hasFactor">
@@ -585,6 +626,7 @@
       </owl:Class>
     </rdfs:domain>
     <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:DatatypeProperty>
 
   <!-- Measurement Scale Upper Ontology -->
@@ -912,6 +954,8 @@
     <om:usesQuantity rdf:resource="&om;Volume"/>
     <om:usesQuantity rdf:resource="&om;Angle"/>
     <om:usesQuantity rdf:resource="&om;SolidAngle"/>
+    <om:usesQuantity rdf:resource="&om;LengthFraction"/>
+    <om:usesQuantity rdf:resource="&om;Slope"/>
     <om:usesUnit rdf:resource="&om;chain"/>
     <om:usesUnit rdf:resource="&om;cicero"/>
     <om:usesUnit rdf:resource="&om;fathom-USSurvey"/>
@@ -1072,6 +1116,8 @@
     <om:usesUnit rdf:resource="&om;femtosteradian"/>
     <om:usesUnit rdf:resource="&om;picosteradian"/>
     <om:usesUnit rdf:resource="&om;nanosteradian"/>
+    <om:usesUnit rdf:resource="&om;metrePerMetre"/>
+    <om:usesUnit rdf:resource="&om;millimetrePerMetre"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -1085,6 +1131,8 @@
   <!-- Angle Upper Ontology -->
   <!-- Solid Angle Upper Ontology -->
   <!-- Solid Angle Subclass Upper Ontology -->
+  <!-- Length Fraction Upper Ontology -->
+  <!-- Length Fraction Subclass Upper Ontology -->
 
   <!-- Length Upper Ontology -->
 
@@ -1240,6 +1288,30 @@
   <owl:Class rdf:about="&om;AngularSize">
     <rdfs:label xml:lang="en">angular size</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;SolidAngle"/>
+  </owl:Class>
+
+  <!-- Length Fraction Upper Ontology -->
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <rdfs:label xml:lang="en">length fraction</rdfs:label>
+    <rdfs:label xml:lang="nl">lengtefractie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasDimension"/>
+        <owl:hasValue rdf:resource="&om;dimensionOne"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- Length Fraction Subclass Upper Ontology -->
+
+  <owl:Class rdf:about="&om;Slope">
+    <rdfs:label xml:lang="en">slope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;LengthFraction"/>
   </owl:Class>
 
   <!-- Prefix Ontologies -->
@@ -1435,6 +1507,8 @@
   <!-- Steradian Ontology -->
   <!-- Steradian Multiples and Submultiples Ontology -->
   <!-- Solid Angle Unit Ontology -->
+  <!-- Metre Per Metre Ontology -->
+  <!-- Metre Per Metre Multiples and Submultiples Ontology -->
 
   <!-- Metre Ontology -->
 
@@ -1513,12 +1587,14 @@
             <owl:oneOf rdf:parseType="Collection">
               <om:Unit rdf:about="&om;angstrom"/>
               <om:Unit rdf:about="&om;astronomicalUnit"/>
+              <om:Unit rdf:about="&om;BirminghamGauge"/>
               <om:Unit rdf:about="&om;chain"/>
               <om:Unit rdf:about="&om;cicero"/>
               <om:Unit rdf:about="&om;fathom-USSurvey"/>
               <om:Unit rdf:about="&om;fermi"/>
               <om:Unit rdf:about="&om;foot-International"/>
               <om:Unit rdf:about="&om;foot-USSurvey"/>
+              <om:Unit rdf:about="&om;FrenchGauge"/>
               <om:Unit rdf:about="&om;furlong-International"/>
               <om:Unit rdf:about="&om;inch-International"/>
               <om:Unit rdf:about="&om;lightYear"/>
@@ -2030,6 +2106,15 @@
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
+  <om:Unit rdf:about="&om;BirminghamGauge">
+    <rdfs:label xml:lang="en">Birmingham gauge</rdfs:label>
+<!--    <om:alternativeLabel xml:lang="en">gauge</om:alternativeLabel> -->
+    <om:symbol>G</om:symbol>
+    <om:alternativeSymbol>GA</om:alternativeSymbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
   <om:Unit rdf:about="&om;chain">
     <rdfs:label xml:lang="en">chain</rdfs:label>
     <rdfs:comment xml:lang="en">The chain is a unit of length defined as 20.1168 metre.</rdfs:comment>
@@ -2081,6 +2166,18 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.048006e-1</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
+  <om:Unit rdf:about="&om;FrenchGauge">
+    <rdfs:label xml:lang="en">French gauge</rdfs:label>
+    <om:symbol>Fr</om:symbol>
+    <om:alternativeSymbol>Fg</om:alternativeSymbol>
+    <om:alternativeSymbol>FR</om:alternativeSymbol>
+    <om:alternativeSymbol>F</om:alternativeSymbol>
+    <om:alternativeSymbol>CH</om:alternativeSymbol>
+    <om:alternativeSymbol>Ch</om:alternativeSymbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
@@ -4588,6 +4685,40 @@
     <om:commonlyHasUnit rdf:resource="&om;second-AngleSquared"/>
   </owl:Class>
 
+  <!-- Metre Per Metre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;metrePerMetre">
+    <rdfs:label xml:lang="en">metre per metre</rdfs:label>
+    <rdfs:label xml:lang="nl">meter per meter</rdfs:label>
+    <om:symbol>m/m</om:symbol>
+    <om:alternativeSymbol>m m-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m·m-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;metre"/>
+    <om:hasDenominator rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMetre"/>
+  </owl:Class>
+
+  <!-- Metre Per Metre Multiples and Submultiples Ontology -->
+
+  <om:UnitDivision rdf:about="&om;millimetrePerMetre">
+    <rdfs:label xml:lang="en">millimetre per metre</rdfs:label>
+    <rdfs:label xml:lang="nl">millimeter per meter</rdfs:label>
+    <om:symbol>mm/m</om:symbol>
+    <om:alternativeSymbol>mm m-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mm·m-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;millimetre"/>
+    <om:hasDenominator rdf:resource="&om;metre"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;LengthFraction">
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMetre"/>
+  </owl:Class>
+
   <!-- Dimension Ontologies -->
 
   <!-- Contents -->
@@ -5023,6 +5154,7 @@
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;cubicMetrePerKilogram"/>
+    <om:hasDerivedUnit rdf:resource="&om;litrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;amperePerSquareMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;amperePerMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;molePerCubicmetre"/>
@@ -5070,6 +5202,7 @@
     <om:hasDerivedUnit rdf:resource="&om;joulePerKelvinMole"/>
     <om:hasDerivedUnit rdf:resource="&om;coulombPerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:hasDerivedUnit rdf:resource="&om;milligrayPerSecond-Time"/>
     <om:hasDerivedUnit rdf:resource="&om;yoctometre"/>
     <om:hasDerivedUnit rdf:resource="&om;zeptometre"/>
     <om:hasDerivedUnit rdf:resource="&om;attometre"/>
@@ -6016,6 +6149,7 @@
   <!-- Volume Fraction Upper Ontology -->
   <!-- Overrun Upper Ontology -->
   <!-- Mass Flow Upper Ontology -->
+  <!-- Mass Per Energy Upper Ontology -->
   <!-- Impulse Upper Ontology -->
   <!-- Area Density Upper Ontology -->
   <!-- Area Density Rate Upper Ontology -->
@@ -6773,6 +6907,13 @@
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
+  <!-- Mass Per Energy Upper Ontology -->
+
+  <owl:Class rdf:about="&om;MassPerEnergy">
+    <rdfs:label xml:lang="en">mass per energy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
   <!-- Impulse Upper Ontology -->
 
   <owl:Class rdf:about="&om;Impulse">
@@ -6819,7 +6960,8 @@
   <!-- Hertz Multiples and Submultiples Ontology -->
   <!-- Frequency Unit Ontology -->
   <!-- Reciprocal Cubic Metre Ontology -->
-  <!-- Reciprocal Cubic Centimetre Ontology -->
+  <!-- Reciprocal Cubic Metre Multiples and Submultiples Ontology -->
+  <!-- Reciprocal Litre Ontology -->
   <!-- Reciprocal Metre Ontology -->
   <!-- Wavenumber Unit Ontology -->
   <!-- Metre Per Metre Ontology -->
@@ -6894,8 +7036,7 @@
   <!-- Metre Gram Ontology -->
   <!-- Reciprocal Gram Ontology -->
   <!-- Gram Second To the Power -2 Ontology -->
-  <!-- Gram Per Joule Ontology -->
-  <!-- Kilogram Per Gigajoule Ontology -->
+  <!-- Mass Per Energy Unit Ontology -->
   <!-- Gram Per Metre Ontology -->
   <!-- Milligram Per Kilometre Ontology -->
   <!-- Gram Per Square Metre Ontology -->
@@ -6915,7 +7056,6 @@
   <!-- Gram Per Square Metre Second Ontology -->
   <!-- Gram Per Square Metre Day Ontology -->
   <!-- Microgram Per Square Metre Second Ontology -->
-  <!-- Microgram Per Joule Ontology -->
   <!-- Tonne Per Cubic Metre Ontology -->
   <!-- Watt Square Metre Ontology -->
   <!-- Reciprocal Square Metre Reciprocal Gram Ontology -->
@@ -9055,6 +9195,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicCentimetre"/>
+          <om:UnitExponentiation rdf:about="&om;reciprocalLitre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicMetre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicParsec"/>
         </owl:oneOf>
@@ -9078,7 +9219,7 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
-  <!-- Reciprocal Cubic Centimetre Ontology -->
+  <!-- Reciprocal Cubic Metre Multiples and Submultiples Ontology -->
 
   <om:UnitExponentiation rdf:about="&om;reciprocalCubicCentimetre">
     <rdfs:label xml:lang="en">reciprocal cubic centimetre</rdfs:label>
@@ -9091,6 +9232,21 @@
 
   <owl:Class rdf:about="&om;NumberDensity">
     <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicCentimetre"/>
+  </owl:Class>
+
+  <!-- Reciprocal Litre Ontology -->
+
+  <om:UnitExponentiation rdf:about="&om;reciprocalLitre">
+    <rdfs:label xml:lang="en">reciprocal litre</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde liter</rdfs:label>
+    <om:symbol>l-1</om:symbol>
+    <om:hasBase rdf:resource="&om;litre"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-1</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
+  <owl:Class rdf:about="&om;NumberDensity">
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalLitre"/>
   </owl:Class>
 
   <!-- Reciprocal Metre Ontology -->
@@ -10672,6 +10828,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;cubicMetrePerKilogram"/>
+          <om:UnitDivision rdf:about="&om;litrePerKilogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -10691,6 +10848,25 @@
         </owl:allValuesFrom>
       </owl:Restriction>     
     </rdfs:subClassOf>     
+  </owl:Class>
+
+  <!-- Litre Per Kilogram Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerKilogram">
+    <rdfs:label xml:lang="en">litre per kilogram</rdfs:label>
+    <rdfs:label xml:lang="nl">liter per kilogram</rdfs:label>
+    <rdfs:comment xml:lang="en">Litre per kilogram is a unit of specific volume defined as litre divided by kilogram.</rdfs:comment>
+    <om:longcomment>Litre per kilogram is a unit of specific volume defined as litre divided by kilogram. Litre per kilogram is a derived unit in the International System of Units.</om:longcomment>
+    <om:symbol>l/kg</om:symbol>
+    <om:alternativeSymbol>l kg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·kg-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;kilogram"/>
+    <om:hasDimension rdf:resource="&om;specificVolume-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;SpecificVolume">
+    <om:commonlyHasUnit rdf:resource="&om;litrePerKilogram"/>
   </owl:Class>
 
   <!-- Metre Per Second Ontology -->
@@ -15732,9 +15908,9 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:UnitDivision rdf:about="&om;gramPerday"/>
+          <om:UnitDivision rdf:about="&om;gramPerDay"/>
           <om:UnitDivision rdf:about="&om;kilogramPerSecond-Time"/>
-          <om:UnitDivision rdf:about="&om;milligramPerday"/>
+          <om:UnitDivision rdf:about="&om;milligramPerDay"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -15815,13 +15991,13 @@
     <hasTerm2 rdf:resource="&om;second-TimeToThePower-2"/>
   </om:UnitMultiplication>
 
-  <!-- Gram Per Joule Ontology -->
+  <!-- Mass Per Energy Unit Ontology -->
 
   <om:UnitDivision rdf:about="&om;gramPerJoule">
     <rdfs:label xml:lang="en">gram per joule</rdfs:label>
     <rdfs:label xml:lang="nl">gram per joule</rdfs:label>
-    <rdfs:comment xml:lang="en">Gram per joule is a unit of energy consumption.</rdfs:comment>
-    <om:longcomment>Gram per joule is a unit of energy consumption defined as gram divided by joule. Gram per joule is a derived unit in the International System of Units.</om:longcomment>
+    <rdfs:comment xml:lang="en">Gram per joule is a unit of mass per energy.</rdfs:comment>
+    <om:longcomment>Gram per joule is a unit of mass per energy defined as gram divided by joule. Gram per joule is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>g/J</om:symbol>
     <om:alternativeSymbol>g J-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·J-1</om:alternativeSymbol>
@@ -15829,19 +16005,59 @@
     <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
 
-  <!-- Kilogram Per Gigajoule Ontology -->
-
   <om:UnitDivision rdf:about="&om;kilogramPerGigajoule">
-    <rdfs:label xml:lang="en">kikogram per gigajoule</rdfs:label>
+    <rdfs:label xml:lang="en">kilogram per gigajoule</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per gigajoule</rdfs:label>
-    <rdfs:comment xml:lang="en">Kilogram per gigajoule is a unit of energy consumption.</rdfs:comment>
-    <om:longcomment>Kilogram per gigajoule is a unit of energy consumption defined as kilogram divided by gigajoule. Kilogram per gigajoule is a derived unit in the International System of Units.</om:longcomment>
+    <rdfs:comment xml:lang="en">Kilogram per gigajoule is a unit of mass per energy.</rdfs:comment>
+    <om:longcomment>Kilogram per gigajoule is a unit of mass per energy defined as kilogram divided by gigajoule. Kilogram per gigajoule is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>kg/GJ</om:symbol>
     <om:alternativeSymbol>kg GJ-1</om:alternativeSymbol>
     <om:alternativeSymbol>kg·GJ-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilogram"/>
     <om:hasDenominator rdf:resource="&om;gigajoule"/>
   </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;microgramPerJoule">
+    <rdfs:label xml:lang="en">microgram per joule</rdfs:label>
+    <rdfs:label xml:lang="nl">microgram per joule</rdfs:label>
+    <!-- <rdfs:comment xml:lang="en">Microgram per joule is a unit of mass per energy.</rdfs:comment> -->
+    <!-- <om:longcomment>Microgram per joule is a unit of mass per energy defined as microgram divided by joule. Microgram per joule is a derived unit in the International System of Units.</om:longcomment> -->
+    <om:symbol>mg/J</om:symbol>
+    <om:alternativeSymbol>mg J-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mg·J-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;microgram"/>
+    <om:hasDenominator rdf:resource="&om;joule"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;MassPerEnergyUnit">
+    <rdfs:label xml:lang="en">mass per energy unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;gramPerJoule"/>
+          <om:UnitDivision rdf:about="&om;kilogramPerGigaJoule"/>
+          <om:UnitDivision rdf:about="&om;microgramPerJoule"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;MassPerEnergy">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;MassPerEnergyUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
 
   <!-- Gram Per Metre Ontology -->
 
@@ -16177,20 +16393,6 @@
     <om:alternativeSymbol>mg·m-2·s-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;squareMetreSecond-Time"/>
-  </om:UnitDivision>
-
-  <!-- Microgram Per Joule Ontology -->
-
-  <om:UnitDivision rdf:about="&om;microgramPerJoule">
-    <rdfs:label xml:lang="en">microgram per joule</rdfs:label>
-    <rdfs:label xml:lang="nl">microgram per joule</rdfs:label>
-    <!-- <rdfs:comment xml:lang="en">Microgram per joule is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Microgram per joule is a unit of  defined as microgram divided by joule. Microgram per joule is a derived unit in the International System of Units.</om:longcomment> -->
-    <om:symbol>mg/J</om:symbol>
-    <om:alternativeSymbol>mg J-1</om:alternativeSymbol>
-    <om:alternativeSymbol>mg·J-1</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;microgram"/>
-    <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
 
   <!-- Tonne Per Cubic Metre Ontology -->
@@ -19428,7 +19630,11 @@
     <rdfs:label xml:lang="en">thermodynamic temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:RatioScale rdf:about="&om;KelvinScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:RatioScale rdf:about="&om;KelvinScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19635,7 +19841,11 @@
     <rdfs:label xml:lang="en">Celsius temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;CelsiusScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;CelsiusScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19720,7 +19930,11 @@
     <rdfs:label xml:lang="en">Fahrenheit temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19728,7 +19942,11 @@
     <rdfs:label xml:lang="en">Rankine temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:RatioScale rdf:about="&om;RankineScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:RatioScale rdf:about="&om;RankineScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -19736,7 +19954,11 @@
     <rdfs:label xml:lang="en">Réaumur temperature scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Scale"/> 
     <owl:equivalentClass>
-      <om:IntervalScale rdf:about="&om;ReaumurScale"/>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;ReaumurScale"/>
+        </owl:oneOf>
+      </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
@@ -28009,6 +28231,7 @@
   <!-- Mole Per Metre Multiples and Submultiples Ontology -->
   <!-- Kelvin Mole Ontology -->
   <!-- Micromole Per Second Gram Ontology -->
+  <!-- Nanomole Per Hour Millilitre Ontology -->
 
   <!-- Mole Ontology -->
 
@@ -30205,6 +30428,27 @@
     <om:alternativeSymbol>μmol·s-1·g-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;micromolePerSecond-Time"/>
     <om:hasDenominator rdf:resource="&om;gram"/>
+  </om:UnitDivision>
+  <!-- Micromole Per Second Gram Ontology -->
+
+  <!-- Nanomole Per Hour Millilitre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;nanomolePerHour">
+    <rdfs:label xml:lang="en">nanomole per hour</rdfs:label>
+    <om:symbol>nmol/h</om:symbol>
+    <om:alternativeSymbol>nmol h-1</om:alternativeSymbol>
+    <om:alternativeSymbol>nmol·h-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;nanomole"/>
+    <om:hasDenominator rdf:resource="&om;hour"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;nanomolePerHourMillilitre">
+    <rdfs:label xml:lang="en">nanomole per hour millilitre</rdfs:label>
+    <om:symbol>nmol/(h ml)</om:symbol>
+    <om:alternativeSymbol>nmol h-1 ml-1</om:alternativeSymbol>
+    <om:alternativeSymbol>nmol·h-1·ml-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;nanomolePerHour"/>
+    <om:hasDenominator rdf:resource="&om;millilitre"/>
   </om:UnitDivision>
 
   <!-- Dimension Ontologies -->
@@ -32717,6 +32961,7 @@
     <om:usesUnit rdf:resource="&om;coulombPerKilogram"/>
     <om:usesUnit rdf:resource="&om;röntgen"/>
     <om:usesUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:usesUnit rdf:resource="&om;milligrayPerSecond-Time"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -34233,8 +34478,20 @@
     <om:hasDimension rdf:resource="&om;absorbedDoseRate-Dimension"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;milligrayPerSecond-Time">
+    <rdfs:label xml:lang="en">milligray per second</rdfs:label>
+    <rdfs:label xml:lang="nl">milligray per seconde</rdfs:label>
+    <om:symbol>mGy/s</om:symbol>
+    <om:alternativeSymbol>mGy s-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mGy·s-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;milligray"/>
+    <om:hasDenominator rdf:resource="&om;second-Time"/>
+    <om:hasDimension rdf:resource="&om;absorbedDoseRate-Dimension"/>
+  </om:UnitDivision>
+
   <owl:Class rdf:about="&om;AbsorbedDoseRate">
     <om:commonlyHasUnit rdf:resource="&om;grayPerSecond-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;milligrayPerSecond-Time"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;AbsorbedDoseRateUnit">
@@ -34244,6 +34501,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;grayPerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;milligrayPerSecond-Time"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -38498,6 +38756,174 @@
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;bel"/>
   </om:PrefixedUnit>
 
+  <!-- Sustainability Ontology -->
+
+  <!-- Contents -->
+
+  <!-- Quantity Ontologies -->
+  <!-- Unit of Measure Ontologies -->
+
+  <om:ApplicationArea rdf:about="&om;sustainability">
+    <rdfs:label xml:lang="en">sustainability</rdfs:label>
+    <rdfs:label xml:lang="nl">duurzaamheid</rdfs:label>
+    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMass"/>
+    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMassPerEnergy"/>
+    <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
+    <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentPerMegaWattHour"/>
+    <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentPerGigaWattHour"/>
+  </om:ApplicationArea>
+
+  <!-- Quantity Ontologies -->
+
+  <!-- Contents -->
+
+  <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
+  <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
+
+  <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Mass"/>
+  </owl:Class>
+
+  <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;MassPerEnergy"/>
+  </owl:Class>
+
+  <!-- Unit of Measure Ontologies -->
+
+  <!-- Contents -->
+
+  <!-- Gram of Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
+  <!-- Gram of Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
+
+  <!-- Gram of Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
+
+  <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
+    <om:symbol>gCO2eq</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;gram"/>
+  </om:Unit>
+
+  <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent</rdfs:label>
+    <om:symbol>kgCO2eq</om:symbol>
+    <om:hasPrefix rdf:resource="&om;kilo"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+  </om:PrefixedUnit>
+
+  <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
+    <om:symbol>tCO2eq</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;tonne"/>
+  </om:Unit>
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
+    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassUnit">
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;MassUnit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalent"/>
+          <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalent"/>
+          <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalent"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
+  <!-- Gram of Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
+
+  <om:UnitDivision rdf:about="&om;gramOfCarbonDioxideEquivalentPerKilowattHour">
+    <rdfs:label xml:lang="en">gram of carbon dioxide equivalent per kilowatt hour</rdfs:label>
+    <om:symbol>gCO2eq/kWh</om:symbol>
+    <om:hasNumerator rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+    <om:hasDenominator rdf:resource="&om;kilowattHour"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;kilogramOfCarbonDioxideEquivalentPerMegawattHour">
+    <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent per megawatt hour</rdfs:label>
+    <om:symbol>kgCO2eq/MWh</om:symbol>
+    <om:hasNumerator rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:hasDenominator rdf:resource="&om;megawattHour"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;tonneOfCarbonDioxideEquivalentPerGigawattHour">
+    <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent per gigawatt hour</rdfs:label>
+    <om:symbol>tCO2eq/GWh</om:symbol>
+    <om:hasNumerator rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+    <om:hasDenominator rdf:resource="&om;gigawattHour"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
+    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentPerMegaWattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentPerGigawattHour"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergyUnit">
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;MassPerEnergyUnit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
+          <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalentPerMegawattHour"/>
+          <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalentPerGigawattHour"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>  	  
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergyUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
   <!-- Economics Ontology -->
 
   <!-- Contents -->
@@ -40119,94 +40545,6 @@
     <om:usesUnit rdf:resource="&om;nauticalMile-International"/>
     <om:usesUnit rdf:resource="&om;knot-International"/>
     <om:usesUnit rdf:resource="&om;nauticalMile-InternationalPerHour"/>
-  </om:ApplicationArea>
-
-  <!-- Common Application Area Ontology -->
-
-  <om:ApplicationArea rdf:about="&om;commonApplicationArea">
-    <rdfs:label xml:lang="en">common application area</rdfs:label>
-    <rdfs:label xml:lang="nl">algemeen toepassingsgebied</rdfs:label>
-    <om:usesQuantity rdf:resource="&om;Length"/>
-    <om:usesQuantity rdf:resource="&om;Mass"/>
-    <om:usesQuantity rdf:resource="&om;Time"/>
-    <om:usesQuantity rdf:resource="&om;Temperature"/>
-    <om:usesQuantity rdf:resource="&om;Area"/>
-    <om:usesQuantity rdf:resource="&om;Volume"/>
-    <om:usesQuantity rdf:resource="&om;Speed"/>
-    <om:usesQuantity rdf:resource="&om;Frequency"/>
-    <om:usesQuantity rdf:resource="&om;Energy"/>
-    <om:usesQuantity rdf:resource="&om;Power"/>
-    <om:usesQuantity rdf:resource="&om;Force"/>
-    <om:usesQuantity rdf:resource="&om;ElectricCurrent"/>
-    <om:usesQuantity rdf:resource="&om;ElectricPotential"/>
-    <om:usesQuantity rdf:resource="&om;MassFraction"/>
-    <om:usesQuantity rdf:resource="&om;Density"/>
-    <om:usesUnit rdf:resource="&om;metre"/>
-    <om:usesUnit rdf:resource="&om;kilometre"/>
-    <om:usesUnit rdf:resource="&om;centimetre"/>
-    <om:usesUnit rdf:resource="&om;millimetre"/>
-    <om:usesUnit rdf:resource="&om;inch-International"/>
-    <om:usesUnit rdf:resource="&om;foot-International"/>
-    <om:usesUnit rdf:resource="&om;mile-Statute"/>
-    <om:usesUnit rdf:resource="&om;yard-International"/>
-    <om:usesUnit rdf:resource="&om;kilogram"/>
-    <om:usesUnit rdf:resource="&om;gram"/>
-    <om:usesUnit rdf:resource="&om;milligram"/>
-    <om:usesUnit rdf:resource="&om;poundAvoirdupois"/>
-    <om:usesUnit rdf:resource="&om;ounceAvoirdupois"/>
-    <om:usesUnit rdf:resource="&om;second-Time"/>
-    <om:usesUnit rdf:resource="&om;millisecond-Time"/>
-    <om:usesUnit rdf:resource="&om;minute-Time"/>
-    <om:usesUnit rdf:resource="&om;hour"/>
-    <om:usesUnit rdf:resource="&om;day"/>
-    <om:usesUnit rdf:resource="&om;week"/>
-    <om:usesUnit rdf:resource="&om;month"/>
-    <om:usesUnit rdf:resource="&om;year"/>
-    <om:usesUnit rdf:resource="&om;kelvin"/>
-    <om:usesUnit rdf:resource="&om;degreeCelsius"/>
-    <om:usesUnit rdf:resource="&om;degreeFahrenheit"/>
-    <om:usesUnit rdf:resource="&om;squareMetre"/>
-    <om:usesUnit rdf:resource="&om;squareCentimetre"/>
-    <om:usesUnit rdf:resource="&om;squareKilometre"/>
-    <om:usesUnit rdf:resource="&om;are"/>
-    <om:usesUnit rdf:resource="&om;hectare"/>
-    <om:usesUnit rdf:resource="&om;acre-International"/>
-    <om:usesUnit rdf:resource="&om;acre-USSurvey"/>
-    <om:usesUnit rdf:resource="&om;cubicMetre"/>
-    <om:usesUnit rdf:resource="&om;cubicCentimetre"/>
-    <om:usesUnit rdf:resource="&om;litre"/>
-    <om:usesUnit rdf:resource="&om;decilitre"/>
-    <om:usesUnit rdf:resource="&om;centilitre"/>
-    <om:usesUnit rdf:resource="&om;millilitre"/>
-    <om:usesUnit rdf:resource="&om;pint-Imperial"/>
-    <om:usesUnit rdf:resource="&om;liquidPint-US"/>
-    <om:usesUnit rdf:resource="&om;gallon-Imperial"/>
-    <om:usesUnit rdf:resource="&om;gallon-US"/>
-    <om:usesUnit rdf:resource="&om;metrePerSecond-Time"/>
-    <om:usesUnit rdf:resource="&om;kilometrePerHour"/>
-    <om:usesUnit rdf:resource="&om;mile-StatutePerHour"/>
-    <om:usesUnit rdf:resource="&om;hertz"/>
-    <om:usesUnit rdf:resource="&om;kilohertz"/>
-    <om:usesUnit rdf:resource="&om;megahertz"/>
-    <om:usesUnit rdf:resource="&om;joule"/>
-    <om:usesUnit rdf:resource="&om;kilojoule"/>
-    <om:usesUnit rdf:resource="&om;kilocalorie-Mean"/>
-    <om:usesUnit rdf:resource="&om;kilowattHour"/>
-    <om:usesUnit rdf:resource="&om;watt"/>
-    <om:usesUnit rdf:resource="&om;milliwatt"/>
-    <om:usesUnit rdf:resource="&om;kilowatt"/>
-    <om:usesUnit rdf:resource="&om;megawatt"/>
-    <om:usesUnit rdf:resource="&om;newton"/>
-    <om:usesUnit rdf:resource="&om;kilonewton"/>
-    <om:usesUnit rdf:resource="&om;pound-Force"/>
-    <om:usesUnit rdf:resource="&om;ampere"/>
-    <om:usesUnit rdf:resource="&om;milliampere"/>
-    <om:usesUnit rdf:resource="&om;volt"/>
-    <om:usesUnit rdf:resource="&om;millivolt"/>
-    <om:usesUnit rdf:resource="&om;gramPerKilogram"/>
-    <om:usesUnit rdf:resource="&om;percent"/>
-    <om:usesUnit rdf:resource="&om;gramPerLitre"/>
-    <om:usesUnit rdf:resource="&om;milligramPerLitre"/>
   </om:ApplicationArea>
 
   <!-- Food Engineering Ontology -->
@@ -42222,6 +42560,94 @@
     <om:commonlyHasUnit rdf:resource="&om;kilogram"/>
     <om:commonlyHasUnit rdf:resource="&om;tonne"/>
   </owl:Class>
+
+  <!-- Common Application Area Ontology -->
+
+  <om:ApplicationArea rdf:about="&om;commonApplicationArea">
+    <rdfs:label xml:lang="en">common application area</rdfs:label>
+    <rdfs:label xml:lang="nl">algemeen toepassingsgebied</rdfs:label>
+    <om:usesQuantity rdf:resource="&om;Length"/>
+    <om:usesQuantity rdf:resource="&om;Mass"/>
+    <om:usesQuantity rdf:resource="&om;Time"/>
+    <om:usesQuantity rdf:resource="&om;Temperature"/>
+    <om:usesQuantity rdf:resource="&om;Area"/>
+    <om:usesQuantity rdf:resource="&om;Volume"/>
+    <om:usesQuantity rdf:resource="&om;Speed"/>
+    <om:usesQuantity rdf:resource="&om;Frequency"/>
+    <om:usesQuantity rdf:resource="&om;Energy"/>
+    <om:usesQuantity rdf:resource="&om;Power"/>
+    <om:usesQuantity rdf:resource="&om;Force"/>
+    <om:usesQuantity rdf:resource="&om;ElectricCurrent"/>
+    <om:usesQuantity rdf:resource="&om;ElectricPotential"/>
+    <om:usesQuantity rdf:resource="&om;MassFraction"/>
+    <om:usesQuantity rdf:resource="&om;Density"/>
+    <om:usesUnit rdf:resource="&om;metre"/>
+    <om:usesUnit rdf:resource="&om;kilometre"/>
+    <om:usesUnit rdf:resource="&om;centimetre"/>
+    <om:usesUnit rdf:resource="&om;millimetre"/>
+    <om:usesUnit rdf:resource="&om;inch-International"/>
+    <om:usesUnit rdf:resource="&om;foot-International"/>
+    <om:usesUnit rdf:resource="&om;mile-Statute"/>
+    <om:usesUnit rdf:resource="&om;yard-International"/>
+    <om:usesUnit rdf:resource="&om;kilogram"/>
+    <om:usesUnit rdf:resource="&om;gram"/>
+    <om:usesUnit rdf:resource="&om;milligram"/>
+    <om:usesUnit rdf:resource="&om;poundAvoirdupois"/>
+    <om:usesUnit rdf:resource="&om;ounceAvoirdupois"/>
+    <om:usesUnit rdf:resource="&om;second-Time"/>
+    <om:usesUnit rdf:resource="&om;millisecond-Time"/>
+    <om:usesUnit rdf:resource="&om;minute-Time"/>
+    <om:usesUnit rdf:resource="&om;hour"/>
+    <om:usesUnit rdf:resource="&om;day"/>
+    <om:usesUnit rdf:resource="&om;week"/>
+    <om:usesUnit rdf:resource="&om;month"/>
+    <om:usesUnit rdf:resource="&om;year"/>
+    <om:usesUnit rdf:resource="&om;kelvin"/>
+    <om:usesUnit rdf:resource="&om;degreeCelsius"/>
+    <om:usesUnit rdf:resource="&om;degreeFahrenheit"/>
+    <om:usesUnit rdf:resource="&om;squareMetre"/>
+    <om:usesUnit rdf:resource="&om;squareCentimetre"/>
+    <om:usesUnit rdf:resource="&om;squareKilometre"/>
+    <om:usesUnit rdf:resource="&om;are"/>
+    <om:usesUnit rdf:resource="&om;hectare"/>
+    <om:usesUnit rdf:resource="&om;acre-International"/>
+    <om:usesUnit rdf:resource="&om;acre-USSurvey"/>
+    <om:usesUnit rdf:resource="&om;cubicMetre"/>
+    <om:usesUnit rdf:resource="&om;cubicCentimetre"/>
+    <om:usesUnit rdf:resource="&om;litre"/>
+    <om:usesUnit rdf:resource="&om;decilitre"/>
+    <om:usesUnit rdf:resource="&om;centilitre"/>
+    <om:usesUnit rdf:resource="&om;millilitre"/>
+    <om:usesUnit rdf:resource="&om;pint-Imperial"/>
+    <om:usesUnit rdf:resource="&om;liquidPint-US"/>
+    <om:usesUnit rdf:resource="&om;gallon-Imperial"/>
+    <om:usesUnit rdf:resource="&om;gallon-US"/>
+    <om:usesUnit rdf:resource="&om;metrePerSecond-Time"/>
+    <om:usesUnit rdf:resource="&om;kilometrePerHour"/>
+    <om:usesUnit rdf:resource="&om;mile-StatutePerHour"/>
+    <om:usesUnit rdf:resource="&om;hertz"/>
+    <om:usesUnit rdf:resource="&om;kilohertz"/>
+    <om:usesUnit rdf:resource="&om;megahertz"/>
+    <om:usesUnit rdf:resource="&om;joule"/>
+    <om:usesUnit rdf:resource="&om;kilojoule"/>
+    <om:usesUnit rdf:resource="&om;kilocalorie-Mean"/>
+    <om:usesUnit rdf:resource="&om;kilowattHour"/>
+    <om:usesUnit rdf:resource="&om;watt"/>
+    <om:usesUnit rdf:resource="&om;milliwatt"/>
+    <om:usesUnit rdf:resource="&om;kilowatt"/>
+    <om:usesUnit rdf:resource="&om;megawatt"/>
+    <om:usesUnit rdf:resource="&om;newton"/>
+    <om:usesUnit rdf:resource="&om;kilonewton"/>
+    <om:usesUnit rdf:resource="&om;pound-Force"/>
+    <om:usesUnit rdf:resource="&om;ampere"/>
+    <om:usesUnit rdf:resource="&om;milliampere"/>
+    <om:usesUnit rdf:resource="&om;volt"/>
+    <om:usesUnit rdf:resource="&om;millivolt"/>
+    <om:usesUnit rdf:resource="&om;gramPerKilogram"/>
+    <om:usesUnit rdf:resource="&om;percent"/>
+    <om:usesUnit rdf:resource="&om;gramPerLitre"/>
+    <om:usesUnit rdf:resource="&om;milligramPerLitre"/>
+  </om:ApplicationArea>
 
   <!-- Bibliography -->
 

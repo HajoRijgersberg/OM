@@ -50,7 +50,7 @@ The following *application areas* are supported by OM:
 
 ![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology.
+**Figure 1.** The UML diagram below shows the class structure of the OM ontology. **Correction:** the range of hasNumericalValue is not xsd:float, as indicated in the figure, but is left open to accomodate any datatype required in one's application of OM.
 
 The following triples express, for example, the diameter of an apple:
 
@@ -99,7 +99,7 @@ As an example, consider the following Table 1. and Figure 3.
 Several libs support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
-* [`om-phyton-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Phyton.
+* [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
 
 
 
@@ -115,10 +115,10 @@ Previous versions were published on the wurvoc platform.
 We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
 
-### <a name="papers"></a>Papers on OM
+### <a name="papers"></a>Literature
 
-1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287.
-2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13.
+1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287, https://doi.org/10.1016/j.aei.2010.07.008.
+2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13, https://doi.org/10.3233/SW-2012-0069.
 3. Top, J., Wigham, M., Rijgersberg, H. “Semantically Enriched Spreadsheet Tables in Science and Engineering.” *SEMAPRO 2014*.
 4. Mari Wigham, Hajo Rijgersberg, Martine de Vos, Jan Top. “Semantic Support for Tables using RDF Record Table.” *International Journal On Advances in Intelligent Systems*, **8** (1 and 2), 2015, 128-144.
 5. Jan Martin Keil, Sirko Schindler, “Comparison and Evaluation of Ontologies for Units of Measurement.” *Semantic Web*, **1**, 2018, pp. 1-19.
@@ -126,9 +126,10 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 7. Do C., Pauwels E.J. (2013) Using MathML to Represent Units of Measurement for Improved Ontology Alignment. In: Carette J., Aspinall D., Lange C., Sojka P., Windsteiger W. (eds) Intelligent Computer Mathematics. CICM 2013. Lecture Notes in Computer Science, vol 7961. Springer, Berlin, Heidelberg.
 8. Markus D. Steinberg, Sirko Schindler, Jan Martin Keil, Use Cases and Suitability Metrics for Unit Ontologies.
 9. Keil, Jan Martin (2020). ABECTO: An ABox Evaluation and Comparison Tool for Ontologies. In: ESWC 2020 Satellite Events: Posters and Demos. DOI:10.1007/978-3-030-62327-2_24.
+10. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
 
 
-### <a name="uses-of-om"></a>Papers and references to uses and submissions of OM (not exhaustive and under construction)
+### <a name="uses-of-om"></a>Best practices of OM (not exhaustive and under construction) 
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -151,9 +152,12 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 19. Megan Katsumi, Mark Fox, iCity Ontology Initial Release, University of Toronto, 2017.
 20. Paola Espinoza-Arias, María Poveda-Villalón, Raúl García-Castro, Oscar Corcho, Ontological Representation of Smart City Data: From Devices to Cities, Appl. Sci. 9, 32, 2019.
 21. Bhoomin Pandya, Units of Measurement Ontology Added to LOV, 2020, https://medium.com/@conceptminers/units-of-measurement-of-ontology-added-to-lov-21c7efc92a62.
+22. A. P. Vedurmudi, M. Gruber, S. Eichstädt and A. Paschke, "Semantics in Sensor Networks: An Ontology for Dynamic Transfer Behavior in Calibrated Sensors," 2021 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2021, pp. 358-363, doi: 10.1109/MetroInd4.0IoT51437.2021.9488554. https://ieeexplore.ieee.org/document/9488554.
+23. B. D. Hall, M. Kuster, Representing quantities and units in digital systems, submitted to Measurement: Sensors, 2022.
+24. Agneta Ghose, Matteo Lissandrini, Emil Riis Hansen, Bo Pedersen Weidema, A core ontology for modeling life cycle sustainability assessment on the Semantic Web, Journal of Industrial Ecology, 26, 2022, 731–747.
 
 
-### <a name="references-to-om"></a>References to OM in general (not exhaustive and under construction)
+### <a name="references-to-om"></a>Discussing OM in general (not exhaustive and under construction)
 
 1. Loli Burgueño, Tanja Mayerhofer, Manuel Wimmer, Antonio Vallecillo, “Specifying quantities in software models.” *Information and Software Technology*, **113**, 2019, pp. 82-97.
 2. Lavdim Halilaj, An Approach for Collaborative Ontology Development in Distributed and Heterogeneous Environments, PhD thesis, University of Bonn, 2019.
