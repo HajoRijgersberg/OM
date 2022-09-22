@@ -29525,6 +29525,18 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- gram Per Mole Ontology -->
+
+  <om:UnitDivision rdf:about="&om;gramPerMole">
+    <rdfs:label xml:lang="en">gram per mole</rdfs:label>
+    <rdfs:label xml:lang="nl">gram per mol</rdfs:label>
+    <om:symbol>g/mol</om:symbol>
+    <om:alternativeSymbol>g mol-1</om:alternativeSymbol>
+    <om:alternativeSymbol>g·mol-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;gram"/>
+    <om:hasDenominator rdf:resource="&om;mole"/>
+  </om:UnitDivision>
+
   <!-- Kilogram Per Mole Ontology -->
 
   <om:UnitDivision rdf:about="&om;kilogramPerMole">
@@ -29539,6 +29551,7 @@
 
   <owl:Class rdf:about="&om;MolarMass">
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerMole"/>
+    <om:commonlyHasUnit rdf:resource="&om;gramPerMole"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;MolarMassUnit">
@@ -29548,6 +29561,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;kilogramPerMole"/>
+          <om:UnitDivision rdf:about="&om;gramPerMole"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
