@@ -15490,6 +15490,17 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- millilitre Per Minute Ontology -->
+  <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time">
+    <rdfs:label xml:lang="en">millilitre per minute</rdfs:label>
+    <om:symbol>ml/min</om:symbol>
+    <om:alternativeSymbol>ml min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>ml·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;millilitre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+    <om:hasDimension rdf:resource="&om;volumetricFlowRate-Dimension"/>
+  </om:UnitDivision>
+
   <!-- Cubic Metre Per Second Ontology -->
 
   <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time">
@@ -15505,6 +15516,7 @@
 
   <owl:Class rdf:about="&om;VolumetricFlowRate">
     <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerSecond-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;millilitrePerMinute-Time"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;VolumetricFlowRateUnit">
@@ -15516,6 +15528,7 @@
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
+          <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerDay"/>
         </owl:oneOf>
@@ -29525,6 +29538,18 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- gram Per Mole Ontology -->
+
+  <om:UnitDivision rdf:about="&om;gramPerMole">
+    <rdfs:label xml:lang="en">gram per mole</rdfs:label>
+    <rdfs:label xml:lang="nl">gram per mol</rdfs:label>
+    <om:symbol>g/mol</om:symbol>
+    <om:alternativeSymbol>g mol-1</om:alternativeSymbol>
+    <om:alternativeSymbol>g·mol-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;gram"/>
+    <om:hasDenominator rdf:resource="&om;mole"/>
+  </om:UnitDivision>
+
   <!-- Kilogram Per Mole Ontology -->
 
   <om:UnitDivision rdf:about="&om;kilogramPerMole">
@@ -29539,6 +29564,7 @@
 
   <owl:Class rdf:about="&om;MolarMass">
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerMole"/>
+    <om:commonlyHasUnit rdf:resource="&om;gramPerMole"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;MolarMassUnit">
@@ -29548,6 +29574,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;kilogramPerMole"/>
+          <om:UnitDivision rdf:about="&om;gramPerMole"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -37158,6 +37185,23 @@
     <hasTerm2 rdf:resource="&om;cubicKiloparsec"/>
   </om:UnitMultiplication>
 
+  <om:Unit rdf:about="&om;milliAbsorbanceUnit">
+    <rdfs:label xml:lang="en">milli absorbance unit</rdfs:label>
+    <rdfs:comment xml:lang="en">The mAU is the milli-absorbance unit, or 0.001 absorbance units (AU), used to measure absorbance. [https://en.wikipedia.org/wiki/MAU]</rdfs:comment>
+    <om:symbol>mAU</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;dimensionOne"/>
+  </om:Unit>
+
+  <om:UnitMultiplication rdf:about="&om;milliAbsorbanceUnitMinute-Time">
+    <rdfs:label xml:lang="en">milli absorbance unit minute</rdfs:label>
+    <rdfs:comment xml:lang="en">The peak area indicating a potential chemical species from a chromatogram reading. As it is a product, it has the unit of milli absorbance unit multiplies minute.</rdfs:comment>
+    <om:symbol>mAU min</om:symbol>
+    <om:alternativeSymbol>mAU·min</om:alternativeSymbol>
+    <hasTerm1 rdf:resource="&om;milliAbsorbanceUnit"/>
+    <hasTerm2 rdf:resource="&om;minute-Time"/>
+  </om:UnitMultiplication>
+
   <!-- Solar Mass Per Gigayear Cubic Parsec Ontology -->
 
   <om:UnitDivision rdf:about="&om;solarMassPerGigayearCubicParsec">
@@ -38656,7 +38700,7 @@
      <om:hasDenominator rdf:resource="&om;year"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_litre">
+  <om:UnitDivision rdf:about="&om;poundSterlingPerLitre">
      <rdfs:label xml:lang="en">pound sterling per litre</rdfs:label>
      <om:symbol>£/L</om:symbol>
      <om:alternativeSymbol>£ L-1</om:alternativeSymbol>
@@ -38672,7 +38716,7 @@
      <om:hasDenominator rdf:resource="&om;squareMetre"/>
   </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_litre_per_minute">
+  <om:UnitDivision rdf:about="&om;kilogramPerLitrePerMinute-Time">
      <rdfs:label xml:lang="en">kilogram per litre per minute</rdfs:label>
      <om:symbol>kg/L/min</om:symbol>
      <om:alternativeSymbol>kg L-1 min-1</om:alternativeSymbol>
