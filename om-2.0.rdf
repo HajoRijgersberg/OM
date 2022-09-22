@@ -37158,7 +37158,7 @@
     <hasTerm2 rdf:resource="&om;cubicKiloparsec"/>
   </om:UnitMultiplication>
 
-  <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit">
+  <om:Unit rdf:about="&om;milliAbsorbanceUnit">
     <rdfs:label xml:lang="en">milli absorbance unit</rdfs:label>
     <rdfs:comment xml:lang="en">The mAU is the milli-absorbance unit, or 0.001 absorbance units (AU), used to measure absorbance. [https://en.wikipedia.org/wiki/MAU]</rdfs:comment>
     <om:symbol>mAU</om:symbol>
@@ -37166,12 +37166,12 @@
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
 
-  <om:UnitMultiplication rdf:about="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit_multiplies_minute">
-    <rdfs:label xml:lang="en">milli absorbance unit multiplies minute</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;milliAbsorbanceUnitMinute-Time">
+    <rdfs:label xml:lang="en">milli absorbance unit minute</rdfs:label>
     <rdfs:comment xml:lang="en">The peak area indicating a potential chemical species from a chromatogram reading. As it is a product, it has the unit of milli absorbance unit multiplies minute.</rdfs:comment>
     <om:symbol>mAU min</om:symbol>
     <om:alternativeSymbol>mAU·min</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="http://theworldavatar.com/resource/ontouom/milli_absorbance_unit"/>
+    <hasTerm1 rdf:resource="&om;milliAbsorbanceUnit"/>
     <hasTerm2 rdf:resource="&om;minute-Time"/>
   </om:UnitMultiplication>
 
@@ -38673,7 +38673,7 @@
      <om:hasDenominator rdf:resource="&om;year"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_litre">
+  <om:UnitDivision rdf:about="&om;poundSterlingPerLitre">
      <rdfs:label xml:lang="en">pound sterling per litre</rdfs:label>
      <om:symbol>£/L</om:symbol>
      <om:alternativeSymbol>£ L-1</om:alternativeSymbol>
@@ -38689,7 +38689,7 @@
      <om:hasDenominator rdf:resource="&om;squareMetre"/>
   </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_litre_per_minute">
+  <om:UnitDivision rdf:about="&om;kilogramPerLitrePerMinute-Time">
      <rdfs:label xml:lang="en">kilogram per litre per minute</rdfs:label>
      <om:symbol>kg/L/min</om:symbol>
      <om:alternativeSymbol>kg L-1 min-1</om:alternativeSymbol>
