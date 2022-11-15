@@ -39322,6 +39322,16 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- Pound Sterling Per Kilogram Ontology -->
+  <om:UnitDivision rdf:about="&om;poundSterlingPerKilogram">
+    <rdfs:label xml:lang="en">pound sterling per kilogram</rdfs:label>
+    <om:symbol>£/kg</om:symbol>
+    <om:alternativeSymbol>£ kg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>£·kg-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;poundSterling"/>
+    <om:hasDenominator rdf:resource="&om;kilogram"/>
+  </om:UnitDivision>
+
   <!-- Euro Per Tonne Ontology -->
 
   <om:UnitDivision rdf:about="&om;euroPerTonne">
@@ -39339,11 +39349,13 @@
   <owl:Class rdf:about="&om;SpecificAmountOfMoney">
     <om:commonlyHasUnit rdf:resource="&om;euroPerTonne"/>
     <om:commonlyHasUnit rdf:resource="&om;megaeuroPerMegatonne"/>
+    <om:commonlyHasUnit rdf:resource="&om;poundSterlingPerKilogram"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;SpecificCost">
     <om:commonlyHasUnit rdf:resource="&om;euroPerTonne"/>
     <om:commonlyHasUnit rdf:resource="&om;megaeuroPerMegatonne"/>
+    <om:commonlyHasUnit rdf:resource="&om;poundSterlingPerKilogram"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;SpecificAmountOfMoneyUnit">
@@ -39354,6 +39366,7 @@
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;euroPerTonne"/>
           <om:UnitDivision rdf:about="&om;megaeuroPerMegatonne"/>
+          <om:UnitDivision rdf:about="&om;poundSterlingPerKilogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
