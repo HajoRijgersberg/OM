@@ -70,7 +70,7 @@ The RDF structure for this example shows as follows:
 
 ![Example: Apple size](images/OMAppleExample.png)
 
-**Figure 2.** An RDF diagram representing the size of an apple as 10 cm.
+**Figure 2.** An RDF diagram representing the size of an apple as 10 cm. (The arrow for property om:hasNumericalValue should be reversed.)
 
 Please not that:
 
