@@ -13744,9 +13744,9 @@
 <!--    <rdfs:label xml:lang="zh">千瓦·時</rdfs:label> -->
     <om:alternativeLabel xml:lang="en">kilowatt-hour</om:alternativeLabel>
     <om:alternativeLabel xml:lang="en">kilowatthour</om:alternativeLabel>
-    <om:symbol>kW h</om:symbol>
+    <om:symbol>kWh</om:symbol>
     <om:alternativeSymbol>kW·h</om:alternativeSymbol>
-    <om:alternativeSymbol>kWh</om:alternativeSymbol>
+    <om:alternativeSymbol>kW h</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;kilowatt"/>
     <hasTerm2 rdf:resource="&om;hour"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
