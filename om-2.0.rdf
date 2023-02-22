@@ -39014,6 +39014,7 @@
     <rdfs:label xml:lang="en">euro</rdfs:label>
     <rdfs:label xml:lang="zh">欧元</rdfs:label>
     <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:symbol>€</om:symbol>
   </om:Unit>
 
   <om:PrefixedUnit rdf:about="&om;megaeuro">
