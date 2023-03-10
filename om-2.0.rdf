@@ -6153,6 +6153,7 @@
   <!-- Impulse Upper Ontology -->
   <!-- Area Density Upper Ontology -->
   <!-- Area Density Rate Upper Ontology -->
+  <!-- Sound Pressure Level Upper Ontology-->
 
   <!-- Length Subclass Upper Ontology -->
 
@@ -6938,6 +6939,15 @@
     <rdfs:label xml:lang="en">area density rate</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
+
+  <!--Sound Pressure Level Upper Ontology -->
+
+  <owl:Class rdf:about="&om;SoundPressureLevel">
+    <rdfs:label xml:lang="en">sound pressure level</rdfs:label>
+    <rdfs:comment xml:lang="en">Sound pressure level is the pressure level of a sound usually measured in decibels (dB).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
 
   <!-- Unit of Measure Ontologies -->
 
@@ -18259,6 +18269,7 @@
   <!-- Reciprocal Degree Celsius Day Ontology -->
   <!-- Cubic Metre Kelvin Ontology -->
   <!-- Joule Per Cubic Metre Kelvin Ontology -->
+  <!-- Decibels Relative to Full Scale Ontology -->
 
   <!-- Kelvin Ontology -->
 
@@ -19456,6 +19467,43 @@
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
               <owl:Class rdf:about="&om;VolumetricHeatCapacityUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
+  <!-- Decibels Relative to Full Scale Ontology -->
+  <om:Unit rdf:about="&om;decibelsRelativeToFullScale">
+    <rdfs:label xml:lang="en">dBFS</rdfs:label>
+    <rdfs:comment xml:lang="en">decibels relative to full scale</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:symbol>dBFS</om:symbol>
+  </om:Unit>
+
+  <owl:Class rdf:about="&om;SoundPressureLevelUnit">
+    <rdfs:label xml:lang="en">sound pressure level unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:SingularUnit rdf:about="&om;decibelsRelativeToFullScale"/>
+          <om:PrefixedUnit rdf:about="&om;decibel"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SoundPressureLevel">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;SoundPressureLevelUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>	
         </owl:allValuesFrom>
