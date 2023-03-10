@@ -19475,11 +19475,12 @@
   </owl:Class>
 
   <!-- Decibels Relative to Full Scale Ontology -->
-  <om:SingularUnit rdf:about="&om;decibelsRelativeToFullScale">
+  <om:Unit rdf:about="&om;decibelsRelativeToFullScale">
     <rdfs:label xml:lang="en">dBFS</rdfs:label>
-    <rdfs:label xml:lang="nl">decibels relative to full scale</rdfs:label>
+    <rdfs:comment xml:lang="en">decibels relative to full scale</rdfs:comment>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:symbol>dBFS</om:symbol>
-  </om:SingularUnit>
+  </om:Unit>
 
   <owl:Class rdf:about="&om;SoundPressureLevelUnit">
     <rdfs:label xml:lang="en">sound pressure level unit</rdfs:label>
