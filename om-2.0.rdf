@@ -5168,6 +5168,8 @@
     <om:hasDerivedUnit rdf:resource="&om;watt"/>
     <om:hasDerivedUnit rdf:resource="&om;coulomb"/>
     <om:hasDerivedUnit rdf:resource="&om;volt"/>
+    <om:hasDerivedUnit rdf:resource="&om;voltampere"/>
+    <om:hasDerivedUnit rdf:resource="&om;voltamperereactive"/>
     <om:hasDerivedUnit rdf:resource="&om;farad"/>
     <om:hasDerivedUnit rdf:resource="&om;ohm"/>
     <om:hasDerivedUnit rdf:resource="&om;siemens"/>
@@ -5616,6 +5618,8 @@
     <om:hasDerivedUnit rdf:resource="&om;decavolt"/>
     <om:hasDerivedUnit rdf:resource="&om;hectovolt"/>
     <om:hasDerivedUnit rdf:resource="&om;kilovolt"/>
+    <om:hasDerivedUnit rdf:resource="&om;kilovoltampere"/>
+    <om:hasDerivedUnit rdf:resource="&om;kilovoltamperereactive"/>
     <om:hasDerivedUnit rdf:resource="&om;megavolt"/>
     <om:hasDerivedUnit rdf:resource="&om;gigavolt"/>
     <om:hasDerivedUnit rdf:resource="&om;teravolt"/>
@@ -5910,6 +5914,8 @@
     <hasDerivedUnit rdf:resource="&om;watt"/>
     <hasDerivedUnit rdf:resource="&om;coulomb"/>
     <hasDerivedUnit rdf:resource="&om;volt"/>
+    <hasDerivedUnit rdf:resource="&om;voltampere"/>
+    <hasDerivedUnit rdf:resource="&om;voltamperereactive"/>
     <hasDerivedUnit rdf:resource="&om;farad"/>
     <hasDerivedUnit rdf:resource="&om;ohm"/>
     <hasDerivedUnit rdf:resource="&om;henry"/>
@@ -20421,6 +20427,8 @@
     <om:usesUnit rdf:resource="&om;statcoulomb"/>
     <om:usesUnit rdf:resource="&om;wattPerAmpere"/>
     <om:usesUnit rdf:resource="&om;volt"/>
+    <om:usesUnit rdf:resource="&om;voltampere"/>
+    <om:usesUnit rdf:resource="&om;voltamperereactive"/>
     <om:usesUnit rdf:resource="&om;attovolt"/>
     <om:usesUnit rdf:resource="&om;centivolt"/>
     <om:usesUnit rdf:resource="&om;decavolt"/>
@@ -20430,6 +20438,8 @@
     <om:usesUnit rdf:resource="&om;gigavolt"/>
     <om:usesUnit rdf:resource="&om;hectovolt"/>
     <om:usesUnit rdf:resource="&om;kilovolt"/>
+    <om:usesUnit rdf:resource="&om;kilovoltampere"/>
+    <om:usesUnit rdf:resource="&om;kilovoltamperereactive"/>
     <om:usesUnit rdf:resource="&om;megavolt"/>
     <om:usesUnit rdf:resource="&om;microvolt"/>
     <om:usesUnit rdf:resource="&om;millivolt"/>
@@ -21838,6 +21848,8 @@
               <om:SingularUnit rdf:about="&om;abvolt"/>
               <om:SingularUnit rdf:about="&om;statvolt"/>
               <om:SingularUnit rdf:about="&om;volt"/>
+              <om:SingularUnit rdf:about="&om;voltampere"/>
+              <om:SingularUnit rdf:about="&om;voltamperereactive"/>
               <om:UnitDivision rdf:about="&om;wattPerAmpere"/>
             </owl:oneOf>
           </owl:Class>
@@ -21887,6 +21899,53 @@
   <owl:Class rdf:about="&om;PotentialDifference">
     <om:commonlyHasUnit rdf:resource="&om;volt"/>
   </owl:Class>
+
+  <!-- Volt-Ampere Ontology -->
+    <om:Unit rdf:about="&om;voltampere">
+    <rdfs:label xml:lang="en">volt-ampere</rdfs:label>
+    <rdfs:label xml:lang="nl">volt-ampere</rdfs:label>
+    <rdfs:comment xml:lang="en">Volt-ampere (VA) is a unit of apparent power in a power system. It represents the total power in an AC circuit, including both the real power (measured in watts) and the reactive power (measured in VARs or kilovolt-ampere reactive).</rdfs:comment>
+    <om:longcomment>VA is commonly used to specify the power rating of electrical equipment such as transformers, generators, and uninterruptible power supplies (UPS). The VA rating indicates the maximum amount of power that the equipment can handle, based on the voltage and current ratings.</om:longcomment>
+    <om:symbol>VA</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
+  </om:Unit>
+
+  <owl:Class rdf:about="&om;ElectricPotential">
+    <om:commonlyHasUnit rdf:resource="&om;voltampere"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;ElectromotiveForce">
+    <om:commonlyHasUnit rdf:resource="&om;voltampere"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;PotentialDifference">
+    <om:commonlyHasUnit rdf:resource="&om;voltampere"/>
+  </owl:Class>
+
+    <!-- Volt-Ampere Reactive Ontology -->
+    <om:Unit rdf:about="&om;voltamperereactive">
+    <rdfs:label xml:lang="en">volt-ampere reactive</rdfs:label>
+    <rdfs:label xml:lang="nl">volt-ampere reactive</rdfs:label>
+    <rdfs:comment xml:lang="en">Volt-Ampere Reactive (VAR) is a unit of reactive power in a power system. Reactive power is the power associated with the magnetic and electric fields that are produced in a circuit when voltage and current are out of phase.</rdfs:comment>
+    <om:longcomment>Reactive power is an important parameter in power system analysis, as it affects the voltage regulation and power factor of the system. Electrical equipment such as motors, transformers, and capacitors can produce or consume reactive power, and the proper management of reactive power is important for maintaining the stability and efficiency of the power system.</om:longcomment>
+    <om:symbol>VAR</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
+  </om:Unit>
+
+  <owl:Class rdf:about="&om;ElectricPotential">
+    <om:commonlyHasUnit rdf:resource="&om;voltamperereactive"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;ElectromotiveForce">
+    <om:commonlyHasUnit rdf:resource="&om;voltamperereactive"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;PotentialDifference">
+    <om:commonlyHasUnit rdf:resource="&om;voltamperereactive"/>
+  </owl:Class>
+
 
   <!-- Volt Multiples and Submultiples Ontology -->
 
@@ -22070,6 +22129,26 @@
     <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
   </om:PrefixedUnit>
 
+ <!-- Volt-Ampere Multiples and Submultiples Ontology -->
+  <om:PrefixedUnit rdf:about="&om;kilovoltampere">
+    <rdfs:label xml:lang="en">kilovolt-ampere</rdfs:label>
+    <rdfs:label xml:lang="nl">kilovolt-ampere</rdfs:label>
+    <om:symbol>kVA</om:symbol>
+    <om:hasPrefix rdf:resource="&om;kilo"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltampere"/>
+    <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
+  </om:PrefixedUnit>
+
+  <!-- Volt-Ampere Reactive Multiples and Submultiples Ontology -->
+  <om:PrefixedUnit rdf:about="&om;kilovoltamperereactive">
+    <rdfs:label xml:lang="en">kilovolt-ampere reactive</rdfs:label>
+    <rdfs:label xml:lang="nl">kilovolt-ampere reactive</rdfs:label>
+    <om:symbol>kVAR</om:symbol>
+    <om:hasPrefix rdf:resource="&om;kilo"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltamperereactive"/>
+    <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
+  </om:PrefixedUnit>
+
   <owl:Class rdf:about="&om;PrefixedVolt">
     <rdfs:label xml:lang="en">prefixed volt</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;PrefixedUnit"/>
@@ -22107,6 +22186,8 @@
     <om:commonlyHasUnit rdf:resource="&om;gigavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;hectovolt"/>
     <om:commonlyHasUnit rdf:resource="&om;kilovolt"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltampere"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltamperereactive"/>
     <om:commonlyHasUnit rdf:resource="&om;megavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;microvolt"/>
     <om:commonlyHasUnit rdf:resource="&om;millivolt"/>
@@ -22126,6 +22207,8 @@
     <om:commonlyHasUnit rdf:resource="&om;gigavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;hectovolt"/>
     <om:commonlyHasUnit rdf:resource="&om;kilovolt"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltampere"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltamperereactive"/>
     <om:commonlyHasUnit rdf:resource="&om;megavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;microvolt"/>
     <om:commonlyHasUnit rdf:resource="&om;millivolt"/>
@@ -22145,6 +22228,8 @@
     <om:commonlyHasUnit rdf:resource="&om;gigavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;hectovolt"/>
     <om:commonlyHasUnit rdf:resource="&om;kilovolt"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltampere"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilovoltamperereactive"/>
     <om:commonlyHasUnit rdf:resource="&om;megavolt"/>
     <om:commonlyHasUnit rdf:resource="&om;microvolt"/>
     <om:commonlyHasUnit rdf:resource="&om;millivolt"/>
@@ -42704,6 +42789,7 @@
     <om:usesUnit rdf:resource="&om;ampere"/>
     <om:usesUnit rdf:resource="&om;milliampere"/>
     <om:usesUnit rdf:resource="&om;volt"/>
+    <om:usesUnit rdf:resource="&om;voltampere"/>
     <om:usesUnit rdf:resource="&om;millivolt"/>
     <om:usesUnit rdf:resource="&om;gramPerKilogram"/>
     <om:usesUnit rdf:resource="&om;percent"/>
