@@ -21487,6 +21487,7 @@
     <om:longcomment>VA is commonly used to specify the power rating of electrical equipment such as transformers, generators, and uninterruptible power supplies (UPS). The VA rating indicates the maximum amount of power that the equipment can handle, based on the voltage and current ratings.</om:longcomment>
     <om:symbol>VA</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
 
   <!-- Volt-Ampere Multiples and Submultiples Ontology -->
@@ -21498,6 +21499,7 @@
     <om:symbol>kVA</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltampere"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:PrefixedUnit>
 
   <om:PrefixedUnit rdf:about="&om;megavoltampere">
@@ -21507,6 +21509,7 @@
     <om:symbol>mVA</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltampere"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:PrefixedUnit>
 
   <owl:Class rdf:about="&om;ApparentPower">
@@ -21557,7 +21560,7 @@
     <om:longcomment>Reactive power is an important parameter in power system analysis, as it affects the voltage regulation and power factor of the system. Electrical equipment such as motors, transformers, and capacitors can produce or consume reactive power, and the proper management of reactive power is important for maintaining the stability and efficiency of the power system.</om:longcomment>
     <om:symbol>VAR</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <om:hasDimension rdf:resource="&om;reactivePower-Dimension"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
 
   <!-- Volt-Ampere Reactive Multiples and Submultiples Ontology -->
@@ -21569,7 +21572,7 @@
     <om:symbol>kVAR</om:symbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltamperereactive"/>
-    <om:hasDimension rdf:resource="&om;reactivePower-Dimension"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:PrefixedUnit>
 
   <om:PrefixedUnit rdf:about="&om;megavoltamperereactive">
@@ -21579,7 +21582,7 @@
     <om:symbol>mVAR</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltamperereactive"/>
-    <om:hasDimension rdf:resource="&om;reactivePower-Dimension"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:PrefixedUnit>
 
   <owl:Class rdf:about="&om;ReactivePower">
