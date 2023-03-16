@@ -21506,7 +21506,7 @@
     <rdfs:label xml:lang="en">megavolt-ampere</rdfs:label>
     <rdfs:label xml:lang="nl">megavolt-ampere</rdfs:label>
     <rdfs:comment xml:lang="en">The megavolt-ampere is a unit of apparent power defined as 1.0e6 volt-ampere.</rdfs:comment>
-    <om:symbol>mVA</om:symbol>
+    <om:symbol>MVA</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltampere"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
@@ -21579,7 +21579,7 @@
     <rdfs:label xml:lang="en">megavolt-ampere reactive</rdfs:label>
     <rdfs:label xml:lang="nl">megavolt-ampere reactive</rdfs:label>
     <rdfs:comment xml:lang="en">The megavolt-ampere reactive is a unit of electric charge defined as 1.0e6 volt-ampere reactive.</rdfs:comment>
-    <om:symbol>mVAR</om:symbol>
+    <om:symbol>MVAR</om:symbol>
     <om:hasPrefix rdf:resource="&om;mega"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;voltamperereactive"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
