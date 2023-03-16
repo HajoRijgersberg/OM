@@ -5152,6 +5152,7 @@
     <om:hasDerivedUnit rdf:resource="&om;milligramPerCubicmetre"/>
     <om:hasDerivedUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
+    <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;cubicMetrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;litrePerKilogram"/>
@@ -10090,6 +10091,7 @@
               <om:UnitDivision rdf:about="&om;milligramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;microgramPerCubicMetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
               <om:UnitDivision rdf:about="&om;gramPerLitre"/>
@@ -10174,6 +10176,19 @@
     <om:hasDimension rdf:resource="&om;density-Dimension"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;microgramPerCubicMetre">
+    <rdfs:label xml:lang="en">microgram per cubic metre</rdfs:label>
+    <rdfs:label xml:lang="nl">microgram per kubieke meter</rdfs:label>
+    <rdfs:comment xml:lang="en">Microgram per cubic metre is a unit of density defined as microgram divided by cubic metre.</rdfs:comment>
+    <om:longcomment>Microgram per cubic metre is a unit of density defined as microgram divided by cubic metre. Microgram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:symbol>μg/m3</om:symbol>
+    <om:alternativeSymbol>μg m-3</om:alternativeSymbol>
+    <om:alternativeSymbol>μg·m-3</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;microgram"/>
+    <om:hasDenominator rdf:resource="&om;cubicMetre"/>
+    <om:hasDimension rdf:resource="&om;density-Dimension"/>
+  </om:UnitDivision>
+
   <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre">
     <rdfs:label xml:lang="en">kilogram per cubic decimetre</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per kubieke decimeter</rdfs:label>
@@ -10192,6 +10207,7 @@
     <om:commonlyHasUnit rdf:resource="&om;milligramPerCubicmetre"/>
     <om:commonlyHasUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
   </owl:Class>
 
@@ -28146,8 +28162,21 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-    <!-- Mass of Substance Concentration Upper Ontology -->
+  <!-- Mass of Substance Concentration Upper Ontology -->
 
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
+    <rdfs:label xml:lang="en">mass concentration</rdfs:label>
+    <rdfs:comment xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>C</om:symbol> 
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
+    <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
+  </owl:Class>
+
+  <!-- TODO: Remove the following node. It is obsolete. -->
   <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
     <rdfs:label xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:label>
     <om:alternativeLabel xml:lang="en">mass concentration</om:alternativeLabel>
@@ -28155,6 +28184,7 @@
     <om:symbol>C</om:symbol> 
   </owl:Class>
 
+  <!-- TODO: Remove the following node. It is obsolete. -->
   <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
     <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/microgramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/nanogramPerCubicMetre"/>
@@ -28572,6 +28602,49 @@
   </owl:Class>
 
   <!-- Mass of Substance Concentration Unit Ontology -->
+
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentrationUnit">
+    <rdfs:label xml:lang="en">mass of substance concentration unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:oneOf rdf:parseType="Collection">
+              <om:UnitDivision rdf:about="&om;microgramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;nanogramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;milligramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
+              <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
+              <om:UnitDivision rdf:about="&om;gramPerLitre"/>
+            </owl:oneOf>
+          </owl:Class>
+          <owl:Class rdf:about="&om;PrefixedMolePerLitre"/>
+          <owl:Class rdf:about="&om;MolePerPrefixedLitre"/>
+          <owl:Class rdf:about="&om;PrefixedMolePerPrefixedLitre"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;MassOfSubstanceConcentrationUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
 
   <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentrationUnit">
     <rdfs:label xml:lang="en">mass of substance concentration unit</rdfs:label>
@@ -37597,6 +37670,7 @@
     <om:commonlyHasUnit rdf:resource="&om;milligramPerCubicmetre"/>
     <om:commonlyHasUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
   </owl:Class>
 
