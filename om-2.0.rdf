@@ -10181,9 +10181,9 @@
     <rdfs:label xml:lang="nl">microgram per kubieke meter</rdfs:label>
     <rdfs:comment xml:lang="en">Microgram per cubic metre is a unit of density defined as microgram divided by cubic metre.</rdfs:comment>
     <om:longcomment>Microgram per cubic metre is a unit of density defined as microgram divided by cubic metre. Microgram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
-    <om:symbol>μg/m3</om:symbol>
-    <om:alternativeSymbol>μg m-3</om:alternativeSymbol>
-    <om:alternativeSymbol>μg·m-3</om:alternativeSymbol>
+    <om:symbol>&#xB5;g/m3</om:symbol>
+    <om:alternativeSymbol>&#xB5;g m-3</om:alternativeSymbol>
+    <om:alternativeSymbol>&#xB5;g·m-3</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;density-Dimension"/>
