@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 
   <!-- Ontology of units of Measure (OM) -->
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2022 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2023 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.38</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.39</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2022/08/04</dc:date>
+    <dc:date>2023/03/17</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -58,40 +58,6 @@
     <ombibo:reference rdf:resource="http://www.openisbn.com/isbn/9789462280618/"/>
   </owl:Ontology>
 
-  <!-- Annotations used here -->
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isPartOf"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/authorList"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/chapter"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/degree"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/edition"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn10"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn13"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/issuer"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageEnd"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageStart"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/shortTitle"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/uri"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/volume"/>
-  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
-  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-
-  <!-- classes used in annotations -->
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Chapter"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Journal"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Standard"/>
-  <owl:Class rdf:about="http://purl.org/ontology/bibo/Thesis"/>
-  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-  
   <!-- Contents -->
 
   <!-- Upper Ontology -->
@@ -207,6 +173,66 @@
 
   <owl:AnnotationProperty rdf:about="&dc;date"/>  
 
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isPartOf"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/authorList"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/chapter"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/degree"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/edition"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn10"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/isbn13"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/issuer"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageEnd"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/pageStart"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/shortTitle"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/uri"/>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/volume"/>
+
+  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+
+  <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Chapter"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Journal"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Standard"/>
+
+  <owl:Class rdf:about="http://purl.org/ontology/bibo/Thesis"/>
+
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+  
   <owl:AnnotationProperty rdf:about="&wv;logo"/>  
 
   <owl:AnnotationProperty rdf:about="&wv;illustration"/>  
