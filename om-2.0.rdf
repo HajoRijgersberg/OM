@@ -15756,6 +15756,7 @@
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerHour"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
+          <om:UnitDivision rdf:about="&om;litrePerMinute"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
           <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
