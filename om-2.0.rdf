@@ -6997,6 +6997,7 @@
   <!-- Newton Ontology -->
   <!-- Newton Multiples and Submultiples Ontology -->
   <!-- Force Unit Ontology -->
+  <!-- pound-Force Per Square Inch Ontology -->
   <!-- Newton Per Square Metre Ontology -->
   <!-- Kilogram Second To the Power -2 Ontology -->
   <!-- Pascal Ontology -->
@@ -12369,6 +12370,20 @@
     <om:commonlyHasUnit rdf:resource="&om;ton-Force-Short"/>
   </owl:Class>
 
+  <!-- pound-Force Per Square Inch Ontology -->
+
+  <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
+    <rdfs:label xml:lang="en">pound force per square inch</rdfs:label>
+    <om:symbol>psi</om:symbol>
+    <om:hasNumerator rdf:resource="&om;pound-Force"/>
+    <om:hasDenominator rdf:resource="&om;squareInch-International"/>
+    <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;Pressure">
+    <om:commonlyHasUnit rdf:resource="&om;pound-ForcePerSquareInch"/>
+  </owl:Class>
+
   <!-- Newton Per Square Metre Ontology -->
 
   <om:UnitDivision rdf:about="&om;newtonPerSquareMetre">
@@ -12408,6 +12423,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
@@ -12438,6 +12454,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
