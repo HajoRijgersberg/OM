@@ -7044,6 +7044,9 @@
   <!-- Shear Rate Unit Ontology -->
   <!-- Newton Per Metre Ontology -->
   <!-- Cubic Metre Per Second Ontology -->
+  <!-- Cubic Metre Per Hour Ontology -->
+  <!-- Cubic Metre Per Year Ontology -->
+  <!-- Litre Per Minute Ontology -->
   <!-- Litre Per Hour Ontology -->
   <!-- Cubic Metre Per Cubic Metre Ontology -->
   <!-- Cubic Millimetre Per Cubic Millimetre Ontology -->
@@ -15789,6 +15792,21 @@
 
   <owl:Class rdf:about="&om;VolumetricFlowRate">
     <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerYear"/>
+  </owl:Class>
+
+    <!-- Litre Per Minute Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerMinute">
+    <rdfs:label xml:lang="en">litre per minute</rdfs:label>
+    <om:symbol>l/min</om:symbol>
+    <om:alternativeSymbol>l min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;VolumetricFlowRate">
+    <om:commonlyHasUnit rdf:resource="&om;litrePerMinute"/>
   </owl:Class>
 
   <!-- Litre Per Hour Ontology -->
