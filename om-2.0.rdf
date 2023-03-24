@@ -12423,7 +12423,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
-              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
@@ -12454,7 +12454,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
-              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
