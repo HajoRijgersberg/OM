@@ -12373,7 +12373,7 @@
   <!-- pound-Force Per Square Inch Ontology -->
 
   <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
-    <rdfs:label xml:lang="en">pound force per square inch</rdfs:label>
+    <rdfs:label xml:lang="en">pound-force per square inch</rdfs:label>
     <om:symbol>psi</om:symbol>
     <om:hasNumerator rdf:resource="&om;pound-Force"/>
     <om:hasDenominator rdf:resource="&om;squareInch-International"/>
