@@ -12374,6 +12374,7 @@
 
   <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
     <rdfs:label xml:lang="en">pound-force per square inch</rdfs:label>
+    <rdfs:label xml:lang="nl">pondkracht per vierkante inch</rdfs:label>
     <om:symbol>psi</om:symbol>
     <om:hasNumerator rdf:resource="&om;pound-Force"/>
     <om:hasDenominator rdf:resource="&om;squareInch-International"/>
@@ -15786,6 +15787,7 @@
 
   <om:UnitDivision rdf:about="&om;cubicMetrePerHour">
     <rdfs:label xml:lang="en">cubic metre per hour</rdfs:label>
+    <rdfs:label xml:lang="nl">kubieke meter per uur</rdfs:label>
     <om:symbol>m3/h</om:symbol>
     <om:alternativeSymbol>m3 h-1</om:alternativeSymbol>
     <om:alternativeSymbol>m3·h-1</om:alternativeSymbol>
@@ -15816,6 +15818,7 @@
 
   <om:UnitDivision rdf:about="&om;litrePerMinute">
     <rdfs:label xml:lang="en">litre per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">liter per minuut</rdfs:label>
     <om:symbol>l/min</om:symbol>
     <om:alternativeSymbol>l min-1</om:alternativeSymbol>
     <om:alternativeSymbol>l·min-1</om:alternativeSymbol>
