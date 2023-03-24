@@ -15734,6 +15734,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;cubicMetrePerHour"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
           <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
@@ -15759,6 +15760,22 @@
       </owl:Restriction>     
     </rdfs:subClassOf>     
   </owl:Class>
+
+  <!-- Cubic Metre Per Hour Ontology -->
+
+  <om:UnitDivision rdf:about="&om;cubicMetrePerHour">
+    <rdfs:label xml:lang="en">cubic metre per hour</rdfs:label>
+    <om:symbol>m3/h</om:symbol>
+    <om:alternativeSymbol>m3 h-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m3·h-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;cubicMetre"/>
+    <om:hasDenominator rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;volumetricFlowRate-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;VolumetricFlowRate">
+    <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerHour"/>
+  </owl:Class>  
 
   <!-- Cubic Metre Per Year Ontology -->
 
