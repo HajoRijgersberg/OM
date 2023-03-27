@@ -6997,6 +6997,7 @@
   <!-- Newton Ontology -->
   <!-- Newton Multiples and Submultiples Ontology -->
   <!-- Force Unit Ontology -->
+  <!-- pound-Force Per Square Inch Ontology -->
   <!-- Newton Per Square Metre Ontology -->
   <!-- Kilogram Second To the Power -2 Ontology -->
   <!-- Pascal Ontology -->
@@ -7044,6 +7045,9 @@
   <!-- Shear Rate Unit Ontology -->
   <!-- Newton Per Metre Ontology -->
   <!-- Cubic Metre Per Second Ontology -->
+  <!-- Cubic Metre Per Hour Ontology -->
+  <!-- Cubic Metre Per Year Ontology -->
+  <!-- Litre Per Minute Ontology -->
   <!-- Litre Per Hour Ontology -->
   <!-- Cubic Metre Per Cubic Metre Ontology -->
   <!-- Cubic Millimetre Per Cubic Millimetre Ontology -->
@@ -12366,6 +12370,21 @@
     <om:commonlyHasUnit rdf:resource="&om;ton-Force-Short"/>
   </owl:Class>
 
+  <!-- pound-Force Per Square Inch Ontology -->
+
+  <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch">
+    <rdfs:label xml:lang="en">pound-force per square inch</rdfs:label>
+    <rdfs:label xml:lang="nl">pondkracht per vierkante inch</rdfs:label>
+    <om:symbol>psi</om:symbol>
+    <om:hasNumerator rdf:resource="&om;pound-Force"/>
+    <om:hasDenominator rdf:resource="&om;squareInch-International"/>
+    <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;Pressure">
+    <om:commonlyHasUnit rdf:resource="&om;pound-ForcePerSquareInch"/>
+  </owl:Class>
+
   <!-- Newton Per Square Metre Ontology -->
 
   <om:UnitDivision rdf:about="&om;newtonPerSquareMetre">
@@ -12405,6 +12424,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
@@ -12435,6 +12455,7 @@
               <om:PrefixedUnit rdf:about="&om;millimetreOfMercury"/>
               <om:UnitMultiplication rdf:about="&om;kilogramSecond-TimeToThePower-2ReciprocalMetre"/>
               <om:UnitDivision rdf:about="&om;newtonPerSquareMetre"/>
+              <om:UnitDivision rdf:about="&om;pound-ForcePerSquareInch"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedPascal"/>
@@ -15734,7 +15755,9 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;cubicMetrePerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;cubicMetrePerHour"/>
           <om:UnitDivision rdf:about="&om;cubicMetrePerYear"/>
+          <om:UnitDivision rdf:about="&om;litrePerMinute"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
           <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
           <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
@@ -15760,6 +15783,23 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- Cubic Metre Per Hour Ontology -->
+
+  <om:UnitDivision rdf:about="&om;cubicMetrePerHour">
+    <rdfs:label xml:lang="en">cubic metre per hour</rdfs:label>
+    <rdfs:label xml:lang="nl">kubieke meter per uur</rdfs:label>
+    <om:symbol>m3/h</om:symbol>
+    <om:alternativeSymbol>m3 h-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m3·h-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;cubicMetre"/>
+    <om:hasDenominator rdf:resource="&om;hour"/>
+    <om:hasDimension rdf:resource="&om;volumetricFlowRate-Dimension"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;VolumetricFlowRate">
+    <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerHour"/>
+  </owl:Class>  
+
   <!-- Cubic Metre Per Year Ontology -->
 
   <om:UnitDivision rdf:about="&om;cubicMetrePerYear">
@@ -15772,6 +15812,22 @@
 
   <owl:Class rdf:about="&om;VolumetricFlowRate">
     <om:commonlyHasUnit rdf:resource="&om;cubicMetrePerYear"/>
+  </owl:Class>
+
+    <!-- Litre Per Minute Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerMinute">
+    <rdfs:label xml:lang="en">litre per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">liter per minuut</rdfs:label>
+    <om:symbol>l/min</om:symbol>
+    <om:alternativeSymbol>l min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+  </om:UnitDivision>
+
+  <owl:Class rdf:about="&om;VolumetricFlowRate">
+    <om:commonlyHasUnit rdf:resource="&om;litrePerMinute"/>
   </owl:Class>
 
   <!-- Litre Per Hour Ontology -->
