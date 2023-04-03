@@ -6922,6 +6922,15 @@
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
+  <owl:Class rdf:about="&om;MassPerEnergy">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasDimension"/>
+        <owl:hasValue rdf:resource="&om;massPerEnergy-Dimension"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
   <!-- Impulse Upper Ontology -->
 
   <owl:Class rdf:about="&om;Impulse">
@@ -16103,6 +16112,7 @@
     <om:alternativeSymbol>g·J-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;gram"/>
     <om:hasDenominator rdf:resource="&om;joule"/>
+    <om:hasDimension rdf:resource="&om;massPerEnergy-Dimension"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;kilogramPerGigajoule">
@@ -16115,6 +16125,7 @@
     <om:alternativeSymbol>kg·GJ-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilogram"/>
     <om:hasDenominator rdf:resource="&om;gigajoule"/>
+    <om:hasDimension rdf:resource="&om;massPerEnergy-Dimension"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;microgramPerJoule">
@@ -16127,6 +16138,17 @@
     <om:alternativeSymbol>mg·J-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;joule"/>
+    <om:hasDimension rdf:resource="&om;massPerEnergy-Dimension"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;tonnePerMegawattHour">
+    <rdfs:label xml:lang="en">tonne per megawatt hour</rdfs:label>
+    <om:symbol>t/MWh</om:symbol>
+    <om:alternativeSymbol>t MWh-1</om:alternativeSymbol>
+    <om:alternativeSymbol>t·MWh-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;tonne"/>
+    <om:hasDenominator rdf:resource="&om;megawattHour"/>
+    <om:hasDimension rdf:resource="&om;massPerEnergy-Dimension"/>
   </om:UnitDivision>
 
   <owl:Class rdf:about="&om;MassPerEnergyUnit">
@@ -16138,6 +16160,7 @@
           <om:UnitDivision rdf:about="&om;gramPerJoule"/>
           <om:UnitDivision rdf:about="&om;kilogramPerGigaJoule"/>
           <om:UnitDivision rdf:about="&om;microgramPerJoule"/>
+          <om:UnitDivision rdf:about="&om;tonnePerMegawattHour">
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -17824,6 +17847,19 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+
+  <!-- Mass Per Energy Dimension Upper Ontology -->
+
+  <om:Dimension rdf:about="&om;massPerEnergy-Dimension">
+    <rdfs:label xml:lang="en">mass per energy dimension</rdfs:label>
+    <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">-2</om:hasSILengthDimensionExponent>
+    <om:hasSIMassDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIMassDimensionExponent>
+    <om:hasSITimeDimensionExponent rdf:datatype="&xsd;integer">2</om:hasSITimeDimensionExponent>
+    <om:hasSIElectricCurrentDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIElectricCurrentDimensionExponent>
+    <om:hasSIThermodynamicTemperatureDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIThermodynamicTemperatureDimensionExponent>
+    <om:hasSIAmountOfSubstanceDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSIAmountOfSubstanceDimensionExponent>
+    <om:hasSILuminousIntensityDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSILuminousIntensityDimensionExponent>
+  </om:Dimension>
 
   <!-- Thermodynamics Ontology -->
 
