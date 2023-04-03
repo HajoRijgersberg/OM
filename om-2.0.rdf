@@ -19126,6 +19126,19 @@
     <om:hasDenominator rdf:resource="&om;kelvinKilogram"/>
     <om:hasDimension rdf:resource="&om;specificEntropyOrSpecificHeatCapacity-Dimension"/>
   </om:UnitDivision>
+  
+  <!-- Kilojoule Per Kelvin Kilogram Ontology -->
+
+  <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram">
+    <rdfs:label xml:lang="en">kilojoule per kelvin kilogram</rdfs:label>
+    <om:symbol>kJ/(K kg)</om:symbol>
+    <om:alternativeSymbol>kJ/(K·kg)</om:alternativeSymbol>
+    <om:alternativeSymbol>kJ K-1 kg-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kJ·K-1·kg-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilojoule"/>
+    <om:hasDenominator rdf:resource="&om;kelvinKilogram"/>
+    <om:hasDimension rdf:resource="&om;specificEntropyOrSpecificHeatCapacity-Dimension"/>
+  </om:UnitDivision>
 
   <owl:Class rdf:about="&om;SpecificEntropy">
     <om:commonlyHasUnit rdf:resource="&om;joulePerKelvinKilogram"/>
@@ -19142,6 +19155,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerKelvinKilogram"/>
+          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram">
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -19154,6 +19168,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerKelvinKilogram"/>
+          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram">
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
