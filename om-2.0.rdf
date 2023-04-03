@@ -15141,6 +15141,18 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
+  <!-- Watt Hour Per Square Metre Per Day Ontology -->
+
+  <om:UnitDivision rdf:about="&om;wattHourPerSquareMetrePerDay">
+    <rdfs:label xml:lang="en">watt hour per square metre per day</rdfs:label>
+    <om:symbol>Wh/m2/d</om:symbol>
+    <om:alternativeSymbol>Wh m-2 d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>Wh·m-2·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;wattHourPerSquareMetre"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+    <om:hasDimension rdf:resource="&om;powerDensity-Dimension"/>
+  </om:UnitDivision>
+
   <!-- Watt Per Steradian Ontology -->
 
   <om:UnitDivision rdf:about="&om;wattPerSteradian">
@@ -18134,12 +18146,41 @@
   <!-- Heat Flux Density Upper Ontology -->
 
   <owl:Class rdf:about="&om;HeatFluxDensity">
+      <rdfs:subClassOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&om;hasValue"/>
+          <owl:allValuesFrom>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="&om;hasUnit"/>
+              <owl:allValuesFrom>
+                <owl:Class rdf:about="&om;HeatFluxDensityUnit"/>
+              </owl:allValuesFrom>
+            </owl:Restriction>
+          </owl:allValuesFrom>
+        </owl:Restriction>
+      </rdfs:subClassOf>
+    </owl:Class>
+
+  <owl:Class rdf:about="&om;HeatFluxDensity">
     <rdfs:label xml:lang="en">heat flux density</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;PowerDensity"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;HeatFluxDensity">
     <om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;HeatFluxDensityUnit">
+    <rdfs:label xml:lang="en">heat flux density unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:resource="&om;wattPerSquareMetre"/>
+          <om:UnitDivision rdf:about="&om;wattHourPerSquareMetrePerDay">
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
   </owl:Class>
 
   <!-- Entropy Upper Ontology -->
@@ -28403,7 +28444,7 @@
 
   <!-- Concentration Upper Ontology -->
 
-  <owl:Class rdf:about="https://www.theworldavatar.com/kg/ontouom/Concentration">
+  <owl:Class rdf:about="&om;Concentration">
     <rdfs:label xml:lang="en">Concentration is defined as the abundance of a constituent divided by the total volume of a mixture</rdfs:label>
     <om:alternativeLabel xml:lang="en">concentration</om:alternativeLabel>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
