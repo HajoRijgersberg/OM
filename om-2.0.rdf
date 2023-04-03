@@ -28401,29 +28401,24 @@
     </rdfs:subClassOf>
   </owl:Class>
 
+  <!-- Concentration Upper Ontology -->
+
+  <owl:Class rdf:about="https://www.theworldavatar.com/kg/ontouom/Concentration">
+    <rdfs:label xml:lang="en">Concentration is defined as the abundance of a constituent divided by the total volume of a mixture</rdfs:label>
+    <om:alternativeLabel xml:lang="en">concentration</om:alternativeLabel>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>C</om:symbol>
+  </owl:Class>
+
   <!-- Mass of Substance Concentration Upper Ontology -->
 
   <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
     <rdfs:label xml:lang="en">mass concentration</rdfs:label>
     <rdfs:comment xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:subClassOf rdf:resource="&om;Concentration"/>
     <om:symbol>C</om:symbol> 
   </owl:Class>
 
-  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
-    <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
-    <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
-  </owl:Class>
-
-  <!-- TODO: Remove the following node. It is obsolete. -->
-  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
-    <rdfs:label xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:label>
-    <om:alternativeLabel xml:lang="en">mass concentration</om:alternativeLabel>
-    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
-    <om:symbol>C</om:symbol> 
-  </owl:Class>
-
-  <!-- TODO: Remove the following node. It is obsolete. -->
   <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
