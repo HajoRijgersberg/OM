@@ -39361,6 +39361,13 @@
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
+  <!-- Amount Of Money Per Energy Upper Ontology -->
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerEnergy">
+    <rdfs:label xml:lang="en">amount of money per energy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
   <!-- Unit of Measure Ontologies -->
 
   <!-- Contents -->
@@ -39444,6 +39451,10 @@
     <om:commonlyHasUnit rdf:resource="&om;poundSterlingPerSquareMetre"/>
   </owl:Class>
 
+  <owl:Class rdf:about="&om;AmountOfMoneyPerEnergy">
+    <om:commonlyHasUnit rdf:resource="&om;euroPerMegawattHour"/>
+  </owl:Class>
+
   <om:Unit rdf:about="&om;UnitedStatesDollar">
     <rdfs:label xml:lang="en">United States dollar</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">美元</rdfs:label> -->
@@ -39502,6 +39513,15 @@
      <om:alternativeSymbol>£ m-2</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;poundSterling"/>
      <om:hasDenominator rdf:resource="&om;squareMetre"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;euroPerMegawattHour">
+     <rdfs:label xml:lang="en">euro per megawatt hour</rdfs:label>
+     <om:symbol>EUR/MWh</om:symbol>
+     <om:alternativeSymbol>EUR MWh-1</om:alternativeSymbol>
+     <om:alternativeSymbol>EUR·MWh-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;euro"/>
+     <om:hasDenominator rdf:resource="&om;megawattHour"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;kilogramPerLitrePerMinute-Time">
@@ -39677,6 +39697,34 @@
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
               <owl:Class rdf:about="&om;AmountOfMoneyPerAreaUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>	
+        </owl:allValuesFrom>
+      </owl:Restriction>     
+    </rdfs:subClassOf>     
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerEnergyUnit">
+    <rdfs:label xml:lang="en">amount of money per energy unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;euroPerMegawattHour"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerEnergy">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;AmountOfMoneyPerEnergyUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>	
         </owl:allValuesFrom>
