@@ -39368,6 +39368,13 @@
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
+  <!-- Amount Of Money Per Time Interval Upper Ontology -->
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerTimeInterval">
+    <rdfs:label xml:lang="en">amount of money per time interval</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+  </owl:Class>
+
   <!-- Unit of Measure Ontologies -->
 
   <!-- Contents -->
@@ -39455,6 +39462,10 @@
     <om:commonlyHasUnit rdf:resource="&om;euroPerMegawattHour"/>
   </owl:Class>
 
+  <owl:Class rdf:about="&om;AmountOfMoneyPerTimeInterval">
+    <om:commonlyHasUnit rdf:resource="&om;euroPerHour"/>
+  </owl:Class>
+
   <om:Unit rdf:about="&om;UnitedStatesDollar">
     <rdfs:label xml:lang="en">United States dollar</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">美元</rdfs:label> -->
@@ -39481,7 +39492,7 @@
      <om:alternativeSymbol>kg/£</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;kilogram"/>
      <om:hasDenominator rdf:resource="&om;poundSterling"/>
-   </om:UnitDivision>
+  </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;poundSterlingPerMegawattHour">
      <rdfs:label xml:lang="en">pound sterling per megawatt hour</rdfs:label>
@@ -39489,7 +39500,7 @@
      <om:alternativeSymbol>£ MWh-1</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;poundSterling"/>
      <om:hasDenominator rdf:resource="&om;megawattHour"/>
-   </om:UnitDivision>
+  </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;poundSterlingPerYear">
      <rdfs:label xml:lang="en">pound sterling per year</rdfs:label>
@@ -39497,7 +39508,7 @@
      <om:alternativeSymbol>£ yr-1</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;poundSterling"/>
      <om:hasDenominator rdf:resource="&om;year"/>
-   </om:UnitDivision>
+  </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;poundSterlingPerLitre">
      <rdfs:label xml:lang="en">pound sterling per litre</rdfs:label>
@@ -39522,6 +39533,15 @@
      <om:alternativeSymbol>EUR·MWh-1</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;euro"/>
      <om:hasDenominator rdf:resource="&om;megawattHour"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;euroPerHour">
+     <rdfs:label xml:lang="en">euro per hour</rdfs:label>
+     <om:symbol>EUR/h</om:symbol>
+     <om:alternativeSymbol>EUR h-1</om:alternativeSymbol>
+     <om:alternativeSymbol>EUR·h-1</om:alternativeSymbol>
+     <om:hasNumerator rdf:resource="&om;euro"/>
+     <om:hasDenominator rdf:resource="&om;hour"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;kilogramPerLitrePerMinute-Time">
@@ -39730,6 +39750,34 @@
         </owl:allValuesFrom>
       </owl:Restriction>     
     </rdfs:subClassOf>     
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerTimeIntervalUnit">
+    <rdfs:label xml:lang="en">amount of money per time interval unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;euroPerHour"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;AmountOfMoneyPerTimeInterval">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;AmountOfMoneyPerTimeIntervalUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
 
   <!-- Pound Sterling Per Kilogram Ontology -->
