@@ -35071,6 +35071,59 @@
     <om:commonlyHasUnit rdf:resource="&om;shake"/>
     <om:commonlyHasUnit rdf:resource="&om;year"/>
   </owl:Class>
+  
+  <!-- Specific Yield Upper Ontology -->
+
+  <owl:Class rdf:about="&om;SpecificYield">
+    <rdfs:label xml:lang="en">Specific yield is a commonly used performance metrics for solar systems, defined as the ratio of the total energy produced over a year and the peak power of the solar system</rdfs:label>
+    <om:alternativeLabel xml:lang="en">specific yield</om:alternativeLabel>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>C</om:symbol>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificYield">
+    <om:commonlyHasUnit rdf:resource="&om;kilowattHourPerkilowatt"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificYieldUnit">
+    <rdfs:label xml:lang="en">specific yield unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;kilowattHourPerKilowatt">
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;SpecificYield">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;SpecificYieldUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  <!-- Kilowatt Hour Per Kilowatt Ontology -->
+
+  <om:UnitDivision rdf:about="&om;kilowattHourPerKilowatt">
+    <rdfs:label xml:lang="en">kilowatt hour per kilowatt</rdfs:label>
+    <om:symbol>kWh/kW</om:symbol>
+    <om:alternativeSymbol>kWh kW-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kWh·kW-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilowattHour"/>
+    <om:hasDenominator rdf:resource="&om;kilowatt"/>
+    <om:hasDimension rdf:resource="&om;time-Dimension"/>
+  </om:UnitDivision>
 
   <!-- Astronomy and Astrophysics Ontology -->
 
