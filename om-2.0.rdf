@@ -1599,10 +1599,10 @@
               <om:Unit rdf:about="&om;inch-International"/>
               <om:Unit rdf:about="&om;lightYear"/>
               <om:Unit rdf:about="&om;metre"/>
-              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreUnspecified"/>
-              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreASD"/>
-              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreAOD"/>
-              <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/metreBDAT"/>              
+              <om:Unit rdf:about="&om;metreUnspecified"/>
+              <om:Unit rdf:about="&om;metreASD"/>
+              <om:Unit rdf:about="&om;metreAOD"/>
+              <om:Unit rdf:about="&om;metreBDAT"/>
               <om:Unit rdf:about="&om;micron"/>
               <om:Unit rdf:about="&om;mil-Length"/>
               <om:Unit rdf:about="&om;mile-Statute"/>
@@ -11852,7 +11852,7 @@
 
   <!-- Kilogram Per Year Ontology -->
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_year">
+  <om:UnitDivision rdf:about="&om;kilogramPerYear">
     <rdfs:label xml:lang="en">kilogram per year</rdfs:label>
     <om:symbol>kg/yr</om:symbol>
     <om:alternativeSymbol>kg yr-1</om:alternativeSymbol>
@@ -15760,8 +15760,8 @@
           <om:UnitDivision rdf:about="&om;litrePerMinute"/>
           <om:UnitDivision rdf:about="&om;litrePerHour"/>
           <om:UnitDivision rdf:about="&om;millilitrePerMinute-Time"/>
-          <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerSecond"/>
-          <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/litrePerDay"/>
+          <om:UnitDivision rdf:about="&om;litrePerSecond"/>
+          <om:UnitDivision rdf:about="&om;litrePerDay"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -16374,7 +16374,7 @@
 
 <!-- Megajoule per Kilogram Ontology -->
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/megajoule_per_kilogram">
+  <om:UnitDivision rdf:about="&om;megajoulePerKilogram">
     <rdfs:label xml:lang="en">megajoule per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">megajoule par kilogramme</rdfs:label>
     <om:symbol>MJ/(kg)</om:symbol>
@@ -28416,7 +28416,7 @@
   </owl:Class>
 
   <!-- TODO: Remove the following node. It is obsolete. -->
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
     <rdfs:label xml:lang="en">Mass concentration is defined as the mass of a constituent divided by the volume of the mixture</rdfs:label>
     <om:alternativeLabel xml:lang="en">mass concentration</om:alternativeLabel>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
@@ -28424,9 +28424,9 @@
   </owl:Class>
 
   <!-- TODO: Remove the following node. It is obsolete. -->
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
-    <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/microgramPerCubicMetre"/>
-    <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/nanogramPerCubicMetre"/>
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
+    <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
   </owl:Class>
 
   <!-- Molar Energy Upper Ontology -->
@@ -28885,7 +28885,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentrationUnit">
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentrationUnit">
     <rdfs:label xml:lang="en">mass of substance concentration unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
@@ -28893,8 +28893,8 @@
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
-              <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/microgramPerCubicMetre"/>
-              <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/nanogramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;microgramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;nanogramPerCubicMetre"/>
               <om:UnitDivision rdf:about="&om;gramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;milligramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
@@ -28912,7 +28912,7 @@
     </owl:equivalentClass>
   </owl:Class>
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+  <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
@@ -28920,7 +28920,7 @@
           <owl:Restriction>
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
-              <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentrationUnit"/>
+              <owl:Class rdf:about="&om;MassOfSubstanceConcentrationUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>
         </owl:allValuesFrom>
@@ -30868,7 +30868,7 @@
 
     <!-- Mass of Substance Concentration Dimension Upper Ontology -->
 
-  <om:Dimension rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration-Dimension">
+  <om:Dimension rdf:about="&om;MassOfSubstanceConcentration-Dimension">
     <rdfs:label xml:lang="en">mass of substance concentration dimension</rdfs:label>
     <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">-3</om:hasSILengthDimensionExponent>
     <om:hasSIMassDimensionExponent rdf:datatype="&xsd;integer">1</om:hasSIMassDimensionExponent>
@@ -30879,11 +30879,11 @@
     <om:hasSILuminousIntensityDimensionExponent rdf:datatype="&xsd;integer">0</om:hasSILuminousIntensityDimensionExponent>
   </om:Dimension>
 
-    <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration">
+    <owl:Class rdf:about="&om;MassOfSubstanceConcentration">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasDimension"/>
-        <owl:hasValue rdf:resource="http://theworldavatar.com/resource/ontouom/MassOfSubstanceConcentration-Dimension"/>
+        <owl:hasValue rdf:resource="&om;MassOfSubstanceConcentration-Dimension"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -39356,7 +39356,7 @@
 
   <!-- Amount Of Money Per Area Upper Ontology -->
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
+  <owl:Class rdf:about="&om;AmountOfMoneyPerArea">
     <rdfs:label xml:lang="en">Specific amount of money per area, e.g. cost or value per sqm of land</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
@@ -39440,8 +39440,8 @@
     <om:commonlyHasUnit rdf:resource="&om;IndianRupee"/>
   </owl:Class>
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
-    <om:commonlyHasUnit rdf:resource="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm"/>
+  <owl:Class rdf:about="&om;AmountOfMoneyPerArea">
+    <om:commonlyHasUnit rdf:resource="&om;poundSterlingPerSquareMetre"/>
   </owl:Class>
 
   <om:Unit rdf:about="&om;UnitedStatesDollar">
@@ -39463,7 +39463,7 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/kilogram_per_pound_sterling">
+  <om:UnitDivision rdf:about="&om;kilogramPerPoundSterling">
      <rdfs:label xml:lang="en">kilogram per pound sterling</rdfs:label>
      <om:symbol>kg/(£)</om:symbol>
      <om:alternativeSymbol>kg £-1</om:alternativeSymbol>
@@ -39472,15 +39472,15 @@
      <om:hasDenominator rdf:resource="&om;poundSterling"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_per_megawattHour">
-     <rdfs:label xml:lang="en">pound per megawatt hour</rdfs:label>
+  <om:UnitDivision rdf:about="&om;poundSterlingPerMegawattHour">
+     <rdfs:label xml:lang="en">pound sterling per megawatt hour</rdfs:label>
      <om:symbol>£/MWh</om:symbol>
      <om:alternativeSymbol>£ MWh-1</om:alternativeSymbol>
      <om:hasNumerator rdf:resource="&om;poundSterling"/>
      <om:hasDenominator rdf:resource="&om;megawattHour"/>
    </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_year">
+  <om:UnitDivision rdf:about="&om;poundSterlingPerYear">
      <rdfs:label xml:lang="en">pound sterling per year</rdfs:label>
      <om:symbol>£/yr</om:symbol>
      <om:alternativeSymbol>£ yr-1</om:alternativeSymbol>
@@ -39496,7 +39496,7 @@
      <om:hasDenominator rdf:resource="&om;litre"/>
   </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm">
+  <om:UnitDivision rdf:about="&om;poundSterlingPerSquareMetre">
      <rdfs:label xml:lang="en">pound sterling per square metre</rdfs:label>
      <om:symbol>£/m2</om:symbol>
      <om:alternativeSymbol>£ m-2</om:alternativeSymbol>
@@ -39656,19 +39656,19 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerAreaUnit">
+  <owl:Class rdf:about="&om;AmountOfMoneyPerAreaUnit">
     <rdfs:label xml:lang="en">amount of money per area unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:Unit rdf:about="http://theworldavatar.com/resource/ontouom/pound_sterling_per_sqm"/>
+          <om:Unit rdf:about="&om;poundSterlingPerSquareMetre"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
 
-  <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerArea">
+  <owl:Class rdf:about="&om;AmountOfMoneyPerArea">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
@@ -39676,7 +39676,7 @@
           <owl:Restriction>
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
-              <owl:Class rdf:about="http://theworldavatar.com/resource/ontouom/AmountOfMoneyPerAreaUnit"/>
+              <owl:Class rdf:about="&om;AmountOfMoneyPerAreaUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>	
         </owl:allValuesFrom>
