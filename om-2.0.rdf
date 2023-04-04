@@ -15303,6 +15303,18 @@
     <om:hasDenominator rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;energyDensity-Dimension"/>
   </om:UnitDivision>
+  
+  <!-- Kilowatt Hour Per Cubic Metre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;kilowattHourPerCubicMetre">
+    <rdfs:label xml:lang="en">kilowatt hour per cubic metre</rdfs:label>
+    <om:symbol>kWh/m3</om:symbol>
+    <om:alternativeSymbol>kWh m-3</om:alternativeSymbol>
+    <om:alternativeSymbol>kWh·m-3</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilowattHour"/>
+    <om:hasDenominator rdf:resource="&om;cubicMetre"/>
+    <om:hasDimension rdf:resource="&om;energyDensity-Dimension"/>
+  </om:UnitDivision>
 
   <owl:Class rdf:about="&om;EnergyDensity">
     <om:commonlyHasUnit rdf:resource="&om;joulePerCubicmetre"/>
@@ -15315,6 +15327,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerCubicmetre"/>
+          <om:UnitDivision rdf:about="&om;kilowattHourPerCubicMetre">
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
