@@ -14258,6 +14258,42 @@
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:UnitDivision>
 
+  <!-- Kilowatt Hour Per Year Ontology -->
+
+  <om:UnitDivision rdf:about="&om;kilowattHourPerYear">
+    <rdfs:label xml:lang="en">kilowatt hour per year</rdfs:label>
+    <om:symbol>kWh/a</om:symbol>
+    <om:alternativeSymbol>kWh a-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kWh·a-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilowattHour"/>
+    <om:hasDenominator rdf:resource="&om;year"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
+  </om:UnitDivision>
+
+  <!-- Megawatt Hour Per Year Ontology -->
+
+  <om:UnitDivision rdf:about="&om;megawattHourPerYear">
+    <rdfs:label xml:lang="en">megawatt hour per year</rdfs:label>
+    <om:symbol>MWh/a</om:symbol>
+    <om:alternativeSymbol>MWh a-1</om:alternativeSymbol>
+    <om:alternativeSymbol>MWh·a-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;megawattHour"/>
+    <om:hasDenominator rdf:resource="&om;year"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
+  </om:UnitDivision>
+
+  <!-- Gigawatt Hour Per Year Ontology -->
+
+  <om:UnitDivision rdf:about="&om;gigawattHourPerYear">
+    <rdfs:label xml:lang="en">gigawatt hour per year</rdfs:label>
+    <om:symbol>GWh/a</om:symbol>
+    <om:alternativeSymbol>GWh a-1</om:alternativeSymbol>
+    <om:alternativeSymbol>GWh·a-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;gigawattHour"/>
+    <om:hasDenominator rdf:resource="&om;year"/>
+    <om:hasDimension rdf:resource="&om;power-Dimension"/>
+  </om:UnitDivision>
+
   <owl:Class rdf:about="&om;Power">
     <om:commonlyHasUnit rdf:resource="&om;joulePerSecond-Time"/>
   </owl:Class>
@@ -14280,6 +14316,9 @@
               <om:Unit rdf:about="&om;tonOfRefrigeration"/>
               <om:Unit rdf:about="&om;watt"/>
               <om:UnitDivision rdf:about="&om;joulePerSecond-Time"/>
+              <om:UnitDivision rdf:about="&om;kilowattHourPerYear">
+              <om:UnitDivision rdf:about="&om;megawattHourPerYear">
+              <om:UnitDivision rdf:about="&om;gigawattHourPerYear">
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedWatt"/>
