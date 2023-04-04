@@ -15374,6 +15374,15 @@
   <!-- Energy Per Area Upper Ontology -->
 
   <owl:Class rdf:about="&om;EnergyPerArea">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasDimension"/>
+        <owl:hasValue rdf:resource="&om;energyPerArea-Dimension"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;EnergyPerArea">
     <om:commonlyHasUnit rdf:resource="&om;wattHourPerSquareMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;kilowattHourPerSquareMetre"/>
   </owl:Class>
@@ -31078,7 +31087,7 @@
 
     <!-- Mass of Substance Concentration Dimension Upper Ontology -->
 
-  <om:Dimension rdf:about="&om;MassOfSubstanceConcentration-Dimension">
+  <om:Dimension rdf:about="&om;massOfSubstanceConcentration-Dimension">
     <rdfs:label xml:lang="en">mass of substance concentration dimension</rdfs:label>
     <om:hasSILengthDimensionExponent rdf:datatype="&xsd;integer">-3</om:hasSILengthDimensionExponent>
     <om:hasSIMassDimensionExponent rdf:datatype="&xsd;integer">1</om:hasSIMassDimensionExponent>
@@ -31093,7 +31102,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasDimension"/>
-        <owl:hasValue rdf:resource="&om;MassOfSubstanceConcentration-Dimension"/>
+        <owl:hasValue rdf:resource="&om;massOfSubstanceConcentration-Dimension"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
