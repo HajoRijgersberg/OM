@@ -28633,7 +28633,7 @@
     <rdfs:label xml:lang="en">amount of substance concentration</rdfs:label>
     <om:alternativeLabel xml:lang="en">molar concentration</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">molaire concentratie</om:alternativeLabel>
-    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:subClassOf rdf:resource="&om;Concentration"/>
     <om:symbol>C</om:symbol> 
   </owl:Class>
 
