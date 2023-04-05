@@ -2289,6 +2289,48 @@
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
+  <!-- Water Level Height Units Ontology -->
+
+  <!-- Metre Above Ordnance Datum Ontology -->
+
+  <om:Unit rdf:about="&om;metreAOD">
+    <rdfs:label xml:lang="en">metre AOD</rdfs:label>
+    <rdfs:comment xml:lang="en">Meters relative to the Ordnance Survey datum (i.e. mean sea level at the UK Ordnance datum at Newlyn, Cornwall)</rdfs:comment>
+    <om:symbol>mAOD</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
+  <!-- Metre Above Local Stage Ontology -->
+
+  <om:Unit rdf:about="&om;metreASD">
+    <rdfs:label xml:lang="en">metre ASD</rdfs:label>
+    <rdfs:comment xml:lang="en">Meters relative to the local stage datum</rdfs:comment>
+    <om:symbol>mASD</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
+  <!-- Metre Below Local Stage Ontology -->
+
+  <om:Unit rdf:about="&om;metreBDAT">
+    <rdfs:label xml:lang="en">metre BDAT</rdfs:label>
+    <rdfs:comment xml:lang="en">Meters below local reference datum</rdfs:comment>
+    <om:symbol>mBDAT </om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+  
+  <!-- Unspecified Metre Ontology -->
+
+  <om:Unit rdf:about="&om;metreUnspecified">
+    <rdfs:label xml:lang="en">metre</rdfs:label>
+    <rdfs:comment xml:lang="en">Meters relative to unspecified datum, usually fixed point on or close to the riverbed</rdfs:comment>
+    <om:symbol>m</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <om:hasDimension rdf:resource="&om;length-Dimension"/>
+  </om:Unit>
+
   <!-- <om:Measure rdf:about="&om;_1.0e-10Metre">
     <om:hasNumericalValue>1.0e-10</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
