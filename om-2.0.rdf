@@ -16012,6 +16012,17 @@
     <om:commonlyHasUnit rdf:resource="&om;litrePerMinute"/>
   </owl:Class>
 
+  <!-- Litre Per Day Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerDay">
+    <rdfs:label xml:lang="en">litre per day</rdfs:label>
+    <om:symbol>l/d</om:symbol>
+    <om:alternativeSymbol>l d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+  </om:UnitDivision>
+
   <!-- Litre Per Hour Ontology -->
 
   <om:UnitDivision rdf:about="&om;litrePerHour">
@@ -16027,6 +16038,28 @@
   <owl:Class rdf:about="&om;VolumetricFlowRate">
     <om:commonlyHasUnit rdf:resource="&om;litrePerHour"/>
   </owl:Class>
+
+  <!-- Litre Per Minute Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerMinute">
+    <rdfs:label xml:lang="en">litre per minute</rdfs:label>
+    <om:symbol>l/min</om:symbol>
+    <om:alternativeSymbol>l min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+  </om:UnitDivision>
+  
+  <!-- Litre Per Second Ontology -->
+
+  <om:UnitDivision rdf:about="&om;litrePerSecond">
+    <rdfs:label xml:lang="en">litre per second</rdfs:label>
+    <om:symbol>l/s</om:symbol>
+    <om:alternativeSymbol>l s-1</om:alternativeSymbol>
+    <om:alternativeSymbol>l·s-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;litre"/>
+    <om:hasDenominator rdf:resource="&om;second-Time"/>
+  </om:UnitDivision>
 
   <!-- Cubic Metre Per Cubic Metre Ontology -->
 
