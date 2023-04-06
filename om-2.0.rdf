@@ -5195,6 +5195,7 @@
     <om:hasDerivedUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicMetre"/>
+    <om:hasDerivedUnit rdf:resource="&om;nanogramPerCubicMetre"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;cubicMetrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;litrePerKilogram"/>
@@ -10153,6 +10154,7 @@
               <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;microgramPerCubicMetre"/>
+              <om:UnitDivision rdf:resource="&om;nanogramPerCubicMetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
               <om:UnitDivision rdf:about="&om;gramPerLitre"/>
@@ -10249,6 +10251,18 @@
     <om:hasDenominator rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;density-Dimension"/>
   </om:UnitDivision>
+  
+  <om:UnitDivision rdf:about="&om;nanogramPerCubicMetre">
+    <rdfs:label xml:lang="en">nanogram per cubic metre</rdfs:label>
+    <rdfs:comment xml:lang="en">Nanogram per cubic metre is a unit of (mass) concentration defined as nanogram divided by cubic metre.</rdfs:comment>
+    <om:longcomment>Nanogram per cubic metre is a unit of (mass) concentration defined as nanogram divided by cubic metre. It is a derived unit in the International System of Units.</om:longcomment>
+    <om:symbol>ng/m3</om:symbol>
+    <om:alternativeSymbol>ng m-3</om:alternativeSymbol>
+    <om:alternativeSymbol>ng·m-3</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;nanogram"/>
+    <om:hasDenominator rdf:resource="&om;cubicMetre"/>
+    <om:hasDimension rdf:resource="&om;density-Dimension"/>
+  </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre">
     <rdfs:label xml:lang="en">kilogram per cubic decimetre</rdfs:label>
@@ -10269,6 +10283,7 @@
     <om:commonlyHasUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
   </owl:Class>
 
@@ -38257,6 +38272,7 @@
     <om:commonlyHasUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:commonlyHasUnit rdf:resource="&om;microgramPerCubicMetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;nanogramPerCubicMetre"/>
     <om:commonlyHasUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
   </owl:Class>
 
