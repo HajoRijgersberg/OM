@@ -16057,7 +16057,7 @@
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
-  
+
   <owl:Class rdf:about="&om;MassPerEnergyUnit">
     <rdfs:label xml:lang="en">mass per energy unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
