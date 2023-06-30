@@ -70,9 +70,9 @@ The RDF structure for this example shows as follows:
 
 ![Example: Apple size](images/OMAppleExample.png)
 
-**Figure 2.** An RDF diagram representing the size of an apple as 10 cm.
+**Figure 2.** An RDF diagram representing the size of an apple as 10 cm. (The arrow for property om:hasNumericalValue should be reversed.)
 
-Please not that:
+Please note that:
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
 
@@ -129,7 +129,7 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 10. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
 
 
-### <a name="uses-of-om"></a>Best practices of OM (not exhaustive and under construction) 
+### <a name="uses-of-om"></a>Best practices (uses) of OM (not exhaustive and under construction) 
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
