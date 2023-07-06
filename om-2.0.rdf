@@ -14373,9 +14373,9 @@
               <om:Unit rdf:about="&om;tonOfRefrigeration"/>
               <om:Unit rdf:about="&om;watt"/>
               <om:UnitDivision rdf:about="&om;joulePerSecond-Time"/>
-              <om:UnitDivision rdf:about="&om;kilowattHourPerYear">
-              <om:UnitDivision rdf:about="&om;megawattHourPerYear">
-              <om:UnitDivision rdf:about="&om;gigawattHourPerYear">
+              <om:UnitDivision rdf:about="&om;kilowattHourPerYear"/>
+              <om:UnitDivision rdf:about="&om;megawattHourPerYear"/>
+              <om:UnitDivision rdf:about="&om;gigawattHourPerYear"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedWatt"/>
@@ -15384,7 +15384,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerCubicmetre"/>
-          <om:UnitDivision rdf:about="&om;kilowattHourPerCubicMetre">
+          <om:UnitDivision rdf:about="&om;kilowattHourPerCubicMetre"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -15426,7 +15426,7 @@
     <om:hasNumerator rdf:resource="&om;kilowattHour"/>
     <om:hasDenominator rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;energyPerArea-Dimension"/>
-  </om:UnitDivisi
+  </om:UnitDivision>
 
   <!-- Energy Per Area Upper Ontology -->
 
@@ -16369,7 +16369,7 @@
           <om:UnitDivision rdf:about="&om;gramPerJoule"/>
           <om:UnitDivision rdf:about="&om;kilogramPerGigaJoule"/>
           <om:UnitDivision rdf:about="&om;microgramPerJoule"/>
-          <om:UnitDivision rdf:about="&om;tonnePerMegawattHour">
+          <om:UnitDivision rdf:about="&om;tonnePerMegawattHour"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -18435,7 +18435,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:resource="&om;wattPerSquareMetre"/>
-          <om:UnitDivision rdf:about="&om;wattHourPerSquareMetrePerDay">
+          <om:UnitDivision rdf:about="&om;wattHourPerSquareMetrePerDay"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -19413,7 +19413,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerKelvinKilogram"/>
-          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram">
+          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -19426,7 +19426,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;joulePerKelvinKilogram"/>
-          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram">
+          <om:UnitDivision rdf:about="&om;kilojoulePerKelvinKilogram"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -35364,7 +35364,7 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:UnitDivision rdf:about="&om;kilowattHourPerKilowatt">
+          <om:UnitDivision rdf:about="&om;kilowattHourPerKilowatt"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
