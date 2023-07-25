@@ -7972,7 +7972,7 @@
     <!-- <rdfs:label xml:lang="zh">泽克</rdfs:label> -->
     <rdfs:label xml:lang="zh">10^21克</rdfs:label>
     <rdfs:comment xml:lang="en">The zettagram is a unit of mass defined as 1.0e21 gram.</rdfs:comment>
-    <om:symbol>ZG</om:symbol>
+    <om:symbol>Zg</om:symbol>
     <om:hasPrefix rdf:resource="&om;zetta"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
@@ -16051,9 +16051,9 @@
     <rdfs:label xml:lang="nl">microgram per joule</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Microgram per joule is a unit of mass per energy.</rdfs:comment> -->
     <!-- <om:longcomment>Microgram per joule is a unit of mass per energy defined as microgram divided by joule. Microgram per joule is a derived unit in the International System of Units.</om:longcomment> -->
-    <om:symbol>mg/J</om:symbol>
-    <om:alternativeSymbol>mg J-1</om:alternativeSymbol>
-    <om:alternativeSymbol>mg·J-1</om:alternativeSymbol>
+    <om:symbol>μg/J</om:symbol>
+    <om:alternativeSymbol>μg J-1</om:alternativeSymbol>
+    <om:alternativeSymbol>μg·J-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
@@ -16404,9 +16404,9 @@
     <rdfs:label xml:lang="nl">microgram per vierkante meter seconde</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Microgram per square metre second is a unit of .</rdfs:comment> -->
     <!-- <om:longcomment>Microgram per square metre second is a unit of  defined as microgram divided by square metre second. Microgram per square metre second is a derived unit in the International System of Units.</om:longcomment> -->
-    <om:symbol>mg/(m2 s)</om:symbol>
-    <om:alternativeSymbol>mg m-2 s-1</om:alternativeSymbol>
-    <om:alternativeSymbol>mg·m-2·s-1</om:alternativeSymbol>
+    <om:symbol>μg/(m2 s)</om:symbol>
+    <om:alternativeSymbol>μg m-2 s-1</om:alternativeSymbol>
+    <om:alternativeSymbol>μg·m-2·s-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;microgram"/>
     <om:hasDenominator rdf:resource="&om;squareMetreSecond-Time"/>
   </om:UnitDivision>
@@ -31738,9 +31738,9 @@
     <rdfs:label xml:lang="nl">candela per vierkante meter</rdfs:label>
     <rdfs:comment xml:lang="en">Candela per square metre is a unit of luminance defined as candela divided by square metre.</rdfs:comment>
     <om:longcomment>Candela per square metre is a unit of luminance defined as candela divided by square metre. Candela per square metre is a derived unit in the Internationa; System of Units.</om:longcomment>
-    <om:symbol>cd/m</om:symbol>
-    <om:alternativeSymbol>cd m-1</om:alternativeSymbol>
-    <om:alternativeSymbol>cd·m-1</om:alternativeSymbol>
+    <om:symbol>cd/m2</om:symbol>
+    <om:alternativeSymbol>cd m-2</om:alternativeSymbol>
+    <om:alternativeSymbol>cd·m-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;candela"/>
     <om:hasDenominator rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;luminance-Dimension"/>
@@ -31787,9 +31787,9 @@
   <om:UnitDivision rdf:about="&om;candelaPerSquareCentimetre">
     <rdfs:label xml:lang="en">candela per square centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">candela per vierkante centimeter</rdfs:label>
-    <om:symbol>cd/cm</om:symbol>
-    <om:alternativeSymbol>cd cm-1</om:alternativeSymbol>
-    <om:alternativeSymbol>cd·cm-1</om:alternativeSymbol>
+    <om:symbol>cd/cm2</om:symbol>
+    <om:alternativeSymbol>cd cm-2</om:alternativeSymbol>
+    <om:alternativeSymbol>cd·cm-2</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;candela"/>
     <om:hasDenominator rdf:resource="&om;squareCentimetre"/>
     <om:hasDimension rdf:resource="&om;luminance-Dimension"/>
