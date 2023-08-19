@@ -777,11 +777,7 @@
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasPoint"/>
         <owl:allValuesFrom>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <owl:Class rdf:about="&om;FixedPoint"/>
-            </owl:unionOf>
-          </owl:Class>
+          <owl:Class rdf:about="&om;FixedPoint"/>
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -6576,14 +6572,10 @@
     <rdfs:subClassOf rdf:resource="&om;Speed"/>
     <om:symbol>u</om:symbol>
     <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasAggregateFunction"/>
-            <owl:hasValue rdf:resource="&om;average"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasAggregateFunction"/>
+        <owl:hasValue rdf:resource="&om;average"/>
+      </owl:Restriction>
     </owl:equivalentClass> 
   </owl:Class>
 
@@ -16139,16 +16131,12 @@
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:UnitDivision rdf:about="&om;gramPerSquareMetre"/>
-              <om:UnitDivision rdf:about="&om;kilogramPerSquareMetre"/>
-              <om:UnitDivision rdf:about="&om;kilogramPerHectare"/>
-              <om:UnitDivision rdf:about="&om;ounceAvoirdupoisPerSquareYard-International"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;gramPerSquareMetre"/>
+          <om:UnitDivision rdf:about="&om;kilogramPerSquareMetre"/>
+          <om:UnitDivision rdf:about="&om;kilogramPerHectare"/>
+          <om:UnitDivision rdf:about="&om;ounceAvoirdupoisPerSquareYard-International"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -16258,13 +16246,9 @@
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:UnitDivision rdf:about="&om;kilogramPerHectareDay"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;kilogramPerHectareDay"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -18879,13 +18863,9 @@
     <rdfs:subClassOf rdf:resource="&om;TemperatureUnit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:Unit rdf:about="&om;degreeFahrenheit"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="&om;degreeFahrenheit"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -18895,13 +18875,9 @@
     <rdfs:subClassOf rdf:resource="&om;TemperatureUnit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:Unit rdf:about="&om;degreeRankine"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="&om;degreeRankine"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -18911,13 +18887,9 @@
     <rdfs:subClassOf rdf:resource="&om;TemperatureUnit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:Unit rdf:about="&om;degreeReaumur"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:Unit rdf:about="&om;degreeReaumur"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -32168,13 +32140,9 @@
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:UnitMultiplication rdf:about="&om;lumenSecond-Time"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitMultiplication rdf:about="&om;lumenSecond-Time"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -32551,13 +32519,9 @@
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:UnitMultiplication rdf:about="&om;luxSecond-Time"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitMultiplication rdf:about="&om;luxSecond-Time"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -32600,13 +32564,9 @@
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:UnitDivision rdf:about="&om;lumenPerWatt"/>
-            </owl:oneOf>
-          </owl:Class>
-        </owl:unionOf>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:UnitDivision rdf:about="&om;lumenPerWatt"/>
+        </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>  	  
@@ -42678,7 +42638,10 @@
 
     <dc:creator rdf:resource="&ombibo;Osman_Demircan"/>
 
-    <bibo:authorList rdf:resource="&ombibo;IntroAstronomicalPhotometryAuthors"/>
+	<bibo:authorList rdf:parseType="Collection">
+		<rdf:Description rdf:resource="&ombibo;Edwin_Budding"/>
+		<rdf:Description rdf:resource="&ombibo;Osman_Demircan"/>
+	</bibo:authorList>
 
     <dc:publisher rdf:resource="&ombibo;Cambridge_University_Press"/>
 
@@ -42704,16 +42667,6 @@
 
   </bibo:Chapter>
 
-
-
-  <rdf:Seq rdf:about="&ombibo;IntroAstronomicalPhotometryAuthors">
-    <rdf:_1 rdf:resource="&ombibo;Edwin_Budding"/>
-    <rdf:_2 rdf:resource="&ombibo;Osman_Demircan"/>
-
-  </rdf:Seq>
-  
-  
-  
   
  
   <!-- IAU 2012 Resolution -->
@@ -42780,7 +42733,9 @@
 
     <bibo:pageEnd>1346</bibo:pageEnd>
 
-    <bibo:authorList rdf:resource="&ombibo;Stroemgren1956Authors"/>
+    <bibo:authorList rdf:parseType="Collection">
+		<rdf:Description rdf:resource="&ombibo;Brengt_Stroemgren"/>
+	</bibo:authorList>
 
     <bibo:uri>http://www.sciencedirect.com/science/article/pii/0083665656900605</bibo:uri>
 
@@ -42793,14 +42748,6 @@
     <dc:title>Vistas in Astronomy</dc:title>
 
   </bibo:Journal>
-
-  
-  <rdf:Seq rdf:about="&ombibo;Stroemgren1956Authors">
-
-    <rdf:_1 rdf:resource="&ombibo;Brengt_Stroemgren"/>
-
-  </rdf:Seq>
-
   
   
   <!-- Two-dimensional spectral classification by narrow-band photometry for B stars in clusters and associations -->
@@ -42832,7 +42779,9 @@
 
     <bibo:pageEnd>206</bibo:pageEnd>
 
-    <bibo:authorList rdf:resource="&ombibo;Crawford1958Authors"/>
+	<bibo:authorList rdf:parseType="Collection">
+		<rdf:Description rdf:resource="&ombibo;DLCrawford"/>
+	</bibo:authorList>
 
     <bibo:uri>http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1958ApJ...128..185C&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf</bibo:uri>
 
@@ -42848,13 +42797,6 @@
     <bibo:uri>http://iopscience.iop.org/0004-637X/</bibo:uri>
 
   </bibo:Journal>
-
-
-  <rdf:Seq rdf:about="&ombibo;Crawford1958Authors">
-
-    <rdf:_1 rdf:resource="&ombibo;DLCrawford"/>
-
-  </rdf:Seq>
 
 
 </rdf:RDF>
