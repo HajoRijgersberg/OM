@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.41</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.42</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2023/08/19</dc:date>
+    <dc:date>2023/08/21</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -42639,8 +42639,8 @@
     <dc:creator rdf:resource="&ombibo;Osman_Demircan"/>
 
 	<bibo:authorList rdf:parseType="Collection">
-		<rdf:Description rdf:resource="&ombibo;Edwin_Budding"/>
-		<rdf:Description rdf:resource="&ombibo;Osman_Demircan"/>
+<!--		<rdf:Description rdf:resource="&ombibo;Edwin_Budding"/> -->
+<!--		<rdf:Description rdf:resource="&ombibo;Osman_Demircan"/> -->
 	</bibo:authorList>
 
     <dc:publisher rdf:resource="&ombibo;Cambridge_University_Press"/>
@@ -42734,7 +42734,7 @@
     <bibo:pageEnd>1346</bibo:pageEnd>
 
     <bibo:authorList rdf:parseType="Collection">
-		<rdf:Description rdf:resource="&ombibo;Brengt_Stroemgren"/>
+<!--		<rdf:Description rdf:resource="&ombibo;Brengt_Stroemgren"/> -->
 	</bibo:authorList>
 
     <bibo:uri>http://www.sciencedirect.com/science/article/pii/0083665656900605</bibo:uri>
@@ -42780,7 +42780,7 @@
     <bibo:pageEnd>206</bibo:pageEnd>
 
 	<bibo:authorList rdf:parseType="Collection">
-		<rdf:Description rdf:resource="&ombibo;DLCrawford"/>
+<!--		<rdf:Description rdf:resource="&ombibo;DLCrawford"/> -->
 	</bibo:authorList>
 
     <bibo:uri>http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1958ApJ...128..185C&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf</bibo:uri>
