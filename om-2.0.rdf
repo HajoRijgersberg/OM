@@ -42639,8 +42639,8 @@
     <dc:creator rdf:resource="&ombibo;Osman_Demircan"/>
 
 	<bibo:authorList rdf:parseType="Collection">
-<!--		<rdf:Description rdf:resource="&ombibo;Edwin_Budding"/> -->
-<!--		<rdf:Description rdf:resource="&ombibo;Osman_Demircan"/> -->
+		<rdf:Description rdf:about="&ombibo;Edwin_Budding"/>
+		<rdf:Description rdf:about="&ombibo;Osman_Demircan"/>
 	</bibo:authorList>
 
     <dc:publisher rdf:resource="&ombibo;Cambridge_University_Press"/>
@@ -42734,7 +42734,7 @@
     <bibo:pageEnd>1346</bibo:pageEnd>
 
     <bibo:authorList rdf:parseType="Collection">
-<!--		<rdf:Description rdf:resource="&ombibo;Brengt_Stroemgren"/> -->
+		<rdf:Description rdf:about="&ombibo;Brengt_Stroemgren"/>
 	</bibo:authorList>
 
     <bibo:uri>http://www.sciencedirect.com/science/article/pii/0083665656900605</bibo:uri>
@@ -42780,7 +42780,7 @@
     <bibo:pageEnd>206</bibo:pageEnd>
 
 	<bibo:authorList rdf:parseType="Collection">
-<!--		<rdf:Description rdf:resource="&ombibo;DLCrawford"/> -->
+		<rdf:Description rdf:about="&ombibo;DLCrawford"/>
 	</bibo:authorList>
 
     <bibo:uri>http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1958ApJ...128..185C&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf</bibo:uri>
