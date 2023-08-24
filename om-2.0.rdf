@@ -35564,19 +35564,9 @@
     <rdfs:label xml:lang="nl">magnitude</rdfs:label>
     <rdfs:comment xml:lang="en">Reverse logarithmic measure of the brightness of an object.</rdfs:comment>
 
-    <om:longcomment xml:lang="en" rdf:parseType="Literal">The magnitude scale was originally created by Hipparchos of Nicea (160-127 BCE) and was measured by comparing the brightness between stars. Initially this was done inaccurately by eye but is currently done by using photoelectric photometers or even more recently by CCDs. Hipparchos divided the stars into six magnitude (brightness classes), the brightest stars being assigned to the first class and the faintest to the sixth class. By about the middle 1800s it became apparent that the traditional magnitude scale is close to a logarithmic scale with base 2.5. This is due to the fact that the response of the eye is nearly logarithmic. N.R. Pogson formalised the magnitude scale to closely match the traditional (visual) scale. It is now defined as:  
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
-   		<msub><mi>m</mi><mn>1</mn></msub> <mo>-</mo> <msub><mi>m</mi><mn>2</mn>  </msub><mo>=</mo> 
-   		<mn>-2.5</mn><mi>log</mi>
-    	<mfrac linethickness="1">
-    		<mrow>
-    			<msub><mi>f</mi><mn>1</mn></msub>
-    		</mrow>
-    		<mrow><msub><mi>f</mi><mn>2</mn></msub>
-    		</mrow>
-    	</mfrac>
-    </math>
-    where <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>m</mi><mn>1</mn></msub> <mo>-</mo> <msub><mi>m</mi><mn>2</mn>  </msub></math> is the magnitude difference between two objects, and <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>f</mi><mn>1</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>f</mi><mn>2</mn></msub></math> are the luminous fluxes of the two objects. The magnitude of Vega (α Lyrae, HD 172167) is defined to be 0 in all wavelengths and passbands, although in practice this can only be an approximation. The zero point is now defined using multiple standard stars from the north polar sequence (non-variable stars within 2 degrees of the north celestial pole) or secondary standard stars from other parts of the sky. Please note that the scale is inverted, objects of magnitude 1 have a higher luminous flux than objects of magnitude 5. Stars of magnitude 6 are just visible to the naked eye under good observing conditions.
+    <om:longcomment xml:lang="en">The magnitude scale was originally created by Hipparchos of Nicea (160-127 BCE) and was measured by comparing the brightness between stars. Initially this was done inaccurately by eye but is currently done by using photoelectric photometers or even more recently by CCDs. Hipparchos divided the stars into six magnitude (brightness classes), the brightest stars being assigned to the first class and the faintest to the sixth class. By about the middle 1800s it became apparent that the traditional magnitude scale is close to a logarithmic scale with base 2.5. This is due to the fact that the response of the eye is nearly logarithmic. N.R. Pogson formalised the magnitude scale to closely match the traditional (visual) scale. It is now defined as:  
+    m₁ - m₂ = - 2.5 log (f₁ / f₂)
+    where m₁ - m₂ is the magnitude difference between two objects, and f₁ and f₂ are the luminous fluxes of the two objects. The magnitude of Vega (α Lyrae, HD 172167) is defined to be 0 in all wavelengths and passbands, although in practice this can only be an approximation. The zero point is now defined using multiple standard stars from the north polar sequence (non-variable stars within 2 degrees of the north celestial pole) or secondary standard stars from other parts of the sky. Please note that the scale is inverted, objects of magnitude 1 have a higher luminous flux than objects of magnitude 5. Stars of magnitude 6 are just visible to the naked eye under good observing conditions.
     The units of magnitude, also called magnitude, are usually not indicated except when indicating small magnitude differences when milli- or micromagnitudes are used.</om:longcomment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>m</om:symbol>
@@ -35849,7 +35839,7 @@
 
     <rdfs:comment xml:lang="en">A magnitude measured in one of Johnson's standard passbands (using a standard filter, i.e. U, B, or V).</rdfs:comment>
 
-    <om:longcomment xml:lang="en" rdf:parseType="Literal">For accurate photometry the magnitude needs to be determined over well-defined spectral regions as the spectrum of to objects may be quite different. These magnitudes are measured using filters that allows only radiation within specific spectral regions (passbands) to pass through to the detector. These filters have accurately defined transmission curves characterised by a central wavelength and a bandwidth. The UBV system devised by Harold Johnson and William Morgan has been the most important general system until recently. The precise definition requires a reflecting telescope with aluminised mirrors fitted with an RCA 1P21 photomultiplier. The U region corresponds to a region in the violet and ultraviolet, the B region corresponds to typical photographic response and the V region to the visual response region (approximating the eye's response curve).</om:longcomment>
+    <om:longcomment xml:lang="en">For accurate photometry the magnitude needs to be determined over well-defined spectral regions as the spectrum of to objects may be quite different. These magnitudes are measured using filters that allows only radiation within specific spectral regions (passbands) to pass through to the detector. These filters have accurately defined transmission curves characterised by a central wavelength and a bandwidth. The UBV system devised by Harold Johnson and William Morgan has been the most important general system until recently. The precise definition requires a reflecting telescope with aluminised mirrors fitted with an RCA 1P21 photomultiplier. The U region corresponds to a region in the violet and ultraviolet, the B region corresponds to typical photographic response and the V region to the visual response region (approximating the eye's response curve).</om:longcomment>
 
     <rdfs:subClassOf rdf:resource="&om;Magnitude"/>
 
