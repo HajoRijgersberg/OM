@@ -1589,7 +1589,7 @@
 
   <om:Unit rdf:about="&om;metre">
     <rdfs:comment xml:lang="en">The metre is a unit of length defined as the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</rdfs:comment>
-    <om:longcomment>The metre is a unit of length defined as the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second. The metre is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The metre is a unit of length defined as the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second. The metre is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;lengthOfThePathTravelledByLightInVacuumDuringATimeIntervalOf1299792458OfASecond"/>
   </om:Unit>
 
@@ -2618,7 +2618,7 @@
     <rdfs:label xml:lang="nl">vierkante meter</rdfs:label>
     <rdfs:label xml:lang="zh">平方米</rdfs:label>
     <rdfs:comment xml:lang="en">Square metre is a unit of area defined as the area of a square whose sides measure exactly one metre.</rdfs:comment>
-    <om:longcomment>Square metre is a unit of area defined as the area of a square whose sides measure exactly one metre. Square metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Square metre is a unit of area defined as the area of a square whose sides measure exactly one metre. Square metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m2</om:symbol>
     <om:hasBase rdf:resource="&om;metre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
@@ -3110,7 +3110,7 @@
     <rdfs:label xml:lang="nl">kubieke meter</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">立方米</rdfs:label> -->
     <rdfs:comment xml:lang="en">Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre.</rdfs:comment>
-    <om:longcomment>Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre. Cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Cubic metre is a unit of volume defined as the volume of a cube whose sides measure exactly one metre. Cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m3</om:symbol>
     <om:hasBase rdf:resource="&om;metre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
@@ -4201,7 +4201,7 @@
     <rdfs:label xml:lang="nl">radiaal</rdfs:label>
     <rdfs:label xml:lang="zh">弧度</rdfs:label>
     <rdfs:comment xml:lang="en">The radian is a unit of angle defined as the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle.</rdfs:comment>
-    <om:longcomment>The radian is a unit of angle defined as the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle. The radian is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The radian is a unit of angle defined as the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle. The radian is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>rad</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;metrePerMetre"/> 
@@ -4535,7 +4535,7 @@
     <rdfs:label xml:lang="nl">steradiaal</rdfs:label>
     <rdfs:label xml:lang="zh">球面度</rdfs:label>
     <rdfs:comment xml:lang="en">The steradian is a unit of solid angle defined as the solid angle subtended at the center of a sphere by a portion of the surface of the sphere that has an area equal to the square of the radius of the sphere.</rdfs:comment>
-    <om:longcomment>The steradian is a unit of solid angle defined as the solid angle subtended at the center of a sphere by a portion of the surface of the sphere that has an area equal to the square of the radius of the sphere. The steradian is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The steradian is a unit of solid angle defined as the solid angle subtended at the center of a sphere by a portion of the surface of the sphere that has an area equal to the square of the radius of the sphere. The steradian is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>sr</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;squareMetrePerSquareMetre"/>
@@ -7168,7 +7168,7 @@
 
   <om:Unit rdf:about="&om;second-Time">
     <rdfs:comment xml:lang="en">The second is a unit of time defined as the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom.</rdfs:comment>
-    <om:longcomment>The second is a unit of time defined as the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom. The second is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The second is a unit of time defined as the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom. The second is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;durationOf9192631770PeriodsOfTheRadiationCorrespondingToTheTransitionBetweenTheTwoHyperfineLevelsOfTheGroundStateOfTheCesium133Atom"/>
   </om:Unit>
 
@@ -7896,7 +7896,7 @@
 
   <om:PrefixedUnit rdf:about="&om;kilogram">
     <rdfs:comment xml:lang="en">The kilogram is a unit of mass defined as the mass of the international prototype of the kilogram.</rdfs:comment>
-    <om:longcomment>The kilogram is a unit of mass defined as the mass of the international prototype of the kilogram. The kilogram is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The kilogram is a unit of mass defined as the mass of the international prototype of the kilogram. The kilogram is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;massOfTheInternationalPrototypeOfTheKilogram"/>
   </om:PrefixedUnit>
 
@@ -8917,7 +8917,7 @@
     <rdfs:label xml:lang="nl">hertz</rdfs:label>
     <rdfs:label xml:lang="zh">赫兹</rdfs:label>
     <rdfs:comment xml:lang="en">The hertz is a unit of frequency defined as 1 divided by second.</rdfs:comment>
-    <om:longcomment>The hertz is a unit of frequency defined as 1 divided by second. The hertz is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The hertz is a unit of frequency defined as 1 divided by second. The hertz is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>Hz</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;reciprocalSecond-Time"/>
@@ -9303,7 +9303,7 @@
     <rdfs:label xml:lang="en">reciprocal metre</rdfs:label>
     <rdfs:label xml:lang="nl">omgekeerder meter</rdfs:label>
     <rdfs:comment xml:lang="en">Reciprocal metre is a unit of wavenumber defined as 1 divided by metre.</rdfs:comment>
-    <om:longcomment>Reciprocal metre is a unit of wavenumber defined as 1 divided by metre. Reciprocal metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Reciprocal metre is a unit of wavenumber defined as 1 divided by metre. Reciprocal metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m-1</om:symbol>
     <om:hasBase rdf:resource="&om;metre"/>
     <om:hasExponent rdf:datatype="&xsd;integer">-1</om:hasExponent>
@@ -9389,7 +9389,7 @@
     <rdfs:label xml:lang="en">metre per second squared</rdfs:label>
     <rdfs:label xml:lang="nl">meter per seconde kwadraat</rdfs:label>
     <rdfs:comment xml:lang="en">Metre per second squared is a unit of acceleration defined as metre divided by second squared.</rdfs:comment>
-    <om:longcomment>Metre per second squared is a unit of acceleration defined as metre divided by second squared. Metre per second squared is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Metre per second squared is a unit of acceleration defined as metre divided by second squared. Metre per second squared is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m/s2</om:symbol>
     <om:alternativeSymbol>m s-2</om:alternativeSymbol>
     <om:alternativeSymbol>m·s-2</om:alternativeSymbol>
@@ -10103,7 +10103,7 @@
     <rdfs:label xml:lang="en">kilogram per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per kubieke meter</rdfs:label>
     <rdfs:comment xml:lang="en">Kilogram per cubic metre is a unit of density defined as kilogram divided by cubic metre.</rdfs:comment>
-    <om:longcomment>Kilogram per cubic metre is a unit of density defined as kilogram divided by cubic metre. Kilogram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Kilogram per cubic metre is a unit of density defined as kilogram divided by cubic metre. Kilogram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>kg/m3</om:symbol>
     <om:alternativeSymbol>kg m-3</om:alternativeSymbol>
     <om:alternativeSymbol>kg·m-3</om:alternativeSymbol>
@@ -10164,7 +10164,7 @@
     <rdfs:label xml:lang="en">gram per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">gram per kubieke meter</rdfs:label>
     <rdfs:comment xml:lang="en">Gram per cubic metre is a unit of density defined as gram divided by cubic metre.</rdfs:comment>
-    <om:longcomment>Gram per cubic metre is a unit of density defined as gram divided by cubic metre. Gram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Gram per cubic metre is a unit of density defined as gram divided by cubic metre. Gram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>g/m3</om:symbol>
     <om:alternativeSymbol>g m-3</om:alternativeSymbol>
     <om:alternativeSymbol>g·m-3</om:alternativeSymbol>
@@ -10177,7 +10177,7 @@
     <rdfs:label xml:lang="en">milligram per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">milligram per kubieke meter</rdfs:label>
     <rdfs:comment xml:lang="en">Milligram per cubic metre is a unit of density defined as milligram divided by cubic metre.</rdfs:comment>
-    <om:longcomment>Milligram per cubic metre is a unit of density defined as milligram divided by cubic metre. Milligram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Milligram per cubic metre is a unit of density defined as milligram divided by cubic metre. Milligram per cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>mg/m3</om:symbol>
     <om:alternativeSymbol>mg m-3</om:alternativeSymbol>
     <om:alternativeSymbol>mg·m-3</om:alternativeSymbol>
@@ -10190,7 +10190,7 @@
     <rdfs:label xml:lang="en">gram per cubic centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">gram per kubieke centimeter</rdfs:label>
     <rdfs:comment xml:lang="en">Gram per cubic centimetre is a unit of density defined as gram divided by cubic centimetre.</rdfs:comment>
-    <om:longcomment>Gram per cubic centimetre is a unit of density defined as gram divided by cubic centimetre. Gram per cubic centimetre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Gram per cubic centimetre is a unit of density defined as gram divided by cubic centimetre. Gram per cubic centimetre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>g/cm3</om:symbol>
     <om:alternativeSymbol>g cm-3</om:alternativeSymbol>
     <om:alternativeSymbol>g·cm-3</om:alternativeSymbol>
@@ -10203,7 +10203,7 @@
     <rdfs:label xml:lang="en">microgram per cubic centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">microgram per kubieke centimeter</rdfs:label>
     <rdfs:comment xml:lang="en">Microram per cubic centimetre is a unit of density defined as microgram divided by cubic centimetre.</rdfs:comment>
-    <om:longcomment>Microgram per cubic centimetre is a unit of density defined as microgram divided by cubic centimetre. Microgram per cubic centimetre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Microgram per cubic centimetre is a unit of density defined as microgram divided by cubic centimetre. Microgram per cubic centimetre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>μg/cm3</om:symbol>
     <om:alternativeSymbol>μg cm-3</om:alternativeSymbol>
     <om:alternativeSymbol>μg·cm-3</om:alternativeSymbol>
@@ -10216,7 +10216,7 @@
     <rdfs:label xml:lang="en">kilogram per cubic decimetre</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per kubieke decimeter</rdfs:label>
     <rdfs:comment xml:lang="en">Kilogram per cubic decimetre is a unit of density defined as kilogram divided by cubic decimetre.</rdfs:comment>
-    <om:longcomment>Kilogram per cubic decimetre is a unit of density defined as kilogram divided by cubic decimetre. Kilogram per cubic decimetre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Kilogram per cubic decimetre is a unit of density defined as kilogram divided by cubic decimetre. Kilogram per cubic decimetre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>kg/dm3</om:symbol>
     <om:alternativeSymbol>kg dm-3</om:alternativeSymbol>
     <om:alternativeSymbol>kg·dm-3</om:alternativeSymbol>
@@ -10239,7 +10239,7 @@
     <rdfs:label xml:lang="en">gram per litre</rdfs:label>
     <rdfs:label xml:lang="nl">gram per liter</rdfs:label>
     <rdfs:comment xml:lang="en">Gram per litre is a unit of density defined as gram divided by litre.</rdfs:comment>
-    <om:longcomment>Gram per litre is a unit of density defined as gram divided by litre. Gram per litre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Gram per litre is a unit of density defined as gram divided by litre. Gram per litre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>g/l</om:symbol>
     <om:alternativeSymbol>g l-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·l-1</om:alternativeSymbol>
@@ -10856,7 +10856,7 @@
     <rdfs:label xml:lang="en">cubic metre per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">kubieke meter per kilogram</rdfs:label>
     <rdfs:comment xml:lang="en">Cubic metre per kilogram is a unit of specific volume defined as cubic metre divided by kilogram.</rdfs:comment>
-    <om:longcomment>Cubic metre per kilogram is a unit of specific volume defined as cubic metre divided by kilogram. Cubic metre per kilogram is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Cubic metre per kilogram is a unit of specific volume defined as cubic metre divided by kilogram. Cubic metre per kilogram is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m3/kg</om:symbol>
     <om:alternativeSymbol>m3 kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>m3·kg-1</om:alternativeSymbol>
@@ -10904,7 +10904,7 @@
     <rdfs:label xml:lang="en">litre per kilogram</rdfs:label>
     <rdfs:label xml:lang="nl">liter per kilogram</rdfs:label>
     <rdfs:comment xml:lang="en">Litre per kilogram is a unit of specific volume defined as litre divided by kilogram.</rdfs:comment>
-    <om:longcomment>Litre per kilogram is a unit of specific volume defined as litre divided by kilogram. Litre per kilogram is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Litre per kilogram is a unit of specific volume defined as litre divided by kilogram. Litre per kilogram is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>l/kg</om:symbol>
     <om:alternativeSymbol>l kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>l·kg-1</om:alternativeSymbol>
@@ -10923,7 +10923,7 @@
     <rdfs:label xml:lang="en">metre per second</rdfs:label>
     <rdfs:label xml:lang="nl">meter per seconde</rdfs:label>
     <rdfs:comment xml:lang="en">Metre per second is a unit of speed defined as metre divided by second.</rdfs:comment>
-    <om:longcomment>Metre per second is a unit of speed defined as metre divided by second. Metre per second is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Metre per second is a unit of speed defined as metre divided by second. Metre per second is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m/s</om:symbol>
     <om:alternativeSymbol>m s-1</om:alternativeSymbol>
     <om:alternativeSymbol>m·s-1</om:alternativeSymbol>
@@ -11952,7 +11952,7 @@
     <!-- <rdfs:label xml:lang="zh">牛頓</rdfs:label> -->
     <rdfs:label xml:lang="zh">牛顿</rdfs:label>
     <rdfs:comment xml:lang="en">The newton is a unit of force defined as kilogram timesmetre divided by second squared.</rdfs:comment>
-    <om:longcomment>The newton is a unit of force defined as kilogram times metre divided by second squared. The newton is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The newton is a unit of force defined as kilogram times metre divided by second squared. The newton is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>N</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;metreKilogramPerSecond-TimeSquared"/>
@@ -12517,7 +12517,7 @@
     <rdfs:label xml:lang="en">pascal</rdfs:label>
     <rdfs:label xml:lang="nl">pascal</rdfs:label>
     <rdfs:comment xml:lang="en">The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared.</rdfs:comment>
-    <om:longcomment>The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared. The pascal is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared. The pascal is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>Pa</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;newtonPerSquareMetre"/>
@@ -13171,7 +13171,7 @@
     <rdfs:label xml:lang="nl">joule</rdfs:label>
     <rdfs:label xml:lang="zh">焦耳</rdfs:label>
     <rdfs:comment xml:lang="en">The joule is a unit of energy defined as kilogram times square metre divided by second squared.</rdfs:comment>
-    <om:longcomment>The joule is a unit of energy defined as kilogram times square metre divided by second squared. The joule is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The joule is a unit of energy defined as kilogram times square metre divided by second squared. The joule is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>J</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;newtonMetre"/>
@@ -14284,7 +14284,7 @@
     <rdfs:label xml:lang="en">watt</rdfs:label>
     <rdfs:label xml:lang="nl">watt</rdfs:label>
     <rdfs:comment xml:lang="en">The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3.</rdfs:comment>
-    <om:longcomment>The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3. The watt is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3. The watt is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>W</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;joulePerSecond-Time"/>
@@ -16018,7 +16018,7 @@
     <rdfs:label xml:lang="en">gram per joule</rdfs:label>
     <rdfs:label xml:lang="nl">gram per joule</rdfs:label>
     <rdfs:comment xml:lang="en">Gram per joule is a unit of mass per energy.</rdfs:comment>
-    <om:longcomment>Gram per joule is a unit of mass per energy defined as gram divided by joule. Gram per joule is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Gram per joule is a unit of mass per energy defined as gram divided by joule. Gram per joule is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>g/J</om:symbol>
     <om:alternativeSymbol>g J-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·J-1</om:alternativeSymbol>
@@ -16030,7 +16030,7 @@
     <rdfs:label xml:lang="en">kilogram per gigajoule</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per gigajoule</rdfs:label>
     <rdfs:comment xml:lang="en">Kilogram per gigajoule is a unit of mass per energy.</rdfs:comment>
-    <om:longcomment>Kilogram per gigajoule is a unit of mass per energy defined as kilogram divided by gigajoule. Kilogram per gigajoule is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Kilogram per gigajoule is a unit of mass per energy defined as kilogram divided by gigajoule. Kilogram per gigajoule is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>kg/GJ</om:symbol>
     <om:alternativeSymbol>kg GJ-1</om:alternativeSymbol>
     <om:alternativeSymbol>kg·GJ-1</om:alternativeSymbol>
@@ -16042,7 +16042,7 @@
     <rdfs:label xml:lang="en">microgram per joule</rdfs:label>
     <rdfs:label xml:lang="nl">microgram per joule</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Microgram per joule is a unit of mass per energy.</rdfs:comment> -->
-    <!-- <om:longcomment>Microgram per joule is a unit of mass per energy defined as microgram divided by joule. Microgram per joule is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Microgram per joule is a unit of mass per energy defined as microgram divided by joule. Microgram per joule is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>μg/J</om:symbol>
     <om:alternativeSymbol>μg J-1</om:alternativeSymbol>
     <om:alternativeSymbol>μg·J-1</om:alternativeSymbol>
@@ -16086,7 +16086,7 @@
     <rdfs:label xml:lang="en">gram per metre</rdfs:label>
     <rdfs:label xml:lang="nl">gram per meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Gram per metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Gram per metre is a unit of  defined as gram divided by metre. Gram per metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Gram per metre is a unit of  defined as gram divided by metre. Gram per metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>g/m</om:symbol>
     <om:alternativeSymbol>g m-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·m-1</om:alternativeSymbol>
@@ -16100,7 +16100,7 @@
     <rdfs:label xml:lang="en">milligram per kilometre</rdfs:label>
     <rdfs:label xml:lang="nl">milligram per kilometer</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Milligram per kilometre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Milligram per kilometre is a unit of  defined as milligram divided by kilometre. Milligram per kilometre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Milligram per kilometre is a unit of  defined as milligram divided by kilometre. Milligram per kilometre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>mg/km</om:symbol>
     <om:alternativeSymbol>mg km-1</om:alternativeSymbol>
     <om:alternativeSymbol>mg·km-1</om:alternativeSymbol>
@@ -16114,7 +16114,7 @@
     <rdfs:label xml:lang="en">gram per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">gram per vierkante meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Gram per square metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Gram per square metre is a unit of  defined as gram divided by square metre. Gram per square metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Gram per square metre is a unit of  defined as gram divided by square metre. Gram per square metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>g/m2</om:symbol>
     <om:alternativeSymbol>g m-2</om:alternativeSymbol>
     <om:alternativeSymbol>g·m-2</om:alternativeSymbol>
@@ -16163,7 +16163,7 @@
     <rdfs:label xml:lang="en">kilogram per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per vierkante meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Kilogram per square metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Kilogram per square metre is a unit of  defined as kilogram divided by square metre. Kilogram per square metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Kilogram per square metre is a unit of  defined as kilogram divided by square metre. Kilogram per square metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>kg/m2</om:symbol>
     <om:alternativeSymbol>kg m-2</om:alternativeSymbol>
     <om:alternativeSymbol>kg·m-2</om:alternativeSymbol>
@@ -16181,7 +16181,7 @@
     <rdfs:label xml:lang="en">kilogram per hectare</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per hectare</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Kilogram per hectare is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Kilogram per hectare is a unit of  defined as kilogram divided by hectare. Kilogram per hectare is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Kilogram per hectare is a unit of  defined as kilogram divided by hectare. Kilogram per hectare is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>kg/ha</om:symbol>
     <om:alternativeSymbol>kg ha-1</om:alternativeSymbol>
     <om:alternativeSymbol>kg·ha-1</om:alternativeSymbol>
@@ -16198,7 +16198,7 @@
   <om:UnitDivision rdf:about="&om;ounceAvoirdupoisPerSquareYard-International">
     <rdfs:label xml:lang="en">ounce (avoirdupois) per square yard (international)</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Ounce (avoirdupois) per square yard (international) is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Ounce (avoirdupois) per square yard (international) is a unit of  defined as ounce (avoirdupois) divided by square yard.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Ounce (avoirdupois) per square yard (international) is a unit of  defined as ounce (avoirdupois) divided by square yard.</om:longcomment> -->
     <om:symbol>oz/yd2</om:symbol>
     <om:alternativeSymbol>oz yd-2</om:alternativeSymbol>
     <om:alternativeSymbol>oz·yd-1</om:alternativeSymbol>
@@ -16216,7 +16216,7 @@
     <rdfs:label xml:lang="en">hectare day</rdfs:label>
     <rdfs:label xml:lang="nl">hectare dag</rdfs:label>
 <!--    <rdfs:comment xml:lang="en">Hectare day is a unit of .</rdfs:comment> -->
-<!--    <om:longcomment>Hectare day is a unit of  defined as hectare multiplied by day.</om:longcomment> -->
+<!--    <om:longcomment xml:lang="en">Hectare day is a unit of  defined as hectare multiplied by day.</om:longcomment> -->
     <om:symbol>ha d</om:symbol>
     <om:alternativeSymbol>ha·d</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;hectare"/>
@@ -16229,7 +16229,7 @@
     <rdfs:label xml:lang="en">kilogram per hectare day</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per hectare dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Kilogram per hectare day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Kilogram per hectare day is a unit of  defined as kilogram divided by hectare day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Kilogram per hectare day is a unit of  defined as kilogram divided by hectare day.</om:longcomment> -->
     <om:symbol>kg/(ha d)</om:symbol>
     <om:alternativeSymbol>kg ha-1 d-1</om:alternativeSymbol>
     <om:alternativeSymbol>kg·ha-1·d-1</om:alternativeSymbol>
@@ -16275,7 +16275,7 @@
     <rdfs:label xml:lang="en">joule per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">joule per vierkante meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Joule per square metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Joule per square metre is a unit of  defined as joule divided by square metre. Joule per square metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Joule per square metre is a unit of  defined as joule divided by square metre. Joule per square metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>J/m2</om:symbol>
     <om:alternativeSymbol>J m-2</om:alternativeSymbol>
     <om:alternativeSymbol>J·m-2</om:alternativeSymbol>
@@ -16289,7 +16289,7 @@
     <rdfs:label xml:lang="en">megajoule per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">megajoule per vierkante meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Megajoule per square metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Megajoule per square metre is a unit of  defined as megajoule divided by square metre. Megajoule per square metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Megajoule per square metre is a unit of  defined as megajoule divided by square metre. Megajoule per square metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>MJ/m2</om:symbol>
     <om:alternativeSymbol>MJ m-2</om:alternativeSymbol>
     <om:alternativeSymbol>MJ·m-2</om:alternativeSymbol>
@@ -16303,7 +16303,7 @@
     <rdfs:label xml:lang="en">joule per square metre second</rdfs:label>
     <rdfs:label xml:lang="nl">joule per vierkante meter seconde</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Joule per square metre second is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Joule per square metre second is a unit of  defined as joule divided by square metre second.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Joule per square metre second is a unit of  defined as joule divided by square metre second.</om:longcomment> -->
     <om:symbol>J/(m2 s)</om:symbol>
     <om:alternativeSymbol>J m-2 s-1</om:alternativeSymbol>
     <om:alternativeSymbol>J·m-2·s-1</om:alternativeSymbol>
@@ -16317,7 +16317,7 @@
     <rdfs:label xml:lang="en">joule per square metre day</rdfs:label>
     <rdfs:label xml:lang="nl">joule per vierkante meter dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Joule per square metre day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Joule per square metre day is a unit of  defined as joule divided by square metre day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Joule per square metre day is a unit of  defined as joule divided by square metre day.</om:longcomment> -->
     <om:symbol>J/(m2 d)</om:symbol>
     <om:alternativeSymbol>J m-2 d-1</om:alternativeSymbol>
     <om:alternativeSymbol>J·m-2·d-1</om:alternativeSymbol>
@@ -16331,7 +16331,7 @@
     <rdfs:label xml:lang="en">kilojoule per square metre day</rdfs:label>
     <rdfs:label xml:lang="nl">kilojoule per vierkante meter dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Kilojoule per square metre day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Kilojoule per square metre day is a unit of  defined as kilojoule divided by square metre day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Kilojoule per square metre day is a unit of  defined as kilojoule divided by square metre day.</om:longcomment> -->
     <om:symbol>kJ/(m2 d)</om:symbol>
     <om:alternativeSymbol>kJ m-2 d-1</om:alternativeSymbol>
     <om:alternativeSymbol>kJ·m-2·d-1</om:alternativeSymbol>
@@ -16345,7 +16345,7 @@
     <rdfs:label xml:lang="en">megajoule per square metre day</rdfs:label>
     <rdfs:label xml:lang="nl">megajoule per vierkante meter dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Megajoule per square metre day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Megajoule per square metre day is a unit of  defined as megajoule divided by square metre day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Megajoule per square metre day is a unit of  defined as megajoule divided by square metre day.</om:longcomment> -->
     <om:symbol>MJ/(m2 d)</om:symbol>
     <om:alternativeSymbol>MJ m-2 d-1</om:alternativeSymbol>
     <om:alternativeSymbol>MJ·m-2·d-1</om:alternativeSymbol>
@@ -16359,7 +16359,7 @@
     <rdfs:label xml:lang="en">gram per square metre second</rdfs:label>
     <rdfs:label xml:lang="nl">gram per vierkante meter seconde</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Gram per square metre second is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Gram per square metre second is a unit of  defined as gram divided by square metre second. Gram per square metre second is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Gram per square metre second is a unit of  defined as gram divided by square metre second. Gram per square metre second is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>g/(m2 s)</om:symbol>
     <om:alternativeSymbol>g m-2 s-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·m-2·s-1</om:alternativeSymbol>
@@ -16373,7 +16373,7 @@
     <rdfs:label xml:lang="en">gram per square metre day</rdfs:label>
     <rdfs:label xml:lang="nl">gram per vierkante meter dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Gram per square metre day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Gram per square metre day is a unit of  defined as gram divided by square metre day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Gram per square metre day is a unit of  defined as gram divided by square metre day.</om:longcomment> -->
     <om:symbol>g/(m2 d)</om:symbol>
     <om:alternativeSymbol>g m-2 d-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·m-2·d-1</om:alternativeSymbol>
@@ -16387,7 +16387,7 @@
     <rdfs:label xml:lang="en">microgram per square metre second</rdfs:label>
     <rdfs:label xml:lang="nl">microgram per vierkante meter seconde</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Microgram per square metre second is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Microgram per square metre second is a unit of  defined as microgram divided by square metre second. Microgram per square metre second is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Microgram per square metre second is a unit of  defined as microgram divided by square metre second. Microgram per square metre second is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>μg/(m2 s)</om:symbol>
     <om:alternativeSymbol>μg m-2 s-1</om:alternativeSymbol>
     <om:alternativeSymbol>μg·m-2·s-1</om:alternativeSymbol>
@@ -16401,7 +16401,7 @@
     <rdfs:label xml:lang="en">tonne per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">ton per kubieke meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Tonne per cubic metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Tonne per cubic metre is a unit of  defined as tonne divided by cubic metre.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Tonne per cubic metre is a unit of  defined as tonne divided by cubic metre.</om:longcomment> -->
     <om:symbol>t/m3</om:symbol>
     <om:alternativeSymbol>t m-3</om:alternativeSymbol>
     <om:alternativeSymbol>t·m-3</om:alternativeSymbol>
@@ -16415,7 +16415,7 @@
     <rdfs:label xml:lang="en">watt square metre</rdfs:label>
     <rdfs:label xml:lang="nl">watt vierkante meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Watt square metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Watt square metre is a unit of  defined as watt multiplied by square metre.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Watt square metre is a unit of  defined as watt multiplied by square metre.</om:longcomment> -->
     <om:symbol>W m2</om:symbol>
     <om:alternativeSymbol>W·m2</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;watt"/>
@@ -16428,7 +16428,7 @@
     <rdfs:label xml:lang="en">reciprocal square metre reciprocal gram</rdfs:label>
     <rdfs:label xml:lang="nl">omgekeerde vierkante meter omgekeerde gram</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Reciprocal square metre reciprocal gram is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Reciprocal square metre reciprocal gram is a unit of  defined as reciprocal square metre multiplied by reciprocal gram. Reciprocal square metre reciprocal gram is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Reciprocal square metre reciprocal gram is a unit of  defined as reciprocal square metre multiplied by reciprocal gram. Reciprocal square metre reciprocal gram is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>m-2 g-1</om:symbol>
     <om:alternativeSymbol>m-2·g-1</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;reciprocalSquareMetre"/>
@@ -16441,7 +16441,7 @@
     <rdfs:label xml:lang="en">gram per megajoule</rdfs:label>
     <rdfs:label xml:lang="nl">gram per megajoule</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Gram per megajoule is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Gram per megajoule is a unit of  defined as gram divided by megajoule. Gram per megajoule is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Gram per megajoule is a unit of  defined as gram divided by megajoule. Gram per megajoule is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>g/MJ</om:symbol>
     <om:alternativeSymbol>g MJ-1</om:alternativeSymbol>
     <om:alternativeSymbol>g·MJ-1</om:alternativeSymbol>
@@ -16539,7 +16539,7 @@
     <rdfs:label xml:lang="en">square metre per gram</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante meter per gram</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Square metre per gram is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Square metre per gram is a unit of  defined as square metre divided by gram. Square metre per gram is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Square metre per gram is a unit of  defined as square metre divided by gram. Square metre per gram is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>m2/g</om:symbol>
     <om:alternativeSymbol>m2 g-1</om:alternativeSymbol>
     <om:alternativeSymbol>m2·g-1</om:alternativeSymbol>
@@ -16623,7 +16623,7 @@
     <rdfs:label xml:lang="en">metre per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">meter per kubieke meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Metre per cubic metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Metre per cubic metre is a unit of  defined as metre divided by cubic metre. Metre per cubic metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Metre per cubic metre is a unit of  defined as metre divided by cubic metre. Metre per cubic metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>m/m3</om:symbol>
     <om:alternativeSymbol>m m-3</om:alternativeSymbol>
     <om:alternativeSymbol>m·m-3</om:alternativeSymbol>
@@ -16635,7 +16635,7 @@
     <rdfs:label xml:lang="en">centimetre per cubic centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">centimeter per kubieke centimeter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Centimetre per cubic centimetre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Centimetre per cubic centimetre is a unit of  defined as centimetre divided by cubic centimetre. Centimetre per cubic centimetre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Centimetre per cubic centimetre is a unit of  defined as centimetre divided by cubic centimetre. Centimetre per cubic centimetre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>cm/cm3</om:symbol>
     <om:alternativeSymbol>cm cm-3</om:alternativeSymbol>
     <om:alternativeSymbol>cm·cm-3</om:alternativeSymbol>
@@ -16649,7 +16649,7 @@
     <rdfs:label xml:lang="en">square metre second</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante meter seconde</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Square metre second is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Square metre second is a unit of  defined as square metre multiplied by second. Square metre second is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Square metre second is a unit of  defined as square metre multiplied by second. Square metre second is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>m2 s</om:symbol>
     <om:alternativeSymbol>m2·s</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;squareMetre"/>
@@ -16662,7 +16662,7 @@
     <rdfs:label xml:lang="en">square metre day</rdfs:label>
     <rdfs:label xml:lang="nl">vierkante meter dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Square metre day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Square metre day is a unit of  defined as square metre multiplied by day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Square metre day is a unit of  defined as square metre multiplied by day.</om:longcomment> -->
     <om:symbol>m2 d</om:symbol>
     <om:alternativeSymbol>m2·d</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;squareMetre"/>
@@ -16675,7 +16675,7 @@
     <rdfs:label xml:lang="en">second per day</rdfs:label>
     <rdfs:label xml:lang="nl">seconde per dag</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Second per day is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Second per day is a unit of  defined as second divided by day.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Second per day is a unit of  defined as second divided by day.</om:longcomment> -->
     <om:symbol>s/d</om:symbol>
     <om:alternativeSymbol>s d-1</om:alternativeSymbol>
     <om:alternativeSymbol>s·d-1</om:alternativeSymbol>
@@ -16689,7 +16689,7 @@
     <rdfs:label xml:lang="en">reciprocal square metre reciprocal metre</rdfs:label>
     <rdfs:label xml:lang="nl">omgekeerde vierkante meter omgekeerde meter</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Reciprocal square metre reciprocal metre is a unit of .</rdfs:comment> -->
-    <!-- <om:longcomment>Reciprocal square metre reciprocal metre is a unit of  defined as reciprocal square metre multiplied by reciprocal metre. Reciprocal square metre reciprocal metre is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Reciprocal square metre reciprocal metre is a unit of  defined as reciprocal square metre multiplied by reciprocal metre. Reciprocal square metre reciprocal metre is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>m-2 m-1</om:symbol>
     <om:alternativeSymbol>m-2·m-1</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;reciprocalSquareMetre"/>
@@ -18282,7 +18282,7 @@
 
   <om:Unit rdf:about="&om;kelvin">
     <rdfs:comment xml:lang="en">The kelvin is a unit of temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water.</rdfs:comment>
-    <om:longcomment>The kelvin is a unit of temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water. The kelvin is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The kelvin is a unit of temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water. The kelvin is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;_127316OfTheThermodynamicTemperatureOfTheTriplePointOfWater"/>
   </om:Unit>
 
@@ -18609,7 +18609,7 @@
     <rdfs:label xml:lang="zh">摄氏度</rdfs:label>
     <om:alternativeLabel xml:lang="en">centigrade</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The degree Celsius is a unit of temperature defined as 1 kelvin.</rdfs:comment>
-    <om:longcomment>The degree Celsius is a unit of temperature defined as 1 kelvin. The degree Celsius is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The degree Celsius is a unit of temperature defined as 1 kelvin. The degree Celsius is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>&#x00B0;C</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;kelvin"/>
@@ -20857,7 +20857,7 @@
 
   <om:Unit rdf:about="&om;ampere">
     <rdfs:comment xml:lang="en">The ampere is a unit of electric current defined as the constant current that produces an attractive force of 2e–7 newton per metre of length between two straight, parallel conductors of infinite length and negligible circular cross section placed one metre apart in a vacuum.</rdfs:comment>
-    <om:longcomment>The ampere is a unit of electric current defined as the constant current that produces an attractive force of 2e–7 newton per metre of length between two straight, parallel conductors of infinite length and negligible circular cross section placed one metre apart in a vacuum. The ampere is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The ampere is a unit of electric current defined as the constant current that produces an attractive force of 2e–7 newton per metre of length between two straight, parallel conductors of infinite length and negligible circular cross section placed one metre apart in a vacuum. The ampere is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;constantCurrentThatProducesAnAttractiveForceOf2e-7NewtonPerMetreOfLengthBetweenTwoStraightParallelConductorsOfInfiniteLengthAndNegligibleCircularCrossSectionPlacedOneMetreApartInAVacuum"/>
   </om:Unit>
 
@@ -21284,7 +21284,7 @@
     <rdfs:label xml:lang="en">ampere per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">ampère per vierkante meter</rdfs:label>
     <rdfs:comment xml:lang="en">Ampere per square metre is a unit of current density defined as ampere divided by square metre.</rdfs:comment>
-    <om:longcomment>Ampere per square metre is a unit of current density defined as ampere divided by square metre. Ampere per square metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Ampere per square metre is a unit of current density defined as ampere divided by square metre. Ampere per square metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>A/m2</om:symbol>
     <om:alternativeSymbol>A m-2</om:alternativeSymbol>
     <om:alternativeSymbol>A·m-2</om:alternativeSymbol>
@@ -21388,7 +21388,7 @@
     <rdfs:label xml:lang="en">coulomb</rdfs:label>
     <rdfs:label xml:lang="nl">coulomb</rdfs:label>
     <rdfs:comment xml:lang="en">The coulomb is a unit of electric charge defined as ampere times second = farad times volt.</rdfs:comment>
-    <om:longcomment>The coulomb is a unit of electric charge defined as ampere times second = farad times volt. The coulomb is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The coulomb is a unit of electric charge defined as ampere times second = farad times volt. The coulomb is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>C</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;second-TimeAmpere"/>
@@ -21809,7 +21809,7 @@
     <rdfs:label xml:lang="en">volt</rdfs:label>
     <rdfs:label xml:lang="nl">volt</rdfs:label>
     <rdfs:comment xml:lang="en">The volt is a unit of electric potential defined as watt divided by ampere = joule divided by coulomb = newton times metre divided by ampere times second = kilogram times square metre divided by ampere times second to the power 3.</rdfs:comment>
-    <om:longcomment>The volt is a unit of electric potential defined as watt divided by ampere = joule divided by coulomb = newton times metre divided by ampere times second = kilogram times square metre divided by ampere times second to the power 3. The volt is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The volt is a unit of electric potential defined as watt divided by ampere = joule divided by coulomb = newton times metre divided by ampere times second = kilogram times square metre divided by ampere times second to the power 3. The volt is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>V</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;wattPerAmpere"/>
@@ -22202,7 +22202,7 @@
     <rdfs:label xml:lang="en">farad</rdfs:label>
     <rdfs:label xml:lang="nl">farad</rdfs:label>
     <rdfs:comment xml:lang="en">The farad is a unit of capacitance defined as ampere times second divided by volt = coulomb divided by volt = coulomb squared divided by joule = coulomb squared divided by newton times metre = second squared times coulomb squared divided by square metre times kilogram = second to the power 4 times ampere squared divided by square metre times kilogram.</rdfs:comment>
-    <om:longcomment>The farad is a unit of capacitance defined as ampere times second divided by volt = coulomb divided by volt = coulomb squared divided by joule = coulomb squared divided by newton times metre = second squared times coulomb squared divided by square metre times kilogram = second to the power 4 times ampere squared divided by square metre times kilogram. The farad is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The farad is a unit of capacitance defined as ampere times second divided by volt = coulomb divided by volt = coulomb squared divided by joule = coulomb squared divided by newton times metre = second squared times coulomb squared divided by square metre times kilogram = second to the power 4 times ampere squared divided by square metre times kilogram. The farad is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>F</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;coulombPerVolt"/>
@@ -22559,7 +22559,7 @@
     <rdfs:label xml:lang="en">ohm</rdfs:label>
     <rdfs:label xml:lang="nl">ohm</rdfs:label>
     <rdfs:comment xml:lang="en">The ohm is a unit of electrical resistance defined as volt divided by ampere = square metre times kilogram divided by second to the power 3 times ampere squared.</rdfs:comment>
-    <om:longcomment>The ohm is a unit of electrical resistance defined as volt divided by ampere = square metre times kilogram divided by second to the power 3 times ampere squared. The ohm is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The ohm is a unit of electrical resistance defined as volt divided by ampere = square metre times kilogram divided by second to the power 3 times ampere squared. The ohm is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>Ω</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;voltPerAmpere"/>
@@ -22899,7 +22899,7 @@
     <rdfs:label xml:lang="en">siemens</rdfs:label>
     <rdfs:label xml:lang="nl">siemens</rdfs:label>
     <rdfs:comment xml:lang="en">The siemens is a unit of electrical conductance defined as 1 divided by ohm = ampere divided by volt = coulomb squared times second divided by kilogram times square metre = ampere squared times second to the power 3 divided by kilogram times square metre.</rdfs:comment>
-    <om:longcomment>The siemens is a unit of electrical conductance defined as 1 divided by ohm = ampere divided by volt = coulomb squared times second divided by kilogram times square metre = ampere squared times second to the power 3 divided by kilogram times square metre. The siemens is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The siemens is a unit of electrical conductance defined as 1 divided by ohm = ampere divided by volt = coulomb squared times second divided by kilogram times square metre = ampere squared times second to the power 3 divided by kilogram times square metre. The siemens is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>S</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;amperePerVolt"/>
@@ -23402,7 +23402,7 @@
     <rdfs:label xml:lang="en">weber</rdfs:label>
     <rdfs:label xml:lang="nl">weber</rdfs:label>
     <rdfs:comment xml:lang="en">The weber is a unit of magnetic flux defined as kilogram times square metre divided by second squared times ampere = volt times second = joule divided by ampere.</rdfs:comment>
-    <om:longcomment>The weber is a unit of magnetic flux defined as kilogram times square metre divided by second squared times ampere = volt times second = joule divided by ampere. The weber is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The weber is a unit of magnetic flux defined as kilogram times square metre divided by second squared times ampere = volt times second = joule divided by ampere. The weber is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>Wb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;voltSecond-Time"/>
@@ -23701,7 +23701,7 @@
     <rdfs:label xml:lang="en">ampere per metre</rdfs:label>
     <rdfs:label xml:lang="nl">ampère per meter</rdfs:label>
     <rdfs:comment xml:lang="en">Ampere per metre is a unit of magnetic field defined as ampere divided by metre.</rdfs:comment>
-    <om:longcomment>Ampere per metre is a unit of magnetic field defined as ampere divided by metre. Ampere per metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Ampere per metre is a unit of magnetic field defined as ampere divided by metre. Ampere per metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>A/m</om:symbol>
     <om:alternativeSymbol>A m-1</om:alternativeSymbol>
     <om:alternativeSymbol>A·m-1</om:alternativeSymbol>
@@ -23825,7 +23825,7 @@
     <rdfs:label xml:lang="en">tesla</rdfs:label>
     <rdfs:label xml:lang="nl">tesla</rdfs:label>
     <rdfs:comment xml:lang="en">The tesla is a unit of magnetic flux density defined as volt times second divided by square metre = newton divided by ampere times metre = weber divided by square metre = kilogram divided by coulomb times second = kilogram divided by ampere times second squared.</rdfs:comment>
-    <om:longcomment>The tesla is a unit of magnetic flux density defined as volt times second divided by square metre = newton divided by ampere times metre = weber divided by square metre = kilogram divided by coulomb times second = kilogram divided by ampere times second squared. The tesla is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The tesla is a unit of magnetic flux density defined as volt times second divided by square metre = newton divided by ampere times metre = weber divided by square metre = kilogram divided by coulomb times second = kilogram divided by ampere times second squared. The tesla is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>T</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;weberPerSquareMetre"/>
@@ -24227,7 +24227,7 @@
     <rdfs:label xml:lang="en">henry</rdfs:label>
     <rdfs:label xml:lang="nl">henry</rdfs:label>
     <rdfs:comment xml:lang="en">The henry is a unit of inductance defined as square metre times kilogram divided by second squared times ampere squared = weber divided by ampere = volt second divided by ampere = (joule divided by coulomb) times second divided by (coulomb divided by second) = joule times second squared divided by coulomb squared = square metre times kilogram divided by coulomb squared.</rdfs:comment>
-    <om:longcomment>The henry is a unit of inductance defined as square metre times kilogram divided by second squared times ampere squared = weber divided by ampere = volt second divided by ampere = (joule divided by coulomb) times second divided by (coulomb divided by second) = joule times second squared divided by coulomb squared = square metre times kilogram divided by coulomb squared. The henry is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The henry is a unit of inductance defined as square metre times kilogram divided by second squared times ampere squared = weber divided by ampere = volt second divided by ampere = (joule divided by coulomb) times second divided by (coulomb divided by second) = joule times second squared divided by coulomb squared = square metre times kilogram divided by coulomb squared. The henry is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>H</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;weberPerAmpere"/>
@@ -28226,7 +28226,7 @@
 
   <om:Unit rdf:about="&om;mole">
     <rdfs:comment xml:lang="en">The mole is a unit of amount of substance defined as the amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12.</rdfs:comment>
-    <om:longcomment>The mole is a unit of amount of substance defined as the amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12. The mole is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The mole is a unit of amount of substance defined as the amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12. The mole is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;amountOfSubstanceOfASystemThatContainsAsManyElementaryEntitiesAsThereAreAtomsIn0.012KilogramOfCarbon12"/>
   </om:Unit>
 
@@ -28501,7 +28501,7 @@
     <rdfs:label xml:lang="en">mole per cubic metre</rdfs:label>
     <rdfs:label xml:lang="nl">mol per kubieke meter</rdfs:label>
     <rdfs:comment xml:lang="en">Mole per cubic metre is a unit of amount of substance concentration defined as mole divided by cubic metre.</rdfs:comment>
-    <om:longcomment>Mole per cubic metre is a unit of amount of substance concentration defined as mole divided by cubic metre. Mole per cubic metre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Mole per cubic metre is a unit of amount of substance concentration defined as mole divided by cubic metre. Mole per cubic metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>mol/m3</om:symbol>
     <om:alternativeSymbol>mol m-3</om:alternativeSymbol>
     <om:alternativeSymbol>mol·m-3</om:alternativeSymbol>
@@ -28558,7 +28558,7 @@
     <rdfs:label xml:lang="en">mole per litre</rdfs:label>
     <rdfs:label xml:lang="nl">mole per liter</rdfs:label>
     <rdfs:comment xml:lang="en">Mole per litre is a unit of amount of substance concentration defined as mole divided by litre.</rdfs:comment>
-    <om:longcomment>Mole per litre is a unit of amount of substance concentration defined as mole divided by litre. Mole per litre is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Mole per litre is a unit of amount of substance concentration defined as mole divided by litre. Mole per litre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>mol/l</om:symbol>
     <om:alternativeSymbol>mol l-1</om:alternativeSymbol>
     <om:alternativeSymbol>mol·l-1</om:alternativeSymbol>
@@ -30756,7 +30756,7 @@
     <rdfs:label xml:lang="en">katal</rdfs:label>
     <rdfs:label xml:lang="nl">katal</rdfs:label>
     <rdfs:comment xml:lang="en">The katal is a unit of catalytic activity defined as mole divided by second.</rdfs:comment>
-    <om:longcomment>The katal is a unit of catalytic activity defined as mole divided by second. The katal is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The katal is a unit of catalytic activity defined as mole divided by second. The katal is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>kat</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;molePerSecond-Time"/>
@@ -31414,7 +31414,7 @@
 
   <om:Unit rdf:about="&om;candela">
     <rdfs:comment xml:lang="en">The candela is a unit of luminous intensity defined as the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540e12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian.</rdfs:comment>
-    <om:longcomment>The candela is a unit of luminous intensity defined as the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540e12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian. The candela is a base unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The candela is a unit of luminous intensity defined as the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540e12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian. The candela is a base unit in the International System of Units.</om:longcomment>
     <om:hasQuantity rdf:resource="&om;luminousIntensityInAGivenDirectionOfASourceThatEmitsMonochromaticRadiationOfFrequency540e12HertzAndThatHasARadiantIntensityInThatDirectionOf1683WattPerSteradian"/>
   </om:Unit>
 
@@ -31709,7 +31709,7 @@
     <rdfs:label xml:lang="en">candela per square metre</rdfs:label>
     <rdfs:label xml:lang="nl">candela per vierkante meter</rdfs:label>
     <rdfs:comment xml:lang="en">Candela per square metre is a unit of luminance defined as candela divided by square metre.</rdfs:comment>
-    <om:longcomment>Candela per square metre is a unit of luminance defined as candela divided by square metre. Candela per square metre is a derived unit in the Internationa; System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">Candela per square metre is a unit of luminance defined as candela divided by square metre. Candela per square metre is a derived unit in the Internationa; System of Units.</om:longcomment>
     <om:symbol>cd/m2</om:symbol>
     <om:alternativeSymbol>cd m-2</om:alternativeSymbol>
     <om:alternativeSymbol>cd·m-2</om:alternativeSymbol>
@@ -31880,7 +31880,7 @@
     <rdfs:label xml:lang="en">lumen</rdfs:label>
     <rdfs:label xml:lang="nl">lumen</rdfs:label>
     <rdfs:comment xml:lang="en">The lumen is a unit of luminous flux defined as candela times steradian = lux times square metre.</rdfs:comment>
-    <om:longcomment>The lumen is a unit of luminous flux defined as candela times steradian = lux times square metre. The lumen is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The lumen is a unit of luminous flux defined as candela times steradian = lux times square metre. The lumen is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>lm</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;candelaSteradian"/>
@@ -32222,7 +32222,7 @@
     <rdfs:label xml:lang="en">lux</rdfs:label>
     <rdfs:label xml:lang="nl">lux</rdfs:label>
     <rdfs:comment xml:lang="en">The lux is a unit of illuminance defined as lumen divided by square metre = candela times steradian divided by square metre.</rdfs:comment>
-    <om:longcomment>The lux is a unit of illuminance defined as lumen divided by square metre = candela times steradian divided by square metre. The lux is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The lux is a unit of illuminance defined as lumen divided by square metre = candela times steradian divided by square metre. The lux is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>lx</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;lumenPerSquareMetre"/>
@@ -33207,7 +33207,7 @@
     <rdfs:label xml:lang="en">gray</rdfs:label>
     <rdfs:label xml:lang="nl">gray</rdfs:label>
     <rdfs:comment xml:lang="en">The gray is a unit of absorbed dose defined as joule divided by kilogram = square metre divided by second squared.</rdfs:comment>
-    <om:longcomment>The gray is a unit of absorbed dose defined as joule divided by kilogram = square metre divided by second squared. The gray is a derived unit is the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The gray is a unit of absorbed dose defined as joule divided by kilogram = square metre divided by second squared. The gray is a derived unit is the International System of Units.</om:longcomment>
     <om:symbol>Gy</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;joulePerKilogram"/>
@@ -33548,7 +33548,7 @@
     <rdfs:label xml:lang="en">sievert</rdfs:label>
     <rdfs:label xml:lang="nl">sievert</rdfs:label>
     <rdfs:comment xml:lang="en">The sievert is a unit of dose equivalent defined as joule divided by kilogram = square metre divided by second squared.</rdfs:comment>
-    <om:longcomment>The sievert is a unit of dose equivalent defined as joule divided by kilogram = square metre divided by second squared. The sievert is a derived unit is the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The sievert is a unit of dose equivalent defined as joule divided by kilogram = square metre divided by second squared. The sievert is a derived unit is the International System of Units.</om:longcomment>
     <om:symbol>Sv</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;joulePerKilogram"/>
@@ -33959,7 +33959,7 @@
     <rdfs:label xml:lang="en">becquerel</rdfs:label>
     <rdfs:label xml:lang="nl">becquerel</rdfs:label>
     <rdfs:comment xml:lang="en">The becquerel is a unit of activity defined as the activity of a quantity of radioactive material in which one nucleus decays per second. Algebraically it is defined as 1 divided by second.</rdfs:comment>
-    <om:longcomment>The becquerel is a unit of activity defined as the activity of a quantity of radioactive material in which one nucleus decays per second. Algebraically it is defined as 1 divided by second. The becquerel is a derived unit in the International System of Units.</om:longcomment>
+    <om:longcomment xml:lang="en">The becquerel is a unit of activity defined as the activity of a quantity of radioactive material in which one nucleus decays per second. Algebraically it is defined as 1 divided by second. The becquerel is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>Bq</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasUnit rdf:resource="&om;reciprocalSecond-Time"/>
@@ -35564,19 +35564,9 @@
     <rdfs:label xml:lang="nl">magnitude</rdfs:label>
     <rdfs:comment xml:lang="en">Reverse logarithmic measure of the brightness of an object.</rdfs:comment>
 
-    <om:longcomment xml:lang="en" rdf:parseType="Literal">The magnitude scale was originally created by Hipparchos of Nicea (160-127 BCE) and was measured by comparing the brightness between stars. Initially this was done inaccurately by eye but is currently done by using photoelectric photometers or even more recently by CCDs. Hipparchos divided the stars into six magnitude (brightness classes), the brightest stars being assigned to the first class and the faintest to the sixth class. By about the middle 1800s it became apparent that the traditional magnitude scale is close to a logarithmic scale with base 2.5. This is due to the fact that the response of the eye is nearly logarithmic. N.R. Pogson formalised the magnitude scale to closely match the traditional (visual) scale. It is now defined as:  
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
-   		<msub><mi>m</mi><mn>1</mn></msub> <mo>-</mo> <msub><mi>m</mi><mn>2</mn>  </msub><mo>=</mo> 
-   		<mn>-2.5</mn><mi>log</mi>
-    	<mfrac linethickness="1">
-    		<mrow>
-    			<msub><mi>f</mi><mn>1</mn></msub>
-    		</mrow>
-    		<mrow><msub><mi>f</mi><mn>2</mn></msub>
-    		</mrow>
-    	</mfrac>
-    </math>
-    where <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>m</mi><mn>1</mn></msub> <mo>-</mo> <msub><mi>m</mi><mn>2</mn>  </msub></math> is the magnitude difference between two objects, and <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>f</mi><mn>1</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'><msub><mi>f</mi><mn>2</mn></msub></math> are the luminous fluxes of the two objects. The magnitude of Vega (α Lyrae, HD 172167) is defined to be 0 in all wavelengths and passbands, although in practice this can only be an approximation. The zero point is now defined using multiple standard stars from the north polar sequence (non-variable stars within 2 degrees of the north celestial pole) or secondary standard stars from other parts of the sky. Please note that the scale is inverted, objects of magnitude 1 have a higher luminous flux than objects of magnitude 5. Stars of magnitude 6 are just visible to the naked eye under good observing conditions.
+    <om:longcomment xml:lang="en">The magnitude scale was originally created by Hipparchos of Nicea (160-127 BCE) and was measured by comparing the brightness between stars. Initially this was done inaccurately by eye but is currently done by using photoelectric photometers or even more recently by CCDs. Hipparchos divided the stars into six magnitude (brightness classes), the brightest stars being assigned to the first class and the faintest to the sixth class. By about the middle 1800s it became apparent that the traditional magnitude scale is close to a logarithmic scale with base 2.5. This is due to the fact that the response of the eye is nearly logarithmic. N.R. Pogson formalised the magnitude scale to closely match the traditional (visual) scale. It is now defined as:  
+    m₁ - m₂ = - 2.5 log (f₁ / f₂)
+    where m₁ - m₂ is the magnitude difference between two objects, and f₁ and f₂ are the luminous fluxes of the two objects. The magnitude of Vega (α Lyrae, HD 172167) is defined to be 0 in all wavelengths and passbands, although in practice this can only be an approximation. The zero point is now defined using multiple standard stars from the north polar sequence (non-variable stars within 2 degrees of the north celestial pole) or secondary standard stars from other parts of the sky. Please note that the scale is inverted, objects of magnitude 1 have a higher luminous flux than objects of magnitude 5. Stars of magnitude 6 are just visible to the naked eye under good observing conditions.
     The units of magnitude, also called magnitude, are usually not indicated except when indicating small magnitude differences when milli- or micromagnitudes are used.</om:longcomment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>m</om:symbol>
@@ -35849,7 +35839,7 @@
 
     <rdfs:comment xml:lang="en">A magnitude measured in one of Johnson's standard passbands (using a standard filter, i.e. U, B, or V).</rdfs:comment>
 
-    <om:longcomment xml:lang="en" rdf:parseType="Literal">For accurate photometry the magnitude needs to be determined over well-defined spectral regions as the spectrum of to objects may be quite different. These magnitudes are measured using filters that allows only radiation within specific spectral regions (passbands) to pass through to the detector. These filters have accurately defined transmission curves characterised by a central wavelength and a bandwidth. The UBV system devised by Harold Johnson and William Morgan has been the most important general system until recently. The precise definition requires a reflecting telescope with aluminised mirrors fitted with an RCA 1P21 photomultiplier. The U region corresponds to a region in the violet and ultraviolet, the B region corresponds to typical photographic response and the V region to the visual response region (approximating the eye's response curve).</om:longcomment>
+    <om:longcomment xml:lang="en">For accurate photometry the magnitude needs to be determined over well-defined spectral regions as the spectrum of to objects may be quite different. These magnitudes are measured using filters that allows only radiation within specific spectral regions (passbands) to pass through to the detector. These filters have accurately defined transmission curves characterised by a central wavelength and a bandwidth. The UBV system devised by Harold Johnson and William Morgan has been the most important general system until recently. The precise definition requires a reflecting telescope with aluminised mirrors fitted with an RCA 1P21 photomultiplier. The U region corresponds to a region in the violet and ultraviolet, the B region corresponds to typical photographic response and the V region to the visual response region (approximating the eye's response curve).</om:longcomment>
 
     <rdfs:subClassOf rdf:resource="&om;Magnitude"/>
 
@@ -37183,7 +37173,7 @@
     <rdfs:label xml:lang="en">volt per watt</rdfs:label>
     <rdfs:label xml:lang="nl">volt per watt</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Volt per watt is a unit of responsivity.</rdfs:comment> -->
-    <!-- <om:longcomment>Volt per watt is a unit of responsivity defined as volt divided by watt. Volt per watt is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Volt per watt is a unit of responsivity defined as volt divided by watt. Volt per watt is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>V/W</om:symbol>
     <om:alternativeSymbol>V W-1</om:alternativeSymbol>
     <om:alternativeSymbol>V·W-1</om:alternativeSymbol>
@@ -37231,7 +37221,7 @@
     <rdfs:label xml:lang="en">ampere per watt</rdfs:label>
     <rdfs:label xml:lang="nl">ampere per watt</rdfs:label>
     <!-- <rdfs:comment xml:lang="en">Ampere per watt is a unit of responsivity.</rdfs:comment> -->
-    <!-- <om:longcomment>Ampere per watt is a unit of responsivity defined as ampere divided by watt. Ampere per watt is a derived unit in the International System of Units.</om:longcomment> -->
+    <!-- <om:longcomment xml:lang="en">Ampere per watt is a unit of responsivity defined as ampere divided by watt. Ampere per watt is a derived unit in the International System of Units.</om:longcomment> -->
     <om:symbol>A/W</om:symbol>
     <om:alternativeSymbol>A W-1</om:alternativeSymbol>
     <om:alternativeSymbol>A·W-1</om:alternativeSymbol>
