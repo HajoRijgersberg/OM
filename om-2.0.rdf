@@ -44,10 +44,10 @@
   <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.44</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.45</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2023/08/25</dc:date>
+    <dc:date>2023/09/06</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -1062,10 +1062,6 @@
     <om:usesUnit rdf:resource="&om;barn"/>
     <om:usesUnit rdf:resource="&om;centiare"/>
     <om:usesUnit rdf:resource="&om;circularMil"/>
-    <om:usesUnit rdf:resource="&om;squareInch-International"/>
-    <om:usesUnit rdf:resource="&om;squareFoot-International"/>
-    <om:usesUnit rdf:resource="&om;squareYard-International"/>
-    <om:usesUnit rdf:resource="&om;squareMile-International"/>
     <om:usesUnit rdf:resource="&om;hectare"/>
     <om:usesUnit rdf:resource="&om;squareCentimetre"/>
     <om:usesUnit rdf:resource="&om;squareDecametre"/>
@@ -1084,6 +1080,11 @@
     <om:usesUnit rdf:resource="&om;squareExametre"/>
     <om:usesUnit rdf:resource="&om;squarePetametre"/>
     <om:usesUnit rdf:resource="&om;squareTerametre"/>
+    <om:usesUnit rdf:resource="&om;squareAngstrom"/>
+    <om:usesUnit rdf:resource="&om;squareInch-International"/>
+    <om:usesUnit rdf:resource="&om;squareFoot-International"/>
+    <om:usesUnit rdf:resource="&om;squareYard-International"/>
+    <om:usesUnit rdf:resource="&om;squareMile-International"/>
     <om:usesUnit rdf:resource="&om;acreFoot"/>
     <om:usesUnit rdf:resource="&om;barrel-US"/>
     <om:usesUnit rdf:resource="&om;bushel-US"/>
@@ -1098,6 +1099,7 @@
     <om:usesUnit rdf:resource="&om;cubicMetre"/>
     <om:usesUnit rdf:resource="&om;cubicMicrometre"/>
     <om:usesUnit rdf:resource="&om;cubicMillimetre"/>
+    <om:usesUnit rdf:resource="&om;cubicAngstrom"/>
     <om:usesUnit rdf:resource="&om;cup-USCustomary"/>
     <om:usesUnit rdf:resource="&om;cubicParsec"/>
     <om:usesUnit rdf:resource="&om;cubicKiloparsec"/>
@@ -2643,6 +2645,7 @@
               <om:Unit rdf:about="&om;barn"/>
               <om:Unit rdf:about="&om;circularMil"/>
               <om:UnitExponentiation rdf:about="&om;squareMetre"/>
+              <om:UnitExponentiation rdf:about="&om;squareAngstrom"/>
               <om:UnitExponentiation rdf:about="&om;squareInch-International"/>
               <om:UnitExponentiation rdf:about="&om;squareFoot-International"/>
               <om:UnitExponentiation rdf:about="&om;squareYard-International"/>
@@ -3040,6 +3043,14 @@
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
 
+  <om:UnitExponentiation rdf:about="&om;squareAngstrom">
+    <rdfs:label xml:lang="en">square angstrom</rdfs:label>
+    <om:symbol>Å2</om:symbol>
+    <om:hasBase rdf:resource="&om;angstrom"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">2</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;area-Dimension"/>
+  </om:UnitExponentiation>
+
   <om:UnitExponentiation rdf:about="&om;squareInch-International">
     <rdfs:label xml:lang="en">square inch (international)</rdfs:label>
     <om:symbol>in2</om:symbol>
@@ -3097,6 +3108,7 @@
     <om:commonlyHasUnit rdf:resource="&om;acre-USSurvey"/>
     <om:commonlyHasUnit rdf:resource="&om;barn"/>
     <om:commonlyHasUnit rdf:resource="&om;circularMil"/>
+    <om:commonlyHasUnit rdf:resource="&om;squareAngstrom"/>
     <om:commonlyHasUnit rdf:resource="&om;squareInch-International"/>
     <om:commonlyHasUnit rdf:resource="&om;squareFoot-International"/>
     <om:commonlyHasUnit rdf:resource="&om;squareYard-International"/>
@@ -3157,6 +3169,7 @@
               <om:UnitExponentiation rdf:about="&om;cubicMetre"/>
               <om:UnitExponentiation rdf:about="&om;cubicParsec"/>
               <om:UnitExponentiation rdf:about="&om;cubicKiloparsec"/>
+              <om:UnitExponentiation rdf:about="&om;cubicAngstrom"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedLitre"/>
@@ -3948,6 +3961,14 @@
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
 
+  <om:UnitExponentiation rdf:about="&om;cubicAngstrom">
+    <rdfs:label xml:lang="en">cubic angstrom</rdfs:label>
+    <om:symbol>Å3</om:symbol>
+    <om:hasBase rdf:resource="&om;angstrom"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">3</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;volume-Dimension"/>
+  </om:UnitExponentiation>
+
   <om:Unit rdf:about="&om;bar-Food">
     <rdfs:label xml:lang="en">bar (food)</rdfs:label>
     <rdfs:label xml:lang="nl">reep</rdfs:label>
@@ -4192,6 +4213,7 @@
     <om:commonlyHasUnit rdf:resource="&om;teaspoon-US"/>
     <om:commonlyHasUnit rdf:resource="&om;dessertspoon"/>
     <om:commonlyHasUnit rdf:resource="&om;ton-Register"/>
+    <om:commonlyHasUnit rdf:resource="&om;cubicAngstrom"/>
   </owl:Class>
 
   <!-- Radian Ontology -->
@@ -5199,12 +5221,14 @@
     <om:hasDerivedUnit rdf:resource="&om;metrePerSecond-Time"/>
     <om:hasDerivedUnit rdf:resource="&om;metrePerSecond-TimeSquared"/>
     <om:hasDerivedUnit rdf:resource="&om;reciprocalMetre"/>
+    <om:hasDerivedUnit rdf:resource="&om;reciprocalAngstrom"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicmetre"/>
     <om:hasDerivedUnit rdf:resource="&om;gramPerCubicmetre"/>
     <om:hasDerivedUnit rdf:resource="&om;milligramPerCubicmetre"/>
     <om:hasDerivedUnit rdf:resource="&om;gramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;microgramPerCubicCentimetre"/>
     <om:hasDerivedUnit rdf:resource="&om;kilogramPerCubicDecimetre"/>
+    <om:hasDerivedUnit rdf:resource="&om;unifiedAtomicMassUnitPerCubicAngstrom"/>
     <om:hasDerivedUnit rdf:resource="&om;cubicMetrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;litrePerKilogram"/>
     <om:hasDerivedUnit rdf:resource="&om;amperePerSquareMetre"/>
@@ -6023,6 +6047,7 @@
     <om:usesQuantity rdf:resource="&om;VolumeFraction"/>
     <om:usesUnit rdf:resource="&om;kayser"/>
     <om:usesUnit rdf:resource="&om;reciprocalMetre"/>
+    <om:usesUnit rdf:resource="&om;reciprocalAngstrom"/>
     <om:usesUnit rdf:resource="&om;day"/>
     <om:usesUnit rdf:resource="&om;hour"/>
     <om:usesUnit rdf:resource="&om;minute-Time"/>
@@ -9301,7 +9326,7 @@
 
   <om:UnitExponentiation rdf:about="&om;reciprocalMetre">
     <rdfs:label xml:lang="en">reciprocal metre</rdfs:label>
-    <rdfs:label xml:lang="nl">omgekeerder meter</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde meter</rdfs:label>
     <rdfs:comment xml:lang="en">Reciprocal metre is a unit of wavenumber defined as 1 divided by metre.</rdfs:comment>
     <om:longcomment xml:lang="en">Reciprocal metre is a unit of wavenumber defined as 1 divided by metre. Reciprocal metre is a derived unit in the International System of Units.</om:longcomment>
     <om:symbol>m-1</om:symbol>
@@ -9357,6 +9382,14 @@
     <om:hasDimension rdf:resource="&om;wavenumber-Dimension"/>
   </om:Unit>
 
+  <om:UnitExponentiation rdf:about="&om;reciprocalAngstrom">
+    <rdfs:label xml:lang="en">reciprocal angstrom</rdfs:label>
+    <om:symbol>Å-1</om:symbol>
+    <om:hasBase rdf:resource="&om;angstrom"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-1</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;wavenumber-Dimension"/>
+  </om:UnitExponentiation>
+
   <!-- <om:Measure rdf:about="&om;_1.0e2ReciprocalMetre">
     <om:hasNumericalValue>1.0e2</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;reciprocalMetre"/>
@@ -9364,6 +9397,7 @@
 
   <owl:Class rdf:about="&om;Wavenumber">
     <om:commonlyHasUnit rdf:resource="&om;kayser"/>
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalAngstrom"/>
   </owl:Class>
 
   <!-- Metre Per Metre Ontology -->
@@ -10130,6 +10164,7 @@
               <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
+              <om:UnitDivision rdf:about="&om;unifiedAtomicMassUnitPerCubicAngstrom"/>
               <om:UnitDivision rdf:about="&om;gramPerLitre"/>
               <om:UnitDivision rdf:about="&om;solarMassPerCubicParsec"/>
             </owl:oneOf>
@@ -10222,6 +10257,16 @@
     <om:alternativeSymbol>kg·dm-3</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilogram"/>
     <om:hasDenominator rdf:resource="&om;cubicDecimetre"/>
+    <om:hasDimension rdf:resource="&om;density-Dimension"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;unifiedAtomicMassUnitPerCubicAngstrom">
+    <rdfs:label xml:lang="en">unified atomic mass unit per cubic angstrom</rdfs:label>
+    <om:symbol>u/Å3</om:symbol>
+    <om:alternativeSymbol>u Å-3</om:alternativeSymbol>
+    <om:alternativeSymbol>u·Å-3</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;unifiedAtomicMassUnit"/>
+    <om:hasDenominator rdf:resource="&om;cubicAngstrom"/>
     <om:hasDimension rdf:resource="&om;density-Dimension"/>
   </om:UnitDivision>
 
