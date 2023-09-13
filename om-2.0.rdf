@@ -10154,7 +10154,7 @@
               <om:UnitDivision rdf:about="&om;gramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;microgramPerCubicCentimetre"/>
               <om:UnitDivision rdf:about="&om;microgramPerCubicMetre"/>
-              <om:UnitDivision rdf:resource="&om;nanogramPerCubicMetre"/>
+              <om:UnitDivision rdf:about="&om;nanogramPerCubicMetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicmetre"/>
               <om:UnitDivision rdf:about="&om;kilogramPerCubicDecimetre"/>
               <om:UnitDivision rdf:about="&om;gramPerLitre"/>
@@ -18434,7 +18434,7 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:UnitDivision rdf:resource="&om;wattPerSquareMetre"/>
+          <om:UnitDivision rdf:about="&om;wattPerSquareMetre"/>
           <om:UnitDivision rdf:about="&om;wattHourPerSquareMetrePerDay"/>
         </owl:oneOf>
       </owl:Class>
