@@ -480,7 +480,7 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <rdfs:range rdf:resource="&xsd;float"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
     <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:DatatypeProperty>
 
@@ -740,7 +740,7 @@
   <owl:DatatypeProperty rdf:about="&om;hasOff-Set">
     <rdfs:label xml:lang="en">has off-set</rdfs:label>
     <rdfs:domain rdf:resource="&om;Scale"/>
-    <rdfs:range rdf:resource="&xsd;float"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
   </owl:DatatypeProperty>
 
   <owl:Class rdf:about="&om;Point">
@@ -1389,21 +1389,21 @@
     <rdfs:label xml:lang="en">yocto</rdfs:label>
     <rdfs:label xml:lang="nl">yocto</rdfs:label>
     <om:symbol>y</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-24</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000000000000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;zepto">
     <rdfs:label xml:lang="en">zepto</rdfs:label>
     <rdfs:label xml:lang="nl">zepto</rdfs:label>
     <om:symbol>z</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-21</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000000000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;atto">
     <rdfs:label xml:lang="en">atto</rdfs:label>
     <rdfs:label xml:lang="nl">atto</rdfs:label>
     <om:symbol>a</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-18</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;femto">
@@ -1411,7 +1411,7 @@
     <rdfs:label xml:lang="nl">femto</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">飛</rdfs:label> -->
     <om:symbol>f</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-15</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;pico">
@@ -1419,7 +1419,7 @@
     <rdfs:label xml:lang="nl">pico</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">皮</rdfs:label> -->
     <om:symbol>p</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-12</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;nano">
@@ -1427,7 +1427,7 @@
     <rdfs:label xml:lang="nl">nano</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">纳</rdfs:label> -->
     <om:symbol>n</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-9</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;micro">
@@ -1436,7 +1436,7 @@
 <!--    <rdfs:label xml:lang="zh">微</rdfs:label> -->
     <om:symbol>μ</om:symbol>
     <om:alternativeSymbol>u</om:alternativeSymbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-6</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.000001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;milli">
@@ -1444,7 +1444,7 @@
     <rdfs:label xml:lang="nl">milli</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">毫</rdfs:label> -->
     <om:symbol>m</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-3</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.001</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;centi">
@@ -1452,7 +1452,7 @@
     <rdfs:label xml:lang="nl">centi</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">厘</rdfs:label> -->
     <om:symbol>c</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-2</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.01</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;deci">
@@ -1460,7 +1460,7 @@
     <rdfs:label xml:lang="nl">deci</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">分</rdfs:label> -->
     <om:symbol>d</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e-1</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">0.1</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;deca">
@@ -1468,14 +1468,14 @@
     <rdfs:label xml:lang="nl">deca</rdfs:label>
     <om:alternativeLabel xml:lang="en">deka</om:alternativeLabel>
     <om:symbol>da</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e1</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">10</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;hecto">
     <rdfs:label xml:lang="en">hecto</rdfs:label>
     <rdfs:label xml:lang="nl">hecto</rdfs:label>
     <om:symbol>h</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e2</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">100</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;kilo">
@@ -1483,7 +1483,7 @@
     <rdfs:label xml:lang="nl">kilo</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">千</rdfs:label> -->
     <om:symbol>k</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e3</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;mega">
@@ -1491,7 +1491,7 @@
     <rdfs:label xml:lang="nl">mega</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">兆</rdfs:label> -->
     <om:symbol>M</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e6</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;giga">
@@ -1499,7 +1499,7 @@
     <rdfs:label xml:lang="nl">giga</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">吉</rdfs:label> -->
     <om:symbol>G</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e9</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;tera">
@@ -1507,7 +1507,7 @@
     <rdfs:label xml:lang="nl">tera</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">太</rdfs:label> -->
     <om:symbol>T</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e12</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;peta">
@@ -1515,7 +1515,7 @@
     <rdfs:label xml:lang="nl">peta</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">拍</rdfs:label> -->
     <om:symbol>P</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e15</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;exa">
@@ -1523,7 +1523,7 @@
     <rdfs:label xml:lang="nl">exa</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">艾</rdfs:label> -->
     <om:symbol>E</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e18</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;zetta">
@@ -1531,7 +1531,7 @@
     <rdfs:label xml:lang="nl">zetta</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">泽</rdfs:label> -->
     <om:symbol>Z</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e21</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000000000000</om:hasFactor>
   </om:SIPrefix>
 
   <om:SIPrefix rdf:about="&om;yotta">
@@ -1539,7 +1539,7 @@
     <rdfs:label xml:lang="nl">yotta</rdfs:label>
 <!--    <rdfs:label xml:lang="zh">尧</rdfs:label> -->
     <om:symbol>Y</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1e24</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000000000000000</om:hasFactor>
   </om:SIPrefix>
 
   <!-- Unit of Measure Ontologies -->
@@ -2155,7 +2155,7 @@
     <om:symbol>Å</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- <om:hasDefinition rdf:resource="&om;_1.0e-10Metre"/> -->
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2174,7 +2174,7 @@
     <rdfs:comment xml:lang="en">The chain is a unit of length defined as 20.1168 metre.</rdfs:comment>
     <om:symbol>ch</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">20.1168</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">20.1168</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2184,7 +2184,7 @@
     <om:alternativeLabel xml:lang="en">US survey fathom</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US survey fathom is a unit of length defined as 1.828804 metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.828804</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1.828804</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2194,7 +2194,7 @@
     <rdfs:label xml:lang="nl">fermi</rdfs:label>
     <rdfs:comment xml:lang="en">The fermi is a unit of length defined as 1.0e-15 metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-15</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2207,7 +2207,7 @@
     <rdfs:comment xml:lang="en">The international foot is a unit of length defined as 3.048e-1 metre.</rdfs:comment>
     <om:symbol>ft</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.048e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.3048</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2218,7 +2218,7 @@
     <rdfs:comment xml:lang="en">The US survey foot is a unit of length defined as 3.048006e-1 metre.</rdfs:comment>
     <om:symbol>ft</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.048006e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.3048006</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2240,7 +2240,7 @@
     <om:alternativeLabel xml:lang="en">international furlong</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The international furlong is a unit of length defined as 201.168 metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">201.168</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">201.168</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2253,7 +2253,7 @@
     <rdfs:comment xml:lang="en">The international inch is a unit of length defined as 2.54e-2 metre.</rdfs:comment>
     <om:symbol>in</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.54e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0254</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2264,7 +2264,7 @@
     <rdfs:comment xml:lang="en">The micron is a unit of length defined as 1.0e-6 metre.</rdfs:comment>
     <om:symbol>μ</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2274,7 +2274,7 @@
     <om:alternativeLabel xml:lang="en">thou</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The mil (length) is a unit of length defined as 2.54e-5 metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.54e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000254</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2285,7 +2285,7 @@
     <rdfs:comment xml:lang="en">The statute mile is a unit of length defined as 1.609344e3 metre.</rdfs:comment>
     <om:symbol>mi</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.609344e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1609.344</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2295,7 +2295,7 @@
     <om:alternativeLabel xml:lang="en">US survey mile</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US survey mile is a unit of length defined as 1.609347e3 metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.609347e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1609.347</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2312,7 +2312,7 @@
     <om:alternativeSymbol>NM</om:alternativeSymbol>
     <om:alternativeSymbol>nm</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1852</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1852</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2325,7 +2325,7 @@
     <rdfs:comment xml:lang="en">The US rod is a unit of length defined as 5.029210 metre.</rdfs:comment>
     <om:symbol>rd</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.029210</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">5.029210</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2338,7 +2338,7 @@
     <rdfs:comment xml:lang="en">The international yard is a unit of length defined as 9.144e-1 metre.</rdfs:comment>
     <om:symbol>yd</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.144e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.9144</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -2927,7 +2927,7 @@
     <rdfs:comment xml:lang="en">The are is a unit of area defined as 100 square metre.</rdfs:comment>
     <om:symbol>a</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">100</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -3006,7 +3006,7 @@
     <rdfs:comment xml:lang="en">The international acre is a unit of area defined as 4.0468564224e3 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:symbol>ac</om:symbol>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.0468564224e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4046.8564224</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -3019,7 +3019,7 @@
     <rdfs:comment xml:lang="en">The US survey acre is a unit of area defined as 4.046872609874252e3 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:symbol>ac</om:symbol>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.046872609874252e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4046.872609874252</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -3029,7 +3029,7 @@
     <rdfs:comment xml:lang="en">The barn is a unit of area defined as 1.0e-28 square metre.</rdfs:comment>
     <om:symbol>b</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-28</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00000000000000000000000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -3038,7 +3038,7 @@
     <rdfs:label xml:lang="en">circular mil</rdfs:label>
     <rdfs:comment xml:lang="en">The cicular mil is a unit of area defined as 5.067075e-10 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.067075e-10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000005067075</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -3450,7 +3450,7 @@
     <om:symbol>l</om:symbol>
     <om:alternativeSymbol>L</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3646,7 +3646,7 @@
     <rdfs:label xml:lang="en">25 millilitre</rdfs:label>
     <rdfs:label xml:lang="nl">25 milliliter</rdfs:label>
     <om:symbol>25 ml</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">25</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">25</om:hasFactor>
     <om:hasUnit rdf:resource="&om;millilitre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:UnitMultiple>
@@ -3708,7 +3708,7 @@
     <rdfs:label xml:lang="en">acre foot</rdfs:label>
     <rdfs:comment xml:lang="en">The acre foot is a unit of volume defined as 1.233489e3 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.233489e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1233.489</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3719,7 +3719,7 @@
     <rdfs:comment xml:lang="en">The US barrel is a unit of volume defined as 1.589873e-1 cubic metre.</rdfs:comment>
     <om:symbol>bbl</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.589873e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.1589873</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3730,7 +3730,7 @@
     <rdfs:comment xml:lang="en">The US bushel is a unit of volume defined as 3.523907e-2 cubic metre.</rdfs:comment>
     <om:symbol>bu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.523907e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.03523907</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3739,7 +3739,7 @@
     <rdfs:label xml:lang="en">cord</rdfs:label>
     <rdfs:comment xml:lang="en">The cord is a unit of volume defined as 3.624556 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.624556</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3.624556</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3749,7 +3749,7 @@
     <om:alternativeLabel xml:lang="en">US customary cup</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US customary cup is a unit of volume defined as 2.365882e-4 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.365882e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0002365882</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
     <om:LaTeXCommand>\cupUnit</om:LaTeXCommand>
@@ -3762,7 +3762,7 @@
     <rdfs:comment xml:lang="en">The US dry gallon is a unit of volume defined as 4.40488377086e-3 cubic metre.</rdfs:comment>
     <om:symbol>gal</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.40488377086e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00440488377086</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3774,7 +3774,7 @@
     <rdfs:comment xml:lang="en">The US dry pint is a unit of volume defined as 5.506105e-4 cubic metre.</rdfs:comment>
     <om:symbol>dry pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.506105e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0005506105</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3786,7 +3786,7 @@
     <rdfs:comment xml:lang="en">The US dry quart is a unit of volume defined as 1.101221e-3 cubic metre.</rdfs:comment>
     <om:symbol>dry qt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.101221e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.001101221</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3798,7 +3798,7 @@
     <rdfs:comment xml:lang="en">The imperial fluid ounce is a unit of volume defined as 2.841306e-5 cubic metre.</rdfs:comment>
     <om:symbol>fl oz</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.841306e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00002841306</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3810,7 +3810,7 @@
     <rdfs:comment xml:lang="en">The US fluid ounce is a unit of volume defined as 2.957353e-5 cubic metre.</rdfs:comment>
     <om:symbol>fl oz</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.957353e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00002957353</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3821,7 +3821,7 @@
     <rdfs:comment xml:lang="en">The imperial gallon is a unit of volume defined as 4.54609e-3 cubic metre.</rdfs:comment>
     <om:symbol>gal</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.54609e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00454609</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3832,7 +3832,7 @@
     <rdfs:comment xml:lang="en">The US gallon is a unit of volume defined as 3.785412e-3 cubic metre.</rdfs:comment>
     <om:symbol>gal</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.785412e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.003785412</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3843,7 +3843,7 @@
     <rdfs:comment xml:lang="en">The imperial gill is a unit of volume defined as 1.420653e-4 cubic metre.</rdfs:comment>
     <om:symbol>gi</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.420653e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0001420653</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3854,7 +3854,7 @@
     <rdfs:comment xml:lang="en">The US gill is a unit of volume defined as 1.182941e-4 cubic metre.</rdfs:comment>
     <om:symbol>gi</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.182941e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0001182941</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3866,7 +3866,7 @@
     <rdfs:comment xml:lang="en">The US liquid pint is a unit of volume defined as 4.731765e-4 cubic metre.</rdfs:comment>
     <om:symbol>liq pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.731765e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0004731765</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3878,7 +3878,7 @@
     <rdfs:comment xml:lang="en">The US liquid quart is a unit of volume defined as 9.463529e-4 cubic metre.</rdfs:comment>
     <om:symbol>liq qt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.463529e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0009463529</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3889,7 +3889,7 @@
     <rdfs:comment xml:lang="en">The US peck is a unit of volume defined as 8.809768e-3 cubic metre.</rdfs:comment>
     <om:symbol>pk</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8.809768e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.008809768</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3899,7 +3899,7 @@
     <om:alternativeLabel xml:lang="en">imperial pint</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The pint is a unit of volume defined as 568.26125 millilitre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">568.26125</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">568.26125</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;millilitre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3909,7 +3909,7 @@
     <om:alternativeLabel xml:lang="en">imperial quart</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The imperial quart is a unit of volume defined as 1.1365 litre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.1365</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1.1365</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;litre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3927,7 +3927,7 @@
     <om:alternativeLabel xml:lang="en">US tablespoon</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US tablespoon is a unit of volume defined as 1.478676e-5 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.478676e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00001478676</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3937,7 +3937,7 @@
     <om:alternativeLabel xml:lang="en">US teaspoon</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US teaspoon is a unit of volume defined as 4.928922e-6 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.928922e-6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000004928922</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;cubicMetre"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3946,7 +3946,7 @@
     <rdfs:label xml:lang="en">dessertspoon</rdfs:label>
     <rdfs:comment xml:lang="en">The desserspoon is a unit of volume defined as 2 teaspoon.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">2</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;teaspoon-US"/>
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -3956,7 +3956,7 @@
     <om:alternativeLabel xml:lang="en">register ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The register ton is a unit of volume defined as 100 cubic foot = 2.8316846592 cubic metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">2.8316846592</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">2.8316846592</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;cubicMetre"/> -->
     <om:hasDimension rdf:resource="&om;volume-Dimension"/>
   </om:Unit>
@@ -4415,7 +4415,7 @@
     <rdfs:comment xml:lang="en">The degree is a unit of angle defined as 1.745329e-2 radian.</rdfs:comment>
     <om:symbol>&#x00B0;</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.745329e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.01745329</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -4426,7 +4426,7 @@
     <rdfs:comment xml:lang="en">The gon is a unit of angle defined as 1.570796e-2 radian.</rdfs:comment>
     <om:symbol>gon</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.570796e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.01570796</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -4448,7 +4448,7 @@
     <rdfs:label xml:lang="en">mil (angle)</rdfs:label>
     <rdfs:comment xml:lang="en">The mil (angle) is a unit of angle defined as 9.817477e-4 radian.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.817477e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0009817477</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -4477,7 +4477,7 @@
     <rdfs:comment xml:lang="en">The minute (angle) is a unit of angle defined as 2.908882e-4 radian.</rdfs:comment>
     <om:symbol>'</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.908882e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0002908882</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -4487,7 +4487,7 @@
     <rdfs:comment xml:lang="en">The revolution is a unit of angle defined as 6.283185 radian.</rdfs:comment>
     <om:symbol>r</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6.283185</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">6.283185</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -4503,7 +4503,7 @@
     <rdfs:comment xml:lang="en">The second (angle) is a unit of angle defined as 4.848137e-6 radian.</rdfs:comment>
     <om:symbol>"</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.848137e-6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000004848137</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;radian"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -7554,7 +7554,7 @@
     <om:symbol>d</om:symbol>
     <om:LaTeXCommand>\dayUnit</om:LaTeXCommand>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">86400</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">86400</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7567,7 +7567,7 @@
     <om:symbol>h</om:symbol>
     <om:alternativeSymbol>u</om:alternativeSymbol> 
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.6e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3600</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7579,7 +7579,7 @@
     <rdfs:comment xml:lang="en">The minute (time) is a unit of time defined as 60 second.</rdfs:comment>
     <om:symbol>min</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6.0e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">60</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7598,7 +7598,7 @@
     <rdfs:label xml:lang="en">shake</rdfs:label>
     <rdfs:comment xml:lang="en">The shake is a unit of time defined as 1.0e-8 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7608,7 +7608,7 @@
     <rdfs:label xml:lang="nl">week</rdfs:label>
     <rdfs:comment xml:lang="en">The week is a unit of time defined as 6.04800e5 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6.04800e5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">604800</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7622,7 +7622,7 @@
     <om:alternativeSymbol>y</om:alternativeSymbol>
     <om:alternativeSymbol>yr</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">31556952</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">31556952</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -7703,7 +7703,7 @@
     <rdfs:comment xml:lang="en">The gram is a unit of mass defined as 1.0e-3 kilogram.</rdfs:comment>
     <om:symbol>g</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8063,7 +8063,7 @@
     <rdfs:comment xml:lang="en">The tonne is a unit of mass defined as 1000 kilogram.</rdfs:comment>
     <om:symbol>t</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8199,7 +8199,7 @@
     <rdfs:label xml:lang="nl">karaat (massa)</rdfs:label>
     <rdfs:comment xml:lang="en">The carat (mass) is a unit of mass defined as 2.0e-4 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.0e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00020</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8209,7 +8209,7 @@
     <rdfs:comment xml:lang="en">The grain is a unit of mass defined as 6.479891e-5 kilogram.</rdfs:comment>
     <om:symbol>gr</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6.479891e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00006479891</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8219,7 +8219,7 @@
     <om:alternativeLabel xml:lang="en">British hundredweight</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The British hundredweight is a unit of mass defined as 5.080235e1 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.080235e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">50.80235</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8229,7 +8229,7 @@
     <om:alternativeLabel xml:lang="en">US hundredweight</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US hundredweight is a unit of mass defined as 4.535924e1 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.535924e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">45.35924</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8258,7 +8258,7 @@
     <om:symbol>oz (ap.)</om:symbol>
     <om:alternativeSymbol>oz (apoth)</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.110348e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.03110348</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8272,7 +8272,7 @@
     <om:alternativeSymbol>oz (av.)</om:alternativeSymbol>
     <om:alternativeSymbol>oz avdp</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.834952e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.02834952</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8283,7 +8283,7 @@
     <rdfs:comment xml:lang="en">The Troy pennyweight is a unit of mass defined as 1.555174e-3 kilogram.</rdfs:comment>
     <om:symbol>dwt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.555174e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.001555174</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8297,7 +8297,7 @@
     <rdfs:comment xml:lang="en">The apothecaries' pound is a unit of mass defined as 3.732417e-1 kilogram.</rdfs:comment>
     <om:symbol>lb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.732417e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.3732417</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8309,7 +8309,7 @@
     <rdfs:comment xml:lang="en">The avoirdupois pound is a unit of mass defined as 4.535924e-1 kilogram.</rdfs:comment>
     <om:symbol>lb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.5359237e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.45359237</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8321,7 +8321,7 @@
     <rdfs:comment xml:lang="en">The slug is a unit of mass defined as 1.459390e1 kilogram.</rdfs:comment>
     <om:symbol>slug</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.459390e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">14.59390</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8331,7 +8331,7 @@
     <om:alternativeLabel xml:lang="en">short assay ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The short assay ton is a unit of mass defined as 2.916667e-2 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.916667e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.02916667</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8341,7 +8341,7 @@
     <om:alternativeLabel xml:lang="en">long ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The long ton is a unit of mass defined as 1.016047e3 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.016047e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1016.047</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8351,7 +8351,7 @@
     <om:alternativeLabel xml:lang="en">short ton</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The short ton is a unit of mass defined as 9.071847e2 kilogram.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.071847e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">907.1847</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -8768,7 +8768,7 @@
     <om:symbol>%</om:symbol>
     <om:LaTeXSymbol>\%</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.01</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.01</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8778,7 +8778,7 @@
     <rdfs:comment xml:lang="en">Parts per million is a unit of dimension one defined as 1/1 000 000.</rdfs:comment>
     <om:symbol>ppm</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.000001</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000001</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8787,7 +8787,7 @@
     <rdfs:label xml:lang="en">half dozen</rdfs:label>
     <rdfs:comment xml:lang="en">Half dozen is a unit of dimension one defined as 6.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">6</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8796,7 +8796,7 @@
     <rdfs:label xml:lang="en">dozen</rdfs:label>
     <rdfs:comment xml:lang="en">Dozen is a unit of dimension one defined as 12.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">12</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8805,7 +8805,7 @@
     <rdfs:label xml:lang="en">hundred count</rdfs:label>
     <rdfs:comment xml:lang="en">Hundred count is a unit of dimension one defined as 100.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">100</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">100</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8814,7 +8814,7 @@
     <rdfs:label xml:lang="en">gross</rdfs:label>
     <rdfs:comment xml:lang="en">Gross is a unit of dimension one defined as 144.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">144</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">144</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -8823,7 +8823,7 @@
     <rdfs:label xml:lang="en">thousand piece</rdfs:label>
     <rdfs:comment xml:lang="en">Thousand is a unit of dimension one defined as 1000.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1000</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -9377,7 +9377,7 @@
     <om:alternativeLabel xml:lang="nl">rydberg</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The kayser is a unit of wavenumber defined as 100 reciprocal metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">100</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;reciprocalMetre"/>
     <om:hasDimension rdf:resource="&om;wavenumber-Dimension"/>
   </om:Unit>
@@ -12314,7 +12314,7 @@
     <rdfs:comment xml:lang="en">The dyne is a unit of force defined as 1.0e-5 newton.</rdfs:comment>
     <om:symbol>dyn</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;newton"/>
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:Unit>
@@ -12324,7 +12324,7 @@
     <rdfs:label xml:lang="nl">kip</rdfs:label>
     <rdfs:comment xml:lang="en">The kip is a unit of force defined as 4.448222e3 newton.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.448222e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4448.222</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;newton"/>
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:Unit>
@@ -12334,7 +12334,7 @@
     <rdfs:comment xml:lang="en">The pound-force is a unit of force defined as 4.448222 newton.</rdfs:comment>
     <om:symbol>lbf</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.448222</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4.448222</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;newton"/>
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:Unit>
@@ -12343,7 +12343,7 @@
     <rdfs:label xml:lang="en">poundal</rdfs:label>
     <rdfs:comment xml:lang="en">The poundal is a unit of force defined as 1.382550e-1 newton.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.382550e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.1382550</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;newton"/>
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:Unit>
@@ -12353,7 +12353,7 @@
     <om:alternativeLabel xml:lang="en">short ton-force</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The short ton-force is a unit of force defined as 8.896443e3 newton.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8.896443e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">8896.443</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;newton"/>
     <om:hasDimension rdf:resource="&om;force-Dimension"/>
   </om:Unit>
@@ -12812,7 +12812,7 @@
     <om:LaTeXCommand>\barUnit</om:LaTeXCommand>
     <om:symbol>bar</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">100000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -12875,7 +12875,7 @@
     <rdfs:comment xml:lang="en">The metre of mercury is a unit of pressure defined as 133 322 pascal.</rdfs:comment>
     <om:symbol>m Hg</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.33322e5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">133322</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -12925,7 +12925,7 @@
     <rdfs:comment xml:lang="en">The standard atmosphere is a unit of pressure defined as 1.01325e5 pascal.</rdfs:comment>
     <om:symbol>atm</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.01325e5</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">101325</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -12936,7 +12936,7 @@
     <rdfs:comment xml:lang="en">The technical atmosphere is a unit of pressure defined as 9.80665e4 pascal.</rdfs:comment>
     <om:symbol>at</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.80665e4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">98066.5</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -12947,7 +12947,7 @@
     <rdfs:comment xml:lang="en">The barye is a unit of pressure defined as 0.1 pascal.</rdfs:comment>
     <om:symbol>ba</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -12958,7 +12958,7 @@
     <rdfs:comment xml:lang="en">The torr is a unit of pressure defined as 1.333224e2 pascal.</rdfs:comment>
     <om:symbol>Torr</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.33322368421053e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">133.322368421053</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascal"/>
     <om:hasDimension rdf:resource="&om;pressure-Dimension"/>
   </om:Unit>
@@ -13577,7 +13577,7 @@
     <rdfs:comment xml:lang="en">The electronvolt is a unit of energy defined as 1.602177e-19 joule.</rdfs:comment>
     <om:symbol>eV</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.602177e-19</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000000000001602177</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13700,7 +13700,7 @@
     <om:symbol>cal</om:symbol>
     <om:alternativeSymbol>c</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.19002</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4.19002</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13793,7 +13793,7 @@
     <rdfs:comment xml:lang="en">The erg is a unit of energy defined as 1.0e-7 joule.</rdfs:comment>
     <om:symbol>erg</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-7</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13877,7 +13877,7 @@
     <om:LaTeXCommand>\BritishTermalUnitThirtyNineF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05967e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1059.67</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13890,7 +13890,7 @@
     <om:LaTeXCommand>\BritishTermalUnitFiftyNineF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05480e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1054.80</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13903,7 +13903,7 @@
     <om:LaTeXCommand>\BritishTermalUnitSixtyF</om:LaTeXCommand>
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05468e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1054.68</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13916,7 +13916,7 @@
     <om:symbol>Btu_IT</om:symbol>
     <om:LaTeXSymbol>Btu_{IT}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.055056e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1055.056</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13928,7 +13928,7 @@
     <!-- <rdfs:comment xml:lang="en">The mean British thermal unit is a unit of energy defined as 1.05587e3 joule.</rdfs:comment> -->
     <om:symbol>Btu</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.05587e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1055.87</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13941,7 +13941,7 @@
     <om:symbol>Btu_th</om:symbol>
     <om:LaTeXSymbol>BTU_{th}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">1.054350e3</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1054.350</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13955,7 +13955,7 @@
     <om:symbol>cal_15</om:symbol>
     <om:LaTeXSymbol>cal_{15}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.18580</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">4.18580</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13970,7 +13970,7 @@
     <om:symbol>cal_20</om:symbol>
     <om:LaTeXSymbol>cal_{20}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.18190</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">4.18190</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13984,7 +13984,7 @@
     <om:symbol>cal_IT</om:symbol>
     <om:LaTeXSymbol>cal_{IT}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.1868</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">4.1868</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -13996,7 +13996,7 @@
     <om:symbol>cal_th</om:symbol>
     <om:LaTeXSymbol>cal_{th}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">4.184</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">4.184</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;joule"/> -->
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -14005,7 +14005,7 @@
     <rdfs:label xml:lang="en">foot poundal</rdfs:label>
     <rdfs:comment xml:lang="en">The foot poundal is a unit of energy defined as 4.214011e-2 joule.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.214011e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.04214011</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -14014,7 +14014,7 @@
     <rdfs:label xml:lang="en">quad</rdfs:label>
     <rdfs:comment xml:lang="en">The quad is a unit of energy defined as 1.0e15 British thermal unit (International Table).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e15</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000000000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;BritishThermalUnit-InternationalTable"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
     <om:LaTeXCommand>\quadUnit</om:LaTeXCommand>
@@ -14025,7 +14025,7 @@
     <om:alternativeLabel xml:lang="en">EC therm</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The EC therm is a unit of energy defined as 1.05506e8 joule.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.05506e8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">105506000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -14035,7 +14035,7 @@
     <om:alternativeLabel xml:lang="en">US therm</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The US therm is a unit of energy defined as 1.054804e8 joule.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.054804e8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">105480400</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -14044,7 +14044,7 @@
     <rdfs:label xml:lang="en">ton of TNT</rdfs:label>
     <rdfs:comment xml:lang="en">The ton of TNT is a unit of energy defined as 4.184e9 joule.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.184e9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">4184000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;joule"/>
     <om:hasDimension rdf:resource="&om;energy-Dimension"/>
   </om:Unit>
@@ -14594,7 +14594,7 @@
     <om:alternativeLabel xml:lang="en">boiler horsepower</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The boiler horsepower is a unit of power defined as 9.80950e3 watt.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.80950e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">9809.50</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14605,7 +14605,7 @@
     <om:alternativeLabel xml:lang="en">imperial horsepower</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The British horsepower is a unit of power defined as 7.4570e2 watt.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.4570e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">745.70</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14615,7 +14615,7 @@
     <om:alternativeLabel xml:lang="en">electric horsepower</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The electric horsepower is a unit of power defined as 7.46e2 watt.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.46e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">746</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14626,7 +14626,7 @@
     <rdfs:comment xml:lang="en">The metric horsepower is a unit of power defined as 7.354988e2 watt.</rdfs:comment>
     <om:symbol>PS</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.354988e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">735.4988</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14636,7 +14636,7 @@
     <om:alternativeLabel xml:lang="en">water horsepower</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The water horsepower is a unit of power defined as 7.46043e2 watt.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.46043e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">746.043</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14655,7 +14655,7 @@
     <rdfs:label xml:lang="en">ton of refrigeration</rdfs:label>
     <rdfs:comment xml:lang="en">The ton of refrigeration is a unit of power defined as 3.516853e3 watt.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.516853e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3516.853</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -14949,7 +14949,7 @@
     <rdfs:comment xml:lang="en">The poise is a unit of dynamic viscosity defined as 1.0e-1 pascal second (time).</rdfs:comment>
     <om:symbol>P</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;pascalSecond-Time"/>
     <om:hasDimension rdf:resource="&om;dynamicViscosity-Dimension"/>
   </om:Unit>
@@ -15064,7 +15064,7 @@
     <rdfs:comment xml:lang="en">The stokes is a unit of kinematic viscosity defined as 1.0e-4 square metre per second (time).</rdfs:comment>
     <om:symbol>St</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetrePerSecond-Time"/>
     <om:hasDimension rdf:resource="&om;kinematicViscosityOrThermalDiffusivity-Dimension"/>
   </om:Unit>
@@ -15456,7 +15456,7 @@
     <rdfs:label xml:lang="nl">rhe</rdfs:label>
     <rdfs:comment xml:lang="en">The rhe is a unit of fluidity defined as 10 reciprocal pascal second (time).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;reciprocalPascalSecond-Time"/>
     <om:hasDimension rdf:resource="&om;fluidity-Dimension"/>
   </om:Unit>
@@ -15502,7 +15502,7 @@
     <om:alternativeSymbol>g·kg-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;gram"/>
     <om:hasDenominator rdf:resource="&om;kilogram"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.001</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.001</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:UnitDivision>
@@ -17144,7 +17144,7 @@
     <rdfs:label xml:lang="en">100 kilometre</rdfs:label>
     <rdfs:label xml:lang="nl">100 kilometer</rdfs:label>
     <om:symbol>100 km</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">100</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">100</om:hasFactor>
     <om:hasUnit rdf:resource="&om;kilometre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:UnitMultiple>
@@ -18845,7 +18845,7 @@
     <rdfs:comment xml:lang="en">The degree Fahrenheit is a unit of temperature defined as 5.555556e-1 kelvin.</rdfs:comment>
     <om:symbol>&#x00B0;F</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.555556e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.5555556</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kelvin"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:Unit>
@@ -18857,7 +18857,7 @@
     <om:symbol>&#x00B0;R</om:symbol>
     <om:alternativeSymbol>&#x00B0;Ra</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.555556e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.5555556</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kelvin"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:Unit>
@@ -18870,7 +18870,7 @@
     <om:alternativeSymbol>&#x00B0;Re</om:alternativeSymbol>
     <om:alternativeSymbol>&#x00B0;R</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.25</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1.25</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kelvin"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:Unit>
@@ -19864,8 +19864,8 @@
     <om:hasPoint rdf:resource="&om;_1064.18OnTheCelsiusScale"/>
     <om:hasPoint rdf:resource="&om;_1084.62OnTheCelsiusScale"/>
     <!-- <om:definition_description>t90/&#x00B0;C = T90/K - 273.15</om:definition_description> -->
-    <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
-    <om:hasOff-Set rdf:datatype="&xsd;float">-273.15</om:hasOff-Set>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor>
+    <om:hasOff-Set rdf:datatype="&xsd;decimal">-273.15</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeCelsius"/>
   </om:IntervalScale>
@@ -19915,8 +19915,8 @@
     <rdfs:label xml:lang="en">Fahrenheit scale</rdfs:label>
     <rdfs:label xml:lang="nl">Fahrenheitschaal</rdfs:label>
     <rdfs:label xml:lang="zh">华氏温标</rdfs:label>
-    <om:hasFactor rdf:datatype="&xsd;float">1.8</om:hasFactor>
-    <om:hasOff-Set rdf:datatype="&xsd;float">-459.67</om:hasOff-Set>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1.8</om:hasFactor>
+    <om:hasOff-Set rdf:datatype="&xsd;decimal">-459.67</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeFahrenheit"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
@@ -19926,8 +19926,8 @@
     <rdfs:label xml:lang="en">Rankine scale</rdfs:label>
     <rdfs:label xml:lang="nl">Rankineschaal</rdfs:label>
     <rdfs:label xml:lang="zh">兰金规模</rdfs:label>
-    <om:hasFactor rdf:datatype="&xsd;float">1.8</om:hasFactor>
-    <om:hasOff-Set rdf:datatype="&xsd;float">0</om:hasOff-Set>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1.8</om:hasFactor>
+    <om:hasOff-Set rdf:datatype="&xsd;decimal">0</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeRankine"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
@@ -19937,8 +19937,8 @@
     <rdfs:label xml:lang="en">Réaumur scale</rdfs:label>
     <rdfs:label xml:lang="nl">Réaumurschaal</rdfs:label>
     <rdfs:label xml:lang="zh">列氏温标</rdfs:label>
-    <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
-    <om:hasOff-Set rdf:datatype="&xsd;float">-218.52</om:hasOff-Set>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor>
+    <om:hasOff-Set rdf:datatype="&xsd;decimal">-218.52</om:hasOff-Set>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeReaumur"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
@@ -21258,7 +21258,7 @@
     <rdfs:comment xml:lang="en">The abampere is a unit of electric current defined as 10 ampere.</rdfs:comment>
     <om:symbol>abA</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ampere"/>
     <om:hasDimension rdf:resource="&om;electricCurrent-Dimension"/>
   </om:Unit>
@@ -21269,7 +21269,7 @@
     <rdfs:comment xml:lang="en">The biot is a unit of electric current defined as 10 ampere.</rdfs:comment>
     <om:symbol>Bi</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ampere"/>
     <om:hasDimension rdf:resource="&om;electricCurrent-Dimension"/>
   </om:Unit>
@@ -21280,7 +21280,7 @@
     <rdfs:comment xml:lang="en">The statampere is a unit of electric current defined as 3.335641e-10 ampere.</rdfs:comment>
     <om:symbol>statA</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.335641e-10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000003335641</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ampere"/>
     <om:hasDimension rdf:resource="&om;electricCurrent-Dimension"/>
   </om:Unit>
@@ -21309,7 +21309,7 @@
     <rdfs:comment xml:lang="en">The gilbert is a unit of electric current defined as 7.957747e-1 ampere.</rdfs:comment>
     <om:symbol>Gb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.957747e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.7957747</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ampere"/>
     <om:hasDimension rdf:resource="&om;electricCurrent-Dimension"/>
   </om:Unit>
@@ -21700,7 +21700,7 @@
     <rdfs:comment xml:lang="en">The abcoulomb is a unit of electric charge defined as 10 coulomb.</rdfs:comment>
     <om:symbol>abC</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulomb"/>
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
@@ -21710,7 +21710,7 @@
     <rdfs:label xml:lang="nl">faraday</rdfs:label>
     <rdfs:comment xml:lang="en">The faraday is a unit of electric charge defined as 9.648531e4 coulomb.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;float">9.648531e4</om:hasFactor> -->
+    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">96485.31</om:hasFactor> -->
     <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;coulomb"/> -->
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
@@ -21721,7 +21721,7 @@
     <rdfs:comment xml:lang="en">The franklin is a unit of electric charge defined as 3.335641e-10 coulomb.</rdfs:comment>
     <om:symbol>Fr</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.335641e-10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000003335641</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulomb"/>
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
@@ -21732,7 +21732,7 @@
     <rdfs:comment xml:lang="en">The statcoulomb is a unit of electric charge defined as 3.335641e-10 coulomb.</rdfs:comment>
     <om:symbol>statC</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.335641e-10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000003335641</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulomb"/>
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
@@ -22147,7 +22147,7 @@
     <rdfs:comment xml:lang="en">The abvolt is a unit of electric potential defined as 1.0e-8 volt.</rdfs:comment>
     <om:symbol>abV</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;volt"/>
     <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
   </om:Unit>
@@ -22158,7 +22158,7 @@
     <rdfs:comment xml:lang="en">The statvolt is a unit of electric potential defined as 2.997925e2 volt.</rdfs:comment>
     <om:symbol>statV</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.997925e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">299.7925</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;volt"/>
     <om:hasDimension rdf:resource="&om;electricPotential-Dimension"/>
   </om:Unit>
@@ -22514,7 +22514,7 @@
     <rdfs:comment xml:lang="en">The abfarad is a unit of capacitance defined as 1.0e9 farad.</rdfs:comment>
     <om:symbol>abF</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;farad"/>
     <om:hasDimension rdf:resource="&om;capacitance-Dimension"/>
   </om:Unit>
@@ -22525,7 +22525,7 @@
     <rdfs:comment xml:lang="en">The statfarad is a unit of capacitance defined as 1.112650e-12 farad.</rdfs:comment>
     <om:symbol>statF</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.112650e-12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000001112650</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;farad"/>
     <om:hasDimension rdf:resource="&om;capacitance-Dimension"/>
   </om:Unit>
@@ -22853,7 +22853,7 @@
     <rdfs:comment xml:lang="en">The abohm is a unit of electrical resistance defined as 1.0e-9 ohm.</rdfs:comment>
     <om:symbol>abΩ</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ohm"/>
     <om:hasDimension rdf:resource="&om;electricalResistance-Dimension"/>
   </om:Unit>
@@ -22864,7 +22864,7 @@
     <rdfs:comment xml:lang="en">The statohm is a unit of electrical resistance defined as 8.987552e11 ohm.</rdfs:comment>
     <om:symbol>statΩ</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8.987552e11</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">898755200000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;ohm"/>
     <om:hasDimension rdf:resource="&om;electricalResistance-Dimension"/>
   </om:Unit>
@@ -23192,7 +23192,7 @@
     <om:alternativeLabel xml:lang="nl">absiemens</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The abmho is a unit of electrical conductance defined as 1.0e9 siemens.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;siemens"/>
     <om:hasDimension rdf:resource="&om;electricalConductance-Dimension"/>
   </om:Unit>
@@ -23214,7 +23214,7 @@
     <om:alternativeLabel xml:lang="nl">statsiemens</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The statmho is a unit of electrical conductance defined as 1.112650e-12 siemens.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.112650e-12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000000000001112650</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;siemens"/>
     <om:hasDimension rdf:resource="&om;electricalConductance-Dimension"/>
   </om:Unit>
@@ -23694,7 +23694,7 @@
     <rdfs:comment xml:lang="en">The maxwell is a unit of magnetic flux defined as 1.0e-8 weber.</rdfs:comment>
     <om:symbol>Mx</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;weber"/>
     <om:hasDimension rdf:resource="&om;magneticFlux-Dimension"/>
   </om:Unit>
@@ -23705,7 +23705,7 @@
     <rdfs:comment xml:lang="en">The statweber is a unit of magnetic flux defined as 2.9979e2 weber.</rdfs:comment>
     <om:symbol>statWb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.9979e2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">299.79</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;weber"/>
     <om:hasDimension rdf:resource="&om;magneticFlux-Dimension"/>
   </om:Unit>
@@ -23714,7 +23714,7 @@
     <rdfs:label xml:lang="en">unit pole</rdfs:label>
     <rdfs:comment xml:lang="en">The unit pole is a unit of magnetic flux defined as 1.256637e-7 weber.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.256637e-7</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000001256637</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;weber"/>
     <om:hasDimension rdf:resource="&om;magneticFlux-Dimension"/>
   </om:Unit>
@@ -23795,7 +23795,7 @@
     <rdfs:comment xml:lang="en">The oersted is a unit of magnetic field defined as 7.957747e1 ampere per metre.</rdfs:comment>
     <om:symbol>Oe</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">7.957747e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">79.57747</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;amperePerMetre"/>
     <om:hasDimension rdf:resource="&om;MagneticField-Dimension"/>
   </om:Unit>
@@ -24118,7 +24118,7 @@
     <om:LaTeXCommand>\gammaUnit</om:LaTeXCommand>
     <om:symbol>γ</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;tesla"/>
     <om:hasDimension rdf:resource="&om;magneticFluxDensity-Dimension"/>
   </om:Unit>
@@ -24132,7 +24132,7 @@
     <om:symbol>G</om:symbol>
     <om:alternativeSymbol>Gs</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;tesla"/>
     <om:hasDimension rdf:resource="&om;magneticFluxDensity-Dimension"/>
   </om:Unit>
@@ -24153,7 +24153,7 @@
     <rdfs:comment xml:lang="en">The stattesla is a unit of magnetic flux density defined as 2.9979e6 tesla.</rdfs:comment>
     <om:symbol>statT</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.9979e6</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">2997900</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;tesla"/>
     <om:hasDimension rdf:resource="&om;magneticFluxDensity-Dimension"/>
   </om:Unit>
@@ -24558,7 +24558,7 @@
     <rdfs:comment xml:lang="en">The abhenry is a unit of inductance defined as 1.0e-9 henry.</rdfs:comment>
     <om:symbol>abH</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-9</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;henry"/>
     <om:hasDimension rdf:resource="&om;inductanceOrPermeance-Electromagnetic-Dimension"/>
   </om:Unit>
@@ -24569,7 +24569,7 @@
     <rdfs:comment xml:lang="en">The stathenry is a unit of inductance defined as 8.987552e11 henry.</rdfs:comment>
     <om:symbol>statH</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8.987552e11</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">898755200000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;henry"/>
     <om:hasDimension rdf:resource="&om;inductanceOrPermeance-Electromagnetic-Dimension"/>
   </om:Unit>
@@ -24732,7 +24732,7 @@
     <om:symbol>D</om:symbol>
     <rdfs:comment xml:lang="en">The debye is a unit of electric dipole moment defined as 3.33564e-30 coulomb metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.33564e-30</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.00000000000000000000000000000333564</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulombMetre"/>
     <om:hasDimension rdf:resource="&om;electricDipoleMoment-Dimension"/>
   </om:Unit>
@@ -31822,7 +31822,7 @@
     <rdfs:label xml:lang="en">footlambert</rdfs:label>
     <rdfs:comment xml:lang="en">The footlambert is a unit of luminance defined as 3.426259 candela per square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.426259</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3.426259</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
     <om:hasDimension rdf:resource="&om;luminance-Dimension"/>
   </om:Unit>
@@ -31832,7 +31832,7 @@
     <rdfs:label xml:lang="nl">lambert</rdfs:label>
     <rdfs:comment xml:lang="en">The lambert is a unit of luminance defined as 3.183099e3 candela per square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.183099e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3183.099</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
     <om:hasDimension rdf:resource="&om;luminance-Dimension"/>
   </om:Unit>
@@ -31843,7 +31843,7 @@
     <rdfs:comment xml:lang="en">The stilb is a unit of luminance defined as 1.0e4 candela per square metre.</rdfs:comment>
     <om:symbol>sb</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
     <om:hasDimension rdf:resource="&om;luminance-Dimension"/>
   </om:Unit>
@@ -32512,7 +32512,7 @@
     <rdfs:label xml:lang="en">footcandle</rdfs:label>
     <rdfs:comment xml:lang="en">The footcandle is a unit of illuminance defined as 1.076391e1 lux.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.076391e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10.76391</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;lux"/>
     <om:hasDimension rdf:resource="&om;illuminance-Dimension"/>
   </om:Unit>
@@ -32523,7 +32523,7 @@
     <rdfs:comment xml:lang="en">The phot is a unit of illuminance defined as 1.0e4 lux.</rdfs:comment>
     <om:symbol>ph</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">10000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;lux"/>
     <om:hasDimension rdf:resource="&om;illuminance-Dimension"/>
   </om:Unit>
@@ -33565,7 +33565,7 @@
     <rdfs:comment xml:lang="en">The rad is a unit of absorbed dose defined as 1.0e-2 gray.</rdfs:comment>
     <om:symbol>rad</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;gray"/>
     <om:hasDimension rdf:resource="&om;specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension"/>
   </om:Unit>
@@ -33968,7 +33968,7 @@
     <rdfs:comment xml:lang="en">The rem is a unit of dose equivalent defined as 1.0e-2 sievert.</rdfs:comment>
     <om:symbol>rem</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.0e-2</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;sievert"/>
     <om:hasDimension rdf:resource="&om;specificEnergyOrAbsorbedDoseOrDoseEquivalent-Dimension"/>
   </om:Unit>
@@ -34307,7 +34307,7 @@
     <rdfs:comment xml:lang="en">The curie is a unit of activity defined as 3.7e10 becquerel.</rdfs:comment>
     <om:symbol>Ci</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.7e10</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">37000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;becquerel"/>
     <om:hasDimension rdf:resource="&om;frequency-Dimension"/>
   </om:Unit>
@@ -34346,7 +34346,7 @@
     <rdfs:comment xml:lang="en">The röntgen is a unit of exposure to x and γ rays defined as 2.58e-4 coulomb per kilogram.</rdfs:comment>
     <om:symbol>R</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">2.58e-4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.000258</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulombPerKilogram"/>
     <om:hasDimension rdf:resource="&om;exposureToXAndGammaRays-Dimension"/>
   </om:Unit>
@@ -36190,7 +36190,7 @@
     <rdfs:comment xml:lang="nl">Wordt gebruikt als hoek (360&#x00B0;=24) voor o.a. rechte klimming. De h wordt meestal als superscript achter de waarde gezet gevolgd door de verdere opdeling naar minuten en seconden. Zoals in 5h34m12s09. Vaak wordt de fractie in seconden zonder punt geschreven, de s wordt als afscheiding gebruikt (http://en.wikipedia.org/wiki/Right_ascension).</rdfs:comment>
     <om:symbol>h</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">15</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">15</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;degree"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -36201,7 +36201,7 @@
     <rdfs:comment xml:lang="nl">Wordt gebruikt als hoek (360&#x00B0;=1440) voor o.a. rechte klimming. De m wordt meestal als superscript achter de waarde gezet gevolgd door de verdere opdeling naar seconden. Zoals in 5h34m12s09. Vaak wordt de fractie in seconden zonder punt geschreven, de s wordt als afscheiding gebruikt (http://en.wikipedia.org/wiki/Right_ascension).</rdfs:comment>
     <om:symbol>m</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.25</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.25</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;degree"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -36212,7 +36212,7 @@
     <rdfs:comment xml:lang="nl">Wordt gebruikt als hoek (360&#x00B0;=864000) voor o.a. rechte klimming. De s wordt meestal als superscript achter de waarde gezet. Zoals in 5h34m12s09. Vaak wordt de fractie in seconden zonder punt geschreven, de s wordt als afscheiding gebruikt (http://en.wikipedia.org/wiki/Right_ascension).</rdfs:comment>
     <om:symbol>s</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">4.1666667e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0041666667</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;degree"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -36435,7 +36435,7 @@
     <om:symbol>au</om:symbol>
     <om:alternativeSymbol>AU</om:alternativeSymbol> 
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.495978707e11</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">149597870700</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <ombibo:reference rdf:resource="&ombibo;IAU_2012_Resolution_B2"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
@@ -36448,7 +36448,7 @@
     <rdfs:comment xml:lang="en">The light year is a unit of length defined as 9.46073e15 metre.</rdfs:comment>
     <om:symbol>ly</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.46073e15</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">9460730000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -36458,7 +36458,7 @@
     <rdfs:comment xml:lang="en">The parsec is a unit of length defined as 3.08567758149137e16 metre.</rdfs:comment>
     <om:symbol>pc</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.08567758149137e16</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">30856775814913700</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -36499,7 +36499,7 @@
     <om:symbol>R_☉</om:symbol>
     <om:LaTeXSymbol>R_{\astrosun}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">6.955e8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">695500000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -36680,7 +36680,7 @@
     <om:alternativeLabel xml:lang="en">sidereal day</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The sidereal day is a unit of time defined as 8.616409e4 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8.616409e4</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">86164.09</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36689,7 +36689,7 @@
     <rdfs:label xml:lang="en">hour (sidereal)</rdfs:label>
     <om:alternativeLabel xml:lang="en">sidereal hour</om:alternativeLabel>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.590170e3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3590.170</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36699,7 +36699,7 @@
     <om:alternativeLabel xml:lang="en">sidereal minute</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The sidereal minute is a unit of time defined as 5.983617e1 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.983617e1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">59.83617</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36710,7 +36710,7 @@
     <om:alternativeLabel xml:lang="en">second (sidereal)</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The sidereal second is a unit of time defined as 9.972696e-1 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.972696e-1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.9972696</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36720,7 +36720,7 @@
     <om:alternativeLabel xml:lang="en">sidereal year</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The sidereal year is a unit of time defined as 3.155815e7 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.155815e7</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">31558150</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36730,7 +36730,7 @@
     <om:alternativeLabel xml:lang="en">tropical year</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The tropical year is a unit of time defined as 3.155693e7 second.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.155693e7</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">31556930</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;second-Time"/>
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
@@ -36819,7 +36819,7 @@
     <om:symbol>M_☉</om:symbol>
     <om:LaTeXSymbol>M_{\astrosun}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1.98892e30</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1988920000000000000000000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:Unit>
@@ -37195,7 +37195,7 @@
     <om:symbol>L_☉</om:symbol>
     <om:LaTeXSymbol>L_{\astrosun}</om:LaTeXSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.839e26</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">383900000000000000000000000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;watt"/>
     <om:hasDimension rdf:resource="&om;power-Dimension"/>
   </om:Unit>
@@ -37836,7 +37836,7 @@
     <rdfs:label xml:lang="nl">darcy</rdfs:label>
     <rdfs:comment xml:lang="en">The darcy is a unit of area defined as 9.869233e-13 square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">9.869233e-13</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000009869233</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;squareMetre"/>
     <om:hasDimension rdf:resource="&om;area-Dimension"/>
   </om:Unit>
@@ -37981,7 +37981,7 @@
     <om:alternativeLabel xml:lang="nl">0 &#x00B0;C perm</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The 0 &#x00B0;C perm is a unit ofpermeance defined as 5.72135e-11 kilogram per pascal second (time) square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.72135e-11</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000572135</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramPerPascalSecond-TimeSquareMetre"/>
     <om:hasDimension rdf:resource="&om;permeance-MaterialsScience-Dimension"/>
   </om:Unit>
@@ -37993,7 +37993,7 @@
     <om:alternativeLabel xml:lang="nl">23 &#x00B0;C perm</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The 23 &#x00B0;C perm is a unit of permeance defined as 5.74525e-11 kilogram per pascal second (time) square metre.</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">5.74525e-11</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000574525</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramPerPascalSecond-TimeSquareMetre"/>
     <om:hasDimension rdf:resource="&om;permeance-MaterialsScience-Dimension"/>
   </om:Unit>
@@ -38304,7 +38304,7 @@
   <om:UnitMultiple rdf:about="&om;_1000ColonyFormingUnit">
     <rdfs:label xml:lang="en">1000 colony forming unit</rdfs:label>
     <om:symbol>1000 CFU</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1000</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
     <om:hasUnit rdf:resource="&om;colonyFormingUnit"/>
   </om:UnitMultiple>
 
@@ -38707,7 +38707,7 @@
     <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
     <om:symbol>gCO2eq</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;gram"/>
   </om:Unit>
 
@@ -38722,7 +38722,7 @@
     <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
     <om:symbol>tCO2eq</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">1</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;tonne"/>
   </om:Unit>
 
@@ -39275,7 +39275,7 @@
     <om:alternativeLabel xml:lang="en">kilobinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Ki</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.024e3</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1024</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;mebi">
@@ -39284,7 +39284,7 @@
     <om:alternativeLabel xml:lang="en">megabinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Mi</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.048576e6</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1048576</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;gibi">
@@ -39293,7 +39293,7 @@
     <om:alternativeLabel xml:lang="en">gigabinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Gi</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.073741824e9</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1073741824</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;tebi">
@@ -39302,7 +39302,7 @@
     <om:alternativeLabel xml:lang="en">terabinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Ti</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.099511627776e12</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1099511627776</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;pebi">
@@ -39311,7 +39311,7 @@
     <om:alternativeLabel xml:lang="en">petabinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Pi</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.125899906842624e15</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1125899906842624</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;exbi">
@@ -39320,7 +39320,7 @@
     <om:alternativeLabel xml:lang="en">exabinary</om:alternativeLabel>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Ei</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.152921504606846976e18</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1152921504606846976</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;zebi">
@@ -39328,7 +39328,7 @@
     <rdfs:label xml:lang="nl">zebi</rdfs:label>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Zi</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.180591620717411303424e21</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1180591620717411303424</om:hasFactor>
   </om:BinaryPrefix>
 
   <om:BinaryPrefix rdf:about="&om;yobi">
@@ -39336,7 +39336,7 @@
     <rdfs:label xml:lang="nl">yobi</rdfs:label>
     <rdfs:comment xml:lang="en">IEC prefix</rdfs:comment>
     <om:symbol>Yi</om:symbol>
-    <om:hasFactor rdf:datatype="&xsd;float">1.208925819614629174706176e24</om:hasFactor>
+    <om:hasFactor rdf:datatype="&xsd;decimal">1208925819614629174706176</om:hasFactor>
   </om:BinaryPrefix>
 
   <!-- Unit of Measure Ontologies -->
@@ -39603,7 +39603,7 @@
     <rdfs:comment xml:lang="en">The byte is a unit of information capacity defined as 8 bit.</rdfs:comment>
     <om:symbol>B</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">8</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">8</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;bit"/>
   </om:Unit>
 
@@ -39814,7 +39814,7 @@
     <rdfs:comment xml:lang="en">The hartley is a unit of information capacity defined as 3.321928095 bit.</rdfs:comment>
     <om:symbol>Hart</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">3.321928095</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">3.321928095</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;bit"/>
   </om:Unit>
 
@@ -40024,7 +40024,7 @@
     <rdfs:label xml:lang="nl">cicero</rdfs:label>
     <rdfs:comment xml:lang="en">The cicero is a unit of length defined as 12 point (Didot).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">12</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;point-Didot"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40034,7 +40034,7 @@
     <om:alternativeLabel xml:lang="en">ATA pica</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The ATA pica is a unit of length defined as 12 point (ATA).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">12</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;point-ATA"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40044,7 +40044,7 @@
     <om:alternativeLabel xml:lang="en">Postscript pica</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The Postscript pica is a unit of length defined as 12 point (Postscript).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">12</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;point-Postscript"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40054,7 +40054,7 @@
     <om:alternativeLabel xml:lang="en">TeX pica</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The TeX pica is a unit of length defined as 12 point (TeX).</rdfs:comment>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">12</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">12</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;point-TeX"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40065,7 +40065,7 @@
     <rdfs:comment xml:lang="en">The ATA point is a unit of length defined as 0.3514598e-3 metre.</rdfs:comment>
     <om:symbol>pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.3514598e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0003514598</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40076,7 +40076,7 @@
     <rdfs:comment xml:lang="en">The Didot point is a unit of length defined as 0.3759e-3 metre.</rdfs:comment>
     <om:symbol>pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.3759e-3</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0003759</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;metre"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40087,7 +40087,7 @@
     <rdfs:comment xml:lang="en">The Postscript point is a unit of length defined as 0.013888888888888888888888888888889 inch.</rdfs:comment>
     <om:symbol>pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.013888888888888888888888888888889</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.013888888888888888888888888888889</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;inch-International"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
@@ -40098,7 +40098,7 @@
     <rdfs:comment xml:lang="en">The TeX point is a unit of length defined as 0.01383700013837000138370001383 inch.</rdfs:comment>
     <om:symbol>pt</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;float">0.013837000138370001383700013837</om:hasFactor>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.013837000138370001383700013837</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;inch-International"/>
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
