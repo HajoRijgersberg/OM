@@ -1,7 +1,6 @@
 # OM - Ontology of units of Measure
 
-The **Ontology of units of Measure (OM) 2.0** models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.
-OM is modelled in [OWL 2 - Web Ontology Language](https://www.w3.org/TR/owl2-overview/).
+The **Ontology of units of Measure (OM) 2.0** models concepts and relations that underlie the formulation of quantitative knowledge in scientific research. It has a strong focus on units, quantities, measurements, and dimensions. OM is modelled in [OWL 2 (Web Ontology Language)](https://www.w3.org/TR/owl2-overview/).
 
 **Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
 
