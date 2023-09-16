@@ -63,7 +63,7 @@ ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
 ex:apple1 rdf:type ex:Apple .
 ```
 
-where `ex` is a prefixe to another namespace.
+where `ex` is a prefix to another namespace.
 
 The RDF structure for this example shows as follows:
 
