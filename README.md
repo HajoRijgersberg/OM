@@ -7,6 +7,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 **Namespace Prefix:** `om`
 
 
+<br/><br/>
 <p valign="middle">
   <img valign="middle" align="left" src="images/Wageningen-University-and-Research-logo.jpg"/> 
   <img valign="middle" align="left" src="images/COMMIT-logo.jpg" hspace="50"/>
