@@ -7,6 +7,14 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 **Namespace Prefix:** `om`
 
 
+<p valign="middle">
+  <img valign="middle" align="left" src="images/Wageningen-University-and-Research-logo.jpg"/> 
+  <img valign="middle" align="left" src="images/COMMIT-logo.jpg" hspace="50"/>
+  <img valign="middle" align="left" src="images/vl-e-logo.jpg"/>
+  <br/><br/>
+</p>
+
+
 #### Overview
 
 * [Ontology of units of Measure](#om)
@@ -15,14 +23,6 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 * [Previous versions](#previous-versions)
 * [Acknowledgements](#acknowledgements)
 * [Papers on OM](#papers)
-
-
-<p valign="middle">
-  <img valign="middle" align="left" src="images/Wageningen-University-and-Research-logo.jpg"/> 
-  <img valign="middle" align="left" src="images/COMMIT-logo.jpg" hspace="50"/>
-  <img valign="middle" align="left" src="images/vl-e-logo.jpg"/>
-  <br/><br/><
-</p>
 
 
 ### <a name="om"></a>Ontology of units of Measure
