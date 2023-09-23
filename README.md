@@ -1,7 +1,7 @@
 <p valign="middle">
   <img valign="middle" align="left" src="images/Wageningen-University-and-Research-logo.jpg"/> 
   <img valign="middle" align="left" src="images/COMMIT-logo.jpg" hspace="40"/>
-  <img valign="middle" align="left" src="images/vl-e-logo.jpg" width="70%x"/>
+  <img valign="middle" align="left" src="images/vl-e-logo.jpg"/>
   <br/><br/><
 </p>
 
