@@ -1,6 +1,6 @@
 # OM - Ontology of units of Measure
 
-<img align="left" src="images/Wageningen-University-and-Research-logo.jpg" title="Wageningen University & Research" hspace="20"/>
+<img align="left" src="images/Wageningen-University-and-Research-logo.jpg" title="Wageningen University & Research"/>
 <img align="left" src="images/vl-e-logo.jpg" title="virtual laboratory for e-science" hspace="20"/>
 <img align="left" src="images/COMMIT-logo.jpg" title="COMMIT/" hspace="20"/>
 <br/><br/><br/><br/><br/>
