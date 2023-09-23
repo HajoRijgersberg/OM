@@ -1,10 +1,10 @@
-<table>
-  <tr>
-    <td valign="middle"><img src="images/Wageningen-University-and-Research-logo.jpg"></td>
-    <td valign="middle"><img src="images/vl-e-logo.jpg" hspace="20"></td>
-    <td valign="middle"><img src="images/COMMIT-logo.jpg" hspace="20"></td>
-  </tr>
-</table>
+<p valign="middle">
+  <img align="left" src="images/Wageningen-University-and-Research-logo.jpg"/> 
+  <img align="left" src="images/vl-e-logo.jpg" hspace="20"/>
+  <img align="left" src="images/COMMIT-logo.jpg" hspace="20"/>
+  <br/><br/><
+</p>
+
 
 # OM - Ontology of units of Measure
 
