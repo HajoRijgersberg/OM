@@ -1,7 +1,10 @@
 # OM - Ontology of units of Measure
 
-![Wageningen University & Research logo](images/Wageningen-University-and-Research-logo.jpg) ![vl-e logo](images/vl-e-logo.jpg) ![COMMIT logo](images/COMMIT-logo.jpg)
-
+<p align="center">
+      <img src="images/Wageningen-University-and-Research-logo.jpg" align="left">
+      <img src="images/vl-e-logo.jpg">
+      <img src="images/COMMIT-logo.jpg" align="right">
+</p>
 
 The **Ontology of units of Measure (OM) 2.0** models concepts and relations that underlie the formulation of quantitative knowledge in scientific research. It has a strong focus on units, quantities, measurements, and dimensions. OM is modelled in [OWL 2 (Web Ontology Language)](https://www.w3.org/TR/owl2-overview/). The ontology is in [om-2.0.rdf](https://github.com/HajoRijgersberg/OM/blob/master/om-2.0.rdf). Links to UCUM (the Unified Code for Units of Measure) can be found in [om-2-ucum.ttl](https://github.com/HajoRijgersberg/OM/blob/master/om-2-ucum.ttl).
 
