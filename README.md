@@ -14,6 +14,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
   <img valign="middle" align="left" src="images/vl-e-logo.jpg"/>
   <br/><br/>
 </p>
+<br/><br/>
 
 
 #### Overview
