@@ -4,7 +4,10 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 **Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
 
-**Namespace Prefix:** `om`<img valign="top" align="right" src="images/Wageningen-University-and-Research-logo.jpg"/>
+**Namespace Prefix:** `om`
+<br/><br/>
+
+![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg)
 <br/><br/>
 
 ## Overview
