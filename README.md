@@ -1,9 +1,9 @@
 # OM - Ontology of units of Measure
 
 <p align="middle">
-  <img src="images/COMMIT-logo.jpg"/>
-  <img src="images/vl-e-logo.jpg" hspace="20"/>
-  <img src="images/Wageningen-University-and-Research-logo.jpg" hspace="20"/> 
+  <img align="left" src="images/COMMIT-logo.jpg"/>
+  <img align="left" src="images/vl-e-logo.jpg" hspace="20"/>
+  <img align="left" src="images/Wageningen-University-and-Research-logo.jpg" hspace="20"/> 
   <br/><br/><
 </p>
 
