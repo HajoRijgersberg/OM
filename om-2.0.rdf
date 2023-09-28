@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2023 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -55,6 +55,7 @@
     <wv:illustration>http://www.wurvoc.org/images/vocabularies/om-illustration.jpg</wv:illustration>
     <dc:creator xml:lang="en">Hajo Rijgersberg, Don Willems, Jan Top</dc:creator>
     <!-- <dc:license xml:lang="en">This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dc:license> -->
+    <dct:rights>(c) 2005-2023 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document.</dct:rights>
     <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <ombibo:reference rdf:resource="http://www.openisbn.com/isbn/9789462280618/"/>
   </owl:Ontology>
