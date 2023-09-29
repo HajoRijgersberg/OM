@@ -2,7 +2,7 @@
 
 *Ontologie d'unités de Mesures* &ensp; Ontologie der Maßeinheiten &ensp; *Ontologie van Maateenheden* &ensp; 測定単位のオントロジ
     
-The **Ontology of units of Measure (OM) 2.0** models concepts and relations that underlie the formulation of quantitative knowledge in scientific research. It has a strong focus on units, quantities, measures, and dimensions. OM is modelled in [OWL 2 (Web Ontology Language)](https://www.w3.org/TR/owl2-overview/) and can be found in [om-2.0.rdf](https://github.com/HajoRijgersberg/OM/blob/master/om-2.0.rdf). Links to UCUM (the Unified Code for Units of Measure) can be found in [om-2-ucum.ttl](https://github.com/HajoRijgersberg/OM/blob/master/om-2-ucum.ttl).
+The **Ontology of units of Measure (OM) 2.0** models concepts and relations that underlie the formulation of quantitative knowledge in scientific research. It has a strong focus on units, quantities, measures, and dimensions. OM is modelled in [OWL 2 (Web Ontology Language)](https://www.w3.org/TR/owl2-overview/) and can be found in [om-2.0.rdf](https://github.com/HajoRijgersberg/OM/blob/master/om-2.0.rdf). Links to UCUM (the Unified Code for Units of Measure) are in [om-2-ucum.ttl](https://github.com/HajoRijgersberg/OM/blob/master/om-2-ucum.ttl).
 
 **Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
 
