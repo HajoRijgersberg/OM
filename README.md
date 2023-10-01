@@ -9,7 +9,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 **Namespace Prefix:** `om`
 <br/><br/>
 
-![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg)
+![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg) &emsp; &emsp; <img src="images/VU-logo.jpg" width=220 height=54>
 <br/><br/>
 
 ## Overview
