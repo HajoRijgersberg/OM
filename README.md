@@ -119,11 +119,8 @@ Previous versions were published on the wurvoc platform.
 
 OM was developed during the Virtual Laboratory for e-Science and COMMIT projects. We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
-<p valign="middle">
-  <img valign="middle" align="left" src="images/vl-e-logo.jpg"/>
-  <img valign="middle" align="left" src="images/COMMIT-logo.jpg" hspace="20"/>
-</p>
-<br/><br/>
+<img src="images/vl-e-logo.jpg"/>
+<img src="images/COMMIT-logo.jpg"/>
 <br/><br/>
 
 ## <a name="literature"></a>Literature
