@@ -45,10 +45,10 @@
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="nl">Ontologie van Maateenheden (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.47</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.48</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2023/09/28</dc:date>
+    <dc:date>2023/10/09</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -6115,11 +6115,14 @@
     <om:usesUnit rdf:resource="&om;metrePerSecond-Time"/>
     <om:usesUnit rdf:resource="&om;micrometrePerSecond-Time"/>
     <om:usesUnit rdf:resource="&om;millimetrePerSecond-Time"/>
+    <om:usesUnit rdf:resource="&om;millimetrePerMinute-Time"/>
+    <om:usesUnit rdf:resource="&om;centimetrePerMinute-Time"/>
+    <om:usesUnit rdf:resource="&om;metrePerMinute-Time"/>
     <om:usesUnit rdf:resource="&om;millimetrePerHour"/>
     <om:usesUnit rdf:resource="&om;kilometrePerHour"/>
+    <om:usesUnit rdf:resource="&om;millimetrePerDay"/>
     <om:usesUnit rdf:resource="&om;centimetrePerDay"/>
     <om:usesUnit rdf:resource="&om;metrePerDay"/>
-    <om:usesUnit rdf:resource="&om;millimetrePerDay"/>
     <om:usesUnit rdf:resource="&om;knot-International"/>
     <om:usesUnit rdf:resource="&om;nauticalMile-InternationalPerHour"/>
     <om:usesUnit rdf:resource="&om;attometrePerSecond-Time"/>
@@ -11004,11 +11007,14 @@
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
               <om:Unit rdf:about="&om;knot-International"/>
+              <om:UnitDivision rdf:about="&om;millimetrePerMinute-Time"/>
+              <om:UnitDivision rdf:about="&om;centimetrePerMinute-Time"/>
+              <om:UnitDivision rdf:about="&om;metrePerMinute-Time"/>
               <om:UnitDivision rdf:about="&om;millimetrePerHour"/>
               <om:UnitDivision rdf:about="&om;kilometrePerHour"/>
+              <om:UnitDivision rdf:about="&om;millimetrePerDay"/>
               <om:UnitDivision rdf:about="&om;centimetrePerDay"/>
               <om:UnitDivision rdf:about="&om;metrePerDay"/>
-              <om:UnitDivision rdf:about="&om;millimetrePerDay"/>
               <om:UnitDivision rdf:about="&om;metrePerSecond-Time"/>
               <om:UnitDivision rdf:about="&om;mile-StatutePerHour"/>
               <om:UnitDivision rdf:about="&om;nauticalMile-InternationalPerHour"/>
@@ -11759,26 +11765,38 @@
     <om:hasDimension rdf:resource="&om;speed-Dimension"/>
   </om:Unit>
 
-  <om:UnitDivision rdf:about="&om;centimetrePerDay">
-    <rdfs:label xml:lang="en">centimetre per day</rdfs:label>
-    <rdfs:label xml:lang="nl">centimeter per dag</rdfs:label>
-    <rdfs:comment xml:lang="en">Centimetre per day is a unit of speed defined as centimetre divided by day.</rdfs:comment>
-    <om:symbol>cm/d</om:symbol>
-    <om:alternativeSymbol>cm d-1</om:alternativeSymbol>
-    <om:alternativeSymbol>cm·d-1</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;centimetre"/>
-    <om:hasDenominator rdf:resource="&om;day"/>
+  <om:UnitDivision rdf:about="&om;millimetrePerMinute-Time">
+    <rdfs:label xml:lang="en">millimetre per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">millimeter per minuut</rdfs:label>
+    <rdfs:comment xml:lang="en">Millimetre per minute is a unit of speed defined as millimetre divided by minute.</rdfs:comment>
+    <om:symbol>mm/min</om:symbol>
+    <om:alternativeSymbol>mm min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>mm·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;millimetre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+    <om:hasDimension rdf:resource="&om;speed-Dimension"/>
   </om:UnitDivision>
 
-  <om:UnitDivision rdf:about="&om;metrePerDay">
-    <rdfs:label xml:lang="en">metre per day</rdfs:label>
-    <rdfs:label xml:lang="nl">meter per dag</rdfs:label>
-    <rdfs:comment xml:lang="en">Metre per day is a unit of speed defined as metre divided by day.</rdfs:comment>
-    <om:symbol>m/d</om:symbol>
-    <om:alternativeSymbol>m d-1</om:alternativeSymbol>
-    <om:alternativeSymbol>m·d-1</om:alternativeSymbol>
+  <om:UnitDivision rdf:about="&om;centimetrePerMinute-Time">
+    <rdfs:label xml:lang="en">centimetre per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">centimeter per minuut</rdfs:label>
+    <rdfs:comment xml:lang="en">Centimetre per minute is a unit of speed defined as centimetre divided by minute.</rdfs:comment>
+    <om:symbol>cm/min</om:symbol>
+    <om:alternativeSymbol>cm min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>cm·min-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;centimetre"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;metrePerMinute-Time">
+    <rdfs:label xml:lang="en">metre per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">meter per minuut</rdfs:label>
+    <rdfs:comment xml:lang="en">Metre per minute is a unit of speed defined as metre divided by minute.</rdfs:comment>
+    <om:symbol>m/min</om:symbol>
+    <om:alternativeSymbol>m min-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m·min-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;metre"/>
-    <om:hasDenominator rdf:resource="&om;day"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;millimetrePerHour">
@@ -11817,6 +11835,28 @@
     <om:hasDimension rdf:resource="&om;speed-Dimension"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;centimetrePerDay">
+    <rdfs:label xml:lang="en">centimetre per day</rdfs:label>
+    <rdfs:label xml:lang="nl">centimeter per dag</rdfs:label>
+    <rdfs:comment xml:lang="en">Centimetre per day is a unit of speed defined as centimetre divided by day.</rdfs:comment>
+    <om:symbol>cm/d</om:symbol>
+    <om:alternativeSymbol>cm d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>cm·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;centimetre"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;metrePerDay">
+    <rdfs:label xml:lang="en">metre per day</rdfs:label>
+    <rdfs:label xml:lang="nl">meter per dag</rdfs:label>
+    <rdfs:comment xml:lang="en">Metre per day is a unit of speed defined as metre divided by day.</rdfs:comment>
+    <om:symbol>m/d</om:symbol>
+    <om:alternativeSymbol>m d-1</om:alternativeSymbol>
+    <om:alternativeSymbol>m·d-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;metre"/>
+    <om:hasDenominator rdf:resource="&om;day"/>
+  </om:UnitDivision>
+
   <om:UnitDivision rdf:about="&om;mile-StatutePerHour">
     <rdfs:label xml:lang="en">mile (statute) per hour</rdfs:label>
     <rdfs:label xml:lang="nl">mijl per uur</rdfs:label>
@@ -11852,17 +11892,23 @@
 
   <owl:Class rdf:about="&om;Speed">
     <om:commonlyHasUnit rdf:resource="&om;knot-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;centimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMinute-Time"/>
     <om:commonlyHasUnit rdf:resource="&om;millimetrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilometrePerHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerDay"/>
     <om:commonlyHasUnit rdf:resource="&om;centimetrePerDay"/>
     <om:commonlyHasUnit rdf:resource="&om;metrePerDay"/>
-    <om:commonlyHasUnit rdf:resource="&om;millimetrePerDay"/>
     <om:commonlyHasUnit rdf:resource="&om;mile-StatutePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;nauticalMile-InternationalPerHour"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;Velocity">
     <om:commonlyHasUnit rdf:resource="&om;knot-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;centimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMinute-Time"/>
     <om:commonlyHasUnit rdf:resource="&om;millimetrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilometrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;centimetrePerDay"/>
@@ -11874,6 +11920,9 @@
 
   <owl:Class rdf:about="&om;AverageSpeed">
     <om:commonlyHasUnit rdf:resource="&om;knot-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;centimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMinute-Time"/>
     <om:commonlyHasUnit rdf:resource="&om;millimetrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilometrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;centimetrePerDay"/>
@@ -11885,6 +11934,9 @@
 
   <owl:Class rdf:about="&om;DrainageSpeed">
     <om:commonlyHasUnit rdf:resource="&om;knot-International"/>
+    <om:commonlyHasUnit rdf:resource="&om;millimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;centimetrePerMinute-Time"/>
+    <om:commonlyHasUnit rdf:resource="&om;metrePerMinute-Time"/>
     <om:commonlyHasUnit rdf:resource="&om;millimetrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;kilometrePerHour"/>
     <om:commonlyHasUnit rdf:resource="&om;centimetrePerDay"/>
