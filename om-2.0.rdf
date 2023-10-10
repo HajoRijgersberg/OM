@@ -45,7 +45,7 @@
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="nl">Ontologie van Maateenheden (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.49</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.50</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
     <dc:date>2023/10/10</dc:date>
@@ -2150,8 +2150,8 @@
   <om:Unit rdf:about="&om;angstrom">
     <rdfs:label xml:lang="en">angstrom</rdfs:label>
     <rdfs:label xml:lang="nl">ångström</rdfs:label>
-    <om:alternativeLabel xml:lang="en">ångström</om:alternativeLabel>
-    <om:alternativeLabel xml:lang="nl">angstrom</om:alternativeLabel>
+    <om:unofficialLabel xml:lang="en">ångström</om:unofficialLabel>
+    <om:unofficialLabel xml:lang="nl">angstrom</om:unofficialLabel>
     <rdfs:comment xml:lang="en">The angstrom is a unit of length defined as 1.0e-10 metre. The unit is often used for wavelengths of electromagnetic radiation or to express the sizes of atoms and molecules.</rdfs:comment>
     <om:symbol>Å</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
