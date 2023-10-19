@@ -804,13 +804,7 @@
   <owl:ObjectProperty rdf:about="&om;hasScale">
     <rdfs:label xml:lang="en">has scale</rdfs:label>
     <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&om;Scale"/>
-          <owl:Class rdf:about="&om;Quantity"/>
-          <owl:Class rdf:about="&om;ApplicationArea"/>
-        </owl:unionOf>
-      </owl:Class>
+      <owl:Class rdf:about="&om;Point"/>
     </rdfs:domain>
     <rdfs:range rdf:resource="&om;Scale"/>
   </owl:ObjectProperty>
@@ -17839,6 +17833,7 @@
     <om:usesQuantity rdf:resource="&om;Temperature"/>
     <om:usesQuantity rdf:resource="&om;ThermodynamicTemperature"/>
     <om:usesQuantity rdf:resource="&om;CelsiusTemperature"/>
+    <om:usesQuantity rdf:resource="&om;KelvinTemperature"/>
     <om:usesQuantity rdf:resource="&om;FahrenheitTemperature"/>
     <om:usesQuantity rdf:resource="&om;RankineTemperature"/>
     <om:usesQuantity rdf:resource="&om;ReaumurTemperature"/>
@@ -17933,6 +17928,7 @@
   <owl:Class rdf:about="&om;ThermodynamicTemperature">
     <rdfs:label xml:lang="en">thermodynamic temperature</rdfs:label>
     <rdfs:label xml:lang="nl">absolute temperatuur</rdfs:label>
+    <om:alternativeLabel xml:lang="en">absolute temperature</om:alternativeLabel>
     <om:alternativeLabel xml:lang="nl">thermodynamische temperatuur</om:alternativeLabel>
     <rdfs:comment xml:lang="en">Thermodynamic temperature is the absolute measure of temperature. Its zero point is the temperature at which the particle constituents of matter have minimal motion and can be no colder. Thermodynamic temperature is a base quantity in the International System of Units.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Temperature"/>
@@ -17950,6 +17946,13 @@
   </owl:Class>
 
   <!-- Temperature Subclass Upper Ontology -->
+
+  <owl:Class rdf:about="&om;KelvinTemperature">
+    <rdfs:label xml:lang="en">Kelvin temperature</rdfs:label>
+    <rdfs:label xml:lang="nl">Kelvintemperatuur</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Temperature"/>
+    <om:symbol>T</om:symbol> 
+  </owl:Class>
 
   <owl:Class rdf:about="&om;FahrenheitTemperature">
     <rdfs:label xml:lang="en">Fahrenheit temperature</rdfs:label>
@@ -18944,6 +18947,10 @@
     <om:commonlyHasUnit rdf:resource="&om;degreeReaumur"/>
   </owl:Class>
 
+  <owl:Class rdf:about="&om;KelvinTemperature">
+    <om:commonlyHasUnit rdf:resource="&om;kelvin"/>
+  </owl:Class>
+
   <owl:Class rdf:about="&om;FahrenheitTemperature">
     <om:commonlyHasUnit rdf:resource="&om;degreeFahrenheit"/>
   </owl:Class>
@@ -19567,6 +19574,45 @@
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:RatioScale>
 
+  <owl:Class rdf:about="&om;KelvinTemperatureScale">
+    <rdfs:label xml:lang="en">Kelvin temperature scale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;RatioScale"/>
+    <rdfs:subClassOf rdf:resource="&om;ThermodynamicTemperatureScale"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <om:RatioScale rdf:about="&om;KelvinScale"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="&om;KelvinTemperature">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
+                  <owl:Class rdf:about="&om;KelvinTemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
+                  <owl:Class rdf:about="&om;KelvinTemperatureScale"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
   <ThermodynamicTemperature rdf:about="&om;thermodynamicTemperatureOfTheTriplePointOfWater">
     <rdfs:label xml:lang="en">triple point of water thermodynamic temperature</rdfs:label>
     <om:hasPhenomenon rdf:resource="&om;triplePointOfWater"/>
@@ -19714,41 +19760,35 @@
 
   <owl:Class rdf:about="&om;ThermodynamicTemperatureScale">
     <rdfs:label xml:lang="en">thermodynamic temperature scale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
+    <om:alternativeLabel xml:lang="en">absolute temperature scale</om:alternativeLabel>
+    <rdfs:subClassOf rdf:resource="&om;Scale"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
+          <om:IntervalScale rdf:about="&om;CelsiusScale"/>
+          <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
+          <om:IntervalScale rdf:about="&om;ReaumurScale"/>
           <om:RatioScale rdf:about="&om;KelvinScale"/>
+          <om:RatioScale rdf:about="&om;RankineScale"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
-  </owl:Class>  	  
+  </owl:Class>
 
   <owl:Class rdf:about="&om;ThermodynamicTemperature">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
-        <owl:hasValue rdf:resource="&om;KelvinScale"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:onProperty rdf:resource="&om;hasScale"/>
             <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                  <owl:Class rdf:about="&om;ThermodynamicTemperatureUnit"/>
-                  <owl:Class rdf:about="&om;ThermodynamicTemperatureScale"/>
-                </owl:unionOf>
-              </owl:Class>
+              <owl:Class rdf:about="&om;ThermodynamicTemperatureScale"/>
             </owl:allValuesFrom>
-          </owl:Restriction>	
+          </owl:Restriction>
         </owl:allValuesFrom>
-      </owl:Restriction>     
-    </rdfs:subClassOf>     
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
 
   <!-- Celsius Scale Ontology -->
@@ -19925,7 +19965,8 @@
 
   <owl:Class rdf:about="&om;CelsiusTemperatureScale">
     <rdfs:label xml:lang="en">Celsius temperature scale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
+    <rdfs:subClassOf rdf:resource="&om;IntervalScale"/>
+    <rdfs:subClassOf rdf:resource="&om;ThermodynamicTemperatureScale"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
@@ -19933,33 +19974,32 @@
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
-  </owl:Class>  	  
+  </owl:Class>
 
   <owl:Class rdf:about="&om;CelsiusTemperature">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
-        <owl:hasValue rdf:resource="&om;CelsiusScale"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;CelsiusTemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;CelsiusTemperatureScale"/>
-                </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>	
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
         </owl:allValuesFrom>
-      </owl:Restriction>     
-    </rdfs:subClassOf>     
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
 
   <!-- Temperature Scale Ontology -->
@@ -19995,26 +20035,12 @@
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeReaumur"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
-  </om:IntervalScale>
-
-  <owl:Class rdf:about="&om;Temperature_scale">
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:oneOf rdf:parseType="Collection">
-          <om:IntervalScale rdf:about="&om;CelsiusScale"/>
-          <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
-          <om:IntervalScale rdf:about="&om;ReaumurScale"/>
-          <om:RatioScale rdf:about="&om;KelvinScale"/>
-          <om:RatioScale rdf:about="&om;RankineScale"/>
-        </owl:oneOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>  	  
+  </om:IntervalScale>	  
 
   <owl:Class rdf:about="&om;FahrenheitTemperatureScale">
     <rdfs:label xml:lang="en">Fahrenheit temperature scale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
+    <rdfs:subClassOf rdf:resource="&om;IntervalScale"/>
+    <rdfs:subClassOf rdf:resource="&om;ThermodynamicTemperatureScale"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
@@ -20026,7 +20052,8 @@
 
   <owl:Class rdf:about="&om;RankineTemperatureScale">
     <rdfs:label xml:lang="en">Rankine temperature scale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
+    <rdfs:subClassOf rdf:resource="&om;RatioScale"/>
+    <rdfs:subClassOf rdf:resource="&om;ThermodynamicTemperatureScale"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
@@ -20038,7 +20065,8 @@
 
   <owl:Class rdf:about="&om;ReaumurTemperatureScale">
     <rdfs:label xml:lang="en">Réaumur temperature scale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Scale"/> 
+    <rdfs:subClassOf rdf:resource="&om;IntervalScale"/>
+    <rdfs:subClassOf rdf:resource="&om;ThermodynamicTemperatureScale"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
@@ -20051,119 +20079,105 @@
   <owl:Class rdf:about="&om;Temperature">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:oneOf rdf:parseType="Collection">
-              <om:IntervalScale rdf:about="&om;CelsiusScale"/>
-              <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
-              <om:IntervalScale rdf:about="&om;ReaumurScale"/>
-              <om:RatioScale rdf:about="&om;KelvinScale"/>
-              <om:RatioScale rdf:about="&om;RankineScale"/>
-            </owl:oneOf>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
+                  <owl:Class rdf:about="&om;TemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
+                  <owl:Class rdf:about="&om;ThermodynamicTemperatureScale"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
           </owl:Class>
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasValue"/>
-        <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                  <owl:Class rdf:about="&om;TemperatureUnit"/>
-                  <owl:Class rdf:about="&om;Temperature_scale"/>
-                </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>	
-        </owl:allValuesFrom>
-      </owl:Restriction>     
-    </rdfs:subClassOf>     
   </owl:Class>
 
   <owl:Class rdf:about="&om;FahrenheitTemperature">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
-        <owl:hasValue rdf:resource="&om;FahrenheitScale"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;FahrenheitTemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;FahrenheitTemperatureScale"/>
-                </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>	
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>	
         </owl:allValuesFrom>
       </owl:Restriction>     
-    </rdfs:subClassOf>     
+    </rdfs:subClassOf> 
   </owl:Class>
 
   <owl:Class rdf:about="&om;RankineTemperature">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
-        <owl:hasValue rdf:resource="&om;RankineScale"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;RankineTemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;RankineTemperatureScale"/>
-                </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>	
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>	
         </owl:allValuesFrom>
       </owl:Restriction>     
-    </rdfs:subClassOf>     
+    </rdfs:subClassOf>   
   </owl:Class>
 
   <owl:Class rdf:about="&om;ReaumurTemperature">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasScale"/>
-        <owl:hasValue rdf:resource="&om;ReaumurScale"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
         <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasUnit"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;ReaumurTemperatureUnit"/>
+                </owl:allValuesFrom>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&om;hasScale"/>
+                <owl:allValuesFrom>
                   <owl:Class rdf:about="&om;ReaumurTemperatureScale"/>
-                </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>	
+                </owl:allValuesFrom>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>	
         </owl:allValuesFrom>
       </owl:Restriction>     
-    </rdfs:subClassOf>     
+    </rdfs:subClassOf>    
   </owl:Class>
 
   <!-- Dimension Ontologies -->
