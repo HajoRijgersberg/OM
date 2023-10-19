@@ -1581,9 +1581,9 @@
     <om:hasDimension rdf:resource="&om;length-Dimension"/>
   </om:Unit>
 
-  <owl:Thing rdf:about="&om;pathTravelledByLightInVacuumDuringATimeIntervalOf1299792458OfASecond">
+  <owl:NamedIndividual rdf:about="&om;pathTravelledByLightInVacuumDuringATimeIntervalOf1299792458OfASecond">
     <rdfs:label xml:lang="en">path travelled by light in vacuum during a time interval of 1/299 792 458 of a second</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <Length rdf:about="&om;lengthOfThePathTravelledByLightInVacuumDuringATimeIntervalOf1299792458OfASecond">
     <rdfs:label xml:lang="en">length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second</rdfs:label>
@@ -7186,9 +7186,9 @@
     <om:hasDimension rdf:resource="&om;time-Dimension"/>
   </om:Unit>
 
-  <owl:Thing rdf:about="&om;_9192631770PeriodsOfTheRadiationCorrespondingToTheTransitionBetweenTheTwoHyperfineLevelsOfTheGroundStateOfTheCesium133Atom">
+  <owl:NamedIndividual rdf:about="&om;_9192631770PeriodsOfTheRadiationCorrespondingToTheTransitionBetweenTheTwoHyperfineLevelsOfTheGroundStateOfTheCesium133Atom">
     <rdfs:label xml:lang="en">9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <Duration rdf:about="&om;durationOf9192631770PeriodsOfTheRadiationCorrespondingToTheTransitionBetweenTheTwoHyperfineLevelsOfTheGroundStateOfTheCesium133Atom">
     <rdfs:label xml:lang="en">duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom</rdfs:label>
@@ -7914,9 +7914,9 @@
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
   </om:PrefixedUnit>
 
-  <owl:Thing rdf:about="&om;internationalPrototypeOfTheKilogram">
+  <owl:NamedIndividual rdf:about="&om;internationalPrototypeOfTheKilogram">
     <rdfs:label xml:lang="en">international prototype of the kilogram</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <Mass rdf:about="&om;massOfTheInternationalPrototypeOfTheKilogram">
     <rdfs:label xml:lang="en">mass of the international prototype of the kilogram</rdfs:label>
@@ -18370,9 +18370,9 @@
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
   </om:Unit>
 
-  <owl:Thing rdf:about="&om;triplePointOfWater">
+  <owl:NamedIndividual rdf:about="&om;triplePointOfWater">
     <rdfs:label xml:lang="en">triple point of water</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <ThermodynamicTemperature rdf:about="&om;_127316OfTheThermodynamicTemperatureOfTheTriplePointOfWater">
     <rdfs:label xml:lang="en">1/273.16 of the thermodynamic temperature of the triple point of water</rdfs:label>
@@ -28313,9 +28313,9 @@
     <om:hasDimension rdf:resource="&om;amountOfSubstance-Dimension"/>
   </om:Unit>
 
-  <owl:Thing rdf:about="&om;systemThatContainsAsManyElementaryEntitiesAsThereAreAtomsIn0.012KilogramOfCarbon12">
+  <owl:NamedIndividual rdf:about="&om;systemThatContainsAsManyElementaryEntitiesAsThereAreAtomsIn0.012KilogramOfCarbon12">
     <rdfs:label xml:lang="en">system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 122</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <AmountOfSubstance rdf:about="&om;amountOfSubstanceOfASystemThatContainsAsManyElementaryEntitiesAsThereAreAtomsIn0.012KilogramOfCarbon12">
     <rdfs:label xml:lang="en">amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12</rdfs:label>
@@ -39416,9 +39416,9 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
   </om:Unit>
 
-  <owl:Thing rdf:about="&om;oneBinaryDigit">
+  <owl:NamedIndividual rdf:about="&om;oneBinaryDigit">
     <rdfs:label xml:lang="en">one binary digit</rdfs:label>
-  </owl:Thing>
+  </owl:NamedIndividual>
 
   <InformationCapacity rdf:about="&om;informationCapacityOfOneBinaryDigit">
     <rdfs:label xml:lang="en">information capacity of one binary digit</rdfs:label>
