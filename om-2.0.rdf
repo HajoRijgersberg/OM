@@ -19572,6 +19572,7 @@
     <rdfs:label xml:lang="zh">开氏温标</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Kelvin Temperature scale of 1990</om:alternativeLabel>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
+    <rdf:type rdf:resource="&om;ThermodynamicTemperatureScale"/>
   </om:RatioScale>
 
   <owl:Class rdf:about="&om;KelvinTemperature">
@@ -19745,17 +19746,6 @@
     <rdfs:label xml:lang="en">thermodynamic temperature scale</rdfs:label>
     <om:alternativeLabel xml:lang="en">absolute temperature scale</om:alternativeLabel>
     <rdfs:subClassOf rdf:resource="&om;Scale"/>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:oneOf rdf:parseType="Collection">
-          <om:IntervalScale rdf:about="&om;CelsiusScale"/>
-          <om:IntervalScale rdf:about="&om;FahrenheitScale"/>
-          <om:IntervalScale rdf:about="&om;ReaumurScale"/>
-          <om:RatioScale rdf:about="&om;KelvinScale"/>
-          <om:RatioScale rdf:about="&om;RankineScale"/>
-        </owl:oneOf>
-      </owl:Class>
-    </owl:equivalentClass>
   </owl:Class>
 
   <owl:Class rdf:about="&om;ThermodynamicTemperature">
@@ -19782,6 +19772,7 @@
     <rdfs:label xml:lang="zh">摄氏温标</rdfs:label>
     <om:alternativeLabel xml:lang="en">International Celsius Temperature scale of 1990</om:alternativeLabel>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
+    <rdf:type rdf:resource="&om;ThermodynamicTemperatureScale"/>
   </om:IntervalScale>
 
   <om:FixedPoint rdf:about="&om;_-270.15To-268.15OnTheCelsiusScale">
@@ -19979,6 +19970,7 @@
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeFahrenheit"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
+    <rdf:type rdf:resource="&om;ThermodynamicTemperatureScale"/>
   </om:IntervalScale>
 
   <om:RatioScale rdf:about="&om;RankineScale">
@@ -19990,6 +19982,7 @@
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeRankine"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
+    <rdf:type rdf:resource="&om;ThermodynamicTemperatureScale"/>
   </om:RatioScale>
 
   <om:IntervalScale rdf:about="&om;ReaumurScale">
@@ -20001,6 +19994,7 @@
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <om:hasUnit rdf:resource="&om;degreeReaumur"/>
     <om:hasDimension rdf:resource="&om;thermodynamicTemperature-Dimension"/>
+    <rdf:type rdf:resource="&om;ThermodynamicTemperatureScale"/>
   </om:IntervalScale>
 
   <owl:Class rdf:about="&om;Temperature">
