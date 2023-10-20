@@ -804,7 +804,12 @@
   <owl:ObjectProperty rdf:about="&om;hasScale">
     <rdfs:label xml:lang="en">has scale</rdfs:label>
     <rdfs:domain>
-      <owl:Class rdf:about="&om;Point"/>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&om;Point"/>
+          <owl:Class rdf:about="&om;Scale"/>
+        </owl:unionOf>
+      </owl:Class>
     </rdfs:domain>
     <rdfs:range rdf:resource="&om;Scale"/>
   </owl:ObjectProperty>
