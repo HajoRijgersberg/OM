@@ -20,7 +20,7 @@ OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 
 
 * [Ontology of units of Measure (OM)](#om)
 * [RecordTable ontology](#recordtable)
-* [Software](#software)
+* [Libs](#libs)
 * [Previous versions](#previous-versions)
 * [Acknowledgements](#acknowledgements)
 * [Literature](#literature)
@@ -102,7 +102,7 @@ As an example, consider the following Table 1. and Figure 3.
 **Figure 3.** An RDF diagram representing an example using RecordTable.
 <br/><br/>
 
-## <a name="software"></a>Libs
+## <a name="libs"></a>Libs
 
 Several libs support the use of OM:
 
