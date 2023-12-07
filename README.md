@@ -20,7 +20,7 @@ OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 
 
 * [Ontology of units of Measure (OM)](#om)
 * [RecordTable ontology](#recordtable)
-* [Libs](#libs)
+* [Libraries](#libraries)
 * [Previous versions](#previous-versions)
 * [Acknowledgements](#acknowledgements)
 * [Literature](#literature)
@@ -102,9 +102,9 @@ As an example, consider the following Table 1. and Figure 3.
 **Figure 3.** An RDF diagram representing an example using RecordTable.
 <br/><br/>
 
-## <a name="libs"></a>Libs
+## <a name="libraries"></a>Libraries
 
-Several libs support the use of OM:
+Several libraries support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
 * [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
