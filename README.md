@@ -14,7 +14,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 <img src="images/VU-logo.jpg" width=220 height=54>
 <br/><br/>
 
-OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to 1.8 have been created. Finally, in 2017, OM 2.0 followed, which is still maintained today. In the future we will move to OM 3.0.
+OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to 1.8 have been created. Finally, in 2017, OM 2.0 followed which is still maintained today. In the future we will move to OM 3.0.
 
 ## Overview
 
