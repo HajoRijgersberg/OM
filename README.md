@@ -14,14 +14,13 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 <img src="images/VU-logo.jpg" width=220 height=54>
 <br/><br/>
 
-OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to 1.8 have been created. Finally, in 2017, OM 2.0 followed which is still maintained today. In the future we will move to OM 3.0.
+OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/)) have been created. Finally, in 2017, OM 2.0 followed which is still maintained today. In the future we will move to OM 3.0.
 
 ### Contents
 
 * [Ontology of units of Measure (OM)](#om)
 * [RecordTable ontology](#recordtable)
 * [Libraries](#libraries)
-* [Previous versions](#previous-versions)
 * [Acknowledgements](#acknowledgements)
 * [Literature](#literature)
 <br/><br/>
@@ -110,12 +109,12 @@ Several libraries support the use of OM:
 * [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
 <br/><br/>
 
-## <a name="previous-versions"></a>Previous versions
+<!-- ## <a name="previous-versions"></a>Previous versions -->
 
-Previous versions were published on the wurvoc platform.
+<!-- Previous versions were published on the wurvoc platform. -->
 
-* OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/)
-<br/><br/>
+<!-- * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/) -->
+<!-- <br/><br/> -->
 
 ## <a name="acknowledgements"></a>Acknowledgements
 
