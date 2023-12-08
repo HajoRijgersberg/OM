@@ -16,6 +16,9 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. Finally, in 2017, OM 2.0 followed which is still maintained today. In the future we will move to OM 3.0.
 
+OM is based on several official paper standards, such as [the Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the the General Conference on Weights and Measures (CGPM) adapted to the United states, adapted back to the global standard by us (metre, litre, deca, tonne).
+
+
 ### Contents
 
 * [Ontology of units of Measure (OM)](#om)
@@ -82,9 +85,6 @@ The RDF structure for this example shows as follows:
 Please note that:
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
-
-OM is based on several official paper standards, such as: [The Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. 
-<br/><br/>
 
 ## <a name="recordtable"></a>RecordTable Ontology
 
