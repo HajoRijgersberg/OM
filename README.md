@@ -19,16 +19,17 @@ OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 
 OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
 
 
-### Contents
+<!-- ### Contents -->
 
-* [Ontology of units of Measure (OM)](#om)
-* [RecordTable ontology](#recordtable)
-* [Libraries](#libraries)
-* [Acknowledgements](#acknowledgements)
-* [Literature](#literature)
-<br/><br/>
+<!-- * [Ontology of units of Measure (OM)](#om) -->
+<!-- * [RecordTable ontology](#recordtable) -->
+<!-- * [Libraries](#libraries) -->
+<!-- * [Acknowledgements](#acknowledgements) -->
+<!-- * [Literature](#literature) -->
+<!-- <br/><br/> -->
 
-## <a name="om"></a>Ontology of units of Measure (OM)
+<!-- ## <a name="om"></a>Ontology of units of Measure (OM) -->
+## <a name="concepts-and-usage"></a>Concepts and usage
 
 The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using units, quantities and related concepts. It includes, for instance, common units such as the SI units metre (`om:metre`) and kilogram (`om:kilogram`), as well as units from other systems of units, such as the mile (`om:mile`) and the nautical mile (`om:nauticalMile-International`). For a range of application areas it includes specific units and quantities, such as the unit of the Hubble constant – a compound unit –, km/s/Mpc (`om:kilometrePerSecond-TimePerMegaparsec`), and the quantity 'viable count' (`om:ViableCount`).
 
@@ -120,9 +121,9 @@ Several libraries support the use of OM:
 
 OM was developed during the Virtual Laboratory for e-Science and COMMIT projects. We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
-<img src="images/vl-e-logo.jpg"/>
 <img src="images/COMMIT-logo.jpg"/>
-<br/><br/>
+<img src="images/vl-e-logo.jpg"/>
+<!-- <br/><br/> -->
 
 ## <a name="literature"></a>Literature
 
