@@ -121,9 +121,8 @@ Several libraries support the use of OM:
 
 OM was developed during the Virtual Laboratory for e-Science and COMMIT projects. We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
-<img src="images/COMMIT-logo.jpg"/>
-<img src="images/vl-e-logo.jpg"/>
-<!-- <br/><br/> -->
+<!-- <img src="images/vl-e-logo.jpg"/> -->
+<!-- <img src="images/COMMIT-logo.jpg" width=134 height=44> -->
 
 ## <a name="literature"></a>Literature
 
