@@ -100,7 +100,7 @@ As an example, consider the following Table 1. and Figure 3.
 ![A RecordTable example](images/RecordTable-Graph.png)
 
 **Figure 3.** An RDF diagram representing an example using RecordTable.
-<br/><br/>
+<!-- <br/><br/> -->
 
 ## <a name="libraries"></a>Libraries
 
