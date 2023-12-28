@@ -6,7 +6,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 **Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
 
-**Namespace Prefix:** `om`
+**Namespace prefix:** `om`
 <br/><br/>
 
 ![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg)
@@ -87,7 +87,7 @@ Please note that:
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
 
-## <a name="recordtable"></a>RecordTable Ontology
+## <a name="recordtable"></a>RecordTable ontology
 
 Included in the OM repository is the [RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl) vocabulary for semantically modelling tabular data, as a supplement to the existing RDF Data Cube standard. RDF Record Table has a nested structure of records that contain self-describing observations, and is able to cope with irregular, missing and unexpected data. This allows it to escape the constraints of RDF Data Cube and to model complex data, such as that occurring in science and engineering.
 
