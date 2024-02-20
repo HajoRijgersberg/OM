@@ -14886,6 +14886,7 @@
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;millisecond-AnglePerYear"/>
           <om:UnitDivision rdf:about="&om;radianPerSecond-Time"/>
+          <om:UnitDivision rdf:about="&om;revolutionPerMinute-Time"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -14922,6 +14923,18 @@
   <owl:Class rdf:about="&om;AngularSpeed">
     <om:commonlyHasUnit rdf:resource="&om;millisecond-AnglePerYear"/>
   </owl:Class>
+
+  <!-- Revolution Per Minute Ontology -->
+
+  <om:UnitDivision rdf:about="&om;revolutionPerMinute-Time">
+    <rdfs:label xml:lang="en">revolution per minute</rdfs:label>
+    <rdfs:label xml:lang="nl">revolutie per minuut</rdfs:label>
+    <rdfs:comment xml:lang="en">Revolution per minute is a unit of rotational speed (or rotational frequency) for rotating machines.</rdfs:comment>
+    <om:symbol>rpm</om:symbol>
+    <om:hasNumerator rdf:resource="&om;revolution"/>
+    <om:hasDenominator rdf:resource="&om;minute-Time"/>
+    <om:hasDimension rdf:resource="&om;angularSpeed-Dimension"/>
+  </om:UnitDivision>
 
   <!-- Radian Per Second Squared Ontology -->
 
