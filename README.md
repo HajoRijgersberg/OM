@@ -1,28 +1,41 @@
-# OM - Ontology of units of Measure
+# OM – Ontology of units of Measure
 
-The **Ontology of units of Measure (OM) 2.0** models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.
-OM is modelled in [OWL 2 - Web Ontology Language](https://www.w3.org/TR/owl2-overview/).
+*Ontologie d'unités de Mesures* &ensp; Ontologie der Maßeinheiten &ensp; *Ontologie van Maateenheden* &ensp; 測定単位のオントロジ
+    
+The **Ontology of units of Measure (OM) 2.0** models concepts and relations that underlie the formulation of quantitative knowledge in scientific research. It has a strong focus on units, quantities, measures, and dimensions. OM is modelled in [OWL 2 (Web Ontology Language)](https://www.w3.org/TR/owl2-overview/). The ontology can be found in [om-2.0.rdf](https://github.com/HajoRijgersberg/OM/blob/master/om-2.0.rdf) (view code above); links to UCUM (the Unified Code for Units of Measure) are in [om-2-ucum.ttl](https://github.com/HajoRijgersberg/OM/blob/master/om-2-ucum.ttl) (also above).
 
 **Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/`
 
-**Namespace Prefix:** `om`
+**Namespace prefix:** `om`
+<br/><br/>
 
+![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg)
+<br/><br/>
+<img src="images/VU-logo.jpg" width=220 height=54>
+<br/><br/>
 
-#### Overview
+<!-- ### Contents -->
 
-* [Ontology of units of Measure](#om)
-* [RecordTable ontology](#recordtable)
-* [Software](#software)
-* [Previous versions](#previous-versions)
-* [Acknowledgements](#acknowledgements)
-* [Papers on OM](#papers)
+<!-- * [Ontology of units of Measure (OM)](#om) -->
+<!-- * [RecordTable ontology](#recordtable) -->
+<!-- * [Libraries](#libraries) -->
+<!-- * [Acknowledgements](#acknowledgements) -->
+<!-- * [Literature](#literature) -->
+<!-- <br/><br/> -->
 
+<!-- ## <a name="om"></a>Ontology of units of Measure (OM) -->
 
-### <a name="om"></a>Ontology of units of Measure
+## <a name="history-and-grounding"></a>History and grounding
 
-The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using measures and units. It includes, for instance, common units such as the SI units metre (`om:metre`) and kilogram (`om:kilogram`), but also units from other systems of units such as the mile (`om:mile`) or nautical mile (`om:nauticalMile-International`). For many application areas it includes more specific units and quantities, such as the unit of the Hubble constant: km/s/Mpc `om:kilometrePerSecond-TimePerMegaparsec`, or the quantity vaselife `om:VaseLife`.
+OM has a long history. In 2004, UnitDim, the precursor to OM, was published. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. Finally, in 2017, OM 2.0 followed which is still maintained today. In the future we will move to OM 3.0.
 
-The following *application areas* are supported by OM:
+OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
+
+## <a name="concepts-and-usage"></a>Concepts and usage
+
+The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using units, quantities and related concepts. It includes, for instance, common units such as the SI units metre (`om:metre`) and kilogram (`om:kilogram`), as well as units from other systems of units, such as the mile (`om:mile`) and the nautical mile (`om:nauticalMile-International`). For a range of application areas it includes specific units and quantities, such as the unit of the Hubble constant – a compound unit –, km/s/Mpc (`om:kilometrePerSecond-TimePerMegaparsec`), and the quantity 'viable count' (`om:ViableCount`).
+
+The following application areas are supported by OM:
 
 * Geometry
 * Mechanics
@@ -64,7 +77,7 @@ ex:diameterOfApple1 om:hasValue ex:_10Centimetres ;
 ex:apple1 rdf:type ex:Apple .
 ```
 
-where `ex` is a prefixes for another namespace.
+where `ex` is a prefix to another namespace.
 
 The RDF structure for this example shows as follows:
 
@@ -72,15 +85,11 @@ The RDF structure for this example shows as follows:
 
 **Figure 2.** An RDF diagram representing the size of an apple as 10 cm. (The arrow for property om:hasNumericalValue should be reversed.)
 
-Please not that:
+Please note that:
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
 
-OM is based on several official paper standards, such as: [The Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. 
-
-
-
-### <a name="recordtable"></a>RecordTable Ontology
+## <a name="recordtable"></a>RecordTable ontology
 
 Included in the OM repository is the [RecordTable](https://github.com/HajoRijgersberg/OM/blob/master/record_table.ttl) vocabulary for semantically modelling tabular data, as a supplement to the existing RDF Data Cube standard. RDF Record Table has a nested structure of records that contain self-describing observations, and is able to cope with irregular, missing and unexpected data. This allows it to escape the constraints of RDF Data Cube and to model complex data, such as that occurring in science and engineering.
 
@@ -93,43 +102,49 @@ As an example, consider the following Table 1. and Figure 3.
 ![A RecordTable example](images/RecordTable-Graph.png)
 
 **Figure 3.** An RDF diagram representing an example using RecordTable.
+<!-- <br/><br/> -->
 
-### <a name="software"></a>Libs
+## <a name="libraries"></a>Libraries
 
-Several libs support the use of OM:
+Several libraries support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
 * [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
+<!-- <br/><br/> -->
 
+<!-- ## <a name="previous-versions"></a>Previous versions -->
 
+<!-- Previous versions were published on the wurvoc platform. -->
 
-### <a name="previous-versions"></a>Previous versions
+<!-- * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/) -->
+<!-- <br/><br/> -->
 
-Previous versions were published on the wurvoc platform.
+## <a name="acknowledgements"></a>Acknowledgements
 
-* OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/)
+OM was developed during the Virtual Laboratory for e-Science and COMMIT projects. We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
+<!-- <img src="images/vl-e-logo.jpg"/> -->
+<!-- <img src="images/COMMIT-logo.jpg" width=134 height=44> -->
 
-### <a name="acknowledgements"></a>Acknowledgements
+## <a name="literature"></a>Literature
 
-We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
-
-
-### <a name="papers"></a>Literature
+### <a name="literature-on-om"></a>On OM
 
 1. H. Rijgersberg, M.L.I. Wigham, J.L. Top, “How semantics can improve engineering processes. A case of units of measure and quantities.” *Advanced Engineering Informatics*, **25**, 2, 2011, pp. 276-287, https://doi.org/10.1016/j.aei.2010.07.008.
 2. H. Rijgersberg, M.F.J. van Assem, J.L. Top, “Ontology of Units of Measure and Related Concepts.” *Semantic Web*, **4**, 1, 2013, pp. 3-13, https://doi.org/10.3233/SW-2012-0069.
 3. Top, J., Wigham, M., Rijgersberg, H. “Semantically Enriched Spreadsheet Tables in Science and Engineering.” *SEMAPRO 2014*.
 4. Mari Wigham, Hajo Rijgersberg, Martine de Vos, Jan Top. “Semantic Support for Tables using RDF Record Table.” *International Journal On Advances in Intelligent Systems*, **8** (1 and 2), 2015, 128-144.
-5. Jan Martin Keil, Sirko Schindler, “Comparison and Evaluation of Ontologies for Units of Measurement.” *Semantic Web*, **1**, 2018, pp. 1-19.
 6. Hajo Rijgersberg, Semantic support for quantitative research, PhD thesis, Vrije Universiteit Amsterdam, 2013.
-7. Do C., Pauwels E.J. (2013) Using MathML to Represent Units of Measurement for Improved Ontology Alignment. In: Carette J., Aspinall D., Lange C., Sojka P., Windsteiger W. (eds) Intelligent Computer Mathematics. CICM 2013. Lecture Notes in Computer Science, vol 7961. Springer, Berlin, Heidelberg.
-8. Markus D. Steinberg, Sirko Schindler, Jan Martin Keil, Use Cases and Suitability Metrics for Unit Ontologies.
-9. Keil, Jan Martin (2020). ABECTO: An ABox Evaluation and Comparison Tool for Ontologies. In: ESWC 2020 Satellite Events: Posters and Demos. DOI:10.1007/978-3-030-62327-2_24.
-10. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
 
+### <a name="comparison-with-other-unit-ontologies"></a>Comparison of OM with other unit ontologies
 
-### <a name="uses-of-om"></a>Best practices of OM (not exhaustive and under construction) 
+1. Jan Martin Keil, Sirko Schindler, “Comparison and Evaluation of Ontologies for Units of Measurement.” *Semantic Web*, **1**, 2018, pp. 1-19.
+2. Do C., Pauwels E.J. (2013) Using MathML to Represent Units of Measurement for Improved Ontology Alignment. In: Carette J., Aspinall D., Lange C., Sojka P., Windsteiger W. (eds) Intelligent Computer Mathematics. CICM 2013. Lecture Notes in Computer Science, vol 7961. Springer, Berlin, Heidelberg.
+3. Markus D. Steinberg, Sirko Schindler, Jan Martin Keil, Use Cases and Suitability Metrics for Unit Ontologies.
+4. Keil, Jan Martin (2020). ABECTO: An ABox Evaluation and Comparison Tool for Ontologies. In: ESWC 2020 Satellite Events: Posters and Demos. DOI:10.1007/978-3-030-62327-2_24.
+5. Xiaoming Zhang, Kai Li, Chongchong Zhao, Dongyu Pan, "A survey on units ontologies: architecture, comparison and reuse." *Program*, Vol. 51 No. 2, 2017, pp. 193-213, https://www.emerald.com/insight/content/doi/10.1108/PROG-08-2015-0056/full/html.
+
+### <a name="uses-of-om"></a>Best practices (uses) of OM (not exhaustive and under construction) 
 
 1. D.J.M. Willems, H. Rijgersberg, J.L. Top, “Identifying and extracting quantitative data in annotated text”, *Proceedings of the Workshop on Semantic Web and Information Extraction (SWAIE 2012)*, Galway, Ireland, 2012, pp. 43-54.
 2. Martine de Vos, Jan Wielemaker, Hajo Rijgersberg, Guus Schreiber, Bob Wielinga, Jan Top. Combining Information on Structure and Content to Automatically Annotate Scientific Spreadsheet Tables. *Int. J. Human-Computer Studies*, 103, 2017, pp. 63-76.
@@ -155,7 +170,6 @@ We would like to thank Jan Martin Keil and Sirko Schindler of the University of 
 22. A. P. Vedurmudi, M. Gruber, S. Eichstädt and A. Paschke, "Semantics in Sensor Networks: An Ontology for Dynamic Transfer Behavior in Calibrated Sensors," 2021 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2021, pp. 358-363, doi: 10.1109/MetroInd4.0IoT51437.2021.9488554. https://ieeexplore.ieee.org/document/9488554.
 23. B. D. Hall, M. Kuster, Representing quantities and units in digital systems, submitted to Measurement: Sensors, 2022.
 24. Agneta Ghose, Matteo Lissandrini, Emil Riis Hansen, Bo Pedersen Weidema, A core ontology for modeling life cycle sustainability assessment on the Semantic Web, Journal of Industrial Ecology, 26, 2022, 731–747.
-
 
 ### <a name="references-to-om"></a>Discussing OM in general (not exhaustive and under construction)
 
