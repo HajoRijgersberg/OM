@@ -45,10 +45,10 @@
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="nl">Ontologie van Maateenheden (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.52</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.53</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2024/03/25</dc:date>
+    <dc:date>2024/03/26</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -38737,14 +38737,14 @@
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass</rdfs:label>
-    <!-- <rdfs:subClassOf rdf:resource="&om;Mass"/> --> <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:subClassOf rdf:resource="&om;Mass"/>
   </owl:Class>
 
   <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy</rdfs:label>
-    <!-- <rdfs:subClassOf rdf:resource="&om;MassPerEnergy"/> --> <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:subClassOf rdf:resource="&om;MassPerEnergy"/>
   </owl:Class>
 
   <!-- Unit of Measure Ontologies -->
@@ -38760,8 +38760,8 @@
     <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
     <om:symbol>gCO2eq</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor> -->
-    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;gram"/> -->
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0010</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
   </om:Unit>
 
   <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
@@ -38775,8 +38775,8 @@
     <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
     <om:symbol>tCO2eq</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <!-- <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor> -->
-    <!-- hasDefinition --> <!-- <om:hasUnit rdf:resource="&om;tonne"/>  -->
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
   </om:Unit>
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
@@ -38787,7 +38787,7 @@
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassUnit">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass unit</rdfs:label>
-    <!-- <rdfs:subClassOf rdf:resource="&om;MassUnit"/> --> <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <rdfs:subClassOf rdf:resource="&om;MassUnit"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
@@ -38846,7 +38846,7 @@
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergyUnit">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy unit</rdfs:label>
-    <!-- <rdfs:subClassOf rdf:resource="&om;MassPerEnergyUnit"/> --> <rdfs:subClassOf rdf:resource="&om;Unit"/>
+    <rdfs:subClassOf rdf:resource="&om;MassPerEnergyUnit"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
