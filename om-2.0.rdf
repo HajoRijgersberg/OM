@@ -38806,42 +38806,40 @@
 
   <!-- Gram of Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
 
-  <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalent">
+  <om:UnitMultiplication rdf:about="&om;gramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
     <om:symbol>gCO2eq</om:symbol>
-    <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.001</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
-  </om:Unit>
+    <hasTerm1 rdf:resource="&om;gram"/>
+    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
+  </om:UnitMultiplication>
 
-  <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
+  <om:UnitMultiplication rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent</rdfs:label>
     <om:symbol>kgCO2eq</om:symbol>
-    <om:hasPrefix rdf:resource="&om;kilo"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
-  </om:PrefixedUnit>
+    <hasTerm1 rdf:resource="&om;kilogram"/>
+    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
+  </om:UnitMultiplication>
 
-  <om:PrefixedUnit rdf:about="&om;petagramOfCarbonDioxideEquivalent">
+  <om:UnitMultiplication rdf:about="&om;petagramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">petagram of carbon dioxide equivalent</rdfs:label>
     <om:symbol>PgCO2eq</om:symbol>
-    <om:hasPrefix rdf:resource="&om;peta"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
-  </om:PrefixedUnit>
+    <hasTerm1 rdf:resource="&om;petagram"/>
+    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
+  </om:UnitMultiplication>
 
-  <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalent">
+  <om:UnitMultiplication rdf:about="&om;tonneOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
     <om:symbol>tCO2eq</om:symbol>
-    <rdf:type rdf:resource="&om;SingularUnit"/>
-    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
-    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
-  </om:Unit>
+    <hasTerm1 rdf:resource="&om;tonne"/>
+    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
+  </om:UnitMultiplication>
 
-  <om:PrefixedUnit rdf:about="&om;gigatonneOfCarbonDioxideEquivalent">
+  <om:UnitMultiplication rdf:about="&om;gigatonneOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">gigatonne of carbon dioxide equivalent</rdfs:label>
     <om:symbol>GtCO2eq</om:symbol>
-    <om:hasPrefix rdf:resource="&om;giga"/>
-    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
-  </om:PrefixedUnit>
+    <hasTerm1 rdf:resource="&om;gigatonne"/>
+    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
+  </om:UnitMultiplication>
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
     <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
