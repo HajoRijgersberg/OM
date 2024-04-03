@@ -38718,11 +38718,11 @@
     <rdfs:label xml:lang="nl">duurzaamheid</rdfs:label>
     <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMass"/>
     <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMassPerEnergy"/>
-    <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
-    <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
-    <om:usesUnit rdf:resource="&om;petagramOfCarbonDioxideEquivalent"/>
-    <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
-    <om:usesUnit rdf:resource="&om;gigatonneOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;gramCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;kilogramCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;petagramCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;tonneCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalent"/>
     <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
     <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentPerMegaWattHour"/>
     <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentPerGigaWattHour"/>
@@ -38792,8 +38792,8 @@
   <!-- Contents -->
 
   <!-- Carbon Dioxide Equivalent Ontology -->
-  <!-- Gram of Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
-  <!-- Gram of Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
+  <!-- Gram Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
+  <!-- Gram Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
 
   <!-- Carbon Dioxide Equivalent Ontology -->
 
@@ -38804,42 +38804,42 @@
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
 
-  <!-- Gram of Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
+  <!-- Gram Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
 
-  <om:UnitMultiplication rdf:about="&om;gramOfCarbonDioxideEquivalent">
-    <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;gramCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">gram carbon dioxide equivalent</rdfs:label>
     <om:symbol>g CO2eq</om:symbol>
 	<om:alternativeSymbol>g·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
-  <om:UnitMultiplication rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
-    <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;kilogramCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">kilogram carbon dioxide equivalent</rdfs:label>
     <om:symbol>kg CO2eq</om:symbol>
 	<om:alternativeSymbol>kg·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;kilogram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
-  <om:UnitMultiplication rdf:about="&om;petagramOfCarbonDioxideEquivalent">
-    <rdfs:label xml:lang="en">petagram of carbon dioxide equivalent</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;petagramCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">petagram carbon dioxide equivalent</rdfs:label>
     <om:symbol>Pg CO2eq</om:symbol>
 	<om:alternativeSymbol>Pg·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;petagram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
-  <om:UnitMultiplication rdf:about="&om;tonneOfCarbonDioxideEquivalent">
-    <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;tonneCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">tonne carbon dioxide equivalent</rdfs:label>
     <om:symbol>t CO2eq</om:symbol>
 	<om:alternativeSymbol>t·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;tonne"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
-  <om:UnitMultiplication rdf:about="&om;gigatonneOfCarbonDioxideEquivalent">
-    <rdfs:label xml:lang="en">gigatonne of carbon dioxide equivalent</rdfs:label>
+  <om:UnitMultiplication rdf:about="&om;gigatonneCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">gigatonne carbon dioxide equivalent</rdfs:label>
     <om:symbol>Gt CO2eq</om:symbol>
 	<om:alternativeSymbol>Gt·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gigatonne"/>
@@ -38847,11 +38847,11 @@
   </om:UnitMultiplication>
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
-    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
-    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
-    <om:commonlyHasUnit rdf:resource="&om;petagramOfCarbonDioxideEquivalent"/>
-    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
-    <om:commonlyHasUnit rdf:resource="&om;gigatonneOfCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;gramCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogramCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;petagramCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonneCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalent"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassUnit">
@@ -38860,9 +38860,9 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalent"/>
-          <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalent"/>
-          <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalent"/>
+          <om:Unit rdf:about="&om;gramCarbonDioxideEquivalent"/>
+          <om:PrefixedUnit rdf:about="&om;kilogramCarbonDioxideEquivalent"/>
+          <om:Unit rdf:about="&om;tonneCarbonDioxideEquivalent"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -38884,26 +38884,26 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
-  <!-- Gram of Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
+  <!-- Gram Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
 
   <om:UnitDivision rdf:about="&om;gramOfCarbonDioxideEquivalentPerKilowattHour">
-    <rdfs:label xml:lang="en">gram of carbon dioxide equivalent per kilowatt hour</rdfs:label>
+    <rdfs:label xml:lang="en">gram carbon dioxide equivalent per kilowatt hour</rdfs:label>
     <om:symbol>gCO2eq/kWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+    <om:hasNumerator rdf:resource="&om;gramCarbonDioxideEquivalent"/>
     <om:hasDenominator rdf:resource="&om;kilowattHour"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;kilogramOfCarbonDioxideEquivalentPerMegawattHour">
-    <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent per megawatt hour</rdfs:label>
+    <rdfs:label xml:lang="en">kilogram carbon dioxide equivalent per megawatt hour</rdfs:label>
     <om:symbol>kgCO2eq/MWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:hasNumerator rdf:resource="&om;kilogramCarbonDioxideEquivalent"/>
     <om:hasDenominator rdf:resource="&om;megawattHour"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;tonneOfCarbonDioxideEquivalentPerGigawattHour">
-    <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent per gigawatt hour</rdfs:label>
+    <rdfs:label xml:lang="en">tonne carbon dioxide equivalent per gigawatt hour</rdfs:label>
     <om:symbol>tCO2eq/GWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+    <om:hasNumerator rdf:resource="&om;tonneCarbonDioxideEquivalent"/>
     <om:hasDenominator rdf:resource="&om;gigawattHour"/>
   </om:UnitDivision>
 
