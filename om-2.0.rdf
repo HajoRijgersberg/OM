@@ -38720,7 +38720,9 @@
     <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMassPerEnergy"/>
     <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
     <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;petagramOfCarbonDioxideEquivalent"/>
     <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+    <om:usesUnit rdf:resource="&om;gigatonneOfCarbonDioxideEquivalent"/>
     <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
     <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentPerMegaWattHour"/>
     <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentPerGigaWattHour"/>
@@ -38771,6 +38773,13 @@
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
   </om:PrefixedUnit>
 
+  <om:PrefixedUnit rdf:about="&om;petagramOfCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">petagram of carbon dioxide equivalent</rdfs:label>
+    <om:symbol>PgCO2eq</om:symbol>
+    <om:hasPrefix rdf:resource="&om;peta"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
+  </om:PrefixedUnit>
+
   <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
     <om:symbol>tCO2eq</om:symbol>
@@ -38779,10 +38788,19 @@
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
   </om:Unit>
 
+  <om:PrefixedUnit rdf:about="&om;gigatonneOfCarbonDioxideEquivalent">
+    <rdfs:label xml:lang="en">gigatonne of carbon dioxide equivalent</rdfs:label>
+    <om:symbol>GtCO2eq</om:symbol>
+    <om:hasPrefix rdf:resource="&om;giga"/>
+    <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+  </om:PrefixedUnit>
+
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
     <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalent"/>
     <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;petagramOfCarbonDioxideEquivalent"/>
     <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalent"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigatonneOfCarbonDioxideEquivalent"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassUnit">
