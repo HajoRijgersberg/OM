@@ -38808,35 +38808,40 @@
 
   <om:UnitMultiplication rdf:about="&om;gramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">gram of carbon dioxide equivalent</rdfs:label>
-    <om:symbol>gCO2eq</om:symbol>
+    <om:symbol>g CO2eq</om:symbol>
+	<om:alternativeSymbol>g·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
   <om:UnitMultiplication rdf:about="&om;kilogramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">kilogram of carbon dioxide equivalent</rdfs:label>
-    <om:symbol>kgCO2eq</om:symbol>
+    <om:symbol>kg CO2eq</om:symbol>
+	<om:alternativeSymbol>kg·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;kilogram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
   <om:UnitMultiplication rdf:about="&om;petagramOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">petagram of carbon dioxide equivalent</rdfs:label>
-    <om:symbol>PgCO2eq</om:symbol>
+    <om:symbol>Pg CO2eq</om:symbol>
+	<om:alternativeSymbol>Pg·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;petagram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
   <om:UnitMultiplication rdf:about="&om;tonneOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">tonne of carbon dioxide equivalent</rdfs:label>
-    <om:symbol>tCO2eq</om:symbol>
+    <om:symbol>t CO2eq</om:symbol>
+	<om:alternativeSymbol>t·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;tonne"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
 
   <om:UnitMultiplication rdf:about="&om;gigatonneOfCarbonDioxideEquivalent">
     <rdfs:label xml:lang="en">gigatonne of carbon dioxide equivalent</rdfs:label>
-    <om:symbol>GtCO2eq</om:symbol>
+    <om:symbol>Gt CO2eq</om:symbol>
+	<om:alternativeSymbol>Gt·CO2eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gigatonne"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
