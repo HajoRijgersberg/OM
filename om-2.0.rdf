@@ -19302,8 +19302,8 @@
     <rdfs:label xml:lang="nl">watt per vierkante meter kelvin</rdfs:label>
     <om:symbol>W/m2 K</om:symbol>
     <om:alternativeSymbol>W/(m2·K)</om:alternativeSymbol>
-    <om:alternativeSymbol>W-1 m2 K</om:alternativeSymbol>
-    <om:alternativeSymbol>W-1·m2·K</om:alternativeSymbol>
+    <om:alternativeSymbol>W m-2 K-1</om:alternativeSymbol>
+    <om:alternativeSymbol>W·m-2·K-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;watt"/>
     <om:hasDenominator rdf:resource="&om;squareMetreKelvin"/>
     <om:hasDimension rdf:resource="&om;heatTransferCoefficient-Dimension"/>
@@ -19510,8 +19510,8 @@
     <rdfs:label xml:lang="nl">joule per kubieke meter kelvin</rdfs:label>
     <om:symbol>J/m3 K</om:symbol>
     <om:alternativeSymbol>J/(m3·K)</om:alternativeSymbol>
-    <om:alternativeSymbol>J-1 m3 K</om:alternativeSymbol>
-    <om:alternativeSymbol>J-1·m3·K</om:alternativeSymbol>
+    <om:alternativeSymbol>J m-3 K-1</om:alternativeSymbol>
+    <om:alternativeSymbol>J·m-3·K-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;joule"/>
     <om:hasDenominator rdf:resource="&om;cubicMetreKelvin"/>
     <om:hasDimension rdf:resource="&om;volumetricHeatCapacity-Dimension"/>
