@@ -38718,6 +38718,12 @@
     <rdfs:label xml:lang="nl">duurzaamheid</rdfs:label>
     <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentGWPMass"/>
     <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentGWPMassPerEnergy"/>
+    <om:usesUnit rdf:resource="&om;kelvinPerKilogram"/>
+    <om:usesUnit rdf:resource="&om;wattPerSquareMetre"/>
+    <om:usesUnit rdf:resource="&om;carbonDioxideEquivalentGTP"/>
+    <om:usesUnit rdf:resource="&om;wattPerSquareMetreKilogram"/>
+    <om:usesUnit rdf:resource="&om;wattMetre-2YearKilogram-1"/>
+    <om:usesUnit rdf:resource="&om;wattMetre-2YearKilogram-1PerWattMetre-2YearKilogram-1"/>
     <om:usesUnit rdf:resource="&om;gramCarbonDioxideEquivalentGWP"/>
     <om:usesUnit rdf:resource="&om;kilogramCarbonDioxideEquivalentGWP"/>
     <om:usesUnit rdf:resource="&om;petagramCarbonDioxideEquivalentGWP"/>
@@ -38798,6 +38804,9 @@
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergy">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentGWPPerGigawattHour"/>
   </owl:Class>
 
   <!-- Global Warming Potential Upper Ontology -->
@@ -38873,8 +38882,8 @@
     <om:alternativeSymbol>CO2eq</om:alternativeSymbol>
     <om:alternativeSymbol>CO2-e</om:alternativeSymbol>
     <om:alternativeSymbol>CO2-eq</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;wattMetre-2YearKilogram-1"/>
-    <om:hasDenominator rdf:resource="&om;wattMetre-2YearKilogram-1"/>
+    <om:hasNumerator rdf:resource="&om;kelvinPerKilogram"/>
+    <om:hasDenominator rdf:resource="&om;kelvinPerKilogram"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:UnitDivision>
 
@@ -38894,7 +38903,6 @@
     <om:alternativeSymbol>W·m-2·a·kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>W m-2 yr kg-1</om:alternativeSymbol>
     <om:alternativeSymbol>W·m-2·yr·kg-1</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;wattPerSquareMetre"/>
     <hasTerm1 rdf:resource="&om;wattPerSquareMetreKilogram"/>
     <hasTerm2 rdf:resource="&om;year"/>
   </om:UnitMultiplication>
@@ -39014,9 +39022,11 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <om:Unit rdf:about="&om;gramCarbonDioxideEquivalentGWP"/>
-          <om:PrefixedUnit rdf:about="&om;kilogramCarbonDioxideEquivalentGWP"/>
-          <om:Unit rdf:about="&om;tonneCarbonDioxideEquivalentGWP"/>
+          <om:UnitMultiplication rdf:about="&om;gramCarbonDioxideEquivalentGWP"/>
+          <om:UnitMultiplication rdf:about="&om;kilogramCarbonDioxideEquivalentGWP"/>
+          <om:UnitMultiplication rdf:about="&om;petagramCarbonDioxideEquivalentGWP"/>
+          <om:UnitMultiplication rdf:about="&om;tonneCarbonDioxideEquivalentGWP"/>
+          <om:UnitMultiplication rdf:about="&om;gigatonneCarbonDioxideEquivalentGWP"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
