@@ -38742,7 +38742,7 @@
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
   </owl:Class>
 
-  <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
+  <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy</rdfs:label>
@@ -38800,6 +38800,8 @@
   <om:Unit rdf:about="&om;carbonDioxideEquivalent">
     <rdfs:label xml:lang="en">carbon dioxide equivalent</rdfs:label>
     <om:symbol>CO2eq</om:symbol>
+    <om:alternativeSymbol>CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>CO2-eq</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -38810,6 +38812,10 @@
     <rdfs:label xml:lang="en">gram carbon dioxide equivalent</rdfs:label>
     <om:symbol>g CO2eq</om:symbol>
     <om:alternativeSymbol>g·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>g CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>g CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2-eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
@@ -38818,6 +38824,10 @@
     <rdfs:label xml:lang="en">kilogram carbon dioxide equivalent</rdfs:label>
     <om:symbol>kg CO2eq</om:symbol>
     <om:alternativeSymbol>kg·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>kg CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2-eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;kilogram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
@@ -38826,6 +38836,10 @@
     <rdfs:label xml:lang="en">petagram carbon dioxide equivalent</rdfs:label>
     <om:symbol>Pg CO2eq</om:symbol>
     <om:alternativeSymbol>Pg·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2-eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;petagram"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
@@ -38834,6 +38848,10 @@
     <rdfs:label xml:lang="en">tonne carbon dioxide equivalent</rdfs:label>
     <om:symbol>t CO2eq</om:symbol>
     <om:alternativeSymbol>t·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>t CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>t CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2-eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;tonne"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
@@ -38842,6 +38860,10 @@
     <rdfs:label xml:lang="en">gigatonne carbon dioxide equivalent</rdfs:label>
     <om:symbol>Gt CO2eq</om:symbol>
     <om:alternativeSymbol>Gt·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2-eq</om:alternativeSymbol>
     <hasTerm1 rdf:resource="&om;gigatonne"/>
     <hasTerm2 rdf:resource="&om;carbonDioxideEquivalent"/>
   </om:UnitMultiplication>
