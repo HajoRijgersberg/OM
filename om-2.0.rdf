@@ -38805,37 +38805,41 @@
   <owl:Class rdf:about="&om;GlobalWarmingPotential">
     <rdfs:label xml:lang="en">global warming potential</rdfs:label>
     <om:alternativeLabel xml:lang="en">relative cumulative forcing index</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">Global warming potential is an index of the total energy added to the climate system by the phenomenon relative to the total energy added by CO2 for some time horizon. The global warming potential for a time horizon of 100 has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO2 emissions by a decision in the Kyoto Protocol.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a chosen time horizon, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. The global warming potential over a time horizon of 100 has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO₂ emissions by a decision in the Kyoto Protocol.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>GWP</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential20YearHorizon">
     <rdfs:label xml:lang="en">global warming potential for a time horizon of 20</rdfs:label>
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">Global warming potential is an index of the total energy added to the climate system by the phenomenon relative to the total energy added by CO2 for a time horizon of 20 years.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 500 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP20</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential100YearHorizon">
     <rdfs:label xml:lang="en">global warming potential for a time horizon of 100</rdfs:label>
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">Global warming potential is an index of the total energy added to the climate system by the phenomenon relative to the total energy added by CO2 for a time horizon of 100 years. It has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO2 emissions by a decision in the Kyoto Protocol.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 100 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. The global warming potential over a time horizon of 100 has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO₂ emissions by a decision in the Kyoto Protocol.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP100</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential500YearHorizon">
     <rdfs:label xml:lang="en">global warming potential for a time horizon of 500</rdfs:label>
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">Global warming potential is an index of the total energy added to the climate system by the phenomenon relative to the total energy added by CO2 for a time horizon of 500 years.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 500 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP500</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
 
   <!-- Unit of Measure Ontologies -->
