@@ -38805,7 +38805,7 @@
   <owl:Class rdf:about="&om;GlobalWarmingPotential">
     <rdfs:label xml:lang="en">global warming potential</rdfs:label>
     <om:alternativeLabel xml:lang="en">relative cumulative forcing index</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a chosen time horizon, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. The global warming potential over a time horizon of 100 has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO₂ emissions by a decision in the Kyoto Protocol.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a chosen time horizon, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>GWP</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
@@ -38817,7 +38817,7 @@
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 500 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
-    <om:symbol>GWP20</om:symbol>
+    <om:symbol>GWP-20</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
@@ -38825,9 +38825,9 @@
   <owl:Class rdf:about="&om;GlobalWarmingPotential100YearHorizon">
     <rdfs:label xml:lang="en">global warming potential for a time horizon of 100</rdfs:label>
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
-    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 100 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. The global warming potential over a time horizon of 100 has been determined as the standard metric for reporting emissions of various greenhouse gases relative to CO₂ emissions by a decision in the Kyoto Protocol.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 100 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
-    <om:symbol>GWP100</om:symbol>
+    <om:symbol>GWP-100</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
@@ -38837,7 +38837,7 @@
     <om:alternativeLabel xml:lang="en">CO2 equivalent emissions</om:alternativeLabel>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 500 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
-    <om:symbol>GWP500</om:symbol>
+    <om:symbol>GWP-500</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
