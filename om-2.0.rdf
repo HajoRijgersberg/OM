@@ -38732,14 +38732,39 @@
 
   <!-- Contents -->
 
+  <!-- Radiative Forcing Upper Ontology -->
+  <!-- Effective Radiative Forcing Upper Ontology -->
   <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
   <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
+
+  <!-- Radiative Forcing Upper Ontology -->
+
+  <owl:Class rdf:about="&om;RadiativeForcing">
+    <rdfs:label xml:lang="en">radiative forcing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>RF</om:symbol>
+	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
+  </owl:Class>
+
+  <!-- Effective Radiative Forcing Upper Ontology -->
+
+  <owl:Class rdf:about="&om;EffectiveRadiativeForcing">
+    <rdfs:label xml:lang="en">effective radiative forcing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <om:symbol>ERF</om:symbol>
+	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
+  </owl:Class>
 
   <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
 
   <owl:Class rdf:about="&om;CarbonDioxideEquivalentMass">
     <rdfs:label xml:lang="en">carbon dioxide equivalent mass</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+	<om:commonlyHasUnit rdf:resource="&om;gramCarbonDioxideEquivalent"/>
+	<om:commonlyHasUnit rdf:resource="&om;kilogramCarbonDioxideEquivalent"/>
+	<om:commonlyHasUnit rdf:resource="&om;petagramCarbonDioxideEquivalent"/>
+	<om:commonlyHasUnit rdf:resource="&om;tonneCarbonDioxideEquivalent"/>
+	<om:commonlyHasUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalent"/>
   </owl:Class>
 
   <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
@@ -38942,7 +38967,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalentPerKilowattHour"/>
-          <om:PrefixedUnit rdf:about="&om;kilogramOfCarbonDioxideEquivalentPerMegawattHour"/>
+          <om:Unit rdf:about="&om;kilogramOfCarbonDioxideEquivalentPerMegawattHour"/>
           <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalentPerGigawattHour"/>
         </owl:oneOf>
       </owl:Class>
