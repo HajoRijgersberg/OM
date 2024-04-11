@@ -38733,6 +38733,8 @@
   <!-- Contents -->
 
   <!-- Radiative Forcing Upper Ontology -->
+  <!-- Stratospherically Adjusted Radiative Forcing Upper Ontology -->
+  <!-- Instantaneous Radiative Forcing Upper Ontology -->
   <!-- Effective Radiative Forcing Upper Ontology -->
   <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
   <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
@@ -38742,7 +38744,29 @@
   <owl:Class rdf:about="&om;RadiativeForcing">
     <rdfs:label xml:lang="en">radiative forcing</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+	<rdfs:comment xml:lang="en">The change in the net, downward minus upward, radiative flux (expressed in W m⁻²) due to a change in an external driver of climate change, such as a change in the concentration of carbon dioxide (CO2), the concentration of volcanic aerosols or the output of the Sun.</rdfs:comment>
     <om:symbol>RF</om:symbol>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
+	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
+  </owl:Class>
+
+  <!-- Stratospherically Adjusted Radiative Forcing Upper Ontology -->
+
+  <owl:Class rdf:about="&om;StratosphericallyAdjustedRadiativeForcing">
+    <rdfs:label xml:lang="en">stratospherically adjusted radiative forcing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+	<rdfs:comment xml:lang="en">The stratospherically adjusted radiative forcing is computed with all tropospheric properties held fixed at their unperturbed values, and after allowing for stratospheric temperatures, if perturbed, to readjust to radiative-dynamical equilibrium.</rdfs:comment>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
+	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
+  </owl:Class>
+
+  <!-- Instantaneous Radiative Forcing Upper Ontology -->
+
+  <owl:Class rdf:about="&om;InstantaneousRadiativeForcing">
+    <rdfs:label xml:lang="en">instantaneous radiative forcing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+	<rdfs:comment xml:lang="en">Radiative forcing is called instantaneous if no change in stratospheric temperature is accounted for.</rdfs:comment>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
 	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
   </owl:Class>
 
@@ -38750,8 +38774,10 @@
 
   <owl:Class rdf:about="&om;EffectiveRadiativeForcing">
     <rdfs:label xml:lang="en">effective radiative forcing</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+	<rdfs:comment xml:lang="en">The radiative forcing once both stratospheric and tropospheric adjustments are accounted for is termed the effective radiative forcing.</rdfs:comment>
     <om:symbol>ERF</om:symbol>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
 	<om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
   </owl:Class>
 
