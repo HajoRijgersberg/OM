@@ -7119,7 +7119,7 @@
   <!-- Metre Per Second Squared Multiples and Submultiples Ontology -->
   <!-- Acceleration Unit Ontology -->
   <!-- Kilogram Per Cubic Metre Ontology -->
-  <!-- Particle Count Per Cubic Centimetre Ontology -->
+  <!-- Particle Number Per Cubic Centimetre Ontology -->
   <!-- Gram Per Cubic Metre Multiples and Submultiples Ontology -->
   <!-- Gram Per Litre Ontology -->
   <!-- Gram Per Litre Multiples and Submultiples Ontology -->
@@ -10277,14 +10277,14 @@
     </rdfs:subClassOf>     
   </owl:Class>
 
-  <!-- Particle Count Per Cubic Centimetre Ontology -->
+  <!-- Particle Number Per Cubic Centimetre Ontology -->
 
-  <om:UnitDivision rdf:about="&om;particleCountPerCubicCentimetre">
-    <rdfs:label xml:lang="en">particle count per cubic centimetre</rdfs:label>
+  <om:UnitDivision rdf:about="&om;particleNumberPerCubicCentimetre">
+    <rdfs:label xml:lang="en">particle number per cubic centimetre</rdfs:label>
     <rdfs:label xml:lang="nl">deeltjesaantal per kubieke centimeter</rdfs:label>
-    <rdfs:comment xml:lang="en">Particle count per cubic centimetre is a unit defined as the concentration of airborne particles, such as dust, pollen, pollutants, or aerosols, present in a cubic centimetre of air.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Particle number per cubic centimetre is a unit defined as the concentration of airborne particles, such as dust, pollen or aerosols, present in a cubic centimetre of air.</rdfs:comment>
     <om:symbol>particles/cm^3</om:symbol>
-    <om:hasNumerator rdf:resource="&om;particles"/>
+    <om:hasNumerator rdf:resource="&om;particleNumber"/>
     <om:hasDenominator rdf:resource="&om;cubicCentimetre"/>
     <om:hasDimension rdf:resource="&om;density-Dimension"/>
   </om:UnitDivision>
@@ -28809,7 +28809,7 @@
   <!-- Amount of Substance Upper Ontology -->
   <!-- Amount of Substance Concentration Upper Ontology -->
   <!-- Amount of Substance Fraction Upper Ontology -->
-  <!-- Particle Concentration Upper Ontology -->
+  <!-- Particle Number Concentration Upper Ontology -->
   <!-- Mass of Substance Concentration Upper Ontology -->
   <!-- Molar Energy Upper Ontology -->
   <!-- Molar Energy Subclass Upper Ontology -->
@@ -28881,11 +28881,11 @@
     <om:symbol>C</om:symbol>
   </owl:Class>
 
-  <!-- Particle Concentration Upper Ontology -->
+  <!-- Particle Number Concentration Upper Ontology -->
 
-  <owl:Class rdf:about="&om;ParticleConcentration">
-    <rdfs:label xml:lang="en">particle concentration</rdfs:label>
-    <rdfs:comment xml:lang="en">Particle concentration is defined as the number of individual particles (such as dust particles, aerosols, or other particulate matter) within a defined volume of space.</rdfs:comment>
+  <owl:Class rdf:about="&om;ParticleNumberConcentration">
+    <rdfs:label xml:lang="en">particle number concentration</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle number concentration is defined as the number of individual particles (such as dust particles, aerosols, or other particulate matter) within a defined volume of space.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&om;Concentration"/>
     <om:symbol>C</om:symbol> 
   </owl:Class>
@@ -28997,7 +28997,7 @@
   <!-- Unit of Measure Ontologies -->
 
   <!-- Contents -->
-  <!-- Particles Ontology -->
+  <!-- Particle Number Ontology -->
   <!-- Mole Ontology -->
   <!-- Mole Multiples and Submultiples Ontology -->
   <!-- One Ontology -->
@@ -29026,14 +29026,15 @@
   <!-- Micromole Per Second Gram Ontology -->
   <!-- Nanomole Per Hour Millilitre Ontology -->
 
-  <!-- Particles Ontology -->
+  <!-- Particle Number Ontology -->
 
-  <om:Unit rdf:about="&om;particles">
-    <rdfs:label xml:lang="en">particles</rdfs:label>
-    <rdfs:label xml:lang="nl">deeltjes</rdfs:label>
-    <om:symbol>particles</om:symbol>
+  <om:Unit rdf:about="&om;particleNumber">
+    <rdfs:label xml:lang="en">particle number</rdfs:label>
+    <rdfs:label xml:lang="nl">deeltjesnummer</rdfs:label>
+    <om:symbol>particle number</om:symbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;amountOfSubstance-Dimension"/>
+    <rdfs:comment xml:lang="en">Particle number refers to the quantity or count of individual particles.</rdfs:comment>
   </om:Unit>
 
   <!-- Mole Ontology -->
@@ -29074,7 +29075,7 @@
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
               <om:Unit rdf:about="&om;mole"/>
-	      <om:Unit rdf:about="&om;particles"/>
+	      <om:Unit rdf:about="&om;particleNumber"/>
             </owl:oneOf>
           </owl:Class>
           <owl:Class rdf:about="&om;PrefixedMole"/>
@@ -29327,17 +29328,17 @@
     <om:commonlyHasUnit rdf:resource="&om;teramole"/>
   </owl:Class>
 
- <!-- Particle Concentration Unit Ontology -->
+ <!-- Particle Number Concentration Unit Ontology -->
 
-  <owl:Class rdf:about="&om;ParticleConcentrationUnit">
-    <rdfs:label xml:lang="en">particle concentration unit</rdfs:label>
+  <owl:Class rdf:about="&om;ParticleNumberConcentrationUnit">
+    <rdfs:label xml:lang="en">particle number concentration unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class>
             <owl:oneOf rdf:parseType="Collection">
-              <om:UnitDivision rdf:about="&om;particleCountPerCubicCentimetre"/>
+              <om:UnitDivision rdf:about="&om;particleNumberPerCubicCentimetre"/>
             </owl:oneOf>
           </owl:Class>
         </owl:unionOf>
@@ -29345,7 +29346,7 @@
     </owl:equivalentClass>
   </owl:Class>
 
-  <owl:Class rdf:about="&om;ParticleConcentration">
+  <owl:Class rdf:about="&om;ParticleNumberConcentration">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&om;hasValue"/>
@@ -29353,7 +29354,7 @@
           <owl:Restriction>
             <owl:onProperty rdf:resource="&om;hasUnit"/>
             <owl:allValuesFrom>
-              <owl:Class rdf:about="&om;ParticleConcentrationUnit"/>
+              <owl:Class rdf:about="&om;ParticleNumberConcentrationUnit"/>
             </owl:allValuesFrom>
           </owl:Restriction>
         </owl:allValuesFrom>
