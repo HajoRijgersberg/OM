@@ -45,10 +45,10 @@
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="nl">Ontologie van Maateenheden (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.55</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.56</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2024/04/18</dc:date>
+    <dc:date>2024/05/12</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -7145,6 +7145,7 @@
   <!-- Watt Per Steradian Square Metre Ontology -->
   <!-- Watt Per Steradian Square Metre Hertz Ontology -->
   <!-- Square Metre Per Gram Ontology -->
+  <!-- Square Metre Per Cubic Centimetre Ontology -->
   <!-- Megametre Per Kilojoule Ontology -->
   <!-- Megaeuro Per Petajoule Ontology -->
   <!-- Megaeuro Per Megawatt Ontology -->
@@ -16643,6 +16644,20 @@
     <om:alternativeSymbol>m2·g-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;squareMetre"/>
     <om:hasDenominator rdf:resource="&om;gram"/>
+  </om:UnitDivision>
+
+  <!-- Square Metre Per Cubic Centimetre Ontology -->
+
+  <om:UnitDivision rdf:about="&om;squareMetrePerCubicCentimetre">
+    <rdfs:label xml:lang="en">square metre per cubic centimetre</rdfs:label>
+    <rdfs:label xml:lang="nl">vierkante meter per kubieke centimeter</rdfs:label>
+    <!-- <rdfs:comment xml:lang="en">Square metre per cubic centimetre is a unit of .</rdfs:comment> -->
+    <!-- <om:longcomment xml:lang="en">Square metre per cubic centimetre is a unit of  defined as square metre divided by cubic centimetre. Square metre per cubic centimetre is a derived unit in the International System of Units.</om:longcomment> -->
+    <om:symbol>m2/cm3</om:symbol>
+    <om:alternativeSymbol>m2 cm-3</om:alternativeSymbol>
+    <om:alternativeSymbol>m2·cm-3</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;squareMetre"/>
+    <om:hasDenominator rdf:resource="&om;cubicCentimetre"/>
   </om:UnitDivision>
 
   <!-- Megametre Per Kilojoule Ontology -->
