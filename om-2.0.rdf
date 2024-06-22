@@ -45,10 +45,10 @@
     <rdfs:label xml:lang="en">Ontology of units of Measure (OM)</rdfs:label>
     <rdfs:label xml:lang="nl">Ontologie van Maateenheden (OM)</rdfs:label>
     <rdfs:label xml:lang="ja">測定単位のオントロジー (OM)</rdfs:label>
-    <owl:versionInfo xml:lang="en">2.0.56</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.57</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2024/05/12</dc:date>
+    <dc:date>2024/06/22</dc:date>
     <rdfs:comment xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measurements, and dimensions.</rdfs:comment>
     <rdfs:comment xml:lang="ja">測定単位のオントロジー (Ontology of units of Measure; OM) は，科学技術にとって重要な概念及び関係をモデル化する。OMは，単位・量・測定・次元に特に焦点を当てている。</rdfs:comment>
     <wv:logo>http://www.wurvoc.org/images/vocabularies/om-logo.jpg</wv:logo>
@@ -7039,6 +7039,7 @@
   <!-- Reciprocal Cubic Metre Ontology -->
   <!-- Reciprocal Cubic Metre Multiples and Submultiples Ontology -->
   <!-- Reciprocal Litre Ontology -->
+  <!-- Number Density Unit Ontology -->
   <!-- Reciprocal Metre Ontology -->
   <!-- Wavenumber Unit Ontology -->
   <!-- Metre Per Metre Ontology -->
@@ -9272,7 +9273,11 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
+          <om:UnitExponentiation rdf:about="&om;reciprocalCubicAngstrom"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicCentimetre"/>
+          <om:UnitExponentiation rdf:about="&om;reciprocalCubicMillimetre"/>
+          <om:UnitExponentiation rdf:about="&om;reciprocalCubicMicrometre"/>
+          <om:UnitExponentiation rdf:about="&om;reciprocalCubicNanometre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalLitre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicMetre"/>
           <om:UnitExponentiation rdf:about="&om;reciprocalCubicParsec"/>
@@ -9308,8 +9313,38 @@
     <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
   </om:UnitExponentiation>
 
+  <om:UnitExponentiation rdf:about="&om;reciprocalCubicMillimetre">
+    <rdfs:label xml:lang="en">reciprocal cubic millimetre</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde kubieke millimeter</rdfs:label>
+    <om:symbol>mm-3</om:symbol>
+    <om:hasBase rdf:resource="&om;millimetre"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-3</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
+  <om:UnitExponentiation rdf:about="&om;reciprocalCubicMicrometre">
+    <rdfs:label xml:lang="en">reciprocal cubic micrometre</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde kubieke micrometer</rdfs:label>
+    <om:symbol>μm-3</om:symbol>
+    <om:hasBase rdf:resource="&om;micrometre"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-3</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
+  <om:UnitExponentiation rdf:about="&om;reciprocalCubicNanometre">
+    <rdfs:label xml:lang="en">reciprocal cubic nanometre</rdfs:label>
+    <rdfs:label xml:lang="nl">omgekeerde kubieke nanometer</rdfs:label>
+    <om:symbol>nm-3</om:symbol>
+    <om:hasBase rdf:resource="&om;nanometre"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-3</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
   <owl:Class rdf:about="&om;NumberDensity">
     <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicCentimetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicMillimetre"/>
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicMicrometre"/>
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicNanometre"/>
   </owl:Class>
 
   <!-- Reciprocal Litre Ontology -->
@@ -9325,6 +9360,20 @@
 
   <owl:Class rdf:about="&om;NumberDensity">
     <om:commonlyHasUnit rdf:resource="&om;reciprocalLitre"/>
+  </owl:Class>
+
+  <!-- Number Density Unit Ontology -->
+
+  <om:UnitExponentiation rdf:about="&om;reciprocalCubicAngstrom">
+    <rdfs:label xml:lang="en">reciprocal cubic angstrom</rdfs:label>
+    <om:symbol>Å-3</om:symbol>
+    <om:hasBase rdf:resource="&om;angstrom"/>
+    <om:hasExponent rdf:datatype="&xsd;integer">-3</om:hasExponent>
+    <om:hasDimension rdf:resource="&om;numberDensity-Dimension"/>
+  </om:UnitExponentiation>
+
+  <owl:Class rdf:about="&om;NumberDensity">
+    <om:commonlyHasUnit rdf:resource="&om;reciprocalCubicAngstrom"/>
   </owl:Class>
 
   <!-- Reciprocal Metre Ontology -->
