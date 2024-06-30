@@ -113,13 +113,11 @@ Several libraries support the use of OM:
 <!-- * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/) -->
 <!-- <br/><br/> -->
 
-## <a name="history-and-grounding"></a>History and grounding
+## <a name="history-grounding-and-acknowledgements"></a>History, grounding and acknowledgements
 
 OM has a long history. In 2004, we published UnitDim, the precursor to OM. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. We eventually released OM 2.0 in 2017, which is still maintained today. In the future we will move to OM 3.0.
 
 OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
-
-## <a name="acknowledgements"></a>Acknowledgements
 
 OM was developed during the Virtual Laboratory for e-Science and COMMIT projects. We would like to thank Jan Martin Keil and Sirko Schindler of the University of Jena for reviewing OM (see [Unit Ontology Review](https://github.com/fusion-jena/unit-ontology-review) and [publication](http://www.semantic-web-journal.net/system/files/swj1825.pdf)).
 
