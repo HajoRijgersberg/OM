@@ -59,8 +59,6 @@ Please note that:
 
 > In OM, scales, such as the temperature scale are handled differently than their corresponding units. For instance a temperature difference will be expressed as a measure with a unit such as °C or K, where 28°C = 28 K. On the other hand an absolute temperature of 28°C is being referred to the **Celsius scale** and is equal to 301 K. Usually, the scale is used. [Here is an example of using a temperature scale.](Weather-example.md)
 
-## <a name="application-areas"></a>Application areas
-
 The following application areas are supported by OM:
 
 * Geometry
