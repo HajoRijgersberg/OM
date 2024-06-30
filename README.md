@@ -31,7 +31,7 @@ The OM ontology provides classes, instances, and properties that represent the d
 
 ![The UML structure of the OM ontology](images/OM2.0-UML-diagram.png)
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology. **Correction:** the range of hasNumericalValue is not xsd:float, as indicated in the figure, but is left open to accomodate any datatype required in one's application of OM.
+**Figure 1.** UML diagram showing the class structure of the OM ontology. The range of hasNumericalValue is left open to accommodate any datatype required in one's application of OM.
 
 ## <a name="Usage"></a>Usage
 
