@@ -33,12 +33,6 @@ The OM ontology provides classes, instances, and properties that represent the d
 
 **Figure 1.** The UML diagram below shows the class structure of the OM ontology. **Correction:** the range of hasNumericalValue is not xsd:float, as indicated in the figure, but is left open to accomodate any datatype required in one's application of OM.
 
-## <a name="history-and-grounding"></a>History and grounding
-
-OM has a long history. In 2004, we published UnitDim, the precursor to OM. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. We eventually released OM 2.0 in 2017, which is still maintained today. In the future we will move to OM 3.0.
-
-OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
-
 ## <a name="Usage"></a>Usage
 
 The following triples express, for example, the diameter of an apple:
@@ -122,6 +116,12 @@ Several libraries support the use of OM:
 
 <!-- * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/) -->
 <!-- <br/><br/> -->
+
+## <a name="history-and-grounding"></a>History and grounding
+
+OM has a long history. In 2004, we published UnitDim, the precursor to OM. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. We eventually released OM 2.0 in 2017, which is still maintained today. In the future we will move to OM 3.0.
+
+OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
 
 ## <a name="acknowledgements"></a>Acknowledgements
 
