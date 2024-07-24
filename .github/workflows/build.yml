@@ -1,0 +1,36 @@
+name: Build and Release
+on:
+  pull_request:
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: obolibrary/robot:v1.9.5
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+      - name: Generate RDF/XML and TTL Serializations in OWL API Style
+        run: |
+          robot \
+            convert \
+              --input om-2.0.rdf \
+              --output om-2.0.ttl \
+            convert \
+              --format owl \
+              --output om-2.0.rdf
+      - name: Store Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: om-2.0.*
+      - name: Release Files
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            om-2.0.rdf
+            om-2.0.ttl
