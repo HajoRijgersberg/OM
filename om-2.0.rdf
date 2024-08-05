@@ -31544,6 +31544,7 @@
   <!-- Specific Catalytic Activity Upper Ontology -->
   <!-- Specific Catalytic Activity Subclass Upper Ontology -->
   <!-- Acidity Upper Ontology -->
+  <!-- pH Level Ontology -->
   <!-- Amphiphilicity Upper Ontology -->
   <!-- Hydrophilicity Upper Ontology -->
   <!-- Hydrophobicity Upper Ontology -->
@@ -31600,6 +31601,13 @@
     <rdfs:label xml:lang="en">acidity</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>pH</om:symbol>
+  </owl:Class>
+
+    <!-- pH Level Ontology -->
+
+  <owl:Class rdf:about="&om;pHLevel">
+    <rdfs:label xml:lang="en">pH level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&om;Acidity"/>
   </owl:Class>
 
   <!-- Amphiphilicity Upper Ontology -->
