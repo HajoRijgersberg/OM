@@ -676,8 +676,41 @@
     <rdfs:comment xml:lang="en">A measure combines a number to a unit of measure. For example, "3 m" is a measure.</rdfs:comment>
   </owl:Class>
 
+  <owl:DatatypeProperty rdf:about="&om;hasMaximumNumericalValue">
+    <rdfs:label xml:lang="en">has maximum numerical value</rdfs:label>
+    <rdfs:comment xml:lang="en">the maximum of the range of a numerical measurement value</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&om;Measure"/>
+          <owl:Class rdf:about="&om;Point"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&om;hasMinimumNumericalValue">
+    <rdfs:label xml:lang="en">has minimum numerical value</rdfs:label>
+    <rdfs:comment xml:lang="en">the minimum of the range of a numerical measurement value</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&om;Measure"/>
+          <owl:Class rdf:about="&om;Point"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
   <owl:DatatypeProperty rdf:about="&om;hasNumericalValue">
+    <rdfs:subPropertyOf rdf:resource="&om;hasMaximumNumericalValue"/>
+    <rdfs:subPropertyOf rdf:resource="&om;hasMinimumNumericalValue"/>
     <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+    <rdfs:comment xml:lang="en">the actual numerical value of a measurement without any uncertainty</rdfs:comment>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -19638,7 +19671,8 @@
 
   <om:FixedPoint rdf:about="&om;_3To5OnTheKelvinScale">
     <rdfs:label xml:lang="en">3 to 5 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>3 to 5</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">3</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">5</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
@@ -19652,14 +19686,16 @@
 
   <om:FixedPoint rdf:about="&om;approximately17OnTheKelvinScale">
     <rdfs:label xml:lang="en">~17 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue rdf:datatype="&xsd;decimal">~17</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">16.5</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">17.5</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;approximately203OnTheKelvinScale">
     <rdfs:label xml:lang="en">~20.3 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>~20.3</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">20.25</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">20.35</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
@@ -19829,7 +19865,8 @@
     <rdfs:label xml:lang="en">-270.15 to -268.15 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-270.15至-268.15摄氏度</rdfs:label>
     <rdfs:comment xml:lang="en">One of the fixed points defining the Celsius scale</rdfs:comment>
-    <om:hasNumericalValue>-270.15 to -268.15</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">-270.15</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">-268.15</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_3To5OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19845,7 +19882,8 @@
   <om:FixedPoint rdf:about="&om;approximately-256.15OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-256.15 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">〜-256.15摄氏度</rdfs:label>
-    <om:hasNumericalValue>~-256.15</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">-256.145</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">-256.155</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately17OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19853,7 +19891,8 @@
   <om:FixedPoint rdf:about="&om;approximately-252.85OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-252.85 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">〜-252.85摄氏度</rdfs:label>
-    <om:hasNumericalValue>~-252.85</om:hasNumericalValue>
+    <om:hasMinimumNumericalValue rdf:datatype="&xsd;decimal">-252.845</om:hasMinimumNumericalValue>
+    <om:hasMaximumNumericalValue rdf:datatype="&xsd;decimal">-252.855</om:hasMaximumNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately203OnTheKelvinScale"/>
   </om:FixedPoint>
