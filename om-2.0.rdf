@@ -8717,7 +8717,6 @@
           <om:Unit rdf:about="&om;one"/>
           <om:Unit rdf:about="&om;partsPerMillion"/>
           <om:Unit rdf:about="&om;percent"/>
-          <om:Unit rdf:about="&om;weightPercent"/>
           <om:UnitDivision rdf:about="&om;gramPerGram"/>
           <om:UnitDivision rdf:about="&om;gramPerKilogram"/>
           <om:UnitDivision rdf:about="&om;gramPerHectogram"/>
@@ -8853,15 +8852,6 @@
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.01</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;one"/>
-    <om:hasDimension rdf:resource="&om;dimensionOne"/>
-  </om:Unit>
-
-  <om:Unit rdf:about="&om;weightPercent">
-    <rdfs:label xml:lang="en">weight percent</rdfs:label>
-    <rdfs:label xml:lang="nl">gewicht procent</rdfs:label>
-    <rdfs:comment xml:lang="en">A mass-based percentage unit.</rdfs:comment>
-    <om:symbol>wt.%</om:symbol>
-    <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
 
@@ -31544,7 +31534,6 @@
   <!-- Specific Catalytic Activity Upper Ontology -->
   <!-- Specific Catalytic Activity Subclass Upper Ontology -->
   <!-- Acidity Upper Ontology -->
-  <!-- pH Level Ontology -->
   <!-- Amphiphilicity Upper Ontology -->
   <!-- Hydrophilicity Upper Ontology -->
   <!-- Hydrophobicity Upper Ontology -->
@@ -31599,15 +31588,9 @@
 
   <owl:Class rdf:about="&om;Acidity">
     <rdfs:label xml:lang="en">acidity</rdfs:label>
+    <om:alternativeSymbol>pH level</om:alternativeSymbol>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>pH</om:symbol>
-  </owl:Class>
-
-    <!-- pH Level Ontology -->
-
-  <owl:Class rdf:about="&om;pHLevel">
-    <rdfs:label xml:lang="en">pH level</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Acidity"/>
   </owl:Class>
 
   <!-- Amphiphilicity Upper Ontology -->
