@@ -31588,6 +31588,7 @@
 
   <owl:Class rdf:about="&om;Acidity">
     <rdfs:label xml:lang="en">acidity</rdfs:label>
+    <om:alternativeLabel>pH level</om:alternativeLabel>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>pH</om:symbol>
   </owl:Class>
