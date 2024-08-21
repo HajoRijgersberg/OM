@@ -20965,6 +20965,7 @@
     <om:usesUnit rdf:resource="&om;teracoulomb"/>
     <om:usesUnit rdf:resource="&om;abcoulomb"/>
     <om:usesUnit rdf:resource="&om;faraday"/>
+    <om:usesUnit rdf:resource="&om;elementaryCharge"/>
     <om:usesUnit rdf:resource="&om;franklin"/>
     <om:usesUnit rdf:resource="&om;statcoulomb"/>
     <om:usesUnit rdf:resource="&om;wattPerAmpere"/>
@@ -22455,6 +22456,16 @@
     <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
   </om:Unit>
 
+  <om:Unit rdf:about="&om;elementaryCharge">
+    <rdfs:label xml:lang="en">elementary charge</rdfs:label>
+    <rdfs:comment xml:lang="en">The elementary charge is a unit of electric charge defined as 1.602176634e−19 coulomb.</rdfs:comment>
+    <om:symbol>e</om:symbol>
+    <rdf:type rdf:resource="&om;SingularUnit"/>
+    <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0000000000000000001602176634</om:hasFactor>
+    <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;coulomb"/>
+    <om:hasDimension rdf:resource="&om;electricCharge-Dimension"/>
+  </om:Unit>
+
   <om:Unit rdf:about="&om;franklin">
     <rdfs:label xml:lang="en">franklin</rdfs:label>
     <rdfs:label xml:lang="nl">franklin</rdfs:label>
@@ -22521,6 +22532,7 @@
   <owl:Class rdf:about="&om;ElectricCharge">
     <om:commonlyHasUnit rdf:resource="&om;abcoulomb"/>
     <om:commonlyHasUnit rdf:resource="&om;faraday"/>
+    <om:commonlyHasUnit rdf:resource="&om;elementaryCharge"/>
     <om:commonlyHasUnit rdf:resource="&om;franklin"/>
     <om:commonlyHasUnit rdf:resource="&om;statcoulomb"/>
     <om:commonlyHasUnit rdf:resource="&om;amperehour"/>
