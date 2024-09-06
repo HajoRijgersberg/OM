@@ -7704,8 +7704,17 @@
     <rdfs:label xml:lang="en">gram</rdfs:label>
     <rdfs:label xml:lang="nl">gram</rdfs:label>
     <rdfs:label xml:lang="zh">克</rdfs:label>
+    <om:alternativeLabel xml:lang="en">gram carbon dioxide equivalent</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The gram is a unit of mass defined as 1.0e-3 kilogram.</rdfs:comment>
     <om:symbol>g</om:symbol>
+    <om:alternativeSymbol>g CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>g CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>g CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>g CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>g·CO2-eq</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">0.0010</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
@@ -7908,7 +7917,16 @@
     <rdfs:label xml:lang="nl">kilogram</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">公斤</rdfs:label> -->
     <rdfs:label xml:lang="zh">公斤</rdfs:label>
+    <om:alternativeLabel xml:lang="en">kilogram carbon dioxide equivalent</om:alternativeLabel>
     <om:symbol>kg</om:symbol>
+    <om:alternativeSymbol>kg CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>kg CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>kg CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·CO2-eq</om:alternativeSymbol>
     <om:hasPrefix rdf:resource="&om;kilo"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
@@ -7968,8 +7986,17 @@
     <rdfs:label xml:lang="nl">petagram</rdfs:label>
     <!-- <rdfs:label xml:lang="zh">拍克</rdfs:label> -->
     <rdfs:label xml:lang="zh">10^15克</rdfs:label>
+    <om:alternativeLabel xml:lang="en">petagram carbon dioxide equivalent</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The petagram is a unit of mass defined as 1.0e15 gram.</rdfs:comment>
     <om:symbol>Pg</om:symbol>
+    <om:alternativeSymbol>Pg CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Pg·CO2-eq</om:alternativeSymbol>
     <om:hasPrefix rdf:resource="&om;peta"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gram"/>
     <om:hasDimension rdf:resource="&om;mass-Dimension"/>
@@ -8064,8 +8091,17 @@
     <!-- <rdfs:label xml:lang="zh">公噸</rdfs:label> -->
     <rdfs:label xml:lang="zh">公吨</rdfs:label>
     <om:alternativeLabel xml:lang="en">metric ton</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">tonne carbon dioxide equivalent</om:alternativeLabel>
     <rdfs:comment xml:lang="en">The tonne is a unit of mass defined as 1000 kilogram.</rdfs:comment>
     <om:symbol>t</om:symbol>
+    <om:alternativeSymbol>t CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>t CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>t CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>t CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>t·CO2-eq</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <!-- hasDefinition --> <om:hasFactor rdf:datatype="&xsd;decimal">1000</om:hasFactor>
     <!-- hasDefinition --> <om:hasUnit rdf:resource="&om;kilogram"/>
@@ -8082,6 +8118,22 @@
   </owl:Class>
 
  <!-- Tonne Multiples and Submultiples Ontology -->
+
+  <om:PrefixedUnit rdf:about="&om;gigatonne">
+    <rdfs:label xml:lang="en">gigatonne</rdfs:label>
+    <om:alternativeLabel xml:lang="en">gigatonne carbon dioxide equivalent</om:alternativeLabel>
+    <om:symbol>Gt</om:symbol>
+    <om:alternativeSymbol>Gt CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>Gt·CO2-eq</om:alternativeSymbol>
+    <om:hasPrefix rdf:resource="&om;giga"/>
+    <om:hasUnit rdf:resource="&om;tonne"/>
+  </om:PrefixedUnit>
 
   <om:PrefixedUnit rdf:about="&om;kilotonne">
     <rdfs:label xml:lang="en">kilotonne</rdfs:label>
@@ -8129,6 +8181,7 @@
   </owl:Class>  
 
   <owl:Class rdf:about="&om;Mass">
+    <om:commonlyHasUnit rdf:resource="&om;gigatonne"/>
     <om:commonlyHasUnit rdf:resource="&om;kilotonne"/>
     <om:commonlyHasUnit rdf:resource="&om;megatonne"/>
   </owl:Class>
@@ -8458,8 +8511,15 @@
   <om:Unit rdf:about="&om;one">
     <rdfs:label xml:lang="en">one</rdfs:label>
     <om:alternativeLabel xml:lang="en">unit one</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">carbon dioxide equivalent</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO₂ equivalent</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2 equivalent</om:alternativeLabel>
     <rdfs:comment xml:lang="en">Unit one is a unit of dimension one.</rdfs:comment>
     <om:symbol>1</om:symbol>
+    <om:alternativeSymbol>CO2-eq</om:alternativeSymbol>
+    <om:alternativeSymbol>CO2e</om:alternativeSymbol>
+    <om:alternativeSymbol>CO2-e</om:alternativeSymbol>
+    <om:alternativeSymbol>CO2eq</om:alternativeSymbol>
     <rdf:type rdf:resource="&om;SingularUnit"/>
     <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:Unit>
@@ -16124,6 +16184,15 @@
     <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;gramPerKilowattHour">
+    <rdfs:label xml:lang="en">gram per kilowatt hour</rdfs:label>
+    <om:symbol>g/kWh</om:symbol>
+    <om:alternativeSymbol>g kWh-1</om:alternativeSymbol>
+    <om:alternativeSymbol>g·kWh-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;gram"/>
+    <om:hasDenominator rdf:resource="&om;kilowattHour"/>
+  </om:UnitDivision>
+
   <om:UnitDivision rdf:about="&om;kilogramPerGigajoule">
     <rdfs:label xml:lang="en">kilogram per gigajoule</rdfs:label>
     <rdfs:label xml:lang="nl">kilogram per gigajoule</rdfs:label>
@@ -16134,6 +16203,15 @@
     <om:alternativeSymbol>kg·GJ-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilogram"/>
     <om:hasDenominator rdf:resource="&om;gigajoule"/>
+  </om:UnitDivision>
+
+  <om:UnitDivision rdf:about="&om;kilogramPerMegawattHour">
+    <rdfs:label xml:lang="en">kilogram per megawatt hour</rdfs:label>
+    <om:symbol>kg/MWh</om:symbol>
+    <om:alternativeSymbol>kg·MWh-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kg·MWh-1</om:alternativeSymbol>
+    <om:hasNumerator rdf:resource="&om;kilogram"/>
+    <om:hasDenominator rdf:resource="&om;megawattHour"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;microgramPerJoule">
@@ -16148,6 +16226,13 @@
     <om:hasDenominator rdf:resource="&om;joule"/>
   </om:UnitDivision>
 
+  <om:UnitDivision rdf:about="&om;tonnePerGigawattHour">
+    <rdfs:label xml:lang="en">tonne per gigawatt hour</rdfs:label>
+    <om:symbol>t/GWh</om:symbol>
+    <om:hasNumerator rdf:resource="&om;tonne"/>
+    <om:hasDenominator rdf:resource="&om;gigawattHour"/>
+  </om:UnitDivision>
+
   <owl:Class rdf:about="&om;MassPerEnergyUnit">
     <rdfs:label xml:lang="en">mass per energy unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Unit"/>
@@ -16155,12 +16240,15 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <om:UnitDivision rdf:about="&om;gramPerJoule"/>
+          <om:UnitDivision rdf:about="&om;gramPerKilowattHour"/>
           <om:UnitDivision rdf:about="&om;kilogramPerGigaJoule"/>
+          <om:UnitDivision rdf:about="&om;kilogramPerMegawattHour"/>
           <om:UnitDivision rdf:about="&om;microgramPerJoule"/>
+          <om:UnitDivision rdf:about="&om;tonnePerGigawattHour"/>
         </owl:oneOf>
       </owl:Class>
     </owl:equivalentClass>
-  </owl:Class>  	  
+  </owl:Class>
 
   <owl:Class rdf:about="&om;MassPerEnergy">
     <rdfs:subClassOf>
@@ -16172,10 +16260,10 @@
             <owl:allValuesFrom>
               <owl:Class rdf:about="&om;MassPerEnergyUnit"/>
             </owl:allValuesFrom>
-          </owl:Restriction>	
+          </owl:Restriction>
         </owl:allValuesFrom>
-      </owl:Restriction>     
-    </rdfs:subClassOf>     
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
 
   <!-- Gram Per Metre Ontology -->
@@ -38716,22 +38804,30 @@
   <om:ApplicationArea rdf:about="&om;sustainability">
     <rdfs:label xml:lang="en">sustainability</rdfs:label>
     <rdfs:label xml:lang="nl">duurzaamheid</rdfs:label>
-    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentGWPMass"/>
-    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentGWPMassPerEnergy"/>
+    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentGwp100"/>
+    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMassGwp100"/>
+    <om:usesQuantity rdf:resource="&om;CarbonDioxideEquivalentMassPerEnergyGwp100"/>
+    <om:usesQuantity rdf:resource="&om;EffectiveRadiativeForcing"/>
+    <om:usesQuantity rdf:resource="&om;GlobalWarmingPotential"/>
+    <om:usesQuantity rdf:resource="&om;GlobalWarmingPotential20YearHorizon"/>
+    <om:usesQuantity rdf:resource="&om;GlobalWarmingPotential100YearHorizon"/>
+    <om:usesQuantity rdf:resource="&om;GlobalWarmingPotential500YearHorizon"/>
+    <om:usesQuantity rdf:resource="&om;InstantaneousRadiativeForcing"/>
+    <om:usesQuantity rdf:resource="&om;RadiativeForcing"/>
+    <om:usesQuantity rdf:resource="&om;StratosphericallyAdjustedRadiativeForcing"/>
+    <om:usesUnit rdf:resource="&om;gigatonne"/>
+    <om:usesUnit rdf:resource="&om;gram"/>
+    <om:usesUnit rdf:resource="&om;gramPerKilowattHour"/>
     <om:usesUnit rdf:resource="&om;kelvinPerKilogram"/>
-    <om:usesUnit rdf:resource="&om;wattPerSquareMetre"/>
-    <om:usesUnit rdf:resource="&om;carbonDioxideEquivalentGTP"/>
-    <om:usesUnit rdf:resource="&om;wattPerSquareMetreKilogram"/>
+    <om:usesUnit rdf:resource="&om;kilogram"/>
+    <om:usesUnit rdf:resource="&om;kilogramPerMegaWattHour"/>
+    <om:usesUnit rdf:resource="&om;one"/>
+    <om:usesUnit rdf:resource="&om;petagram"/>
+    <om:usesUnit rdf:resource="&om;tonne"/>
+    <om:usesUnit rdf:resource="&om;tonnePerGigaWattHour"/>
     <om:usesUnit rdf:resource="&om;wattMetre-2YearKilogram-1"/>
-    <om:usesUnit rdf:resource="&om;wattMetre-2YearKilogram-1PerWattMetre-2YearKilogram-1"/>
-    <om:usesUnit rdf:resource="&om;gramCarbonDioxideEquivalentGWP"/>
-    <om:usesUnit rdf:resource="&om;kilogramCarbonDioxideEquivalentGWP"/>
-    <om:usesUnit rdf:resource="&om;petagramCarbonDioxideEquivalentGWP"/>
-    <om:usesUnit rdf:resource="&om;tonneCarbonDioxideEquivalentGWP"/>
-    <om:usesUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalentGWP"/>
-    <om:usesUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour"/>
-    <om:usesUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegaWattHour"/>
-    <om:usesUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentGWPPerGigaWattHour"/>
+    <om:usesUnit rdf:resource="&om;wattPerSquareMetre"/>
+    <om:usesUnit rdf:resource="&om;wattPerSquareMetreKilogram"/>
   </om:ApplicationArea>
 
   <!-- Quantity Ontologies -->
@@ -38748,8 +38844,8 @@
   <!-- Radiative Forcing Upper Ontology -->
 
   <owl:Class rdf:about="&om;RadiativeForcing">
-    <rdfs:label xml:lang="en">radiative forcing</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:label xml:lang="en">radiative forcing</rdfs:label>
     <rdfs:comment xml:lang="en">The change in the net, downward minus upward, radiative flux (expressed in W m⁻²) due to a change in an external driver of climate change, such as a change in the concentration of carbon dioxide (CO₂), the concentration of volcanic aerosols or the output of the Sun.</rdfs:comment>
     <om:symbol>RF</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
@@ -38759,8 +38855,8 @@
   <!-- Stratospherically Adjusted Radiative Forcing Upper Ontology -->
 
   <owl:Class rdf:about="&om;StratosphericallyAdjustedRadiativeForcing">
-    <rdfs:label xml:lang="en">stratospherically adjusted radiative forcing</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+    <rdfs:label xml:lang="en">stratospherically adjusted radiative forcing</rdfs:label>
     <rdfs:comment xml:lang="en">The stratospherically adjusted radiative forcing is computed with all tropospheric properties held fixed at their unperturbed values, and after allowing for stratospheric temperatures, if perturbed, to readjust to radiative-dynamical equilibrium.</rdfs:comment>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
     <om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
@@ -38769,8 +38865,8 @@
   <!-- Instantaneous Radiative Forcing Upper Ontology -->
 
   <owl:Class rdf:about="&om;InstantaneousRadiativeForcing">
-    <rdfs:label xml:lang="en">instantaneous radiative forcing</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+    <rdfs:label xml:lang="en">instantaneous radiative forcing</rdfs:label>
     <rdfs:comment xml:lang="en">Radiative forcing is called instantaneous if no change in stratospheric temperature is accounted for.</rdfs:comment>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
     <om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
@@ -38779,52 +38875,134 @@
   <!-- Effective Radiative Forcing Upper Ontology -->
 
   <owl:Class rdf:about="&om;EffectiveRadiativeForcing">
-    <rdfs:label xml:lang="en">effective radiative forcing</rdfs:label>
     <rdfs:subClassOf rdf:resource="&om;RadiativeForcing"/>
+    <rdfs:label xml:lang="en">effective radiative forcing</rdfs:label>
     <rdfs:comment xml:lang="en">The radiative forcing once both stratospheric and tropospheric adjustments are accounted for is termed the effective radiative forcing.</rdfs:comment>
     <om:symbol>ERF</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
     <om:commonlyHasUnit rdf:resource="&om;wattPerSquareMetre"/>
   </owl:Class>
 
+  <!-- Carbon Dioxide Equivalent Upper Ontology -->
+
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGwp100">
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
+    <rdfs:label xml:lang="en">carbon dioxide equivalent (GWP₁₀₀)</rdfs:label>
+    <om:alternativeLabel xml:lang="en">carbon dioxide equivalent</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2 equivalent</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-e</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-eq</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2e</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2eq</om:alternativeLabel>
+    <rdfs:comment xml:lang="en">The ratio of the global warming potential to the global warming potential of the same amount of carbon dioxide over a time horizon of 100 years (GWP-100). Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;NumberUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
+    <om:commonlyHasUnit rdf:resource="&om;one"/>
+  </owl:Class>
+
   <!-- Carbon Dioxide Equivalent Mass Upper Ontology -->
 
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMass">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent mass</rdfs:label>
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassGwp100">
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
-    <om:commonlyHasUnit rdf:resource="&om;gramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;kilogramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;petagramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;tonneCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalentGWP"/>
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass (GWP₁₀₀)</rdfs:label>
+    <om:alternativeLabel xml:lang="en">carbon dioxide equivalent mass</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2 equivalent mass</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-e mass</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-eq mass</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2e mass</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2eq mass</om:alternativeLabel>
+    <rdfs:comment xml:lang="en">The mass of carbon dioxide that would have the equivalent global warming potential over a time horizon of 100 years (GWP-100) as the amount of the phenomenon. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Note: Must no be rdfs:subClassOf of om:Mass to not entail that the mass of the equivalent amount of carbon dioxide is also the mass of the phenomenon.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;MassUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
+    <om:commonlyHasUnit rdf:resource="&om;gram"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogram"/>
+    <om:commonlyHasUnit rdf:resource="&om;petagram"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonne"/>
+    <om:commonlyHasUnit rdf:resource="&om;gigatonne"/>
   </owl:Class>
+
+  <owl:DeprecatedClass rdf:about="&om;CarbonDioxideEquivalentMass">
+    <rdfs:comment>Unambiguously named class is preferred.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="&om;CarbonDioxideEquivalentMassGwp100"/>
+  </owl:DeprecatedClass>
 
   <!-- Carbon Dioxide Equivalent Mass Per Energy Upper Ontology -->
 
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergy">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy</rdfs:label>
+  <owl:Class rdf:about="&om;CarbonDioxideEquivalentMassPerEnergyGwp100">
     <rdfs:subClassOf rdf:resource="&om;Quantity"/>
-    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour"/>
-    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegawattHour"/>
-    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentGWPPerGigawattHour"/>
+    <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy (GWP₁₀₀)</rdfs:label>
+    <om:alternativeLabel xml:lang="en">carbon dioxide equivalent mass per energy</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2 equivalent mass per energy</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-e mass per energy</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2-eq mass per energy</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2e mass per energy</om:alternativeLabel>
+    <om:alternativeLabel xml:lang="en">CO2eq mass per energy</om:alternativeLabel>
+    <rdfs:comment xml:lang="en">The mass of carbon dioxide that would have the equivalent global warming potential over a time horizon of 100 years (GWT-100) as the amount of the phenomenon per amount of some energy. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&om;hasValue"/>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&om;hasUnit"/>
+            <owl:allValuesFrom>
+              <owl:Class rdf:about="&om;MassPerEnergyUnit"/>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
+    <om:commonlyHasUnit rdf:resource="&om;gramPerKilowattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;kilogramPerMegawattHour"/>
+    <om:commonlyHasUnit rdf:resource="&om;tonnePerGigawattHour"/>
   </owl:Class>
+
+  <owl:DeprecatedClass rdf:about="&om;CarbonDioxideEquivalentMassPerEnergy">
+    <rdfs:comment>Unambiguously named class is preferred.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="&om;CarbonDioxideEquivalentMassPerEnergyGwp100"/>
+  </owl:DeprecatedClass>
 
   <!-- Global Warming Potential Upper Ontology -->
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential">
+    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <rdfs:label xml:lang="en">global warming potential</rdfs:label>
     <om:alternativeLabel xml:lang="en">relative cumulative forcing index</om:alternativeLabel>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a chosen time horizon, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&om;Quantity"/>
     <om:symbol>GWP</om:symbol>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/CBO9781107415324"/>
     <ombibo:reference rdf:resource="https://doi.org/10.1017/9781009157896"/>
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential20YearHorizon">
+    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <rdfs:label xml:lang="en">global warming potential over a time horizon of 20 years</rdfs:label>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 20 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP₂₀</om:symbol>
     <om:alternativeSymbol>GWP20</om:alternativeSymbol>
     <om:alternativeSymbol>GWP-20</om:alternativeSymbol>
@@ -38833,9 +39011,9 @@
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential100YearHorizon">
+    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <rdfs:label xml:lang="en">global warming potential over a time horizon of 100 years</rdfs:label>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 100 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing. Under the Paris Rulebook (Decision 18/CMA.1, annex, paragraph 37), parties have agreed to use GWP-100 values from the IPCC AR5 or GWP-100 values from a subsequent IPCC Assessment Report to report aggregate emissions and removals of greenhouse gases.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP₁₀₀</om:symbol>
     <om:alternativeSymbol>GWP100</om:alternativeSymbol>
     <om:alternativeSymbol>GWP-100</om:alternativeSymbol>
@@ -38844,9 +39022,9 @@
   </owl:Class>
 
   <owl:Class rdf:about="&om;GlobalWarmingPotential500YearHorizon">
+    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <rdfs:label xml:lang="en">global warming potential over a time horizon of 500 years</rdfs:label>
     <rdfs:comment xml:lang="en">An index measuring the radiative forcing following an emission of a unit mass of a given substance, accumulated over a time horizon of 500 years, relative to that of the reference substance, carbon dioxide (CO₂). It thus represents the combined effect of the differing times these substances remain in the atmosphere and their effectiveness in causing radiative forcing.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&om;GlobalWarmingPotential"/>
     <om:symbol>GWP₅₀₀</om:symbol>
     <om:alternativeSymbol>GWP500</om:alternativeSymbol>
     <om:alternativeSymbol>GWP-500</om:alternativeSymbol>
@@ -38856,12 +39034,6 @@
 
   <!-- Unit of Measure Ontologies -->
 
-  <!-- Contents -->
-
-  <!-- Carbon Dioxide Equivalent Ontology -->
-  <!-- Gram Carbon Dioxide Equivalent Multiples and Submultiples Ontology -->
-  <!-- Gram Carbon Dioxide Equivalent Per Watt Hour Multiples and Submultiples Ontology -->
-
   <om:UnitDivision rdf:about="&om;kelvinPerKilogram">
     <rdfs:label xml:lang="en">kelvin per kilogram</rdfs:label>
     <om:symbol>K/kg</om:symbol>
@@ -38869,22 +39041,6 @@
     <om:alternativeSymbol>K·kg-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kelvin"/>
     <om:hasDenominator rdf:resource="&om;kilogram"/>
-  </om:UnitDivision>
-  
-  <om:UnitDivision rdf:about="&om;carbonDioxideEquivalentGTP">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent (GTP)</rdfs:label>
-    <rdfs:alternativeLabel xml:lang="en">CO₂ equivalent (GTP)</rdfs:alternativeLabel>
-    <rdfs:alternativeLabel xml:lang="en">CO2 equivalent (GTP)</rdfs:alternativeLabel>
-    <om:alternativeLabel xml:lang="en">kelvin kilogram to the power -1 per kelvin kilogram to the power -1</om:alternativeLabel>
-    <om:symbol>K kg-1/K kg-1</om:symbol>
-    <om:alternativeSymbol>(K·kg-1)/(K·kg-1)</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2-eq</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;kelvinPerKilogram"/>
-    <om:hasDenominator rdf:resource="&om;kelvinPerKilogram"/>
-    <om:hasDimension rdf:resource="&om;dimensionOne"/>
   </om:UnitDivision>
 
   <om:UnitDivision rdf:about="&om;wattPerSquareMetreKilogram">
@@ -38896,7 +39052,7 @@
     <om:hasNumerator rdf:resource="&om;wattPerSquareMetre"/>
     <om:hasDenominator rdf:resource="&om;kilogram"/>
   </om:UnitDivision>
-  
+
   <om:UnitMultiplication rdf:about="&om;wattMetre-2YearKilogram-1">
     <rdfs:label xml:lang="en">watt metre to the power -2 year kilogram to the power -1</rdfs:label>
     <om:symbol>W m-2 a kg-1</om:symbol>
@@ -38906,206 +39062,6 @@
     <hasTerm1 rdf:resource="&om;wattPerSquareMetreKilogram"/>
     <hasTerm2 rdf:resource="&om;year"/>
   </om:UnitMultiplication>
-  
-  <om:UnitDivision rdf:about="&om;wattMetre-2YearKilogram-1PerWattMetre-2YearKilogram-1">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent (GWP)</rdfs:label>
-    <rdfs:alternativeLabel xml:lang="en">CO₂ equivalent (GWP)</rdfs:alternativeLabel>
-    <rdfs:alternativeLabel xml:lang="en">CO2 equivalent (GWP)</rdfs:alternativeLabel>
-    <om:alternativeLabel xml:lang="en">watt metre to the power -2 year kilogram to the power -1 per watt metre to the power -2 year kilogram to the power -1</om:alternativeLabel>
-    <om:symbol>W m-2 a kg-1/W m-2 a kg-1</om:symbol>
-    <om:alternativeSymbol>(W·m-2·a·kg-1)/(W·m-2·a·kg-1)</om:alternativeSymbol>
-    <om:alternativeSymbol>W m-2 yr kg-1/W m-2 yr kg-1</om:alternativeSymbol>
-    <om:alternativeSymbol>(W·m-2·yr·kg-1)/(W·m-2·yr·kg-1)</om:alternativeSymbol>
-    <om:hasNumerator rdf:resource="&om;wattMetre-2YearKilogram-1"/>
-    <om:hasDenominator rdf:resource="&om;wattMetre-2YearKilogram-1"/>
-    <om:hasDimension rdf:resource="&om;dimensionOne"/>
-  </om:UnitDivision>
-
-  <!-- Carbon Dioxide Equivalent (GWP) Ontology -->
-  
-  <om:SingularUnit rdf:about="&om;carbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent (GWP)</rdfs:label>
-    <rdfs:alternativeLabel xml:lang="en">CO₂ equivalent (GWP)</rdfs:alternativeLabel>
-    <rdfs:alternativeLabel xml:lang="en">CO2 equivalent (GWP)</rdfs:alternativeLabel>
-    <om:symbol>CO2-eq</om:symbol>
-    <om:alternativeSymbol>CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>CO2eq</om:alternativeSymbol>
-    <om:hasFactor rdf:datatype="&xsd;decimal">1</om:hasFactor>
-    <om:hasUnit rdf:resource="&om;wattMetre-2YearKilogram-1PerWattMetre-2YearKilogram-1"/>
-    <om:hasDimension rdf:resource="&om;mass-Dimension"/>
-  </om:SingularUnit>
-
-  <!-- Gram Carbon Dioxide Equivalent (GWP) Multiples and Submultiples Ontology -->
-
-  <om:UnitMultiplication rdf:about="&om;gramCarbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">gram carbon dioxide equivalent (GWP)</rdfs:label>
-    <om:symbol>g CO2eq</om:symbol>
-    <om:alternativeSymbol>g·CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>g CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>g·CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>g CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>g·CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>g CO2-eq</om:alternativeSymbol>
-    <om:alternativeSymbol>g·CO2-eq</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="&om;gram"/>
-    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalentGWP"/>
-  </om:UnitMultiplication>
-
-  <om:UnitMultiplication rdf:about="&om;kilogramCarbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">kilogram carbon dioxide equivalent (GWP)</rdfs:label>
-    <om:symbol>kg CO2eq</om:symbol>
-    <om:alternativeSymbol>kg·CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>kg CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>kg·CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>kg CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>kg·CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>kg CO2-eq</om:alternativeSymbol>
-    <om:alternativeSymbol>kg·CO2-eq</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="&om;kilogram"/>
-    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalentGWP"/>
-  </om:UnitMultiplication>
-
-  <om:UnitMultiplication rdf:about="&om;petagramCarbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">petagram carbon dioxide equivalent (GWP)</rdfs:label>
-    <om:symbol>Pg CO2eq</om:symbol>
-    <om:alternativeSymbol>Pg·CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg·CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg·CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg CO2-eq</om:alternativeSymbol>
-    <om:alternativeSymbol>Pg·CO2-eq</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="&om;petagram"/>
-    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalentGWP"/>
-  </om:UnitMultiplication>
-
-  <om:UnitMultiplication rdf:about="&om;tonneCarbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">tonne carbon dioxide equivalent (GWP)</rdfs:label>
-    <om:symbol>t CO2eq</om:symbol>
-    <om:alternativeSymbol>t·CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>t CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>t·CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>t CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>t·CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>t CO2-eq</om:alternativeSymbol>
-    <om:alternativeSymbol>t·CO2-eq</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="&om;tonne"/>
-    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalentGWP"/>
-  </om:UnitMultiplication>
-
-  <om:UnitMultiplication rdf:about="&om;gigatonneCarbonDioxideEquivalentGWP">
-    <rdfs:label xml:lang="en">gigatonne carbon dioxide equivalent (GWP)</rdfs:label>
-    <om:symbol>Gt CO2eq</om:symbol>
-    <om:alternativeSymbol>Gt·CO2eq</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt·CO2e</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt·CO2-e</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt CO2-eq</om:alternativeSymbol>
-    <om:alternativeSymbol>Gt·CO2-eq</om:alternativeSymbol>
-    <hasTerm1 rdf:resource="&om;gigatonne"/>
-    <hasTerm2 rdf:resource="&om;carbonDioxideEquivalentGWP"/>
-  </om:UnitMultiplication>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMass">
-    <om:commonlyHasUnit rdf:resource="&om;gramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;kilogramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;petagramCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;tonneCarbonDioxideEquivalentGWP"/>
-    <om:commonlyHasUnit rdf:resource="&om;gigatonneCarbonDioxideEquivalentGWP"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassUnit">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent mass unit (GWP)</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Unit"/>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:oneOf rdf:parseType="Collection">
-          <om:UnitMultiplication rdf:about="&om;gramCarbonDioxideEquivalentGWP"/>
-          <om:UnitMultiplication rdf:about="&om;kilogramCarbonDioxideEquivalentGWP"/>
-          <om:UnitMultiplication rdf:about="&om;petagramCarbonDioxideEquivalentGWP"/>
-          <om:UnitMultiplication rdf:about="&om;tonneCarbonDioxideEquivalentGWP"/>
-          <om:UnitMultiplication rdf:about="&om;gigatonneCarbonDioxideEquivalentGWP"/>
-        </owl:oneOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMass">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasValue"/>
-        <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassUnit"/>
-            </owl:allValuesFrom>
-          </owl:Restriction>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <!-- Gram Carbon Dioxide Equivalent Per Watt Hour (GWP) Multiples and Submultiples Ontology -->
-
-  <om:UnitDivision rdf:about="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour">
-    <rdfs:label xml:lang="en">gram carbon dioxide equivalent per kilowatt hour (GWP)</rdfs:label>
-    <om:symbol>gCO2eq/kWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;gramCarbonDioxideEquivalentGWP"/>
-    <om:hasDenominator rdf:resource="&om;kilowattHour"/>
-  </om:UnitDivision>
-
-  <om:UnitDivision rdf:about="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegawattHour">
-    <rdfs:label xml:lang="en">kilogram carbon dioxide equivalent per megawatt hour (GWP)</rdfs:label>
-    <om:symbol>kgCO2eq/MWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;kilogramCarbonDioxideEquivalentGWP"/>
-    <om:hasDenominator rdf:resource="&om;megawattHour"/>
-  </om:UnitDivision>
-
-  <om:UnitDivision rdf:about="&om;tonneOfCarbonDioxideEquivalentGWPPerGigawattHour">
-    <rdfs:label xml:lang="en">tonne carbon dioxide equivalent per gigawatt hour (GWP)</rdfs:label>
-    <om:symbol>tCO2eq/GWh</om:symbol>
-    <om:hasNumerator rdf:resource="&om;tonneCarbonDioxideEquivalentGWP"/>
-    <om:hasDenominator rdf:resource="&om;gigawattHour"/>
-  </om:UnitDivision>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergy">
-    <om:commonlyHasUnit rdf:resource="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour"/>
-    <om:commonlyHasUnit rdf:resource="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegaWattHour"/>
-    <om:commonlyHasUnit rdf:resource="&om;tonneOfCarbonDioxideEquivalentGWPPerGigawattHour"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergyUnit">
-    <rdfs:label xml:lang="en">carbon dioxide equivalent mass per energy unit (GWP)</rdfs:label>
-    <rdfs:subClassOf rdf:resource="&om;Unit"/>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:oneOf rdf:parseType="Collection">
-          <om:Unit rdf:about="&om;gramOfCarbonDioxideEquivalentGWPPerKilowattHour"/>
-          <om:Unit rdf:about="&om;kilogramOfCarbonDioxideEquivalentGWPPerMegawattHour"/>
-          <om:Unit rdf:about="&om;tonneOfCarbonDioxideEquivalentGWPPerGigawattHour"/>
-        </owl:oneOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-
-  <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergy">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&om;hasValue"/>
-        <owl:allValuesFrom>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="&om;hasUnit"/>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="&om;CarbonDioxideEquivalentGWPMassPerEnergyUnit"/>
-            </owl:allValuesFrom>
-          </owl:Restriction>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
 
   <!-- Economics Ontology -->
 
