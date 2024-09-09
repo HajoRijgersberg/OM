@@ -719,7 +719,7 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
+    <rdfs:range rdf:resource="&xsd;decimal"/>
     <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:DatatypeProperty>
 
