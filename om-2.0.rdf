@@ -16208,7 +16208,7 @@
   <om:UnitDivision rdf:about="&om;kilogramPerMegawattHour">
     <rdfs:label xml:lang="en">kilogram per megawatt hour</rdfs:label>
     <om:symbol>kg/MWh</om:symbol>
-    <om:alternativeSymbol>kg·MWh-1</om:alternativeSymbol>
+    <om:alternativeSymbol>kg MWh-1</om:alternativeSymbol>
     <om:alternativeSymbol>kg·MWh-1</om:alternativeSymbol>
     <om:hasNumerator rdf:resource="&om;kilogram"/>
     <om:hasDenominator rdf:resource="&om;megawattHour"/>
