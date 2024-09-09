@@ -677,7 +677,7 @@
   </owl:Class>
 
   <owl:DatatypeProperty rdf:about="&om;hasNumericalValueLessOrEqual">
-    <rdfs:label xml:lang="en">has numerical value less than or equal to </rdfs:label>
+    <rdfs:label xml:lang="en">has numerical value less than or equal to</rdfs:label>
     <rdfs:comment xml:lang="en">the upper bound of the actual numerical value</rdfs:comment>
     <rdfs:domain>
       <owl:Class>
