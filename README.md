@@ -25,6 +25,12 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 <!-- ## <a name="om"></a>Ontology of units of Measure (OM) -->
 
+## <a name="history-and-grounding"></a>History and grounding
+
+OM has a long history. In 2004, we published UnitDim, the precursor to OM. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. We eventually released OM 2.0 in 2017, which is still maintained today. In the future we will move to OM 3.0.
+
+OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
+
 ## <a name="concepts"></a>Concepts
 
 The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using units, quantities and related concepts. It includes, for instance, common units such as the SI units metre (`om:metre`) and kilogram (`om:kilogram`), as well as units from other systems of units, such as the mile (`om:mile`) and the nautical mile (`om:nauticalMile-International`). For a range of application areas it includes specific units and quantities, such as the unit of the Hubble constant – a compound unit –, km/s/Mpc (`om:kilometrePerSecond-TimePerMegaparsec`), and the quantity 'viable count' (`om:ViableCount`).
@@ -112,12 +118,6 @@ Several libraries support the use of OM:
 
 <!-- * OM 1.8: [http://www.wurvoc.org/vocabularies/om-1.8/](http://www.wurvoc.org/vocabularies/om-1.8/) -->
 <!-- <br/><br/> -->
-
-## <a name="history-and-grounding"></a>History and grounding
-
-OM has a long history. In 2004, we published UnitDim, the precursor to OM. In 2009, OM 1.0 followed, of which versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/) have been created. We eventually released OM 2.0 in 2017, which is still maintained today. In the future we will move to OM 3.0.
-
-OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
 
 ## <a name="acknowledgements"></a>Acknowledgements
 
