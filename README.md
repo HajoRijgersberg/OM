@@ -25,7 +25,8 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 <!-- ## <a name="om"></a>Ontology of units of Measure (OM) -->
 
-## <a name="history-and-grounding"></a>History and grounding
+<!--- ## <a name="history-and-grounding"></a>History and grounding -->
+## <a name="history"></a>History
 
 OM has a long history. In 2004, UnitDim was the precursor to OM. In 2009, OM 1.0 followed, of which we have published versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/). We have released OM 2.0 in 2017, the present version. In the future we will move to OM 3.0.
 
