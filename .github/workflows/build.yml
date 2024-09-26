@@ -1,0 +1,48 @@
+name: Build and Release
+on:
+  pull_request:
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: obolibrary/robot:v1.9.6
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+      - name: Add Release Info
+        if: github.ref_type == 'tag'
+        run: |
+          robot \
+            annotate \
+              --input om-2.0.rdf \
+              --annotation owl:versionInfo "$(echo ${{github.ref_name}}| cut -c2-)" \
+              --typed-annotation dc:date "$(date +%Y-%m-%d)" xsd:date \
+            convert \
+              --format owl \
+              --output om-2.0.rdf
+      - name: Generate RDF/XML and TTL Serializations in OWL API Style
+        run: |
+          robot \
+            convert \
+              --input om-2.0.rdf \
+              --output om-2.0.ttl \
+            convert \
+              --format owl \
+              --output om-2.0.rdf
+      - name: Store Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: om-2.0.*
+      - name: Release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Ontology of units of Measure (OM) ${{ github.ref_name }}
+          files: |
+            om-2.0.rdf
+            om-2.0.ttl
