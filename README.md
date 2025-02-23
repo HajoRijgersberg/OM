@@ -10,9 +10,9 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 <br/>
 
-**Base URI:** `http://www.ontology-of-units-of-measure.org/resource/om-2/c
+**Base URI:** http://www.ontology-of-units-of-measure.org/resource/om-2/
 
-**License:** `https://creativecommons.org/licenses/by/4.0/"/>`
+**License:** https://creativecommons.org/licenses/by/4.0/
 
 **Namespace prefix:** `om`
 
