@@ -16,7 +16,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 **Namespace prefix:** `om`
 
-**Present version:** 2.0 (2017-present)
+**Present version:** 2.0 (2017-)
 
 **Precursors:** UnitDim (2004), OM 1.0-1.8 (2009-2017)
 <br/><br/>
