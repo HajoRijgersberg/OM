@@ -42,7 +42,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 <!-- OM has a long history. In 2004, UnitDim was the precursor to OM. In 2009, OM 1.0 followed, of which we have published versions up to [1.8](http://www.wurvoc.org/vocabularies/om-1.8/). We have released the present version of OM, 2.0, in 2017. In the future there are plans to move to OM 3.0. -->
 
-OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST – a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States, adapted back by us to the global standard (metre, litre, deca, tonne).
+OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST, a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States – adapted back by us to the global standard (metre, litre, deca, tonne).
 
 ## <a name="concepts"></a>Concepts
 
