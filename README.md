@@ -44,7 +44,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 
 <!-- ## <a name="grounding"></a>Grounding -->
 
-OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST, a document that represents the SI as established by the General Conference on Weights and Measures (CGPM) adapted to the United States – adapted back by us to the global standard (metre, litre, deca, tonne).
+OM is based on several official paper standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST, a document that represents the SI as established by the General Conference on Weights and Measures (CGPM), adapted to the United States – adapted back by us to the global standard (metre, litre, deca, tonne).
 
 ## <a name="concepts"></a>Concepts
 
