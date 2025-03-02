@@ -4,7 +4,7 @@
     
 <br/>
 
-<img src="images/OM-logo.jpg" width=287 height=47>
+<img src="images/OM-logo.jpg" width=282 height=46>
 
 <br/>
 
