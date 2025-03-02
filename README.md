@@ -4,7 +4,7 @@
     
 <br/>
 
-![OM](images/OM-logo.jpg)
+<img src="images/OM-logo.jpg" width=331 height=54>
 
 <br/>
 
