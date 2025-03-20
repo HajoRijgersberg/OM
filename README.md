@@ -19,6 +19,11 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 **Present version:** 2.0 (2017-)
 
 **Precursors:** UnitDim (2004), OM 1.0-1.8 (2009-2017)
+
+**Libraries** that support the use of OM:
+
+* [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
+* [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
 <br/><br/>
 
 ![Wageningen University & Research](images/Wageningen-University-and-Research-logo.jpg)
@@ -123,12 +128,12 @@ As an example, consider the following Table 1. and Figure 3.
 **Figure 3.** An RDF diagram representing an example using RecordTable.
 <!-- <br/><br/> -->
 
-## <a name="libraries"></a>Libraries
+<!-- ## <a name="libraries"></a>Libraries
 
 The following libraries support the use of OM:
 
 * [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs): A software library written in Java that uses OM to convert between units.
-* [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python.
+* [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf): Same in Python. -->
 <!-- <br/><br/> -->
 
 <!-- ## <a name="previous-versions"></a>Previous versions -->
