@@ -26,7 +26,7 @@ The **Ontology of units of Measure (OM) 2.0** models concepts and relations that
 <img src="images/VU-logo.jpg" width=220 height=54>
 <br/><br/>
 
-OM is based on several official standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. Libraries that support the use of OM are [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs), a software library written in Java that uses OM to convert between units, and [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf), same in Python.
+OM is based on several official standards, such as the [Guide for the Use of the International System of Units](http://physics.nist.gov/cuu/pdf/sp811.pdf), by the NIST. Libraries that support the use of OM are [`om-java-libs`](https://github.com/dieudonne-willems/om-java-libs) – a software library written in Java that uses OM to convert between units –, and [`om-python-libs`](https://github.com/lapsedPacifist/OMLib/tree/feature/rdf) – same in Python.
 
 <!-- ### Contents -->
 
