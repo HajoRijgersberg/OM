@@ -676,8 +676,9 @@
     <rdfs:comment xml:lang="en">A measure combines a number to a unit of measure. For example, "3 m" is a measure.</rdfs:comment>
   </owl:Class>
 
-  <owl:DatatypeProperty rdf:about="&om;hasNumericalValue">
-    <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+  <owl:DatatypeProperty rdf:about="&om;hasNumericalValueLessOrEqual">
+    <rdfs:label xml:lang="en">has numerical value less than or equal to</rdfs:label>
+    <rdfs:comment xml:lang="en">the upper bound of the actual numerical value</rdfs:comment>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -686,7 +687,39 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <!-- <rdfs:range rdf:resource="&xsd;string"/> -->
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&om;hasNumericalValueGreaterOrEqual">
+    <rdfs:label xml:lang="en">has numerical value greater than or equal to</rdfs:label>
+    <rdfs:comment xml:lang="en">the lower bound of the actual numerical value</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&om;Measure"/>
+          <owl:Class rdf:about="&om;Point"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&om;hasNumericalValue">
+    <rdfs:subPropertyOf rdf:resource="&om;hasNumericalValueLessOrEqual"/>
+    <rdfs:subPropertyOf rdf:resource="&om;hasNumericalValueGreaterOrEqual"/>
+    <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+    <rdfs:comment xml:lang="en">the actual numerical value of a measurement without any uncertainty</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&om;Measure"/>
+          <owl:Class rdf:about="&om;Point"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
     <rdf:type rdf:resource="&owl;FunctionalProperty"/>
   </owl:DatatypeProperty>
 
@@ -2345,92 +2378,92 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-10Metre">
-    <om:hasNumericalValue>1.0e-10</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.0e-15Metre">
-    <om:hasNumericalValue>1.0e-15</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.0000000000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.0e-6Metre">
-    <om:hasNumericalValue>1.0e-6</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.495978707e11Metre">
-    <om:hasNumericalValue>1.495978707e11</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">149597870700</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.609344e3Metre">
-    <om:hasNumericalValue>1.609344e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1609.344</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.609347e3Metre">
-    <om:hasNumericalValue>1.609347e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1609.347</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.828804Metre">
-    <om:hasNumericalValue>1.828804</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1.828804</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1852Metre">
-    <om:hasNumericalValue>1852</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1852</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.011684e1Metre">
-    <om:hasNumericalValue>2.011684e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">20.11684</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.54e-2Metre">
-    <om:hasNumericalValue>2.54e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0254</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.54e-5Metre">
-    <om:hasNumericalValue>2.54e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000254</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_201.168Metre">
-    <om:hasNumericalValue>201.168</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">201.168</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.048e-1Metre">
-    <om:hasNumericalValue>3.048e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.3048</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.048006e-1Metre">
-    <om:hasNumericalValue>3.048006e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.3048006</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.08567758149137e16Metre">
-    <om:hasNumericalValue>3.08567758149137e16</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">30856775814913700</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.029210Metre">
-    <om:hasNumericalValue>5.029210</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">5.029210</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.144e-1Metre">
-    <om:hasNumericalValue>9.144e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.9144</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.46073e15Metre">
-    <om:hasNumericalValue>9.46073e15</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">9460730000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure> -->
 
@@ -2934,7 +2967,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e2SquareMetre">
-    <om:hasNumericalValue>1.0e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">100</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure> -->
 
@@ -3085,22 +3118,22 @@
   </om:UnitExponentiation>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-28SquareMetre">
-    <om:hasNumericalValue>1.0e-28</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.00000000000000000000000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.0468564224e3SquareMetre">
-    <om:hasNumericalValue>4.0468564224e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4046.8564224</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.046872609874252e3SquareMetre">
-    <om:hasNumericalValue>4.046872609874252e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4046.872609874252</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.067075e-10SquareMetre">
-    <om:hasNumericalValue>5.067075e-10</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000005067075</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure> -->
 
@@ -3653,7 +3686,7 @@
   </om:UnitMultiple>
 
   <!-- <om:Measure rdf:about="&om;_25Millilitre"> -->
-  <!--   <om:hasNumericalValue>25</om:hasNumericalValue> -->
+  <!--   <om:hasNumericalValue rdf:datatype="&xsd;decimal">25</om:hasNumericalValue> -->
   <!--   <om:hasUnit rdf:resource="&om;millilitre"/> -->
   <!-- </om:Measure> -->
 
@@ -4066,126 +4099,126 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-3CubicMetre">
-    <om:hasNumericalValue>1.0e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.101221e-3CubicMetre">
-    <om:hasNumericalValue>1.101221e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.001101221</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.1365Litre">
-    <om:hasNumericalValue>1.1365</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1.1365</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;litre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.182941e-4CubicMetre">
-    <om:hasNumericalValue>1.182941e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0001182941</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.233489e3CubicMetre">
-    <om:hasNumericalValue>1.233489e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1233.489</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.420653e-4CubicMetre">
-    <om:hasNumericalValue>1.420653e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0001420653</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.478676e-5CubicMetre">
-    <om:hasNumericalValue>1.478676e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00001478676</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.589873e-1CubicMetre">
-    <om:hasNumericalValue>1.589873e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.1589873</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2Teaspoon-US">
-    <om:hasNumericalValue>2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">2</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;teaspoon-US"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.365882e-4CubicMetre">
-    <om:hasNumericalValue>2.365882e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0002365882</om:hasNumericalValue>
     <om:hasUnit rdf -->
 
   <!-- <om:Measure rdf:about="&om;_25Millilitre-Measure"> -->
-  <!--   <om:hasNumericalValue>25</om:hasNumericalValue> -->
+  <!--   <om:hasNumericalValue rdf:datatype="&xsd;decimal">25</om:hasNumericalValue> -->
   <!--   <om:hasUnit rdf:resource="&om;millilitre"/> -->
   <!-- </om:Measure> -->
 
   <!-- <om:Measure rdf:about="&om;_2.831658CubicMetre">
-    <om:hasNumericalValue>2.831658</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">2.831658</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.841306e-5CubicMetre">
-    <om:hasNumericalValue>2.841306e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00002841306</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.957353e-5CubicMetre">
-    <om:hasNumericalValue>2.957353e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00002957353</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.523907e-2CubicMetre">
-    <om:hasNumericalValue>3.523907e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.03523907</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.624556CubicMetre">
-    <om:hasNumericalValue>3.624556</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3.624556</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.785412e-3CubicMetre">
-    <om:hasNumericalValue>3.785412e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.003785412</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.40488377086e-3CubicMetre">
-    <om:hasNumericalValue>4.40488377086e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00440488377086</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.54609e-3CubicMetre">
-    <om:hasNumericalValue>4.54609e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00454609</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.731765e-4CubicMetre">
-    <om:hasNumericalValue>4.731765e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0004731765</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.928922e-6CubicMetre">
-    <om:hasNumericalValue>4.928922e-6</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000004928922</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.506105e-4CubicMetre">
-    <om:hasNumericalValue>5.506105e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0005506105</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_568.26125Millilitre">
-    <om:hasNumericalValue>568.26125</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">568.26125</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;millilitre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_8.809768e-3CubicMetre">
-    <om:hasNumericalValue>8.809768e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.008809768</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.463529e-4CubicMetre">
-    <om:hasNumericalValue>9.463529e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0009463529</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;cubicMetre"/>
   </om:Measure> -->
 
@@ -4510,32 +4543,32 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.570796e-2Radian">
-    <om:hasNumericalValue>1.570796e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.01570796</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.745329e-2Radian">
-    <om:hasNumericalValue>1.745329e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.01745329</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.908882e-4Radian">
-    <om:hasNumericalValue>2.908882e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0002908882</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.848137e-6Radian">
-    <om:hasNumericalValue>4.848137e-6</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000004848137</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_6.283185Radian">
-    <om:hasNumericalValue>6.283185</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">6.283185</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.817477e-4Radian">
-    <om:hasNumericalValue>9.817477e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0009817477</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;radian"/>
   </om:Measure> -->
 
@@ -7634,37 +7667,37 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-8Second-Time">
-    <om:hasNumericalValue>1.0e-8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.1536e7Second-Time">
-    <om:hasNumericalValue>3.1536e7</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">31536000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.6e3Second-Time">
-    <om:hasNumericalValue>3.6e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3600</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_6.04800e5Second-Time">
-    <om:hasNumericalValue>6.04800e5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">604800.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_6.0e1Second-Time">
-    <om:hasNumericalValue>6.0e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">60.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_86400Second-Time">
-    <om:hasNumericalValue>86400</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">86400</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.972696e-1Second-Time">
-    <om:hasNumericalValue>9.972696e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.9972696</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure> -->
 
@@ -8075,7 +8108,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e3Kilogram">
-    <om:hasNumericalValue>1.0e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure> -->
 
@@ -8363,77 +8396,77 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-3Kilogram">
-    <om:hasNumericalValue>1.0e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.016047e3Kilogram">
-    <om:hasNumericalValue>1.016047e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1016.047</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.459390e1Kilogram">
-    <om:hasNumericalValue>1.459390e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">14.59390</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.555174e-3Kilogram">
-    <om:hasNumericalValue>1.555174e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.001555174</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.98892e30Kilogram">
-    <om:hasNumericalValue>1.98892e30</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1988920000000000000000000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.0e-4Kilogram">
-    <om:hasNumericalValue>2.0e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00020</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.834952e-2Kilogram">
-    <om:hasNumericalValue>2.834952e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.02834952</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.916667e-2Kilogram">
-    <om:hasNumericalValue>2.916667e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.02916667</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.110348e-2Kilogram">
-    <om:hasNumericalValue>3.110348e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.03110348</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.732417e-1Kilogram">
-    <om:hasNumericalValue>3.732417e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.3732417</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.5359237e-1Kilogram">
-    <om:hasNumericalValue>4.535924e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.4535924</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.535924e1Kilogram">
-    <om:hasNumericalValue>4.535924e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">45.35924</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.080235e1Kilogram">
-    <om:hasNumericalValue>5.080235e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">50.80235</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_6.479891e-5Kilogram">
-    <om:hasNumericalValue>6.479891e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00006479891</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.071847e2Kilogram">
-    <om:hasNumericalValue>9.071847e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">907.1847</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure> -->
 
@@ -8835,12 +8868,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_0.000001-One">
-    <om:hasNumericalValue>0.000001</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.000001</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;one"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_0.01-One">
-    <om:hasNumericalValue>0.01</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.01</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;one"/>
   </om:Measure> -->
 
@@ -9445,7 +9478,7 @@
   </om:UnitExponentiation>
 
   <!-- <om:Measure rdf:about="&om;_1.0e2ReciprocalMetre">
-    <om:hasNumericalValue>1.0e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">100</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;reciprocalMetre"/>
   </om:Measure> -->
 
@@ -12462,27 +12495,27 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-5Newton">
-    <om:hasNumericalValue>1.0e-5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;newton"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.382550e-1Newton">
-    <om:hasNumericalValue>1.382550e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.1382550</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;newton"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.448222Newton">
-    <om:hasNumericalValue>4.448222</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.448222</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;newton"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.448222e3Newton">
-    <om:hasNumericalValue>4.448222e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4448.222</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;newton"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_8.896443e3Newton">
-    <om:hasNumericalValue>8.896443e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">8896.443</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;newton"/>
   </om:Measure> -->
 
@@ -12921,7 +12954,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e5Pascal">
-    <om:hasNumericalValue>1.0e5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">100000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure> -->
 
@@ -12984,7 +13017,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.33322e5Pascal">
-    <om:hasNumericalValue>1.33322e5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">133322.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure> -->
 
@@ -13067,22 +13100,22 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-1Pascal">
-    <om:hasNumericalValue>1.0e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.10</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.01325e5Pascal">
-    <om:hasNumericalValue>1.01325e5</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">101325.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.33322368421053e2Pascal">
-    <om:hasNumericalValue>1.33322368421053e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">133.322368421053</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.80665e4Pascal">
-    <om:hasNumericalValue>9.80665e4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">98066.5</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascal"/>
   </om:Measure> -->
 
@@ -14153,92 +14186,92 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-7Joule">
-    <om:hasNumericalValue>1.0e-7</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.0e15BritishThermalUnit-InternationalTable">
-    <om:hasNumericalValue>1.0e15</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1000000000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;BritishThermalUnit-InternationalTable"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.054350e3Joule">
-    <om:hasNumericalValue>1.054350e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1054.350</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.05468e3Joule">
-    <om:hasNumericalValue>1.05468e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1054.68</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.05480e3Joule">
-    <om:hasNumericalValue>1.05480e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1054.80</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.054804e8Joule">
-    <om:hasNumericalValue>1.054804e8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">105480400</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.055056e3Joule">
-    <om:hasNumericalValue>1.055056e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1055.056</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.05506e8Joule">
-    <om:hasNumericalValue>1.05506e8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">105506000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.05587e3Joule">
-    <om:hasNumericalValue>1.05587e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1055.87</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.05967e3Joule">
-    <om:hasNumericalValue>1.05967e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1059.67</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.602177e-19Joule">
-    <om:hasNumericalValue>1.602177e-19</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.0000000000000000001602177</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.18190Joule">
-    <om:hasNumericalValue>4.18190</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.18190</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.184Joule">
-    <om:hasNumericalValue>4.184</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.184</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.184e9Joule">
-    <om:hasNumericalValue>4.184e9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4184000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.18580Joule">
-    <om:hasNumericalValue>4.18580</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.18580</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.1868Joule">
-    <om:hasNumericalValue>4.1868</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.1868</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.19002Joule">
-    <om:hasNumericalValue>4.19002</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">4.19002</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.214011e-2Joule">
-    <om:hasNumericalValue>4.214011e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.04214011</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;joule"/>
   </om:Measure> -->
 
@@ -14764,37 +14797,37 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_3.516853e3Watt">
-    <om:hasNumericalValue>3.516853e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3516.853</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.839e26Watt">
-    <om:hasNumericalValue>3.839e26</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">383900000000000000000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_7.354988e2Watt">
-    <om:hasNumericalValue>7.354988e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">735.4988</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_7.4570e2Watt">
-    <om:hasNumericalValue>7.4570e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">745.70</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_7.46e2Watt">
-    <om:hasNumericalValue>7.46e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">746.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_7.46043e2Watt">
-    <om:hasNumericalValue>7.46043e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">746.043</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.80950e3Watt">
-    <om:hasNumericalValue>9.80950e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">9809.50</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;watt"/>
   </om:Measure> -->
 
@@ -15058,7 +15091,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-1PascalSecond-Time">
-    <om:hasNumericalValue>1.0e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.10</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;pascalSecond-Time"/>
   </om:Measure> -->
 
@@ -15173,7 +15206,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-4SquareMetrePerSecond-Time">
-    <om:hasNumericalValue>1.0e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetrePerSecond-Time"/>
   </om:Measure> -->
 
@@ -15565,7 +15598,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e1ReciprocalPascalSecond-Time">
-    <om:hasNumericalValue>1.0e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;reciprocalPascalSecond-Time"/>
   </om:Measure> -->
 
@@ -15587,7 +15620,7 @@
   </om:UnitDivision>
 
   <!-- <om:Measure rdf:about="&om;_0.001-One">
-    <om:hasNumericalValue>0.001</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.001</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;one"/>
   </om:Measure> -->
 
@@ -17267,7 +17300,7 @@
   </om:UnitMultiple>
 
   <!-- <om:Measure rdf:about="&om;_100Kilometre"> -->
-  <!--   <om:hasNumericalValue>100</om:hasNumericalValue> -->
+  <!--   <om:hasNumericalValue rdf:datatype="&xsd;decimal">100</om:hasNumericalValue> -->
   <!--   <om:hasUnit rdf:resource="&om;kilometre"/> -->
   <!-- </om:Measure> -->
 
@@ -18993,12 +19026,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.25Kelvin">
-    <om:hasNumericalValue>1.25</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1.25</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kelvin"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.555556e-1Kelvin">
-    <om:hasNumericalValue>5.555556e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.5555556</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kelvin"/>
   </om:Measure> -->
 
@@ -19638,119 +19671,122 @@
 
   <om:FixedPoint rdf:about="&om;_3To5OnTheKelvinScale">
     <rdfs:label xml:lang="en">3 to 5 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>3 to 5</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">3</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">5</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_13.8033OnTheKelvinScale">
     <rdfs:label xml:lang="en">13.8033 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>13.8033</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">13.8033</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;approximately17OnTheKelvinScale">
     <rdfs:label xml:lang="en">~17 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>~17</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">16.5</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">17.5</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;approximately203OnTheKelvinScale">
     <rdfs:label xml:lang="en">~20.3 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>~20.3</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">20.25</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">20.35</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_24.5561OnTheKelvinScale">
     <rdfs:label xml:lang="en">24.5561 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>24.5561</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">24.5561</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_54.3584OnTheKelvinScale">
     <rdfs:label xml:lang="en">54.3584 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>54.3584</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">54.3584</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_83.8058OnTheKelvinScale">
     <rdfs:label xml:lang="en">83.8058 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>83.8058</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">83.8058</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_234.3156OnTheKelvinScale">
     <rdfs:label xml:lang="en">234.3156 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>234.3156</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">234.3156</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_273.16OnTheKelvinScale">
     <rdfs:label xml:lang="en">273.16 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>273.16</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">273.16</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <om:hasQuantity rdf:resource="&om;thermodynamicTemperatureOfTheTriplePointOfWater"/>
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_302.9146OnTheKelvinScale">
     <rdfs:label xml:lang="en">302.9146 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>302.9146</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">302.9146</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_429.7485OnTheKelvinScale">
     <rdfs:label xml:lang="en">429.7485 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>429.7485</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">429.7485</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_505.078OnTheKelvinScale">
     <rdfs:label xml:lang="en">505.078 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>505.078</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">505.078</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_692.677OnTheKelvinScale">
     <rdfs:label xml:lang="en">692.677 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>692.677</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">692.677</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_933.473OnTheKelvinScale">
     <rdfs:label xml:lang="en">933.473 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>933.473</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">933.473</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_1234.93OnTheKelvinScale">
     <rdfs:label xml:lang="en">1234.93 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>1234.93</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1234.93</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_1337.33OnTheKelvinScale">
     <rdfs:label xml:lang="en">1337.33 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>1337.33</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1337.33</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
 
   <om:FixedPoint rdf:about="&om;_1357.77OnTheKelvinScale">
     <rdfs:label xml:lang="en">1357.77 on the Kelvin scale</rdfs:label>
-    <om:hasNumericalValue>1357.77</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1357.77</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;KelvinScale"/>
     <!-- hasDefinition --> <!-- <om:hasQuantity rdf:resource="&om;"/> -->
   </om:FixedPoint>
@@ -19829,7 +19865,8 @@
     <rdfs:label xml:lang="en">-270.15 to -268.15 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-270.15至-268.15摄氏度</rdfs:label>
     <rdfs:comment xml:lang="en">One of the fixed points defining the Celsius scale</rdfs:comment>
-    <om:hasNumericalValue>-270.15 to -268.15</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">-270.15</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">-268.15</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_3To5OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19837,7 +19874,7 @@
   <om:FixedPoint rdf:about="&om;_-259.3467OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-259.3467 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-259.3467摄氏度</rdfs:label>
-    <om:hasNumericalValue>-259.3467</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">-259.3467</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_13.8033OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19845,7 +19882,8 @@
   <om:FixedPoint rdf:about="&om;approximately-256.15OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-256.15 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">〜-256.15摄氏度</rdfs:label>
-    <om:hasNumericalValue>~-256.15</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">-256.145</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">-256.155</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately17OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19853,7 +19891,8 @@
   <om:FixedPoint rdf:about="&om;approximately-252.85OnTheCelsiusScale">
     <rdfs:label xml:lang="en">~-252.85 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">〜-252.85摄氏度</rdfs:label>
-    <om:hasNumericalValue>~-252.85</om:hasNumericalValue>
+    <om:hasNumericalValueGreaterOrEqual rdf:datatype="&xsd;decimal">-252.845</om:hasNumericalValueGreaterOrEqual>
+    <om:hasNumericalValueLessOrEqual rdf:datatype="&xsd;decimal">-252.855</om:hasNumericalValueLessOrEqual>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;approximately203OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19861,7 +19900,7 @@
   <om:FixedPoint rdf:about="&om;_-248.5939OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-248.5939 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-248.5939摄氏度</rdfs:label>
-    <om:hasNumericalValue>-248.5939</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">-248.5939</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_24.5561OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19869,7 +19908,7 @@
   <om:FixedPoint rdf:about="&om;_-218.7916OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-218.7916 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-218.7916摄氏度</rdfs:label>
-    <om:hasNumericalValue>-218.7916</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">-218.7916</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_54.3584OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19877,7 +19916,7 @@
   <om:FixedPoint rdf:about="&om;_-189.3442OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-189.3442 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-189.3442摄氏度</rdfs:label>
-    <om:hasNumericalValue>-189.3442</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">-189.3442</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_83.8058OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19885,7 +19924,7 @@
   <om:FixedPoint rdf:about="&om;_-38.8344OnTheCelsiusScale">
     <rdfs:label xml:lang="en">-38.8344 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">-38.8344摄氏度</rdfs:label>
-    <om:hasNumericalValue>-38.8344</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">-38.8344</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_234.3156OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19893,7 +19932,7 @@
   <om:FixedPoint rdf:about="&om;_0.01OnTheCelsiusScale">
     <rdfs:label xml:lang="en">0.01 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">0.01摄氏度</rdfs:label>
-    <om:hasNumericalValue>0.01</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.01</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_273.16OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19901,7 +19940,7 @@
   <om:FixedPoint rdf:about="&om;_29.7646OnTheCelsiusScale">
     <rdfs:label xml:lang="en">29.7646 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">29.7646摄氏度</rdfs:label>
-    <om:hasNumericalValue>29.7646</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">29.7646</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_302.9146OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19909,7 +19948,7 @@
   <om:FixedPoint rdf:about="&om;_156.5985OnTheCelsiusScale">
     <rdfs:label xml:lang="en">156.5985 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">156.5985摄氏度</rdfs:label>
-    <om:hasNumericalValue>156.5985</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">156.5985</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_429.7485OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19917,7 +19956,7 @@
   <om:FixedPoint rdf:about="&om;_231.928OnTheCelsiusScale">
     <rdfs:label xml:lang="en">231.928 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">231.928摄氏度</rdfs:label>
-    <om:hasNumericalValue>231.928</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">231.928</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_505.078OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19925,7 +19964,7 @@
   <om:FixedPoint rdf:about="&om;_419.527OnTheCelsiusScale">
     <rdfs:label xml:lang="en">419.527 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">419.527摄氏度</rdfs:label>
-    <om:hasNumericalValue>419.527</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">419.527</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_692.677OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19933,7 +19972,7 @@
   <om:FixedPoint rdf:about="&om;_660.323OnTheCelsiusScale">
     <rdfs:label xml:lang="en">660.323 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">660.323摄氏度</rdfs:label>
-    <om:hasNumericalValue>660.323</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">660.323</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_933.473OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19941,7 +19980,7 @@
   <om:FixedPoint rdf:about="&om;_961.78OnTheCelsiusScale">
     <rdfs:label xml:lang="en">961.78 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">961.78摄氏度</rdfs:label>
-    <om:hasNumericalValue>961.78</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">961.78</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1234.93OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19949,7 +19988,7 @@
   <om:FixedPoint rdf:about="&om;_1064.18OnTheCelsiusScale">
     <rdfs:label xml:lang="en">1064.18 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">1064.18摄氏度</rdfs:label>
-    <om:hasNumericalValue>1064.18</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1064.18</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1337.33OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -19957,7 +19996,7 @@
   <om:FixedPoint rdf:about="&om;_1084.62OnTheCelsiusScale">
     <rdfs:label xml:lang="en">1084.62 on the Celsius scale</rdfs:label>
     <rdfs:label xml:lang="zh">1084.62摄氏度</rdfs:label>
-    <om:hasNumericalValue>1084.62</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1084.62</om:hasNumericalValue>
     <om:hasScale rdf:resource="&om;CelsiusScale"/>
     <!-- hasDefinition --> <om:hasPoint rdf:resource="&om;_1357.77OnTheKelvinScale"/>
   </om:FixedPoint>
@@ -21403,12 +21442,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e1Ampere">
-    <om:hasNumericalValue>1.0e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;ampere"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.335641e-10Ampere">
-    <om:hasNumericalValue>3.335641e-10</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000003335641</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;ampere"/>
   </om:Measure> -->
 
@@ -21432,7 +21471,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_7.957747e-1Ampere">
-    <om:hasNumericalValue>7.957747e-1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.7957747</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;ampere"/>
   </om:Measure> -->
 
@@ -21881,17 +21920,17 @@
   </owl:Class>
 
   <!-- <om:Measure rdf:about="&om;_1.0e1Coulomb">
-    <om:hasNumericalValue>1.0e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10.</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulomb"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.335641e-10Coulomb">
-    <om:hasNumericalValue>3.335641e-10</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000003335641</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulomb"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_9.648531e4Coulomb">
-    <om:hasNumericalValue>9.648531e4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">96485.31</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulomb"/>
   </om:Measure> -->
 
@@ -22281,12 +22320,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-8Volt">
-    <om:hasNumericalValue>1.0e-8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;volt"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.997925e2Volt">
-    <om:hasNumericalValue>2.997925e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">299.7925</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;volt"/>
   </om:Measure> -->
 
@@ -22648,12 +22687,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e9Farad">
-    <om:hasNumericalValue>1.0e9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;farad"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.112650e-12Farad">
-    <om:hasNumericalValue>1.112650e-12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000000000001112650</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;farad"/>
   </om:Measure> -->
 
@@ -22987,12 +23026,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-9Ohm">
-    <om:hasNumericalValue>1.0e-9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;ohm"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_8.987552e11Ohm">
-    <om:hasNumericalValue>8.987552e11</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">898755200000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;ohm"/>
   </om:Measure> -->
 
@@ -23337,12 +23376,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e9Siemens">
-    <om:hasNumericalValue>1.0e9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;siemens"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.112650e-12Siemens">
-    <om:hasNumericalValue>1.112650e-12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000000000001112650</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;siemens"/>
   </om:Measure> -->
 
@@ -23837,17 +23876,17 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-8Weber">
-    <om:hasNumericalValue>1.0e-8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;weber"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.256637e-7Weber">
-    <om:hasNumericalValue>1.256637e-7</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000001256637</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;weber"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.9979e2Weber">
-    <om:hasNumericalValue>2.9979e2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">299.79</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;weber"/>
   </om:Measure> -->
 
@@ -23918,7 +23957,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_7.957747e1AmperePerMetre">
-    <om:hasNumericalValue>7.957747e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">79.57747</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;amperePerMetre"/>
   </om:Measure> -->
 
@@ -24276,17 +24315,17 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-9Tesla">
-    <om:hasNumericalValue>1.0e-9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;tesla"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.0e-4Tesla">
-    <om:hasNumericalValue>1.0e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.00010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;tesla"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_2.9979e6Tesla">
-    <om:hasNumericalValue>2.9979e6</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">2997900</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;tesla"/>
   </om:Measure> -->
 
@@ -24692,12 +24731,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-9Henry">
-    <om:hasNumericalValue>1.0e-9</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;henry"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_8.987552e11Henry">
-    <om:hasNumericalValue>8.987552e11</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">898755200000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;henry"/>
   </om:Measure> -->
 
@@ -24855,7 +24894,7 @@
   </om:Unit>
 
   <!--<om:Measure rdf:about="&om;_3.33564e-30CoulombMetre">
-    <om:hasNumericalValue>3.33564e-30</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.00000000000000000000000000000333564</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulombMetre"/>
   </om:Measure> -->
 
@@ -31966,17 +32005,17 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e4CandelaPerSquareMetre">
-    <om:hasNumericalValue>1.0e4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.183099e3CandelaPerSquareMetre">
-    <om:hasNumericalValue>3.183099e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3183.099</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.426259CandelaPerSquareMetre">
-    <om:hasNumericalValue>3.426259</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3.426259</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;candelaPerSquareMetre"/>
   </om:Measure> -->
 
@@ -32646,12 +32685,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e4Lux">
-    <om:hasNumericalValue>1.0e4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;lux"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_1.076391e1Lux">
-    <om:hasNumericalValue>1.076391e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">10.76391</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;lux"/>
   </om:Measure> -->
 
@@ -33688,7 +33727,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-2Gray">
-    <om:hasNumericalValue>1.0e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;gray"/>
   </om:Measure> -->
 
@@ -34091,7 +34130,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.0e-2Sievert">
-    <om:hasNumericalValue>1.0e-2</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.010</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;sievert"/>
   </om:Measure> -->
 
@@ -34430,7 +34469,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_3.7e10Becquerel">
-    <om:hasNumericalValue>3.7e10</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">37000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;becquerel"/>
   </om:Measure> -->
 
@@ -34469,7 +34508,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_2.58e-4CoulombPerKilogram">
-    <om:hasNumericalValue>2.58e-4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.000258</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;coulombPerKilogram"/>
   </om:Measure> -->
 
@@ -36335,17 +36374,17 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_15Degree">
-    <om:hasNumericalValue>15</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">15</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;degree"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_0.25Degree">
-    <om:hasNumericalValue>0.25</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.25</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;degree"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_4.1666667e-3Degree">
-    <om:hasNumericalValue>4.1666667e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0041666667</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;degree"/>
   </om:Measure> -->
 
@@ -36622,7 +36661,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_6.955e8Metre">
-    <om:hasNumericalValue>6.955e8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">695500000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure> -->
 
@@ -36853,27 +36892,27 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_3.155693e7Second-Time">
-    <om:hasNumericalValue>3.155693e7</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">31556930</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.155815e7Second-Time">
-    <om:hasNumericalValue>3.155815e7</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">31558150</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_3.590170e3Second-Time">
-    <om:hasNumericalValue>3.590170e3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3590.170</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.983617e1Second-Time">
-    <om:hasNumericalValue>5.983617e1</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">59.83617</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_8.616409e4Second-Time">
-    <om:hasNumericalValue>8.616409e4</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">86164.09</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;second-Time"/>
   </om:Measure> -->
 
@@ -36942,7 +36981,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_1.98892e30Kilogram">
-    <om:hasNumericalValue>1.98892e30</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">1988920000000000000000000000000</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogram"/>
   </om:Measure> -->
 
@@ -37959,7 +37998,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_9.869233e-13SquareMetre">
-    <om:hasNumericalValue>9.869233e-13</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000000009869233</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;squareMetre"/>
   </om:Measure> -->
 
@@ -38116,12 +38155,12 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_5.72135e-11KilogramPerPascalSecond-TimeSquareMetre">
-    <om:hasNumericalValue>5.72135e-11</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000000572135</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogramPerPascalSecond-TimeSquareMetre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_5.74525e-11KilogramPerPascalSecond-TimeSquareMetre">
-    <om:hasNumericalValue>5.74525e-11</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0000000000574525</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;kilogramPerPascalSecond-TimeSquareMetre"/>
   </om:Measure> -->
 
@@ -38426,7 +38465,7 @@
   </om:UnitMultiple>
 
   <!-- <om:Measure rdf:about="&om;_1000ColonyFormingUnit"> -->
-  <!--   <om:hasNumericalValue>1000</om:hasNumericalValue> -->
+  <!--   <om:hasNumericalValue rdf:datatype="&xsd;decimal">1000</om:hasNumericalValue> -->
   <!--   <om:hasUnit rdf:resource="&om;colonyFormingUnit"/> -->
   <!-- </om:Measure> -->
 
@@ -39725,7 +39764,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_8Bit">
-    <om:hasNumericalValue>8</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">8</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;bit"/>
   </om:Measure> -->
 
@@ -39945,7 +39984,7 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_3.321928095Bit">
-    <om:hasNumericalValue>3.321928095</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">3.321928095</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;bit"/>
   </om:Measure> -->
 
@@ -40221,42 +40260,42 @@
   </om:Unit>
 
   <!-- <om:Measure rdf:about="&om;_0.013837000138370001383700013837Inch-International">
-    <om:hasNumericalValue>0.013837000138370001383700013837</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.013837000138370001383700013837</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;inch-International"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_0.013888888888888888888888888888889Inch-International">
-    <om:hasNumericalValue>0.013888888888888888888888888888889</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">0.013888888888888888888888888888889</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;inch-International"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_0.3514598e-3Metre">
-    <om:hasNumericalValue>0.3514598e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0003514598</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_0.3759e-3Metre">
-    <om:hasNumericalValue>0.3759e-3</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">.0003759</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;metre"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_12Point-ATA">
-    <om:hasNumericalValue>12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">12</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;point-ATA"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_12Point-Didot">
-    <om:hasNumericalValue>12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">12</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;point-Didot"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_12Point-Postscript">
-    <om:hasNumericalValue>12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">12</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;point-Postscript"/>
   </om:Measure>
 
   <om:Measure rdf:about="&om;_12Point-TeX">
-    <om:hasNumericalValue>12</om:hasNumericalValue>
+    <om:hasNumericalValue rdf:datatype="&xsd;decimal">12</om:hasNumericalValue>
     <om:hasUnit rdf:resource="&om;point-TeX"/>
   </om:Measure> -->
 
