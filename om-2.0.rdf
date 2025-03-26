@@ -277,15 +277,14 @@
     </rdfs:range>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="&om;commonlyHasUnit">
+  <owl:AnnotationProperty rdf:about="&om;commonlyHasUnit">
     <rdfs:label xml:lang="en">commonly has unit</rdfs:label>
     <rdfs:label xml:lang="ja">通常は単位を持つ</rdfs:label>
     <om:alternativeLabel xml:lang="en">commonly has unit of measure</om:alternativeLabel>
     <om:alternativeLabel xml:lang="ja">通常は測定単位を持つ</om:alternativeLabel>
     <rdfs:comment>This property indicates a commonly-used unit.</rdfs:comment>
-    <rdfs:domain rdf:resource="&om;Quantity"/>
     <rdfs:range rdf:resource="&om;Unit"/>
-  </owl:ObjectProperty>
+  </owl:AnnotationProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasAggregateFunction">
     <rdfs:label xml:lang="en">has aggregate function</rdfs:label>
@@ -921,11 +920,10 @@
     <rdfs:comment xml:lang="en">In order to achieve a coherent, interdependent set of units of measure in the wide variety of units that exist, units are organised in systems of units. A system of units is based on a set of units chosen by convention to be the system’s base units, units that are considered to be mutually independent (i.e., can’t be expressed in terms of each other).</rdfs:comment>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="&om;hasBaseQuantity">
+  <owl:AnnotationProperty rdf:about="&om;hasBaseQuantity">
     <rdfs:label xml:lang="en">has base quantity</rdfs:label>
     <rdfs:domain rdf:resource="&om;SystemOfUnits"/>
-    <rdfs:range rdf:resource="&om;Quantity"/>
-  </owl:ObjectProperty>
+  </owl:AnnotationProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasBaseUnit">
     <rdfs:label xml:lang="en">has base unit</rdfs:label>
@@ -933,11 +931,10 @@
     <rdfs:range rdf:resource="&om;Unit"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="&om;hasDerivedQuantity">
+  <owl:AnnotationProperty rdf:about="&om;hasDerivedQuantity">
     <rdfs:label xml:lang="en">has derived quantity</rdfs:label>
     <rdfs:domain rdf:resource="&om;SystemOfUnits"/>
-    <rdfs:range rdf:resource="&om;Quantity"/>
-  </owl:ObjectProperty>
+  </owl:AnnotationProperty>
 
   <owl:ObjectProperty rdf:about="&om;hasDerivedUnit">
     <rdfs:label xml:lang="en">has derived unit</rdfs:label>
@@ -952,11 +949,10 @@
     <rdfs:comment xml:lang="en">An application area groups quantities and units of measure for application areas such as scientific disciplines (e.g., thermodynamics, mechanics).</rdfs:comment>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="&om;usesQuantity">
+  <owl:AnnotationProperty rdf:about="&om;usesQuantity">
     <rdfs:label xml:lang="en">uses quantity</rdfs:label>
     <rdfs:domain rdf:resource="&om;ApplicationArea"/>
-    <rdfs:range rdf:resource="&om;Quantity"/>
-  </owl:ObjectProperty>
+  </owl:AnnotationProperty>
 
   <owl:ObjectProperty rdf:about="&om;usesUnit">
     <rdfs:label xml:lang="en">uses unit</rdfs:label>
