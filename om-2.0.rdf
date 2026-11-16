@@ -4,7 +4,7 @@
 
   <!-- Version 2.0 -->
 
-  <!-- (c) 2005-2025 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
+  <!-- (c) 2005-2026 Hajo Rijgersberg, Don Willems, Jan Top, Wageningen University and Research Centre, The Netherlands. This document is available under Creative Common License, version 4.0. You are free to Share — to copy, distribute, display, and perform the work and to Remix — to make derivative works; under the condition of Attribution: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). The publisher does not accept any liability for the inaccuracies in this document. -->
 
   <!DOCTYPE rdf:RDF [
     <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -45,10 +45,10 @@
     <dc:title xml:lang="en">Ontology of units of Measure (OM)</dc:title>
     <dc:title xml:lang="nl">Ontologie van Maateenheden (OM)</dc:title>
     <dc:title xml:lang="ja">測定単位のオントロジー (OM)</dc:title>
-    <owl:versionInfo xml:lang="en">2.0.59</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2.0.60</owl:versionInfo>
     <!-- <dc:identifier>http://www.wurvoc.org/vocabularies/om-2.0/</dc:identifier> -->
     <dc:identifier>http://www.ontology-of-units-of-measure.org/vocabularies/om-2/</dc:identifier>
-    <dc:date>2025/02/24</dc:date>
+    <dc:date>2026/11/16</dc:date>
     <dc:format xml:lang="en">OWL</dc:format>
     <dc:description xml:lang="en">The Ontology of units of Measure (OM) 2.0 models concepts and relations important to scientific research. It has a strong focus on units, quantities, measures, and dimensions.</dc:description>
     <dc:description xml:lang="nl">De Ontologie van Maateenheden (OM) 2.0 modelleert concepten en relaties die belangrijk zijn voor wetenschappelijk onderzoek. Het heeft een sterke focus op eenheden, grootheden, maten, en dimensies.</dc:description>
@@ -7786,7 +7786,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptogram">
     <rdfs:label xml:lang="en">zeptogram</rdfs:label>
     <rdfs:label xml:lang="nl">zeptogram</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptgram is a unit of mass defined as 1.0e-21 gram.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptogram is a unit of mass defined as 1.0e-21 gram.</rdfs:comment>
     <om:symbol>zg</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gram"/>
@@ -8974,7 +8974,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptohertz">
     <rdfs:label xml:lang="en">zeptohertz</rdfs:label>
     <rdfs:label xml:lang="nl">zeptohertz</rdfs:label>
-    <rdfs:comment xml:lang="en">The zepthertz is a unit of frequency defined as 1.0e-21 hertz.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptohertz is a unit of frequency defined as 1.0e-21 hertz.</rdfs:comment>
     <om:symbol>zHz</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;hertz"/>
@@ -13361,7 +13361,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptojoule">
     <rdfs:label xml:lang="en">zeptojoule</rdfs:label>
     <rdfs:label xml:lang="nl">zeptojoule</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptjoule is a unit of energy defined as 1.0e-21 joule.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptojoule is a unit of energy defined as 1.0e-21 joule.</rdfs:comment>
     <om:symbol>zJ</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;joule"/>
@@ -18510,7 +18510,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptokelvin">
     <rdfs:label xml:lang="en">zeptokelvin</rdfs:label>
     <rdfs:label xml:lang="nl">zeptokelvin</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptkelvin is a unit of temperature defined as 1.0e-21 kelvin.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptokelvin is a unit of temperature defined as 1.0e-21 kelvin.</rdfs:comment>
     <om:symbol>zK</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;kelvin"/>
@@ -18818,7 +18818,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptodegreeCelsius">
     <rdfs:label xml:lang="en">zeptodegree Celsius</rdfs:label>
     <rdfs:label xml:lang="nl">zeptograad Celsius</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptdegree Celsius is a unit of temperature defined as 1.0e-21 degree Celsius.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptodegree Celsius is a unit of temperature defined as 1.0e-21 degree Celsius.</rdfs:comment>
     <om:symbol>z&#x00B0;C</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;degreeCelsius"/>
@@ -21115,7 +21115,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptoampere">
     <rdfs:label xml:lang="en">zeptoampere</rdfs:label>
     <rdfs:label xml:lang="nl">zeptoampère</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptampere is a unit of electric current defined as 1.0e-21 ampere.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptoampere is a unit of electric current defined as 1.0e-21 ampere.</rdfs:comment>
     <om:symbol>zA</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;ampere"/>
@@ -21576,7 +21576,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptocoulomb">
     <rdfs:label xml:lang="en">zeptocoulomb</rdfs:label>
     <rdfs:label xml:lang="nl">zeptocoulomb</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptcoulomb is a unit of electric charge defined as 1.0e-21 coulomb.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptocoulomb is a unit of electric charge defined as 1.0e-21 coulomb.</rdfs:comment>
     <om:symbol>zC</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;coulomb"/>
@@ -22390,7 +22390,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptofarad">
     <rdfs:label xml:lang="en">zeptofarad</rdfs:label>
     <rdfs:label xml:lang="nl">zeptofarad</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptfarad is a unit of capacitance defined as 1.0e-21 farad.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptofarad is a unit of capacitance defined as 1.0e-21 farad.</rdfs:comment>
     <om:symbol>zF</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;farad"/>
@@ -24415,7 +24415,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptohenry">
     <rdfs:label xml:lang="en">zeptohenry</rdfs:label>
     <rdfs:label xml:lang="nl">zeptohenry</rdfs:label>
-    <rdfs:comment xml:lang="en">The zepthenry is a unit of inductance defined as 1.0e-21 henry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptohenry is a unit of inductance defined as 1.0e-21 henry.</rdfs:comment>
     <om:symbol>zH</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;henry"/>
@@ -29362,7 +29362,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptomolar">
     <rdfs:label xml:lang="en">zeptomolar</rdfs:label>
     <rdfs:label xml:lang="nl">zeptomolair</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptmolar is a unit of amount of substance concentration defined as 1.0e-21 molar.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptomolar is a unit of amount of substance concentration defined as 1.0e-21 molar.</rdfs:comment>
     <om:symbol>zM</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;molar"/>
@@ -30944,7 +30944,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptokatal">
     <rdfs:label xml:lang="en">zeptokatal</rdfs:label>
     <rdfs:label xml:lang="nl">zeptokatal</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptkatal is a unit of catalytic activity defined as 1.0e-21 katal.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptokatal is a unit of catalytic activity defined as 1.0e-21 katal.</rdfs:comment>
     <om:symbol>zkat</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;katal"/>
@@ -31632,7 +31632,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptocandela">
     <rdfs:label xml:lang="en">zeptocandela</rdfs:label>
     <rdfs:label xml:lang="nl">zeptocandela</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptcandela is a unit of luminous intensity defined as 1.0e-21 candela.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptocandela is a unit of luminous intensity defined as 1.0e-21 candela.</rdfs:comment>
     <om:symbol>zcd</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;candela"/>
@@ -33403,7 +33403,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptogray">
     <rdfs:label xml:lang="en">zeptogray</rdfs:label>
     <rdfs:label xml:lang="nl">zeptogray</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptgray is a unit of absorbed dose defined as 1.0e-21 gray.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptogray is a unit of absorbed dose defined as 1.0e-21 gray.</rdfs:comment>
     <om:symbol>zGy</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;gray"/>
@@ -34183,7 +34183,7 @@
   <om:PrefixedUnit rdf:about="&om;zeptobecquerel">
     <rdfs:label xml:lang="en">zeptobecquerel</rdfs:label>
     <rdfs:label xml:lang="nl">zeptobecquerel</rdfs:label>
-    <rdfs:comment xml:lang="en">The zeptbecquerel is a unit of activity defined as 1.0e-21 becquerel.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The zeptobecquerel is a unit of activity defined as 1.0e-21 becquerel.</rdfs:comment>
     <om:symbol>zBq</om:symbol>
     <om:hasPrefix rdf:resource="&om;zepto"/>
     <!-- hasSingularUnit --> <om:hasUnit rdf:resource="&om;becquerel"/>
